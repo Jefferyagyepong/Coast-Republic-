@@ -1,0 +1,39 @@
+@media screen and (min-width: 320px) {
+  .form-wrapper {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+}
+@media screen and (min-width: 550px) {
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.2rem;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.2rem;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.2rem;
+  }
+  .hide {
+    display: none;
+  }
+}

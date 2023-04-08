@@ -1,0 +1,42 @@
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-links {
+  display: inline-block;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.nav-link {
+  color: var(--magenta);
+  font-weight: 600;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  align-items: center;
+}
+#inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cart-wrapper {
+  margin-top: 1.4rem;
+  margin-left: 15rem;
+}
+.search-form {
+  padding: 0.6rem;
+  width: 500px;
+  border-style: groove;
+  border-radius: 9px;
+}

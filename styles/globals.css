@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #c5cae921;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #2196f3;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: contain;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.MyApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  outline: 0 !important;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+button:active,
+button:hover {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  outline: #2196f3;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body,
+html {
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-x: none;
+}
+
+footer {
+  margin-top: auto;
+}
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
+input::-webkit-input-placeholder {
+  font: inherit;
+}
+
+input::-moz-placeholder {
+  font: inherit;
+}
+
+input:-ms-input-placeholder {
+  font: inherit;
+}
+
+input::-ms-input-placeholder {
+  font: inherit;
+}
+
+input::placeholder {
+  font: inherit;
+}
