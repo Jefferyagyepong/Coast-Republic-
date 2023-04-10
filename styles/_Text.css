@@ -1,18 +1,11 @@
-.words {
-  font-size: 0;
-  line-height: 1;
+.wrapper-one {
 }
-.words span {
-  font-size: 30px;
-  display: inline-block;
-  -webkit-animation: move 2s ease-in-out;
-  animation: move 2s ease-in-out;
+.pre-main {
+  display: flex;
+  margin: 0.9rem;
+  justify-content: start;
 }
-.words span:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-.words span:nth-child(3) {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+.pre {
+  opacity: 0;
+  animation: drop0.4s linear forwards;
 }
