@@ -5,6 +5,9 @@
   .hide {
     display: block;
   }
+  .socials {
+    display: none;
+  }
 }
 @media screen and (min-width: 550px) {
   .form-wrapper {
