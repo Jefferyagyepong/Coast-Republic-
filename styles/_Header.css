@@ -40,3 +40,9 @@
   border-style: groove;
   border-radius: 9px;
 }
+.socials {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  gap: 0.5rem;
+}

@@ -6,6 +6,7 @@ import '../styles/_Burger.css'
 import '../styles/_Show.css'
 import '../styles/_Integrity.css'
 import '../styles/_Product.css'
+import '../styles/_Text.css'
 
 
 

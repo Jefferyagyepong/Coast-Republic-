@@ -19,6 +19,7 @@
 
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  background: var(--sandy-brown);
 
   /*
 	  scroll-snap-points-x: repeat(300px);

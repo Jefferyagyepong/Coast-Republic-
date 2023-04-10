@@ -4,6 +4,7 @@ import { slide as Menu } from 'react-burger-menu'
 import SideBarMobile from "./SidebarMobile";
 import Image from "next/image";
 import { faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faPinterest, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function Header (){
     return (
@@ -17,7 +18,7 @@ export default function Header (){
                 <form action="" className="form-wrapper ">
                    <div id="inline">
                                     <input className="search-form" type="search" name="search" placeholder="Search t-shirts" />   
-                      <FontAwesomeIcon  icon={faSearch} width={10} height={10}/>   
+
                    </div>
             
        
@@ -31,7 +32,12 @@ export default function Header (){
             </form>
             <div className="cart-wrapper">
                  <Image src='/cart.svg'  width={20} height={20} alt="cart"/>   
-            </div>
+        </div>
+        <div className="socials">
+          <FontAwesomeIcon icon={faTwitter} width={10} height={10} />
+          <FontAwesomeIcon icon={faInstagram} width={10} height={10} />
+            <FontAwesomeIcon icon={faPinterest} width={10} height={10}/>
+        </div>
 
                   <div className="hide">
             <SideBarMobile/>

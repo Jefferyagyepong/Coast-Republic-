@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Text from '../components/Text'
 import Product from '../components/Product'
 import Integrity from '../components/Integrity'
 import Show from '../components/Show'
@@ -28,6 +29,7 @@ export default function Home() {
       </Head>
       <main >
         <Header />
+        <Text/>
         <Show />
         <Integrity />
         <Product/>

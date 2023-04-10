@@ -1,0 +1,18 @@
+.words {
+  font-size: 0;
+  line-height: 1;
+}
+.words span {
+  font-size: 30px;
+  display: inline-block;
+  -webkit-animation: move 2s ease-in-out;
+  animation: move 2s ease-in-out;
+}
+.words span:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.words span:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
