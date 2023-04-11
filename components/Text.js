@@ -5,15 +5,18 @@ export default function Text (){
     return (
      
 
-        <div className="wrapper-one">
-           <div className="pre-main">
-              
-          <div className="pre">Pre</div>
-          <div className="order">Order</div>
-             <div className="now">Now</div>
-            </div>
+      
+          <div className="wrapper nine">
+        <div>
+            <h3 className="rotate">
+                <span className="pre-order-now">Pre </span>
+                <span className="pre-order-now">Order </span>
+                <span className="pre-order-now">Now</span>
+             
+            </h3>
+        </div>
+    </div>
        
-      </div>
    
    
   );

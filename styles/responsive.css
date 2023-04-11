@@ -5,7 +5,13 @@
   .hide {
     display: block;
   }
+  .circle {
+    display: block;
+  }
   .socials {
+    display: none;
+  }
+  .nav-link {
     display: none;
   }
 }
@@ -16,6 +22,9 @@
     margin-top: 3.2rem;
   }
   .hide {
+    display: none;
+  }
+  .circle {
     display: none;
   }
 }
@@ -29,6 +38,9 @@
   .hide {
     display: none;
   }
+  .circle {
+    display: none;
+  }
 }
 @media screen and (min-width: 960px) {
   .form-wrapper {
@@ -38,5 +50,14 @@
   }
   .hide {
     display: none;
+  }
+  .circle {
+    display: none;
+  }
+  .socials {
+    display: block;
+  }
+  .nav-link {
+    display: block;
   }
 }

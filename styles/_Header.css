@@ -1,48 +1,80 @@
 .Header {
-  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding: 20px 0;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
 .hide {
   display: none;
 }
+.icon-black {
+  color: black;
+  padding: 1.3rem;
+}
+.salmon {
+  color: black;
+  gap: 2rem;
+  transition: 0.3s ease;
+}
 
-.nav-links {
-  display: inline-block;
-  padding: 2rem;
-  margin-top: 1.9rem;
-}
-.nav-link {
-  color: var(--magenta);
-  font-weight: 600;
-}
-.form-wrapper {
+.input-logo {
+  background-color: $color-ascent;
   display: flex;
-  flex-direction: column;
-  width: 55%;
   align-items: center;
+  padding: 0.5rem;
+  margin-left: -2rem;
 }
-#inline {
+
+.cart-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.cart-wrapper {
-  margin-top: 1.4rem;
-  margin-left: 15rem;
+  gap: 1.4rem;
 }
 .search-form {
   padding: 0.6rem;
-  width: 500px;
+  width: 100%;
   border-style: groove;
   border-radius: 9px;
+  border: none;
 }
 .socials {
-  margin-top: 2rem;
-  margin-left: 5rem;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.9rem;
+  flex-direction: row;
 }
+
+.searchInput {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  background-color: rgb(217, 220, 222);
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+  display: none;
+}
+#checkbox_toggle {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+}
+
+/* APPLYING MEDIA QUERIES */

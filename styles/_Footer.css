@@ -1,0 +1,92 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-top: 5rem;
+  background: black;
+  color: rgb(217, 220, 222);
+  padding: 6rem 0;
+}
+.same {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  padding: 1rem 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#newsletter {
+  background: white;
+  color: black;
+  margin: 2rem;
+  text-align: center;
+  padding: 6px 10px;
+}
+.footer-nav {
+  padding: 1rem;
+  color: rgb(217, 220, 222);
+}
+#newsletter:hover {
+  background: salmon;
+  color: black;
+  opacity: 1;
+}
+.newsletter-mail {
+  background-color: rgb(217, 220, 222);
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.icon {
+  color: rgb(217, 220, 222);
+  padding: 1.3rem;
+}
+
+footer h4 {
+  padding-bottom: 20px;
+  color: salmon;
+}
+
+footer p {
+  margin: 0 0 8px 0;
+}
+
+footer .follow {
+  margin-top: 20px;
+  color: rgb(217, 220, 222);
+}
+
+footer .follow i {
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row i {
+  margin: 10px 0 15px 0;
+  display: inline;
+}
+
+.coast {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.coast p {
+  text-align: center;
+  font-size: 11px;
+  padding: 15px;
+}
