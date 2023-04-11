@@ -9,6 +9,7 @@ import Show from '../components/Show'
 import Header from '../components/Header'
 import Collection from '../components/Collection'
 import Footer from '../components/Footer'
+import styles from '../styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,20 +39,21 @@ export default function Home() {
         <Collection/>
         <Show />
         <Integrity />
-   
-      <div className='small'>
-        <CategoryCard image="/public/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
-        <CategoryCard image="/public/azumah-white.svg" name="Azumah Nelson T-shirt white" />
-        <CategoryCard image="https://imgur.com/Dm212HS.png" name="Switch" />
+        <div className={styles.container}>
+
+      <div className={styles.small}>
+        <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
+            <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
+                 <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
+            <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
+                 <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
+        <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
       </div>
-      <div className='large'>
-        <CategoryCard image="/azumah-black.svg" name="PC" />
-        <CategoryCard
-          image="/azumah-black.svg"
-          name="Accessories"
-        />
-      </div>
+  
     
+          
+        </div>
+   
         <Footer/>
       
       </main>

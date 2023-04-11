@@ -3,14 +3,14 @@
     "id": 1,
     "product": "Azumah Nelson T-shirt White",
     "category": "t-shirt",
-    "img": "/azumah-black.svg",
+    "image": "/azumah-black.svg",
     "price": 180.99
   },
     {
     "id": 2,
     "product": "Azumah Nelson T-shirt White",
     "category": "t-shirt",
-    "img": "/azumah-black.svg",
+    "image": "/azumah-black.svg",
     "price": 180.99
   }
   

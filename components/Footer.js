@@ -100,7 +100,9 @@ export default function Footer() {
             ><FontAwesomeIcon icon={faInstagram} width={10} height={10}/></Link>
           </div>
         </div>
-        <p>&copy;2022 COASTREPUBLIC</p>
+        copyright   <p>Coast Republic {' '}   &copy;   {new Date().getFullYear()}</p>
+
+
       </div>
     </footer>
    
