@@ -77,12 +77,22 @@ export default function Header() {
                    
  
             </div>
-            <div class="container-bar" onclick="myFunction(this)">
-               
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
+    
+  <input type="checkbox" id="checkbox_toggle"/>
+  <label for="checkbox_toggle" class="hamburger">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+   </label>
+  <nav>
+    <ul>
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+    <li><a href="#">Link Four</a></li>
+  </ul>
+    </nav>
+
             
          
       </div>

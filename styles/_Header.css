@@ -61,20 +61,93 @@
   border-radius: 1.5rem;
 }
 
-/* CHECKBOX HACK */
-
 input[type="checkbox"] {
   display: none;
 }
-#checkbox_toggle {
-  display: none;
+
+nav ul {
+  max-height: 0px;
+  overflow: hidden;
+  list-style: none;
+  transition: all 1s cubic-bezier(0.325, 1, 0.22, 1);
 }
 
-/*HAMBURGER MENU*/
+nav li {
+  border-bottom: 0.18rem solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li:last-of-type {
+  margin-bottom: 0.625rem;
+}
+
+nav li a {
+  font-family: Nunito;
+  text-decoration: none;
+}
+nav li a:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"]:checked ~ nav ul {
+  height: auto;
+  max-height: 12rem;
+  transition: all 1s cubic-bezier(0.5, 1, 0.22, 1);
+}
 
 .hamburger {
-  display: none;
-  font-size: 24px;
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 13px;
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* APPLYING MEDIA QUERIES */
+.line {
+  position: absolute;
+  display: block;
+  background: #3d3d3d;
+  width: 18px;
+  height: 0.15rem;
+  border-radius: 0.2rem;
+  left: 0;
+  transition: all 0.6s cubic-bezier(0.5, 0.1, 0, 1.2);
+}
+
+.line-1 {
+  top: 0;
+}
+
+.line-2 {
+  top: 7px;
+  width: 14px;
+  transform: translateX(2px);
+  -webkit-transform: translateX(2px);
+}
+
+.line-3 {
+  top: 14px;
+}
+
+input[type="checkbox"]:checked ~ label .line-1 {
+  top: 0px;
+  width: 22px;
+  transform: translateX(-11px) rotate(-45deg) translateY(12px);
+}
+
+input[type="checkbox"]:checked ~ label .line-2 {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ label .line-3 {
+  top: 14px;
+  width: 22px;
+  transform: translateX(-8px) rotate(45deg) translateY(-8px);
+}
