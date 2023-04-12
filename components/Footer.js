@@ -18,9 +18,9 @@ export default function Footer() {
 
           <div className="same">
                <h4>Contact</h4>
-        <p><strong>Address: </strong> 10th Ave, McCarthy Hill, Accra</p>
-        <p><strong>Phone: </strong> +233 244736420</p>
-        <p><strong>Hours: </strong> 8:00 -18:00, Mon - sat</p>
+        <p    className="icon"><strong>Address: </strong> 10th Ave, McCarthy Hill, Accra</p>
+        <p    className="icon"><strong>Phone: </strong> +233 244736420</p>
+        <p    className="icon"><strong>Hours: </strong> 8:00 -18:00, Mon - sat</p>
           </div>
        
      
@@ -57,17 +57,17 @@ export default function Footer() {
               href=""
            className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faCcVisa} width={30} height={30}/></Link>
+            ><FontAwesomeIcon icon={faCcVisa} width={17} height={17}/></Link>
             <Link
               href=""
             className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faCcMastercard} width={30} height={30}/></Link>
+            ><FontAwesomeIcon icon={faCcMastercard} width={17} height={17}/></Link>
             <Link
               href=""
                className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faCcPaypal} width={30} height={30}/></Link>
+            ><FontAwesomeIcon icon={faCcPaypal} width={17} height={17}/></Link>
           
 </div>
        </div>   </div>

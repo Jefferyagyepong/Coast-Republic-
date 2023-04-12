@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Image from 'next/image';
 // Importing hooks from react-redux
 // Importing actions from  cart.slice.js
@@ -32,10 +33,10 @@ const CartPage = () => {
             <div>Total Price</div>
           </div>
           {cart.map((item) => (
-            // eslint-disable-next-line react/jsx-key
+       
             <div className={styles.body}>
               <div className={styles.image}>
-                <Image src={item.image} height="90" width="65" alt='' />
+                <Image src={item.image} height="250" width="200" alt='' />
               </div>
               <p>{item.product}</p>
               <p>$ {item.price}</p>

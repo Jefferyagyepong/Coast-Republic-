@@ -1,10 +1,43 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter } from 'next/font/google'
+
+
+import Header from '../components/Header'
+
+import Footer from '../components/Footer'
+
+
 import ProductCard from '../components/ProductCard';
 import styles from '../styles/ShopPage.module.css';
 import { getProducts } from './api/products/index';
 
 const ShopPage = ({ products }) => {
   return (
-    <div className={styles.container}>
+    <>
+         <Head>
+        <title>Home | Coast Republic</title>
+                <link rel="apple-touch-icon" href=""/>
+        <meta property="og:title" content="Home | Coast Republic" />
+<meta property="og:type" content="" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+
+        <meta name="description" content="Coast Republic  Store" />
+          <meta name="keywords" content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store" />
+                <meta http-equiv="x-ua-compatible" content="ie=edge" />
+             <meta name="author" content="Jeffery Agyepong" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+    
+
+
+      <main >
+      
+        <Header />
+     
+     <div className={styles.container}>
       <h1 className={styles.title}>All Results</h1>
       <div className={styles.cards}>
         {products.map((product) => (
@@ -12,8 +45,19 @@ const ShopPage = ({ products }) => {
         ))}
       </div>
     </div>
-  );
-};
+   
+   
+        <Footer/>
+      
+      </main>
+  </>
+
+
+
+    
+   
+  )
+}
 
 export default ShopPage;
 

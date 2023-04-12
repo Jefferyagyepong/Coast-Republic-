@@ -6,14 +6,14 @@ footer {
   align-items: center;
   margin-top: 5rem;
   background: black;
-  color: rgb(217, 220, 222);
-  padding: 6rem 0;
+  flex-direction: column;
 }
 .same {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 footer .col {
@@ -21,10 +21,8 @@ footer .col {
   justify-content: center;
   align-items: center;
   width: 100%;
-  display: grid;
   gap: 2rem;
   padding: 1rem 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #newsletter {
   background: white;

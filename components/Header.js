@@ -26,9 +26,11 @@ export default function Header() {
      
 
         <div className="Header">
-               
+            <Link href='/'>
+             <Image src='/crlogo.svg' width={80} height={50} alt="Coast-Republic logo" /> 
+            </Link> 
            
-            <Image src='/crlogo.svg' width={80} height={50} alt="Coast-Republic logo" /> 
+           
              
            
                          
@@ -43,13 +45,12 @@ export default function Header() {
        
            
             
-         <ul className="">
-                           <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label> 
-                <li className=""><a href="#"  className="salmon">T-shirts</a></li>
-                <li className=""><a href="# "  className="salmon">Delivery</a></li>
-                <li className=""><a href="#"  className="salmon">Contact Us</a></li>
-                   <li className=""><a href="#"  className="salmon" >About Us</a></li>
+         <ul className="desktop">
+ 
+                <li className=""><Link href='/shop' className="salmon">Shop</Link></li>
+                <li className=""><Link href='/shop' className="salmon">Delivery</Link></li>
+                <li className=""><Link href='/shop' className="salmon">Contact Us</Link></li>
+                   <li className=""><Link href='/shop' className="salmon">About Us</Link></li>
             </ul>
      
          
@@ -58,43 +59,35 @@ export default function Header() {
       
             <div className="cart-wrapper">
           <Navbar/>
-         
+       
+   
                 <div className="socials">
                     <Link href=''    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={10} height={10} /></Link>
                     <Link href=''   className="icon-black">  <FontAwesomeIcon icon={faInstagram} width={10} height={10} /></Link>
                     <Link href=''  className="icon-black"> <FontAwesomeIcon icon={faPinterest} width={10} height={10}   /></Link>
                     <Link href=''   className="icon-black"> <FontAwesomeIcon icon={faYoutube} width={10} height={10} /></Link>
-                    
-         
-        
-                   
-                               
+                         
                 </div>
+
+                   <section class="top-nav">
+   
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+                   <li className=""><a href="#"  className="salmon-mobile">T-shirts</a></li>
+                <li className=""><a href="# "  className="salmon-mobile">Delivery</a></li>
+                <li className=""><a href="#"  className="salmon-mobile">Contact Us</a></li>
+                   <li className=""><a href="#"  className="salmon-mobile" >About Us</a></li>
+    </ul>
+  </section>
                 
             </div>
             <div>
 
-                   
- 
             </div>
     
-  <input type="checkbox" id="checkbox_toggle"/>
-  <label for="checkbox_toggle" class="hamburger">
-      <div class="line line-1"></div>
-      <div class="line line-2"></div>
-      <div class="line line-3"></div>
-   </label>
-  <nav>
-    <ul>
-    <li><a href="#">Link One</a></li>
-    <li><a href="#">Link Two</a></li>
-    <li><a href="#">Link Three</a></li>
-    <li><a href="#">Link Four</a></li>
-  </ul>
-    </nav>
-
-            
-         
       </div>
    
    
