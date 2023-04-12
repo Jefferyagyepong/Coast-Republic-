@@ -10,13 +10,17 @@ import '../styles/_Text.css'
 import '../styles/_Top.scss'
 import '../styles/_Collection.scss'
 import '../styles/_Footer.css'
+import store from '../redux/store';  
+  import { Provider } from 'react-redux'; 
+
+
 
 
 
 
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-  
+
+  return   <Provider store={store}><Component {...pageProps} /> </Provider>
 }
 

@@ -1,15 +1,25 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { slide as Menu } from 'react-burger-menu'
-import SideBarMobile from "./SidebarMobile";
 import Link from "next/link.js";
 import Image from "next/image";
-import { faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faPinterest, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import SearchInput from "./SearchInput";
+import Navbar from "./Navbar";
+
+
 
 export default function Header() {
- 
+  
+    const Header = () => {
+
+        
+        const cart = useSelector((state) => state.cart);
+
+      
+        const getItemsCount = () => {
+            return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
+        };
+    }
 
 
     return (
@@ -47,11 +57,7 @@ export default function Header() {
       
       
             <div className="cart-wrapper">
-            <li id="shopping-cart"> <Link href="">
-                <Image src='/cart.svg' width={20} height={20} alt="cart" />
-            </Link> <p>Cart</p>
-
-                </li>
+          <Navbar/>
          
                 <div className="socials">
                     <Link href=''    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={10} height={10} /></Link>
@@ -71,7 +77,12 @@ export default function Header() {
                    
  
             </div>
-
+            <div class="container-bar" onclick="myFunction(this)">
+               
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
             
          
       </div>
@@ -79,3 +90,8 @@ export default function Header() {
    
   );
 }
+
+
+
+
+
