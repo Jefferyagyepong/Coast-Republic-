@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import ProductCard from '../components/ProductCard';
+import ProductCard from './ProductCard';
 import styles from '/styles/ShopPage.module.css';
 import { getProductsByCategory } from '../api/products/[category]';
 
