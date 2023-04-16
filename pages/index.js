@@ -44,10 +44,9 @@ export default function Home() {
       <div className={styles.small}>
         <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
             <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
-                 <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
-            <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
-                 <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
-        <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
+            <CategoryCard image="/cr01.svg" name="Black Coast" />
+                   <CategoryCard image="/cr02.svg" name="off Coast" />
+     
       </div>
   
     

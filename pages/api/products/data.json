@@ -4,13 +4,27 @@
     "product": "Azumah Nelson T-shirt White",
     "category": "t-shirt",
     "image": "/azumah-white.svg",
-    "price": 180.99
+    "price": 280.99
   },
     {
     "id": 2,
     "product": "Azumah Nelson T-shirt Black",
     "category": "t-shirt",
     "image": "/azumah-black.svg",
+    "price": 280.99
+  },
+    {
+    "id": 3,
+    "product": "Black Coast",
+    "category": "t-shirt",
+    "image": "/cr01.svg",
+    "price": 180.99
+  },
+   {
+    "id": 4,
+    "product": "Off Coast",
+    "category": "t-shirt",
+    "image": "/cr02.svg",
     "price": 180.99
   }
   

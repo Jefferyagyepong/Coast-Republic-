@@ -10,27 +10,63 @@ export default function Show (){
   
 
       <div class="slides">
-        <div id="slide-1">
-                    <h2>&#8373;100</h2>      
-                    <Image src='/azumah-black.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" />
-       <a href="#">Buy Now</a>             
+          <div id="slide-1">
+            <div>
+                <h2>Black Coast</h2>
+                    <h6>&#8373;150</h6> 
+            </div>
+               
+                    <Image src='/cr01.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" />
+        
+         
+      <div class="wrapper six">
+        <div>
+            <h6 class="flicker">Curated for the community</h6>
+        </div>
+            </div>  
+       <button type="">Buy Now</button>           
 </div>
           
-        <div id="slide-2">
-      <h2>&#8373;100</h2>      
+          <div id="slide-2">
+            <div>
+                 <h2>Azumah Nelson white</h2>
+      <h6>&#8373;200</h6> 
+            </div>
+                
                     <Image src='/azumah-white.svg' width={300} height={300}  alt="Azumah Nelson T-shirt white"/>
-       <a href="#">Buy Now</a>  
+      <div class="wrapper six">
+        <div>
+            <h6 class="flicker">Celebrating Ghanaian legends </h6>
+        </div>
+            </div> 
+             <button type="">Buy Now</button>    
         </div>
         <div id="slide-3">
-       <h2> &#8373;100</h2>      
-                    <Image src='/CRFront.svg' width={300} height={300} alt="Coast-Republic T-shirt Front"/>
-       <a href="#">Buy Now</a>  
+        <div>
+                 <h2>Azumah Nelson Black</h2>
+      <h6>&#8373;200</h6> 
+            </div>   
+                    <Image src='/azumah-black.svg' width={300} height={300} alt="Coast-Republic T-shirt Front"/>
+        <div class="wrapper six">
+        <div>
+            <h6 class="flicker">Celebrating Ghanaian legends </h6>
+        </div>
+            </div> 
+               <button type="">Buy Now</button>  
 </div> 
     
         <div id="slide-4">
-         <h2> &#8373;100</h2>      
-                    <Image src='/nkrumah.svg' width={300} height={300} alt="Kwame Nkrumah T-shirt Ghana Independence"/>
-       <a href="#">Buy Now</a>  
+          <div>
+                <h6>Off Coast</h6>
+                    <h2>&#8373;150</h2> 
+            </div>    
+            <Image src='/cr02.svg' width={300} height={300} alt="" />
+              <div class="wrapper six">
+        <div>
+            <h6 class="flicker">Celebrating Ghanaian legends </h6>
+        </div>
+            </div> 
+          <button type="">Buy Now</button>  
         </div>
         <div id="slide-5">
        <h2> &#8373;100</h2>      

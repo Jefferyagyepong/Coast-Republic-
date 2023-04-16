@@ -12,98 +12,136 @@ export default function Footer() {
 
     return (
      
-      <footer className="">
-        
-        <div className="col">
 
-          <div className="same">
-               <h4>Contact</h4>
-        <p    className="icon"><strong>Address: </strong> 10th Ave, McCarthy Hill, Accra</p>
-        <p    className="icon"><strong>Phone: </strong> +233 244736420</p>
-        <p    className="icon"><strong>Hours: </strong> 8:00 -18:00, Mon - sat</p>
-          </div>
-       
-     
+    <footer>
+      <div className="footer-category">
+       <div className="footer-nav">
+        <div className="container">
+          <ul className="footer-nav-list">
+            <li className="footer-nav-item">
+              <h2 className="nav-title">About</h2>
+                </li>
+                <li className="footer-nav-item">
+       <Link href="#" className="footer-nav-link"> Company</Link>
+            </li>
 
-       
-    
-      <div class="same">
-        <h4>Sign up for Newsletters</h4>
-        <p>
+            <li className="footer-nav-item">
+   <Link href="/delivery"  className="footer-nav-link"> Delivery</Link>
+            </li>
+
+            <li className="footer-nav-item">
+                  
+        <Link href="/privacy" className="footer-nav-link" > Privacy Policy</Link>
+            </li>
+
+            <li className="footer-nav-item">
+                <Link href="/terms"  className="footer-nav-link"> Terms & conditions</Link>
+            </li>
+
+                   <li classNamw="footer-nav-item">
+    <Link href="/contact"  className="footer-nav-link"> Contact Us</Link>
+            </li>
+          
+          </ul>
+     <ul className="footer-nav-list">
+            <li clasName="footer-nav-item">
+              <h2 className="nav-title">Follow us</h2>
+            </li>
+
+            <li className="footer-nav-item">
+                   <Link
+              href="https://twitter.com/coastrepublic"
+           className="icon"
+              target="_blank"
+            ><FontAwesomeIcon icon={faTwitter} width={10} height={10}/></Link>
+            </li>
+
+            <li className="footer-nav-item">
+         <Link
+              href="support@coastrepublic.com"
+            className="icon"
+              target="_blank"
+            ><FontAwesomeIcon icon={faEnvelope} width={10} height={10}/></Link>
+            </li>
+
+            <li className="footer-nav-item">
+            <Link
+              href="https://www.youtube.com/coastrepublic"
+               className="icon"
+              target="_blank"
+            ><FontAwesomeIcon icon={faYoutube} width={10} height={10}/></Link>
+            </li>
+
+            <li className="footer-nav-item">
+           
+            <Link
+              href="https://www.instagram.com/coastrepublic/"
+        className="icon"
+              target="_blank"
+            ><FontAwesomeIcon icon={faInstagram} width={10} height={10}/></Link>
+            </li>
+                </ul>
+              
+          <ul className="footer-nav-list">
+            <li className="footer-nav-item">
+              <h2 className="nav-title">Contact</h2>
+            </li>
+
+            <li className="footer-nav-item flex">
+              <div className="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <address className="content">   
+                10th Avenue Mccarthy Hill, Greater Accra, GH
+              </address>
+            </li>
+            <li className="footer-nav-item flex">
+              <div className="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <a href="tel:+233244736420" className="footer-nav-link"
+                >(233) 244736420</a
+              >
+            </li>
+
+            <li className="footer-nav-item flex">
+              <div className="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <a href="mailto:example@gmail.com" class="footer-nav-link"
+                >Support@coastrepublic.com</a
+              >
+            </li>
+              </ul>
+              <form className="footer-form">
+                
+        <p className="form-info">
           Get e-mail updates, our latest collection  and Gift promotion
       
             </p>
             
                 <input type="email" placeholder="enter e-mail address" className="newsletter-mail" required/>
         <button id="newsletter">Sign Up</button>
-      </div>
-     
-    
-
-
-      <div className="same">
-        <h4>About</h4>
-        <Link href="/#" className="footer-nav"> Company</Link>
-        <Link href="/shipping.html"  className="footer-nav"> Delivery</Link>
-        <Link href="/privacy.html"  className="footer-nav"> Privacy Policy</Link>
-        <Link href="/terms.html"  className="footer-nav"> Terms & conditions</Link>
-        <Link href="/contact.html"  className="footer-nav"> Contact Us</Link>
+              </form>
+  </div>
       </div>
 
-             <div className="same">
-          <h4>Payment methods available</h4>
-          <div className="icon">
-            <Link
-              href=""
-           className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faCcVisa} width={17} height={17}/></Link>
-            <Link
-              href=""
-            className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faCcMastercard} width={17} height={17}/></Link>
-            <Link
-              href=""
-               className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faCcPaypal} width={17} height={17}/></Link>
-          
-</div>
-       </div>   </div>
-      
-
-        <div className="coast">
-
-             <div className="follow">
-          <h4>Follow us</h4>
-          <div className="icon">
-            <Link
-              href="https://twitter.com/coastrepublic"
-           className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faTwitter} width={10} height={10}/></Link>
-            <Link
-              href="support@coastrepublic.com"
-            className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faEnvelope} width={10} height={10}/></Link>
-            <Link
-              href="https://www.youtube.com/coastrepublic"
-               className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faYoutube} width={10} height={10}/></Link>
-            <Link
-              href="https://www.instagram.com/coastrepublic/"
-        className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faInstagram} width={10} height={10}/></Link>
+         
+          <div class="footer-bottom">
+         
+            
+            <p class="copyright">
+                 <div>
+                 <FontAwesomeIcon icon={faCcVisa} width={15} height={15} className="paymment-icon" />
+            <FontAwesomeIcon icon={faCcMastercard} width={15} height={15}  className="paymment-icon" />
+            <FontAwesomeIcon icon={faCcPaypal} width={15} height={15}  className="paymment-icon" />
+            </div><br/>
+            Copyright Coast Republic all rights reserved {' '}   &copy;   {new Date().getFullYear()}
+          </p>
+  
           </div>
-        </div>
-        copyright   <p>Coast Republic {' '}   &copy;   {new Date().getFullYear()}</p>
-
-
-      </div>
+          </div>
     </footer>
    
    

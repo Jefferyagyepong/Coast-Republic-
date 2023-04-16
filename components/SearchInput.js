@@ -4,7 +4,7 @@ export default function SearchInput() {
     <div className="searchInput">
       <input type="text"  placeholder="Search T-shirts..." className="input"/>
       <div className="input-logo">
-<Image src=' /Search.svg' width={10} height={10} alt=""/>
+<Image src=' /Search.svg' width={30} height={30} alt=""/>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const CategoryCard = ({ image, name }) => {
     <div className={styles.card}>
 
       <Image className={styles.image} src={image} height={250} width={200} alt='product image'/>
-      <Link href={`/category/${name.toLowerCase()}`}>
+      <Link href={`/shop`}>
         <div className={styles.info}>
           <h6>{name}</h6>
           <p>SHOP NOW</p>

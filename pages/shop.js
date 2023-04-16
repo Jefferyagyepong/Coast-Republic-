@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
-
+import Top from '../components/Top'
 import Header from '../components/Header'
-
 import Footer from '../components/Footer'
-
-
 import ProductCard from '../components/ProductCard';
 import styles from '../styles/ShopPage.module.css';
 import { getProducts } from './api/products/index';
@@ -16,7 +12,7 @@ const ShopPage = ({ products }) => {
   return (
     <>
          <Head>
-        <title>Home | Coast Republic</title>
+        <title>Shop | Coast Republic</title>
                 <link rel="apple-touch-icon" href=""/>
         <meta property="og:title" content="Home | Coast Republic" />
 <meta property="og:type" content="" />
@@ -34,7 +30,7 @@ const ShopPage = ({ products }) => {
 
 
       <main >
-      
+            <Top/>
         <Header />
      
      <div className={styles.container}>

@@ -13,18 +13,11 @@
 
 .slides {
   display: flex;
-
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background: salmon;
-
-  /*
-	  scroll-snap-points-x: repeat(300px);
-	  scroll-snap-type: mandatory;
-	  */
+  background: var(--sandy-brown);
 }
 
 .slides::-webkit-scrollbar {
@@ -86,5 +79,44 @@
 @supports (scroll-snap-type) {
   .slider > a {
     display: none;
+  }
+}
+.wrapper.six {
+  background-color: #222222;
+}
+.flicker {
+  font-size: 2rem;
+  font-family: "Merienda", sans-serif;
+  margin: 1rem auto;
+  color: #fffefe61;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#e6e6e6),
+      to(#1d1c1c),
+      color-stop(0.8, #ffffff)
+    )
+    no-repeat;
+  background: gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.8, #fff)
+    )
+    no-repeat;
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 1.5s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
   }
 }

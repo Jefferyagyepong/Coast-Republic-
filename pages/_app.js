@@ -10,6 +10,8 @@ import '../styles/_Text.css'
 import '../styles/_Top.scss'
 import '../styles/_Collection.scss'
 import '../styles/_Footer.css'
+import '../styles/_Delivery.css'
+import '../styles/_Contact.css'
 import store from '../redux/store';  
   import { Provider } from 'react-redux'; 
 
@@ -21,6 +23,9 @@ import store from '../redux/store';
 
 export default function App({ Component, pageProps }) {
 
-  return   <Provider store={store}><Component {...pageProps} /> </Provider>
+  return <Provider store={store}>
+    
+  <Component {...pageProps} />
+  </Provider>
 }
 

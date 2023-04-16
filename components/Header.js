@@ -48,9 +48,9 @@ export default function Header() {
          <ul className="desktop">
  
                 <li className=""><Link href='/shop' className="salmon">Shop</Link></li>
-                <li className=""><Link href='/shop' className="salmon">Delivery</Link></li>
-                <li className=""><Link href='/shop' className="salmon">Contact Us</Link></li>
-                   <li className=""><Link href='/shop' className="salmon">About Us</Link></li>
+                <li className=""><Link href='/delivery' className="salmon">Delivery</Link></li>
+                <li className=""><Link href='/contact' className="salmon">Contact Us</Link></li>
+                   <li className=""><Link href='#' className="salmon">About Us</Link></li>
             </ul>
      
          
@@ -71,9 +71,13 @@ export default function Header() {
 
                    <section class="top-nav">
    
-    <input id="menu-toggle" type="checkbox" />
+                    <input id="menu-toggle" type="checkbox" />
+                 
     <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
+                        <div class='menu-button'></div>
+                    
+                         
+                    
   </label>
     <ul class="menu">
                    <li className=""><a href="#"  className="salmon-mobile">T-shirts</a></li>

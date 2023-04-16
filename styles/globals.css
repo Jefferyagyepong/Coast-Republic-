@@ -11,19 +11,18 @@
 
 ::-webkit-scrollbar {
   height: 6px;
-  /* height of horizontal scrollbar ← You're missing this */
   width: 4px;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #000;
 }
 
 ::-webkit-scrollbar-track {
   border-radius: 0;
-  background: #c5cae921;
+  background: #222;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
-  background: #2196f3;
+  background: #fff;
 }
 
 html {
