@@ -89,7 +89,7 @@ export default function Footer() {
 
             <li className="footer-nav-item flex">
               <div className="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
+        
               </div>
               <address className="content">   
                 10th Avenue Mccarthy Hill, Greater Accra, GH
@@ -97,7 +97,7 @@ export default function Footer() {
             </li>
             <li className="footer-nav-item flex">
               <div className="icon-box">
-                <ion-icon name="call-outline"></ion-icon>
+            
               </div>
               <a href="tel:+233244736420" className="footer-nav-link"
                 >(233) 244736420</a
@@ -106,7 +106,7 @@ export default function Footer() {
 
             <li className="footer-nav-item flex">
               <div className="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
+             
               </div>
 
               <a href="mailto:example@gmail.com" class="footer-nav-link"
@@ -128,10 +128,10 @@ export default function Footer() {
       </div>
 
          
-          <div class="footer-bottom">
+          <div className="footer-bottom">
          
             
-            <p class="copyright">
+            <p className="copyright">
                  <div>
                  <FontAwesomeIcon icon={faCcVisa} width={15} height={15} className="paymment-icon" />
             <FontAwesomeIcon icon={faCcMastercard} width={15} height={15}  className="paymment-icon" />
