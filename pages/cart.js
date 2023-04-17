@@ -38,6 +38,7 @@ const CartPage = () => {
             <div>Total Price</div>
           </div>
           {cart.map((item) => (
+            // eslint-disable-next-line react/jsx-key
             <div className={styles.body}>
               <div className={styles.image}>
                 <Image src={item.image} height="90" width="65" alt='' />
