@@ -5,7 +5,7 @@ export default function Terms (){
     return (
      
  
-    <div class="terms-wrap">
+    <div className="terms-wrap">
       <h2>TERMS OF SERVICE</h2>
 
       <h3>Overview</h3>

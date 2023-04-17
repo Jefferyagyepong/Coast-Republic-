@@ -1,13 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Top from '../components/Top'
-
 import Header from '../components/Header'
 import Terms from '../components/Terms'
-
 import Footer from '../components/Footer'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function terms() {
@@ -15,7 +11,7 @@ export default function terms() {
   return (
     <>
       <Head>
-        <title>Delivery | Coast Republic</title>
+        <title>Terms| Coast Republic</title>
                 <link rel="apple-touch-icon" href=""/>
         <meta property="og:title" content="Home | Coast Republic" />
 <meta property="og:type" content="" />

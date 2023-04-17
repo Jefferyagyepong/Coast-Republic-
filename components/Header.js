@@ -5,6 +5,7 @@ import Image from "next/image";
 import { faInstagram, faPinterest, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import SearchInput from "./SearchInput";
 import Navbar from "./Navbar";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -30,56 +31,44 @@ export default function Header() {
              <Image src='/crlogo.svg' width={80} height={50} alt="Coast-Republic logo" /> 
             </Link> 
            
-           
-             
-           
-                         
                 <form action="" className="search-form">
                
-  <SearchInput/>
+                   <SearchInput/>
         
-        </form>
-            
-       
-         
-       
-           
+                      </form>
+     
             
          <ul className="desktop">
  
                 <li className=""><Link href='/shop' className="salmon">Shop</Link></li>
                 <li className=""><Link href='/delivery' className="salmon">Delivery</Link></li>
                 <li className=""><Link href='/contact' className="salmon">Contact Us</Link></li>
-                   <li className=""><Link href='#' className="salmon">About Us</Link></li>
+                <li className=""><Link href='#' className="salmon">About Us</Link></li>
             </ul>
-     
-         
-      
-      
-      
+
             <div className="cart-wrapper">
           <Navbar/>
        
    
                 <div className="socials">
-                    <Link href=''    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={10} height={10} /></Link>
-                    <Link href=''   className="icon-black">  <FontAwesomeIcon icon={faInstagram} width={10} height={10} /></Link>
-                    <Link href=''  className="icon-black"> <FontAwesomeIcon icon={faPinterest} width={10} height={10}   /></Link>
-                    <Link href=''   className="icon-black"> <FontAwesomeIcon icon={faYoutube} width={10} height={10} /></Link>
+                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={10} height={10} /></Link>
+                    <Link href='https://www.instagram.com/coastrepublic/'   className="icon-black">  <FontAwesomeIcon icon={faInstagram} width={10} height={10} /></Link>
+                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} width={10} height={10}   /></Link>
+                    <Link href='https://www.youtube.com/coastrepublic'   className="icon-black"> <FontAwesomeIcon icon={faYoutube} width={10} height={10} /></Link>
                          
                 </div>
 
-                   <section class="top-nav">
+                   <section className="top-nav">
    
                     <input id="menu-toggle" type="checkbox" />
                  
-    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
+    <label className='menu-button-container' htmlFor="menu-toggle">
+                        <div className='menu-button'></div>
                     
                          
                     
   </label>
-    <ul class="menu">
+    <ul className="menu">
                    <li className=""><a href="#"  className="salmon-mobile">T-shirts</a></li>
                 <li className=""><a href="# "  className="salmon-mobile">Delivery</a></li>
                 <li className=""><a href="#"  className="salmon-mobile">Contact Us</a></li>

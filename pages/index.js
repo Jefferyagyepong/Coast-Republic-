@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Top from '../components/Top'
 import Text from '../components/Text'        
@@ -10,7 +9,6 @@ import Header from '../components/Header'
 import Collection from '../components/Collection'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css';
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Coast Republic</title>
+        <title>Coast Republic</title>
                 <link rel="apple-touch-icon" href=""/>
         <meta property="og:title" content="Home | Coast Republic" />
 <meta property="og:type" content="" />

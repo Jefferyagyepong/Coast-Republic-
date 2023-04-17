@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Top from '../components/Top'
 import Header from '../components/Header'
@@ -26,21 +25,19 @@ const ShopPage = ({ products }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    
-
-
+  
       <main >
             <Top/>
         <Header />
      
-     <div className={styles.container}>
-      <h1 className={styles.title}>All Results</h1>
-      <div className={styles.cards}>
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-    </div>
+             <div className={styles.container}>
+                 <h1 className={styles.title}>All Results</h1>
+                      <div className={styles.cards}>
+                       {products.map((product) => (
+                 <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+                </div>
    
    
         <Footer/>
