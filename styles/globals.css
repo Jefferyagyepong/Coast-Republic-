@@ -174,3 +174,7 @@ input::placeholder {
 
   --transition-timing: 0.2s ease;
 }
+p{
+
+  line-height: 1.5;
+}
