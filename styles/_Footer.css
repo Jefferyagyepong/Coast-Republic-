@@ -18,6 +18,12 @@ ul {
   padding: 70px 0;
   color: #bbbbbb;
 }
+#newsletter{
+  background-color: #bbbbbb;
+  color: #000;
+margin-top: 1.5rem;
+padding: .5rem 1rem;
+}
 .white{
   color: #bbbbbb;
 }
