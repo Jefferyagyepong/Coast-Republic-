@@ -33,7 +33,7 @@ export default function Footer() {
                 <ul>
                   <li></li>
                        <li>            <Link
-              href="https://twitter.com/coastrepublic"
+              href="https://twitter.com/coastrepublicgh"
            className="icon"
               target="_blank"
             ><FontAwesomeIcon icon={faTwitter} width={10} height={10}/></Link></li>
@@ -49,7 +49,7 @@ export default function Footer() {
               target="_blank"
             ><FontAwesomeIcon icon={faYoutube} width={10} height={10}/></Link></li>
                   <li> <Link
-              href="https://www.instagram.com/coastrepublic/"
+              href="https://www.instagram.com/coast_republic/"
         className="icon"
               target="_blank"
             ><FontAwesomeIcon icon={faInstagram} width={10} height={10}/></Link></li>
