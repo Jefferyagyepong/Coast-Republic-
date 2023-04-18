@@ -21,7 +21,6 @@
 }
 
 .input-logo {
-  background-color: $color-ascent;
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -30,7 +29,10 @@
 .menu-name {
   color: black;
 }
-
+.salmon-mobile{
+  color: white;
+  transition: 0.3s ease;
+}
 .cart-wrapper {
   display: flex;
   flex-direction: row;

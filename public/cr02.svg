@@ -1,29 +1,874 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg width="1122.5" height="793.7" version="1.1" viewBox="0 0 297 210" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <filter id="filter8826" x="-.00095883" y="-.00099308" width="1.0019" height="1.003" color-interpolation-filters="sRGB">
-   <feTurbulence baseFrequency="1" numOctaves="3" result="result1" seed="50" type="fractalNoise"/>
-   <feColorMatrix in="SourceGraphic" result="result0" type="luminanceToAlpha"/>
-   <feColorMatrix result="result2" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.7 0 "/>
-   <feComposite in="result1" in2="result2" result="result3"/>
-   <feColorMatrix result="result91" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -3.2 "/>
-   <feComposite in="SourceGraphic" in2="result91" operator="out" result="result4"/>
-  </filter>
- </defs>
- <path d="m58.37 208.69 0.72083-119.19-33.158-2.5911-23.067-42.104 112.95-43.756c18.177 6.5 36.352 5.2415 54.529 0.47118l124.47 45.228-23.788 40.161-30.995 2.5911v119.19h-181.65" fill="#dee3db" stroke="#000" stroke-width=".00051079"/>
- <g transform="matrix(1.0582 0 0 .95092 -8.6664 -7.6667)" fill="#ececec" fill-opacity="0" filter="url(#filter8826)" stroke="#bec8b7" stroke-width=".16695">
-  <path d="m111.68 26.752c20.315 42.258 40.63 36.086 60.945 0.49549"/>
-  <path d="m111.68 26.752-6.9144-11.976"/>
-  <path d="m172.63 27.248 7.5308-13.044"/>
- </g>
- <g transform="matrix(1.0582 0 0 .95092 -8.6664 -7.6667)" fill="#dee3db" stroke="#bec8b7" stroke-width=".18789">
-  <path d="m118.12 16.347c17.177 50.209 34.354 31.221 51.531 0.49549"/>
-  <path d="m118.12 16.347-0.49548-7.1845"/>
-  <path d="m169.65 16.843-0.49549-7.1845"/>
- </g>
- <g transform="matrix(.74892 0 0 .74892 47.682 -38.774)" fill="#48373e" stroke="#241c1f">
-  <path d="m148.48 144.05c-9.3098 0-17.925 1.1055-25.846 3.3134v11.071c7.5097-3.2353 15.81-4.8551 24.902-4.8551 5.4027 0 10.786 0.54733 16.148 1.6413-0.73288-2.9868-2.1612-5.5133-4.3466-7.7402a3.0039 3.0039 0 0 1-0.0219-0.0203c-1.246-1.2955-2.6187-2.3488-4.1255-3.1958-2.211-0.13709-4.4454-0.21375-6.7093-0.21375zm30.507 4.6085c0.79596 3.2802 1.2056 6.8395 1.2056 10.658 0 0.35402-0.0231 0.6924-0.0293 1.0422 4.3921 1.8661 8.3802 3.9824 11.957 6.3541v-13.006c-4.3283-1.9847-8.706-3.6675-13.133-5.0489zm-72.534 5.2752c-2.929 1.616-5.7351 3.4272-8.4146 5.4397-13.35 10.13-20.026 22.535-20.026 37.213 0 15.109 7.1786 27.685 21.537 37.728 2.2387 1.5691 4.5409 3.0032 6.9036 4.3091v-15.49c-8.378-7.7298-12.571-16.75-12.571-27.064 0-5.6658 1.2596-10.988 3.7784-15.967 2.0978-3.9491 5.0309-7.6543 8.7925-11.118zm85.666 72.656c-7.6827 4.0347-15.24 7.0394-22.67 9.0137-7.3049 1.8886-14.484 2.8328-21.537 2.8328-9.2994 0-17.726-1.6043-25.28-4.8101v11.624c7.3729 2.0672 15.233 3.1012 23.579 3.1012 13.728 0 29.03-3.09 45.907-9.2709z" stroke-width=".81235"/>
-  <path d="m109.46 127.5v128.58h10.173v-59.205h14.937c7.7261 0 13.263 1.9683 16.611 5.9043 3.863 4.1547 7.5543 12.956 11.074 26.405l1.2752 5.122c1.7472-0.34127 3.5029-0.73625 5.2689-1.1927 1.5077-0.40076 3.0228-0.84972 4.544-1.3392l-5.8086-19.975c-1.7169-6.3415-4.0779-11.152-7.0825-14.433-0.68676-0.87468-1.5879-1.6399-2.7039-2.2959-1.116-0.76534-2.4038-1.5309-3.8632-2.2963 8.1553-3.1707 14.079-7.4348 17.77-12.792 3.6913-5.3574 5.537-12.246 5.537-20.665 0-12.246-4.0777-20.993-12.233-26.241-5.8375-3.7174-13.22-5.5761-22.148-5.5761zm10.173 11.316h25.11c6.9535 0 12.534 2.1867 16.74 6.5601 3.863 3.936 5.7945 8.9108 5.7945 14.925 0 3.1708-0.60124 6.2869-1.8031 9.3482-1.116 3.0614-2.5752 5.6308-4.3779 7.7082-2.6612 3.28-6.1377 5.6855-10.43 7.2162-4.2064 1.4214-9.4 2.1321-15.581 2.1321h-15.453zm57.964 107.59c-3.5563 0.95499-7.042 1.7628-10.454 2.4155l1.8078 7.2611h11.461z" stroke-width=".75688"/>
- </g>
+
+<svg
+   width="1122.5197"
+   height="793.70081"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="coastwhite116.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.39108446"
+     inkscape:cx="520.34796"
+     inkscape:cy="556.14586"
+     inkscape:window-width="1280"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <font
+       id="font5421"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face824" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph826" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph828" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph830" />
+    </font>
+    <font
+       id="font5421-0"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face833" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph835" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph837" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph839" />
+    </font>
+    <font
+       id="font5421-4"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face842" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph844" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph846" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph848" />
+    </font>
+    <font
+       id="font5421-48"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face851" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph853" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph855" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph857" />
+    </font>
+    <font
+       id="font5421-0-01"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face860" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph862" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph864" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph866" />
+    </font>
+    <font
+       id="font5421-4-7"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face869" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph871" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph873" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph875" />
+    </font>
+    <font
+       id="font5421-6"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face878" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph880" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph882" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph884" />
+    </font>
+    <font
+       id="font5421-0-0"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face887" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph889" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph891" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph893" />
+    </font>
+    <font
+       id="font5421-4-8"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face896" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph898" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph900" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph902" />
+    </font>
+    <font
+       id="font5421-3"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face905" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph907" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph909" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph911" />
+    </font>
+    <font
+       id="font5421-0-3"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face914" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph916" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph918" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph920" />
+    </font>
+    <font
+       id="font5421-4-3"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face923" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph925" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph927" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph929" />
+    </font>
+    <font
+       id="font5421-5"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face932" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph934" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph936" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph938" />
+    </font>
+    <font
+       id="font5421-0-1"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face941" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph943" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph945" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph947" />
+    </font>
+    <font
+       id="font5421-4-9"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face950" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph952" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph954" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph956" />
+    </font>
+    <font
+       id="font5421-6-4"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face959" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph961" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph963" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph965" />
+    </font>
+    <font
+       id="font5421-0-0-3"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face968" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph970" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph972" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph974" />
+    </font>
+    <font
+       id="font5421-4-8-4"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face977" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph979" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph981" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph983" />
+    </font>
+    <font
+       id="font5421-3-1"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face986" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph988" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph990" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph992" />
+    </font>
+    <font
+       id="font5421-0-3-5"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face995" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph997" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph999" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph1001" />
+    </font>
+    <font
+       id="font5421-4-3-3"
+       horiz-adv-x="1024"
+       horiz-origin-x="144"
+       horiz-origin-y="32"
+       vert-adv-y="1024"
+       vert-origin-x="512"
+       vert-origin-y="768">
+      <font-face
+         font-family="SVGFont 1"
+         ascent="16"
+         cap-height="144"
+         descent="32"
+         units-per-em="1040"
+         id="font-face1004" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph1006" />
+      <glyph
+         glyph-name="glyph 1"
+         id="glyph1008" />
+      <glyph
+         glyph-name="glyph 2"
+         id="glyph1010" />
+    </font>
+    <filter
+       inkscape:label="Peel Off"
+       inkscape:menu="Materials"
+       inkscape:menu-tooltip="Peeling painting on a wall"
+       height="1.0812106"
+       width="1.0562817"
+       y="-0.040605341"
+       x="-0.028140814"
+       style="color-interpolation-filters:sRGB;"
+       id="filter1838">
+      <feTurbulence
+         type="fractalNoise"
+         numOctaves="3"
+         baseFrequency="0.07"
+         result="result1"
+         id="feTurbulence1810" />
+      <feGaussianBlur
+         stdDeviation="3"
+         in="SourceAlpha"
+         id="feGaussianBlur1812" />
+      <feComposite
+         in2="result1"
+         operator="in"
+         id="feComposite1814" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -9"
+         result="result1"
+         id="feColorMatrix1816" />
+      <feComposite
+         in="SourceGraphic"
+         operator="in"
+         result="result1"
+         in2="result1"
+         id="feComposite1818" />
+      <feTurbulence
+         baseFrequency="0.04"
+         numOctaves="5"
+         result="result0"
+         type="fractalNoise"
+         id="feTurbulence1820" />
+      <feDisplacementMap
+         in2="result0"
+         in="result1"
+         xChannelSelector="R"
+         yChannelSelector="G"
+         scale="35"
+         result="result2"
+         id="feDisplacementMap1822" />
+      <feColorMatrix
+         result="result3"
+         values="4 0 0 0 0 0 1 0 0 0 0 0 2 0 0 0 0 0 0.7 0 "
+         id="feColorMatrix1824" />
+      <feGaussianBlur
+         stdDeviation="0.3"
+         in="result1"
+         result="result4"
+         id="feGaussianBlur1826" />
+      <feComposite
+         in2="result3"
+         in="result4"
+         result="fbSourceGraphic"
+         operator="xor"
+         id="feComposite1828" />
+      <feDiffuseLighting
+         in="fbSourceGraphic"
+         diffuseConstant="2"
+         result="result3"
+         surfaceScale="5"
+         id="feDiffuseLighting1832">
+        <feDistantLight
+           azimuth="225"
+           elevation="25"
+           id="feDistantLight1830" />
+      </feDiffuseLighting>
+      <feBlend
+         in2="fbSourceGraphic"
+         in="result3"
+         mode="darken"
+         result="result7"
+         id="feBlend1834" />
+      <feComposite
+         in2="fbSourceGraphic"
+         operator="in"
+         in="result7"
+         id="feComposite1836" />
+    </filter>
+    <filter
+       inkscape:label="Pixellize"
+       inkscape:menu="Pixel Tools"
+       inkscape:menu-tooltip="Reduce or remove antialiasing around shapes"
+       style="color-interpolation-filters:sRGB;"
+       id="filter1958"
+       x="-1.2451773e-06"
+       y="-1.3124705e-06"
+       width="1.0000025"
+       height="1.0000026">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1000 -500 "
+         id="feColorMatrix1956" />
+    </filter>
+    <filter
+       inkscape:label="Age"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Imitate aged photograph"
+       style="color-interpolation-filters:sRGB;"
+       id="filter2957"
+       x="-0.0085283872"
+       y="-0.012305564"
+       width="1.0170568"
+       height="1.0246111">
+      <feColorMatrix
+         type="saturate"
+         in="SourceGraphic"
+         values="0"
+         id="feColorMatrix2945" />
+      <feColorMatrix
+         values="3 0 0 0 -0.3 0 3 0 0 -0.3 0 0 3 0 -0.3 0 0 0 1 0"
+         result="result0"
+         id="feColorMatrix2947" />
+      <feTurbulence
+         baseFrequency="0.111"
+         numOctaves="2"
+         type="fractalNoise"
+         id="feTurbulence2949" />
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 -200"
+         id="feColorMatrix2951" />
+      <feGaussianBlur
+         stdDeviation="1"
+         id="feGaussianBlur2953" />
+      <feComposite
+         in2="result0"
+         operator="atop"
+         id="feComposite2955" />
+    </filter>
+    <filter
+       inkscape:label="Film Grain"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Adds a small scale graininess"
+       style="color-interpolation-filters:sRGB;"
+       id="filter3217"
+       x="-1.2451773e-06"
+       y="-1.3124705e-06"
+       width="1.0000025"
+       height="1.0000026">
+      <feTurbulence
+         type="fractalNoise"
+         numOctaves="3"
+         baseFrequency="1"
+         seed="0"
+         result="result0"
+         id="feTurbulence3207" />
+      <feColorMatrix
+         result="result4"
+         values="0"
+         type="saturate"
+         id="feColorMatrix3209" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result4"
+         operator="arithmetic"
+         k1="1.25"
+         k2="0.5"
+         k3="0.5"
+         result="result2"
+         id="feComposite3211" />
+      <feBlend
+         result="result5"
+         mode="normal"
+         in="result2"
+         in2="SourceGraphic"
+         id="feBlend3213" />
+      <feComposite
+         in="result5"
+         in2="SourceGraphic"
+         operator="in"
+         result="result3"
+         id="feComposite3215" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5943">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 120.42369,346.38724 -4.05923,-18.94306 -3.38268,-15.56036 2.70615,-8.79499 8.79498,-10.8246 17.58998,-19.61957 -3.38269,-12.17769 -3.38268,-1.35308 -4.05923,-8.79499 v 0 l 4.05923,-4.05922 2.02961,-18.26652 8.11845,-6.76537 12.85421,-3.38269 12.17768,3.38269 8.79499,9.47153 3.38269,13.53074 -2.02962,12.85422 0.67654,8.11844 6.08884,2.70616 11.50114,-9.47152 12.85421,-2.02962 6.76538,8.11845 11.50114,16.91346 9.47152,14.88382 v 8.11844 l 8.79499,8.79499 1.35307,14.20728 1.35308,6.08886 -6.08884,9.47152 -8.79499,-4.05923 -10.14806,-7.44191 -6.76538,-6.76537 -3.38268,-4.05924 5.4123,27.73804 z"
+         id="path5945" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath14130">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -18.943052,347.06378 9.4715261,-11.50112 -5.4123011,-6.7654 21.6492025,-12.17766 10.8246015,0.67654 16.236902,-11.50115 13.530752,-6.08883 16.913439,-18.26651 v -14.20731 l 10.148065,-3.38268 2.70615,-16.91345 8.794988,-2.70615 10.148065,16.91345 -2.706153,7.44191 4.735764,12.17769 0.676537,8.79499 -6.088838,4.05921 v 0 l 18.266512,26.38496 0.99267,68.19802 H -17.229572 Z"
+         id="path14132" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="M 60.182353,201.72272 60.877267,90.062618 28.910096,87.635256 6.6724339,48.189975 115.56479,7.1974338 c 17.52293,6.0894192 39.81079,5.2080722 59.29117,-0.5285901 L 288.12664,50.010813 265.19379,87.635909 235.3122,90.063271 V 201.72338 H 60.189548"
+       fill="#222222"
+       stroke="#000000"
+       stroke-width="0.000485432"
+       id="path1015"
+       style="fill:#f5f5f5;fill-opacity:0.96078432;stroke:#1b1b1b;stroke-opacity:0.96078432" />
+    <path
+       d="m 115.56479,7.1974348 c 19.10555,27.9368172 38.7365,33.4471812 59.29117,-0.5285911"
+       fill="#1a1a1a"
+       stroke="#333333"
+       stroke-width="2.05088"
+       id="path1017"
+       style="fill:#f5f5f5;fill-opacity:0.96078432;stroke:#f2f2f2;stroke-opacity:1;stroke-width:4.16745209;stroke-miterlimit:4;stroke-dasharray:none" />
+    <circle
+       id="path5859"
+       style="fill:#000000;stroke:none;stroke-width:0.264583"
+       cx="120.42369"
+       cy="347.06375"
+       r="0.39687499" />
+    <g
+       id="g14001"
+       transform="matrix(0.16898182,0,0,0.16898182,120.62943,129.43622)"
+       style="fill:#666666;stroke:#e6e6e6">
+      <path
+         d="m 130.89197,221.17703 c -9.30984,0 -17.92469,1.10548 -25.84555,3.31344 v 11.0708 c 7.50967,-3.23534 15.80972,-4.85511 24.90157,-4.85511 5.4027,0 10.78581,0.54733 16.14771,1.64127 -0.73287,-2.98685 -2.16116,-5.5133 -4.34662,-7.74016 a 3.0039473,3.0039473 0 0 1 -0.0219,-0.0203 c -1.24598,-1.29548 -2.61866,-2.34876 -4.12553,-3.19585 -2.21096,-0.13709 -4.44542,-0.21375 -6.70928,-0.21375 z m 30.50746,4.60852 c 0.79596,3.28024 1.20558,6.83948 1.20558,10.65781 0,0.35402 -0.0231,0.6924 -0.0293,1.04218 4.39213,1.86607 8.38016,3.98243 11.95679,6.35409 v -13.00577 c -4.32832,-1.98467 -8.70594,-3.66754 -13.13277,-5.04891 z m -72.533724,5.2752 c -2.928949,1.61598 -5.7351,3.42724 -8.414653,5.43971 -13.349766,10.12982 -20.025649,22.5346 -20.025649,37.21335 0,15.10873 7.178574,27.68451 21.536623,37.72833 2.238661,1.56908 4.54092,3.00315 6.903579,4.30913 v -15.48973 c -8.378053,-7.72976 -12.57078,-16.74971 -12.57078,-27.06353 0,-5.6658 1.259578,-10.9878 3.778434,-15.96672 2.097763,-3.94913 5.030912,-7.65426 8.792546,-11.1178 z m 85.666494,72.65573 c -7.68266,4.03473 -15.23973,7.03938 -22.6696,9.01374 -7.30487,1.88857 -14.48374,2.83275 -21.53662,2.83275 -9.29944,0 -17.72569,-1.60427 -25.27956,-4.81011 v 11.62379 c 7.37287,2.06717 15.23274,3.10125 23.57859,3.10125 13.72776,0 29.03049,-3.09005 45.90719,-9.27094 z"
+         stroke-width="0.812346"
+         id="path13895"
+         style="fill:#666666;stroke:#e6e6e6" />
+      <path
+         d="M 91.872653,204.62722 V 333.20496 H 102.04547 V 274 h 14.93674 c 7.72607,0 13.26277,1.96827 16.61071,5.9043 3.86303,4.15472 7.55427,12.95577 11.07381,26.40453 l 1.27518,5.12201 c 1.74716,-0.34127 3.50293,-0.73625 5.2689,-1.19267 1.50768,-0.40076 3.02275,-0.84972 4.54402,-1.33918 l -5.8086,-19.97465 c -1.71686,-6.34149 -4.07792,-11.15181 -7.08247,-14.43275 -0.68676,-0.87468 -1.58787,-1.63987 -2.70385,-2.29586 -1.11598,-0.76534 -2.40386,-1.53087 -3.86324,-2.29626 8.15526,-3.17074 14.07876,-7.43477 17.76969,-12.79177 3.69134,-5.35741 5.53701,-12.24579 5.53701,-20.66464 0,-12.24579 -4.07773,-20.99263 -12.23279,-26.24054 -5.8375,-3.71744 -13.21977,-5.5761 -22.14761,-5.5761 z m 10.172817,11.3158 h 25.10956 c 6.95348,0 12.53378,2.18666 16.73971,6.56008 3.86303,3.93603 5.7945,8.91085 5.7945,14.92474 0,3.17075 -0.60124,6.28689 -1.80307,9.34824 -1.11598,3.06144 -2.57515,5.6308 -4.37792,7.70816 -2.66116,3.28005 -6.13769,5.6855 -10.42982,7.21618 -4.20643,1.42137 -9.40003,2.13206 -15.58073,2.13206 h -15.45273 z m 57.96399,107.58811 c -3.55634,0.95499 -7.04198,1.76277 -10.45382,2.41546 l 1.80777,7.26107 h 11.4608 z"
+         stroke-width="0.756877"
+         id="path13897"
+         style="fill:#666666;stroke:#e6e6e6" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;line-height:1.25;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
+       x="90.233482"
+       y="77.846901"
+       id="text15630"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
+         x="90.233482"
+         y="77.846901"
+         id="tspan24250">keep what</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
+         x="90.233482"
+         y="112.99878"
+         id="tspan15632">  should</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
+         x="90.233482"
+         y="148.15065"
+         id="tspan15634">be   yours</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:0.353398;fill:#000000;fill-opacity:0.960784;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:15.751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.960784;paint-order:stroke markers fill"
+       id="path25178"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="524.18347"
+       sodipodi:cy="350.30798"
+       sodipodi:r1="7.2322669"
+       sodipodi:r2="3.3150976"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.4137167"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 529.29746,355.42197 -4.59539,-1.8397 -3.80198,3.16971 0.32961,-4.93897 -4.18945,-2.6364 4.79909,-1.21275 1.21276,-4.7991 2.63639,4.18945 4.93898,-0.32961 -3.16972,3.80198 z"
+       transform="scale(0.26458333)"
+       inkscape:transform-center-x="0.092504241"
+       inkscape:transform-center-y="-0.092503541" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.353398;fill:#000000;fill-opacity:0.960784;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:15.751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.960784;paint-order:stroke markers fill"
+       id="path25180"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="429.57474"
+       sodipodi:cy="498.61353"
+       sodipodi:r1="11.435218"
+       sodipodi:r2="5.2416296"
+       sodipodi:arg1="-2.0344439"
+       sodipodi:arg2="-1.4061254"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 424.46075,488.38556 5.97324,5.05724 7.28782,-2.85358 -2.9639,7.24366 4.96598,6.04932 -7.80502,-0.58042 -4.21868,6.59227 -1.85987,-7.60238 -7.57327,-1.97507 6.65556,-4.11811 z"
+       transform="scale(0.26458333)"
+       inkscape:transform-center-x="0.15326627"
+       inkscape:transform-center-y="0.13924245" />
+    <path
+       sodipodi:type="star"
+       style="opacity:0.353398;fill:#000000;fill-opacity:0.960784;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:15.751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.960784;paint-order:stroke markers fill"
+       id="path25182"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="710.84387"
+       sodipodi:cy="462.81564"
+       sodipodi:r1="15.553578"
+       sodipodi:r2="7.1293869"
+       sodipodi:arg1="-1.735945"
+       sodipodi:arg2="-1.1076265"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 708.28688,447.47369 5.7423,8.96371 10.6156,-0.79453 -6.75053,8.2312 4.03605,9.85051 -9.91436,-3.87655 -8.12119,6.88248 0.62312,-10.62704 -9.05522,-5.59691 10.29947,-2.69131 z"
+       transform="scale(0.26458333)"
+       inkscape:transform-center-x="0.20906448"
+       inkscape:transform-center-y="-0.188794" />
+  </g>
 </svg>

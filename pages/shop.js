@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Top from '../components/Top'
+import Check from '../components/Check'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ProductCard from '../components/ProductCard';
@@ -37,7 +38,8 @@ const ShopPage = ({ products }) => {
                  <ProductCard key={product.id} product={product} />
                 ))}
               </div>
-                </div>
+        </div>
+        <Check/>
    
    
         <Footer/>

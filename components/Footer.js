@@ -36,23 +36,23 @@ export default function Footer() {
               href="https://twitter.com/coastrepublicgh"
            className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faTwitter} width={10} height={10}/></Link></li>
+            ><FontAwesomeIcon icon={faTwitter} width={20} height={20} style={{color:"blue"}} /></Link></li>
                        <li>          <Link
               href="support@coastrepublic.com"
             className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faEnvelope} width={10} height={10}/></Link></li>
+            ><FontAwesomeIcon icon={faEnvelope} width={20} height={20}/></Link></li>
   
                        <li>  <Link
               href="https://www.youtube.com/coastrepublic"
                className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faYoutube} width={10} height={10}/></Link></li>
+            ><FontAwesomeIcon icon={faYoutube} width={20} height={20} style={{color:"red"}}/></Link></li>
                   <li> <Link
               href="https://www.instagram.com/coast_republic/"
         className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faInstagram} width={10} height={10}/></Link></li>
+            ><FontAwesomeIcon icon={faInstagram} width={20} height={20} style={{color:"orange"}}/></Link></li>
                 </ul>
                 
               </div>
@@ -61,7 +61,8 @@ export default function Footer() {
                    <address>   
                 10th Avenue Mccarthy Hill, Greater Accra, GH
               </address>
-                <Link  href="tel:+233244736420" className="white">(233) 244736420</Link><br/>
+              <br/>
+                <Link  href="tel:+233244736420" className="white">(233) 244736420</Link><br/><br/>
                    <Link  href="mailto:support@coastrepublic.com"  className="white">support@coastrepublic.com</Link>
               </div>
                 <form className="footer-form">
@@ -69,7 +70,8 @@ export default function Footer() {
             <p className="form-info">
           Get e-mail updates, our latest collection  and Gift promotion
       
-            </p>
+              </p>
+              <br/>
             
                 <input type="email" placeholder="enter e-mail address"  className="newsletter-mail" required/>
         <button id="newsletter">Sign Up</button>
@@ -79,10 +81,16 @@ export default function Footer() {
             
           </div>
         <div className="footer-bottom">
-           <div>
-                 <FontAwesomeIcon icon={faCcVisa} width={15} height={15} />
-            <FontAwesomeIcon icon={faCcMastercard} width={15} height={15}  />
-            <FontAwesomeIcon icon={faCcPaypal} width={15} height={15}   />
+          <div >
+            <ul>
+              <li> <FontAwesomeIcon className="payment" icon={faCcVisa} width={25} height={25}  style={{ color: "white" }}/></li>
+              <li> <FontAwesomeIcon className="payment" icon={faCcMastercard} width={25} height={25} style={{ color: "red" }}  /></li>
+              <li>                
+           
+            <FontAwesomeIcon className="payment" icon={faCcPaypal} width={25} height={25}  style={{color:"skyblue"}}  /></li>
+              
+            </ul>
+
             </div><br/>
             <p   className="copyright">
                 

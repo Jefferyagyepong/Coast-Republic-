@@ -7,6 +7,7 @@ import Integrity from '../components/Integrity'
 import Show from '../components/Show'
 import Header from '../components/Header'
 import Collection from '../components/Collection'
+import Tshirt from '../components/Tshirt'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css';
 const inter = Inter({ subsets: ['latin'] })
@@ -37,8 +38,9 @@ export default function Home() {
         <Collection/>
         <Show />
         <Integrity />
+    
         <div className={styles.container}>
-
+    <Tshirt/>
       <div className={styles.small}>
         <CategoryCard image="/azumah-black.svg" name="Azumah Nelson T-shirt Black" />
             <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />

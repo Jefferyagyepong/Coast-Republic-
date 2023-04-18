@@ -28,7 +28,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: "oswald", sans-serif;
   -ms-scroll-chaining: none;
   overscroll-behavior: contain;
 }

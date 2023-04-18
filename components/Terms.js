@@ -351,7 +351,7 @@ export default function Terms (){
 
       <p className="delivery-text">
         SECTION 20 - CONTACT INFORMATION Questions about the Terms of Service
-        should be sent to us at support@coastrepulic.io
+        should be sent to us at support@coastrepulic.com
       </p>
     </div>
 

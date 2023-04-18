@@ -9,7 +9,7 @@ export default function Privacy (){
       <h2>PRIVACY POLICY</h2>
 
       <p className="delivery-text">
-        This Privacy Policy describes how coastrepublic.io (the “Site” or “we”)
+        This Privacy Policy describes how coast republic  (the “Site” or “we”)
         collects, uses, and discloses your Personal Information when you visit
         or make a purchase from the Site.
       </p>
@@ -235,7 +235,7 @@ export default function Privacy (){
         authority. You can contact your local data protection authority, or our
         supervisory authority here: [Add contact information or website for the
         data protection authority in your jurisdiction. For example:
-        https://ico.org.uk/make-a-complaint/] Last updated: August 24, 2022
+        https://ico.org.uk/make-a-complaint/] Last updated: April 08, 2023
       </p>
     </div>
        

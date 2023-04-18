@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Show (){
@@ -12,8 +13,8 @@ export default function Show (){
       <div className="slides">
           <div id="slide-1">
             <div>
-                <h2>Black Coast</h2>
-                    <h6>&#8373;150</h6> 
+                <h6>Black Coast</h6>
+                    <h2>&#8373;150</h2> 
             </div>
                
                     <Image src='/cr01.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" priority />
@@ -24,13 +25,14 @@ export default function Show (){
             <h6 className="flicker">Curated for the community</h6>
         </div>
             </div>  
-       <button type="">Buy Now</button>           
+              <Link  href={"/shop"}><button type="" className="buy-now">Buy Now</button></Link>
+          
 </div>
           
           <div id="slide-2">
             <div>
-                 <h2>Azumah Nelson white</h2>
-      <h6>&#8373;200</h6> 
+                 <h6>Azumah Nelson white</h6>
+      <h2>&#8373;200</h2> 
             </div>
                 
                     <Image src='/azumah-white.svg' width={300} height={300}  alt="Azumah Nelson T-shirt white" priority/>
@@ -39,12 +41,13 @@ export default function Show (){
             <h6 className="flicker">Celebrating Ghanaian legends </h6>
         </div>
             </div> 
-             <button type="">Buy Now</button>    
+              <Link  href={"/shop"}><button type=""  className="buy-now">Buy Now</button> </Link>
+             
         </div>
         <div id="slide-3">
         <div>
-                 <h2>Azumah Nelson Black</h2>
-      <h6>&#8373;200</h6> 
+                 <h6>Azumah Nelson Black</h6>
+      <h2>&#8373;200</h2> 
             </div>   
                     <Image src='/azumah-black.svg' width={300} height={300} alt="Coast-Republic T-shirt Front" priority/>
         <div className="wrapper six">
@@ -52,7 +55,8 @@ export default function Show (){
             <h6 className="flicker">Celebrating Ghanaian legends </h6>
         </div>
             </div> 
-               <button type="">Buy Now</button>  
+              <Link  href={"/shop"}><button type=""  className="buy-now">Buy Now</button>  </Link>
+             
 </div> 
     
         <div id="slide-4">
@@ -66,12 +70,21 @@ export default function Show (){
             <h6 className="flicker">Celebrating Ghanaian legends </h6>
         </div>
             </div> 
-          <button type="">Buy Now</button>  
+              <Link  href={"/shop"}><button type=""  className="buy-now">Buy Now</button> </Link>
+     
         </div>
-        <div id="slide-5">
+          <div id="slide-5">
+               <h6>1957-2023</h6>
        <h2> &#8373;100</h2>      
                     <Image src='/CRBack.svg' width={300} height={300} alt="Coast-Republic T-shirt Back"  priority/>
-       <a href="#">Buy Now</a>  
+       <div className="wrapper six">
+        <div>
+            <h6 className="flicker">Happy Independence </h6>
+        </div>
+            </div> 
+            <Link href={"/shop"}> <button type=""  className="buy-now">Buy Now</button>  </Link>
+     
+   
                 
             </div>
      

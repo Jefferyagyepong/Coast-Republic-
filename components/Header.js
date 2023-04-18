@@ -51,10 +51,10 @@ export default function Header() {
        
    
                 <div className="socials">
-                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={10} height={10} /></Link>
-                    <Link href='https://www.instagram.com/coastrepublic/'   className="icon-black">  <FontAwesomeIcon icon={faInstagram} width={10} height={10} /></Link>
-                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} width={10} height={10}   /></Link>
-                    <Link href='https://www.youtube.com/coastrepublic'   className="icon-black"> <FontAwesomeIcon icon={faYoutube} width={10} height={10} /></Link>
+                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={15}  height={15}  style={{color:"blue"}} /></Link>
+                    <Link href='https://www.instagram.com/coastrepublic/'   className="icon-black">  <FontAwesomeIcon icon={faInstagram} width={15}  height={15}    style={{color:"orange"}}/></Link>
+                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} width={15}  height={15}   style={{color:"black"}} /></Link>
+                    <Link href='https://www.youtube.com/coastrepublic'   className="icon-black"> <FontAwesomeIcon icon={faYoutube} width={15}  height={15}   style={{color:"red"}}/></Link>
                          
                 </div>
 
@@ -68,11 +68,12 @@ export default function Header() {
                          
                     
   </label>
-    <ul className="menu">
-                   <li className=""><a href="#"  className="salmon-mobile">T-shirts</a></li>
-                <li className=""><a href="# "  className="salmon-mobile">Delivery</a></li>
-                <li className=""><a href="#"  className="salmon-mobile">Contact Us</a></li>
-                   <li className=""><a href="#"  className="salmon-mobile" >About Us</a></li>
+                    <ul className="menu">
+                        <li><Link href={"/shop"} className="salmon-mobile">Shop</Link></li>
+                        <li><Link  href={"/delivery"}  className="salmon-mobile">Delivery</Link></li>
+                        <li><Link  href={"/contact"}  className="salmon-mobile">Contact Us</Link></li>
+                        <li><Link  href={"/about"}  className="salmon-mobile">About Us</Link></li>
+
     </ul>
   </section>
                 
