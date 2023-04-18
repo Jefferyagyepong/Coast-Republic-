@@ -1,874 +1,166 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="1122.5197"
-   height="793.70081"
-   viewBox="0 0 297 210"
-   version="1.1"
-   id="svg5"
-   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
-   sodipodi:docname="coastwhite116.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#cccccc"
-     borderopacity="1"
-     inkscape:pageshadow="0"
-     inkscape:pageopacity="1"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="px"
-     showgrid="false"
-     units="px"
-     inkscape:zoom="0.39108446"
-     inkscape:cx="520.34796"
-     inkscape:cy="556.14586"
-     inkscape:window-width="1280"
-     inkscape:window-height="703"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs2">
-    <font
-       id="font5421"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face824" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph826" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph828" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph830" />
-    </font>
-    <font
-       id="font5421-0"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face833" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph835" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph837" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph839" />
-    </font>
-    <font
-       id="font5421-4"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face842" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph844" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph846" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph848" />
-    </font>
-    <font
-       id="font5421-48"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face851" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph853" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph855" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph857" />
-    </font>
-    <font
-       id="font5421-0-01"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face860" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph862" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph864" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph866" />
-    </font>
-    <font
-       id="font5421-4-7"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face869" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph871" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph873" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph875" />
-    </font>
-    <font
-       id="font5421-6"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face878" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph880" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph882" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph884" />
-    </font>
-    <font
-       id="font5421-0-0"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face887" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph889" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph891" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph893" />
-    </font>
-    <font
-       id="font5421-4-8"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face896" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph898" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph900" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph902" />
-    </font>
-    <font
-       id="font5421-3"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face905" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph907" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph909" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph911" />
-    </font>
-    <font
-       id="font5421-0-3"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face914" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph916" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph918" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph920" />
-    </font>
-    <font
-       id="font5421-4-3"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face923" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph925" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph927" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph929" />
-    </font>
-    <font
-       id="font5421-5"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face932" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph934" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph936" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph938" />
-    </font>
-    <font
-       id="font5421-0-1"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face941" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph943" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph945" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph947" />
-    </font>
-    <font
-       id="font5421-4-9"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face950" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph952" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph954" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph956" />
-    </font>
-    <font
-       id="font5421-6-4"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face959" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph961" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph963" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph965" />
-    </font>
-    <font
-       id="font5421-0-0-3"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face968" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph970" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph972" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph974" />
-    </font>
-    <font
-       id="font5421-4-8-4"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face977" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph979" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph981" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph983" />
-    </font>
-    <font
-       id="font5421-3-1"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face986" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph988" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph990" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph992" />
-    </font>
-    <font
-       id="font5421-0-3-5"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face995" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph997" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph999" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph1001" />
-    </font>
-    <font
-       id="font5421-4-3-3"
-       horiz-adv-x="1024"
-       horiz-origin-x="144"
-       horiz-origin-y="32"
-       vert-adv-y="1024"
-       vert-origin-x="512"
-       vert-origin-y="768">
-      <font-face
-         font-family="SVGFont 1"
-         ascent="16"
-         cap-height="144"
-         descent="32"
-         units-per-em="1040"
-         id="font-face1004" />
-      <missing-glyph
-         d="M0,0h1000v1024h-1000z"
-         id="missing-glyph1006" />
-      <glyph
-         glyph-name="glyph 1"
-         id="glyph1008" />
-      <glyph
-         glyph-name="glyph 2"
-         id="glyph1010" />
-    </font>
-    <filter
-       inkscape:label="Peel Off"
-       inkscape:menu="Materials"
-       inkscape:menu-tooltip="Peeling painting on a wall"
-       height="1.0812106"
-       width="1.0562817"
-       y="-0.040605341"
-       x="-0.028140814"
-       style="color-interpolation-filters:sRGB;"
-       id="filter1838">
-      <feTurbulence
-         type="fractalNoise"
-         numOctaves="3"
-         baseFrequency="0.07"
-         result="result1"
-         id="feTurbulence1810" />
-      <feGaussianBlur
-         stdDeviation="3"
-         in="SourceAlpha"
-         id="feGaussianBlur1812" />
-      <feComposite
-         in2="result1"
-         operator="in"
-         id="feComposite1814" />
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -9"
-         result="result1"
-         id="feColorMatrix1816" />
-      <feComposite
-         in="SourceGraphic"
-         operator="in"
-         result="result1"
-         in2="result1"
-         id="feComposite1818" />
-      <feTurbulence
-         baseFrequency="0.04"
-         numOctaves="5"
-         result="result0"
-         type="fractalNoise"
-         id="feTurbulence1820" />
-      <feDisplacementMap
-         in2="result0"
-         in="result1"
-         xChannelSelector="R"
-         yChannelSelector="G"
-         scale="35"
-         result="result2"
-         id="feDisplacementMap1822" />
-      <feColorMatrix
-         result="result3"
-         values="4 0 0 0 0 0 1 0 0 0 0 0 2 0 0 0 0 0 0.7 0 "
-         id="feColorMatrix1824" />
-      <feGaussianBlur
-         stdDeviation="0.3"
-         in="result1"
-         result="result4"
-         id="feGaussianBlur1826" />
-      <feComposite
-         in2="result3"
-         in="result4"
-         result="fbSourceGraphic"
-         operator="xor"
-         id="feComposite1828" />
-      <feDiffuseLighting
-         in="fbSourceGraphic"
-         diffuseConstant="2"
-         result="result3"
-         surfaceScale="5"
-         id="feDiffuseLighting1832">
-        <feDistantLight
-           azimuth="225"
-           elevation="25"
-           id="feDistantLight1830" />
-      </feDiffuseLighting>
-      <feBlend
-         in2="fbSourceGraphic"
-         in="result3"
-         mode="darken"
-         result="result7"
-         id="feBlend1834" />
-      <feComposite
-         in2="fbSourceGraphic"
-         operator="in"
-         in="result7"
-         id="feComposite1836" />
-    </filter>
-    <filter
-       inkscape:label="Pixellize"
-       inkscape:menu="Pixel Tools"
-       inkscape:menu-tooltip="Reduce or remove antialiasing around shapes"
-       style="color-interpolation-filters:sRGB;"
-       id="filter1958"
-       x="-1.2451773e-06"
-       y="-1.3124705e-06"
-       width="1.0000025"
-       height="1.0000026">
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1000 -500 "
-         id="feColorMatrix1956" />
-    </filter>
-    <filter
-       inkscape:label="Age"
-       inkscape:menu="Image Effects"
-       inkscape:menu-tooltip="Imitate aged photograph"
-       style="color-interpolation-filters:sRGB;"
-       id="filter2957"
-       x="-0.0085283872"
-       y="-0.012305564"
-       width="1.0170568"
-       height="1.0246111">
-      <feColorMatrix
-         type="saturate"
-         in="SourceGraphic"
-         values="0"
-         id="feColorMatrix2945" />
-      <feColorMatrix
-         values="3 0 0 0 -0.3 0 3 0 0 -0.3 0 0 3 0 -0.3 0 0 0 1 0"
-         result="result0"
-         id="feColorMatrix2947" />
-      <feTurbulence
-         baseFrequency="0.111"
-         numOctaves="2"
-         type="fractalNoise"
-         id="feTurbulence2949" />
-      <feColorMatrix
-         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 -200"
-         id="feColorMatrix2951" />
-      <feGaussianBlur
-         stdDeviation="1"
-         id="feGaussianBlur2953" />
-      <feComposite
-         in2="result0"
-         operator="atop"
-         id="feComposite2955" />
-    </filter>
-    <filter
-       inkscape:label="Film Grain"
-       inkscape:menu="Image Effects"
-       inkscape:menu-tooltip="Adds a small scale graininess"
-       style="color-interpolation-filters:sRGB;"
-       id="filter3217"
-       x="-1.2451773e-06"
-       y="-1.3124705e-06"
-       width="1.0000025"
-       height="1.0000026">
-      <feTurbulence
-         type="fractalNoise"
-         numOctaves="3"
-         baseFrequency="1"
-         seed="0"
-         result="result0"
-         id="feTurbulence3207" />
-      <feColorMatrix
-         result="result4"
-         values="0"
-         type="saturate"
-         id="feColorMatrix3209" />
-      <feComposite
-         in="SourceGraphic"
-         in2="result4"
-         operator="arithmetic"
-         k1="1.25"
-         k2="0.5"
-         k3="0.5"
-         result="result2"
-         id="feComposite3211" />
-      <feBlend
-         result="result5"
-         mode="normal"
-         in="result2"
-         in2="SourceGraphic"
-         id="feBlend3213" />
-      <feComposite
-         in="result5"
-         in2="SourceGraphic"
-         operator="in"
-         result="result3"
-         id="feComposite3215" />
-    </filter>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath5943">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 120.42369,346.38724 -4.05923,-18.94306 -3.38268,-15.56036 2.70615,-8.79499 8.79498,-10.8246 17.58998,-19.61957 -3.38269,-12.17769 -3.38268,-1.35308 -4.05923,-8.79499 v 0 l 4.05923,-4.05922 2.02961,-18.26652 8.11845,-6.76537 12.85421,-3.38269 12.17768,3.38269 8.79499,9.47153 3.38269,13.53074 -2.02962,12.85422 0.67654,8.11844 6.08884,2.70616 11.50114,-9.47152 12.85421,-2.02962 6.76538,8.11845 11.50114,16.91346 9.47152,14.88382 v 8.11844 l 8.79499,8.79499 1.35307,14.20728 1.35308,6.08886 -6.08884,9.47152 -8.79499,-4.05923 -10.14806,-7.44191 -6.76538,-6.76537 -3.38268,-4.05924 5.4123,27.73804 z"
-         id="path5945" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath14130">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -18.943052,347.06378 9.4715261,-11.50112 -5.4123011,-6.7654 21.6492025,-12.17766 10.8246015,0.67654 16.236902,-11.50115 13.530752,-6.08883 16.913439,-18.26651 v -14.20731 l 10.148065,-3.38268 2.70615,-16.91345 8.794988,-2.70615 10.148065,16.91345 -2.706153,7.44191 4.735764,12.17769 0.676537,8.79499 -6.088838,4.05921 v 0 l 18.266512,26.38496 0.99267,68.19802 H -17.229572 Z"
-         id="path14132" />
-    </clipPath>
-  </defs>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       d="M 60.182353,201.72272 60.877267,90.062618 28.910096,87.635256 6.6724339,48.189975 115.56479,7.1974338 c 17.52293,6.0894192 39.81079,5.2080722 59.29117,-0.5285901 L 288.12664,50.010813 265.19379,87.635909 235.3122,90.063271 V 201.72338 H 60.189548"
-       fill="#222222"
-       stroke="#000000"
-       stroke-width="0.000485432"
-       id="path1015"
-       style="fill:#f5f5f5;fill-opacity:0.96078432;stroke:#1b1b1b;stroke-opacity:0.96078432" />
-    <path
-       d="m 115.56479,7.1974348 c 19.10555,27.9368172 38.7365,33.4471812 59.29117,-0.5285911"
-       fill="#1a1a1a"
-       stroke="#333333"
-       stroke-width="2.05088"
-       id="path1017"
-       style="fill:#f5f5f5;fill-opacity:0.96078432;stroke:#f2f2f2;stroke-opacity:1;stroke-width:4.16745209;stroke-miterlimit:4;stroke-dasharray:none" />
-    <circle
-       id="path5859"
-       style="fill:#000000;stroke:none;stroke-width:0.264583"
-       cx="120.42369"
-       cy="347.06375"
-       r="0.39687499" />
-    <g
-       id="g14001"
-       transform="matrix(0.16898182,0,0,0.16898182,120.62943,129.43622)"
-       style="fill:#666666;stroke:#e6e6e6">
-      <path
-         d="m 130.89197,221.17703 c -9.30984,0 -17.92469,1.10548 -25.84555,3.31344 v 11.0708 c 7.50967,-3.23534 15.80972,-4.85511 24.90157,-4.85511 5.4027,0 10.78581,0.54733 16.14771,1.64127 -0.73287,-2.98685 -2.16116,-5.5133 -4.34662,-7.74016 a 3.0039473,3.0039473 0 0 1 -0.0219,-0.0203 c -1.24598,-1.29548 -2.61866,-2.34876 -4.12553,-3.19585 -2.21096,-0.13709 -4.44542,-0.21375 -6.70928,-0.21375 z m 30.50746,4.60852 c 0.79596,3.28024 1.20558,6.83948 1.20558,10.65781 0,0.35402 -0.0231,0.6924 -0.0293,1.04218 4.39213,1.86607 8.38016,3.98243 11.95679,6.35409 v -13.00577 c -4.32832,-1.98467 -8.70594,-3.66754 -13.13277,-5.04891 z m -72.533724,5.2752 c -2.928949,1.61598 -5.7351,3.42724 -8.414653,5.43971 -13.349766,10.12982 -20.025649,22.5346 -20.025649,37.21335 0,15.10873 7.178574,27.68451 21.536623,37.72833 2.238661,1.56908 4.54092,3.00315 6.903579,4.30913 v -15.48973 c -8.378053,-7.72976 -12.57078,-16.74971 -12.57078,-27.06353 0,-5.6658 1.259578,-10.9878 3.778434,-15.96672 2.097763,-3.94913 5.030912,-7.65426 8.792546,-11.1178 z m 85.666494,72.65573 c -7.68266,4.03473 -15.23973,7.03938 -22.6696,9.01374 -7.30487,1.88857 -14.48374,2.83275 -21.53662,2.83275 -9.29944,0 -17.72569,-1.60427 -25.27956,-4.81011 v 11.62379 c 7.37287,2.06717 15.23274,3.10125 23.57859,3.10125 13.72776,0 29.03049,-3.09005 45.90719,-9.27094 z"
-         stroke-width="0.812346"
-         id="path13895"
-         style="fill:#666666;stroke:#e6e6e6" />
-      <path
-         d="M 91.872653,204.62722 V 333.20496 H 102.04547 V 274 h 14.93674 c 7.72607,0 13.26277,1.96827 16.61071,5.9043 3.86303,4.15472 7.55427,12.95577 11.07381,26.40453 l 1.27518,5.12201 c 1.74716,-0.34127 3.50293,-0.73625 5.2689,-1.19267 1.50768,-0.40076 3.02275,-0.84972 4.54402,-1.33918 l -5.8086,-19.97465 c -1.71686,-6.34149 -4.07792,-11.15181 -7.08247,-14.43275 -0.68676,-0.87468 -1.58787,-1.63987 -2.70385,-2.29586 -1.11598,-0.76534 -2.40386,-1.53087 -3.86324,-2.29626 8.15526,-3.17074 14.07876,-7.43477 17.76969,-12.79177 3.69134,-5.35741 5.53701,-12.24579 5.53701,-20.66464 0,-12.24579 -4.07773,-20.99263 -12.23279,-26.24054 -5.8375,-3.71744 -13.21977,-5.5761 -22.14761,-5.5761 z m 10.172817,11.3158 h 25.10956 c 6.95348,0 12.53378,2.18666 16.73971,6.56008 3.86303,3.93603 5.7945,8.91085 5.7945,14.92474 0,3.17075 -0.60124,6.28689 -1.80307,9.34824 -1.11598,3.06144 -2.57515,5.6308 -4.37792,7.70816 -2.66116,3.28005 -6.13769,5.6855 -10.42982,7.21618 -4.20643,1.42137 -9.40003,2.13206 -15.58073,2.13206 h -15.45273 z m 57.96399,107.58811 c -3.55634,0.95499 -7.04198,1.76277 -10.45382,2.41546 l 1.80777,7.26107 h 11.4608 z"
-         stroke-width="0.756877"
-         id="path13897"
-         style="fill:#666666;stroke:#e6e6e6" />
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;line-height:1.25;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
-       x="90.233482"
-       y="77.846901"
-       id="text15630"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
-         x="90.233482"
-         y="77.846901"
-         id="tspan24250">keep what</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
-         x="90.233482"
-         y="112.99878"
-         id="tspan15632">  should</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.1215px;font-family:'Parry Hotter';-inkscape-font-specification:'Parry Hotter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#666666;stroke-width:0.390201;stroke:#000000"
-         x="90.233482"
-         y="148.15065"
-         id="tspan15634">be   yours</tspan></text>
-    <path
-       sodipodi:type="star"
-       style="opacity:0.353398;fill:#000000;fill-opacity:0.960784;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:15.751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.960784;paint-order:stroke markers fill"
-       id="path25178"
-       inkscape:flatsided="false"
-       sodipodi:sides="5"
-       sodipodi:cx="524.18347"
-       sodipodi:cy="350.30798"
-       sodipodi:r1="7.2322669"
-       sodipodi:r2="3.3150976"
-       sodipodi:arg1="0.78539816"
-       sodipodi:arg2="1.4137167"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 529.29746,355.42197 -4.59539,-1.8397 -3.80198,3.16971 0.32961,-4.93897 -4.18945,-2.6364 4.79909,-1.21275 1.21276,-4.7991 2.63639,4.18945 4.93898,-0.32961 -3.16972,3.80198 z"
-       transform="scale(0.26458333)"
-       inkscape:transform-center-x="0.092504241"
-       inkscape:transform-center-y="-0.092503541" />
-    <path
-       sodipodi:type="star"
-       style="opacity:0.353398;fill:#000000;fill-opacity:0.960784;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:15.751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.960784;paint-order:stroke markers fill"
-       id="path25180"
-       inkscape:flatsided="false"
-       sodipodi:sides="5"
-       sodipodi:cx="429.57474"
-       sodipodi:cy="498.61353"
-       sodipodi:r1="11.435218"
-       sodipodi:r2="5.2416296"
-       sodipodi:arg1="-2.0344439"
-       sodipodi:arg2="-1.4061254"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 424.46075,488.38556 5.97324,5.05724 7.28782,-2.85358 -2.9639,7.24366 4.96598,6.04932 -7.80502,-0.58042 -4.21868,6.59227 -1.85987,-7.60238 -7.57327,-1.97507 6.65556,-4.11811 z"
-       transform="scale(0.26458333)"
-       inkscape:transform-center-x="0.15326627"
-       inkscape:transform-center-y="0.13924245" />
-    <path
-       sodipodi:type="star"
-       style="opacity:0.353398;fill:#000000;fill-opacity:0.960784;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:15.751;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.960784;paint-order:stroke markers fill"
-       id="path25182"
-       inkscape:flatsided="false"
-       sodipodi:sides="5"
-       sodipodi:cx="710.84387"
-       sodipodi:cy="462.81564"
-       sodipodi:r1="15.553578"
-       sodipodi:r2="7.1293869"
-       sodipodi:arg1="-1.735945"
-       sodipodi:arg2="-1.1076265"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 708.28688,447.47369 5.7423,8.96371 10.6156,-0.79453 -6.75053,8.2312 4.03605,9.85051 -9.91436,-3.87655 -8.12119,6.88248 0.62312,-10.62704 -9.05522,-5.59691 10.29947,-2.69131 z"
-       transform="scale(0.26458333)"
-       inkscape:transform-center-x="0.20906448"
-       inkscape:transform-center-y="-0.188794" />
-  </g>
+<svg width="1122.5" height="793.7" version="1.1" viewBox="0 0 297 210" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <font id="font5421" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-48" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0-01" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4-7" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-6" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0-0" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4-8" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-3" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0-3" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4-3" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-5" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0-1" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4-9" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-6-4" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0-0-3" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4-8-4" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-3-1" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-0-3-5" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+  <font id="font5421-4-3-3" horiz-adv-x="1024" horiz-origin-x="144" horiz-origin-y="32" vert-adv-y="1024" vert-origin-x="512" vert-origin-y="768">
+   <font-face font-family="SVGFont 1" ascent="16" cap-height="144" descent="32" units-per-em="1040"/>
+   <missing-glyph d="M0,0h1000v1024h-1000z"/>
+   <glyph glyph-name="glyph 1"/>
+   <glyph glyph-name="glyph 2"/>
+  </font>
+ </defs>
+ <path d="m58.915 200.42 0.69491-111.66-31.967-2.4274-22.238-39.445 108.89-40.993c17.523 6.0894 39.811 5.2081 59.291-0.52859l113.27 43.342-22.933 37.625-29.882 2.4274v111.66h-175.12" fill="#f5f5f5" fill-opacity=".96078" stroke="#1b1b1b" stroke-opacity=".96078" stroke-width=".00048543"/>
+ <path d="m114.3 5.8952c19.106 27.937 38.736 33.447 59.291-0.52859" fill="#f5f5f5" fill-opacity=".96078" stroke="#f2f2f2" stroke-width="4.1674"/>
+ <g transform="matrix(.16898 0 0 .16898 119.36 128.13)" fill="#666" stroke="#e6e6e6">
+  <path d="m130.89 221.18c-9.3098 0-17.925 1.1055-25.846 3.3134v11.071c7.5097-3.2353 15.81-4.8551 24.902-4.8551 5.4027 0 10.786 0.54733 16.148 1.6413-0.73287-2.9868-2.1612-5.5133-4.3466-7.7402a3.0039 3.0039 0 0 1-0.0219-0.0203c-1.246-1.2955-2.6187-2.3488-4.1255-3.1958-2.211-0.13709-4.4454-0.21375-6.7093-0.21375zm30.507 4.6085c0.79596 3.2802 1.2056 6.8395 1.2056 10.658 0 0.35402-0.0231 0.6924-0.0293 1.0422 4.3921 1.8661 8.3802 3.9824 11.957 6.3541v-13.006c-4.3283-1.9847-8.7059-3.6675-13.133-5.0489zm-72.534 5.2752c-2.9289 1.616-5.7351 3.4272-8.4147 5.4397-13.35 10.13-20.026 22.535-20.026 37.213 0 15.109 7.1786 27.685 21.537 37.728 2.2387 1.5691 4.5409 3.0032 6.9036 4.3091v-15.49c-8.3781-7.7298-12.571-16.75-12.571-27.064 0-5.6658 1.2596-10.988 3.7784-15.967 2.0978-3.9491 5.0309-7.6543 8.7925-11.118zm85.666 72.656c-7.6827 4.0347-15.24 7.0394-22.67 9.0137-7.3049 1.8886-14.484 2.8328-21.537 2.8328-9.2994 0-17.726-1.6043-25.28-4.8101v11.624c7.3729 2.0672 15.233 3.1012 23.579 3.1012 13.728 0 29.03-3.09 45.907-9.2709z" stroke-width=".81235"/>
+  <path d="m91.873 204.63v128.58h10.173v-59.205h14.937c7.7261 0 13.263 1.9683 16.611 5.9043 3.863 4.1547 7.5543 12.956 11.074 26.405l1.2752 5.122c1.7472-0.34127 3.5029-0.73625 5.2689-1.1927 1.5077-0.40076 3.0228-0.84972 4.544-1.3392l-5.8086-19.975c-1.7169-6.3415-4.0779-11.152-7.0825-14.433-0.68676-0.87468-1.5879-1.6399-2.7038-2.2959-1.116-0.76534-2.4039-1.5309-3.8632-2.2963 8.1553-3.1707 14.079-7.4348 17.77-12.792 3.6913-5.3574 5.537-12.246 5.537-20.665 0-12.246-4.0777-20.993-12.233-26.241-5.8375-3.7174-13.22-5.5761-22.148-5.5761zm10.173 11.316h25.11c6.9535 0 12.534 2.1867 16.74 6.5601 3.863 3.936 5.7945 8.9108 5.7945 14.925 0 3.1708-0.60124 6.2869-1.8031 9.3482-1.116 3.0614-2.5752 5.6308-4.3779 7.7082-2.6612 3.28-6.1377 5.6855-10.43 7.2162-4.2064 1.4214-9.4 2.1321-15.581 2.1321h-15.453zm57.964 107.59c-3.5563 0.95499-7.042 1.7628-10.454 2.4155l1.8078 7.2611h11.461z" stroke-width=".75688"/>
+ </g>
+ <g fill="#666" stroke="#000" stroke-width=".3902" aria-label="keep what   should be   yours">
+  <path d="m97.909 84.812q-0.02812-0.05624-0.02812-0.08437 0 0-0.02812-0.05624-0.05624 0.14061-0.22497 0.16873-0.14061 0.02812-0.11249 0.16873-0.28122 0.16873-0.30934 0.44994 0 0.30934-0.22497 0.50619-0.05624 0.16873-0.16873 0.28122-0.11249 0.14061-0.05624 0.36558 0.05624 0.53431 0 1.0686-0.05624 0.56243 0.22497 1.0124-0.05624 0.14061 0.02812 0.19685 0.11249 0.08437 0.08436 0.22497 0.19685 0.30934 0.42182 0.67492 0.25309 0.36558 0.56243 0.42182 0.08436 0.16873 0.25309 0.30934 0.16873 0.14061 0.3937 0.11249 0.16873 0.05624 0.25309 0.16873 0.08436 0.11249 0.28122 0.05624 0.75928 0.22497 1.5186 0.08436 0.75928-0.14061 1.4061-0.53431 0.67492-0.3937 1.2092-0.95613 0.5343-0.56243 0.84364-1.2092 0.0562-0.16873-0.11248-0.11249v-0.11249h-0.0844v-0.084356q-0.0562 0.02812-0.16873 0-0.0844-0.02812-0.0562 0.08437-0.14061-0.02812-0.25309 0.02812-0.11249 0.05624-0.0844 0.19685-0.0844 0.14061-0.19685 0.11249 0.0562 0.16873-0.11249 0.11249-0.11248 0.22497-0.36558 0.25309-0.25309 0.05624-0.28121 0.28122-0.16873 0.02812-0.30934 0.11249-0.1406 0.11249-0.28121 0.19685-0.14061 0.11249-0.28122 0.16873-0.1406 0.08437-0.33745 0.05624-0.14061 0.14061-0.33746 0.14061t-0.30934 0.19685q-0.25309-0.02812-0.50619 0.02812-0.25309 0.05624-0.50618 0.05624-0.25309 0.02812-0.50619-0.02812-0.22497-0.02812-0.42182-0.28122-0.16873 0.05624-0.11249-0.11249-0.19685 0-0.33746-0.16873-0.14061-0.16873-0.08436-0.36558-0.30934-0.22497-0.22497-0.53431-0.11249-0.02812-0.11249-0.14061 0-0.08436 0-0.19685 0-0.11249 0-0.25309 0-0.11249-0.11249-0.16873 0-0.25309-0.02812-0.50619 0-0.25309 0.14061-0.47806-0.05624-0.11249 0.05624-0.16873 0.11249-0.02812 0.05624-0.14061-0.05624-0.14061 0.11249-0.22497 0.16873-0.08436 0.11249-0.22497 0.14061-0.08436 0.08436-0.22497-0.02812-0.14061 0.11249-0.19685 0.14061-0.05624 0.11249-0.16873-0.02812-0.11249 0.11249-0.16873 0.05624-0.14061 0.14061-0.25309 0.08436-0.08436 0.16873-0.19685l1.8841-1.8841q0-0.14061 0.0281-0.33746 0.0281-0.16873 0.16873-0.25309-0.0281-0.3937 0.0562-0.70304 0.11249-0.30934 0.28122-0.61867 0.0281-0.28122 0.0281-0.61867t0.22497-0.56243v-7.396l-0.53431-0.53431t-0.0281 0q0-0.02812-0.0281-0.02812-0.0844 0-0.16873 0.05624-0.0562 0.02812-0.14061 0.02812h-0.11248l-0.75922-0.73115-0.056243-0.11249q0-0.02812-0.16873-0.19685-0.16873-0.16873-0.3937-0.36558-0.19685-0.22497-0.44994-0.42182-0.22497-0.22497-0.36558-0.36558-0.05624-0.05624-0.25309-0.16873-0.16873-0.14061-0.22497-0.19685l2.3903-2.4184v-0.05624q0-0.11249-0.0844-0.16873-0.0562-0.08437-0.11249-0.14061l0.36558-0.42182v-0.11248q0-0.05624-0.0281-0.11249-0.0281-0.05624-0.0281-0.05624l-0.89989-0.89989q-0.22497-0.05624-0.42182-0.33746-0.16873-0.28122-0.16873-0.50619 0-0.14061 0.05624-0.25309 0.05624-0.14061 0.05624-0.28122v-0.05624l-0.42182-0.3937-0.02812-0.02812q-0.02812 0-0.05624 0.02812-0.02812 0-0.02812 0-0.02812 0-0.14061 0.11249-0.11249 0.08436-0.14061 0.11249h-0.02812q-0.05624 0-0.11249-0.02812-0.05624-0.02812-0.11249-0.02812-0.14061 0-0.33746 0.19685-0.19685 0.16873-0.25309 0.22497-0.11249 0.11249-0.42182 0.3937-0.28122 0.25309-0.59055 0.59055-0.30934 0.30934-0.59055 0.59055-0.28122 0.25309-0.3937 0.36558-0.44994 0.19685-0.81552 0.44994-0.33746 0.25309-0.67492 0.56243v-0.16873q0-0.14061 0-0.22497 0.02812-0.11249 0.14061-0.25309v-5.2869q0-0.05624 0.05624-0.16873 0.05624-0.11249 0.11249-0.16873v-2.2497l0.19685-0.19685v-0.64679l0.16873-0.16873v-2.2497q0.14061-0.08436 0.16873-0.19685 0.02812-0.14061 0.02812-0.28122 0-0.14061 0.05624-0.28122 0.05624-0.16873 0.25309-0.30934v-0.11249l-0.42182-0.42182h-0.47807l-0.70304 0.6468t-0.05624 0.02812q-0.02812 0.02812-0.05624 0.02812-0.02812 0.02812-0.16873 0.08436-0.11249 0.02812-0.14061 0.02812-0.02812 0.02812-0.22497 0.19685-0.19685 0.14061-0.25309 0.16873-0.25309 0.14061-0.59055 0.22497-0.33746 0.08436-0.59055 0.30934l-2.3622 2.3622v0.11249l0.42182 0.42182h0.05624q0.19685 0 0.42182-0.08436 0.25309-0.11249 0.50619-0.25309 0.25309-0.14061 0.44994-0.28122 0.22497-0.16873 0.3937-0.25309 0.14061-0.08436 0.16873-0.05624 0.02812 0 0.14061 0v1.9966q-0.14061 0.22497-0.14061 0.53431 0.02812 0.28122-0.19685 0.42182v2.306q-0.08436 0.05624-0.14061 0.25309-0.02812 0.16873-0.02812 0.22497v5.2868l-0.16873 0.16873v12.373q0 0.05624 0.02812 0.14061 0.05624 0.11249 0.11249 0.16873v0.89989l-2.081 2.1372 0.47806 0.44994h0.81552l0.19685-0.11249q0.56243 0.08437 0.81552-0.19685 0.28122-0.28122 0.70304-0.50619 0.05624-0.02812 0.19685-0.05624 0.14061 0 0.16873 0 0.02812 0 0.08436-0.05624 0.08437-0.05624 0.08437-0.05624 0-0.02812 0.02812-0.02812 0.05624 0 0.05624 0 0.33746 0 0.6468 0.19685 0.33746 0.22497 0.64679 0.22497h0.05624l2.081-2.081q-0.05624-0.14061-0.02812-0.25309 0.05624-0.08436 0.14061-0.16873 0.08437-0.08436 0.16873-0.16873 0.11249-0.08436 0.14061-0.19685 0.14061-0.05624 0.14061-0.19685 0-0.14061 0.16873-0.11249-0.05624-0.11249 0.05624-0.16873 0.11249-0.05624 0.05624-0.16873 0.08436-0.08436 0.19685-0.22497 0.11249-0.11249-0.08437-0.19685-0.14061 0.02812-0.36558 0-0.19685-0.02812-0.16873 0.19685-0.19685 0.16873-0.30934 0.36558-0.11249 0.22497-0.36558 0.36558-0.30934-0.05624-0.59055-0.22497-0.25309-0.14061-0.56243-0.14061-0.16873 0-0.30934 0.05624-0.11249 0.05624-0.28122 0.05624v-1.6592l-0.14061-0.22497v-5.8774q0.11249-0.02812 0.22497-0.11249 0.14061-0.11249 0.19685-0.16873 0.11249 0.16873 0.22497 0.22497 0.11249 0.02812 0.30934 0.02812 0.28122 0 0.42182-0.16873 0.16873-0.16873 0.44994-0.16873 0.02812 0 0.08436 0.02812 0.08436 0 0.11249 0 0.56243 0.50619 0.92801 1.0686 0.3937 0.53431 0.95613 1.0405 0.25309 0.02812 0.3937 0.19685 0.16873 0.16873 0.42182 0.22497v6.6929q-0.16873 0.28122-0.16873 0.59055 0 0.30934-0.05624 0.61867-0.02812 0.16873-0.14061 0.30934-0.11249 0.14061-0.14061 0.28122-0.05624 0.11249-0.05624 0.36558 0.02812 0.25309-0.14061 0.3937zm-3.5996-16.76 1.7154-1.6592q0.08437 0.11249 0.08437 0.33746 0 0.19685 0.02812 0.25309 0.19685 0.36558 0.59055 0.56243 0.42182 0.19685 0.64679 0.50619-0.14061 0.14061-0.30934 0.33746-0.16873 0.16873-0.3937 0.25309l-2.7278 2.7278-0.05624 0.11249v-3.0934q0-0.02812 0.14061-0.16873 0.16873-0.14061 0.28122-0.16873z"/>
+  <path d="m104.4 78.738 1.1249 1.0686q0.14061 0.14061 0.3937 0.11249 0.25309 0 0.42182 0.11249h1.3217t0.0281-0.02812q0.0562 0 0.0844-0.02812l0.47806-0.47807q0.11249-0.14061 0.42183-0.53431 0.30933-0.3937 0.61867-0.84364t0.56243-0.84364 0.25309-0.50619q0-0.14061-0.1406-0.42182-0.11249-0.28122-0.30934-0.53431-0.19685-0.28122-0.42182-0.47807-0.19685-0.22497-0.36558-0.22497h-0.0281q-0.11249 0-0.11249 0.11249 0.0281 0.95613-0.33746 1.9123-0.36558 0.95613-0.73116 1.8279-0.0562 0.05624-0.0844 0.19685 0 0.16873-0.14061 0.16873h-0.0281q-0.0281-0.02812-0.0844-0.05624-0.0281 0-0.0281 0l-1.0124-1.0124q-0.11249-0.11249-0.16873-0.33746-0.0281-0.19685-0.0844-0.30934v-1.3217l-0.16873-0.28122v-4.6963l0.1406-0.11249q0-0.02812 0.11249-0.02812 0.14061 0 0.19685 0 0.3937 0 0.73116 0.11249t0.73116 0.19685q0.28121 0.08436 0.56243 0.14061 0.28121 0.02812 0.56243 0.11249 0.25309 0.05624 0.53431 0.16873 0.30933 0.11249 0.59055 0.11249 0.0562 0 0.11248 0 0.0844 0 0.14061-0.05624 0.36558-0.30934 0.7874-0.84364 0.44995-0.56243 0.44995-1.1249 0-0.05624-0.22497-0.61867-0.19685-0.59055-0.44995-1.2655-0.25309-0.67492-0.47806-1.2373-0.22498-0.56243-0.28122-0.59055l-2.081-1.0686q-0.25309-0.22497-0.59055-0.33746t-0.67492-0.11249q-0.0562 0-0.19685 0.02812-0.14061 0-0.19685 0 0 0-0.0562 0.02812-0.0281 0-0.0562 0.02812t-0.19685 0.16873q-0.16873 0.14061-0.22498 0.19685-0.11248 0.08437-0.61867 0.47807-0.50619 0.3937-1.0967 0.84364-0.56243 0.44994-1.0124 0.81552-0.44995 0.36558-0.44995 0.3937v1.1249q-0.19685 0.22497-0.22497 0.6468-0.0281 0.3937-0.0281 0.67492 0 0.02812 0.0281 0.11249 0.0281 0.08436 0.0281 0.11249v0.25309q0 0.02812-0.0281 0.11249-0.0281 0.08436-0.0281 0.11249 0 0.02812 0.0281 0.14061 0.0281 0.08436 0.0281 0.11249v0.05624q0 0.02812-0.0281 0.11249-0.0281 0.08436-0.0281 0.11249 0 0.02812 0.0281 0.14061 0.0281 0.08436 0.0281 0.11249v0.22497q0 0.02812-0.0281 0.14061-0.0281 0.08436-0.0281 0.08436 0 0.05624 0 0.14061 0.0281 0.08436 0.0562 0.11249v3.9651q-0.0281 0.02812-0.0562 0.11249 0 0.08436 0 0.14061 0 0 0 0.02812 0.0281 0.05624 0.0562 0.08436 0.0563 0.11249 0.16873 0.28122 0.11249 0.16873 0.14061 0.19685l1.3498 1.3498zm3.2621-8.4646h-1.1249q-0.14061-0.11249-0.42182-0.08436-0.25309 0-0.25309-0.25309v-1.6592l0.16873-0.28122v-1.6592q0-0.16873 0.22497-0.30934 0.22497-0.16873 0.3937-0.16873 0.0844 0 0.11248 0 0.0562 0 0.11249 0.11249 0.11249 0.22497 0.14061 0.47806 0.0562 0.25309 0.11248 0.47807 0.0281 0.14061 0.11249 0.25309 0.11249 0.08437 0.16873 0.22497 0.16873 0.50619 0.36558 1.0124t0.42182 0.98425q0.11249 0.30934 0.19685 0.44994 0.11249 0.11249 0.11249 0.33746 0 0.19685-0.14061 0.22497-0.0281 0-0.11249 0.02812-0.0562 0-0.0844 0-0.30934 0-0.50619-0.16873z"/>
+  <path d="m114.12 78.738 1.1249 1.0686q0.14061 0.14061 0.3937 0.11249 0.25309 0 0.42182 0.11249h1.3217t0.0281-0.02812q0.0563 0 0.0844-0.02812l0.47806-0.47807q0.11249-0.14061 0.42183-0.53431 0.30933-0.3937 0.61867-0.84364t0.56243-0.84364 0.25309-0.50619q0-0.14061-0.1406-0.42182-0.11249-0.28122-0.30934-0.53431-0.19685-0.28122-0.42182-0.47807-0.19685-0.22497-0.36558-0.22497h-0.0281q-0.11249 0-0.11249 0.11249 0.0281 0.95613-0.33746 1.9123-0.36558 0.95613-0.73116 1.8279-0.0562 0.05624-0.0844 0.19685 0 0.16873-0.14061 0.16873h-0.0281q-0.0281-0.02812-0.0844-0.05624-0.0281 0-0.0281 0l-1.0124-1.0124q-0.11249-0.11249-0.16873-0.33746-0.0281-0.19685-0.0844-0.30934v-1.3217l-0.16873-0.28122v-4.6963l0.1406-0.11249q0-0.02812 0.11249-0.02812 0.14061 0 0.19685 0 0.3937 0 0.73116 0.11249t0.73116 0.19685q0.28121 0.08436 0.56243 0.14061 0.28121 0.02812 0.56243 0.11249 0.25309 0.05624 0.53431 0.16873 0.30933 0.11249 0.59055 0.11249 0.0562 0 0.11248 0 0.0844 0 0.14061-0.05624 0.36558-0.30934 0.7874-0.84364 0.44995-0.56243 0.44995-1.1249 0-0.05624-0.22497-0.61867-0.19685-0.59055-0.44995-1.2655-0.25309-0.67492-0.47806-1.2373-0.22498-0.56243-0.28122-0.59055l-2.081-1.0686q-0.25309-0.22497-0.59055-0.33746t-0.67492-0.11249q-0.0562 0-0.19685 0.02812-0.14061 0-0.19685 0 0 0-0.0562 0.02812-0.0281 0-0.0562 0.02812t-0.19685 0.16873q-0.16873 0.14061-0.22498 0.19685-0.11248 0.08437-0.61867 0.47807-0.50619 0.3937-1.0967 0.84364-0.56243 0.44994-1.0124 0.81552-0.44995 0.36558-0.44995 0.3937v1.1249q-0.19685 0.22497-0.22497 0.6468-0.0281 0.3937-0.0281 0.67492 0 0.02812 0.0281 0.11249 0.0281 0.08436 0.0281 0.11249v0.25309q0 0.02812-0.0281 0.11249-0.0281 0.08436-0.0281 0.11249 0 0.02812 0.0281 0.14061 0.0281 0.08436 0.0281 0.11249v0.05624q0 0.02812-0.0281 0.11249-0.0281 0.08436-0.0281 0.11249 0 0.02812 0.0281 0.14061 0.0281 0.08436 0.0281 0.11249v0.22497q0 0.02812-0.0281 0.14061-0.0281 0.08436-0.0281 0.08436 0 0.05624 0 0.14061 0.0281 0.08436 0.0562 0.11249v3.9651q-0.0281 0.02812-0.0562 0.11249 0 0.08436 0 0.14061 0 0 0 0.02812 0.0281 0.05624 0.0562 0.08436 0.0562 0.11249 0.16873 0.28122 0.11249 0.16873 0.14061 0.19685l1.3498 1.3498zm3.2621-8.4646h-1.1249q-0.14061-0.11249-0.42182-0.08436-0.25309 0-0.25309-0.25309v-1.6592l0.16873-0.28122v-1.6592q0-0.16873 0.22497-0.30934 0.22497-0.16873 0.3937-0.16873 0.0844 0 0.11248 0 0.0563 0 0.11249 0.11249 0.11249 0.22497 0.14061 0.47806 0.0562 0.25309 0.11248 0.47807 0.0281 0.14061 0.11249 0.25309 0.11249 0.08437 0.16873 0.22497 0.16873 0.50619 0.36558 1.0124t0.42182 0.98425q0.11249 0.30934 0.19685 0.44994 0.11249 0.11249 0.11249 0.33746 0 0.19685-0.14061 0.22497-0.0281 0-0.11249 0.02812-0.0562 0-0.0844 0-0.30934 0-0.50619-0.16873z"/>
+  <path d="m112.03 103.6 0.87176 0.28121h2.5028q0.42182-0.14061 0.84364-0.16873 0.3937 0 0.87177-0.0281 0.28121-0.0562 0.50619-0.19685 0.22497-0.11249 0.47806-0.25309 0.22497-0.11249 0.33746-0.0844 0.0844 0.0281 0.36558-0.14061 0.0281 0 0.0844-0.0281 0.0281-0.0281 0.0281-0.0281 0.1406-0.0281 0.3937-0.11248 0.22497-0.0844 0.36558-0.14061 0.0562-0.0281 0.28121-0.22497 0.22497-0.16873 0.28122-0.19685 0.0562-0.0562 0.19685-0.11249 0.11248-0.0281 0.16873-0.0562l4.5557-4.2182q-0.0562-0.30934 0.0844-0.50619 0.16873-0.16873 0.3937-0.3937-0.0281-0.02812 0.0281-0.14061 0.0562-0.11249 0.1406-0.25309 0.0844-0.11249 0.16873-0.25309 0.0844-0.11249 0.11249-0.16873 0.0562-0.14061 0.0844-0.33746 0.0563-0.19685 0.16873-0.33746 0-0.05624 0.0844-0.14061 0.11248-0.08437 0.1406-0.11249 0.0562-0.14061 0.0281-0.30934t0.0281-0.28122q0.0562-0.14061 0.19685-0.33746 0.1406-0.19685 0.19685-0.36558 0.0562-0.25309 0.0281-0.47807-0.0281-0.19685 0.19685-0.42182v-0.75928l0.25309-0.28122v-0.73116l0.22497-0.28122v-6.6648h0.0281q0.36558 0.36558 0.70303 0.3937 0.36558 0.05624 0.67492 0.33746h1.5467l2.8403-2.6153q-0.1406-0.44994 0.2531-0.70304v-3.937q0-0.08436 0.0562-0.25309 0.0844-0.14061 0.14061-0.19685v-1.8279t0.0281-0.02812q0.0281-0.05624 0.0281-0.08436l0.19685-0.19685q0.0844-0.33746 0.0281-0.44994-0.0562-0.14061 0.19685-0.36558v-0.59055q0-0.05624 0.0563-0.11249 0.16873-0.22497 0.19685-0.44994 0.0281-0.22497 0.19685-0.44994v-1.1812q0-0.08436-0.0844-0.22497-0.0844-0.16873-0.16873-0.33746-0.0844-0.16873-0.16873-0.30934-0.0562-0.16873-0.0281-0.25309l-0.47806-0.47806q0.0281-0.11249-0.0844-0.36558-0.0844-0.28122-0.22497-0.56243-0.14061-0.30934-0.28121-0.56243-0.14061-0.25309-0.19685-0.3937l-0.75928-0.67492q0-0.02812-0.0563-0.02812-0.0562 0-0.11248 0-0.56243 0-0.89989 0.28122-0.30934 0.25309-0.73116 0.59055-0.0281 0.02812-0.14061 0.02812l-1.3498 1.2655q-0.0281 0-0.0844 0.02812-0.0281 0-0.0281 0h-0.1406q-0.0281 0.02812-0.14061 0.14061-0.11249 0.08437-0.14061 0.11249-0.11248 0-0.11248 0.02812-0.0844 0.05624-0.36558 0.28122-0.28122 0.19685-0.36558 0.25309l-0.0281-0.05624v-1.0686l-0.56243-0.47806-0.47806 0.30934h-0.36558q-0.14061 0-0.42182 0-0.2531 0-0.42183-0.05624-0.1406-0.02812-0.19685-0.08436-0.0562-0.05624-0.19685-0.05624h-0.0281l-2.7559 2.5591v0.05624q0 0.02812 0.16872 0.22497 0.19685 0.16873 0.33746 0.25309 0.22497 0.19685 0.59055 0.22497 0.3937 0 0.67492 0 0.0562 0 0.16873 0.08436 0.11248 0.08436 0.11248 0.11249v20.501l-0.22497 0.28122v0.59055q0 0.11249-0.11248 0.19685-0.11249 0.11249-0.11249 0.22497v0.59055q-0.0281 0.14061-0.0844 0.16873-0.0281 0.02812-0.0844 0.16873-0.0562 0.14061-0.0562 0.28122 0 0.14061-0.0281 0.28122 0 0.08436-0.16873 0.42182-0.14061 0.33746-0.19685 0.42182-0.0563 0.14061-0.0563 0.28122 0 0.14061-0.0844 0.25309 0 0.02812-0.0562 0.08436-0.0281 0.08436-0.0563 0.08436-0.1406 0.22497-0.22497 0.50619-0.0562 0.28122-0.19685 0.50619 0 0.02812-0.0562 0.11249-0.0281 0.11249-0.0281 0.14061l-0.6468 0.70304q0 0.02812-0.0281 0.05624-0.0281 0.05624-0.0281 0.11249v0.11249q-0.0562 0.14061-0.33746 0.19685-0.30933 0.05624-0.44994 0.11249-0.0281 0-0.14061 0.08436-0.14061 0.11249-0.16873 0.14061-0.0844 0.0281-0.22497 0-0.16873 0-0.25309 0.0281-0.22498 0.14061-0.44995 0.25309-0.22497 0.14061-0.53431 0.19685-0.44994 0.0562-0.87176 0.0562-0.42183 0.0281-0.87177 0.16873h-2.2497l-0.87177-0.28122h-0.11248l-1.0405-0.33746h-0.14061l-1.1249-0.33746q-0.0844-0.05624-0.30933-0.19685-0.22497-0.11249-0.44995-0.25309-0.25309-0.11249-0.44994-0.22497-0.19685-0.08436-0.25309-0.08436h-0.0281l-2.7559 2.5591v0.0281q0 0.0281 0.25309 0.2531 0.2531 0.25309 0.3937 0.36558 0.2531 0.19685 0.59055 0.30933 0.33746 0.14061 0.61868 0.33746l1.153 0.36558h0.11248l1.0686 0.30934zm15.692-31.327 1.7998-1.6592h0.11249q0.0281 0 0.11248-0.02812 0.0844-0.02812 0.11249-0.02812 0.0562 0.02812 0.19685 0.28122 0.14061 0.25309 0.25309 0.59055 0.14061 0.30934 0.22497 0.59055 0.0844 0.28122 0.0844 0.36558l0.47806 0.47806q-0.0281 0.05624 0.0281 0.16873 0.0562 0.11249 0.1406 0.28122 0.0844 0.14061 0.16873 0.28122 0.0844 0.14061 0.0844 0.22497 0.0281 0 0.0281 0.16873 0 0.14061 0 0.25309 0 0.02812 0 0.16873 0 0.14061-0.0281 0.19685 0 0.08437-0.0563 0.14061-0.1406 0.19685-0.11248 0.36558 0.0281 0.16873-0.0562 0.36558 0 0.05624-0.11249 0.16873-0.0844 0.11249-0.0844 0.14061-0.0281 0.02812-0.0281 0.22497 0.0281 0.16873 0.0281 0.22497l-0.19685 0.19685q-0.0844 0.14061-0.0844 0.25309 0.0281 0.14061 0.0281 0.28122 0 0.14061-0.0281 0.25309-0.0281 0.14061-0.19685 0.25309v1.8841q-0.0562 0.05624-0.16873 0.19685-0.0844 0.14061-0.0844 0.22497v1.5748q-0.14061 0-0.36558-0.16873-0.22498-0.16873-0.36558-0.22497-0.14061-0.05624-0.42183-0.05624-0.25309 0-0.3937-0.02812-0.11248 0-0.3937-0.11249-0.28121-0.08437-0.36558-0.14061-0.0844-0.05624-0.22497-0.16873-0.11249-0.11249-0.11249-0.14061z"/>
+  <path d="m153.68 76.235v0.7874q0.0281 0.02812 0.14061 0.11249 0.11249 0.11249 0.28122 0.28122 0.16872 0.16873 0.25309 0.25309 0.16873 0.14061 0.44994 0.36558 0.28122 0.22497 0.50619 0.22497 0.19685 0 0.28121-0.05624 0.0844-0.05624 0.22498-0.11249l5.2868-5.2306v-0.11249q0.47806-0.53431 0.7874-1.153 0.33746-0.61867 0.87177-1.0967-0.0281-0.08436 0.16873-0.3937 0.19685-0.33746 0.42182-0.70304 0.22497-0.36558 0.42182-0.70304 0.22497-0.36558 0.25309-0.53431 0-0.02812-0.0281-0.14061 0-0.11249 0.0281-0.14061 0.0281-0.11249 0.11249-0.28122 0.0844-0.19685 0.16873-0.36558 0.11249-0.19685 0.22497-0.36558 0.11249-0.16873 0.19685-0.25309v-0.81552q0.0562-0.05624 0.19685-0.28122 0.16873-0.25309 0.22497-0.30934 0-0.02812 0.0281-0.05624 0.0281-0.05624 0.0281-0.08436v-2.7278q-0.0562-0.02812-0.14061-0.14061-0.0844-0.14061-0.11249-0.19685v-0.11249q-0.42182-0.53431-0.92801-1.0124-0.1406-0.08436-0.30933-0.05624l-0.67492-0.70304-2.8684 2.8965q-0.0281 0-0.0281 0.02812 0 0 0 0.02812 0 0 0.0281 0 0 0.02812 0.0844 0.16873 0.11249 0.14061 0.14061 0.16873 0 0.02812 0.0281 0.08436 0.0281 0.02812 0.0281 0.05624l0.6468 0.64679q0.16873 0.05624 0.3937 0.22497 0.25309 0.14061 0.25309 0.36558v2.306q0 0.11249-0.19685 0.44994t-0.25309 0.44994v0.81552q-0.30934 0.28122-0.50619 0.73116-0.16873 0.44994-0.22497 0.81552 0 0.02812-0.0281 0.11249 0 0.05624-0.0281 0.08436-0.0281 0.08437-0.11249 0.22497-0.0562 0.14061-0.14061 0.30934-0.0844 0.14061-0.1406 0.25309-0.0563 0.11249-0.0844 0.14061-0.28121 0.47806-0.64679 0.92801-0.33746 0.44994-0.6468 0.92801-0.1406 0.22497-0.28121 0.50619t-0.30934 0.50619q-0.0844 0.08436-0.25309 0.25309-0.14061 0.14061-0.16873 0.14061h-0.16873q-0.0281 0-0.16873-0.11249-0.14061-0.14061-0.19685-0.22497-0.0562-0.08437-0.0562-0.28122 0-0.14061 0.0281-0.19685 0.0562-0.05624 0.19685-0.16873v-2.081q0-0.11249 0.0844-0.28122t0.16873-0.25309v-5.5962q0-0.14061-0.1406-0.22497-0.11249-0.11249-0.11249-0.25309v-1.1811q0-0.11249-0.0844-0.22497-0.0844-0.14061-0.1406-0.19685v-1.1811q-0.14061-0.14061-0.22497-0.28122-0.0844-0.16873-0.0844-0.3937 0-0.28122 0.14061-0.47806 0.16873-0.19685 0.16873-0.47807v-0.02812l-0.56243-0.56243-2.8965 2.8965q-0.0281 0.19685-0.16873 0.3937-0.1406 0.16873-0.28121 0.30934 0.0844 0.22497-0.14061 0.50619-0.19685 0.28122-0.47806 0.56243-0.28122 0.28122-0.53431 0.56243-0.22497 0.25309-0.22497 0.42182v0.02812l0.56243 0.56243 1.2655-1.2373v1.0124q0.0562 0.05624 0.14061 0.19685 0.11249 0.11249 0.11249 0.22497v1.1811l0.22497 0.30934v1.5467l-1.4061 1.4904q0 0.19685-0.0562 0.50619-0.0562 0.28122 0 0.47806l-0.73116 0.7874q-0.0562 0.14061-0.22497 0.36558-0.14061 0.19685-0.33746 0.3937-0.19685 0.16873-0.3937 0.30934-0.19685 0.11249-0.36558 0.11249 0-0.16873-0.0844-0.28122t-0.0844-0.30934q0-0.22497 0.0844-0.30934 0.11248-0.08436 0.16873-0.28122 0-0.05624-0.0281-0.22497 0-0.19685 0.0281-0.25309 0.0281-0.05624 0.0844-0.16873 0.0844-0.11249 0.14061-0.14061v-3.6558q0-0.02812 0.0281-0.05624 0.0281-0.05624 0.0281-0.08436 0.16873-0.22497 0.19685-0.47807 0.0281-0.28122 0.22497-0.53431v-2.3622q0-0.11249-0.0562-0.16873-0.14061-0.25309-0.19685-0.47807-0.0281-0.25309-0.16873-0.47806 0-0.02812-0.0281-0.05624-0.0281-0.05624-0.0281-0.05624v-1.1811q0-0.11249-0.0844-0.28122-0.0562-0.16873-0.1406-0.25309v-0.84364q0-0.02812-0.0281-0.08436-0.0281-0.08436-0.0281-0.08436l-0.53431-0.53431t-0.1406 0q-0.11249-0.02812-0.16873-0.02812-0.42183 0-0.6468 0.11249t-0.59055 0.25309l-3.234 3.234 0.56243 0.56243h0.0562q0.14061-0.16873 0.28122-0.22497 0.16873-0.08436 0.30933-0.14061 0.16873-0.05624 0.30934-0.11249 0.14061-0.08437 0.28121-0.22497l0.14061 0.05624q-0.0281 0.05624-0.0281 0.25309 0 0.16873 0.0281 0.22497 0 0.02812 0.0281 0.11249 0.0563 0.05624 0.0844 0.05624 0.0281 0.05624 0.0562 0.19685 0.0562 0.14061 0.0562 0.16873v1.378q0.19685 0.25309 0.19685 0.56243 0.0281 0.30934 0.28122 0.50619v1.9404t-0.0281 0.05624q-0.0281 0.02812-0.0281 0.05624-0.14061 0.22497-0.14061 0.42182 0.0281 0.19685-0.0562 0.42182 0 0.05624-0.0844 0.19685-0.0844 0.11249-0.14061 0.16873v3.4871t-0.0281 0.05624q-0.0281 0.02812-0.0281 0.05624-0.14061 0.22497-0.14061 0.33746 0.0281 0.11249-0.0281 0.33746-0.0562 0.14061-0.16873 0.19685-0.0844 0.02812-0.0844 0.19685v0.95613q0.0281 0.02812 0.0562 0.08437 0.0562 0.05624 0.0562 0.08436 0.0281 0.05624 0.0281 0.11249 0.0281 0.02812 0.0281 0.02812-0.0281 0.16873-0.11249 0.28122-0.0562 0.14061-0.0562 0.3937v0.08436l0.53431 0.53431h0.59055q0.0281-0.02812 0.0844-0.08436 0.0844-0.02812 0.11249-0.02812 0 0 0.0281-0.02812 0.0562-0.02812 0.0844-0.02812 0.0562-0.05624 0.25309-0.25309 0.22497-0.16873 0.28121-0.22497h0.11249l0.59055-0.47806h0.16873l4.0495-4.0214q0.0281-0.16873 0.16873-0.25309l0.0562 0.05624v0.89989q-0.0562 0.08436-0.14061 0.25309-0.0844 0.16873-0.0844 0.28122v2.081z"/>
+  <path d="m169.16 104.67t0.11248-0.22497q0.11249-0.19685 0.19685-0.3937 0.0844-0.16873 0.11249-0.19685 0.73116-0.75928 1.2092-1.2936 0.50619-0.53431 1.153-1.2092 0.67491-0.6468 1.7154-1.6311 1.0405-0.95613 2.8403-2.6434 0.0281-0.30934 0.19685-0.59055 0.19685-0.25309 0.33746-0.47807 0.1406-0.22497 0.16873-0.53431 0.0562-0.30934 0.22497-0.42182v-1.1811l0.16873-0.19685v-0.92801l0.19685-0.19685v-0.6468l0.16873-0.16873v-3.3183l0.16873-0.19685v-1.1811l0.16872-0.16873q-0.0281-0.25309 0-0.70304 0.0281-0.42182 0.16873-0.73116v-7.5928q0-0.14061-0.1406-0.30934-0.14061-0.16873-0.19685-0.22497v-1.2936q0-0.05624-0.0563-0.16873-0.0281-0.14061-0.0844-0.19685-0.0562-0.05624-0.2531-0.25309-0.16872-0.22497-0.22497-0.28122l0.36558-0.42182v-0.11248q-0.0281-0.05624-0.0562-0.11249 0-0.05624 0-0.05624l-1.6592-1.7998-0.0844-0.11249-0.67492-0.70304v-0.19685t-0.25309-0.22497q-0.22498-0.22497-0.36558-0.36558-0.0844-0.05624-0.14061-0.05624-0.0281-0.02812-0.0844-0.16873l-1.0124-1.0124h-0.30934l-2.3903 2.3622v0.19685l-0.98426 0.95613v-1.7998l0.14061-0.28122v-3.3465q0-0.05624 0.0563-0.16873 0.0844-0.11249 0.1406-0.16873v-2.6153q0.19685-0.14061 0.16873-0.33746 0-0.22497 0.19685-0.36558v-2.2778q0-0.19685-0.0562-0.16873-0.0562 0.02812-0.11249-0.16873-0.0281-0.05624-0.0562-0.28122 0-0.25309 0-0.30934-0.0562-0.14061-0.22497-0.30934-0.14061-0.19685-0.14061-0.30934v-0.02812q0.0281-0.05624 0.0562-0.16873 0.0563-0.14061 0.0563-0.14061l0.73116-0.7874-0.47807-0.44994q0-0.02812-0.0562-0.02812-0.0563 0-0.0844 0-0.1406 0-0.19685 0.02812-0.0562 0.02812-0.19685 0.16873l-1.9685 1.9404h-0.28122l-2.559 2.5591 0.47806 0.47807h0.0562q0.0844 0 0.33746-0.08436 0.2531-0.11249 0.53431-0.25309 0.28122-0.14061 0.50619-0.25309 0.25309-0.14061 0.33746-0.22497l0.11248 0.11249q0 0.16873 0.0281 0.42182 0.0281 0.22497 0.22497 0.33746v1.856q-0.22497 0.16873-0.22497 0.47806 0 0.30934-0.16873 0.53431v2.4747q-0.0844 0.05624-0.1406 0.25309-0.0281 0.16873-0.0281 0.22497v3.3183l-0.16872 0.25309v11.333l0.1406 0.16873v0.70304l-1.2092 1.2655q-0.0281 0.08436 0.0562 0.19685 0.0844 0.14061 0.16873 0.25309 0.11249 0.14061 0.19685 0.25309 0.11249 0.11249 0.11249 0.22497h0.53431q0.11248 0 0.0281 0-0.0562 0.02812-0.11249 0-0.0281 0 0.0844-0.08437 0.1406-0.08436 0.67491-0.30934h0.0562q0.0844 0 0.30934 0.11249 0.22497 0.11249 0.47807 0.25309 0.25309 0.16873 0.44994 0.30934 0.22497 0.16873 0.30934 0.25309h1.3498l2.6715-2.784-0.44994-0.56243-1.0686 0.98425q-0.0281-0.05624-0.28121 0-0.22498 0.05624-0.28122 0 0 0-0.14061-0.08436-0.1406-0.08436-0.28121-0.19685-0.14061-0.08436-0.28122-0.16873-0.1406-0.08436-0.1406-0.08436-0.14061-0.02812-0.19685-0.19685-0.0281-0.16873-0.0563-0.36558 0-0.16873-0.0562-0.30934-0.0281-0.14061-0.19685-0.14061v-0.05624q0.0281-0.05624 0.11248-0.16873 0.0844-0.08437 0.11249-0.11249v-1.2092l-0.11249-0.22497v-6.721l0.81553-1.3217q0.0281-0.22497 0.16873-0.3937 0.16873-0.16873 0.33746-0.30934 0.16872-0.14061 0.30933-0.30934 0.16873-0.16873 0.19685-0.3937 0.22497 0.19685 0.3937 0.42182t0.44995 0.36558q0 0 0.0281 0.02812 0.0281 0 0.0281 0.02812 0.22497 0.33746 0.42182 0.56243t0.53431 0.56243q0 0.11249 0.0562 0.11249 0.0563 0.05624 0.16873 0.22497 0.14061 0.14061 0.19685 0.19685 0.0563 0.08436 0.22498 0.25309 0.19685 0.16873 0.3937 0.36558 0.19685 0.19685 0.36558 0.36558 0.16873 0.19685 0.25309 0.25309l-0.36558 0.42182v0.05624q0 0.16873 0.16873 0.25309 0.16873 0.11249 0.16873 0.28122v1.378l0.30933 0.47807v7.5928q-0.1406 0.28122-0.16872 0.64679 0 0.3937 0 0.6468l-0.14061 0.30934v1.0686q-0.0562 0.02812-0.14061 0.11249-0.0562 0.11249-0.0562 0.16873v3.2059q-0.19685 0.19685-0.16873 0.47806 0.0562 0.28122-0.16873 0.42182v1.0686q-0.14061 0.08436-0.14061 0.28122-0.0281 0.11249-0.0562 0.47806 0 0.36558-0.0281 0.47807-0.19685 0.16873-0.22497 0.50619-0.0281 0.33746-0.11249 0.56243-0.0281 0.02812-0.11249 0.11249-0.0562 0.11249-0.0844 0.14061 0 0.02812-0.0562 0.11249-0.0281 0.11249-0.0562 0.16873l-1.0686 1.0405h-0.16873t-0.28122 0.28122q-0.28121 0.28122-0.67491 0.64679-0.36558 0.3937-0.78741 0.7874-0.3937 0.42183-0.64679 0.67492-0.14061 0.14061-0.3937 0.47807-0.25309 0.33745-0.53431 0.70303-0.28121 0.3937-0.47807 0.75928-0.19685 0.36558-0.19685 0.56243z"/>
+  <path d="m179.71 73.339q0.16873 0.36558 0.28122 0.7874 0.11248 0.3937 0.25309 0.7874 0.22497 0.61867 0.42182 1.2373 0.19685 0.59055 0.3937 1.2092 0.0844 0.19685 0.11249 0.44994 0.0562 0.25309 0.19685 0.42182 0.0844 0.14061 0.28122 0.25309 0.19685 0.11249 0.30933 0.11249h0.95613q0.0844-0.08436 0.33746-0.30934 0.28122-0.22497 0.59055-0.47807 0.30934-0.22497 0.53431-0.42182 0.2531-0.16873 0.28122-0.16873 0.0562 0 0.11248 0.14061 0.0563 0.16873 0.11249 0.33746 0.0844 0.19685 0.14061 0.3937 0.0844 0.19685 0.19685 0.28122 0.11248 0.08436 0.30933 0.11249 0.19685 0.05624 0.33746 0.11249h0.0281q0.3937 0 0.7874-0.33746 0.39371-0.33746 0.53431-0.67492l1.0124-1.0124q0.25309-0.08436 0.50618-0.33746 0.2531-0.28122 0.39371-0.42182v-0.05624q0-0.11249-0.0563-0.11249-0.0562 0-0.19685 0-0.11248-0.02812-0.28121-0.05624-0.14061-0.02812-0.2531-0.08436-0.11248-0.08436-0.11248-0.22497v-3.2621q0.0562-0.05624 0.0562-0.16873l0.0281-0.05624q0-0.08436-0.0562-0.14061-0.0281-0.05624-0.0281-0.14061v-0.02812q0.0281-0.02812 0.0562-0.14061 0.0562-0.11249 0.0844-0.14061v-0.05624q-0.0281-0.05624-0.0844-0.14061-0.0562-0.11249-0.0844-0.16873v-3.2621q-0.19685-0.30934-0.30934-0.61867-0.0844-0.30934-0.30934-0.61867 0-0.02812-0.0281-0.05624-0.0281-0.05624-0.0281-0.05624-0.0281-0.11249-0.0562-0.19685 0-0.08437-0.0562-0.16873-0.22497-0.30934-0.56243-0.50619-0.33745-0.19685-0.50618-0.56243l-1.6029-1.6592q-0.11248-0.22497-0.3937-0.50619-0.28121-0.30934-0.59055-0.30934h-0.0281l-1.8841 0.92801q-0.11249 0.08436-0.42183 0.30934-0.30933 0.19685-0.64679 0.42182t-0.59055 0.42182q-0.2531 0.19685-0.2531 0.28122 0 0.02812 0.0281 0.14061 0.0281 0.08437 0.0562 0.08437 0 0.05624 0 0.22497 0.0281 0.14061 0.0562 0.19685l0.92801 1.9123q0.14061 0.14061 0.28122 0.44994 0.16873 0.30934 0.36558 0.30934 0.0562 0 0.11248 0 0.0563 0 0.0563-0.05624v-1.0686q0-0.14061 0.1406-0.28122 0.14061-0.16873 0.30934-0.28122 0.19685-0.14061 0.36558-0.22497 0.19685-0.11249 0.28121-0.16873 0.0563-0.02812 0.22498-0.11249 0.16872-0.08436 0.33745-0.16873 0.19685-0.11249 0.36558-0.19685 0.16873-0.08436 0.2531-0.11249 0.11248-0.02812 0.19685-0.02812 0.0844-0.02812 0.19685-0.02812 0.11248 0 0.14061 0.05624 0 0.11249 0 0.44994 0.0281 0.33746 0.0562 0.44994 0 0.05624 0.0562 0.16873 0.0562 0.08437 0.0844 0.11249v1.6592q0.11248 0.14061 0.1406 0.22497 0.0281 0.05624 0.0281 0.19685 0 0.11249-0.0281 0.11249 0 0.02812-0.0281 0.14061-0.0281 0.08436-0.0281 0.11249 0 0.02812 0.0281 0.11249 0.0281 0.08436 0.0281 0.11249v5.7368q0 0.05624-0.0562 0.16873-0.0281 0.08436-0.0562 0.14061v0.02812q0 0.05624 0.0281 0.14061 0.0281 0.05624 0.0281 0.11249 0 0.33746-0.22497 0.70304-0.22497 0.33746-0.53431 0.42182 0 0.02812-0.0281 0.02812-0.16873 0-0.19685-0.25309 0-0.25309 0-0.28122-0.14061-0.53431-0.36558-1.3498-0.22497-0.81552-0.50619-1.2655v-1.1249l-0.14061-0.30934v-1.1249q0-0.14061 0.19685-0.22497 0.19685-0.11249 0.28122-0.16873 0.0281-0.02812 0.14061-0.14061 0.1406-0.11249 0.25309-0.22497 0.14061-0.14061 0.25309-0.25309 0.11249-0.11249 0.16873-0.16873 0.14061 0.02812 0.14061-0.14061 0-0.19685-0.19685-0.19685h-1.6592l-1.2373 0.87177q-0.0844 0.05624-0.0844 0.14061 0.0281 0.05624-0.16873 0.22497l-0.33746 0.33746q-0.0562 0.05624-0.22497 0.28122-0.14061 0.19685-0.30933 0.42182-0.16873 0.22497-0.30934 0.44994-0.11249 0.19685-0.11249 0.22497z"/>
+  <path d="m191.45 81.86q0.0844 0.14061 0.14061 0.33746 0.0562 0.22497 0.19685 0.30934 0.0562 0.02812 0.25309 0.14061 0.22497 0.14061 0.28122 0.16873 0.92801 0.56243 1.9123 0.95613 1.0124 0.42182 2.0529 0.75928 0.44994 0.14061 0.89989 0.30934 0.44994 0.19685 0.92801 0.19685 0.0562 0 0.16873-0.02812 0.11248 0 0.1406 0l0.14061-0.05624t0.11249-0.11249q0.11248-0.11249 0.22497-0.25309 0.14061-0.11249 0.25309-0.25309 0.14061-0.14061 0.22497-0.22497 0.0281-0.02812 0.0844-0.14061 0.0844-0.11249 0.0844-0.14061 0.0281-0.02812 0.0563-0.08436 0.0562-0.02812 0.0844-0.02812 0.30934-0.28122 0.56243-0.59055 0.25309-0.30934 0.56243-0.61867 0 0 0.0281-0.05624 0.0281-0.02812 0.0281-0.05624v-0.05624l-0.11248-0.11249q-0.19685 0-0.53431-0.02812t-0.53431-0.16873h-3.1496l-0.11248 0.08437q0.11248 0.14061 0.50618 0.19685 0.42183 0.08436 0.84365 0.14061 0.44994 0.08436 0.7874 0.16873 0.33746 0.08436 0.33746 0.28122v0.02812q-0.0562 0.05624-0.2531 0.22497-0.16872 0.19685-0.22497 0.25309-0.16873 0.16873-0.47806 0.42182-0.28122 0.28122-0.42183 0.28122-0.30933 0-0.47806-0.19685-0.16873-0.19685-0.3937-0.28122-0.14061-0.05624-0.19685-0.05624-0.0563 0-0.16873-0.05624-0.0844-0.05624-0.16873-0.14061-0.0844-0.05624-0.16873-0.08436-0.0562-0.02812-0.19685-0.05624-0.11249 0-0.16873-0.05624l-0.47806-0.47807q-0.0844-0.08436-0.0844-0.14061v-3.4308q-0.0844-0.11249-0.0844-0.22497t0.0281-0.19685q0.0281-0.08436 0.0281-0.16873 0-0.19685-0.14061-0.42182v-5.3993q-0.11248-0.14061-0.11248-0.22497 0-0.08437 0-0.11249 0.0281-0.05624 0.0844-0.14061v-1.1249q-0.0281-0.02812-0.0562-0.08436 0-0.05624-0.0281-0.08436v-0.05624q0-0.08436 0.0281-0.14061 0.0562-0.08437 0.0562-0.14061v-0.02812q-0.0281-0.02812-0.0844-0.14061-0.0281-0.11249-0.0563-0.16873v-0.05624q0.0281-0.02812 0.0563-0.14061 0.0562-0.11249 0.0844-0.14061v-0.05624q-0.0281-0.02812-0.0844-0.14061-0.0281-0.14061-0.0563-0.16873v-0.05624q0.0281-0.02812 0.0563-0.14061 0.0562-0.11249 0.0844-0.16873v-0.05624q-0.0281-0.02812-0.0844-0.14061-0.0281-0.11249-0.0563-0.14061v-1.6592q0-0.05624 0.11249-0.08436 0.11249-0.05624 0.25309-0.08436 0.14061-0.05624 0.28122-0.08437 0.14061-0.02812 0.19685-0.08436h1.4904l0.11248-0.14061v-0.95613l-0.11248-0.14061h-2.1935l-0.16873-0.16873v-1.1249l-0.16873-0.28122v-2.5591q-0.0562-0.08436-0.0844-0.25309-0.0281-0.16873-0.0562-0.33746 0-0.19685-0.0562-0.33746-0.0281-0.14061-0.14061-0.14061-0.0562 0-0.11248 0.05624-0.36558 0.56243-0.6468 1.1249-0.28121 0.56243-0.59055 1.1249-0.1406 0.28122-0.33746 0.50619-0.19685 0.22497-0.3937 0.44994-0.56243 0.73116-1.1249 1.4623-0.5343 0.73116-1.1811 1.378 0 0.02812-0.0281 0.08436-0.0281 0.02812-0.0281 0.05624v0.02812q0 0.08436 0.0844 0.19685 0.11249 0.11249 0.22497 0.11249h1.2655v1.6592q0.0844 0.11249 0.0844 0.25309 0 0.05624-0.0281 0.14061-0.0281 0.05624-0.0281 0.11249v0.02812q0 0.05624 0.0563 0.16873 0.0562 0.11249 0.0562 0.14061v0.02812q0 0.14061-0.0562 0.22497-0.0563 0.08437-0.0563 0.22497 0 0.08436 0.0281 0.16873 0.0281 0.08436 0.0281 0.19685 0 0.05624-0.0281 0.14061-0.0281 0.05624-0.0281 0.11249v0.02812q0.0281 0.05624 0.0563 0.16873 0.0562 0.08436 0.0844 0.14061z"/>
+  <path d="m110.2 113.36q0.0562 0.0562 0.28122 0.22497 0.22497 0.19685 0.30933 0.25309 0.11249 0.0844 0.42182 0.28122 0.30934 0.19685 0.6468 0.3937 0.33746 0.22497 0.61867 0.3937 0.28122 0.16873 0.36558 0.16873l1.0686-0.0281 0.64679-0.53431q0.16873-0.16873 0.44995-0.47807 0.30933-0.30933 0.47806-0.47806 0.0563-0.0562 0.14061-0.14061 0.11249-0.0562 0.22497-0.0844l3.1777-2.8965q0.11249-0.11249 0.22497-0.30934 0.14061-0.22497 0.19685-0.3937 0-0.0281-0.0281-0.1406 0-0.11249 0.0281-0.14061 0-0.0562 0.11249-0.19685 0.11249-0.14061 0.11249-0.16873 0.0281-0.0562 0.0281-0.30934 0-0.28121-0.0281-0.33746l0.22497-0.30933v-3.8526q0-0.0844 0.0844-0.25309 0.0844-0.19685 0.16873-0.28122v-2.8965q0-0.16873-0.16873-0.3937-0.14061-0.2531-0.36558-0.44995-0.22497-0.19685-0.44994-0.33746-0.22497-0.14061-0.3937-0.14061-0.47807 0-0.73116 0.25309-0.22497 0.2531-0.61867 0.47807-0.28122 0.14061-0.56243 0.22497-0.28122 0.0844-0.56243 0.25309l-1.5186 0.44995-0.33745-0.22497q0-0.0844-0.11249-0.2531-0.0844-0.16873-0.0844-0.25309-0.0281-0.11249-0.11249-0.44995-0.0562-0.36558-0.11249-0.44994 0 0-0.0562-0.11249-0.0281-0.14061-0.0844-0.25309-0.0281-0.14061-0.0562-0.25309-0.0281-0.14061-0.0281-0.14061 0.0281-0.42182 0.0562-0.6468 0.0562-0.22497 0.0562-0.33746 0.0281-0.11249 0.0562-0.16873 0.0281-0.05624 0.0562-0.14061 0.0562-0.16873 0.19685-0.11249 0.16873 0.05624 0.22498-0.11249 0.11248-0.05624 0.16873 0.05624 0.0562 0.11249 0.16872 0.05624 0.0563 0.05624 0.0844 0.11249 0.0562 0.02812 0.14061 0-0.0281 0.16873 0.1406 0.28122 0.16873 0.08436 0.16873 0.25309h0.11249l0.0281 0.14061q0.14061 0.28122 0.33746 0.50619 0.22497 0.22497 0.44994 0.44994 0.11249 0.05624 0.2531 0.05624 0.16873 0 0.28121 0h0.22497l2.8684-2.8684-0.56243-0.59055q-0.0281 0-0.2531 0.16873-0.19685 0.14061-0.42182 0.30934t-0.44994 0.30934q-0.19685 0.11249-0.22498 0.05624l-1.1249-1.1249-0.1406-0.28122-0.6468-0.64679h-0.75928q-0.19685 0.14061-0.44994 0.19685-0.2531 0.05624-0.33746 0.14061l-0.44994 0.47806q-0.0562-0.05624-0.14061-0.05624 0-0.02812-0.0281-0.02812l-0.0281 0.02812-2.8403 2.8403v0.95613l0.2531 0.28122v1.1811q0.0562 0.0562 0.1406 0.19685 0.0844 0.11249 0.0844 0.22498v1.1811l0.22497 0.30933v0.81553q0 0.0844 0.11249 0.25309 0.1406 0.14061 0.30933 0.30934 0.16873 0.14061 0.33746 0.25309 0.19685 0.0844 0.30934 0.0844l1.8841-1.0967q0.22497-0.14061 0.56243-0.28122 0.36558-0.1406 0.61867-0.19685 0.30934-0.0844 0.36558-0.0844 0.0562-0.0281 0.30934-0.0281 0.0844 0 0.19685 0.11248 0.11248 0.11249 0.11248 0.16873l-0.11248 3.1777q-0.0844 0.0844-0.16873 0.28122-0.0844 0.16872-0.0844 0.25309v3.8526q-0.1406 0.11249-0.22497 0.28122-0.0844 0.14061 0 0.30934l-0.67491 0.67491q-0.0563 0.0563-0.19685 0.0563-0.36558 0-0.92801-0.14061t-0.84365-0.33746q-0.44994-0.30934-1.0124-0.64679-0.56243-0.36558-0.95613-0.81553 0.0281-0.11248-0.0563-0.22497-0.0562-0.0562-0.22497-0.22497-0.14061-0.19685-0.19685-0.2531 0.0562-0.16872-0.0562-0.28121-0.11249-0.14061-0.11249-0.28122v-0.0281l2.4184-2.5028q0.16873 0.16873 0.25309 0.36558 0.11249 0.19685 0.0563 0.44994 0 0.0563 0 0.16873 0.0281 0.0844-0.11249 0.0281-0.0281 0.14061-0.16873 0.28122-0.1406 0.14061-0.28121 0.16873-0.0562 0.11248 0.0281 0.16873 0.11249 0.0281 0.0844 0.1406 0.14061-0.0281 0.30934 0 0.19685 0 0.33746 0 0.16873 0 0.28121-0.0562 0.11249-0.0844 0.16873-0.25309 0.11249-0.11249 0.0844-0.22497 0.30933-0.22498 0.22497-0.59056-0.0562-0.3937 0-0.70303-0.22497-0.33746-0.56243-0.44995-0.33746-0.14061-0.73116-0.0844l-0.14061-0.0844q-0.30933 0-0.61867 0.0844-0.30934 0.0562-0.53431 0.28121l-1.4342 1.3498h-0.11248l-2.8403 2.8403v0.25309q0.30933 0.30934 0.64679 0.75928 0.36558 0.42182 0.30934 0.89989 0.22497 0.28121 0.42182 0.56243 0.22497 0.28121 0.44994 0.56243l0.53431 0.53431z"/>
+  <path d="m124.12 139.82t0.11248-0.22497q0.11249-0.19685 0.19685-0.3937 0.0844-0.16873 0.11249-0.19686 0.73116-0.75928 1.2092-1.2936 0.50619-0.53431 1.153-1.2092 0.67492-0.64679 1.7154-1.631 1.0405-0.95613 2.8403-2.6434 0.0281-0.30933 0.19685-0.59055 0.19685-0.25309 0.33746-0.47806 0.1406-0.22498 0.16872-0.53431 0.0563-0.30934 0.22498-0.42182v-1.1811l0.16873-0.19685v-0.92801l0.19685-0.19685v-0.64679l0.16873-0.16873v-3.3183l0.16872-0.19685v-1.1811l0.16873-0.16873q-0.0281-0.25309 0-0.70304 0.0281-0.42182 0.16873-0.73116v-7.5928q0-0.14061-0.14061-0.30934-0.1406-0.16873-0.19685-0.22497v-1.2936q0-0.0562-0.0562-0.16873-0.0281-0.14061-0.0844-0.19685-0.0563-0.0562-0.2531-0.25309-0.16873-0.22498-0.22497-0.28122l0.36558-0.42182v-0.1125q-0.0281-0.0562-0.0562-0.11248 0-0.0562 0-0.0562l-1.6592-1.7998-0.0844-0.11249-0.67491-0.70304v-0.19685t-0.25309-0.22497q-0.22498-0.22497-0.36558-0.36558-0.0844-0.0562-0.14061-0.0562-0.0281-0.0281-0.0844-0.16873l-1.0124-1.0124h-0.30934l-2.3903 2.3622v0.19685l-0.98426 0.95613v-1.7998l0.14061-0.28122v-3.3465q0-0.0562 0.0562-0.16872 0.0844-0.11249 0.14061-0.16873v-2.6153q0.19685-0.14061 0.16873-0.33746 0-0.22497 0.19685-0.36558v-2.2778q0-0.19685-0.0562-0.16873-0.0563 0.02812-0.11249-0.16873-0.0281-0.05624-0.0562-0.28122 0-0.25309 0-0.30934-0.0562-0.14061-0.22497-0.30934-0.14061-0.19685-0.14061-0.30934v-0.02812q0.0281-0.05624 0.0562-0.16873 0.0562-0.14061 0.0562-0.14061l0.73115-0.7874-0.47806-0.44994q0-0.02812-0.0562-0.02812-0.0563 0-0.0844 0-0.14061 0-0.19685 0.02812-0.0562 0.02812-0.19685 0.16873l-1.9685 1.9404h-0.28122l-2.5591 2.5591 0.47807 0.47806h0.0562q0.0844 0 0.33746-0.08436 0.25309-0.11249 0.53431-0.25309 0.28121-0.14061 0.50619-0.25309 0.25309-0.14061 0.33745-0.22497l0.11249 0.11249q0 0.16873 0.0281 0.42182 0.0281 0.22497 0.22497 0.33746v1.856q-0.22497 0.16873-0.22497 0.47806 0 0.30934-0.16873 0.53431v2.4747q-0.0844 0.0562-0.14061 0.2531-0.0281 0.16873-0.0281 0.22497v3.3183l-0.16873 0.25309v11.333l0.14061 0.16873v0.70304l-1.2092 1.2655q-0.0281 0.0844 0.0562 0.19685 0.0844 0.14061 0.16873 0.25309 0.11249 0.14061 0.19685 0.2531 0.11249 0.11248 0.11249 0.22497h0.5343q0.11249 0 0.0281 0-0.0562 0.0281-0.11249 0-0.0281 0 0.0844-0.0844 0.14061-0.0844 0.67492-0.30933h0.0562q0.0844 0 0.30934 0.11248 0.22497 0.11249 0.47807 0.2531 0.25309 0.16873 0.44994 0.30933 0.22497 0.16873 0.30934 0.2531h1.3498l2.6715-2.784-0.44994-0.56243-1.0686 0.98425q-0.0281-0.0562-0.28122 0-0.22497 0.0562-0.28121 0 0 0-0.14061-0.0844t-0.28121-0.19685q-0.14061-0.0844-0.28122-0.16873-0.14061-0.0844-0.14061-0.0844-0.1406-0.0281-0.19685-0.19685-0.0281-0.16873-0.0562-0.36558 0-0.16873-0.0562-0.30933-0.0281-0.14061-0.19685-0.14061v-0.0562q0.0281-0.0562 0.11248-0.16873 0.0844-0.0844 0.11249-0.11249v-1.2092l-0.11249-0.22498v-6.721l0.81553-1.3217q0.0281-0.22497 0.16873-0.3937 0.16872-0.16873 0.33745-0.30933 0.16873-0.14061 0.30934-0.30934 0.16873-0.16873 0.19685-0.3937 0.22497 0.19685 0.3937 0.42182t0.44995 0.36558q0 0 0.0281 0.0281 0.0281 0 0.0281 0.0281 0.22497 0.33746 0.42182 0.56243 0.19685 0.22498 0.53431 0.56243 0 0.11249 0.0562 0.11249 0.0563 0.0562 0.16873 0.22497 0.14061 0.14061 0.19685 0.19685 0.0563 0.0844 0.22497 0.2531 0.19685 0.16873 0.39371 0.36558 0.19685 0.19685 0.36557 0.36558 0.16873 0.19685 0.2531 0.25309l-0.36558 0.42182v0.0562q0 0.16873 0.16873 0.2531 0.16873 0.11248 0.16873 0.28121v1.378l0.30933 0.47806v7.5928q-0.1406 0.28121-0.16873 0.64679 0 0.3937 0 0.6468l-0.1406 0.30933v1.0686q-0.0563 0.0281-0.14061 0.11249-0.0562 0.11248-0.0562 0.16872v3.2059q-0.19685 0.19685-0.16873 0.47806 0.0562 0.28122-0.16873 0.42182v1.0686q-0.14061 0.0844-0.14061 0.28122-0.0281 0.11248-0.0562 0.47806 0 0.36558-0.0281 0.47807-0.19685 0.16873-0.22498 0.50618-0.0281 0.33746-0.11248 0.56243-0.0281 0.0281-0.11249 0.11249-0.0562 0.11249-0.0844 0.14061 0 0.0281-0.0563 0.11248-0.0281 0.11249-0.0562 0.16873l-1.0686 1.0405h-0.16872t-0.28122 0.28121q-0.28121 0.28122-0.67492 0.6468-0.36557 0.3937-0.7874 0.7874-0.3937 0.42182-0.64679 0.67492-0.14061 0.1406-0.3937 0.47806-0.2531 0.33746-0.53431 0.70304-0.28122 0.3937-0.47807 0.75928t-0.19685 0.56243z"/>
+  <path d="m138.47 116.03q0.0281 0 0.14061 0.0281 0.1406 0.0562 0.28121 0.0844 0.14061 0.0562 0.28122 0.0844 0.1406 0.0281 0.16872 0.0281h0.0281q0.0281 0 0.1406-0.0562 0.11249-0.0562 0.14061-0.0562 0.0844-0.0281 0.36558-0.0563 0.30934 0 0.42182 0 0.14061-0.0562 0.22497-0.16873 0.0844-0.0844 0.22498-0.1406 0.56243-0.14061 0.87176-0.33746 0.30934-0.16873 0.81553-0.47807 0.0562-0.0562 0.30933-0.19685 0.28122-0.14061 0.33746-0.16873 0.0562-0.0562 0.16873-0.16873 0.11249-0.0844 0.11249-0.1406l0.59055-1.1811q0-0.19685 0.0281-0.44994 0.0562-0.25309 0.19685-0.42182v-1.856q0.0844-0.11249 0.0844-0.22497 0-0.0844-0.0281-0.11249 0-0.0562-0.0562-0.14061v-1.9966q-0.0562-0.0563-0.11249-0.14061-0.0281-0.11249-0.0562-0.16873 0-0.0281 0-0.16873 0-0.14061-0.0281-0.28121 0-0.16873-0.0281-0.30934 0-0.14061 0-0.19685 0-0.0281-0.0563-0.14061-0.0562-0.11249-0.0562-0.14061 0-0.0281 0-0.16873 0-0.16872-0.0281-0.30933 0-0.16873-0.0281-0.30934 0-0.14061 0-0.16873 0-0.0562-0.0562-0.14061-0.0563-0.11248-0.0844-0.16872v-1.1249q0-0.0563-0.16873-0.36558-0.16873-0.30934-0.28121-0.44995-0.3937-0.50618-0.84365-0.7874-0.44994-0.30934-0.87176-0.75928l-1.5467-0.75928h-0.0281q-0.16873 0-0.50619 0.14061-0.30933 0.11248-0.64679 0.28121-0.33746 0.14061-0.61867 0.30934-0.28122 0.14061-0.3937 0.19685-0.0281 0.0281-0.0844 0.0562-0.0281 0-0.0281 0-0.0281 0.0281-0.14061 0.0562-0.0844 0-0.11248 0.0281-0.0281 0-0.14061 0.1406-0.11249 0.11249-0.14061 0.14061-0.47806 0.30934-1.0405 0.59055-0.53431 0.2531-0.87177 0.73116-0.22497 0.33746-0.44994 0.73116-0.19685 0.3937-0.19685 0.81552v0.44995q0 0.36558 0 1.2936 0.0281 0.92801 0.0281 1.9685 0 1.0405 0 1.9685 0.0281 0.92801 0.0281 1.2936 0.14061 0.28121 0.19685 0.50618 0.0844 0.2531 0.22497 0.50619 0.30934 0.50619 0.70304 0.81552 0.3937 0.30934 0.84364 0.67492 0.11249 0.0844 0.16873 0.19685 0.0563 0.14061 0.16873 0.22497 0.0562 0.0281 0.33746 0.16873 0.28121 0.14061 0.33746 0.16873 0.0844 0.0844 0.36558 0.33746 0.30933 0.28121 0.3937 0.3937zm-0.16873-2.1935v-0.14061q0-0.0844 0.0281-0.16872 0.0281-0.0844 0.0281-0.16873 0-0.0844-0.0281-0.14061 0-0.0281-0.0562-0.11249v-1.1249q-0.11249-0.11248-0.11249-0.22497 0-0.0844 0.0281-0.14061 0.0563-0.0562 0.0563-0.1406v-0.0281q-0.0281-0.0281-0.0844-0.1406-0.0562-0.11249-0.0844-0.14061v-2.1935q-0.0281-0.0562-0.0844-0.1406-0.0281-0.11249-0.0562-0.16873v-0.0562q0-0.0281 0.0562-0.1406 0.0563-0.14061 0.0563-0.16873v-0.0281q0-0.14061-0.0281-0.33746t-0.0844-0.33746v-2.0248q0-0.14061 0.19685-0.14061 0.19685-0.0281 0.28121-0.0844 0.39371-0.28122 0.78741-0.3937 0.42182-0.14061 0.92801-0.14061h0.0562q0.0562 0.0281 0.14061 0.14061 0.11248 0.11248 0.16873 0.14061 0.0281 0.0562 0.0562 0.0844 0.0281 0.0281 0.0281 0.0562v1.2936q0.14061 0.16873 0.16873 0.36558 0.0281 0.19685 0 0.42182 0 0.19685 0 0.39371 0.0281 0.19685 0.14061 0.36557v4.6963q-0.0281 0.0281-0.0844 0.11248-0.0281 0.11249-0.0281 0.16873 0 0.11249-0.0281 0.47807t-0.0281 0.47806q-0.0281 0.0562-0.11249 0.22497-0.0844 0.19685-0.11248 0.2531-0.0281 0.0281-0.0844 0.0562-0.0281 0.0562-0.0562 0.0562l-0.81553 0.42183h-0.42182q-0.0281 0-0.22497-0.19686-0.16873-0.16872-0.25309-0.28121-0.0563-0.0844-0.19685-0.36558-0.11249-0.25309-0.14061-0.33746zm1.7435-11.642q0.14061 0 0.14061 0.0562 0 0.0563 0 0.19685 0 0.16873-0.0844 0.39371-0.0844 0.19685-0.22497 0.42182-0.1406 0.19685-0.30933 0.3937-0.14061 0.16873-0.2531 0.25309-0.28121 0.19685-0.56243 0.28122-0.25309 0.0844-0.50618 0.25309-0.0563 0.0562-0.14061 0.0562l-0.0281 0.0281-0.0281-0.0281q-0.11249 0-0.11249-0.11248v-0.75928q0-0.0844 0.30934-0.30934 0.30933-0.22497 0.70303-0.47806 0.3937-0.2531 0.70304-0.44995 0.33746-0.19685 0.3937-0.19685z"/>
+  <path d="m154.39 116.73q0.16873-0.0563 0.36558 0.11248 0.19685 0.19685 0.28121 0.2531 0.22497 0.11248 0.36558 0.11248 0.16873 0 0.3937 0h0.36558q0.44995-0.22497 0.81553-0.3937 0.36558-0.14061 0.73116-0.50619l2.4466-2.4184q0.28121-0.16873 0.5343-0.50619 0.2531-0.33746 0.36558-0.73116 0.14061-0.36558 0.0563-0.73116-0.0563-0.33746-0.42183-0.56243-0.11248 0.0562-0.16872-0.0281-0.0281-0.11249-0.14061-0.0562-0.33746-0.0562-0.61868 0.0562-0.25309 0.0844-0.59055 0.0281-0.11248 0.19685-0.33745 0.22497-0.19686 0-0.30934 0.22497-0.14061-0.0562-0.11249 0.0844 0.0281 0.14061 0 0.22497 0.14061 0.22497 0.28122 0.22497 0.16873 0.0281 0.30933-0.0562 0.16873-0.0562 0.30934-0.19685 0.16873-0.11249 0.30934-0.16873 0.28121-0.0844 0.3937 0.11249 0.11248 0.19685 0.25309 0.36558h-0.0562q-0.19685 0.16872-0.42182 0.3937-0.22498 0.25309-0.50619 0.44994-0.25309 0.22497-0.56243 0.36558-0.28122 0.16873-0.59055 0.16873-0.42182 0-0.81553-0.33746-0.3937-0.33746-0.50618-0.73116 0-0.0281 0-0.16873 0.0281-0.11248 0-0.1406 0-0.0562-0.0844-0.19685-0.0844-0.11249-0.1406-0.16873v-2.081q0-0.0844-0.0844-0.19686-0.0844-0.1406-0.14061-0.19685v-8.7458q0.16873-0.11249 0.19685-0.19685 0.0281-0.11249 0.0281-0.28122 0-0.50618-0.44995-0.89989-0.42182-0.42182-0.92801-0.42182-0.0281 0-0.11248 0.02812-0.0563 0-0.0563 0l-2.8684 2.8684q-0.11249-0.14061-0.25309 0-0.11249 0.1406-0.11249 0.25309-0.16873-0.0562-0.11249 0.11249-0.19685-0.0281-0.28121 0.11248-0.0562 0.11249-0.0562 0.28122 0.0281 0.16873 0.1406 0.30933 0.14061 0.11249 0.30934 0.0563 0.0562-0.0563 0.16873-0.0844 0.11249-0.0281 0.0562-0.14061 0.0563-0.1406 0.16873-0.11248 0.11249 0.0281 0.16873-0.11249 0.11249 0 0.19685-0.0281 0.0844-0.0562 0.16873-0.0844 0.0844 0 0.22497 0 0.14061 0 0.14061 0.1406 0 0.14061-0.11249 0.19685-0.0844 0.0563-0.0844 0.19685l-0.0281 10.292 0.0562 0.11249q-0.0562 0.0562-0.19685 0.0562-0.11249 0-0.16873 0-0.14061 0-0.19685 0.11249-0.0562 0.14061-0.11249 0.28121-0.0281 0.14061-0.0844 0.22498-0.0562 0.0844-0.14061 0l-1.2936-0.87177t-0.0844-0.0281q-0.0562 0-0.0844-0.0281-0.0562 0-0.19685-0.0844-0.1406-0.0844-0.16873-0.0844h-0.47806q-0.30934-0.0281-0.28122-0.2531 0.0281-0.22497 0-0.44994-0.0281-0.14061-0.1406-0.25309-0.11249-0.0844-0.11249-0.22498l0.0281-2.7278q0-0.11249 0.0844-0.22497 0.11248-0.14061 0.16873-0.19685v-2.4466q0-0.0844 0.0562-0.2531 0.0844-0.19685 0.16873-0.28121l-0.30934-3.5996q0-0.0281 0.0281-0.0563 0.0281-0.0562 0.0281-0.0844 0.0281-0.0281 0.0844-0.11249 0.0844-0.0844 0.11248-0.11248l0.30934-1.1249-0.61867-0.59056q-0.28122 0.02813-0.47807 0-0.19685-0.02812-0.3937-0.25309h-0.7874l-2.8684 2.8965 0.56243 0.56243q0.0562-0.0281 0.22497-0.0281 0.19685 0 0.25309 0.0281 0.0281 0 0.11249 0.0844 0.0844 0.0844 0.11248 0.0844 0.0281 0.0281 0.22498 0.0562 0.19685 0.0281 0.19685 0.0562v0.89989l-0.22498 0.36558v3.1496q-0.0844 0.0844-0.16872 0.25309-0.0844 0.16873-0.0844 0.28121v2.2497q-0.0562 0.0563-0.14061 0.19685-0.0844 0.11249-0.0844 0.22498v2.1935l0.22497 0.28122v0.64679l0.95613 0.95613q0.14061 0.16873 0.3937 0.11249 0.28122-0.0281 0.44995 0 0.0281 0.0281 0.16873 0.0844 0.1406 0.0844 0.16873 0.11249 0.0562 0 0.11248 0.0281 0.0562 0.0281 0.0844 0.0281h1.1811q0.16873 0.22498 0.44994 0.2531 0.30934 0.0281 0.56243-0.0281 0.16873 0.0844 0.28122 0.16872 0.11248 0.0844 0.30933 0.0844h0.11249l1.9123-1.856q-0.0562 0.14061-0.0281 0.22497 0.0281 0.0844 0.0844 0.14061 0.0562 0.0562 0.11248 0.11249 0.0562 0.0844 0.0562 0.19685v0.28121q0.0563 0.25309 0.28122 0.50619 0.25309 0.28121 0.19685 0.56243zm-1.4061-3.3183q0.0563 0 0.0563 0.0562t-0.0563 0.0562q-0.0562 0-0.0562-0.0562t0.0562-0.0562z"/>
+  <path d="m159.44 121.9 0.39371 0.42183q0.0281 0 0.0844 0 0.0844 0.0281 0.14061 0.0281 0.19685 0 0.33746-0.0562 0.1406-0.0562 0.28121-0.28121h0.95613l0.16873 0.16873h0.70304l0.19685 0.14061h1.0124l2.4184-2.4184-0.47806-0.50619h-0.70304l-0.16873-0.19685h-0.73116l-0.22497-0.19685v-17.267q0.0844-0.14061 0.11248-0.3937 0.0563-0.2531 0.19686-0.36558v-5.8212l0.16872-0.16873v-1.1811q-0.0844-0.08436-0.1406-0.19685 0 0-0.0281-0.05624 0-0.08436-0.0281-0.11249-0.0562-0.05624-0.19685-0.19685-0.1406-0.16873-0.19685-0.22497-0.11248-0.05624-0.33746-0.08436-0.22497-0.05624-0.28121-0.19685 0-0.50619-0.14061-0.84364-0.11248-0.33746-0.56243-0.64679h-0.1124q-0.0563 0-0.11249 0.02812-0.0562 0.02812-0.0562 0.02812l-3.6277 3.5714v0.11249l0.42183 0.42182h0.11248q0.2531-0.22497 0.53431-0.42182 0.28122-0.19685 0.53431-0.42182-0.0281 0.3937 0.28121 0.67492 0.30934 0.28122 0.53431 0.50619 0.0844 0.02812 0.2531 0.11249 0.16873 0.08436 0.16873 0.14061v0.81552l-0.14061 0.30934v5.7368q-0.14061 0.1406-0.19685 0.3937-0.0281 0.22497-0.16873 0.3937v16.535l-1.378 1.4342z"/>
+  <path d="m167.23 114.14q0.19686 0.11248 0.16873 0.30934-0.0281 0.19685 0.0281 0.33745 0.22497 0.56243 0.70303 0.89989 0.50619 0.33746 0.95613 0.6468h1.378q0.0844-0.0844 0.36558-0.28122 0.28121-0.19685 0.61867-0.42182 0.33746-0.19685 0.61867-0.36558 0.30934-0.16873 0.3937-0.16873l2.3903-2.3903q0.0281-0.0844 0.11249-0.19685 0.0844-0.0844 0.1406-0.14061v0.6468q0.16873 0.14061 0.16873 0.28121 0.0281 0.16873 0.19685 0.30934v0.70304q0.22498 0.11248 0.16873 0.33746-0.0281 0.22497 0.0281 0.3937 0.0844 0.16873 0.30934 0.33745 0.22497 0.16873 0.47807 0.11249 0 0.16873-0.11249 0.28122-0.0844 0.11248-0.22497 0.19685-0.11249 0.0844-0.25309 0.16873-0.11249 0.0844-0.19686 0.22497-0.1406-0.0281-0.22497 0.0562-0.0562 0.11249-0.19685 0.0562-0.16873 0.0844-0.44994 0.0844-0.28122 0-0.50619 0.0281t-0.36558 0.14061q-0.14061 0.11248 0 0.3937 0.0844 0.14061 0.19685 0.16873 0.14061 0.0281 0.28122 0.0281 0.1406 0 0.25309 0 0.14061 0.0281 0.25309 0.11248 0-0.0844 0.0563-0.11248 0.0844 0 0.16873 0 0.0844 0 0.16873 0 0.0844 0 0.1406-0.0844 0.16873 0.0562 0.11249-0.11248 0.0844-0.0281 0.22497 0 0.16873 0.0281 0.11249-0.11249 0.11248 0.0562 0.19685 0 0.0844-0.0562 0.1406-0.14061 0.0563-0.0844 0.11249-0.1406 0.0844-0.0563 0.19685-0.0563-0.0281-0.1406 0.14061-0.16873 0.19685-0.0281 0.25309-0.16872 0.81553-0.92801 1.2936-1.4623 0.50619-0.50619 0.73116-0.75928 0.22497-0.2531 0.22497-0.36558 0.0281-0.0844-0.11248-0.19685-0.14061-0.0844-0.42183-0.30934-0.28121-0.19685-0.59055-0.67492l0.0563-6.4398 0.11248-0.16873q0-0.16873 0-0.47806 0.0281-0.33746 0.16873-0.53431v-7.2272q-0.19685-0.22497-0.19685-0.50619 0.0281-0.30934-0.11249-0.56243v-1.9123q-0.25309-0.42182-0.36558-0.84364-0.11248-0.44994-0.25309-0.92801-0.0844-0.22497-0.30934-0.3937-0.19685-0.19685-0.30933-0.42182 0-0.02812-0.0281-0.11249 0-0.11249-0.0281-0.14061-0.0562-0.14061-0.19685-0.25309-0.1406-0.11249-0.1406-0.28122l-0.47807-1.5467q0-0.05624-0.42182-0.28122-0.3937-0.22497-0.87177-0.47807-0.47806-0.28122-0.87176-0.47806-0.39371-0.22497-0.42183-0.22497-0.73116-0.3937-0.89988-0.47807-0.16873-0.11249-0.2531-0.14061-0.0844-0.02812-0.28121-0.05624-0.19685-0.05624-0.95613-0.30934l-2.3341-0.36558-9.0832-0.25309t-0.11249-0.02812-0.16873-0.05624q-0.0281 0-0.0562-0.02812-0.0562-0.02812-0.0562-0.02812-0.28122-0.05624-0.50619-0.05624-0.22497-0.02812-0.44995-0.16873-0.0562-0.02812-0.19685-0.14061-0.16872-0.14061-0.22497-0.16873-0.0281-0.02812-0.16873-0.02812-0.1406-0.02812-0.19685-0.02812-0.25309-0.08436-0.3937-0.28122-0.16873-0.19685-0.30933-0.42182v-0.08436l0.47806-0.53431-0.47806-0.44994q-0.0281-0.02812-0.0563-0.02812-0.11248 0-0.30933 0.16873-0.22498 0.14061-0.28122 0.19685-0.70304 1.0405-1.1249 1.6873-0.42182 0.61867-0.61867 1.0124-0.22497 0.36558-0.2531 0.56243-0.0562 0.16873 0.0281 0.28122 0.0844 0.08436 0.28121 0.16873 0.16873 0.05624 0.3937 0.25309 0.0281 0 0.11249 0.16873 0.0844 0.14061 0.11248 0.14061 0.0281 0 0.11249 0.05624 0.0562 0.05624 0.0562 0.05624 0.30934 0.11249 0.61868 0.19685 0.28121 0.05624 0.59055 0.28122 0.0844 0.02812 0.3937 0.08436 0.28121 0.02812 0.36558 0.02812 0 0.02812 0.0562 0.05624 0.0562 0 0.0562 0.02812 0.0563 0 0.19685 0.05624 0.14061 0.02812 0.16873 0.02812l13.78 0.59055q1.1249 0.47807 1.8279 1.0967 0.70303 0.59055 1.1249 1.4061 0.42182 0.7874 0.64679 1.8279 0.22497 1.0124 0.42182 2.3622l-0.33746 1.5748q0.0281 0.08437 0.0844 0.25309 0.0844 0.16873 0.11249 0.3937 0.0562 0.19685 0.0844 0.3937 0.0562 0.16873 0.0562 0.28122v0.11249l-0.59055 0.59055h-0.0562q-0.0281 0-0.11249-0.0562-0.0562-0.0562-0.0844-0.0844h-1.6029q-0.0562-0.0562-0.19685-0.14061-0.14061-0.0844-0.19685-0.14061-0.0562 0-0.11248-0.0281-0.0563-0.0281-0.0844-0.0281h-1.8841l-2.8403 2.8684q-0.14061 0.11249-0.19685 0.30934-0.0562 0.16873-0.11249 0.36558-0.0281 0.19685-0.11248 0.3937-0.0562 0.19685-0.22498 0.33746v0.7874q-0.11248 0.0844-0.1406 0.2531-0.0281 0.1406-0.0281 0.33745t-0.0281 0.3937q0 0.19685-0.11248 0.30934v3.4871l0.14061 0.19685v2.4184q0.16872 0.1406 0.16872 0.3937 0 0.25309 0.19685 0.3937zm2.6153-3.5714v-2.3622l-0.16872-0.28121v-3.3465q0.0562-0.0562 0.0844-0.22497 0.0562-0.19685 0.0844-0.42183 0.0563-0.22497 0.0844-0.44994 0.0562-0.22497 0.11248-0.36558 0.0281 0 0.0844 0 0.0844-0.0281 0.11249-0.0281 0.19685 0 0.36557 0.11249 0.16873 0.0844 0.33746 0.19685h1.7154q-0.0281 0.0844-0.0281 0.22497 0.0281 0.11248-0.11248 0.0562-0.0563 0.11249-0.16873 0.19685-0.0844 0.0844-0.0281 0.22497-0.28122 0.19685-0.22498 0.56243-0.11248 0.0563-0.11248 0.16873 0 0.11249 0 0.2531 0 0.11248 0 0.22497 0 0.0844-0.11249 0.0844-0.0844 0.14061-0.22497 0.11249-0.11249-0.0281-0.22497-0.11249-0.0844-0.11248-0.14061-0.22497-0.0281-0.14061 0.0562-0.19685 0-0.0844 0-0.16873 0-0.0844 0.11249-0.14061-0.0281-0.0844 0-0.11248 0.0562-0.0562 0.11249-0.11249-0.0563-0.16873 0.0562-0.25309 0.11248-0.11249 0.0562-0.28122 0.0844-0.1406 0.19685-0.11248 0.11249-0.11249 0.0844-0.22498 0-0.1406 0.1406-0.22497l0.22498-0.19685 0.33745 0.2531 1.7717-1.7154h0.0281q0.0844 0 0.14061 0.0844 0.0562 0.0562 0.14061 0.0562l0.0562-0.0281 0.64679-0.59055v5.5681q-0.0562 0.0562-0.0562 0.1406-0.0281 0.0844-0.0844 0.42183-0.0281 0.30933-0.0563 0.3937l-0.14061 0.19685v2.4184q-0.11248-0.3937-0.19685-0.59056 0.0563-0.1406-0.11248-0.22497-0.16873-0.0844-0.11249-0.22497h-1.0686q-0.0281 0.0562 0 0.16873 0.0281 0.11249-0.11249 0.0562-0.14061-0.0562-0.14061 0.11249 0.0281 0.16873 0.14061 0.19685 0.0562 0.0562 0.0844 0.11249 0.0562 0.0281 0.0281 0.11248 0.16872-0.0281 0.36557 0 0.19686 0 0.33746 0.0562 0.16873 0.0563 0.2531 0.19685 0.0844 0.14061 0.0281 0.39371 0.0281 0.1406-0.0281 0.33745-0.0281 0.16873-0.2531 0.11249l-0.59055 0.61867q-0.11248 0.22497-0.25309 0.42183-0.14061 0.22497-0.22497 0.44994-0.30934 0.28121-0.59056 0.3937-0.28121 0.11249-0.5343 0.33746h-1.0124q-0.14061-0.11249-0.30933-0.19685-0.14061-0.0844-0.22498-0.22497-0.1406-0.22498-0.22497-0.59056-0.0844-0.33745-0.16873-0.70303-0.0562-0.36558-0.14061-0.67492-0.0844-0.30934-0.19685-0.42182z"/>
+  <path d="m89.304 153.71v0.0562l0.42182 0.3937h0.11249l2.4466-2.1372q0.28122-0.28122 0.47806-0.61867 0.19685-0.33746 0.44994-0.61868 0.16873 0.14061 0.28122 0.28122t0.22497 0.28121q0.16873 0.22498 0.3937 0.44995 0.22497 0.25309 0.44994 0.42182h0.14061q0.47806 0 1.0686-0.36558 0.59055-0.33746 0.89989-0.59055 0.30934-0.28122 0.7874-0.70304 0.50619-0.42182 0.95613-0.84364 0.47806-0.3937 0.81552-0.70304t0.33746-0.30934l0.11249-0.19685 0.19685-0.95613 0.05624-0.11249 0.16873-2.1935q0.0281 0 0.0281-0.0563 0.0281-0.0844 0.0281-0.0844 0-0.0281 0-0.16873 0.0281-0.14061 0.0281-0.28121 0.0281-0.16873 0.0281-0.28122 0-0.14061 0-0.19685 0-0.0281 0.0281-0.19685 0.0562-0.19685 0.11248-0.28121 0-0.0281 0.0563-0.16873 0.0562-0.16873 0.0844-0.22498 0.0562-0.25309 0.0562-0.47806 0-0.25309 0-0.56243v-0.59055q-0.11248-0.3937-0.50618-1.0686-0.36558-0.67492-0.84365-1.3498-0.47807-0.70304-0.98425-1.2374-0.47806-0.56243-0.81552-0.73116-0.33746-0.19685-0.73116-0.19685-0.05624 0-0.22497 0.0281-0.14061 0-0.19685 0.0563l-2.5309 2.2216v-0.0281q0-0.0844 0-0.47806 0.02812-0.3937 0.02812-0.81552 0-0.44995 0-0.84365 0.02812-0.3937 0.02812-0.47807 0-0.28121 0-0.95613 0.02812-0.67491 0.02812-1.4061 0-0.75928-0.02812-1.4342 0-0.67491 0-0.92801 0.02812-0.16873 0.08437-0.36558 0.05624-0.22497 0.05624-0.3937 0-0.0844-0.02812-0.11248-0.02812-0.0281-0.11249-0.0844-0.05624-0.0562-0.22497-0.19685-0.14061-0.14061-0.19685-0.19685h-0.08436q-0.16873 0-0.33746 0.11249-0.16873 0.0844-0.30934 0.22497l-3.4308 3.0934 0.47806 0.42183h0.11248q0.05624 0 0.11249-0.0281 0.05624-0.0281 0.05624-0.0281l0.75928-0.56243q0 0.22498 0 0.84365 0.02812 0.59055 0.02812 1.2655 0 0.67491 0 1.2936 0.02812 0.59056 0.02812 0.81553v0.36558q0 0.22497-0.02812 0.75928-0.02812 0.50619-0.05624 1.0967 0 0.59055-0.02812 1.1249 0 0.53431 0 0.73116-0.02812 0.0281-0.05624 0.11248 0 0.0562-0.02812 0.11249 0 0.0281-0.02812 0.19685 0 0.14061-0.02812 0.33746 0 0.16873-0.02812 0.33745-0.02812 0.16873-0.02812 0.19685 0 0.0563-0.05624 0.2531-0.05624 0.16873-0.05624 0.22497 0 0.0844-0.02812 0.33746-0.02812 0.22497-0.05624 0.50619 0 0.28121-0.02812 0.5343 0 0.22498 0 0.30934-0.02812 0.14061-0.08436 0.25309-0.05624 0.0844-0.05624 0.22498 0 0.11248 0.02812 0.19685 0.05624 0.0562 0.05624 0.1406 0 0.19685-0.05624 0.33746v1.8841l0.05624 0.0844v0.33745q0 0.11249 0 0.30934 0 0.22497-0.05624 0.36558v1.7435q0.22497 0.2531 0.22497 0.6468 0 0.16873-0.16873 0.36558t-0.36558 0.36558q-0.16873 0.19685-0.33746 0.3937t-0.16873 0.3937zm6.2992-6.0461v-0.0563q0.05624-0.0562 0.16873-0.19685 0.14061-0.11248 0.16873-0.16873 0.08436-0.11248 0.19685-0.25309 0.11249-0.11249 0.11249-0.25309v-0.0563l-0.42182-0.33745h-0.11249l-2.6153 2.2778v-0.28122q0-0.28121 0.02812-0.53431 0.05624-0.22497 0.05624-0.50618 0-0.0844-0.02812-0.22497 0-0.14061 0-0.14061l-0.05624-0.11249v-1.7716q0.05624-0.14061 0.05624-0.36558 0-0.0844-0.02812-0.14061-0.02812-0.0562-0.02812-0.14061 0-0.11248 0.05624-0.22497 0.05624-0.14061 0.05624-0.25309 0-0.0844 0.02812-0.33746 0.02812-0.25309 0.02812-0.50619 0.02812-0.28121 0.05624-0.53431 0.02812-0.25309 0.02812-0.33745l0.05624-0.11249q0.25309-0.22497 0.56243-0.47807 0.30934-0.28121 0.53431-0.59055 0.22497-0.30933 0.30934-0.56243 0.08436-0.28121 0.3937-0.53431h0.05624q0.08436 0 0.42182 0.50619 0.36558 0.47807 0.75928 1.0967t0.70304 1.2092q0.33746 0.56243 0.36558 0.70304v0.59055q0 0.28122 0 0.53431 0 0.22497-0.05624 0.53431 0 0.0281-0.05624 0.16873-0.05624 0.14061-0.05624 0.19685-0.11249 0.3937-0.11249 0.81552 0.02812 0.3937-0.11249 0.73116l-0.22497 2.1654q-0.05624 0.0844-0.11249 0.30933-0.08437-0.0562-0.28122-0.33745-0.19685-0.28122-0.3937-0.59056-0.19685-0.30933-0.36558-0.59055-0.14061-0.25309-0.14061-0.30933z"/>
+  <path d="m102.92 149.04 1.1249 1.0686q0.14061 0.1406 0.3937 0.11248 0.25309 0 0.42182 0.11249h1.3217t0.0281-0.0281q0.0563 0 0.0844-0.0281l0.47806-0.47807q0.11249-0.14061 0.42183-0.53431 0.30933-0.3937 0.61867-0.84364 0.30934-0.44995 0.56243-0.84365t0.25309-0.50618q0-0.14061-0.1406-0.42183-0.11249-0.28121-0.30934-0.53431-0.19685-0.28121-0.42182-0.47806-0.19685-0.22497-0.36558-0.22497h-0.0281q-0.11249 0-0.11249 0.11248 0.0281 0.95613-0.33746 1.9123-0.36558 0.95614-0.73116 1.8279-0.0562 0.0563-0.0844 0.19685 0 0.16873-0.14061 0.16873h-0.0281q-0.0281-0.0281-0.0844-0.0562-0.0281 0-0.0281 0l-1.0124-1.0124q-0.11249-0.11248-0.16873-0.33745-0.0281-0.19685-0.0844-0.30934v-1.3217l-0.16873-0.28122v-4.6963l0.1406-0.11248q0-0.0281 0.11249-0.0281 0.14061 0 0.19685 0 0.3937 0 0.73116 0.11248 0.33746 0.11249 0.73116 0.19685 0.28121 0.0844 0.56243 0.14061 0.28121 0.0281 0.56243 0.11249 0.25309 0.0562 0.53431 0.16873 0.30933 0.11248 0.59055 0.11248 0.0562 0 0.11248 0 0.0844 0 0.14061-0.0562 0.36558-0.30934 0.7874-0.84365 0.44995-0.56243 0.44995-1.1249 0-0.0562-0.22497-0.61867-0.19685-0.59055-0.44995-1.2655-0.25309-0.67491-0.47806-1.2373-0.22498-0.56243-0.28122-0.59055l-2.081-1.0686q-0.25309-0.22497-0.59055-0.33746t-0.67492-0.11249q-0.0562 0-0.19685 0.0281-0.14061 0-0.19685 0 0 0-0.0562 0.0281-0.0281 0-0.0562 0.0281t-0.19685 0.16873q-0.16873 0.14061-0.22498 0.19685-0.11248 0.0844-0.61867 0.47806-0.50619 0.39371-1.0967 0.84365-0.56243 0.44994-1.0124 0.81552-0.44995 0.36558-0.44995 0.3937v1.1249q-0.19685 0.22498-0.22497 0.6468-0.0281 0.3937-0.0281 0.67491 0 0.0281 0.0281 0.11249 0.0281 0.0844 0.0281 0.11249v0.25309q0 0.0281-0.0281 0.11249-0.0281 0.0844-0.0281 0.11248 0 0.0281 0.0281 0.14061 0.0281 0.0844 0.0281 0.11249v0.0562q0 0.0281-0.0281 0.11248-0.0281 0.0844-0.0281 0.11249 0 0.0281 0.0281 0.14061 0.0281 0.0844 0.0281 0.11248v0.22498q0 0.0281-0.0281 0.1406-0.0281 0.0844-0.0281 0.0844 0 0.0562 0 0.14061 0.0281 0.0844 0.0562 0.11248v3.9651q-0.0281 0.0281-0.0562 0.11249 0 0.0844 0 0.14061 0 0 0 0.0281 0.0281 0.0562 0.0562 0.0844 0.0563 0.11249 0.16873 0.28122 0.11249 0.16873 0.14061 0.19685l1.3498 1.3498zm3.2621-8.4646h-1.1249q-0.14061-0.11249-0.42182-0.0844-0.25309 0-0.25309-0.25309v-1.6592l0.16873-0.28121v-1.6592q0-0.16873 0.22497-0.30934 0.22497-0.16873 0.3937-0.16873 0.0844 0 0.11248 0 0.0563 0 0.11249 0.11249 0.11249 0.22497 0.14061 0.47806 0.0562 0.2531 0.11248 0.47807 0.0281 0.14061 0.11249 0.25309 0.11249 0.0844 0.16873 0.22498 0.16873 0.50618 0.36558 1.0124t0.42182 0.98425q0.11249 0.30934 0.19685 0.44995 0.11249 0.11248 0.11249 0.33745 0 0.19685-0.14061 0.22498-0.0281 0-0.11249 0.0281-0.0562 0-0.0844 0-0.30934 0-0.50619-0.16873z"/>
+  <path d="m131.18 150.7q1.0686 0.59055 2.4466 1.0686 1.3498 0.47806 2.5309 0.70303 0.0562 0.0281 0.30934 0.0281 0.22497 0.0281 0.28121 0.0281 0.0562 0.0281 0.16873 0.0844 0.11249 0.0562 0.14061 0.0562 0.0281 0 0.16873 0 0.1406 0 0.30933 0 0.14061 0.0281 0.28122 0.0281 0.14061 0.0281 0.19685 0.0281 0.0281 0 0.14061 0.0281 0.11248 0.0562 0.1406 0.0844h2.3903q0.11249 0 0.36558-0.30933 0.28122-0.30934 0.56243-0.70304 0.30934-0.3937 0.56243-0.7874 0.25309-0.36558 0.33746-0.50619 0.0281-0.0562 0.16873-0.33746 0.1406-0.25309 0.19685-0.30933 0.14061-0.2531 0.33746-0.47807 0.22497-0.22497 0.36558-0.47807 0.0281-0.0281 0.0844-0.19685 0.0844-0.1406 0.16873-0.30933 0.11248-0.16873 0.16873-0.33746 0.0844-0.14061 0.11248-0.16873 0.11249-0.22497 0.2531-0.3937 0.16873-0.16873 0.28121-0.36558 0.3937-0.67492 0.70304-1.3217 0.33746-0.6468 0.73116-1.2936 0-0.0562 0.0562-0.14061 0.0844-0.0844 0.11249-0.11248l1.4342-2.784 0.16873-0.22497 1.4061-2.784q0.0281-0.0281 0.14061-0.2531 0.1406-0.22497 0.28121-0.47806 0.14061-0.28122 0.25309-0.50619 0.11249-0.25309 0.11249-0.33746 0-0.0562-0.0281-0.1406 0-0.11249-0.0844-0.11249h-2.3903q-0.14061-0.11249-0.2531-0.11249-0.0844-0.0281-0.25309-0.0281h-0.19685q-0.0281 0.0281-0.0844 0.0563-0.0281 0.0281-0.0281 0.0562v0.0281q0 0.14061 0.11249 0.19685 0.11249 0.0281 0.22497 0.0844 0.14061 0.0281 0.25309 0.0844 0.11249 0.0562 0.11249 0.16873 0 0.22497-0.14061 0.53431-0.1406 0.28121-0.22497 0.50618-0.3937 1.2655-1.0967 2.3903-0.67491 1.0967-1.3217 2.2497-0.0281 0.0562-0.11248 0.0562-0.0844 0-0.28122-0.59055-0.19685-0.59055-0.42182-1.3217-0.19685-0.73116-0.36558-1.378-0.14061-0.67492-0.14061-0.84365 0-0.0562 0-0.16872 0-0.14061 0.0281-0.19686 0.0563-0.22497 0.30934-0.36557 0.28121-0.16873 0.28121-0.30934 0-0.0844-0.0562-0.0844-0.0562-0.0281-0.19685-0.0844h-0.0562q-0.0562 0.0281-0.16873 0.0844-0.0844 0.0281-0.11249 0.0563h-3.0934q-0.19685 0.19685-0.59055 0.22497-0.36558 0-0.53431 0l-0.11249 0.0562q0.0844 0.14061 0.2531 0.19685 0.16872 0.0563 0.28121 0.22497 0.25309 0.39371 0.44994 1.0686 0.19686 0.6468 0.30934 1.1249 0.14061 0.56243 0.33746 1.0686 0.22497 0.50619 0.36558 1.0405 0.14061 0.59056 0.36558 1.1811 0.22497 0.56243 0.36558 1.153 0.11248 0.44994 0.28121 0.87177 0.19685 0.3937 0.19685 0.87176 0 0.0562 0 0.19685 0 0.14061-0.0281 0.19685-0.0281 0.11249-0.0844 0.16873-0.0563 0.0562-0.14061 0.16873-0.30934 0.50619-0.61867 0.98425-0.30934 0.50619-0.61868 0.98426-0.19685 0.28121-0.36558 0.59055-0.1406 0.30933-0.36558 0.59055 0 0.0281-0.11248 0.14061-0.11249 0.11248-0.16873 0.16873-0.0281 0-0.0844 0.0281-0.0281 0.0281-0.0281 0.0281h-3.0934l-0.30934-0.16873h-1.6592q-0.11248-0.0844-0.33745-0.11249-0.22498-0.0281-0.44995-0.0844-0.22497-0.0281-0.3937-0.11249-0.16873-0.0844-0.16873-0.28121 0-0.56243 0.36558-0.84365 0.36558-0.28121 0.7874-0.3937 0.42183-0.11248 0.78741-0.16873 0.36557-0.0281 0.36557-0.1406 0-0.14061-0.19685-0.19686-0.22497-0.0562-0.33745-0.1406h-1.8279q-0.0844-0.0844-0.19685-0.0844h-0.0562q-0.0281 0-0.0563 0.0281-0.0562 0.0281-0.0562 0.0281l-1.2936 1.2936-0.42182 0.84365v0.0562q0.0281 0.0281 0.0562 0.0562 0.0281 0.0562 0.0562 0.0562z"/>
+  <path d="m154.39 151.18q0.0281 0 0.14061 0.0281 0.1406 0.0562 0.28121 0.0844 0.14061 0.0562 0.28122 0.0844 0.1406 0.0281 0.16873 0.0281h0.0281q0.0281 0 0.14061-0.0563 0.11248-0.0562 0.1406-0.0562 0.0844-0.0281 0.36558-0.0562 0.30934 0 0.42182 0 0.14061-0.0563 0.22498-0.16873 0.0844-0.0844 0.22497-0.14061 0.56243-0.14061 0.87177-0.33746 0.30933-0.16873 0.81552-0.47806 0.0562-0.0562 0.30934-0.19685 0.28121-0.14061 0.33745-0.16873 0.0563-0.0563 0.16873-0.16873 0.11249-0.0844 0.11249-0.14061l0.59055-1.1811q0-0.19685 0.0281-0.44995 0.0562-0.25309 0.19685-0.42182v-1.856q0.0844-0.11248 0.0844-0.22497 0-0.0844-0.0281-0.11249 0-0.0562-0.0562-0.1406v-1.9966q-0.0562-0.0562-0.11248-0.14061-0.0281-0.11248-0.0563-0.16873 0-0.0281 0-0.16872 0-0.14061-0.0281-0.28122 0-0.16873-0.0281-0.30934 0-0.1406 0-0.19685 0-0.0281-0.0562-0.1406-0.0563-0.11249-0.0563-0.14061 0-0.0281 0-0.16873 0-0.16873-0.0281-0.30934 0-0.16873-0.0281-0.30933 0-0.14061 0-0.16873 0-0.0563-0.0562-0.14061-0.0562-0.11249-0.0844-0.16873v-1.1249q0-0.0562-0.16873-0.36558-0.16872-0.30934-0.28121-0.44994-0.3937-0.50619-0.84365-0.7874-0.44994-0.30934-0.87176-0.75929l-1.5467-0.75928h-0.0281q-0.16873 0-0.50618 0.14061-0.30934 0.11249-0.6468 0.28122-0.33746 0.1406-0.61867 0.30933-0.28122 0.14061-0.3937 0.19685-0.0281 0.0281-0.0844 0.0563-0.0281 0-0.0281 0-0.0281 0.0281-0.14061 0.0562-0.0844 0-0.11248 0.0281-0.0281 0-0.14061 0.14061-0.11248 0.11248-0.14061 0.14061-0.47806 0.30933-1.0405 0.59055-0.53431 0.25309-0.87177 0.73116-0.22497 0.33745-0.44994 0.73116-0.19685 0.3937-0.19685 0.81552v0.44994q0 0.36558 0 1.2936 0.0281 0.92801 0.0281 1.9685 0 1.0405 0 1.9685 0.0281 0.92801 0.0281 1.2936 0.14061 0.28122 0.19685 0.50619 0.0844 0.25309 0.22497 0.50619 0.30934 0.50618 0.70304 0.81552t0.84365 0.67491q0.11248 0.0844 0.16872 0.19686 0.0563 0.1406 0.16873 0.22497 0.0563 0.0281 0.33746 0.16873 0.28122 0.1406 0.33746 0.16873 0.0844 0.0844 0.36558 0.33745 0.30934 0.28122 0.3937 0.3937zm-0.16873-2.1935v-0.14061q0-0.0844 0.0281-0.16873 0.0281-0.0844 0.0281-0.16873 0-0.0844-0.0281-0.14061 0-0.0281-0.0562-0.11248v-1.1249q-0.11249-0.11249-0.11249-0.22497 0-0.0844 0.0281-0.14061 0.0563-0.0562 0.0563-0.14061v-0.0281q-0.0281-0.0281-0.0844-0.14061-0.0562-0.11248-0.0844-0.14061v-2.1935q-0.0281-0.0562-0.0844-0.14061-0.0281-0.11249-0.0562-0.16873v-0.0562q0-0.0281 0.0562-0.14061 0.0563-0.14061 0.0563-0.16873v-0.0281q0-0.14061-0.0281-0.33746t-0.0844-0.33746v-2.0247q0-0.14061 0.19685-0.14061 0.19685-0.0281 0.28122-0.0844 0.3937-0.28121 0.7874-0.3937 0.42182-0.1406 0.92801-0.1406h0.0562q0.0562 0.0281 0.14061 0.1406 0.11248 0.11249 0.16873 0.14061 0.0281 0.0562 0.0562 0.0844 0.0281 0.0281 0.0281 0.0562v1.2936q0.14061 0.16873 0.16873 0.36558 0.0281 0.19685 0 0.42182 0 0.19685 0 0.3937 0.0281 0.19685 0.14061 0.36558v4.6963q-0.0281 0.0281-0.0844 0.11249-0.0281 0.11248-0.0281 0.16873 0 0.11248-0.0281 0.47806t-0.0281 0.47807q-0.0281 0.0562-0.11249 0.22497-0.0844 0.19685-0.11248 0.25309-0.0281 0.0281-0.0844 0.0562-0.0281 0.0563-0.0562 0.0563l-0.81552 0.42182h-0.42183q-0.0281 0-0.22497-0.19685-0.16873-0.16873-0.25309-0.28122-0.0562-0.0844-0.19685-0.36557-0.11249-0.2531-0.14061-0.33746zm1.7435-11.642q0.14061 0 0.14061 0.0562t0 0.19685q0 0.16873-0.0844 0.3937-0.0844 0.19685-0.22498 0.42182-0.1406 0.19685-0.30933 0.3937-0.14061 0.16873-0.2531 0.2531-0.28121 0.19685-0.56243 0.28121-0.25309 0.0844-0.50618 0.2531-0.0563 0.0562-0.14061 0.0562l-0.0281 0.0281-0.0281-0.0281q-0.11249 0-0.11249-0.11249v-0.75928q0-0.0844 0.30934-0.30933 0.30933-0.22498 0.70304-0.47807 0.3937-0.25309 0.70303-0.44994 0.33746-0.19685 0.3937-0.19685z"/>
+  <path d="m170.32 151.88q0.16873-0.0562 0.36558 0.11249 0.19685 0.19685 0.28122 0.25309 0.22497 0.11249 0.36558 0.11249 0.16873 0 0.3937 0h0.36558q0.44994-0.22497 0.81552-0.3937 0.36558-0.14061 0.73116-0.50619l2.4466-2.4184q0.28122-0.16873 0.53431-0.50619 0.25309-0.33745 0.36558-0.73116 0.14061-0.36558 0.0562-0.73115-0.0562-0.33746-0.42182-0.56243-0.11249 0.0562-0.16873-0.0281-0.0281-0.11248-0.14061-0.0562-0.33745-0.0562-0.61867 0.0562-0.25309 0.0844-0.59055 0.0281-0.11249 0.19685-0.33746 0.22497-0.19685 0-0.30934 0.22497-0.1406-0.0562-0.11248 0.0844 0.0281 0.14061 0 0.22498 0.14061 0.22497 0.28121 0.22497 0.16873 0.0281 0.30934-0.0563 0.16873-0.0562 0.30934-0.19685 0.16873-0.11248 0.30933-0.16872 0.28122-0.0844 0.3937 0.11248 0.11249 0.19685 0.2531 0.36558h-0.0562q-0.19685 0.16873-0.42182 0.3937-0.22497 0.2531-0.50618 0.44995-0.2531 0.22497-0.56243 0.36558-0.28122 0.16872-0.59056 0.16872-0.42182 0-0.81552-0.33745-0.3937-0.33746-0.50619-0.73116 0-0.0281 0-0.16873 0.0281-0.11249 0-0.14061 0-0.0562-0.0844-0.19685-0.0844-0.11249-0.14061-0.16873v-2.081q0-0.0844-0.0844-0.19685-0.0844-0.14061-0.14061-0.19685v-8.7458q0.16873-0.11248 0.19685-0.19685 0.0281-0.11248 0.0281-0.28121 0-0.50619-0.44994-0.89989-0.42183-0.42182-0.92801-0.42182-0.0281 0-0.11249 0.0281-0.0562 0-0.0562 0l-2.8684 2.8684q-0.11249-0.14061-0.2531 0-0.11248 0.14061-0.11248 0.25309-0.16873-0.0562-0.11249 0.11249-0.19685-0.0281-0.28121 0.11249-0.0562 0.11248-0.0562 0.28121 0.0281 0.16873 0.14061 0.30934 0.14061 0.11248 0.30934 0.0562 0.0562-0.0562 0.16873-0.0844 0.11248-0.0281 0.0562-0.14061 0.0562-0.14061 0.16873-0.11249 0.11248 0.0281 0.16873-0.11248 0.11248 0 0.19685-0.0281 0.0844-0.0562 0.16873-0.0844 0.0844 0 0.22497 0 0.14061 0 0.14061 0.14061t-0.11249 0.19685q-0.0844 0.0562-0.0844 0.19685l-0.0281 10.292 0.0563 0.11248q-0.0563 0.0563-0.19685 0.0563-0.11249 0-0.16873 0-0.14061 0-0.19685 0.11248-0.0562 0.14061-0.11249 0.28122-0.0281 0.14061-0.0844 0.22497-0.0563 0.0844-0.14061 0l-1.2936-0.87177t-0.0844-0.0281q-0.0562 0-0.0844-0.0281-0.0562 0-0.19685-0.0844-0.14061-0.0844-0.16873-0.0844h-0.47806q-0.30934-0.0281-0.28122-0.25309 0.0281-0.22497 0-0.44995-0.0281-0.1406-0.14061-0.25309-0.11248-0.0844-0.11248-0.22497l0.0281-2.7278q0-0.11248 0.0844-0.22497 0.11249-0.14061 0.16873-0.19685v-2.4466q0-0.0844 0.0562-0.25309 0.0844-0.19685 0.16873-0.28122l-0.30933-3.5996q0-0.0281 0.0281-0.0562 0.0281-0.0563 0.0281-0.0844 0.0281-0.0281 0.0844-0.11248 0.0844-0.0844 0.11249-0.11249l0.30934-1.1249-0.61868-0.59055q-0.28121 0.0281-0.47806 0t-0.3937-0.25309h-0.7874l-2.8684 2.8965 0.56243 0.56243q0.0562-0.0281 0.22497-0.0281 0.19686 0 0.2531 0.0281 0.0281 0 0.11248 0.0844 0.0844 0.0844 0.11249 0.0844 0.0281 0.0281 0.22497 0.0562 0.19685 0.0281 0.19685 0.0562v0.89988l-0.22497 0.36558v3.1496q-0.0844 0.0844-0.16873 0.25309-0.0844 0.16873-0.0844 0.28122v2.2497q-0.0563 0.0562-0.14061 0.19685-0.0844 0.11249-0.0844 0.22497v2.1935l0.22497 0.28121v0.6468l0.95613 0.95613q0.14061 0.16873 0.3937 0.11249 0.28121-0.0281 0.44994 0 0.0281 0.0281 0.16873 0.0844 0.14061 0.0844 0.16873 0.11249 0.0562 0 0.11249 0.0281 0.0562 0.0281 0.0844 0.0281h1.1811q0.16873 0.22497 0.44995 0.25309 0.30934 0.0281 0.56243-0.0281 0.16873 0.0844 0.28121 0.16873 0.11249 0.0844 0.30934 0.0844h0.11249l1.9123-1.856q-0.0562 0.1406-0.0281 0.22497 0.0281 0.0844 0.0844 0.1406 0.0562 0.0563 0.11249 0.11249 0.0562 0.0844 0.0562 0.19685v0.28122q0.0562 0.25309 0.28122 0.50618 0.25309 0.28122 0.19685 0.56243zm-1.4061-3.3183q0.0562 0 0.0562 0.0563 0 0.0562-0.0562 0.0562t-0.0562-0.0562q0-0.0563 0.0562-0.0563z"/>
+  <path d="m175.51 147.16q0 0.11249 0.0844 0.11249 0.0844 0.0281 0.14061 0.0281 0.11248 0 0.19685-0.0281 0.0844-0.0281 0.16873-0.0281 0.0844 0 0.1406 0.0281 0.0844 0.0281 0.14061 0.0281 0.11249 0 0.19685-0.0563 0.11249-0.0562 0.22497-0.0562 0.11249 0 0.19685 0.0281 0.0844 0.0281 0.16873 0.0281 0.0844 0 0.14061-0.0281 0.0562-0.0281 0.14061-0.0281h0.0281q0.0281 0 0.14061 0.0562 0.11248 0.0563 0.1406 0.0563h0.0562q0.0562 0 0.16873-0.0563 0.11248-0.0562 0.1406-0.0562h0.0281q0.0562 0 0.11248 0.0281 0.0844 0.0281 0.16873 0.0281 0.0562 0 0.22497-0.0844h2.306q0.0562 0 0.0562-0.0562 0-0.0563 0-0.11249 0-0.11249-0.11249-0.16873-0.11248-0.0844-0.25309-0.14061-0.14061-0.0844-0.25309-0.16872-0.11249-0.0844-0.11249-0.22498v-1.4623l-0.16873-0.30934v-1.8279l-0.19685-0.30934v-1.6592l-0.16873-0.28122v-3.0934q-0.0281-0.0281-0.0844-0.14061-0.0562-0.11249-0.0562-0.14061v-0.0281q0-0.0844 0.0281-0.14061 0.0281-0.0844 0.0281-0.14061v-0.0562q0-0.0281-0.0281-0.0844t-0.0281-0.0844v-2.559l0.11249-0.11249h0.0281q0.0844 0 0.22497 0.28122 0.14061 0.25309 0.2531 0.61867 0.1406 0.36558 0.22497 0.70304 0.11248 0.33745 0.14061 0.47806 0.0281 0.0562 0.0281 0.30934 0.0281 0.22497 0.0562 0.28121 0 0.0281 0.0562 0.14061 0.0563 0.11249 0.0563 0.14061v0.28121q0 0.36558-0.16873 0.50619-0.14061 0.11249-0.14061 0.30934 0 0.11248 0.0844 0.1406 0.0844 0.0281 0.14061 0.0281 0.0844 0 0.50619-0.2531 0.42182-0.25309 0.92801-0.56243 0.50619-0.30933 0.92801-0.59055 0.44994-0.30934 0.50619-0.3937 0.0562-0.0844 0.0562-0.14061 0-0.0562 0-0.19685 0-0.36558-0.19685-0.70304-0.16873-0.33745-0.28122-0.67491 0-0.0281-0.0281-0.19685-0.0281-0.16873-0.0281-0.22497-0.0562-0.19686-0.19685-0.33746-0.11249-0.14061-0.16873-0.36558l-0.59055-1.1811q-0.19685-0.36557-0.61867-0.36557-0.30934 0-0.56243 0.1406-0.2531 0.11249-0.47807 0.28122t-0.44994 0.30933q-0.19685 0.11249-0.3937 0.11249-0.0563 0-0.16873 0-0.0844-0.0281-0.0844-0.11249v-1.3217q0-0.22497-0.28121-0.47806-0.28122-0.28122-0.50619-0.28122h-0.0562q-0.0563 0.0281-0.22498 0.11249-0.1406 0.0844-0.30933 0.16873-0.16873 0.0844-0.33746 0.16873-0.14061 0.0562-0.19685 0.0844-0.14061 0.0562-0.67492 0.44995-0.50618 0.36558-1.0967 0.7874-0.56243 0.42182-1.0405 0.7874-0.44994 0.36558-0.44994 0.3937 0 0.0281 0 0.11249 0 0.0562 0.0562 0.0562h1.9685l0.14061 0.14061v3.4308q0.0281 0.0281 0.0562 0.14061 0.0562 0.11248 0.0844 0.14061v0.0843t-0.0281 0.11249q-0.0281 0.0844-0.0281 0.11248 0 0.0281 0.0281 0.11249 0.0281 0.0844 0.0281 0.11248v1.6592q0 0.0563-0.0281 0.14061-0.0281 0.0562-0.0281 0.11249 0 0.0281 0.0281 0.11248 0.0281 0.0844 0.0281 0.11249v5.9336q0 0.16873-0.16873 0.28122-0.14061 0.11249-0.33746 0.22497-0.19685 0.11249-0.36558 0.22497-0.14061 0.14061-0.14061 0.30934z"/>
+  <path d="m186.72 148.51q0.0563 0.0562 0.28122 0.22497 0.22497 0.19685 0.30934 0.2531 0.11248 0.0844 0.42182 0.28121 0.30933 0.19685 0.64679 0.3937 0.33746 0.22498 0.61868 0.3937 0.28121 0.16873 0.36558 0.16873l1.0686-0.0281 0.6468-0.53431q0.16873-0.16873 0.44994-0.47806 0.30934-0.30934 0.47807-0.47807 0.0562-0.0562 0.1406-0.14061 0.11249-0.0562 0.22498-0.0844l3.1777-2.8965q0.11248-0.11249 0.22497-0.30934 0.1406-0.22497 0.19685-0.3937 0-0.0281-0.0281-0.14061 0-0.11249 0.0281-0.14061 0-0.0562 0.11248-0.19685 0.11249-0.1406 0.11249-0.16873 0.0281-0.0562 0.0281-0.30933 0-0.28122-0.0281-0.33746l0.22497-0.30934v-3.8526q0-0.0844 0.0844-0.2531 0.0844-0.19685 0.16873-0.28121v-2.8965q0-0.16872-0.16873-0.3937-0.14061-0.25309-0.36558-0.44994-0.22498-0.19685-0.44995-0.33746t-0.3937-0.14061q-0.47806 0-0.73116 0.2531-0.22497 0.25309-0.61867 0.47806-0.28122 0.14061-0.56243 0.22497-0.28122 0.0844-0.56243 0.2531l-1.5186 0.44994-0.33746-0.22497q0-0.0844-0.11249-0.25309-0.0844-0.16873-0.0844-0.2531-0.0281-0.11248-0.11249-0.44994-0.0562-0.36558-0.11248-0.44994 0 0-0.0562-0.11249-0.0281-0.14061-0.0844-0.25309-0.0281-0.14061-0.0562-0.2531-0.0281-0.14061-0.0281-0.14061 0.0281-0.42182 0.0562-0.64679 0.0562-0.22497 0.0562-0.33746 0.0281-0.11248 0.0563-0.16873 0.0281-0.0562 0.0562-0.1406 0.0562-0.16873 0.19685-0.11249 0.16873 0.0562 0.22497-0.11249 0.11249-0.0562 0.16873 0.0563 0.0562 0.11248 0.16873 0.0562 0.0562 0.0562 0.0844 0.11249 0.0563 0.0281 0.14061 0-0.0281 0.16872 0.14061 0.28121 0.16873 0.0844 0.16873 0.25309h0.11248l0.0281 0.14061q0.14061 0.28122 0.33746 0.50619 0.22497 0.22497 0.44995 0.44994 0.11248 0.0563 0.25309 0.0563 0.16873 0 0.28122 0h0.22497l2.8684-2.8684-0.56243-0.59055q-0.0281 0-0.25309 0.16873-0.19685 0.14061-0.42183 0.30934-0.22497 0.16873-0.44994 0.30933-0.19685 0.11249-0.22497 0.0562l-1.1249-1.1249-0.14061-0.28122-0.64679-0.64679h-0.75928q-0.19685 0.1406-0.44995 0.19685-0.25309 0.0562-0.33746 0.1406l-0.44994 0.47807q-0.0562-0.0562-0.14061-0.0562 0-0.0281-0.0281-0.0281l-2.8684 2.8684v0.95613l0.25309 0.28121v1.1811q0.0562 0.0562 0.14061 0.19685 0.0844 0.11248 0.0844 0.22497v1.1811l0.22498 0.30934v0.81552q0 0.0844 0.11248 0.2531 0.14061 0.1406 0.30934 0.30933 0.16873 0.14061 0.33746 0.2531 0.19685 0.0844 0.30933 0.0844l1.8841-1.0967q0.22497-0.1406 0.56243-0.28121 0.36558-0.14061 0.61868-0.19685 0.30933-0.0844 0.36558-0.0844 0.0562-0.0281 0.30933-0.0281 0.0844 0 0.19685 0.11249 0.11249 0.11248 0.11249 0.16873l-0.11249 3.1777q-0.0844 0.0844-0.16873 0.28121-0.0844 0.16873-0.0844 0.25309v3.8526q-0.14061 0.11249-0.22497 0.28121-0.0844 0.14061 0 0.30934l-0.67492 0.67492q-0.0562 0.0562-0.19685 0.0562-0.36558 0-0.92801-0.14061-0.56243-0.1406-0.84364-0.33746-0.44995-0.30933-1.0124-0.64679-0.56243-0.36558-0.95613-0.81552 0.0281-0.11249-0.0562-0.22498-0.0563-0.0562-0.22497-0.22497-0.14061-0.19685-0.19685-0.25309 0.0562-0.16873-0.0563-0.28122-0.11248-0.1406-0.11248-0.28121v-0.0281l2.4184-2.5028q0.16872 0.16873 0.25309 0.36558 0.11248 0.19685 0.0562 0.44995 0 0.0562 0 0.16873 0.0281 0.0844-0.11248 0.0281-0.0281 0.14061-0.16873 0.28121-0.14061 0.14061-0.28122 0.16873-0.0562 0.11249 0.0281 0.16873 0.11249 0.0281 0.0844 0.14061 0.14061-0.0281 0.30933 0 0.19685 0 0.33746 0 0.16873 0 0.28122-0.0562 0.11248-0.0844 0.16873-0.2531 0.11248-0.11248 0.0844-0.22497 0.30934-0.22497 0.22497-0.59055-0.0562-0.3937 0-0.70304-0.22497-0.33746-0.56243-0.44994-0.33746-0.14061-0.73116-0.0844l-0.1406-0.0844q-0.30934 0-0.61868 0.0844-0.30933 0.0563-0.53431 0.28122l-1.4342 1.3498h-0.11249l-2.8403 2.8403v0.25309q0.30934 0.30934 0.6468 0.75929 0.36557 0.42182 0.30933 0.89988 0.22497 0.28122 0.42182 0.56243 0.22498 0.28122 0.44995 0.56243l0.53431 0.53431z"/>
+ </g>
+ <g fill-opacity=".96078" fill-rule="evenodd" stroke="#e6e6e6" stroke-opacity=".96078" stroke-width="15.751">
+  <path transform="matrix(.26458 0 0 .26458 -1.2674 -1.3022)" d="m529.3 355.42-4.5954-1.8397-3.802 3.1697 0.32961-4.939-4.1894-2.6364 4.7991-1.2128 1.2128-4.7991 2.6364 4.1894 4.939-0.32961-3.1697 3.802z" opacity=".3534" style="paint-order:stroke markers fill"/>
+  <path transform="matrix(.26458 0 0 .26458 -1.2674 -1.3022)" d="m424.46 488.39 5.9732 5.0572 7.2878-2.8536-2.9639 7.2437 4.966 6.0493-7.805-0.58042-4.2187 6.5923-1.8599-7.6024-7.5733-1.9751 6.6556-4.1181z" opacity=".3534" style="paint-order:stroke markers fill"/>
+  <path transform="matrix(.26458 0 0 .26458 -1.2674 -1.3022)" d="m708.29 447.47 5.7423 8.9637 10.616-0.79453-6.7505 8.2312 4.036 9.8505-9.9144-3.8766-8.1212 6.8825 0.62312-10.627-9.0552-5.5969 10.299-2.6913z" opacity=".3534" style="paint-order:stroke markers fill"/>
+ </g>
 </svg>
