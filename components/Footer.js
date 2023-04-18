@@ -84,10 +84,10 @@ export default function Footer() {
           <div >
             <ul>
               <li> <FontAwesomeIcon className="payment" icon={faCcVisa} width={25} height={25}  style={{ color: "white" }}/></li>
-              <li> <FontAwesomeIcon className="payment" icon={faCcMastercard} width={25} height={25} style={{ color: "red" }}  /></li>
+              <li> <FontAwesomeIcon className="payment" icon={faCcMastercard} width={25} height={25} style={{ color: "white" }}  /></li>
               <li>                
            
-            <FontAwesomeIcon className="payment" icon={faCcPaypal} width={25} height={25}  style={{color:"skyblue"}}  /></li>
+            <FontAwesomeIcon className="payment" icon={faCcPaypal} width={25} height={25}  style={{color:"white"}}  /></li>
               
             </ul>
 
