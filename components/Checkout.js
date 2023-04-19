@@ -70,8 +70,8 @@ export default function Checkout (){
 
                                 
                             </div>
-                            <label>
-                                <input type="checkbox" checked="checked" name="sameadr"/>Delivery address same as billing
+                            <label className="inline">
+                                <input type="checkbox" checked="checked" name="sameadr" /><span >Delivery address same as billing</span>
                             </label>
                             <input type="submit" name="" value="Continue to checkout" className="btn"/>
 

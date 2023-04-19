@@ -36,23 +36,23 @@ export default function Footer() {
               href="https://twitter.com/coastrepublicgh"
            className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faTwitter} width={20} height={20} style={{color:"blue"}} /></Link></li>
+            ><FontAwesomeIcon icon={faTwitter} size="1x" style={{color:"blue"}} /></Link></li>
                        <li>          <Link
               href="support@coastrepublic.com"
             className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faEnvelope} width={20} height={20}/></Link></li>
+            ><FontAwesomeIcon icon={faEnvelope}size="1x"/></Link></li>
   
                        <li>  <Link
               href="https://www.youtube.com/coastrepublic"
                className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faYoutube} width={20} height={20} style={{color:"red"}}/></Link></li>
+            ><FontAwesomeIcon icon={faYoutube}size="1x" style={{color:"red"}}/></Link></li>
                   <li> <Link
               href="https://www.instagram.com/coast_republic/"
         className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faInstagram} width={20} height={20} style={{color:"orange"}}/></Link></li>
+            ><FontAwesomeIcon icon={faInstagram} size="1x" style={{color:"orange"}}/></Link></li>
                 </ul>
                 
               </div>
@@ -83,11 +83,11 @@ export default function Footer() {
         <div className="footer-bottom">
           <div >
             <ul>
-              <li> <FontAwesomeIcon className="payment" icon={faCcVisa} width={25} height={25}  style={{ color: "white" }}/></li>
-              <li> <FontAwesomeIcon className="payment" icon={faCcMastercard} width={25} height={25} style={{ color: "white" }}  /></li>
+              <li> <FontAwesomeIcon className="payment" icon={faCcVisa} size="2x"  style={{ color: "white" }}/></li>
+              <li> <FontAwesomeIcon className="payment" icon={faCcMastercard} size="2x" style={{ color: "white" }}  /></li>
               <li>                
            
-            <FontAwesomeIcon className="payment" icon={faCcPaypal} width={25} height={25}  style={{color:"white"}}  /></li>
+            <FontAwesomeIcon className="payment" icon={faCcPaypal} size="2x"  style={{color:"white"}}  /></li>
               
             </ul>
 

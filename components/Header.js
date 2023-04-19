@@ -51,10 +51,10 @@ export default function Header() {
        
    
                 <div className="socials">
-                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} width={15}  height={15}  style={{color:"blue"}} /></Link>
-                    <Link href='https://www.instagram.com/coastrepublic/'   className="icon-black">  <FontAwesomeIcon icon={faInstagram} width={15}  height={15}    style={{color:"orange"}}/></Link>
-                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} width={15}  height={15}   style={{color:"black"}} /></Link>
-                    <Link href='https://www.youtube.com/coastrepublic'   className="icon-black"> <FontAwesomeIcon icon={faYoutube} width={15}  height={15}   style={{color:"red"}}/></Link>
+                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} size="2x"  style={{color:"blue"}} /></Link>
+                    <Link href='https://www.instagram.com/coastrepublic/'   className="icon-black">  <FontAwesomeIcon icon={faInstagram} size="2x"   style={{color:"orange"}}/></Link>
+                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} size="2x"   style={{color:"black"}} /></Link>
+                    <Link href='https://www.youtube.com/coastrepublic'   className="icon-black"> <FontAwesomeIcon icon={faYoutube} size="2x"  style={{color:"red"}}/></Link>
                          
                 </div>
 

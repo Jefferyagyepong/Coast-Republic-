@@ -8,6 +8,7 @@ flex-wrap: wrap;
 flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
+padding: 1rem ;
 
 }
 .buy-now{

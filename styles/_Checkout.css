@@ -5,15 +5,25 @@
     flex-wrap: wrap;
     margin: 0 -16px;
    margin-top: 4rem;
+
 }
 .col-50{
     -ms-flex: 25%;
     flex: 50%;
+
 }
 .col-85{
     -ms-flex: 75%;
     flex: 75%;
 
+
+}
+.inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .9rem;
+    justify-content: start;
 }
 .col-50, 
 .col-85{
@@ -24,6 +34,8 @@ padding: 0 16px;
     padding: 5ppx 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 label{
     margin-bottom: 10px;
