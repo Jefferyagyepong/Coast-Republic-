@@ -8,7 +8,7 @@ export default function Integrity (){
         <div className="integrity-wrapper">
             <div className="integrity-item">
                 <Image src='/delivery.svg' width={20} height={20} alt="" />
-                <h4>FREE SHIPPING</h4>
+                <h4>FREE DELIVERY</h4>
                 <p>We offer free delivery to all regions in Ghana</p>
             </div>
               <div className="integrity-item">

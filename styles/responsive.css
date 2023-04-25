@@ -15,15 +15,11 @@
   .desktop {
     display: none;
   }
-    .integrity-wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-top: 7rem;
-      flex-wrap: wrap;
-    }
+.integrity-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr ;
+}
   .Header {
     display: flex;
     justify-content: center;

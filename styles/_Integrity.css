@@ -1,16 +1,17 @@
 .integrity-wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 7rem;
-  flex-wrap: wrap;
+display: grid;
+grid-template-columns: 1fr; 
+margin-top: 4rem; 
+padding: 20px;
+
 }
 .integrity-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+margin: 0 auto;
+padding: 3rem;
+
+}
+.integrity-item h4, p {
+  padding-top: 1rem;
 
 }
