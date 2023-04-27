@@ -6,14 +6,19 @@
   margin-left: 3rem;
 }
 
+
 .links {
   display: flex;
+
 }
 .navlink {
   list-style: none;
   margin: 0 0.75rem;
   text-transform: uppercase;
+
 }
+
+
 .navlink a {
   text-decoration: none;
   color: black;

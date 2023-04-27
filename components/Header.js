@@ -27,11 +27,30 @@ export default function Header() {
      
 
         <div className="Header">
+
+                 <section className="top-nav">
+   
+                    <input id="menu-toggle" type="checkbox" />
+                 
+    <label className='menu-button-container' htmlFor="menu-toggle">
+                        <div className='menu-button'></div>
+                    
+                         
+                    
+  </label>
+                    <ul className="menu">
+                        <li><Link href={"/shop"} className="salmon-mobile">Shop</Link></li>
+                        <li><Link  href={"/delivery"}  className="salmon-mobile">Delivery</Link></li>
+                        <li><Link  href={"/contact"}  className="salmon-mobile">Contact Us</Link></li>
+                        <li><Link  href={"/about"}  className="salmon-mobile">About Us</Link></li>
+
+    </ul>
+  </section>
             <Link href='/'>
-             <Image src='/crlogo.svg' width={80} height={50} alt="Coast-Republic logo" /> 
+             <Image src='/crlogo.svg' width={100} height={60} alt="Coast-Republic logo" /> 
             </Link> 
            
-                <form action="" className="search-form">
+                <form action="" className="search-form" method="GET">
                
                    <SearchInput/>
         
@@ -58,24 +77,7 @@ export default function Header() {
                          
                 </div>
 
-                   <section className="top-nav">
-   
-                    <input id="menu-toggle" type="checkbox" />
-                 
-    <label className='menu-button-container' htmlFor="menu-toggle">
-                        <div className='menu-button'></div>
-                    
-                         
-                    
-  </label>
-                    <ul className="menu">
-                        <li><Link href={"/shop"} className="salmon-mobile">Shop</Link></li>
-                        <li><Link  href={"/delivery"}  className="salmon-mobile">Delivery</Link></li>
-                        <li><Link  href={"/contact"}  className="salmon-mobile">Contact Us</Link></li>
-                        <li><Link  href={"/about"}  className="salmon-mobile">About Us</Link></li>
-
-    </ul>
-  </section>
+              
                 
             </div>
             <div>
