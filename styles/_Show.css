@@ -12,7 +12,7 @@ padding: 1rem ;
 
 }
 .buy-now{
-  background-color: #000;
+  background-color: #ce1126;
   color: #fff;
   transition: 0.3s ease;
   padding: 10px 12px;
@@ -105,7 +105,7 @@ padding: 1rem ;
   }
 }
 .wrapper.six {
-  background-color: #222222;
+  background-color: #0193dd;
 }
 .flicker {
   font-size: 1.2rem;
@@ -126,4 +126,7 @@ padding: 1rem ;
   100% {
     background-position: top right;
   }
+}
+h6, h2{
+  color: #fcd116;
 }

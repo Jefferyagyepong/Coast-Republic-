@@ -11,7 +11,7 @@ const CategoryCard = ({ image, name }) => {
       <Image className={styles.image} src={image} height={250} width={200} alt='product image'/>
       <Link href={`/shop`}>
         <div className={styles.info}>
-          <h6>{name}</h6>
+          <h5>{name}</h5>
           <p>SHOP NOW</p>
         </div>
       </Link>

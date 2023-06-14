@@ -46,13 +46,13 @@ export default function Show (){
         </div>
         <div id="slide-3">
         <div>
-                 <h6>Azumah Nelson Black</h6>
-      <h2>&#8373;200</h2> 
+                 <h6>DryBlend T-shirt | 100% cotton</h6>
+      <h2>&#8373;150</h2> 
             </div>   
-                    <Image src='/azumah-black.svg' width={300} height={300} alt="Coast-Republic T-shirt Front" priority/>
+                    <Image src='/blackHope.svg' width={300} height={300} alt="Coast-Republic T-shirt Front" priority/>
         <div className="wrapper six">
         <div>
-            <h6 className="flicker">Celebrating Ghanaian legends </h6>
+            <h6 className="flicker">Curated for the community </h6>
         </div>
             </div> 
               <Link  href={"/shop"}><button type=""  className="buy-now">Buy Now</button>  </Link>

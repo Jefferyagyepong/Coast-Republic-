@@ -23,3 +23,6 @@ background: white;
 .card:hover .info {
   opacity: 0.9;
 }
+.black{
+  color: #000;
+}

@@ -36,7 +36,7 @@ export default function Footer() {
               href="https://twitter.com/coastrepublicgh"
            className="icon"
               target="_blank"
-            ><FontAwesomeIcon icon={faTwitter} size="1x" style={{color:"blue"}} /></Link></li>
+            ><FontAwesomeIcon icon={faTwitter} size="1x" style={{color:"#0193dd"}} /></Link></li>
                        <li>          <Link
               href="support@coastrepublic.com"
             className="icon"

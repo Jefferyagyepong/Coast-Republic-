@@ -70,9 +70,9 @@ export default function Header() {
        
    
                 <div className="socials">
-                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} size="2x"  style={{color:"blue"}} /></Link>
+                    <Link href='https://twitter.com/coastrepublic'    className="icon-black"> <FontAwesomeIcon icon={faTwitter} size="2x"  style={{color:"#0193dd"}} /></Link>
                     <Link href='https://www.instagram.com/coastrepublic/'   className="icon-black">  <FontAwesomeIcon icon={faInstagram} size="2x"   style={{color:"orange"}}/></Link>
-                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} size="2x"   style={{color:"black"}} /></Link>
+                    <Link href='support@coastrepublic.com'  className="icon-black"> <FontAwesomeIcon icon={faEnvelope} size="2x"   style={{color:"#222"}} /></Link>
                     <Link href='https://www.youtube.com/coastrepublic'   className="icon-black"> <FontAwesomeIcon icon={faYoutube} size="2x"  style={{color:"red"}}/></Link>
                          
                 </div>
