@@ -9,8 +9,11 @@ import React, { useState } from "react"
 const checkout = () => {
   const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04"
   const amount = 1000000
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [email, setEmail] = useState("")
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [name, setName] = useState("")
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [phone, setPhone] = useState("")
 
   const componentProps = {
