@@ -17,7 +17,7 @@ export default function Show (){
                     <h2>&#8373;150</h2> 
             </div>
                
-                    <Image src='/cr01.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" priority />
+                    <Image src='/000.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" priority />
         
          
       <div className="wrapper six">
@@ -31,14 +31,14 @@ export default function Show (){
           
           <div id="slide-2">
             <div>
-                 <h6>Azumah Nelson white</h6>
-      <h2>&#8373;200</h2> 
+                 <h6>Asakaa</h6>
+      <h2>&#8373;250</h2> 
             </div>
                 
-                    <Image src='/azumah-white.svg' width={300} height={300}  alt="Azumah Nelson T-shirt white" priority/>
+                    <Image src='/asakaa.svg' width={300} height={300}  alt="Azumah Nelson T-shirt white" priority/>
       <div className="wrapper six">
         <div>
-            <h6 className="flicker">Celebrating Ghanaian legends </h6>
+            <h6 className="flicker">Celebrating Ghanaian Drill </h6>
         </div>
             </div> 
               <Link  href={"/shop"}><button type=""  className="buy-now">Buy Now</button> </Link>

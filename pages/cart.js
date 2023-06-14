@@ -1,4 +1,4 @@
-import Checkout from '../components/Checkout'  
+
 import Link from 'next/link'; 
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
@@ -71,7 +71,7 @@ const CartPage = () => {
           <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
         </>
       )}
-      <Checkout/>
+  
     </div>
   );
 };

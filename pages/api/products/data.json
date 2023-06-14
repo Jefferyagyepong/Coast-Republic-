@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "product": "Azumah Nelson T-shirt White",
+    "product": "Coast Republic black",
     "category": "t-shirt",
-    "image": "/azumah-white.svg",
-    "price": 280.99
+    "image": "/000.svg",
+    "price": 150.00
   },
     {
     "id": 2,
-    "product": "Azumah Nelson T-shirt Black",
+    "product": "Asakaa",
     "category": "t-shirt",
-    "image": "/azumah-black.svg",
-    "price": 280.99
+    "image": "/asakaa.svg",
+    "price": 250.00
   },
     {
     "id": 3,

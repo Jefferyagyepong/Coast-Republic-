@@ -42,7 +42,7 @@ padding: 1rem ;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  background: var(--sandy-brown);
+  background: #4B5320;
  
 
 }
