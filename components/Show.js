@@ -13,7 +13,7 @@ export default function Show (){
       <div className="slides">
           <div id="slide-1">
             <div>
-                <h6>Black Coast</h6>
+                <h6>DryBlend T-shirt - Black | 100% cotton</h6>
                     <h2>&#8373;150</h2> 
             </div>
                
@@ -31,7 +31,7 @@ export default function Show (){
           
           <div id="slide-2">
             <div>
-                 <h6>Asakaa</h6>
+                 <h6>Asakaa DryBlend T-shirt - Black | 100% cotton</h6>
       <h2>&#8373;250</h2> 
             </div>
                 
@@ -46,7 +46,7 @@ export default function Show (){
         </div>
         <div id="slide-3">
         <div>
-                 <h6>DryBlend T-shirt | 100% cotton</h6>
+                 <h6>DryBlend T-shirt - Black | 100% cotton</h6>
       <h2>&#8373;150</h2> 
             </div>   
                     <Image src='/blackHope.svg' width={300} height={300} alt="Coast-Republic T-shirt Front" priority/>
@@ -61,13 +61,13 @@ export default function Show (){
     
         <div id="slide-4">
           <div>
-                <h6>Off Coast</h6>
+                <h6>DryBlend T-shirt - Ash | 100% cotton</h6>
                     <h2>&#8373;150</h2> 
             </div>    
-            <Image src='/cr02.svg' width={300} height={300} alt=""  priority/>
+            <Image src='/Ash.svg' width={300} height={300} alt=""  priority/>
               <div className="wrapper six">
         <div>
-            <h6 className="flicker">Celebrating Ghanaian legends </h6>
+            <h6 className="flicker">Curated for the community </h6>
         </div>
             </div> 
               <Link  href={"/shop"}><button type=""  className="buy-now">Buy Now</button> </Link>
@@ -76,7 +76,7 @@ export default function Show (){
           <div id="slide-5">
                <h6>1957-2023</h6>
        <h2> &#8373;100</h2>      
-                    <Image src='/CRBack.svg' width={300} height={300} alt="Coast-Republic T-shirt Back"  priority/>
+                    <Image src='/' width={300} height={300} alt="Coast-Republic T-shirt Back"  priority/>
        <div className="wrapper six">
         <div>
             <h6 className="flicker">Happy Independence </h6>

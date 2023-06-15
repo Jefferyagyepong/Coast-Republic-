@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "product": "Coast Republic black",
+    "product": " Coast Republic DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
     "image": "/000.svg",
     "price": 150.00
   },
     {
     "id": 2,
-    "product": "Asakaa",
+    "product": "Asakaa DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
     "image": "/asakaa.svg",
     "price": 250.00
   },
     {
     "id": 3,
-    "product": "Black Hope",
+    "product": "Coast Republic DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
     "image": "/blackHope.svg",
     "price": 150.00
   },
    {
     "id": 4,
-    "product": "Off Coast",
+    "product": "Coast Republic DryBlend T-shirt - Ash | 100% cotton",
     "category": "t-shirt",
-    "image": "/cr02.svg",
-    "price": 180.99
+    "image": "/Ash.svg",
+    "price": 150.00
   }
   
 ]

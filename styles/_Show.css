@@ -106,6 +106,8 @@ padding: 1rem ;
 }
 .wrapper.six {
   background-color: #0193dd;
+  padding: 1rem 1.2rem;
+  border-radius: 6px 29px 47px 77px;
 }
 .flicker {
   font-size: 1.2rem;

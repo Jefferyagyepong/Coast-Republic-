@@ -43,7 +43,7 @@ export default function Home() {
     <Tshirt/>
       <div className={styles.small}>
         <CategoryCard image="/blackHope.svg" name="Coast 002 DryBlend T-shirt - Black | 100% cotton" />
-            <CategoryCard image="/azumah-white.svg" name="Azumah Nelson T-shirt white" />
+            <CategoryCard image="/Ash.svg" name="DryBlend T-shirt - Ash | 100% cotton" />
             <CategoryCard image="/000.svg" name="Black Coast DryBlent T-shirt - Black | 100% cotton" />
                    <CategoryCard image="/asakaa.svg" name="Asakaa DryBlend T-shirt - Black | 100% cotton " />
      

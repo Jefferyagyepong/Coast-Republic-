@@ -5,8 +5,8 @@ export default function Privacy (){
     return (
      
  
-    <div class="terms-wrap">
-      <h2>PRIVACY POLICY</h2>
+    <div class="terms">
+      <h1>PRIVACY POLICY</h1>
 
       <p className="delivery-text">
         This Privacy Policy describes how coast republic  (the “Site” or “we”)
@@ -202,10 +202,7 @@ export default function Privacy (){
         this information each time you return to the site or browse from one
         page to another. Cookies also provide information on how people use the
         website, for instance whether it’s their first time visiting or if they
-        are a frequent visitor. We use the following cookies to optimize your
-        experience on our Site and to provide our services. [Be sure to check
-        this list against Shopify’s current list of cookies on the merchant
-        storefront: https://www.shopify.com/legal/cookies ]
+        are a frequent visitor. 
       </p>
 
       <h3>Do Not Track</h3>

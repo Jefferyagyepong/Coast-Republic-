@@ -5,8 +5,8 @@ export default function Terms (){
     return (
      
  
-    <div className="terms-wrap">
-      <h2>TERMS OF SERVICE</h2>
+    <div className="terms">
+      <h1>TERMS OF SERVICE</h1><br/>
 
       <h3>Overview</h3>
 
@@ -323,7 +323,7 @@ export default function Terms (){
         any right or provision of these Terms of Service shall not constitute a
         waiver of such right or provision. These Terms of Service and any
         policies or operating rules posted by us on this site or in respect to
-        The Service constitutes the entire agreement and understanding between
+        the Service constitutes the entire agreement and understanding between
         you and us and govern your use of the Service, superseding any prior or
         contemporaneous agreements, communications and proposals, whether oral
         or written, between you and us (including, but not limited to, any prior
@@ -351,7 +351,7 @@ export default function Terms (){
 
       <p className="delivery-text">
         SECTION 20 - CONTACT INFORMATION Questions about the Terms of Service
-        should be sent to us at support@coastrepulic.com
+        should be sent to us at support@coastrepublic.com
       </p>
     </div>
 

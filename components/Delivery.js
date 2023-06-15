@@ -4,7 +4,7 @@
 export default function Delivery (){
     return (
      
-  <div className="terms-wrap">
+  <div className="terms">
       <h4>Delivery</h4>
 
       <p className="delivery-text">
@@ -20,7 +20,7 @@ export default function Delivery (){
         undelivered packages. If your package is marked as delivered but you
         have not received
      
-        it, please contact the carrier of the package. CoastVibez will not
+        it, please contact the carrier of the package. Coast Republic will not
         replace any packages.
       </p>
     </div>
