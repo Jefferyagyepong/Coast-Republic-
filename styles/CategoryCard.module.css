@@ -15,7 +15,7 @@ background: white;
 .info {
 
   color: #000;
-  background: #fff;
+  text-align: center;
 }
 .card:hover .image {
   transform: scale(1.5);
