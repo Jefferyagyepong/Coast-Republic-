@@ -18,9 +18,11 @@ const Navbar = () => {
         
         <li className={styles.navlink}>
         <Link href="/cart">
-          <Image src='/cart.svg' width={20} height={20}  alt='cart icon'/> 
-            <p >Cart  ({getItemsCount()})</p>
-          </Link>
+      
+             <Image src='/cart.svg' width={20} height={20}  alt='cart icon'/> 
+         <p >Cart  ({getItemsCount()})</p>
+        </Link>
+           
         </li>
       </ul>
 
