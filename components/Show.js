@@ -13,11 +13,11 @@ export default function Show (){
       <div className="slides">
           <div id="slide-1">
             <div>
-                <h6>DryBlend T-shirt - Black | 100% cotton</h6>
-                    <h2>&#8373;150</h2> 
+                <h6>DryBlend Hoodie - Black | 100% cotton</h6>
+                    <h2>&#8373;300</h2> 
             </div>
                
-                    <Image src='/000.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" priority />
+                    <Image src='/Hoodie.svg' width={300} height={300} alt="Azumah Nelson T-shirt Black" priority />
         
          
       <div className="wrapper six">
@@ -74,9 +74,9 @@ export default function Show (){
      
         </div>
           <div id="slide-5">
-               <h6>1957-2023</h6>
-       <h2> &#8373;100</h2>      
-                    <Image src='/' width={300} height={300} alt="Coast-Republic T-shirt Back"  priority/>
+               <h6>DryBlend T-shirt - Black | 100% cotton</h6>
+       <h2> &#8373;150</h2>      
+                    <Image src='/000.svg' width={300} height={300} alt=""  priority/>
        <div className="wrapper six">
         <div>
             <h6 className="flicker">Happy Independence </h6>

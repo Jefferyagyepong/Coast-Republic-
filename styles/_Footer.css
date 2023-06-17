@@ -10,10 +10,13 @@
 ul {
   list-style: none;
 }
+.copyright{
+  color: floralwhite;
+}
 .footer {
   background-color: #006b3f;
   padding: 70px 0;
-  color: ;
+
   margin-top: 3rem;
 }
 #newsletter{
@@ -115,4 +118,13 @@ transition: 0.3s ease;
   .footer-col {
     width: 100%;
   }
+}
+.footer-form{
+margin: 0 auto;
+width: 33%;
+  
+}
+.form-info{
+  color: #fff;
+
 }

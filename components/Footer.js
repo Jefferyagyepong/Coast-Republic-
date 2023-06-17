@@ -65,7 +65,10 @@ export default function Footer() {
                 <Link  href="tel:+233244736420" className="white">(233) 244736420</Link><br/><br/>
                    <Link  href="mailto:support@coastrepublic.com"  className="white">support@coastrepublic.com</Link>
               </div>
-                <form className="footer-form">
+             
+              
+            </div>
+               <form className="footer-form">
                 
             <p className="form-info">
           Get e-mail updates, our latest collection  and Gift promotion
@@ -76,9 +79,6 @@ export default function Footer() {
                 <input type="email" placeholder="enter e-mail address"  className="newsletter-mail" required/>
         <button id="newsletter">Sign Up</button>
               </form>
-              
-            </div>
-            
           </div>
         <div className="footer-bottom">
           <div >
