@@ -30,6 +30,7 @@ export default function Home() {
              <meta name="author" content="Jeffery Agyepong" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
       </Head>
       <main >
         <Top/>
