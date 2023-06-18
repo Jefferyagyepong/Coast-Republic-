@@ -3,28 +3,28 @@
     "id": 1,
     "product": " Coast Republic DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
-    "image": "/000.svg",
+    "image": "/000.webp",
     "price": 150.00
   },
     {
     "id": 2,
     "product": "Asakaa DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
-    "image": "/asakaa.svg",
+    "image": "/asakaa.webp",
     "price": 250.00
   },
     {
     "id": 3,
     "product": "Coast Republic DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
-    "image": "/blackHope.svg",
+    "image": "/blackHope.webp",
     "price": 150.00
   },
    {
     "id": 4,
     "product": "Coast Republic DryBlend T-shirt - Ash | 100% cotton",
     "category": "t-shirt",
-    "image": "/Ash.svg",
+    "image": "/Ash.webp",
     "price": 150.00
   },
    {
@@ -38,7 +38,7 @@
     "id": 6,
     "product": "8434rgba DryBlend Hoodie - Black | 100% cotton",
     "category": "Hoodie",
-    "image": "/8434rgb.svg",
+    "image": "/8434rgb.webp",
     "price": 300.00
   }
 
