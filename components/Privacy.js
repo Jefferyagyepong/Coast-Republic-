@@ -18,7 +18,7 @@ export default function Privacy (){
       <p className="delivery-text">
         After reviewing this policy, if you have additional questions, want more
         information about our privacy practices, or would like to make a
-        complaint, please contact us by e-mail at jefferagyepongdev@gail.com or
+        complaint, please contact us by e-mail at jefferagyepongdev@gmail.com or
         by mail using the details provided below: McCarthy Hill, Greater Accra,
         Ghana
       </p>

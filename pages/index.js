@@ -18,11 +18,12 @@ export default function Home() {
     <>
       <Head>
         <title>Coast Republic | T-shirts and more</title>
-                <link rel="apple-touch-icon" href=""/>
-        <meta property="og:title" content="Home | Coast Republic" />
-<meta property="og:type" content="" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
+                <link rel="apple-touch-icon" href="/favicon.ico"/>
+        <meta property="og:title" content="Coast Republic store." />
+        <meta property="og:type" content="E-commerce website application" />
+        <meta property="og:description" content="Coast Republic store. We sell t-shirts and hoodies" />
+<meta property="og:url" content="https://coast-republic.vercel.app" />
+<meta property="og:image" content="/crlogo2.png" />
 
         <meta name="description" content="Coast Republic  Store" />
           <meta name="keywords" content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store" />
