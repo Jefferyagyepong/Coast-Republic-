@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Top from '../components/Top'
-
+import About from '../components/About'
 import Header from '../components/Header'
 import Contact from '../components/Contact'
 
@@ -15,7 +15,7 @@ export default function about() {
   return (
     <>
       <Head>
-        <title>Delivery | Coast Republic</title>
+        <title>About us | Coast Republic</title>
                 <link rel="apple-touch-icon" href=""/>
         <meta property="og:title" content="Home | Coast Republic" />
 <meta property="og:type" content="" />
@@ -32,7 +32,7 @@ export default function about() {
       <main >
         <Top/>
         <Header />
-<Contact/>
+<About/>
    
         <Footer/>
       

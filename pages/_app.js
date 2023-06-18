@@ -11,6 +11,7 @@ import '../styles/_Collection.scss'
 import '../styles/_Footer.css'
 import '../styles/_Delivery.css'
 import '../styles/_Checkout.css'
+import '../styles/_About.css'
 import '../styles/_Contact.css'
 
 import { config } from '@fortawesome/fontawesome-svg-core'

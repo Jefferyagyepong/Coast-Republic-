@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Coast Republic</title>
+        <title>Coast Republic | T-shirts and more</title>
                 <link rel="apple-touch-icon" href=""/>
         <meta property="og:title" content="Home | Coast Republic" />
 <meta property="og:type" content="" />
