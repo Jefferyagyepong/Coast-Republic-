@@ -22,33 +22,15 @@ export default function Header() {
         };
     }
 
+            
+
+
 
     return (
      
 
         <div className="Header">
-
-              <section className="top-nav">
-   
-                    <input id="menu-toggle" type="checkbox" />
-                 
-    <label className='menu-button-container' htmlFor="menu-toggle">
-                        <div className='menu-button'></div>
-                    
-                         
-                    
-  </label>
-                    <ul className="menu">
-   <li><Link href={"/shop"} className="salmon-mobile">Shop</Link></li>
-                        <li><Link  href={"/delivery"}  className="salmon-mobile">Delivery</Link></li>
-                        <li><Link  href={"/contact"}  className="salmon-mobile">Contact Us</Link></li>
-                        <li><Link  href={"/about"}  className="salmon-mobile">About Us</Link></li>
-
-
-
-    </ul>
-  </section>
-
+            
 
                  
             <Link href='/'>
@@ -85,6 +67,26 @@ export default function Header() {
               
                 
             </div>
+               <section className="top-nav">
+   
+                    <input id="menu-toggle" type="checkbox" />
+                 
+    <label className='menu-button-container' htmlFor="menu-toggle">
+                        <div className='menu-button'></div>
+                    
+                         
+                    
+  </label>
+                    <ul className="menu">
+                   <li><Link href={"/shop"} className="menu__item">Shop</Link></li>
+                        <li><Link  href={"/delivery"}  className="menu__item">Delivery</Link></li>
+                        <li><Link  href={"/contact"}  className="menu__item">Contact Us</Link></li>
+                        <li><Link  href={"/about"}  className="menu__item">About Us</Link></li>
+
+    </ul>
+  </section>
+
+        
             <div>
 
             </div>

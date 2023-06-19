@@ -104,6 +104,11 @@
 #menu-toggle {
   display: none;
 }
+.menu__item{
+  color: #fff;
+
+
+}
 
 .menu-button,
 .menu-button::before,
