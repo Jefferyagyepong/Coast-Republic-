@@ -38,7 +38,7 @@ export default function Footer() {
               target="_blank"
             ><FontAwesomeIcon icon={faTwitter} size="1x" style={{color:"#0193dd"}} /></Link></li>
                        <li>          <Link
-              href="support@coastrepublic.com"
+              href="coastrepgh@gmail.com"
             className="icon"
               target="_blank"
             ><FontAwesomeIcon icon={faEnvelope}size="1x"/></Link></li>
@@ -63,7 +63,7 @@ export default function Footer() {
               </address>
               <br/>
                 <Link  href="tel:+233244736420" className="white">(233) 244736420</Link><br/><br/>
-                   <Link  href="mailto:support@coastrepublic.com"  className="white">support@coastrepublic.com</Link>
+                   <Link  href="mailto:support@coastrepublic.com"  className="white">coastrepgh@gmail.com</Link>
               </div>
              
               

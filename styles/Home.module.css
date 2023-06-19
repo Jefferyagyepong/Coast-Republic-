@@ -1,6 +1,8 @@
 .container {
 display: flex;
 flex-wrap: wrap;
+flex-direction: column;
+gap: 4rem;
 
 }
 .small {
@@ -8,6 +10,7 @@ flex-wrap: wrap;
  padding: 2%;
  flex-grow: 1;
  display: flex;
+ gap: 3rem;
 }
 .large {
   display: grid;

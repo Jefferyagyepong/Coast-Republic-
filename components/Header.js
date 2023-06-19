@@ -28,7 +28,7 @@ export default function Header() {
 
         <div className="Header">
 
-               <section className="top-nav">
+              <section className="top-nav">
    
                     <input id="menu-toggle" type="checkbox" />
                  
@@ -39,14 +39,16 @@ export default function Header() {
                     
   </label>
                     <ul className="menu">
-      <li><Link href={"/shop"} className="salmon-mobile">Shop</Link></li>
+   <li><Link href={"/shop"} className="salmon-mobile">Shop</Link></li>
                         <li><Link  href={"/delivery"}  className="salmon-mobile">Delivery</Link></li>
                         <li><Link  href={"/contact"}  className="salmon-mobile">Contact Us</Link></li>
                         <li><Link  href={"/about"}  className="salmon-mobile">About Us</Link></li>
 
 
+
     </ul>
   </section>
+
 
                  
             <Link href='/'>
