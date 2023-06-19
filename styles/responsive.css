@@ -15,6 +15,10 @@
   .desktop {
     display: none;
   }
+     .card {
+       flex: 1 46%;
+     }
+
 .integrity-wrapper {
   width: 100%;
   display: grid;
@@ -34,21 +38,7 @@
   .top-nav {
     display: block;
   }
-  .container {
-    padding: 0 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 10rem;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .small {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
-  }
+
   .input {
     display: none;
   }
@@ -63,6 +53,9 @@
   .hide {
     display: none;
   }
+    .card {
+      flex: 1 46%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -133,22 +126,10 @@
   .desktop {
     display: block;
   }
-  .container {
-    padding: 0 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 10rem;
-    justify-content: center;
-    display: grid;
-    gap: 3rem;
-  }
-  .small {
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 3rem;
-    padding: 2rem;
-  }
+
+ .card {
+ flex: 1 46%;
+ }
   .input {
     display: block;
   }

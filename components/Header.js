@@ -65,7 +65,7 @@ export default function Header() {
                 <li className=""><Link href='/shop' className="salmon">Shop</Link></li>
                 <li className=""><Link href='/delivery' className="salmon">Delivery</Link></li>
                 <li className=""><Link href='/contact' className="salmon">Contact Us</Link></li>
-                <li className=""><Link href='#' className="salmon">About Us</Link></li>
+                <li className=""><Link href='/about' className="salmon">About Us</Link></li>
             </ul>
 
             <div className="cart-wrapper">

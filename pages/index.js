@@ -44,10 +44,10 @@ export default function Home() {
         <div className={styles.container}>
     <Tshirt/>
       <div className={styles.small}>
-        <CategoryCard image="/blackHope.webp" name=" DryBlend T-shirt - Black | 100% cotton" />
-            <CategoryCard image="/Ash.webp" name="DryBlend T-shirt - Ash | 100% cotton" />
-            <CategoryCard image="/000.webp" name=" DryBlend T-shirt - Black | 100% cotton" />
-                   <CategoryCard image="/asakaa.webp" name="Asakaa DryBlend T-shirt - Black | 100% cotton " />
+        <CategoryCard image="/blackHope.webp" name=" T-shirt - Black | 100% cotton" />
+            <CategoryCard image="/Ash.webp" name=" T-shirt - Ash | 100% cotton" />
+            <CategoryCard image="/000.webp" name="  T-shirt - Black | 100% cotton" />
+                   <CategoryCard image="/asakaa.webp" name="Asakaa  T-shirt - Black | 100% cotton " />
      
       </div>
   

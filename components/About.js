@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-
+import Link from "next/link";
 export default function About (){
     return (
      
@@ -20,9 +20,9 @@ export default function About (){
       <div className="containerz">
         <h2>Jeffery Agyepong</h2>
         <p className="title">CEO & Founder</p>
-        <p>Dont Believe the hype</p>
-        <p>agyepong9jeff@icloud.com</p>
-        <p><button className="button">Contact</button></p>
+        <p>Front-end Developer</p>
+     <a className="button" href="mailto:agyepong9jeff@icloud.com">Contact</a>
+   
       </div>
     </div>
   </div>

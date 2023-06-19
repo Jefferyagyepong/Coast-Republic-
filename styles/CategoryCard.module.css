@@ -1,24 +1,27 @@
 .card {
-  margin: 0.8rem;
-  position: relative;
-  padding: 2rem 2rem;
-  border-radius: 4px;
+  flex-basis: 46%;
+    padding: 2%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
 
 
 }
 .image {
   object-fit: center;
-  transition: all 5s cubic-bezier(0.14, 0.96, 0.91, 0.6);
 background: white;
     border-radius: 4px;
+    max-width: 100%;
 }
 .info {
-
+margin-top: auto;
   color: #000;
   text-align: center;
 }
 .card:hover .image {
-  transform: scale(1.5);
+  transform: scale(0.5);
 }
 .card:hover .info {
   opacity: 0.9;

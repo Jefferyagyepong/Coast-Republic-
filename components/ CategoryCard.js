@@ -8,13 +8,14 @@ const CategoryCard = ({ image, name }) => {
   return (
     <div className={styles.card}>
 
-      <Image className={styles.image} src={image} height={250} width={200} alt='product image'/>
+     
       <Link href={`/shop`}>
-        <div className={styles.info}>
-          <h5>{name}</h5>
-          <p>SHOP NOW</p>
-        </div>
+        <Image className={styles.image} src={image} height={150} width={120} alt='product image'/>
       </Link>
+       <div className={styles.info}>
+          <h5>{name}</h5>
+          <h6>SHOP NOW</h6>
+        </div>
     </div>
   );
 };

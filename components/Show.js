@@ -79,7 +79,7 @@ export default function Show (){
                     <Image src='/000.webp' width={300} height={300} alt=""  priority/>
        <div className="wrapper six">
         <div>
-            <h6 className="flicker">Happy Independence </h6>
+            <h6 className="flicker">Curated for the community </h6>
         </div>
             </div> 
             <Link href={"/shop"}> <button type=""  className="buy-now">Buy Now</button>  </Link>
