@@ -8,7 +8,6 @@ import Navbar from "./Navbar";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 
-
 export default function Header() {
   
     const Header = () => {
@@ -27,6 +26,8 @@ export default function Header() {
 
 
     return (
+
+      
      
 
         <div className="Header">
