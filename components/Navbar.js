@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
-import styles from '../styles/Navbar.module.css';
+import styles from '../sass/components/Navbar.module.css';
 const Navbar = () => {
 
   // Selecting cart from global state
@@ -14,17 +14,15 @@ const Navbar = () => {
 
   return (
    
-      <ul className={styles.links}>
+      <div className={styles.links}>
         
-        <li className={styles.navlink}>
         <Link href="/cart">
-      
-             <Image src='/cart.svg' width={20} height={20}  alt='cart icon'/> 
-         <p >Cart  ({getItemsCount()})</p>
+          <Image src='/cart.svg' width={20} height={20} alt='cart icon' />
+    
         </Link>
-           
-        </li>
-      </ul>
+                 <p>  ({getItemsCount()})</p>
+     
+      </div>
 
   );
 };

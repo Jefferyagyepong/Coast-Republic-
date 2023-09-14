@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.navlink {
+display: flex;
+flex-direction: row;
+
+}
+
+
+.navlink a {
+  text-decoration: none;
+  color: black;
+}
+.navlink a:hover {
+  color: #f9826c;
+}
+

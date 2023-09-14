@@ -26,7 +26,6 @@ export default function delivery() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <Top/>
         <Header />
 <Delivery/>
    

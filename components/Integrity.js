@@ -1,28 +1,26 @@
 
-import Image from "next/image";
+
 
 
 export default function Integrity (){
-    return (
-     
-        <div className="integrity-wrapper">
-            <div className="integrity-item">
-                <Image src='/delivery.svg' width={20} height={20} alt="" />  {new Date().getHours()}
-                <h4>FREE DELIVERY</h4>
-                <p>We offer free delivery to all regions in Ghana</p>
-            </div>
-              <div className="integrity-item">
-                <Image  src='/return.svg' width={20} height={20} alt=""/>   {new Date().getDay()}
-                <h4>Returns</h4>
-                <p>No question return and easy refund in 14 days.</p>
-            </div>
-              <div className="integrity-item">
-                <Image  src='/send.svg' width={20} height={20} alt=""/>  {new Date().getUTCMonth()}
-                <h4>Contact Us</h4>
-                <p>Keep in touch via email and support system.</p>
-            </div>
+  return (
     
-</div>                    
+           <div className="integrity">
+        <h3 className="delivery-text-head">COAST REPUBLIC CUSTOM APPAREL PPROJECT</h3>
+  
+           <p className="delivery-text">At C/R Inc we are revolutionizing
+          custom apparel, delivering  sustainability
+          and brand-level quality to custom projects
+          for our partners. We design premium quality
+          projects for ourcommunity, crafted with entire
+          life cycle of the product in mind.
+        </p>
+        </div>
+    
+     
+     
+    
+                
    
    
   );

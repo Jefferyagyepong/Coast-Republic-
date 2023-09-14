@@ -1,0 +1,20 @@
+.collection{
+    width: 100%;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.product-filter{
+    display: flex;
+}
+.product-filter h3{
+    flex-grow: 1;
+}
+.sort{
+    display: flex;
+    gap: 2rem;
+}
+.collection-sort{
+    display: flex;
+    flex-direction: column;
+}

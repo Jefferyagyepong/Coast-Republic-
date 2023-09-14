@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Top from '../components/Top'
 import Check from '../components/Check'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ProductCard from '../components/ProductCard';
-import styles from '../styles/ShopPage.module.css';
+import styles from '../sass/components/ShopPage.module.css';
 import { getProducts } from './api/products/index';
 
 const ShopPage = ({ products }) => {
@@ -28,7 +27,7 @@ const ShopPage = ({ products }) => {
       </Head>
   
       <main >
-            <Top/>
+        
         <Header />
      
              <div className={styles.container}>

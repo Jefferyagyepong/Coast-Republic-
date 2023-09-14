@@ -26,7 +26,7 @@ export default function privacy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-                <Top/>
+          
               <Header />
               <Privacy/>
               <Footer/>

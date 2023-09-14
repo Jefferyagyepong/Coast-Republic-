@@ -1,7 +1,7 @@
 
 import Link from "next/link.js";
 
-import {  faEnvelope  } from "@fortawesome/free-solid-svg-icons";
+import {  faAnglesRight, faEnvelope  } from "@fortawesome/free-solid-svg-icons";
 import { faCcMastercard, faCcPaypal, faCcVisa, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,95 +12,55 @@ export default function Footer() {
 
     return (
 
-      
-      <footer className="footer">
-          <div className="container-footer">
-            <div className="row">
-              <div className="footer-col">
-                <h4>Company</h4>
-                <ul>
-              
-                       <li>   <Link href="/delivery"  > Delivery</Link></li>
-                       <li> <Link href="/privacy"  > Privacy Policy</Link></li>
-                       <li> <Link href="/terms" > Terms & conditions</Link></li>
-                       <li>    <Link href="/contact"  className="footer-nav-link"> Contact Us</Link></li>
-                    
-                </ul>
-                
-              </div>
-               <div className="footer-col">
-                <h4>Follow us</h4>
-                <ul>
-                  <li></li>
-                       <li>            <Link
-              href="https://twitter.com/coastrepublicgh"
-           className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faTwitter} size="1x" style={{color:"#0193dd"}} /></Link></li>
-                       <li>          <Link
-              href="coastrepgh@gmail.com"
-            className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faEnvelope}size="1x"/></Link></li>
-  
-                       <li>  <Link
-              href="https://www.youtube.com/coastrepublic"
-               className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faYoutube}size="1x" style={{color:"red"}}/></Link></li>
-                  <li> <Link
-              href="https://www.instagram.com/coast_republic/"
-        className="icon"
-              target="_blank"
-            ><FontAwesomeIcon icon={faInstagram} size="1x" style={{color:"orange"}}/></Link></li>
-                </ul>
-                
-              </div>
-              <div className="footer-col">
-                        <h4>Contact</h4>
-                   <address>   
-                10th Avenue Mccarthy Hill, Greater Accra, GH
-              </address>
-              <br/>
-                <Link  href="tel:+233244736420" className="white">(233) 244736420</Link><br/><br/>
-                   <Link  href="mailto:support@coastrepublic.com"  className="white">coastrepgh@gmail.com</Link>
-              </div>
-             
-              
-            </div>
-               <form className="footer-form">
-                
-            <p className="form-info">
-          Get e-mail updates, our latest collection  and Gift promotion
-      
-              </p>
-              <br/>
-            
-                <input type="email" placeholder="enter e-mail address"  className="newsletter-mail" required/>
-        <button id="newsletter">Sign Up</button>
-              </form>
-          </div>
-        <div className="footer-bottom">
-          <div >
-            <ul>
-              <li> <FontAwesomeIcon className="payment" icon={faCcVisa} size="2x"  style={{ color: "white" }}/></li>
-              <li> <FontAwesomeIcon className="payment" icon={faCcMastercard} size="2x" style={{ color: "white" }}  /></li>
-              <li>                
-           
-            <FontAwesomeIcon className="payment" icon={faCcPaypal} size="2x"  style={{color:"white"}}  /></li>
-              
-            </ul>
-
-            </div><br/>
-            <p   className="copyright">
-                
-            Copyright Coast Republic all rights reserved {' '}   &copy;   {new Date().getFullYear()}
-          </p>
-  
-          </div>
+      <footer>
+        <div className="row">
           
+  
+          <div className="footer-col">
+            <div  className="align-center">
+                     <FontAwesomeIcon icon={faAnglesRight} /> <h3>Quick Links</h3>
+            </div>
+  
+            <ul className="footer-link">
+         
+                       <li><Link href="/delivery" className="links" > Delivery</Link></li>
+                       <li><Link href="/privacy"  className="links" > Privacy Policy</Link></li>
+                       <li><Link href="/terms"    className="links" > Terms & conditions</Link></li>
+                       <li><Link href="/contact"  className="links"> Contact Us</Link></li>
+                    
+            </ul>
+        </div>
+          <div className="footer-col">
+            <div className="align-center">
+                <FontAwesomeIcon icon={faAnglesRight} />  <h3>Follow us</h3>
+            </div>
+      
+      <ul className="footer-link">
+                
+                       <li className="links"><Link
+              href="https://twitter.com/coastrepublicgh"
+          className="links"
+              target="_blank"
+            ><FontAwesomeIcon icon={faTwitter} size="1x"  /></Link></li>
+  
+                  <li className="links"> <Link
+              href="https://www.instagram.com/coast_republic/"
+       className="links"
+              target="_blank"
+            ><FontAwesomeIcon icon={faInstagram} size="1x" /></Link></li>
+                </ul>
+          </div>
+           <span className="rights">
+          &copy;   {new Date().getFullYear()} C / R INC.  
+        </span> 
+        
+
+        </div>
+        
+       
+        
+  
       </footer>
-   
    
    
   );

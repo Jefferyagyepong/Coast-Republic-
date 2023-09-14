@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+
+.wrapper.seven {
+   text-align: center;
+   background-color: $secondaryColor1;
+   padding: $padding1;
+   color: $secondaryColor2;
+   opacity: 6;
+   
+
+}
+
+.seven>div {
+    width: auto;
+    margin: 1rem auto;
+}
+
+.seven .text {
+    font-size: 1rem;
+    margin: 1rem auto;
+
+}
+

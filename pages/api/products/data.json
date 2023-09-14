@@ -22,16 +22,16 @@
   },
    {
     "id": 4,
-    "product": "Coast Republic DryBlend T-shirt - Ash | 100% cotton",
+    "product": "Coast Republic DryBlend T-shirt - white | 100% cotton",
     "category": "t-shirt",
-    "image": "/Ash.webp",
+    "image": "/public/whiteTee4.svg",
     "price": 150.00
   },
    {
     "id": 5,
     "product": "Coast Republic DryBlend Hoodie - Black | 100% cotton",
     "category": "Hoodie",
-    "image": "/Hoodie.webp",
+    "image": "/hoodie-black.svg",
     "price": 300.00
   },
    {

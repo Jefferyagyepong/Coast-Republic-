@@ -2,7 +2,7 @@
        
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/CategoryCard.module.css';
+import styles from '../sass/components/CategoryCard.module.css';
 
 const CategoryCard = ({ image, name }) => {
   return (
