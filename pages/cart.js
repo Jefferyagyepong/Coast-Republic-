@@ -1,19 +1,17 @@
-import PayNow from '../components/PayNow' 
-import Link from 'next/link'; 
-import Image from 'next/image';
-import { useSelector, useDispatch } from 'react-redux';
+import PayNow from "../components/PayNow";
+import Link from "next/link";
+import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
 // Importing actions from  cart.slice.js
 import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-} from '../redux/cart.slice';
-import styles from '../styles/CartPage.module.css';
-
+} from "../redux/cart.slice";
+import styles from "../sass/components/CartPage.module.css";
 
 const CartPage = () => {
-
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector(state => state.cart);
   const dispatch = useDispatch();
 
   const getTotalPrice = () => {
@@ -27,16 +25,13 @@ const CartPage = () => {
     <div className={styles.container}>
       {cart.length === 0 ? (
         <div>
-           <h1>Your Cart is Empty!</h1>
-        <Link  href={"/shop"}>
-        <p>Back to store</p>
-        </Link>
+          <h1>Your Cart is Empty!</h1>
+          <Link href={"/shop"}>
+            <p>Back to store</p>
+          </Link>
         </div>
-       
-
       ) : (
-          <>
-         
+        <>
           <div className={styles.header}>
             <div>Image</div>
             <div>Product</div>
@@ -45,11 +40,11 @@ const CartPage = () => {
             <div>Actions</div>
             <div>Total Price</div>
           </div>
-          {cart.map((item) => (
+          {cart.map(item => (
             // eslint-disable-next-line react/jsx-key
             <div className={styles.body}>
               <div className={styles.image}>
-                <Image src={item.image} height="90" width="65" alt='' />
+                <Image src={item.image} height="90" width="65" alt="" />
               </div>
               <p>{item.product}</p>
               <p>$ {item.price}</p>
@@ -71,12 +66,11 @@ const CartPage = () => {
           <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
         </>
       )}
-      <br/><br/>
-  <PayNow/>
+      <br />
+      <br />
+      <PayNow />
     </div>
   );
 };
 
 export default CartPage;
-
-

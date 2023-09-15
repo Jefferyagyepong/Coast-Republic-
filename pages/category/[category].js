@@ -1,7 +1,7 @@
-import { useRouter } from 'next/router';
-import ProductCard from '/components/ProductCard';
-import styles from '/styles/ShopPage.module.css';
-import { getProductsByCategory } from '../api/products/[category]';
+import { useRouter } from "next/router";
+import ProductCard from "/components/ProductCard";
+import styles from "/sass/components/ShopPage.module.css";
+import { getProductsByCategory } from "../api/products/[category]";
 
 const CategoryPage = ({ products }) => {
   const router = useRouter();
@@ -9,7 +9,7 @@ const CategoryPage = ({ products }) => {
     <div className={styles.container}>
       <h1 className={styles.title}>Results for {router.query.category}</h1>
       <div className={styles.cards}>
-        {products.map((product) => (
+        {products.map(product => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>

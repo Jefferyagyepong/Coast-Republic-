@@ -1,92 +1,93 @@
+@import "../abstracts/variables";
 
-.salmon-mobile{
+.salmon-mobile {
   color: $secondaryColor1;
   transition: 0.3s ease;
   padding: $padding1;
 }
+
 .cart-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1.4rem;
 }
+
+.input {
+  background-color: rgb(217, 220, 222);
+  border: none;
+  padding: 1.3rem;
+  width: 100%;
+  border-radius: 1.3rem;
+
+}
+
 .search-form {
   padding: 0.9rem;
   border: none;
-  width: $width4;
+  width: 66%;
   margin-left: auto;
   margin-right: auto;
   @include flex-box2;
 }
-.sticky{
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+
+.margin-top {
+  margin-top: 3rem;
+  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.group-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: -3rem;
+}
+
+.sticky {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: $primaryColor1;
   border-bottom: 0.5px solid $secondaryColor1;
-  width: 100%;
-}
-.header-container{
-  width: 100%;
-}
-
-.searchInput {
- width: $width1;
- @include flex-box2;
-
-
-}
-.input {
-  background-color: rgb(217, 220, 222);
-  border: none;
-  padding: 0.8rem;
-  width: 100%;
-  border-radius: 1.5rem;
-}
-
-
-.mainHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.3fr;
- 
+}
 
+.float-right {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
 }
+
 
 .nav-link {
   list-style: none;
   margin-left: 100rem;
 }
 
-
 .nav-links {
 
   display: inline-block;
   padding: 15px;
-
-
 }
 
 .menu {
   display: none;
 }
 
-
-
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 50px;
-  padding: 1em;
+  justify-content: space-evenly;
+  width: 100%;
+
 }
 
 .menu {

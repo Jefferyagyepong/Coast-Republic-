@@ -16,23 +16,6 @@
        flex: 1 46%;
      }
 
-
-    .mainHeader {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-  
-  
-  
-    }
   .menu {
     display: block;
   }
@@ -40,10 +23,6 @@
     display: block;
   }
 
-  .input {
-    display: none;
-  }
-   
 }
 @media screen and (min-width: 550px) {
   .form-wrapper {
@@ -57,7 +36,9 @@
     .card {
       flex: 1 46%;
     }
+    
 }
+
 
 @media screen and (min-width: 768px) {
   .form-wrapper {
@@ -95,6 +76,10 @@
     width: 100%;
     border-radius: 1.5rem;
   }
+    #menu-toggle {
+      display: none;
+    }
+  
 }
 @media screen and (min-width: 960px) {
   .form-wrapper {
@@ -109,22 +94,7 @@
   .socials {
     display: block;
   }
-    .mainHeader {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 0.2fr;
-  
-  
-  
-    }
+    
   .menu {
     display: none;
   }
@@ -142,4 +112,7 @@
   .input {
     display: block;
   }
+    #menu-toggle {
+      display: none;
+    }
 }

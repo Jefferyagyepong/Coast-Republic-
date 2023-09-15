@@ -1,18 +1,15 @@
-
-
-
-export default function Terms (){
-    return (
-     
- 
+export default function Terms() {
+  return (
     <div className="terms">
-      <h1>TERMS OF SERVICE</h1><br/>
+      <h1>TERMS OF SERVICE</h1>
+      <br />
 
       <h3>Overview</h3>
 
       <p className="delivery-text">
-        This website is operated by Coast Republic. Throughout the site, the terms
-        &#34;we&#34;, &#34;us&#34; and &#34;our&#34; refer to Coast Republic.
+        This website is operated by Coast Republic. Throughout the site, the
+        terms &#34;we&#34;, &#34;us&#34; and &#34;our&#34; refer to Coast
+        Republic.
       </p>
 
       <p className="delivery-text">
@@ -20,10 +17,10 @@ export default function Terms (){
         services available from this site to you, the user, conditioned upon
         your acceptance of all terms, conditions, policies and notices stated
         here.By visiting our site and/ or purchasing something from us, you
-        engage in our &#34;service&#34; and agree to be bound by the following terms and
-        conditions (&#34;Terms of service&#34;, &#34;Terms&#34;), including those additional
-        terms and conditions and policies referenced here in and/ or available by
-        hyperlink.
+        engage in our &#34;service&#34; and agree to be bound by the following
+        terms and conditions (&#34;Terms of service&#34;, &#34;Terms&#34;),
+        including those additional terms and conditions and policies referenced
+        here in and/ or available by hyperlink.
       </p>
 
       <p className="delivery-text">
@@ -40,14 +37,14 @@ export default function Terms (){
         If these Terms of Service are considered an offer, accounts is expressly
         limited to these Terms od Service. Any new features or tools whhich are
         added to the current store shall also be subject to the Terms and
-        Service. You can review the current version of the Terms of Service
-        at any time on this page. We reserve the right to update, change or
-        replace any part of these Terms of Service by posting updates and/or
-        changes to our website. It is your responsibilty to check this page
-        periodically for changes. Your continued use of or access to the website
-        following the posting of any changes constitutes acceptance of those
-        changes. Our store is hosted on vercel. They provide us with hosting
-        platform that allows us to sell our products and services to you.
+        Service. You can review the current version of the Terms of Service at
+        any time on this page. We reserve the right to update, change or replace
+        any part of these Terms of Service by posting updates and/or changes to
+        our website. It is your responsibilty to check this page periodically
+        for changes. Your continued use of or access to the website following
+        the posting of any changes constitutes acceptance of those changes. Our
+        store is hosted on vercel. They provide us with hosting platform that
+        allows us to sell our products and services to you.
       </p>
 
       <p className="delivery-text">
@@ -109,11 +106,11 @@ export default function Terms (){
         return or exchange only according to the Return Policy. we have made
         every effort to disolay as accurately as possible the color and images
         of our products that appear at the store. We cannot guarantee that your
-        computer&apos;s monitor&apos; display of any color will be accurate. We reserve
-        the right,but are not obligated, to limit the sales of our products or
-        Services to any person, geographic region or jurisdiction. We may
-        exercise this right on a case-by-case basis. We reserve the right to
-        limit the quantities of any products or services that we offer. All
+        computer&apos;s monitor&apos; display of any color will be accurate. We
+        reserve the right,but are not obligated, to limit the sales of our
+        products or Services to any person, geographic region or jurisdiction.
+        We may exercise this right on a case-by-case basis. We reserve the right
+        to limit the quantities of any products or services that we offer. All
         descriptions of products or product pricing are subject to change at
         anytime without notice, at the sole discretion of us. We reserve the
         right to discontinue any product at any time. Any offer for a product or
@@ -145,17 +142,17 @@ export default function Terms (){
       <p className="delivery-text">
         SECTION 7- OPTIOPNAL TOOLS we may provide you with access to third-party
         tools over which we neither onitor nor have any control nor input. You
-        acknowledge and agree that we provide access to such tools&quot;as is&quot; and
-        &quot;as available &quot; without any warranties, representations or conditions of
-        any kind and without endorsement. We shall have no liability whatsever
-        arising fro relating to your use of optional third-party tools. Any use
-        by you of optional tools offered through the site is entirely at your
-        own risk and discretion and you should ensure that you are familair with
-        and approve of the terms on which tools are provided by relevant
-        third-party provider(s). We may also, in future, offer new services
-        and/or features through website (including, the release of new tools and
-        resources). Such new features and/or Services shall also be subject to
-        these Terms of Service.
+        acknowledge and agree that we provide access to such tools&quot;as
+        is&quot; and &quot;as available &quot; without any warranties,
+        representations or conditions of any kind and without endorsement. We
+        shall have no liability whatsever arising fro relating to your use of
+        optional third-party tools. Any use by you of optional tools offered
+        through the site is entirely at your own risk and discretion and you
+        should ensure that you are familair with and approve of the terms on
+        which tools are provided by relevant third-party provider(s). We may
+        also, in future, offer new services and/or features through website
+        (including, the release of new tools and resources). Such new features
+        and/or Services shall also be subject to these Terms of Service.
       </p>
 
       <p className="delivery-text">
@@ -169,10 +166,10 @@ export default function Terms (){
         third-parties. We are not liable for any harm or damages related to the
         purchase or use of goods, services, resources, content, or any other
         transactions made in connection with any third-party websites. Please
-        review carefully the third-party&apos;s policies and practices and ake sure
-        you understand the before you engage in any transaction. Complaints,
-        claims, concerns, or questions regarding third-party products should be
-        directed to the third-party.
+        review carefully the third-party&apos;s policies and practices and ake
+        sure you understand the before you engage in any transaction.
+        Complaints, claims, concerns, or questions regarding third-party
+        products should be directed to the third-party.
       </p>
 
       <p className="delivery-text">
@@ -180,27 +177,27 @@ export default function Terms (){
         request, you send certain specific submissions(for example contest
         entries) or without a request fromus you send creative ideas,
         suggestions, proposals, plans other materials, whether online, by email,
-        by postal mail, or otherwise (collectively, &apos;comments&apos;), you agree that
-        we may, at any time, without restriction, edit, copy, publish,
-        distribute , translate and otherwise use in any nediumm any coents that
-        you forward to us. We are and shall be under no obligation (1) to
-        maintain any coents in confidence; (2) to pay compensation for any
-        comments; or (3) to respond to any comments. We may have no obligation
-        to, monitor, edit or remove content that we determine in our sole
-        discretion are unlawful, offensive, threatning, libelous, defamatory,
-        pornographic, obscene or otherwise objectionable or violates any party&apos;s
-        intellectual property or these Termms of Service. You agree that your
-        comments will notviolate any right of any third-party, including
-        copyright, trademark, privacy, personality or other personality or other
-        personal or proprietary right. You further agree that your comments will
-        not contain libelous or otherwise unlawful, abusive or obscene material,
-        or contain any computer virus or other maleware that could in any way
-        affect the operation of the Service or any related website. You may not
-        use a false e-mail address, pretend to be someone other than yourself,
-        or otherwise mislead us or third-parties as to the origin of any
-        comments. You solely responsible for any commments you make and their
-        accuracy. We take no responsibility and assumme no liabilty for any
-        commments posted by you or any third-party.
+        by postal mail, or otherwise (collectively, &apos;comments&apos;), you
+        agree that we may, at any time, without restriction, edit, copy,
+        publish, distribute , translate and otherwise use in any nediumm any
+        coents that you forward to us. We are and shall be under no obligation
+        (1) to maintain any coents in confidence; (2) to pay compensation for
+        any comments; or (3) to respond to any comments. We may have no
+        obligation to, monitor, edit or remove content that we determine in our
+        sole discretion are unlawful, offensive, threatning, libelous,
+        defamatory, pornographic, obscene or otherwise objectionable or violates
+        any party&apos;s intellectual property or these Termms of Service. You
+        agree that your comments will notviolate any right of any third-party,
+        including copyright, trademark, privacy, personality or other
+        personality or other personal or proprietary right. You further agree
+        that your comments will not contain libelous or otherwise unlawful,
+        abusive or obscene material, or contain any computer virus or other
+        maleware that could in any way affect the operation of the Service or
+        any related website. You may not use a false e-mail address, pretend to
+        be someone other than yourself, or otherwise mislead us or third-parties
+        as to the origin of any comments. You solely responsible for any
+        commments you make and their accuracy. We take no responsibility and
+        assumme no liabilty for any commments posted by you or any third-party.
       </p>
 
       <p className="delivery-text">
@@ -259,28 +256,29 @@ export default function Terms (){
         time, without notice to you. You expressly agree that your use of, or
         inability to use, the service is at your sole risk. The service and all
         products and services delivered to you through the service are (except
-        as expressly stated by us) provided &apos;as is&apos; and &apos;as available&apos; for your
-        use, without any representation, warranties or conditions of any kind,
-        either express or implied, including all implied warranties or
-        conditions of merchantability, merchantable quality, fitness for a
-        particular purpose, durability, title, and non-infringement. In no case
-        shall KRUDE, our directors, officers, employees, affiliates, agents,
-        contractors, interns, suppliers, service providers or licensors be
-        liable for any injury, loss, claim, or any direct, indirect, incidental,
-        punitive, special, or consequential damages of any kind, including,
-        without limitation lost profits, lost revenue, lost savings, loss of
-        data, replacement costs, or any similar damages, whether based in
-        contract, tort (including negligence), strict liability or otherwise,
-        arising from your use of any of the service or any products procured
-        using the service, or for any other claim related in any way to your use
-        of the service or any product, including, but not limited to, any errors
-        or omissions in any content, or any loss or damage of any kind incurred
-        as a result of the use of the service or any content (or product)
-        posted, transmitted, or otherwise made available via the service, even
-        if advised of their possibility. Because some states or jurisdictions do
-        not allow the exclusion or the limitation of liability for consequential
-        or incidental damages, in such states or jurisdictions, our liability
-        shall be limited to the maximum extent permitted by law.
+        as expressly stated by us) provided &apos;as is&apos; and &apos;as
+        available&apos; for your use, without any representation, warranties or
+        conditions of any kind, either express or implied, including all implied
+        warranties or conditions of merchantability, merchantable quality,
+        fitness for a particular purpose, durability, title, and
+        non-infringement. In no case shall KRUDE, our directors, officers,
+        employees, affiliates, agents, contractors, interns, suppliers, service
+        providers or licensors be liable for any injury, loss, claim, or any
+        direct, indirect, incidental, punitive, special, or consequential
+        damages of any kind, including, without limitation lost profits, lost
+        revenue, lost savings, loss of data, replacement costs, or any similar
+        damages, whether based in contract, tort (including negligence), strict
+        liability or otherwise, arising from your use of any of the service or
+        any products procured using the service, or for any other claim related
+        in any way to your use of the service or any product, including, but not
+        limited to, any errors or omissions in any content, or any loss or
+        damage of any kind incurred as a result of the use of the service or any
+        content (or product) posted, transmitted, or otherwise made available
+        via the service, even if advised of their possibility. Because some
+        states or jurisdictions do not allow the exclusion or the limitation of
+        liability for consequential or incidental damages, in such states or
+        jurisdictions, our liability shall be limited to the maximum extent
+        permitted by law.
       </p>
 
       <p className="delivery-text">
@@ -354,10 +352,5 @@ export default function Terms (){
         should be sent to us at support@coastrepublic.com
       </p>
     </div>
-
-   
-       
-   
-   
   );
 }

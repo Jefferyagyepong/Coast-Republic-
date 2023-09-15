@@ -1,20 +1,3 @@
-
-
-
-export default function Currency (){
-    return (
-     
-
-      
-       <div className="wrapper-currency">
-    
-                <span>GHS</span>
-       
-   
-</div>
-    
-       
-   
-   
-  );
+export default function Currency() {
+  return <span className="float-right">GHS</span>;
 }

@@ -1,15 +1,10 @@
-
-
-
-export default function Privacy (){
-    return (
-     
- 
+export default function Privacy() {
+  return (
     <div class="terms">
       <h1>PRIVACY POLICY</h1>
 
       <p className="delivery-text">
-        This Privacy Policy describes how coast republic  (the “Site” or “we”)
+        This Privacy Policy describes how coast republic (the “Site” or “we”)
         collects, uses, and discloses your Personal Information when you visit
         or make a purchase from the Site.
       </p>
@@ -18,8 +13,8 @@ export default function Privacy (){
       <p className="delivery-text">
         After reviewing this policy, if you have additional questions, want more
         information about our privacy practices, or would like to make a
-        complaint, please contact us by e-mail at coastrepgh@gmail.com or
-        by mail using the details provided below: McCarthy Hill, Greater Accra,
+        complaint, please contact us by e-mail at coastrepgh@gmail.com or by
+        mail using the details provided below: McCarthy Hill, Greater Accra,
         Ghana
       </p>
 
@@ -202,7 +197,7 @@ export default function Privacy (){
         this information each time you return to the site or browse from one
         page to another. Cookies also provide information on how people use the
         website, for instance whether it’s their first time visiting or if they
-        are a frequent visitor. 
+        are a frequent visitor.
       </p>
 
       <h3>Do Not Track</h3>
@@ -235,8 +230,5 @@ export default function Privacy (){
         https://ico.org.uk/make-a-complaint/] Last updated: April 08, 2023
       </p>
     </div>
-       
-   
-   
   );
 }
