@@ -32,13 +32,13 @@
     "next": "13.2.3",
     "next-redux-wrapper": "^8.1.0",
     "react": "^18.2.0",
-    "react-burger-menu": "2.7.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
     "react-google-maps": "9.4.5",
     "react-paystack": "^4.0.3",
     "react-redux": "^8.0.5",
+    "rsuite": "^5.40.0",
     "sass": "^1.61.0",
     "use-places-autocomplete": "^4.0.0"
   }

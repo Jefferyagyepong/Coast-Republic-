@@ -1,0 +1,43 @@
+.sale {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: 12rem;
+    background-image: url(/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+}
+
+.font-size {
+    font-size: 7rem;
+}
+.shop-now{
+    background: white;
+    color: black;
+    text-align: center;
+    transition: 0.5s;
+    padding: 9px 22px;
+    border: none;
+}
+

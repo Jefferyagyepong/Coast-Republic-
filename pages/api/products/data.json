@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "titile": "Tshirt",
     "product": " Coast Republic DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
     "image": "/000.webp",
@@ -8,6 +9,7 @@
   },
     {
     "id": 2,
+     "titile": "Tshirt",
     "product": "Asakaa DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
     "image": "/asakaa.webp",
@@ -15,6 +17,7 @@
   },
     {
     "id": 3,
+     "titile": "Tshirt",
     "product": "Coast Republic DryBlend T-shirt - Black | 100% cotton",
     "category": "t-shirt",
     "image": "/blackHope.webp",
@@ -22,6 +25,7 @@
   },
    {
     "id": 4,
+     "titile": "Tshirt",
     "product": "Coast Republic DryBlend T-shirt - white | 100% cotton",
     "category": "t-shirt",
     "image": "/public/whiteTee4.svg",
@@ -29,6 +33,7 @@
   },
    {
     "id": 5,
+     "titile": "Hoodie",
     "product": "Coast Republic DryBlend Hoodie - Black | 100% cotton",
     "category": "Hoodie",
     "image": "/hoodie-black.svg",
@@ -36,6 +41,7 @@
   },
    {
     "id": 6,
+     "titile": "Hoodie",
     "product": "8434rgba DryBlend Hoodie - Black | 100% cotton",
     "category": "Hoodie",
     "image": "/8434rgb.webp",
