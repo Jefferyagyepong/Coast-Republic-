@@ -23,9 +23,15 @@ export default function ContactForm() {
       .then(res => res.json())
       .then(data => setUser(data.user));
   };
+
   return (
     <div className="form-container">
-      <form onSubmit={onSubmit} className="">
+      <form
+        onSubmit={onSubmit}
+        className=""
+        action="/api/contactposts"
+        method="POST"
+      >
         <label htmlFor="Fname">First Name</label>
         <input
           type="text"
