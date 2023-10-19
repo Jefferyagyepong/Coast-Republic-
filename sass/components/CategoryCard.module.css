@@ -15,7 +15,7 @@
   max-width: 100%;
 }
 
-.info {}
+
 
 .image:hover {
   transform: scale(0.5);
@@ -36,4 +36,3 @@
   margin: 0 auto;
 }
 
-.row:after {}
