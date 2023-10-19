@@ -5,10 +5,12 @@ import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 import Image from "next/image";
 import SearchInput from "./SearchInput";
+import Notification from "./Notification";
 
 export default function Header() {
   return (
     <div className="stick">
+      <Notification/>
       <Top />
       <header className="sticky">
         <section className="top-nav">

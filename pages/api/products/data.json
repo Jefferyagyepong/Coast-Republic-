@@ -2,50 +2,56 @@
   {
     "id": 1,
     "titile": "Tshirt",
-    "product": " Coast Republic DryBlend T-shirt - Black | 100% cotton",
+    "product": " Coast Republic ",
     "category": "t-shirt",
     "image": "/000.webp",
-    "price": 150.00
+    "price": 150.00,
+     "description": "Dry Blend 100% cotton"
   },
     {
     "id": 2,
      "titile": "Tshirt",
-    "product": "Asakaa DryBlend T-shirt - Black | 100% cotton",
+    "product": "Asakaa  ",
     "category": "t-shirt",
     "image": "/asakaa.webp",
-    "price": 250.00
+    "price": 250.00,
+     "description": "Dry Blend 100% cotton"
   },
     {
     "id": 3,
      "titile": "Tshirt",
-    "product": "Coast Republic DryBlend T-shirt - Black | 100% cotton",
+    "product": "Coast Republic ",
     "category": "t-shirt",
     "image": "/blackHope.webp",
-    "price": 150.00
+    "price": 150.00,
+     "description": "Dry Blend 100% cotton"
   },
    {
     "id": 4,
      "titile": "Tshirt",
-    "product": "Coast Republic DryBlend T-shirt - white | 100% cotton",
+    "product": "Coast Republic",
     "category": "t-shirt",
-    "image": "/public/whiteTee4.svg",
-    "price": 150.00
+    "image": "/stoner.JPG",
+    "price": 150.00,
+     "description": "Dry Blend 100% cotton"
   },
    {
     "id": 5,
      "titile": "Hoodie",
-    "product": "Coast Republic DryBlend Hoodie - Black | 100% cotton",
+    "product": "Coast Republic ",
     "category": "Hoodie",
-    "image": "/hoodie-black.svg",
-    "price": 300.00
+    "image": "/Hoodie.svg",
+    "price": 300.00,
+     "description": "Dry Blend 100% cotton"
   },
    {
     "id": 6,
      "titile": "Hoodie",
-    "product": "8434rgba DryBlend Hoodie - Black | 100% cotton",
+    "product": "8434rgba",
     "category": "Hoodie",
     "image": "/8434rgb.webp",
-    "price": 300.00
+    "price": 300.00,
+    "description": "Dry Blend 100% cotton"
   }
 
  

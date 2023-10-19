@@ -2,13 +2,22 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Integrity from "../components/Integrity";
 import Show from "../components/Show";
+import Thrifts from "../components/Thrifts";
+import New from "../components/New";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sale from "../components/Sale";
+import CategoryCard from "../components/ CategoryCard";
+import styles from "../sass/components/ShopPage.module.css";
+import { getProducts } from "./api/products/index";
+
+
+
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home = ({ products }) => {
   return (
+
     <>
       <Head>
         <title>Coast Republic | T-shirts and more</title>
@@ -39,11 +48,28 @@ export default function Home() {
       <main>
         <Header />
         <Sale />
-
+        <Thrifts />
+        <New />
         <Show />
         <Integrity />
+
+        <div className={styles.container}>
+          <div className={styles.cards}>
+            {products.map(product => (
+              <CategoryCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+
         <Footer />
       </main>
     </>
   );
+};
+export default Home;
+
+export async function getStaticProps() {
+  const products = await getProducts();
+  return { props: { products } };
 }
+

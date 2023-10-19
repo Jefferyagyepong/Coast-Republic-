@@ -1,16 +1,17 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import Top from "../components/Top";
-import Header from "../components/Header";
-import Privacy from "../components/Privacy";
+import Check from "../components/Check";
 import Footer from "../components/Footer";
-const inter = Inter({ subsets: ["latin"] });
+import DesCard from "../components/Descard";
+import Search from "../components/Search";
+import Header from "../components/Header";
+import styles from "../sass/components/ShopPage.module.css";
+import { getProducts } from "./api/products/index";
 
-export default function privacy() {
+const ShopPage = ({ products }) => {
   return (
     <>
       <Head>
-        <title>Delivery | Coast Republic</title>
+        <title>Search | Coast Republic</title>
         <link rel="apple-touch-icon" href="" />
         <meta property="og:title" content="Home | Coast Republic" />
         <meta property="og:type" content="" />
@@ -27,11 +28,23 @@ export default function privacy() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main>
-        <Header />
-        <Privacy />
-        <Footer />
+      
+     
+            {products.map(product => (
+              <DesCard key={product.id} product={product} />
+            ))}
+      
+     
       </main>
     </>
   );
+};
+
+export default ShopPage;
+
+export async function getStaticProps() {
+  const products = await getProducts();
+  return { props: { products } };
 }

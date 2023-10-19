@@ -26,17 +26,24 @@ export default function Footer() {
           <Link href={"/privacy"}> here. </Link>{" "}
           <Link href={"/terms"}> Terms and conditions</Link> apply.
         </p>
+        <br />
+        <br />
+        <br />
 
         <form className="form-footer">
-          <label for="Email">Email Address</label>
-          <input
-            type="email"
-            placeholder="your@address.com"
-            className="form-input"
-          />
-          <button type="submit" className="footer-button">
-            Submit
-          </button>
+          <label htmlFor="Email">Email Address</label>
+          <div>
+            <input
+              type="email"
+              placeholder="your@address.com"
+              className="form-input"
+            />
+          </div>
+          <div>
+            <button type="submit" className="footer-button">
+              Submit
+            </button>
+          </div>
         </form>
         <hr />
         <ul className="footer-link">
@@ -71,7 +78,7 @@ export default function Footer() {
           </Link>{" "}
           |
           <Link href="mailto:jefferyagyepong05@gmail.com" className="black">
-            customercare@gcoastrepublic.com
+            customercare@coastrepublic.com
           </Link>
         </div>
       </div>

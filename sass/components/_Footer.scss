@@ -4,29 +4,32 @@
 
 .form-footer {
   margin: 0 auto;
-    padding: 10px 22px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
 
 }
 
 .form-input {
-  padding: 10px 22px;
+  padding: 10px 27px;
   background-color: white;
   border: none;
 
 }
-.footer-button{
-      padding: 10px 15px;
-      border: 1px solid #bbb;
-        background-color: white;
-        text-align: center;
-        color: black;
-        transition: 0.3s ease;
+
+.footer-button {
+  padding: 10px 15px;
+  border: 1px solid #bbb;
+  background-color: white;
+  text-align: center;
+  color: black;
+  transition: 0.3s ease;
+
 
 }
+
 .footer-button:hover {
 
   background-color: black;
@@ -70,7 +73,8 @@ hr {
   width: 15%;
 
 }
-.text-underline{
+
+.text-underline {
   text-decoration: underline;
 }
 
@@ -90,9 +94,10 @@ hr {
   margin-top: 2rem;
 
 }
- .full-width{
+
+.full-width {
   width: 100%;
- }
+}
 
 .text-align-start-wide {
   width: 100%;
@@ -103,7 +108,8 @@ hr {
   justify-content: space-between;
 
 }
-.momo{
+
+.momo {
   border-style: groove;
   border-radius: 6px;
 

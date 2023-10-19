@@ -1,11 +1,19 @@
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: start;
+  padding: 8px 15px;
+  
 }
 
+
 .title {
-  font-size: 1rem;
+ 
   font-weight: 600;
+
+
 }
 
 .category {
@@ -14,10 +22,11 @@
 }
 .button {
   margin-top: 0.5rem;
-  padding: 0.75rem 1rem;
+  padding: 5px 24px;
   background: transparent;
   text-transform: uppercase;
-  border: 2px solid black;
+  border: none;
+  transition: 0.5s;
   cursor: pointer;
 }
 .button:hover {

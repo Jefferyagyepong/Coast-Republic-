@@ -1,57 +1,53 @@
-import Head from 'next/head'
-import Top from '../components/Top'
-import Check from '../components/Check'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import ProductCard from '../components/ProductCard';
-import styles from '../sass/components/ShopPage.module.css';
-import { getProducts } from './api/products/index';
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import Check from "../components/Check";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import ProductCard from "../components/ProductCard";
+import styles from "../sass/components/ShopPage.module.css";
+import { getProducts } from "./api/products/index";
 
 const ShopPage = ({ products }) => {
   return (
     <>
-         <Head>
+      <Head>
         <title>Shop | Coast Republic</title>
-                <link rel="apple-touch-icon" href=""/>
+        <link rel="apple-touch-icon" href="" />
         <meta property="og:title" content="Home | Coast Republic" />
-<meta property="og:type" content="" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
 
         <meta name="description" content="Coast Republic  Store" />
-          <meta name="keywords" content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store" />
-                <meta http-equiv="x-ua-compatible" content="ie=edge" />
-             <meta name="author" content="Jeffery Agyepong" />
+        <meta
+          name="keywords"
+          content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="author" content="Jeffery Agyepong" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
-      <main >
-        
-        <Header />
+
+      <main>
+        <Header/>
      
-             <div className={styles.container}>
-                 <h1 className={styles.title}>All Results</h1>
-                      <div className={styles.cards}>
-                       {products.map((product) => (
-                 <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
+
+        <div className={styles.container}>
+          <h1 className={styles.title}>All Results</h1>
+          <div className={styles.cards}>
+            {products.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
         </div>
-        <Check/>
-   
-   
-        <Footer/>
-      
+        <Check />
+
+        <Footer />
       </main>
-  </>
-
-
-
-    
-   
-  )
-}
+    </>
+  );
+};
 
 export default ShopPage;
 

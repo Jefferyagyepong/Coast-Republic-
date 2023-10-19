@@ -39,114 +39,142 @@ p {
 
 
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
 
-.App {
-    text-align: center;
-    font-family: "Roboto";
-    letter-spacing: 0.1rem;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    margin: 5% auto;
-    width: 635px;
-    height: 430px;
-    background: white;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-}
-
-.item {
-    width: 50%;
-    position: relative;
-}
-
-.item-image {
-    height: 430px;
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    object-fit: cover;
+    height: 100vh;
+    background: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10;
+    animation: popup 1s ease-in-out 5s forwards;
 }
 
-.overlay-effect {
+@keyframes popup {
+
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+}
+
+.modal.closed {
+    display: none;
+}
+
+.modal-close-overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    opacity: 0.2;
-    background-color: #303030;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     z-index: 1;
+ 
 }
 
-.item-details {
+.newsletter-img {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 350px;
+    margin: 20px;
+    background: greenyellow;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    z-index: 2;
+    animation: scaleUp 0.5s ease-in-out 5s forwards;
+}
+
+@keyframes scaleUp {
+
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.modal-close-btn {
     position: absolute;
-    bottom: 0;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    color: #84a17d;
-    text-align: left;
+    top: 15px;
+    right: 15px;
+    background: yellowgreen;
+    color: var(--white);
+    font-size: 16px;
+    padding: 5px;
+    border-radius: var(--border-radius-sm);
 }
 
-.item-details__title {
-    font-size: 22px;
+.modal-close-btn:hover {
+    opacity: 0.9;
 }
 
-.item-details__amount {
-    font-weight: bolder;
+.modal-close-btn ion-icon {
+    --ionicon-stroke-width: 70px;
 }
 
-.checkout {
-    background: #84a17d;
-    /* fallback for old browsers */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 430px;
-    width: 50%;
+.newsletter {
+    padding: 50px 30px;
+    text-align: center;
 }
 
-.checkout-form {
-    padding: 20px 20px;
-}
-
-.checkout-field {
-    display: flex;
-    flex-direction: column;
+.newsletter-header {
     margin-bottom: 20px;
 }
 
-.checkout-field label {
-    text-align: left;
-    color: #e0eafc;
-    font-size: 10px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+.newsletter-title {
+    color: var(--onyx);
+    font-size: var(--fs-2);
+    font-weight: var(--weight-600);
+    margin-bottom: 10px;
 }
 
-.checkout-field input {
-    background-color: transparent;
-    border: 1px solid #cecece;
-    border-radius: 5px;
-    color: #e0eafc;
-    height: 35px;
+.newsletter-desc {
+    color: var(--sonic-silver);
+    font-size: var(--fs-7);
+    line-height: 1.6;
 }
 
-.paystack-button {
-    cursor: pointer;
-    text-align: center;
-    font-size: 10px;
-    letter-spacing: 0.1rem;
+.email-field {
+    font-size: var(--fs-7);
+    padding: 8px 16px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--cultured);
+    margin-bottom: 16px;
+}
+
+.btn-newsletter {
+    background: var(--eerie-black);
+    color: var(--white);
+    font-size: var(--fs-7);
+    font-weight: var(--weight-600);
     text-transform: uppercase;
-    background-color: #bfbfbf;
-    font-weight: bold;
-    color: #e0eafc;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 45px;
-    margin-top: 40px;
+    padding: 10px 15px;
+    border-radius: var(--border-radius-sm);
+    margin: auto;
+    transition: var(--transition-timing);
+}
+
+.btn-newsletter:hover {
+    background: var(--salmon-pink);
 }
