@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Top from "../components/Top";
-import Header from "../components/Header";
-import Terms from "../components/Terms";
-import Footer from "../components/Footer";
+import Top from "../components/Head/Top";
+import Header from "../components/Head/Header";
+import Terms from "../components/Footer/Terms";
+import Footer from "../components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function terms() {

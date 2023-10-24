@@ -1,10 +1,7 @@
 import Head from "next/head";
-import Check from "../components/Check";
-import Footer from "../components/Footer";
-import DesCard from ".@/components/Descard";
-import Search from "../components/Search";
-import Header from "../components/Header";
-import styles from "../sass/components/ShopPage.module.css";
+
+import DesCard from "@/components/Products/DesCard";
+
 import { getProducts } from "./api/products/index";
 
 const ShopPage = ({ products }) => {
@@ -30,13 +27,9 @@ const ShopPage = ({ products }) => {
       </Head>
 
       <main>
-      
-     
-            {products.map(product => (
-              <DesCard key={product.id} product={product} />
-            ))}
-      
-     
+        {products.map(product => (
+          <DesCard key={product.id} product={product} />
+        ))}
       </main>
     </>
   );

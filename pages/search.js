@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Check from "../components/Check";
-import Footer from "../components/Footer";
-import ProductCard from "../components/ProductCard";
-import Search from "../components/Search";
-import Header from "../components/Header";
+import Check from "../components/Products/Check";
+import Footer from "../components/Footer/Footer";
+import ProductCard from "../components/Products/ProductCard";
+import Search from "../components/Forms/Search";
+import Header from "../components/Head/Header";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
-
 
 const ShopPage = ({ products }) => {
   return (
@@ -36,12 +35,9 @@ const ShopPage = ({ products }) => {
           <h1 className={styles.title}>What are you looking for</h1>
           <Search />
           <div className={styles.cards}>
-         
-                      {products.map(product => (
-                  
-                <ProductCard key={product.id} product={product} />
-              ))}
-        
+            {products.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         </div>
         <Check />

@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Top from "../components/Top";
-import Header from "../components/Header";
-import Privacy from "../components/Privacy";
-import Footer from "../components/Footer";
+import Top from "../components/Head/Top";
+import Header from "../components/Head/Header";
+import Privacy from "../components/Footer/Privacy";
+import Footer from "../components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function privacy() {

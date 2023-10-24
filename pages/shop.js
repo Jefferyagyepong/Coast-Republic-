@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Check from "../components/Check";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import ProductCard from "../components/ProductCard";
+import Check from "../components/Products/Check";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Head/Header";
+import ProductCard from "../components/Products/ProductCard";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
 
@@ -30,8 +30,7 @@ const ShopPage = ({ products }) => {
       </Head>
 
       <main>
-        <Header/>
-     
+        <Header />
 
         <div className={styles.container}>
           <h1 className={styles.title}>All Results</h1>

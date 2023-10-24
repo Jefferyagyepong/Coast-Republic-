@@ -2,9 +2,9 @@ import Head from "next/head";
 
 import { Inter } from "next/font/google";
 
-import Header from "../components/Header";
-import Delivery from "../components/Delivery";
-import Footer from "../components/Footer";
+import Header from "../components/Head/Header";
+import Delivery from "../components/Footer/Delivery";
+import Footer from "../components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 export default function delivery() {
   return (

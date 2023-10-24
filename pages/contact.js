@@ -2,9 +2,9 @@ import Head from "next/head";
 
 import { Inter } from "next/font/google";
 
-import Header from "../components/Header";
-import Contact from "../components/Contact";
-import ContactForm from "../components/ContactForm";
+import Header from "../components/Head/Header";
+import Contact from "../components/Forms/Contact";
+import ContactForm from "../components/Forms/ContactForm";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -20,6 +20,13 @@ justify-content: center;
   margin-top: 3rem;
 
 }
+
+.shop-nows:hover {
+  background: #2222;
+  padding:5px 11px ;
+  
+
+}
 .new {
   width: 100%;
 display: flex;
@@ -40,7 +47,7 @@ margin-bottom: 3rem;
     padding-bottom: 6rem;
     margin: 0 auto;
     margin-top: 12rem;
-    background-image: url(/thrift.jpeg);
+    background-image: url(/thrift.svg);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;

@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Top from "../components/Top";
+import Top from "../components/Head/Top";
 import About from "../components/About";
-import Header from "../components/Header";
-import Contact from "../components/Contact";
+import Header from "../components/Head/Header";
+import Contact from "../components/Forms/Contact";
 
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,23 +1,20 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Integrity from "../components/Integrity";
-import Show from "../components/Show";
-import Thrifts from "../components/Thrifts";
-import New from "../components/New";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Sale from "../components/Sale";
-import CategoryCard from "../components/ CategoryCard";
+import Integrity from "../components/Products/Integrity";
+import Show from "../components/Products/Show";
+import Thrifts from "../components/Products/Thrifts";
+import New from "../components/Products/New";
+import Header from "../components/Head/Header";
+import Footer from "../components/Footer/Footer";
+import Sale from "../components/Products/Sale";
+import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
-
-
 
 const inter = Inter({ subsets: ["latin"] });
 
 const Home = ({ products }) => {
   return (
-
     <>
       <Head>
         <title>Coast Republic | T-shirts and more</title>
@@ -72,4 +69,3 @@ export async function getStaticProps() {
   const products = await getProducts();
   return { props: { products } };
 }
-
