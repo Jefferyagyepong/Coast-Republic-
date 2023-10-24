@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
-import styles from "../sass/components/ProductCard.module.css";
+import styles from "/sass/components/ProductCard.module.css";
 import Link from "next/link";
 
 const DesCard = ({ product }) => {
@@ -23,7 +23,7 @@ const DesCard = ({ product }) => {
       </div>
 
       <div className="category">
-        <br />
+      
         <br />
         <br />
         <br />
