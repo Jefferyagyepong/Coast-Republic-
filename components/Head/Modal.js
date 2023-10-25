@@ -1,6 +1,7 @@
 import {
     useRef, useEffect
 } from "react";
+import Image from "next/image";
 export default function Modal() {
     const ref = useRef(null);
     
@@ -53,12 +54,8 @@ export default function Modal() {
               </button>
 
               <div className="newsletter-img">
-                <img
-                  src="./assets/images/newsletter.png"
-                  alt="subscribe newsletter"
-                  width="400"
-                  height="400"
-                />
+                <Image src={"#"} alt="subscribe newsletter" height={300}  width={400} />
+               
               </div>
 
               <div className="newsletter">

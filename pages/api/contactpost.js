@@ -1,4 +1,4 @@
-import database from "./database";
+
 export default function handler(req, res) {
   const body = req.body;
 
