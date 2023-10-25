@@ -1,16 +1,22 @@
 .category {
   margin-bottom: 2rem;
-  width: 45%;
+  width: 100%;
   margin-top: 6rem;
 
-  margin: 0 auto;
+  padding: 20px  55px;
 
 
 }
 
+.containers {
+
+  width: 77%;
+  margin: 0 auto;
+}
+
 .category-item-container {
   display: flex;
-  padding-left: 70px;
+  padding-left: 10px;
   align-items: center;
   width: 100%;
   justify-content: center;

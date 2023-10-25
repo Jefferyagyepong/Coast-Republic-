@@ -10,7 +10,7 @@ import Sale from "../components/Products/Sale";
 import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
-
+import Modal from "../components/Head/Modal"
 const inter = Inter({ subsets: ["latin"] });
 
 const Home = ({ products }) => {
@@ -43,7 +43,9 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
+        <Modal />
         <Header />
+
         <Sale />
         <Thrifts />
         <New />
@@ -69,3 +71,4 @@ export async function getStaticProps() {
   const products = await getProducts();
   return { props: { products } };
 }
+
