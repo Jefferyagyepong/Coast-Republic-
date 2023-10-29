@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Inter } from "next/font/google";
 import Image from "next/image";
+import Proceed from "@/components/Products/Proceed";
 import { useSelector, useDispatch } from "react-redux";
 // Importing actions from  cart.slice.js
 import {
@@ -26,7 +26,7 @@ const CartPage = () => {
       {cart.length === 0 ? (
         <div>
           <h1>Your Cart is Empty!</h1>
-          <Link href={"/shop"}>
+          <Link href={"/shop"}><br/><br/>
             <p>Back to store</p>
           </Link>
         </div>
@@ -68,6 +68,7 @@ const CartPage = () => {
       )}
       <br />
       <br />
+      <Proceed/>
     </div>
   );
 };

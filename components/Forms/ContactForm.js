@@ -4,6 +4,8 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("maygvdqr");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
+    
+    
   }
   return (
     <form onSubmit={handleSubmit}>

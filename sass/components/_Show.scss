@@ -2,8 +2,9 @@
   margin-bottom: 2rem;
   width: 100%;
   margin-top: 6rem;
-
-  padding: 20px  55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 
 }
@@ -18,8 +19,6 @@
   display: flex;
   padding-left: 10px;
   align-items: center;
-  width: 100%;
-  justify-content: center;
   gap: 10px;
   overflow: auto hidden;
   scroll-snap-type: inline mandatory;

@@ -4,13 +4,15 @@ import Integrity from "../components/Products/Integrity";
 import Show from "../components/Products/Show";
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
+import Blog from "../components/Products/Blog";
+import Title from "../components/Products/Title";
 import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Products/Sale";
 import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
-import Modal from "../components/Head/Modal"
+
 const inter = Inter({ subsets: ["latin"] });
 
 const Home = ({ products }) => {
@@ -43,7 +45,7 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
-        <Modal />
+     
         <Header />
 
         <Sale />
@@ -59,6 +61,8 @@ const Home = ({ products }) => {
             ))}
           </div>
         </div>
+        <Title/>
+        <Blog/>
 
         <Footer />
       </main>

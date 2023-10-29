@@ -39,3 +39,78 @@ p {
 
 
 }
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16;
+}
+.col{
+    -ms-flex: 25%;
+    flex: 25%;
+}
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+.col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+.col-25,
+.col-50,
+col-75 {
+padding: 0 16;
+}
+.contain{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+input[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.paystack-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #04aa6d;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  margin: 10px 0;
+}
+.paystack-button:hover{
+background-color: #45a049;
+}
+.blog-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 22px;
+    flex-wrap: wrap;
+}
+.blog-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 17px;
+
+}

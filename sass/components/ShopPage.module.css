@@ -4,8 +4,8 @@ display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  width: 88%;
-  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
     margin-top: 13rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -14,7 +14,6 @@ display: flex;
 .cards {
   display: grid;
     grid-template-columns: 1fr 1fr;
- align-items: self-start;
     gap: 6rem;
     padding: 2rem;
     margin: 0 auto;

@@ -88,10 +88,6 @@ li {
     list-style: none;
 }
 
-// img {
-//   width: 100%;
-//   height: 100%;
-// }
 
 .page {
     margin-top: 10%;
@@ -201,31 +197,7 @@ button {
     cursor: pointer;
 }
 
-input {
-    display: block;
-    width: 100%;
-    font: inherit;
-}
 
-input::-webkit-input-placeholder {
-    font: inherit;
-}
-
-input::-moz-placeholder {
-    font: inherit;
-}
-
-input:-ms-input-placeholder {
-    font: inherit;
-}
-
-input::-ms-input-placeholder {
-    font: inherit;
-}
-
-input::placeholder {
-    font: inherit;
-}
 
 p {
 
@@ -441,4 +413,7 @@ p {
 
 .btn-newsletter:hover {
     background: var(--salmon-pink);
+}
+.checkout{
+    margin: 0 auto;
 }
