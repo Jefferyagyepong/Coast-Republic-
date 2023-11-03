@@ -1,4 +1,4 @@
-@import "../abstracts/variables";
+
 .terms{
   text-align: center;
   margin-top: 3rem;
@@ -9,7 +9,7 @@
   width: 88%;
 margin-left: auto;
 margin-right: auto;
-color: $primaryColor2;
+
 }
 .delivery-text-head {
   width: 92%;
@@ -20,10 +20,6 @@ color: $primaryColor2;
 
 
 
-label{
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
 
 
 .form-container{

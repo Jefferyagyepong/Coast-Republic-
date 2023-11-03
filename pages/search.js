@@ -32,7 +32,7 @@ const ShopPage = ({ products }) => {
       <main>
         <Header />
         <div className={styles.container}>
-          <h1 className={styles.title}>What are you looking for</h1>
+          <h3 className={styles.title}>What are you looking for</h3>
           <Search />
           <div className={styles.cards}>
             {products.map(product => (

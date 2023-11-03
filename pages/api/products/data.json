@@ -4,7 +4,7 @@
     "titile": "Tshirt",
     "product": " Coast Republic ",
     "category": "t-shirt",
-    "image": "/000.webp",
+    "image": "",
     "price": 150.00,
      "description": "Dry Blend 100% cotton"
   },
@@ -13,7 +13,7 @@
      "titile": "Tshirt",
     "product": "Asakaa  ",
     "category": "t-shirt",
-    "image": "/asakaa.webp",
+    "image": "",
     "price": 250.00,
      "description": "Dry Blend 100% cotton"
   },
@@ -22,7 +22,7 @@
      "titile": "Tshirt",
     "product": "Coast Republic ",
     "category": "t-shirt",
-    "image": "/blackHope.webp",
+    "image": "",
     "price": 150.00,
      "description": "Dry Blend 100% cotton"
   },
@@ -31,7 +31,7 @@
      "titile": "Tshirt",
     "product": "Coast Republic",
     "category": "t-shirt",
-    "image": "/stoner.JPG",
+    "image": "",
     "price": 150.00,
      "description": "Dry Blend 100% cotton"
   },
@@ -40,7 +40,7 @@
      "titile": "Hoodie",
     "product": "Coast Republic ",
     "category": "Hoodie",
-    "image": "/Hoodie.svg",
+    "image": "",
     "price": 300.00,
      "description": "Dry Blend 100% cotton"
   },
@@ -49,7 +49,7 @@
      "titile": "Hoodie",
     "product": "8434rgba",
     "category": "Hoodie",
-    "image": "/8434rgb.webp",
+    "image": "",
     "price": 300.00,
     "description": "Dry Blend 100% cotton"
   }

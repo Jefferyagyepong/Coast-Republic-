@@ -4,13 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 export default function SearchInput() {
   return (
-    <div className="group-form">
+    <div >
       <Link href={"/search"}>
-        <button type="submit" className="btn-search">
+        <button type="submit" className="">
           <FontAwesomeIcon
             icon={faSearch}
             size="1x"
-            style={{ color: "gray" }}
+            style={{ color: "black" }}
           />
         </button>
       </Link>

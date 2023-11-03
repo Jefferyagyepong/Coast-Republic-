@@ -8,10 +8,16 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { useForm, ValidationError } from "@formspree/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 export default function StayLoop() {
+   const [state, handleSubmit] = useForm("maygvdqr");
+   if (state.succeeded) {
+     return <p>Thanks for joining!</p>;
+   }
   return (
     <div className="background-gray">
       <h4 className="heading">STAY IN LOOP</h4>
@@ -26,20 +32,14 @@ export default function StayLoop() {
       <br />
       <br />
 
-      <form className="form-footer">
-        <label htmlFor="Email">Email Address</label>
-        <div>
-          <input
-            type="email"
-            placeholder="your@address.com"
-            className="form-input"
-          />
-        </div>
-        <div>
-          <button type="submit" className="footer-button">
-            Submit
-          </button>
-        </div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email Address</label>
+        <input id="email" type="email" name="email" />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+       
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
       </form>
       <hr />
       <ul className="footer-link">

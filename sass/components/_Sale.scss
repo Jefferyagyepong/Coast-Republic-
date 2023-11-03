@@ -1,5 +1,6 @@
+@import "../abstracts//variables";
 .sale {
-    width: 100%;
+    width: $width1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,8 +12,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: whitesmoke;
-    font-weight: 700;
+    color: $color0;
+
+ 
 }
 
 .flex-column {
@@ -26,7 +28,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 2.5rem;
 }
 

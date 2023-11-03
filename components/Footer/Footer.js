@@ -8,8 +8,8 @@ import StayLoop from "./StayLoop";
 export default function Footer() {
   return (
     <footer>
-      <StayLoop/>
-     
+      <StayLoop />
+
       <div className="text-align-start">
         <h4 className="heading">Call us</h4>
         <br />
@@ -17,9 +17,9 @@ export default function Footer() {
           <Link href="tel:+233244736420" className="black">
             (233) 244736420{" "}
           </Link>{" "}
-          |
           <Link href="mailto:jefferyagyepong05@gmail.com" className="black">
-            customercare@coastrepublic.com
+            
+            | customercare@coastrepublic.com
           </Link>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Footer() {
           <Dropdown.Item as="a" href={"#"}>
             FAQs
           </Dropdown.Item>
-          <Dropdown.Item as="a" href={"#"}>
+          <Dropdown.Item as="a" href={"/delivery"}>
             Delivery
           </Dropdown.Item>
           <Dropdown.Item as="a" href={"/terms"}>
@@ -91,10 +91,10 @@ export default function Footer() {
           className="momo"
         />
       </div>
-      <hr className="full-width" />
+   
       <br />
-      <br />
-      &copy; {new Date().getFullYear()} C-R Inc.
+      <br/>
+      <div className="down">&copy; {new Date().getFullYear()} C-R Inc.</div>
     </footer>
   );
 }
