@@ -88,13 +88,24 @@ padding: $p-b $p-t;
 }
 
 .text-align-start-wide {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: $p-b $p-t;
+position: relative;
+float: left;
+min-width: 200px;
+margin: 50px 33%;
 
+}
+select::-ms-expand{display: none;}
+selectdiv:after{
+  content: '<>';
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  padding: 0 0 2px;
+  border-bottom: 1px soid #999;
+  position: absolute;
+  pointer-events: none;
 }
 
 .momo {

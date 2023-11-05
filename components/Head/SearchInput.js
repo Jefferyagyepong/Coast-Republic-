@@ -6,7 +6,7 @@ export default function SearchInput() {
   return (
     <div >
       <Link href={"/search"}>
-        <button type="submit" className="">
+        <button type="submit" className="btn-search">
           <FontAwesomeIcon
             icon={faSearch}
             size="1x"

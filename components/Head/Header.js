@@ -1,7 +1,7 @@
 import React, { useRef, useLayoutEffect } from "react";
 import Image from "next/image";
 
-
+import Top from "./Top"
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 import SearchInput from "./SearchInput";
@@ -11,11 +11,7 @@ import SearchInput from "./SearchInput";
 export default function Header() {
   return (
     <div className="stick">
-      <div className="wrapper seven">
-        <h3 className="text">
-          <span> Free delivery to all regions on orders over &#8373;500</span>
-        </h3>
-      </div>
+      <Top />
       <header className="sticky">
         <div className="top-nav">
           <input id="menu-toggle" type="checkbox" />
@@ -46,9 +42,9 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className="">
+        <div >
           <Link href={"./"}>
-         <Image src={"/crlogo.svg"} width={99} height={90} alt="logo"/>
+            <Image src={"/crlogo.svg"} width={99} height={90} alt="logo" />
           </Link>
         </div>
         <div>

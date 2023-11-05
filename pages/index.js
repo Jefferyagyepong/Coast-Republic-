@@ -8,6 +8,7 @@ import Blog from "../components/Products/Blog";
 import Title from "../components/Products/Title";
 import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
+import Modal from "@/components/Head/Modal";
 import Sale from "../components/Products/Sale";
 import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.css";
@@ -45,6 +46,8 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
+        <Modal/>
+    
         <Header />
 
         <Sale />

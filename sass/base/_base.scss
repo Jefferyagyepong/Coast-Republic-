@@ -76,14 +76,23 @@ Link:hover {
 
 button {
     outline: 0 !important;
-    transition: all 0.25s;
+    transition: all 0.5s;
+      padding: 0 5px;
+    text-align: center;
+    border: 1px thin $color2;
+    cursor: pointer;
 
     &:active,
     &:hover {
         transition: all 0.25s;
+        background-color: $color17;
+        color: $color0;
+        border: none;
 
     }
 }
+
+
 
 body,
 html {
@@ -105,6 +114,12 @@ footer {
 
 li {
     list-style: none;
+}
+.centered{
+    margin: 0 auto;
+}
+option{
+    color: $color1;
 }
 
 
