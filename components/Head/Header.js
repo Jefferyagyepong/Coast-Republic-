@@ -46,10 +46,10 @@ export default function Header() {
           <Link href={"./"}>
             <Image src={"/crlogo.svg"} width={99} height={90} alt="logo" />
           </Link>
-          <div>
+      
             <SearchInput />
           </div>
-        </div>
+      
 
         <div>
           <CartBasket />
