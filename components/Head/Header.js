@@ -4,7 +4,7 @@ import Image from "next/image";
 import Top from "./Top"
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
-import SearchInput from "./SearchInput";
+
 
 
 
