@@ -47,7 +47,7 @@ export default function Header() {
             <Image src={"/crlogo.svg"} width={99} height={90} alt="logo" />
           </Link>
       
-            <SearchInput />
+        
           </div>
       
 
