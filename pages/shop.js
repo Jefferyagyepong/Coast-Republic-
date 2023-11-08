@@ -1,6 +1,4 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import Check from "../components/Products/Check";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Head/Header";
 import ProductCard from "../components/Products/ProductCard";
@@ -33,14 +31,16 @@ const ShopPage = ({ products }) => {
         <Header />
 
         <div className={styles.container}>
-          <h1 className={styles.title}>All Results</h1>
+          <h4 className={styles.title}>Whats new </h4>
+          <p className={styles.para}>Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one place</p>
+          <hr className="full-width" />
           <div className={styles.cards}>
             {products.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </div>
-        <Check />
+       
 
         <Footer />
       </main>

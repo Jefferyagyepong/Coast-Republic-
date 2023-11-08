@@ -46,8 +46,8 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
-        <Modal/>
-    
+        <Modal />
+
         <Header />
 
         <Sale />
@@ -55,13 +55,15 @@ const Home = ({ products }) => {
         <New />
         <Show />
         <Integrity />
-        <div className={styles.container}> 
+        <div className={styles.container}>
           <div className={styles.cards}>
             {products.map(product => (
               <CategoryCard key={product.id} product={product} />
             ))}
           </div>
         </div>
+
+   
 
         <Title />
         <Blog />

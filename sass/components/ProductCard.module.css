@@ -1,35 +1,39 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: start;
-  padding: 8px 15px;
+ 
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   
 }
 
 
-.title {
- 
-  font-weight: 600;
+.title, .category, .description, .price {
+ text-align: start;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
 
 
 }
 
-.category {
-  font-size: 0.8rem;
-  text-transform: uppercase;
+
+.border{
+  border: none;
+  background-color: #f0f0f0f0;
+  border-radius: 7px;
 }
 .button {
   margin-top: 0.5rem;
-  padding: 5px 24px;
+  background-color: black;
+  width: 55%;
+  border-radius: 6px;
   background: transparent;
   text-transform: uppercase;
-  border: none;
   transition: 0.5s;
   cursor: pointer;
-}
-.button:hover {
-  background: black;
   color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+

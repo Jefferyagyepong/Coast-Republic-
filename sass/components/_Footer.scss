@@ -84,15 +84,28 @@ padding: $p-b $p-t;
 }
 
 .full-width {
-  width: 77%;
+  width: 88%;
+  color: #bbb;
+  border:.5px thin #bbb;
+  opacity: 1;
 }
 
 .text-align-start-wide {
-position: relative;
-float: left;
-min-width: 200px;
-margin: 50px 33%;
+width: $width1;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: start;
+flex-wrap: wrap;
+padding: $p-b $p-t;
 
+}
+.text-align-start-wide ul li{
+  padding-top: $p-b;
+  padding-bottom: $p-t;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 select::-ms-expand{display: none;}
 selectdiv:after{

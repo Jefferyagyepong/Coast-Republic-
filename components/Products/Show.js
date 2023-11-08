@@ -1,3 +1,5 @@
+import { faCaretRight, faCaretLeft, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useEffect } from "react";
 export default function Show() {
@@ -95,25 +97,78 @@ export default function Show() {
           id="prev-slide"
           className="slide-button material-symbols-rounded"
         >
-          chevron_left
+          <FontAwesomeIcon icon={faChevronLeft} size="1x" />
         </button>
         <ul className="image-list">
-          <img className="image-item" src="images/img-1.jpg" alt="img-1" />
-          <img className="image-item" src="images/img-2.jpg" alt="img-2" />
-          <img className="image-item" src="images/img-3.jpg" alt="img-3" />
-          <img className="image-item" src="images/img-4.jpg" alt="img-4" />
-          <img className="image-item" src="images/img-5.jpg" alt="img-5" />
-          <img className="image-item" src="images/img-6.jpg" alt="img-6" />
-          <img class="image-item" src="images/img-7.jpg" alt="img-7" />
-          <img className="image-item" src="images/img-8.jpg" alt="img-8" />
-          <img className="image-item" src="images/img-9.jpg" alt="img-9" />
-          <img className="image-item" src="images/img-10.jpg" alt="img-10" />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
+          <Image
+            src={""}
+            className="image-item"
+            alt="img"
+            width={200}
+            height={200}
+          />
         </ul>
         <button
           id="next-slide"
           className="slide-button material-symbols-rounded"
         >
-          chevron_right
+          <FontAwesomeIcon icon={faChevronRight} size="1x" />
         </button>
       </div>
       <div className="slider-scrollbar">

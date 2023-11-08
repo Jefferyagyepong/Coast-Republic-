@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import Header from "@/components/Head/Header";
 import DesCard from "@/components/Products/DesCard";
 
 import { getProducts } from "./api/products/index";
@@ -27,6 +28,7 @@ const ShopPage = ({ products }) => {
       </Head>
 
       <main>
+        <Header/>
         {products.map(product => (
           <DesCard key={product.id} product={product} />
         ))}

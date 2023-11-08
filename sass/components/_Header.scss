@@ -1,35 +1,5 @@
 @import "../abstracts/variables";
 
-.wrapper{
-  width: $width1;
-top: $p-t;
-bottom: $p-b;
-text-align: center;
-background-color: $color17;
-padding-top: $p-t;
-padding-bottom: $p-b;
-
-
- 
-}
-      .text span{
-          animation: fadeInAnimation ease 5s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            color: $color0;
-
-      }
-      @keyframes fadeInAnimation{
-        0%{
-          opacity: 0;
-        }
-        100%{
-          opacity: 1;
-        }
-      }
-      .btn-search{
-        border: none;
-      }
 
 
 .salmon-mobile {
@@ -43,11 +13,86 @@ padding-bottom: $p-b;
 
 
 }
+.basket {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: -6rem;
+  padding-right: 20px;
+}
+
 
 .cart-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
+ 
+}
+.fade-in-text {
+    width: $width1;
+      top: $p-t;
+      bottom: $p-b;
+      text-align: center;
+      background-color: $color17;
+      color: $color0;
+      padding-top: $p-t;
+      padding-bottom: $p-b;
+  
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -56,23 +101,19 @@ padding-bottom: $p-b;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #f5f5f5;
 
-
-
 }
-.centered{
+
+.centered {
   margin: $margin;
 }
 
 .stick {
   width: 100%;
-top: 0;
-position: fixed
-
-
-
+  top: 0;
+  position: fixed
 }
 
 .menu {
@@ -81,22 +122,19 @@ position: fixed
 
 .top-nav {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   color: $color0;
-  left: 0;
-    height: 50px;
-
-     
-
-
+  margin-top: -2rem;
 }
+
 .menu {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
+
 }
 
 .menu>li {
@@ -112,6 +150,7 @@ position: fixed
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 #menu-toggle {
@@ -124,10 +163,12 @@ position: fixed
   display: block;
   background-color: #000;
   position: absolute;
-  height: 3px;
-  width: 20px;
+  height: 1px;
+  width: 22px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 3px;
+
+
 }
 
 .menu-button::before {
@@ -157,6 +198,7 @@ position: fixed
 @media (max-width: 700px) {
   .menu-button-container {
     display: flex;
+
   }
 
   .menu {
@@ -179,7 +221,7 @@ position: fixed
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     background-color: #f5f5f5;
     color: #f5f5f5;
-    
+
   }
 
   #menu-toggle:checked~.menu li {

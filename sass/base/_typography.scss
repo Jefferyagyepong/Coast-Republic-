@@ -161,7 +161,7 @@ abbr{
   position: relative;
   max-width: 350px;
   margin: 20px;
-  background: $white;
+  background: $color1;
   border-radius: $border-radius-md;
   overflow: hidden;
   z-index: 2;
@@ -179,8 +179,7 @@ abbr{
   position: absolute;
   top: 15px;
   right: 15px;
-  background: $salmon-pink;
-  color: $white;
+  background: red;
   font-size: 16px;
   padding: 5px;
   border-radius: $border-radius-sm;
@@ -198,7 +197,7 @@ abbr{
 .newsletter-header { margin-bottom: 20px; }
 
 .newsletter-title {
-  color: $onyx;
+  color: $white;
   font-size: $fs-2;
   font-weight: $weight-600;
   margin-bottom: 10px;
@@ -230,13 +229,15 @@ abbr{
   transition: $transition-timing;
 }
 
-.btn-newsletter:hover { background: $salmon-pink; }
+.btn-newsletter:hover { background: $white; color: $color1; }
 
 
 
 .contai {
     max-width: 1200px;
-    width: 95%;
+    width: 100%;
+    margin: $margin;
+    background-color: inherit;
 }
 
 .slider-wrapper {

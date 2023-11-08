@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import styles from "/sass/components/Navbar.module.css";
 const Navbar = () => {
   // Selecting cart from global state
   const cart = useSelector(state => state.cart);
@@ -12,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.links}>
+    <div >
       <Link href="/cart">
         <Image src="/cart.svg" width={20} height={20} alt="cart icon" />
       </Link>

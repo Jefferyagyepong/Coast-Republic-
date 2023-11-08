@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 export default function Modal() {
@@ -29,12 +29,8 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
             </button>
 
             <div className="newsletter-img">
-              <img
-                src="./assets/images/newsletter.png"
-                alt="subscribe newsletter"
-                width="400"
-                height="400"
-              />
+              <Image src={"/crlogo.svg"} alt="logo" width={400} height={400}/>
+            
             </div>
 
             <div className="newsletter">
@@ -43,7 +39,7 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
                   <h3 className="newsletter-title">Subscribe Newsletter.</h3>
 
                   <p className="newsletter-desc">
-                    Subscribe the <b>Anon</b> to get latest products and
+                    Subscribe the <b>Coast  Republic</b> to get latest products and
                     discount update.
                   </p>
                 </div>

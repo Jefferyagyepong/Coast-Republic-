@@ -1,5 +1,4 @@
 import Link from "next/link.js";
-import { Dropdown } from "rsuite";
 import Image from "next/image";
 import StayLoop from "./StayLoop";
 
@@ -32,36 +31,60 @@ export default function Footer() {
       </div>
       <hr className="full-width" />
       <div className="text-align-start-wide">
-        <label for="">
-          <select>
-            <option value="">Customer Care</option>
-            
-            <option value="">Track Order</option>
-            <option value="">Contact Us</option>
-            <option value="">Returns</option>
-          </select>
-        </label>
+        <nav>
+          <ul>
+            <Link href={"#"}>
+              {" "}
+              <li>Track Order</li>
+            </Link>
+            <Link href={"/about"}>
+              {" "}
+              <li>About</li>
+            </Link>
+            <Link href={"/contact"}>
+              {" "}
+              <li>Contact Us</li>
+            </Link>
+            <Link href={"/delivery"}>
+              {" "}
+              <li>Delivery</li>
+            </Link>
+            <Link href={"#"}>
+              {" "}
+              <li>Returns</li>
+            </Link>
+            <Link href={"/privacy"}>
+              {" "}
+              <li>Privacy Policy </li>
+            </Link>
+            <Link href={"/terms"}>
+              {" "}
+              <li>T & C&apos;s</li>
+            </Link>
+            <Link href={"#"}>
+              {" "}
+              <li>Gift Cards and Promos</li>
+            </Link>
+          </ul>
+        </nav>
       </div>
 
       <hr className="full-width" />
-      <div className="text-align-start">
-        <h4 className="heading">COAST REPUBLIC ACCEPTS</h4>
-        <br />
-        <br />
-        <Image
-          src={"/momo.png"}
-          height={50}
-          width={60}
-          alt="momo logo"
-          className="momo"
-        />
-      </div>
 
       <br />
       <br />
       <div className="down">
         &copy; {new Date().getFullYear()}
-        <abbr title="Coast Reppublic"> C-R Inc.</abbr>
+        <abbr title="Coast Reppublic"> C-R Inc.</abbr> <br /> <br />
+        <div className="">
+          <Image
+            src={"/momo.png"}
+            height={30}
+            width={50}
+            alt="momo logo"
+            className="momo"
+          />
+        </div>
       </div>
     </footer>
   );

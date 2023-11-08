@@ -74,23 +74,7 @@ Link:hover {
         min-height: 100vh;
 }
 
-button {
-    outline: 0 !important;
-    transition: all 0.5s;
-      padding: 0 5px;
-    text-align: center;
-    border: 1px thin $color2;
-    cursor: pointer;
 
-    &:active,
-    &:hover {
-        transition: all 0.25s;
-        background-color: $color17;
-        color: $color0;
-        border: none;
-
-    }
-}
 
 
 

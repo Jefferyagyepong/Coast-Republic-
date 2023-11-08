@@ -9,5 +9,9 @@ export default function CartBasket() {
     };
   };
 
-  return <Navbar />;
+  return (
+    <div  className="basket">
+      <Navbar />
+    </div>
+  );
 }

@@ -2,12 +2,13 @@ import Image from "next/image";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 import styles from "/sass/components/ProductCard.module.css";
-import Link from "next/link";
+
+
 
 const DesCard = ({ product }) => {
   const dispatch = useDispatch();
   return (
-    <div className="row-items">
+    <div className="container">
       <div className={styles.card}>
         <Image src={"/Hoodie.svg"} height={150} width={120} alt="" />
         <h4 className={styles.title}>{product.product}</h4>
@@ -20,42 +21,6 @@ const DesCard = ({ product }) => {
         >
           Add to Cart
         </button>
-      </div>
-
-      <div className="category">
-      
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className="containers">
-          <div className="category-item-container has-scrollbar">
-            <div className="category-item">
-              <div className="category-img-box">
-                <Image
-                  src={"/Hoodie.svg"}
-                  width={100}
-                  height={95}
-                  alt="dress & frock"
-                />
-              </div>
-            </div>
-
-            <div class="category-item">
-              <div className="category-img-box">
-                <Image
-                  src={"/Hoodie.svg"}
-                  width={100}
-                  height={95}
-                  alt="dress & frock"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
