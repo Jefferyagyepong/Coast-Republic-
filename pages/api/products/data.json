@@ -12,14 +12,14 @@
     "id": 2,
      "titile": "Tshirt",
     "product": " Gildan ",
-    "category": "Hoodie",
+    "category": "Sleeves",
     "image": "/cksleeves.jpg",
     "price": 250.00,
      "description": "Dry Blend 100% cotton"
   },
     {
     "id": 3,
-     "titile": "Tshirt",
+     "titile": "Hoodie",
     "product": "Gildan ",
     "category": "Hoodie",
     "image": "/gray.jpg",
@@ -37,9 +37,9 @@
   },
    {
     "id": 5,
-     "titile": "Hoodie",
-    "product": " Gildan ",
-    "category": "Hoodie",
+     "titile": "Tshirt",
+    "product": "Calvin Klien",
+    "category": "T-shirt",
     "image": "/ckround.jpg",
     "price": 300.00,
      "description": "Dry Blend 100% cotton"
