@@ -143,21 +143,21 @@ export default function Show() {
             height={80}
           />
           <Image
-            src={""}
+            src={"/ckround.jpg"}
             className="image-item"
             alt="img"
             width={90}
             height={80}
           />
           <Image
-            src={""}
+            src={"/cksleeves.jpg"}
             className="image-item"
             alt="img"
             width={90}
             height={80}
           />
           <Image
-            src={""}
+            src={"/cargo.jpeg"}
             className="image-item"
             alt="img"
             width={90}
