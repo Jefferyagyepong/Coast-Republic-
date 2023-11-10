@@ -31,8 +31,8 @@ const ShopPage = ({ products }) => {
         <Header />
 
         <div className={styles.container}>
-          <h4 className={styles.title}>Whats new </h4>
-          <p className={styles.para}>Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one place</p>
+          <h4 className={styles.title}>Whats new </h4><br/>
+          <p className={styles.para}>Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one place</p><br/><br/>
           <hr className="full-width" />
           <div className={styles.cards}>
             {products.map(product => (

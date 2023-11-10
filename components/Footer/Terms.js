@@ -1,6 +1,6 @@
 export default function Terms() {
   return (
-    <div className="terms">
+    <div className="terms-wrap">
       <h1>TERMS OF SERVICE</h1>
       <br />
 

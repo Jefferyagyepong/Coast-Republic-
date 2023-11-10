@@ -6,26 +6,38 @@
   width: $width5;
   margin: $margin;
   margin-bottom: 4rem;
- 
+
 }
 
 .category-item-container {
   display: flex;
   padding-left: 10px;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   overflow: auto hidden;
   scroll-snap-type: inline mandatory;
   overscroll-behavior-inline: contain;
   margin: 0 auto;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
 }
 
 .category-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   border: none;
   scroll-snap-align: start;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
 }
 
 .category-img-box {
@@ -46,4 +58,171 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content:space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+
+
+.contai {
+  max-width: 1200px;
+  width: 100%;
+  margin: $margin;
+  background-color: inherit;
+  padding: 14px;
+
+}
+
+.slider-wrapper {
+  position: relative;
+
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  bottom: 30%;
+}
+
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  font-size: 0;
+  border: none;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-display: grid;
+  -webkit-display: grid;
+  -o-display: grid;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 180px;
+  height: 190px;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.contai .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -ms-display: flex;
+  -webkit-display: flex;
+  -o-display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+
+}
+
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  -ms-display: flex;
+  -webkit-display: flex;
+  -o-display: flex
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
 }

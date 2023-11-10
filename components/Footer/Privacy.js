@@ -1,6 +1,6 @@
 export default function Privacy() {
   return (
-    <div class="terms">
+    <div class="terms-wrap">
       <h1>PRIVACY POLICY</h1>
 
       <p className="delivery-text">

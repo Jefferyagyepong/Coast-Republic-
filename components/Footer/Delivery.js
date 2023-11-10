@@ -1,6 +1,6 @@
 export default function Delivery() {
   return (
-    <div className="terms">
+    <div className="terms-wrap">
       <h4>Delivery</h4>
 
       <p className="delivery-text">

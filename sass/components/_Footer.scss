@@ -7,8 +7,8 @@
 
 .form-group {
 
-width: $width5;
-margin: $margin;
+  width: $width5;
+  margin: $margin;
 
 }
 
@@ -39,8 +39,14 @@ margin: $margin;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
 
 
 }
@@ -70,9 +76,9 @@ hr {
 .background-gray {
   background-color: gainsboro;
   text-align: center;
-  width: $width1; 
+  width: $width1;
   margin: $margin;
-padding: $p-b $p-t;
+  padding: $p-b $p-t;
 
 
 }
@@ -86,29 +92,47 @@ padding: $p-b $p-t;
 .full-width {
   width: 88%;
   color: #bbb;
-  border:.5px thin #bbb;
-  opacity: 1;
+
 }
 
 .text-align-start-wide {
-width: $width1;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: start;
-flex-wrap: wrap;
-padding: $p-b $p-t;
+  width: $width1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: $p-b $p-t;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  -ms-justify-content: flex-start;
 
 }
-.text-align-start-wide ul li{
+
+.text-align-start-wide ul li {
   padding-top: $p-b;
   padding-bottom: $p-t;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+
 }
-select::-ms-expand{display: none;}
-selectdiv:after{
+
+select::-ms-expand {
+  display: none;
+}
+
+selectdiv:after {
   content: '<>';
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -122,12 +146,18 @@ selectdiv:after{
 }
 
 .momo {
-  border-style: groove;
-  border-radius: 6px;
+border: none;
 
 
 }
-.down{
+.inline{
+  margin: $margin;
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.down {
   margin: $margin;
   text-align: center;
 }

@@ -76,11 +76,18 @@ export default function Footer() {
       <div className="down">
         &copy; {new Date().getFullYear()}
         <abbr title="Coast Reppublic"> C-R Inc.</abbr> <br /> <br />
-        <div className="">
+        <div className="inline">
           <Image
             src={"/momo.png"}
-            height={30}
-            width={50}
+            height={40}
+            width={45}
+            alt="momo logo"
+            className="momo"
+          />
+          <Image
+            src={"/Visa.png"}
+            height={40}
+            width={45}
             alt="momo logo"
             className="momo"
           />

@@ -2,53 +2,63 @@
 
 .integrity {
   width: $width1;
-margin: $margin;
-text-align: center;
+  margin: $margin;
+  text-align: center;
 
 }
+
 .shop-nows {
-  background: $color10;
+  background: $color17;
   color: $color0;
   text-align: center;
   transition: 0.5s;
   padding: 9px 22px;
   border: none;
   margin-top: 3rem;
+  transition: 0.5s all;
+  margin-bottom: 1rem;
 
 
 }
 
 .shop-nows:hover {
-  background: #2222;
-  padding:5px 11px ;
+  background: white;
   color: $color1;
-  
+
 
 }
+
 .new {
   width: $width1;
   text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
 
 }
-.thrift{
+
+.thrift {
   width: $width3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    margin: $margin;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    color: $color0;
-      margin-top: 3rem;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin: $margin;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color0;
+  margin-top: 3rem;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+
 }
-
-

@@ -10,12 +10,12 @@ export default function Nav() {
         <ul className="menu">
           <li>
             <Link href={"/shop"} className="salmon-mobile">
-              Clothing
+              Shop
             </Link>
           </li>
           <li>
-            <Link href={"/delivery"} className="salmon-mobile">
-              Shoes
+            <Link href={"/about"} className="salmon-mobile">
+              About
             </Link>
           </li>
           <li>
@@ -24,7 +24,7 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href={"/about"} className="salmon-mobile">
+            <Link href={"/shop"} className="salmon-mobile">
               Sale
             </Link>
           </li>

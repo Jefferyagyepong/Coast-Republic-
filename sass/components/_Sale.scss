@@ -1,4 +1,5 @@
 @import "../abstracts//variables";
+
 .sale {
     width: $width1;
     display: flex;
@@ -13,14 +14,31 @@
     background-position: center;
     background-size: cover;
     color: $color0;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
 
- 
+
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
 }
 
 .flex-row {
@@ -29,12 +47,22 @@
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
 }
 
 .font-size {
     font-size: 7rem;
 }
-.shop-now{
+
+.shop-now {
     background: white;
     color: black;
     text-align: center;
@@ -42,4 +70,3 @@
     padding: 9px 22px;
     border: none;
 }
-

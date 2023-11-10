@@ -101,67 +101,67 @@ export default function Show() {
         </button>
         <ul className="image-list">
           <Image
-            src={""}
+            src={"/thugga.jpg"}
             className="image-item"
             alt="img"
-            width={200}
-            height={200}
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/white.JPG"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/blackHo.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/red.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/gray.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/wine.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
           />
           <Image
             src={""}
             className="image-item"
             alt="img"
-            width={200}
-            height={200}
+            width={90}
+            height={80}
           />
           <Image
             src={""}
             className="image-item"
             alt="img"
-            width={200}
-            height={200}
+            width={90}
+            height={80}
           />
           <Image
             src={""}
             className="image-item"
             alt="img"
-            width={200}
-            height={200}
-          />
-          <Image
-            src={""}
-            className="image-item"
-            alt="img"
-            width={200}
-            height={200}
-          />
-          <Image
-            src={""}
-            className="image-item"
-            alt="img"
-            width={200}
-            height={200}
-          />
-          <Image
-            src={""}
-            className="image-item"
-            alt="img"
-            width={200}
-            height={200}
-          />
-          <Image
-            src={""}
-            className="image-item"
-            alt="img"
-            width={200}
-            height={200}
-          />
-          <Image
-            src={""}
-            className="image-item"
-            alt="img"
-            width={200}
-            height={200}
+            width={90}
+            height={80}
           />
         </ul>
         <button

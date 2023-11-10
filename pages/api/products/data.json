@@ -2,54 +2,54 @@
   {
     "id": 1,
     "titile": "Tshirt",
-    "product": " Coast Republic ",
-    "category": "t-shirt",
-    "image": "",
+    "product": " Young Thug ",
+    "category": "T-shirt",
+    "image": "/thugga.jpg",
     "price": 150.00,
      "description": "Dry Blend 100% cotton"
   },
     {
     "id": 2,
      "titile": "Tshirt",
-    "product": "Asakaa  ",
-    "category": "t-shirt",
-    "image": "",
+    "product": " Gildan ",
+    "category": "Hoodie",
+    "image": "/wine.jpg",
     "price": 250.00,
      "description": "Dry Blend 100% cotton"
   },
     {
     "id": 3,
      "titile": "Tshirt",
-    "product": "Coast Republic ",
-    "category": "t-shirt",
-    "image": "",
+    "product": "Gildan ",
+    "category": "Hoodie",
+    "image": "/gray.jpg",
     "price": 150.00,
      "description": "Dry Blend 100% cotton"
   },
    {
     "id": 4,
      "titile": "Tshirt",
-    "product": "Coast Republic",
-    "category": "t-shirt",
-    "image": "",
+    "product": "Calvin Klien",
+    "category": "T-shirt",
+    "image": "/white.jpg",
     "price": 150.00,
      "description": "Dry Blend 100% cotton"
   },
    {
     "id": 5,
      "titile": "Hoodie",
-    "product": "Coast Republic ",
+    "product": " Gildan ",
     "category": "Hoodie",
-    "image": "",
+    "image": "/red.jpg",
     "price": 300.00,
      "description": "Dry Blend 100% cotton"
   },
    {
     "id": 6,
      "titile": "Hoodie",
-    "product": "8434rgba",
+    "product": " Gildan ",
     "category": "Hoodie",
-    "image": "",
+    "image": "/blackHo.jpg",
     "price": 300.00,
     "description": "Dry Blend 100% cotton"
   }

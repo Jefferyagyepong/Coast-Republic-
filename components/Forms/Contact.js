@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="terms">
+    <div className="terms-wrap">
       <h4>CONTACT US</h4>
       <p className="delivery-text">
         IF YOU HAVE ANY QUESTIONS, PLEASE FEEL FREE TO REACH OUT VIA EMAIL. WE

@@ -13,12 +13,23 @@
 
 
 }
+
 .basket {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: flex-end;
   margin-top: -6rem;
   padding-right: 20px;
+  -webkit-justify-content: flex-end;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+
+
 }
 
 
@@ -26,18 +37,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
- 
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+
 }
+
 .fade-in-text {
-    width: $width1;
-      top: $p-t;
-      bottom: $p-b;
-      text-align: center;
-      background-color: $color17;
-      color: $color0;
-      padding-top: $p-t;
-      padding-bottom: $p-b;
-  
+  width: $width1;
+  top: $p-t;
+  bottom: $p-b;
+  text-align: center;
+  background-color: $color17;
+  color: $color0;
+  padding-top: $p-t;
+  padding-bottom: $p-b;
+
   animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
   -moz-animation: fadeIn 5s;
@@ -103,6 +119,12 @@
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+
 
 }
 
@@ -126,6 +148,14 @@
   align-items: center;
   color: $color0;
   margin-top: -2rem;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  -ms-justify-content: flex-start;
 }
 
 .menu {
@@ -233,9 +263,18 @@
   .menu>li {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0.9em 0;
     width: 100%;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
 
   }
 

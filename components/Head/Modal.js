@@ -1,5 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+
 import { useEffect } from "react";
 export default function Modal() {
      useEffect(() => {
@@ -15,7 +17,12 @@ modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
    
-  }, []);
+     }, []);
+  
+    const [state, handleSubmit] = useForm("maygvdqr");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
     return (
       <div>
         <div className="overlay" data-overlay></div>
@@ -29,8 +36,7 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
             </button>
 
             <div className="newsletter-img">
-              <Image src={"/crlogo.svg"} alt="logo" width={400} height={400}/>
-            
+              <Image src={"/crlogo.svg"} alt="logo" width={400} height={400} />
             </div>
 
             <div className="newsletter">
@@ -39,20 +45,29 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
                   <h3 className="newsletter-title">Subscribe Newsletter.</h3>
 
                   <p className="newsletter-desc">
-                    Subscribe the <b>Coast  Republic</b> to get latest products and
-                    discount update.
+                    Subscribe the <b>Coast Republic</b> to get latest products
+                    and discount update.
                   </p>
                 </div>
 
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   className="email-field"
                   placeholder="Email Address"
                   required
                 />
-
-                <button type="submit" className="btn-newsletter">
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="btn-newsletter"
+                >
                   Subscribe
                 </button>
               </form>
