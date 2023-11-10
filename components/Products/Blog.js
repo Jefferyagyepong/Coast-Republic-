@@ -10,7 +10,7 @@ export default function Blog() {
           className="shop-nows"
           target=""
         >
-          <Image src={""} width={100} height={180} alt="blog background" />
+          <Image src={"/basqu.jpg"} width={170} height={180} alt="blog background" />
         </Link>
         <Link
           href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
