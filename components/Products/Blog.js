@@ -31,9 +31,9 @@ export default function Blog() {
         >
           <Image
             src={
-              ""
+              "/blog1.jpg"
             }
-            width={100}
+            width={170}
             height={180}
             alt="blog background"
           />
