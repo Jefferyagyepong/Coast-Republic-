@@ -15,7 +15,7 @@ export default function Sale() {
       <span>NEW SEASON</span>
       <br />
       <br />
-      <p>Discount automatically applied at checkout</p>
+      <p>Discount automatically applied at check out</p>
       <br />
       <br />
       <Link href={"/shop"} className="shop-nows">

@@ -52,7 +52,17 @@
     "image": "/blackHo.jpg",
     "price": 300.00,
     "description": "Dry Blend 100% cotton"
+  },
+    {
+    "id": 7,
+     "titile": "Carhartt ",
+    "product": " Carhartt Pants ",
+    "category": "Pants",
+    "image": "/cargo.jpg",
+    "price": 300.00,
+    "description": "Dry Blend 100% cotton"
   }
+
 
  
   
