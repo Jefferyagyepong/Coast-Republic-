@@ -8,19 +8,19 @@ export default function Blog() {
         <Link
           href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
           className="shop-nows"
-          target=""
+          target="_blank"
         >
           <Image src={"/basqu.jpg"} width={170} height={180} alt="blog background" />
         </Link>
         <Link
           href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
           className=""
-          target=""
+          target="_blank"
         >
           {" "}
-          <h2>
+          <h4>
             <b> What Makes Men Look Weak Mistakes Killing Your confidence</b>
-          </h2>
+          </h4>
         </Link>
       </div>
       <div className="blog-item">
@@ -44,9 +44,9 @@ export default function Blog() {
           target=""
         >
           {" "}
-          <h2>
+          <h4>
             <b> How To Dress For Your Age ( 20s, 30s, 40s, 50+ )</b>
-          </h2>
+          </h4>
         </Link>
       </div>
     </div>

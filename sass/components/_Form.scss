@@ -1,0 +1,113 @@
+@import "../abstracts/variables";
+
+form {
+    padding: 0 10%;
+
+
+    section {
+        width: calc(50% - 40px);
+        padding: 20px;
+        background: $color20;
+        margin: 20px;
+        border-radius: 5px;
+
+        &.left {
+            float: left;
+        }
+
+        &.right {
+            float: right;
+        }
+
+        .input-container {
+            label {
+                display: block;
+                margin-bottom: 4px;
+                color: $color1;
+                font-size: 16px;
+                text-shadow: 0px 2px 1px $color20;
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 5px 10px;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                background: $color0;
+                box-shadow: 0 2px 0px $color20;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 16px;
+                color: #757575;
+
+                &:focus {
+                    outline: none;
+                    background: white;
+                }
+            }
+
+            textarea {
+                height: 122px;
+                padding: 15px 10px;
+                resize: none;
+            }
+
+            padding:10px;
+        }
+    }
+
+    .send-container {
+        float: right;
+        width: 100%;
+        text-align: right;
+        margin-right: 20px;
+
+        input {
+            background: $color20;
+            border: none;
+            color: $color1;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background: $color20;
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @media(max-width:992px) {
+        padding: 0 5%;
+    }
+
+    @media(max-width:768px) {
+        margin-bottom: 50px;
+
+        section {
+            width: 100%;
+            margin: 0;
+
+            &.left {
+                margin-bottom: -30px;
+            }
+        }
+
+        .send-container {
+            margin-right: 0;
+            margin-top: 15px;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

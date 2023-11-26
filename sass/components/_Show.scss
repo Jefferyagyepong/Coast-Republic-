@@ -96,8 +96,7 @@
   border: none;
   height: 50px;
   width: 50px;
-  z-index: 5;
-  color: #fff;
+  color: #404040;
   display: flex;
   cursor: pointer;
   font-size: 2.2rem;
@@ -112,10 +111,12 @@
   -o-align-items: center;
   -ms-align-items: center;
   bottom: 30%;
+  z-index: 0;
 }
 
 .slider-wrapper .slide-button:hover {
   background: #404040;
+  color: #fff;
 }
 
 .slider-wrapper .slide-button#prev-slide {

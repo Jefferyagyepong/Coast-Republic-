@@ -1,30 +1,27 @@
 @import "../abstracts/variables";
 
-.row{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -16;
- 
+h1{
+    opacity: 1;
 }
-.col{
-    -ms-flex: 25%;
-    flex: 25%;
+h2{
+    opacity: 0.8;
 }
-.col-50 {
-    -ms-flex: 50%;
-    flex: 50%;
+h3{
+    opacity: 0.7;
 }
-.col-75 {
-    -ms-flex: 75%;
-    flex: 75%;
+h4{
+    opacity: 0.5;
 }
-.col-25,
-.col-50,
-col-75 {
-padding: 0 16;
+h5{
+      opacity: 0.4;
 }
+h6{
+    opacity: 0.2;
+}
+p{
+    opacity: 0.5;
+}
+
 .contain{
     background-color: #f2f2f2;
     padding: 5px 20px 15px 20px;

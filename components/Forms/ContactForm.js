@@ -6,42 +6,39 @@ function ContactForm() {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <div className="checkout">
-      <div className="row">
-        <div className="col-75">
-          <div className="contain">
-            <form onSubmit={handleSubmit} className="centered">
-              <div className="row">
-                <div className="col-50">
-                  <label htmlFor="email">Email Address</label>
 
-                  <input id="email" type="email" name="email" />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
-                  <label htmlFor="message">Message</label>
-                  <textarea id="message" name="message" />
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
-                </div>
-              </div>
-            </form>
-            <div className="row">
-              <div className="col-50">
-                <button type="submit" disabled={state.submitting}>
-                  Submit
-                </button>
-              </div>
-            </div>
+      <form onSubmit={handleSubmit}>
+        <section className="left">
+          <div className="input-container">
+            <label for="email">Email</label>
+            <input type="text"  required/>
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
           </div>
+          <div class="input-container">
+            <label for="comments">Message</label>
+            <textarea name="comments" id="" required></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+        </section>
+
+        <div className="send-container">
+          <input
+            type="submit"
+            value="Send"
+            onclick="return true"
+            disabled={state.submitting}
+          />
         </div>
-      </div>
-    </div>
+      </form>
+   
   );
 }
 export default ContactForm;
