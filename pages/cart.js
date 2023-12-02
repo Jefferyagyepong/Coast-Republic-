@@ -33,7 +33,7 @@ const CartPage = () => {
             <Link href={"/shop"}>
               <br />
               <br />
-              <p>Back to store</p>
+              <p>Back to shop</p>
             </Link>
           </div>
         ) : (
