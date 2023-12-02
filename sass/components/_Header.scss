@@ -282,4 +282,22 @@ opacity: 0.3;
   .menu>li:not(:last-child) {
     border-bottom: 1px solid #141c3aff;
   }
+
+    .basket {
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+      margin-top: -6rem;
+      padding-right: 20px;
+      -webkit-justify-content: flex-end;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -o-align-items: center;
+      -ms-align-items: center;
+      -moz-justify-content: flex-end;
+      -o-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+  
+  
+    }
 }
