@@ -208,7 +208,7 @@ const Description = ({ product }) => {
               onClick={() => dispatch(addToCart(product))}
               className={styles.button}
             >
-              Add to Cart
+              Add to Bag
             </button>
           </div>
           <div className="purchase-info">
