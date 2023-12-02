@@ -1,5 +1,5 @@
 import Link from "next/link.js";
-import Image from "next/image";
+
 import StayLoop from "./StayLoop";
 
 
@@ -73,30 +73,7 @@ export default function Footer() {
 
       <br />
       <br />
-      <div className="down">
-        &copy; {new Date().getFullYear()}
-        <abbr title="Coast Reppublic" className="black">
-          {" "}
-          C-R Inc.
-        </abbr>{" "}
-        <br /> <br />
-        <div className="inline">
-          <Image
-            src={"/momo.png"}
-            height={40}
-            width={45}
-            alt="momo logo"
-            className="momo"
-          />
-          <Image
-            src={"/Visa.png"}
-            height={40}
-            width={45}
-            alt="momo logo"
-            className="momo"
-          />
-        </div>
-      </div>
+      <FootBottom/>
     </footer>
   );
 }

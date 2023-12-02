@@ -14,11 +14,11 @@
 
 .footer-button {
   padding: 10px 15px;
-  border: 1px solid #bbb;
-  background-color: white;
+  border: none;
+  background-color: $color20;
   text-align: center;
   color: black;
-  transition: 0.3s ease;
+  transition: $transition-timing;
 
 
 }
@@ -54,6 +54,7 @@
 .links {
   margin: 0 auto;
   margin: 1rem;
+ transition: $transition-timing;
 
 
 }
@@ -62,6 +63,7 @@ hr {
   margin: 0 auto;
   margin-top: 2rem;
   width: 15%;
+    color: $color20;
 
 }
 
@@ -71,6 +73,10 @@ hr {
 
 .black {
   color: black;
+  transition: $transition-timing;
+}
+.black:hover {
+opacity: 0.3;
 }
 
 .background-gray {
@@ -86,12 +92,13 @@ hr {
 .text-align-start {
   margin-top: 2rem;
   padding: $p-b $p-t;
+  transition: $transition-timing;
 
 }
 
 .full-width {
   width: 88%;
-  color: #bbb;
+  color: $color20;
 
 }
 
@@ -117,6 +124,7 @@ hr {
 .text-align-start-wide ul li {
   padding-top: $p-b;
   padding-bottom: $p-t;
+  transition: $transition-timing;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -140,27 +148,52 @@ selectdiv:after {
   transform: rotate(90deg);
   right: 11px;
   padding: 0 0 2px;
-  border-bottom: 1px soid #999;
+  border-bottom: 1px soid $color20;
   position: absolute;
   pointer-events: none;
 }
-
-.momo {
-border: none;
-
-
-}
-.inline{
+.payment-container{
   margin: $margin;
   display: flex;
-  justify-content: space-evenly;
-  width: 20%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+.payment-logo{
+width: 55px;
+height: 33px;
+padding: 0.5rem;
+margin: 0.5rem;
+border-radius: 2px;
+box-shadow: 0 0 1 #f0f0f0 ;
+border: 1px solid $color6;
+}
+.button-submit{
+  border: none;
+  background-color: $color19;
+  color: $color0;
+  text-align: center;
+  padding: 5px 11px;
+  width: 66%;
+  margin-top: 1rem;
+  transition: $transition-timing;
+}
+.button-submit:hover {
+ opacity: 0.6;
+}
+.form-footer{
+  width: 55%;
+  border: none;
+}
+
+
+
 
 .down {
   margin: $margin;
   text-align: center;
 }
-.black{
+
+.black {
   color: $color1;
 }

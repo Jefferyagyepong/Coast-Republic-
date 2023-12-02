@@ -6,64 +6,66 @@
     "category": "T-shirt",
     "image": "/thugga.jpg",
     "price": 150.00,
-     "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "No"
   },
-    {
+  {
     "id": 2,
-     "titile": "Tshirt Sleeves",
+    "titile": "Tshirt Sleeves",
     "product": " Calvin Klien ",
     "category": "Sleeves",
     "image": "/cksleeves.jpg",
     "price": 250.00,
-     "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "Yes"
   },
-    {
+  {
     "id": 3,
-     "titile": "Hoodie",
+    "titile": "Hoodie",
     "product": "Gildan ",
     "category": "Hoodie",
     "image": "/gray.jpg",
     "price": 150.00,
-     "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton"
   },
-   {
+  {
     "id": 4,
-     "titile": "Tshirt",
+    "titile": "Tshirt",
     "product": "Calvin Klien",
     "category": "T-shirt",
     "image": "/ck3pak.jpg",
     "price": 150.00,
-     "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "No"
   },
-   {
+  {
     "id": 5,
-     "titile": "Tshirt",
+    "titile": "Tshirt",
     "product": "Calvin Klien",
     "category": "T-shirt",
     "image": "/ckround.jpg",
     "price": 300.00,
-     "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "Yes"
   },
-   {
+  {
     "id": 6,
-     "titile": "Hoodie",
+    "titile": "Hoodie",
     "product": " Gildan ",
     "category": "Hoodie",
     "image": "/blackHo.jpg",
     "price": 300.00,
-    "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "No"
   },
-    {
+  {
     "id": 7,
-     "titile": "Carhartt ",
+    "titile": "Carhartt ",
     "product": " Carhartt Pants ",
     "category": "Pants",
     "image": "/cargo.jpeg",
     "price": 300.00,
-    "description": "Dry Blend 100% cotton"
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "Yes"
   }
-
-
- 
-  
 ]

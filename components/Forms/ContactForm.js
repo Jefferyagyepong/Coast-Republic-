@@ -6,29 +6,22 @@ function ContactForm() {
     return <p>Thanks for joining!</p>;
   }
   return (
-
-      <form onSubmit={handleSubmit}>
-        <section className="left">
-          <div className="input-container">
-            <label for="email">Email</label>
-            <input type="text"  required/>
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-          </div>
-          <div class="input-container">
-            <label for="comments">Message</label>
-            <textarea name="comments" id="" required></textarea>
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-          </div>
-        </section>
-
+    <form onSubmit={handleSubmit}>
+      <section className="left">
+        <div className="input-container">
+          <label for="email">Email</label>
+          <input type="text" required />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </div>
+        <div class="input-container">
+          <label for="comments">Message</label>
+          <textarea name="comments" id="" required></textarea>
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+        </div>
         <div className="send-container">
           <input
             type="submit"
@@ -37,8 +30,10 @@ function ContactForm() {
             disabled={state.submitting}
           />
         </div>
-      </form>
-   
+      </section>
+
+      
+    </form>
   );
 }
 export default ContactForm;

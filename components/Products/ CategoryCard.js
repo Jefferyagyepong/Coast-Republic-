@@ -6,11 +6,17 @@ import Link from "next/link";
 const CategoryCard = ({ product }) => {
   return (
     <div className={styles.card}>
-      <Link href={"/des"}>
+      <Link
+        href={{
+          pathname: "/pages/api/products/data.json",
+          query: { prodId: product.id },
+        }}
+        as={"/ses"}
+      >
         <Image
           src={product.image}
-          height={150}
-          width={120}
+          height={160}
+          width={140}
           alt=""
           className={styles.border}
         />

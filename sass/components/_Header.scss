@@ -4,12 +4,12 @@
 
 .salmon-mobile {
   color: $color1;
-  transition: 0.5s ease;
+  transition: $transition-timing;
 
 }
 
 .salmon-mobile:hover {
-  color: skyblue;
+opacity: 0.3;
 
 
 }

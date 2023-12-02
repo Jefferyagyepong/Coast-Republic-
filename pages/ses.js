@@ -1,19 +1,17 @@
 import Head from "next/head";
 
-import { Inter } from "next/font/google";
+import Header from "@/components/Head/Header";
 
-import Header from "../components/Head/Header";
-import Contact from "../components/Forms/Contact";
-import ContactForm from "../components/Forms/ContactForm";
-import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+import { getProducts } from "./api/products/index";
+import Description from "@/components/Products/Description";
+import FootBottom from "@/components/Footer/FootBottom";
 
-export default function contact() {
+const ses = ({ products }) => {
   return (
     <>
       <Head>
-        <title>Contact Us | Coast Republic</title>
+        <title>Search | Coast Republic</title>
         <link rel="apple-touch-icon" href="" />
         <meta property="og:title" content="Home | Coast Republic" />
         <meta property="og:type" content="" />
@@ -30,12 +28,22 @@ export default function contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main>
         <Header />
-        <Contact />
-        <ContactForm />
-        <Footer/>
+        {products.map(product => (
+          <Description key={product.id} product={product} />
+        ))}
+<FootBottom/>
+    
       </main>
     </>
   );
+};
+
+export default ses;
+
+export async function getStaticProps() {
+  const products = await getProducts();
+  return { props: { products } };
 }

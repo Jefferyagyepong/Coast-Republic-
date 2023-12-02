@@ -33,11 +33,17 @@ export default function StayLoop() {
       <br />
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email" />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-       
-        <button type="submit" disabled={state.submitting}>
+        <div className="input-container">
+          <label htmlFor="email">Email Address</label>
+          <input id="email" type="email" name="email" className="form-footer"  required/>
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </div>
+
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="button-submit"
+        >
           Submit
         </button>
       </form>
