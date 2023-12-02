@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className={styles.card}>
-      <Link href={{pathname: '/pages/api/products/data.json', query: {prodId: id} }} as={permalink}>
+      <Link href={"/ses"}>
         <Image src={product.image} height={160} width={150} alt="" className={styles.border} />
       </Link>
 

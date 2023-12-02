@@ -1,5 +1,5 @@
 import Link from "next/link.js";
-
+import FootBottom from "./FootBottom";
 import StayLoop from "./StayLoop";
 
 

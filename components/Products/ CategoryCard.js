@@ -7,11 +7,8 @@ const CategoryCard = ({ product }) => {
   return (
     <div className={styles.card}>
       <Link
-        href={{
-          pathname: "/pages/api/products/data.json",
-          query: { prodId: product.id },
-        }}
-        as={"/ses"}
+        href={ "/ses"}
+       
       >
         <Image
           src={product.image}
