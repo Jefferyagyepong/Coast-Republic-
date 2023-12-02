@@ -4,7 +4,7 @@ import Header from "@/components/Head/Header";
 
 
 import { getProducts } from "./api/products/index";
-import Description from "@/components/Products/Description";
+import Listing from "@/components/Products/Listing";
 import FootBottom from "@/components/Footer/FootBottom";
 
 const ses = ({ products }) => {
@@ -32,8 +32,9 @@ const ses = ({ products }) => {
       <main>
         <Header />
         {products.map(product => (
-          <Description key={product.id} product={product} />
+          <Listing key={product.id} product={product} />
         ))}
+
 <FootBottom/>
     
       </main>
