@@ -111,3 +111,17 @@ form {
         }
     }
 }
+.form-search{
+    width: 300px;
+    border: none;
+    background-color: #f0f0f0f0;
+    max-width: 100%;
+}
+.search-button{
+    border: none;
+    transition: 0.5s ease;
+}
+.search-button:hover {
+    background-color: #757575;
+    opacity: 0.7;
+}

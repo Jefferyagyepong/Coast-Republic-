@@ -3,19 +3,18 @@ import Image from "next/image";
 import Top from "./Top";
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
+import Nav from "./Nav";
 
-
-export default function Header() {
+export default function Mobile() {
   return (
-    <div className="stick">
-      <Top />
-      <header className="sticky">
-    
+  
+          <header className="sticky-mobile">
+              <Nav/>
         <Link href={"./"}>
           <Image src={"/crlogo.svg"} width={77} height={70} alt="logo" />
         </Link>
         <CartBasket />
       </header>
-    </div>
+  
   );
 }

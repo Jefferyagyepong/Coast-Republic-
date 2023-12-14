@@ -7,12 +7,14 @@ import New from "../components/Products/New";
 import Blog from "../components/Products/Blog";
 import Title from "../components/Products/Title";
 import Header from "../components/Head/Header";
+import Header2 from "../components/Head/Header2";
 import Footer from "../components/Footer/Footer";
 import Modal from "@/components/Head/Modal";
 import Sale from "../components/Products/Sale";
 import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
+import Mobile from "@/components/Head/Mobile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,8 +51,10 @@ const Home = ({ products }) => {
         <Modal />
 
         <Header />
-
+        <Mobile />
+        <Header2 />
         <Sale />
+
         <Thrifts />
         <New />
         <Show />
@@ -62,8 +66,6 @@ const Home = ({ products }) => {
             ))}
           </div>
         </div>
-
-   
 
         <Title />
         <Blog />

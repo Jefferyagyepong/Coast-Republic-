@@ -1,0 +1,28 @@
+label {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.paystack-button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background-color: #04aa6d;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.paystack-button:hover {
+    background-color: #45a049;
+}
+.text-align{
+    text-align: left;
+    margin-top: 7rem;
+    padding: 8px 14px;
+}

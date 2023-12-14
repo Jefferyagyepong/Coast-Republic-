@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useSelector } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   // Selecting cart from global state
   const cart = useSelector(state => state.cart);
@@ -11,11 +13,11 @@ const Navbar = () => {
   };
 
   return (
-    <div >
+    <div className="inline">
       <Link href="/cart">
-        <Image src="/cart.svg" width={20} height={20} alt="cart icon" />
+        <FontAwesomeIcon icon={faShoppingBag} size="2x" color="black" opacity={0.6}/>
       </Link>
-      <p> ({getItemsCount()})</p>
+      <p className="count">{getItemsCount()}</p>
     </div>
   );
 };

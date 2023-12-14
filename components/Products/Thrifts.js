@@ -10,7 +10,7 @@ export default function Thrifts() {
       <br />
       <br />
       <Link href={"#"} className="text-underline">
-        Shop Now
+        Coming Soon
       </Link>
     </div>
   );

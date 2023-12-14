@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
-import Footer from "../components/Footer/Footer";
-import Image from "next/image";
+import FootBottom from "../components/Footer/FootBottom";
+
 import { useSelector, useDispatch } from "react-redux";
 
 const App = () => {
+       const cart = useSelector(state => state.cart);
+       const dispatch = useDispatch();
+
+       const getTotalPrice = () => {
+         return cart.reduce(
+           (accumulator, item) => accumulator + item.quantity * item.price,
+           0
+         );
+       };
   const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
-  const amount = 1;
+  const amount = getTotalPrice;
   const currency = "GHS";
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -21,15 +30,24 @@ const App = () => {
       phone,
     },
     publicKey,
-    text: "Pay Now",
+    text: "Proceed to Pay",
     onSuccess: () =>
       alert("Thanks for doing business with us! Come back soon!!"),
     onClose: () => alert("Wait! Don't leave :("),
   };
 
+
+
+
   return (
     <main>
-     <form>
+      <div className="text-align">
+        <p>You&apos;re about to pay for items added to shopping bag</p>
+        <br />
+        <h4>Grand Total: &#8373; {getTotalPrice()}</h4><br/>
+      </div>
+      <form>
+        <h4>Fill in the form to verify your payment credentials</h4><br/>
         <section className="left">
           <div className="input-container">
             <label>Name</label>
@@ -60,11 +78,8 @@ const App = () => {
           </div>
         </section>
       </form>
-      <Footer/>
+      <FootBottom />
     </main>
- 
-   
- 
   );
 };
 

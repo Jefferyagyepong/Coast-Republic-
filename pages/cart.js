@@ -38,9 +38,9 @@ const CartPage = () => {
           </div>
         ) : (
           <>
-            <div className={styles.header}>
-              <div>Image</div>
+            <div className={styles.head}>
               <div>Product</div>
+              <div>Name</div>
               <div>Price</div>
               <div>Quantity</div>
               <div>Actions</div>
@@ -50,10 +50,10 @@ const CartPage = () => {
               // eslint-disable-next-line react/jsx-key
               <div className={styles.body}>
                 <div className={styles.image}>
-                  <Image src={item.image} height="90" width="65" alt="" />
+                  <Image src={item.image} height="120" width="200" alt="" />
                 </div>
                 <p>{item.product}</p>
-                <p>$ {item.price}</p>
+                <p>&#8373; {item.price}</p>
                 <p>{item.quantity}</p>
                 <div className={styles.buttons}>
                   <button onClick={() => dispatch(incrementQuantity(item.id))}>
