@@ -6,6 +6,8 @@ import Search from "../components/Forms/Search";
 import Header from "../components/Head/Header";
 import styles from "../sass/components/ShopPage.module.css";
 import { getProducts } from "./api/products/index";
+import Mobile from "@/components/Head/Mobile";
+import Header2 from "@/components/Head/Header2";
 
 const ShopPage = ({ products }) => {
   return (
@@ -31,6 +33,8 @@ const ShopPage = ({ products }) => {
 
       <main>
         <Header />
+        <Mobile />
+        <Header2/>
         <div className={styles.container}>
           <h3 className={styles.title}>What are you looking for</h3>
           <Search />

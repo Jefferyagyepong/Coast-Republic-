@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
 import Delivery from "../components/Footer/Delivery";
 import Footer from "../components/Footer/Footer";
+import Header2 from "@/components/Head/Header2";
+import Mobile from "@/components/Head/Mobile";
 const inter = Inter({ subsets: ["latin"] });
 export default function delivery() {
   return (
@@ -29,6 +31,8 @@ export default function delivery() {
       </Head>
       <main>
         <Header />
+        <Mobile/>
+        <Header2/>
         <Delivery />
 
         <Footer />

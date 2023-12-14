@@ -11,6 +11,8 @@ import {
   removeFromCart,
 } from "../redux/cart.slice";
 import styles from "../sass/components/CartPage.module.css";
+import Mobile from "@/components/Head/Mobile";
+import Header2 from "@/components/Head/Header2";
 
 const CartPage = () => {
   const cart = useSelector(state => state.cart);
@@ -26,6 +28,8 @@ const CartPage = () => {
   return (
     <main>
       <Header />
+      <Mobile />
+    <Header2/>
       <div className={styles.container}>
         {cart.length === 0 ? (
           <div>

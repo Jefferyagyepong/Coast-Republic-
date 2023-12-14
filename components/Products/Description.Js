@@ -65,27 +65,27 @@ const Description = ({ product }) => {
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
 
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={1000}
               />
             </div>
           </div>
@@ -134,7 +134,8 @@ const Description = ({ product }) => {
         </div>
 
         <div className="product-content">
-          <h3>{product.product}</h3><br/>
+          <h3>{product.product}</h3>
+          <br />
 
           <div className="product-rating">
             <FontAwesomeIcon
@@ -189,10 +190,10 @@ const Description = ({ product }) => {
             </p>
             <ul>
               <li>
-                In Stock: <span>{ product.isAvailable}</span>
+                In Stock: <span>{product.isAvailable}</span>
               </li>
               <li>
-                Category: <span>{ product.category}</span>
+                Category: <span>{product.category}</span>
               </li>
               <li>
                 Delivery Area: <span>All 16 Regions in GH</span>
@@ -216,6 +217,7 @@ const Description = ({ product }) => {
               <h3 className="black">
                 View Bag{" "}
                 <FontAwesomeIcon icon={faShoppingBag} width={10} height={10} />
+                <b> {getItemsCount()}</b>
               </h3>
             </Link>
           </div>

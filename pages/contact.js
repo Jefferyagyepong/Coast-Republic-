@@ -6,6 +6,8 @@ import Header from "../components/Head/Header";
 import Contact from "../components/Forms/Contact";
 import ContactForm from "../components/Forms/ContactForm";
 import Footer from "@/components/Footer/Footer";
+import Mobile from "@/components/Head/Mobile";
+import Header2 from "@/components/Head/Header2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +34,8 @@ export default function contact() {
       </Head>
       <main>
         <Header />
+        <Mobile />
+        <Header2/>
         <Contact />
         <ContactForm />
         <Footer/>

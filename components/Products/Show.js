@@ -102,7 +102,7 @@ export default function Show() {
         <ul className="image-list">
          
           <Image
-            src={"/white.JPG"}
+            src={"/ck3pak.jpg"}
             className="image-item"
             alt="img"
             width={90}

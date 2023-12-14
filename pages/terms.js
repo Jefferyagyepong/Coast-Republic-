@@ -4,6 +4,8 @@ import Top from "../components/Head/Top";
 import Header from "../components/Head/Header";
 import Terms from "../components/Footer/Terms";
 import Footer from "../components/Footer/Footer";
+import Mobile from "@/components/Head/Mobile";
+import Header2 from "@/components/Head/Header2";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function terms() {
@@ -29,6 +31,8 @@ export default function terms() {
       </Head>
       <main>
         <Header />
+        <Mobile />
+        <Header2/>
         <Terms />
 
         <Footer />
