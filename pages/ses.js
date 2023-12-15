@@ -9,6 +9,7 @@ import FootBottom from "@/components/Footer/FootBottom";
 import Mobile from "@/components/Head/Mobile";
 import Header2 from "@/components/Head/Header2";
 
+
 const ses = ({ products }) => {
   return (
     <>

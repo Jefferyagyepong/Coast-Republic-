@@ -9,7 +9,7 @@ export default function Thrifts() {
       <p>Discover the exlcusive collection</p>
       <br />
       <br />
-      <Link href={"#"} className="text-underline">
+      <Link href={"#"} className="white">
         Coming Soon
       </Link>
     </div>

@@ -70,9 +70,6 @@ export default function Footer() {
       </div>
 
       <hr className="full-width" />
-
-      <br />
-      <br />
       <FootBottom/>
     </footer>
   );

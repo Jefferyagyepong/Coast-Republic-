@@ -14,7 +14,7 @@ const App = () => {
            0
          );
        };
-  const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
+  const publicKey = "sk_live_91abb369709adbf19dd2a3076ff6f4b5f8e032ba";
   const amount = getTotalPrice;
   const currency = "GHS";
   const [email, setEmail] = useState("");

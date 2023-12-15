@@ -17,7 +17,7 @@
 .basket {
   display: flex;
   justify-content: center;
-  margin-top: -2.8rem;
+  margin-top: -1.7rem;
   align-items: center;
   -webkit-justify-content: center;
   -webkit-align-items: center;
@@ -60,19 +60,35 @@
   padding-top: $p-t;
   padding-bottom: $p-b;
 
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
+  animation: fadeIn 5s ease-in-out infinite;
+-webkit-animation-name: fade-out;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-name: fade-out;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    color: white;
+    opacity: 0.8;
+  }
+  25%{
+    color: #f5f5f5;
+    opacity: 0.1;
+  }
+  50%{
+    color: floralwhite;
+    opacity: 0.4;
+  }
+  75%{
+    color: whitesmoke;
+    opacity: 0.6;
   }
 
   100% {
+    color: red;
     opacity: 1;
   }
 }
@@ -285,6 +301,22 @@
     display: flex;
 
   }
+    .basket {
+      display: flex;
+      justify-content: center;
+      margin-top: -3.7rem;
+      align-items: center;
+      -webkit-justify-content: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -o-align-items: center;
+      -ms-align-items: center;
+      -moz-justify-content: center;
+      -o-justify-content: center;
+      -ms-justify-content: center;
+  
+  
+    }
 
   .sticky {
     display: none;

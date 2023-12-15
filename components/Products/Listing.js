@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
@@ -12,7 +13,13 @@ import {
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-const Description = ({ product }) => {
+const Listing = ({ product }) => {
+  // Selecting cart from global state
+  const cart = useSelector(state => state.cart);
+  // Getting the count of items
+  const getItemsCount = () => {
+    return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
+  };
   useEffect(() => {
     const imgs = document.querySelectorAll(".img-select a");
     const imgBtns = [...imgs];
@@ -29,7 +36,7 @@ const Description = ({ product }) => {
     function slideImage() {
       const displayWidth = document.querySelector(
         ".img-showcase img:first-child"
-      ).clientWidth;
+      );
 
       document.querySelector(".img-showcase").style.transform = `translateX(${
         -(imgId - 1) * displayWidth
@@ -64,27 +71,27 @@ const Description = ({ product }) => {
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
 
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
               <Image
                 src={product.image}
                 alt="shoe image"
-                width={50}
-                height={620}
+                width={70}
+                height={100}
               />
             </div>
           </div>
@@ -165,14 +172,9 @@ const Description = ({ product }) => {
           </div>
 
           <div className="product-price">
-            <p className="last-price">
-              Old Price:{" "}
-              <span>
-                <del>&#8373; {product.price}</del>
-              </span>
-            </p>
+            
             <p className="new-price">
-              New Price: <span>&#8373; {product.price}</span>
+            Price: <span>&#8373; {product.price}</span>
             </p>
           </div>
 
@@ -215,7 +217,8 @@ const Description = ({ product }) => {
             <Link href={"/cart"}>
               <h3 className="black">
                 View Bag{" "}
-                <FontAwesomeIcon icon={faShoppingBag} width={10} height={10} />
+                <FontAwesomeIcon icon={faShoppingBag} width={10} height={10} />{" "}
+                <b> {getItemsCount()}</b>
               </h3>
             </Link>
           </div>
@@ -237,4 +240,4 @@ const Description = ({ product }) => {
     </div>
   );
 };
-export default Description;
+export default Listing;
