@@ -68,9 +68,8 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-
+      <FootBottom />
       <hr className="full-width" />
-      <FootBottom/>
     </footer>
   );
 }

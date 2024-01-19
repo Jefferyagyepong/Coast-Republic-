@@ -2,20 +2,11 @@ import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import FootBottom from "../components/Footer/FootBottom";
 
-import { useSelector, useDispatch } from "react-redux";
 
 const App = () => {
-       const cart = useSelector(state => state.cart);
-       const dispatch = useDispatch();
-
-       const getTotalPrice = () => {
-         return cart.reduce(
-           (accumulator, item) => accumulator + item.quantity * item.price,
-           0
-         );
-       };
-  const publicKey = "sk_live_91abb369709adbf19dd2a3076ff6f4b5f8e032ba";
-  const amount = getTotalPrice;
+    
+  const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
+  const amount = 400;
   const currency = "GHS";
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -44,7 +35,7 @@ const App = () => {
       <div className="text-align">
         <p>You&apos;re about to pay for items added to shopping bag</p>
         <br />
-        <h4>Grand Total: &#8373; {getTotalPrice()}</h4><br/>
+     
       </div>
       <form>
         <h4>Fill in the form to verify your payment credentials</h4><br/>
@@ -74,7 +65,7 @@ const App = () => {
             />
           </div>
           <div className="send-container">
-            <PaystackButton {...componentProps} />
+            <PaystackButton className="paystack-button" {...componentProps} />
           </div>
         </section>
       </form>
