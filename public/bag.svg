@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1122.5197"
+   height="793.70081"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="bag.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.39108446"
+     inkscape:cx="438.5242"
+     inkscape:cy="377.15639"
+     inkscape:window-width="1280"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1006">
+      <path
+         fill="none"
+         stroke="#000000"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="8.46667"
+         fill-rule="evenodd"
+         d="m 109.03698,78.960896 a 4.2333333,4.2333333 0 0 0 -4.23333,4.233333 v 57.150001 c 0,8.001 6.81566,14.81667 14.81666,14.81667 h 71.96667 c 8.001,0 14.81666,-6.48494 14.81666,-14.48594 V 83.194229 a 4.2333333,4.2333333 0 0 0 -4.23333,-4.233333 z"
+         id="path824" />
+      <path
+         fill="none"
+         stroke="#000000"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="8.46667"
+         fill-rule="evenodd"
+         d="M 130.20365,78.960896 V 70.49423 a 25.4,25.4 0 0 1 25.4,-25.4 v 0 a 25.4,25.4 0 0 1 25.4,25.4 v 8.466666"
+         id="path826" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.264583"
+         id="rect860"
+         width="6.4569468"
+         height="22.519741"
+         x="128.48245"
+         y="78.960899"
+         ry="3.2284734" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.264583"
+         id="rect860-9"
+         width="6.4569468"
+         height="22.519741"
+         x="174.91481"
+         y="78.960899"
+         ry="3.2284734" />
+    </g>
+  </g>
+</svg>

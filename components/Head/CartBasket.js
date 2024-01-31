@@ -10,8 +10,8 @@ export default function CartBasket() {
   };
 
   return (
-    <div  className="basket">
+   
       <Navbar />
-    </div>
+  
   );
 }

@@ -2,10 +2,9 @@ import Head from "next/head";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Head/Header";
 import ProductCard from "../components/Products/ProductCard";
-import styles from "../sass/components/ShopPage.module.css";
+import styles from "../sass/components/ShopPage.module.scss";
 import { getProducts } from "./api/products/index";
-import Mobile from "@/components/Head/Mobile";
-import Header2 from "@/components/Head/Header2";
+
 
 const ShopPage = ({ products }) => {
   return (
@@ -31,8 +30,7 @@ const ShopPage = ({ products }) => {
 
       <main>
         <Header />
-        <Mobile />
-        <Header2/>
+      
 
         <div className={styles.container}>
           <h4 className={styles.title}>Whats new </h4><br/>

@@ -1,0 +1,21 @@
+.container {
+margin-top: 3rem;
+padding-top: 6%;
+padding-bottom: 6%;
+  text-align: center;
+}
+.head{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  margin-top: 1rem;
+  
+}
+.body{
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  align-items: center;
+
+
+
+}

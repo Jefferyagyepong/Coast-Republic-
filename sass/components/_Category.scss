@@ -1,0 +1,30 @@
+.category {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.category-heading {
+    text-align: start;
+    padding: 20px;
+}
+
+.category-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-item {
+    display: flex;
+    padding: 3px 9px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px thin gray;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}

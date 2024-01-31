@@ -3,7 +3,7 @@ export default function Search() {
 
   return (
    
-      <form action="#" method="GET" className="form-group">
+      <form action="#" method="GET">
         <input
           type="text"
           name=""

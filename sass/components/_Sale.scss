@@ -1,31 +1,30 @@
 @import "../abstracts//variables";
-
-.sale {
-    width: $width1;
+.shop-now {
+    width: 96%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: -4%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    margin-top: 8rem;
-    background-image: url(/background.jpg);
-    image-rendering: crisp-edges;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: $color0;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -o-align-items: center;
-    -ms-align-items: center;
-    -moz-justify-content: center;
-    -o-justify-content: center;
-    -ms-justify-content: center;
+    border-style: groove;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 0;
+}
 
+.shop-now-link {
+    margin-top: 50px;
+    background-color: brown;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    color: white;
+}
 
+.shop-now-link:hover {
+    opacity: 0.7;
 }
 
 .flex-column {
@@ -60,9 +59,7 @@
     -ms-justify-content: center;
 }
 
-.font-size {
-    font-size: 7rem;
-}
+
 
 .shop-now {
     background: white;

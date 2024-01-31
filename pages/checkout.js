@@ -6,7 +6,7 @@ import FootBottom from "../components/Footer/FootBottom";
 const App = () => {
     
   const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
-  const amount = 400;
+  const amount = 400000;
   const currency = "GHS";
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -23,7 +23,7 @@ const App = () => {
     publicKey,
     text: "Proceed to Pay",
     onSuccess: () =>
-      alert("Thanks for doing business with us! Come back soon!!"),
+      alert("Order Succesfully placed "),
     onClose: () => alert("Wait! Don't leave :("),
   };
 

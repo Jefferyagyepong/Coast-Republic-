@@ -1,20 +1,21 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Integrity from "../components/Products/Integrity";
 import Show from "../components/Products/Show";
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
 import Blog from "../components/Products/Blog";
 import Title from "../components/Products/Title";
 import Header from "../components/Head/Header";
-import Header2 from "../components/Head/Header2";
 import Footer from "../components/Footer/Footer";
-import Modal from "@/components/Head/Modal";
 import Sale from "../components/Products/Sale";
 import CategoryCard from "../components/Products/ CategoryCard";
-import styles from "../sass/components/ShopPage.module.css";
+import styles from "../sass/components/ShopPage.module.scss";
 import { getProducts } from "./api/products/index";
-import Mobile from "@/components/Head/Mobile";
+import Categories from "@/components/Products/Categories";
+import Newsletter from "@/components/Footer/Newsletter";
+import CoastApp from "@/components/Products/CoastApp";
+import FlashSale from "@/components/Products/FlashSale";
+import Brands from "@/components/Footer/Brands";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,17 +49,16 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
-        <Modal />
-
         <Header />
-        <Mobile />
-        <Header2 />
+
         <Sale />
+        <Categories />
 
         <Thrifts />
         <New />
         <Show />
-        <Integrity />
+        <CoastApp />
+        <FlashSale/>
         <div className={styles.container}>
           <div className={styles.cards}>
             {products.map(product => (
@@ -69,6 +69,8 @@ const Home = ({ products }) => {
 
         <Title />
         <Blog />
+        <Newsletter />
+        <Brands/>
 
         <Footer />
       </main>
@@ -81,4 +83,3 @@ export async function getStaticProps() {
   const products = await getProducts();
   return { props: { products } };
 }
-

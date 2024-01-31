@@ -1,14 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Top from "../components/Head/Top";
 import About from "../components/About";
 import Header from "../components/Head/Header";
-import Contact from "../components/Forms/Contact";
-
 import Footer from "../components/Footer/Footer";
-import Mobile from "@/components/Head/Mobile";
-import Header2 from "@/components/Head/Header2";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,8 +31,7 @@ export default function about() {
       </Head>
       <main>
         <Header />
-        <Mobile />
-        <Header2/>
+      
         <About />
 
         <Footer />

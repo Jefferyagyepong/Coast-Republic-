@@ -100,15 +100,50 @@ export default function Show() {
           <FontAwesomeIcon icon={faChevronLeft} size="1x" />
         </button>
         <ul className="image-list">
-         
           <Image
-            src={"/ck3pak.jpg"}
+            src={"/thugga.jpg"}
             className="image-item"
             alt="img"
             width={90}
             height={80}
           />
-         
+          <Image
+            src={
+              "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/thugga.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/thugga.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/thugga.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
+          <Image
+            src={"/thugga.jpg"}
+            className="image-item"
+            alt="img"
+            width={90}
+            height={80}
+          />
         </ul>
         <button
           id="next-slide"

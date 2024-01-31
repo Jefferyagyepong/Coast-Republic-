@@ -1,5 +1,5 @@
 @import "../abstracts/variables";
-@import url("https://fonts.googleapis.com/css?famiy=Montserrat&display=swap");
+
 
 *,
 *::after,
@@ -32,7 +32,7 @@
 }
 
 html {
-    font-size: 76.5%;
+    font-size: 87.5%;
     scroll-behavior: smooth;
     transition: 0.3s ease;
     overflow-x: hidden;
@@ -76,35 +76,79 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
-font-family: 'Quicksand', sans-serif;
+font-family: 'oswald', sans-serif;
 
 
+
+}
+button {
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0.9rem 2rem;
+    border-radius: 3px;
+    margin: 0.6rem;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+input {
+    display: block;
+    max-width: 400px;
+    font: inherit;
+    padding: 0.6rem 2.6rem;
+    border-radius: 3px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+}
+
+input::-webkit-input-placeholder {
+    font: inherit;
+}
+
+input::-moz-placeholder {
+    font: inherit;
+}
+
+input:-ms-input-placeholder {
+    font: inherit;
+}
+
+input::-ms-input-placeholder {
+    font: inherit;
+}
+
+input::placeholder {
+    font: inherit;
 }
 
 footer {
     margin-top: auto;
 }
 
-li {
+ul {
+    display: block;
+    transition: 0.5s ease;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 0 auto;
     list-style: none;
+    text-align: center;
 }
 
-
-option {
-    color: $color1;
-}
-input{
-    padding: 8px ;
-    border-radius: 3px;
-}
-button{
-    appearance: button;
-    padding: 8px;
-    border-radius: 3px;
+li {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    transition: 0.5s ease;
     cursor: pointer;
-    transition: 0.3s ease;
-    -webkit-appearance: button !important;
-    -moz-appearance: button;
-    -moz-appearance: button;
-    -ms-appearance: button; 
+    padding: 0.6rem;
 }

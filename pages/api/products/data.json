@@ -1,10 +1,60 @@
 [
   {
     "id": 1,
-    "titile": "3 - 1 Tshirt",
-    "product": " Calvin Klien ",
+    "titile": "Young Thug",
+    "product": " Young Thug T-shirt ",
     "category": "T-shirt",
-    "image": "/ck3pak.jpg",
+    "image": "/thugga.jpg",
+    "price": 400.00,
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "Yes"
+  },
+  {
+    "id": 1,
+    "titile": "Young Thug",
+    "product": " Young Thug T-shirt ",
+    "category": "T-shirt",
+    "image": "/thugga.jpg",
+    "price": 400.00,
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "Yes"
+  },
+  {
+    "id": 1,
+    "titile": "Young Thug",
+    "product": " Young Thug T-shirt ",
+    "category": "T-shirt",
+    "image": "/thugga.jpg",
+    "price": 400.00,
+    "description": "Dry Blend 100% cotton",
+    "isAvailable": "Yes"
+  },
+  {
+  "id": 1,
+  "titile": "Young Thug",
+  "product": " Young Thug T-shirt ",
+  "category": "T-shirt",
+  "image": "/thugga.jpg",
+  "price": 400.00,
+  "description": "Dry Blend 100% cotton",
+  "isAvailable": "Yes"
+  },
+  {
+  "id": 1,
+  "titile": "Young Thug",
+  "product": " Young Thug T-shirt ",
+  "category": "T-shirt",
+  "image": "/thugga.jpg",
+  "price": 400.00,
+  "description": "Dry Blend 100% cotton",
+  "isAvailable": "Yes"
+  },
+  {
+    "id": 1,
+    "titile": "Young Thug",
+    "product": " Young Thug T-shirt ",
+    "category": "T-shirt",
+    "image": "/thugga.jpg",
     "price": 400.00,
     "description": "Dry Blend 100% cotton",
     "isAvailable": "Yes"

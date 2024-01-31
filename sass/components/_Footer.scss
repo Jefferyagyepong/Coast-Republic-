@@ -1,157 +1,52 @@
 @import "../abstracts/variables";
-
-.heading {
-  text-align: start;
-
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.ibrid-box-flex {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.form-group {
+hr {
 
-  width: $width5;
-  margin: $margin;
-
+  width: 100%;
 }
 
-.footer-button {
-  padding: 10px 15px;
-  border: none;
-  background-color: $color20;
+.footer-heading {
   text-align: center;
-  color: black;
-  transition: $transition-timing;
-
-
 }
 
-.footer-button:hover {
-
-  background-color: black;
+.footer-text {
   text-align: center;
-  color: white;
+  opacity: 0.8;
 
 }
 
+.footer-sub-heading {
+  padding-bottom: -0.8rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-.footer-link {
-
-  list-style: none;
+.footer-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -o-justify-content: center;
-  -ms-justify-content: center;
-
-
 }
 
-.links {
-  margin: 0 auto;
-  margin: 1rem;
- transition: $transition-timing;
-
-
-}
-
-hr {
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 15%;
-    color: $color20;
-
-}
-
-.text-underline {
-  text-decoration: underline;
-}
-
-.black {
+.footer-link {
   color: black;
-  transition: $transition-timing;
-}
-.black:hover {
-opacity: 0.3;
 }
 
-.background-gray {
-  background-color: gainsboro;
-  text-align: center;
-  width: $width1;
-  margin: $margin;
-  padding: $p-b $p-t;
-
-
-}
-
-.text-align-start {
-  margin-top: 2rem;
-  padding: $p-b $p-t;
-  transition: $transition-timing;
-
-}
-
-.full-width {
-  width: 88%;
-  color: $color20;
-
-}
-
-.text-align-start-wide {
-  width: $width1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: $p-b $p-t;
-  -webkit-justify-content: flex-start;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
-  -moz-justify-content: flex-start;
-  -o-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-
-}
-
-.text-align-start-wide ul li {
-  padding-top: $p-b;
-  padding-bottom: $p-t;
-  transition: $transition-timing;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
-
-}
-
-select::-ms-expand {
-  display: none;
-}
-
-selectdiv:after {
-  content: '<>';
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 11px;
-  padding: 0 0 2px;
-  border-bottom: 1px soid $color20;
-  position: absolute;
-  pointer-events: none;
-}
 .payment-container{
   margin: $margin;
   display: flex;

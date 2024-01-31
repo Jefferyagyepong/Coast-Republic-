@@ -1,11 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Top from "../components/Head/Top";
 import Header from "../components/Head/Header";
 import Privacy from "../components/Footer/Privacy";
 import Footer from "../components/Footer/Footer";
-import Mobile from "@/components/Head/Mobile";
-import Header2 from "@/components/Head/Header2";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function privacy() {
@@ -31,8 +29,7 @@ export default function privacy() {
       </Head>
       <main>
         <Header />
-        <Mobile />
-        <Header2/>
+   
         <Privacy />
         <Footer />
       </main>

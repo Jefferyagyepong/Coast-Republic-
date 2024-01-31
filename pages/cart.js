@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from 'next/head';
 import Image from "next/image";
 import Proceed from "@/components/Products/Proceed";
 import Header from "@/components/Head/Header";
@@ -10,9 +11,8 @@ import {
   decrementQuantity,
   removeFromCart,
 } from "../redux/cart.slice";
-import styles from "../sass/components/CartPage.module.css";
-import Mobile from "@/components/Head/Mobile";
-import Header2 from "@/components/Head/Header2";
+import styles from "../sass/components/CartPage.module.scss";
+
 
 const CartPage = () => {
   const cart = useSelector(state => state.cart);
@@ -26,63 +26,94 @@ const CartPage = () => {
   };
 
   return (
-    <main>
-      <Header />
-      <Mobile />
-    <Header2/>
-      <div className={styles.container}>
-        {cart.length === 0 ? (
-          <div>
-            <h1>Your Cart is Empty!</h1>
-            <Link href={"/shop"}>
-              <br />
-              <br />
+    <>
+      <Head>
+        <title>Cart Page | T-shirts and more</title>
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta property="og:title" content="Coast Republic store." />
+        <meta property="og:type" content="E-commerce website application" />
+        <meta
+          property="og:description"
+          content="Coast Republic store. We sell t-shirts and hoodies"
+        />
+        <meta property="og:url" content="https://coast-republic.vercel.app" />
+        <meta property="og:image" content="/crlogo2.png" />
 
-              <p className="black"> Back to store and add products to cart</p>
-            </Link>
-          </div>
-        ) : (
-          <>
-            <div className={styles.head}>
-              <div>Product</div>
-              <div>Name</div>
-              <div>Price</div>
-              <div>Quantity</div>
-              <div>Actions</div>
-              <div>Total Price</div>
+        <meta name="description" content="Coast Republic  Store" />
+        <meta
+          name="keywords"
+          content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="author" content="Coast Republic Inc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
+        />
+      </Head>
+      <main>
+        <Header />
+
+        <div className={styles.container}>
+          {cart.length === 0 ? (
+            <div>
+              <h1>Your Cart is Empty!</h1>
+              <Link href={"/shop"}>
+                <br />
+                <br />
+
+                <p className="black"> Back to store and add products to cart</p>
+              </Link>
             </div>
-            {cart.map(item => (
-              // eslint-disable-next-line react/jsx-key
-              <div className={styles.body}>
-                <div className={styles.image}>
-                  <Image src={item.image} height="120" width="200" alt="" />
-                </div>
-                <p>{item.product}</p>
-                <p>&#8373; {item.price}</p>
-                <p>{item.quantity}</p>
-                <div className={styles.buttons}>
-                  <button onClick={() => dispatch(incrementQuantity(item.id))}>
-                    +
-                  </button>
-                  <button onClick={() => dispatch(decrementQuantity(item.id))}>
-                    -
-                  </button>
-                  <button onClick={() => dispatch(removeFromCart(item.id))}>
-                    x
-                  </button>
-                </div>
-                <p>&#8373; {item.quantity * item.price}</p>
+          ) : (
+            <>
+              <div className={styles.head}>
+                <div>Product</div>
+                <div>Name</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Actions</div>
+                <div>Total Price</div>
               </div>
-            ))}
-            <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
-          </>
-        )}
-        <br />
-        <br />
-        <Proceed />
-      </div>
-      <Footer />
-    </main>
+              {cart.map(item => (
+                // eslint-disable-next-line react/jsx-key
+                <div className={styles.body}>
+                  <div className={styles.image}>
+                    <Image src={item.image} height="200" width="200" alt="" />
+                  </div>
+                  <p>{item.product}</p>
+                  <p>&#8373; {item.price}</p>
+                  <p>{item.quantity}</p>
+                  <div className={styles.buttons}>
+                    <button
+                      onClick={() => dispatch(incrementQuantity(item.id))}
+                    >
+                      +
+                    </button>
+                    <button
+                      onClick={() => dispatch(decrementQuantity(item.id))}
+                    >
+                      -
+                    </button>
+                    <button onClick={() => dispatch(removeFromCart(item.id))}>
+                      x
+                    </button>
+                  </div>
+                  <p>&#8373; {item.quantity * item.price}</p>
+                </div>
+              ))}
+              <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
+            </>
+          )}
+          <br />
+          <br />
+          <Proceed />
+        </div>
+        <Footer />
+      </main>
+    </>
   );
 };
 

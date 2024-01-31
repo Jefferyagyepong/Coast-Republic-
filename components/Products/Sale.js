@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Sale() {
   return (
-    <div className="sale">
+    <div className="shop-now">
       <div className="flex-row">
         <h1 className="font-size">15</h1>
         <div className="flex-column">

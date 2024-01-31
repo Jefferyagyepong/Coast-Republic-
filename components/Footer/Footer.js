@@ -1,75 +1,77 @@
-import Link from "next/link.js";
+import Image from "next/image";
 import FootBottom from "./FootBottom";
-import StayLoop from "./StayLoop";
-
-
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <StayLoop />
-
-      <div className="text-align-start">
-        <h4 className="heading">Call us</h4>
-        <br />
-        <div className="space">
-          <Link href="tel:+233244736420" className="black">
-            (233) 244736420{" "}
-          </Link>{" "}
-          <Link href="mailto:jefferyagyepong05@gmail.com" className="black">
-            | customercare@coastrepublic.com
+      <h2 className="footer-heading">COAST REPUBLIC</h2>
+      <p className="footer-text">Your destination quality clothing and shoes</p>
+      <h4 className="footer-sub-heading">Company</h4>
+      <ul>
+        <Link href={"/"} className="footer-link">
+          {" "}
+          <li>Home</li>
+        </Link>
+        <Link href={"/about"} className="footer-link">
+          {" "}
+          <li>About</li>
+        </Link>
+        <Link href={"/shop"} className="footer-link">
+          {" "}
+          <li>Product</li>
+        </Link>
+        <Link href={"/contact"} className="footer-link">
+          {" "}
+          <li>Contact</li>
+        </Link>
+      </ul>
+      <h4 className="footer-sub-heading">Information</h4>
+      <ul>
+        <Link href={"/help"} className="footer-link">
+          {" "}
+          <li>Help Center</li>
+        </Link>
+        <Link href={"/"} className="footer-link">
+          {" "}
+          <li>Payment Methods</li>
+        </Link>
+        <Link href={"/refund"} className="footer-link">
+          {" "}
+          <li>Return & Refund</li>
+        </Link>
+        <Link href={"/privacy"} className="footer-link">
+          {" "}
+          <li>Privacy Policy</li>
+        </Link>
+      </ul>
+      <h4 className="footer-sub-heading">Contact</h4>
+      <ul>
+        <div className="footer-flex">
+          <Image src={"/call.svg"} width={30} height={40} alt="call" />
+          <Link href={"tel: +233 240 000000"} className="footer-link">
+            {" "}
+            <li>+233 240 000000</li>
           </Link>
         </div>
-      </div>
-      <div className="text-align-start">
-        <h4 className="heading">Change location</h4>
-        <br />
-        🇬🇭{" "}
-        <Link href={"#"} className="text-underline">
-          Ghana
-        </Link>
-      </div>
-      <hr className="full-width" />
-      <div className="text-align-start-wide">
-        <nav>
-          <ul>
-            <Link href={"#"} className="black">
-              {" "}
-              <li>Track Order</li>
-            </Link>
-            <Link href={"/about"} className="black">
-              {" "}
-              <li>About</li>
-            </Link>
-            <Link href={"/contact"} className="black">
-              {" "}
-              <li>Contact Us</li>
-            </Link>
-            <Link href={"/delivery"} className="black">
-              {" "}
-              <li>Delivery</li>
-            </Link>
-            <Link href={"#"} className="black">
-              {" "}
-              <li>Returns</li>
-            </Link>
-            <Link href={"/privacy"} className="black">
-              {" "}
-              <li>Privacy Policy </li>
-            </Link>
-            <Link href={"/terms"} className="black">
-              {" "}
-              <li>T & C&apos;s</li>
-            </Link>
-            <Link href={"#"} className="black">
-              {" "}
-              <li>Gift Cards and Promos</li>
-            </Link>
-          </ul>
-        </nav>
-      </div>
-      <FootBottom />
-      <hr className="full-width" />
+        <div className="footer-flex">
+          <Image src={"/mail.svg"} width={30} height={40} alt="mail" />
+          <Link
+            href={"mailto:contact@ibridenterprise.com"}
+            className="footer-link"
+          >
+            {" "}
+            <li>contact@ibridenterprise.com</li>
+          </Link>
+        </div>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <p className="copyright">
+        Coast Republic Store 🇬🇭 &copy; {new Date().getFullYear()} All Rights Reserved
+      </p>
+      <br />
+      <FootBottom/>
     </footer>
   );
 }

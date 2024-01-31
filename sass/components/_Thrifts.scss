@@ -1,0 +1,29 @@
+.ibrid-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.ibrid-flex {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ibrid-heading {
+    padding: 20px;
+}
+.add-to-cart {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    color: white;
+}
