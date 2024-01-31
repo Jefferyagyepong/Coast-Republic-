@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
-import styles from "/sass/components/ProductCard.module.css";
+import styles from "/sass/components/ProductCard.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingBag,

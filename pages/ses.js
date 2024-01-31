@@ -6,8 +6,7 @@ import Header from "@/components/Head/Header";
 import { getProducts } from "./api/products/index";
 import Listing from "@/components/Products/Listing";
 import FootBottom from "@/components/Footer/FootBottom";
-import Mobile from "@/components/Head/Mobile";
-import Header2 from "@/components/Head/Header2";
+
 
 
 const ses = ({ products }) => {
@@ -34,8 +33,7 @@ const ses = ({ products }) => {
 
       <main>
         <Header />
-        <Mobile />
-        <Header2/>
+     
         {products.map(product => (
           <Listing key={product.id} product={product} />
         ))}

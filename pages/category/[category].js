@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import ProductCard from "/components/Products/ProductCard";
-import styles from "/sass/components/ShopPage.module.css";
+import styles from "/sass/components/ShopPage.module.scss";
 import { getProductsByCategory } from "../api/products/[category]";
 
 const CategoryPage = ({ products }) => {
