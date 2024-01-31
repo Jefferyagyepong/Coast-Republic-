@@ -45,7 +45,7 @@ export default function Footer() {
         </Link>
         <Link href={"/privacy"} className="footer-link">
           {" "}
-          <li>T & C's</li>
+          <li>T & C&apos;s</li>
         </Link>
       </ul>
       <h4 className="footer-sub-heading">Contact</h4>
