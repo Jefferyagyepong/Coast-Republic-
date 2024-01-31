@@ -1,12 +1,13 @@
+@import "../abstracts/variables";
 .category {
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
+    width: $width1;
+    padding: $padding;
+    margin: $margin;
 }
 
 .category-heading {
     text-align: start;
-    padding: 20px;
+    padding: $padding;
 }
 
 .category-items {
@@ -14,6 +15,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+ 
 }
 
 .category-item {
@@ -22,8 +24,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    border: 2px thin gray;
+    margin: $margin;
+   border-style: groove;
     border-radius: 3px;
     transition: 0.5s;
     cursor: pointer;

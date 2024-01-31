@@ -1,126 +1,16 @@
 @import "../abstracts/variables";
 
-form {
-    padding: 0 10%;
-    margin: 0 auto;
-
-
-    section {
-        width: calc(55% - 40px);
-        padding: 20px;
-        background: $color20;
-        border-radius: 5px;
-        margin-left: 2rem;
-       
-
-        &.left {
-            float: left;
-        }
-
-        &.right {
-            float: right;
-        }
-
-        .input-container {
-            label {
-                display: block;
-                margin-bottom: 4px;
-                color: $color1;
-                font-size: 16px;
-              
-            }
-
-            input,
-            textarea {
-                width: 100%;
-                padding: 5px 10px;
-                height: 40px;
-                border-radius: 5px;
-                border: none;
-                background: $color0;
-                font-size: 16px;
-                color: #757575;
-
-                &:focus {
-                    outline: none;
-                    background: white;
-                }
-            }
-
-            textarea {
-                height: 132px;
-                padding: 15px 10px;
-                resize: none;
-            }
-
-            padding:10px;
-        }
-    }
-
-    .send-container {
-        float: right;
-        width: 100%;
-        text-align: right;
-        margin-right: 20px;
-
-        input {
-            background: $color20;
-            border: none;
-            color: $color1;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-
-            &:hover {
-                background: $color20;
-            }
-        }
-    }
-
-    &:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-    @media(max-width:992px) {
-        padding: 0 5%;
-    }
-
-    @media(max-width:768px) {
-        margin-bottom: 50px;
-
-        section {
-            width: 100%;
-            margin: 0;
-
-            &.left {
-                margin-bottom: -30px;
-            }
-        }
-
-        .send-container {
-            margin-right: 0;
-            margin-top: 15px;
-
-            input {
-                width: 100%;
-            }
-        }
-    }
+.form-container{
+    width: $width1;
+    margin: $margin;
+   
 }
-.form-search{
-    width: 250px;
-    border: none;
-    background-color: #f0f0f0f0;
-    max-width: 100%;
-}
-.search-button{
-    border: none;
-    transition: 0.5s ease;
-}
-.search-button:hover {
-    background-color: #757575;
-    opacity: 0.7;
+form{
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
 }

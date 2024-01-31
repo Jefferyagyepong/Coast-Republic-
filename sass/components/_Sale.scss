@@ -1,16 +1,17 @@
 @import "../abstracts//variables";
 .shop-now {
-    width: 96%;
-    margin: 0 auto;
+    width: $width2;
+    margin: $margin;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: groove;
+    border: 2px solid gray;
     justify-content: space-between;
     border-radius: 5px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    z-index: 0;
+   
+  
 }
 
 .shop-now-link {
@@ -61,7 +62,7 @@
 
 
 
-.shop-now {
+.shop-nows {
     background: white;
     color: black;
     text-align: center;

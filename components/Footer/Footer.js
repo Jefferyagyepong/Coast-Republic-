@@ -35,13 +35,17 @@ export default function Footer() {
           {" "}
           <li>Payment Methods</li>
         </Link>
-        <Link href={"/refund"} className="footer-link">
+        <Link href={"/"} className="footer-link">
           {" "}
           <li>Return & Refund</li>
         </Link>
         <Link href={"/privacy"} className="footer-link">
           {" "}
           <li>Privacy Policy</li>
+        </Link>
+        <Link href={"/privacy"} className="footer-link">
+          {" "}
+          <li>T & C's</li>
         </Link>
       </ul>
       <h4 className="footer-sub-heading">Contact</h4>
@@ -56,11 +60,11 @@ export default function Footer() {
         <div className="footer-flex">
           <Image src={"/mail.svg"} width={30} height={40} alt="mail" />
           <Link
-            href={"mailto:contact@ibridenterprise.com"}
+            href={"mailto:contact@coastrepublic.com"}
             className="footer-link"
           >
             {" "}
-            <li>contact@ibridenterprise.com</li>
+            <li>contact@coastrepublic.com</li>
           </Link>
         </div>
       </ul>
@@ -68,10 +72,10 @@ export default function Footer() {
       <hr />
       <br />
       <p className="copyright">
-        Coast Republic Store 🇬🇭 &copy; {new Date().getFullYear()} All Rights Reserved
+        Coast Republic 🇬🇭 &copy; {new Date().getFullYear()} All Rights Reserved
       </p>
       <br />
-      <FootBottom/>
+      <FootBottom />
     </footer>
   );
 }

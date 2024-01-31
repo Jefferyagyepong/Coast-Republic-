@@ -20,7 +20,7 @@ export default function Sale() {
       </p>
       <br />
       <br />
-      <Link href={"/shop"} className="shop-nows">
+      <Link href={"/shop"} className="add-to-cart">
         Shop Now
       </Link>
     </div>

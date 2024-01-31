@@ -1,23 +1,38 @@
 import Image from "next/image";
-
-import styles from "/sass/components/ProductCard.module.scss";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cart.slice";
+import styles from "/sass/components/ShopPage.module.scss";
 import Link from "next/link";
 
 
 const ProductCard = ({ product }) => {
-
+  const dispatch = useDispatch();
 
   return (
-    <div className={styles.card}>
-      <Link href={"/ses"}>
-        <Image src={product.image} height={160} width={150} alt="" className={styles.border} />
-      </Link>
+    
+      <div className={styles.card}>
+        <Link href={"/"}>
+          <Image
+            src={product.image}
+            height={160}
+            width={150}
+            alt=""
+            className={styles.border}
+          />
+        </Link>
 
-      <h4 className={styles.title}>{product.product}</h4>
-      {/* <h5 className={styles.category}>{product.category}</h5>
-      <p>&#8373; {product.price}</p>
-      <p>{product.description}</p> */}
-    </div>
+        <h4 className={styles.title}>{product.product}</h4><br/>
+        <p className={styles.category}>{product.category}</p><br/>
+        <p className={styles.price}>&#8373; {product.price}</p><br/>
+        <p className={styles.description}>{product.description}</p><br/>
+        <button
+          onClick={() => dispatch(addToCart(product))}
+          className="add-to-cart"
+        >
+          Add to Bag
+        </button>
+      </div>
+ 
   );
 };
 

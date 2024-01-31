@@ -102,12 +102,40 @@ input {
     display: block;
     max-width: 400px;
     font: inherit;
-    padding: 0.6rem 2.6rem;
+    padding: 0.6rem 5.6rem;
     border-radius: 3px;
-    border: none;
+    border: 1px solid gray;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
+}
+input[type=submit] {
+    display: block;
+    max-width: 400px;
+    font: inherit;
+    padding: 0.6rem 5.6rem;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+
+}
+textarea{
+    display: block;
+        max-width: 400px;
+        font: inherit;
+        padding: 0.6rem 5.6rem;
+        border-radius: 3px;
+        border: 1px solid gray;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+}
+label{
+    padding: 10px;
 }
 
 input::-webkit-input-placeholder {

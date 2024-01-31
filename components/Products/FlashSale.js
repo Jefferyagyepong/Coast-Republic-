@@ -35,7 +35,7 @@ export default function FlashSale() {
           height={300}
           alt="product"
         />
-        <h4 className="ibrid-heading">Dell Laptop</h4>
+        <h4 className="ibrid-heading">Adidas Yeezy</h4>
         <div>
           <del>$300</del> - <span>$210</span>
         </div>

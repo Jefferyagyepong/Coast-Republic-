@@ -31,7 +31,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="footer-link">
+              <Link href={"/shop"} className="footer-link">
                 Products
               </Link>
             </li>
@@ -41,12 +41,12 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href={"/help"} className="footer-link">
+              <Link href={"/"} className="footer-link">
                 Help Center
               </Link>
             </li>
             <li>
-              <Link href={"/refund"} className="footer-link">
+              <Link href={"/"} className="footer-link">
                 Refunds
               </Link>
             </li>

@@ -1,5 +1,5 @@
 .arrival-card {
-        border: 2px thin gray;
+    border: 2px solid gray;
     width: 96%;
     display: flex;
     flex-direction: column;
@@ -9,11 +9,12 @@
     border-radius: 7px;
     margin-top: 1.7rem;
 }
+
 .arrival-card-gray {
     background-color: gainsboro;
     margin-top: 0;
     border-radius: 0 0 7px 7px;
-    border: 2px thin gray;
+    border: 2px solid gray;
     width: 96%;
     display: flex;
     flex-direction: column;
@@ -28,4 +29,3 @@
     background-color: whitesmoke;
     color: black;
 }
-
