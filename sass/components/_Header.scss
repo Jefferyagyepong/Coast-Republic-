@@ -68,7 +68,7 @@ header {
   display: block;
   background-color: black;
   position: absolute;
-  height: 1.2px;
+  height: 1.5px;
   width: 20px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
@@ -108,8 +108,8 @@ header {
       align-items: center;
       color: #fff;
       height: 50px;
-      padding: 1em;
-      margin-top: 20px;
+      padding: 10px;
+      margin-top: 1px;
     }
 
   .menu {

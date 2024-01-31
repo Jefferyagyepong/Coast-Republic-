@@ -102,7 +102,7 @@ input {
     display: block;
     max-width: 400px;
     font: inherit;
-    padding: 0.6rem 5.6rem;
+    padding: 0.6rem 4.62em;
     border-radius: 3px;
     border: 1px solid gray;
     margin: 0 auto;
@@ -113,7 +113,7 @@ input[type=submit] {
     display: block;
     max-width: 400px;
     font: inherit;
-    padding: 0.6rem 5.6rem;
+    padding: 0.6rem 4.2rem;
     border-radius: 3px;
     background-color: black;
     color: white;
@@ -127,7 +127,7 @@ textarea{
     display: block;
         max-width: 400px;
         font: inherit;
-        padding: 0.6rem 5.6rem;
+        padding: 0.6rem 4.2rem;
         border-radius: 3px;
         border: 1px solid gray;
         margin: 0 auto;
@@ -135,7 +135,7 @@ textarea{
 
 }
 label{
-    padding: 10px;
+  margin: 20px;
 }
 
 input::-webkit-input-placeholder {
@@ -165,7 +165,7 @@ footer {
 ul {
     display: block;
     transition: 0.5s ease;
-    padding: 1rem;
+    padding: 0.6rem;
     text-decoration: none;
     margin: 0 auto;
     list-style: none;
@@ -179,4 +179,5 @@ li {
     transition: 0.5s ease;
     cursor: pointer;
     padding: 0.6rem;
+  
 }

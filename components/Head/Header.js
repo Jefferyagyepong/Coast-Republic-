@@ -12,7 +12,7 @@ export default function Header() {
       </Link>
       <div className="right">
         <Image
-          src={"/search.svg"}
+          src={"/Search.svg"}
           width={20}
           height={30}
           alt="cart"
