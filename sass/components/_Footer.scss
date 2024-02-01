@@ -47,6 +47,7 @@ hr {
 
 .footer-link {
   color: black;
+  padding: 0.6rem;
 }
 
 .payment-container{
@@ -55,6 +56,10 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove{
+  50%{box-shadow: 2px 5px 8px silver ;}
 }
 .payment-logo{
 width: auto;

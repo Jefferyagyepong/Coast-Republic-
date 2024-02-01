@@ -43,7 +43,7 @@ export default function Footer() {
           {" "}
           <li>Privacy Policy</li>
         </Link>
-        <Link href={"/privacy"} className="footer-link">
+        <Link href={"/terms"} className="footer-link">
           {" "}
           <li>T & C&apos;s</li>
         </Link>

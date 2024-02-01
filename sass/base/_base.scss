@@ -76,11 +76,15 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
-font-family: 'oswald', sans-serif;
+    font-family: 'oswald', sans-serif;
+    font: antialised;
+    -webkit-font-smoothing: antialised;
+    -moz-font-smoothing: grayscale;
 
 
 
 }
+
 button {
     background: none;
     font: inherit;
@@ -92,6 +96,13 @@ button {
     padding: 0.9rem 2rem;
     border-radius: 3px;
     margin: 0.6rem;
+    -webkit-appearance: button important;
+    -moz-appearance: button;
+    -o-appearance: button;
+    appearance: button;
+
+
+
 }
 
 button:hover {
@@ -109,6 +120,7 @@ input {
     margin-top: 1rem;
 
 }
+
 input[type=submit] {
     display: block;
     max-width: 400px;
@@ -123,19 +135,26 @@ input[type=submit] {
     cursor: pointer;
 
 }
-textarea{
+
+textarea {
     display: block;
-        max-width: 400px;
-        font: inherit;
-        padding: 0.6rem 4.2rem;
-        border-radius: 3px;
-        border: 1px solid gray;
-        margin: 0 auto;
-        margin-top: 1rem;
+    max-width: 400px;
+    font: inherit;
+    padding: 0.6rem 4.2rem;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    margin-top: 1rem;
+    -webkit-appearance: textarea;
+    -moz-appearance: textarea;
+    -o-appearance: textarea;
+    appearance: textarea;
+  
 
 }
-label{
-  margin: 20px;
+
+label {
+    margin: 20px;
 }
 
 input::-webkit-input-placeholder {
@@ -165,7 +184,7 @@ footer {
 ul {
     display: block;
     transition: 0.5s ease;
-    padding: 0.6rem;
+    padding: 0;
     text-decoration: none;
     margin: 0 auto;
     list-style: none;
@@ -178,6 +197,6 @@ li {
     display: block;
     transition: 0.5s ease;
     cursor: pointer;
-    padding: 0.6rem;
-  
+    padding: 0;
+
 }

@@ -10,12 +10,12 @@ export default function Category() {
             <span className="category-item-flex">T-Shirts</span>
           </div>
           <div className="category-item">
-            <Image src={"/"} width={30} height={40} alt="video camera" />
+            <Image src={"/jacket.svg"} width={30} height={40} alt="video camera" />
             <span className="category-item-flex">Jackets</span>
           </div>
           <div className="category-item">
             <Image
-              src={"/desktop.svg"}
+              src={"/pants.svg"}
               width={30}
               height={40}
               alt="desktop computer"
@@ -24,7 +24,7 @@ export default function Category() {
           </div>
           <div className="category-item">
             <Image
-              src={"/headset.svg"}
+              src={"/sneaker.svg"}
               width={30}
               height={40}
               alt="Head phones"
@@ -32,7 +32,7 @@ export default function Category() {
             <span className="category-item-flex">Sneakers</span>
           </div>
           <div className="category-item">
-            <Image src={"/game.svg"} width={30} height={40} alt="Head phones" />
+            <Image src={"/socks.svg"} width={30} height={40} alt="Head phones" />
             <span className="category-item-flex">Socks</span>
           </div>
           <div className="category-item">

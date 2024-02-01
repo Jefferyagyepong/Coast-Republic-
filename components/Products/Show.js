@@ -101,7 +101,9 @@ export default function Show() {
         </button>
         <ul className="image-list">
           <Image
-            src={"/thugga.jpg"}
+            src={
+              "https://images.unsplash.com/photo-1626379530580-6a58c5cf1d5e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             className="image-item"
             alt="img"
             width={90}
@@ -117,28 +119,36 @@ export default function Show() {
             height={80}
           />
           <Image
-            src={"/thugga.jpg"}
+            src={
+              "https://images.unsplash.com/photo-1606297199333-e93f7d726cab?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             className="image-item"
             alt="img"
             width={90}
             height={80}
           />
           <Image
-            src={"/thugga.jpg"}
+            src={
+              "https://images.unsplash.com/photo-1597350584914-55bb62285896?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             className="image-item"
             alt="img"
             width={90}
             height={80}
           />
           <Image
-            src={"/thugga.jpg"}
+            src={
+              "/https://images.unsplash.com/photo-1627225793904-a2f900a6e4cf?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             className="image-item"
             alt="img"
             width={90}
             height={80}
           />
           <Image
-            src={"/thugga.jpg"}
+            src={
+              "https://images.unsplash.com/photo-1626771652942-93d834f3d1fd?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
             className="image-item"
             alt="img"
             width={90}

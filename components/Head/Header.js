@@ -26,27 +26,27 @@ export default function Header() {
           </label>
           <ul className="menu">
             <li>
-              <Link href={"/about"} className="footer-link">
+              <Link href={"/about"} className="header-link">
                 About
               </Link>
             </li>
             <li>
-              <Link href={"/shop"} className="footer-link">
+              <Link href={"/shop"} className="header-link">
                 Products
               </Link>
             </li>
             <li>
-              <Link href={"/contact"} className="footer-link">
+              <Link href={"/contact"} className="header-link">
                 Contact
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="footer-link">
+              <Link href={"/"} className="header-link">
                 Help Center
               </Link>
             </li>
             <li>
-              <Link href={"/"} className="footer-link">
+              <Link href={"/"} className="header-link">
                 Refunds
               </Link>
             </li>
