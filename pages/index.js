@@ -16,6 +16,8 @@ import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import FlashSale from "@/components/Products/FlashSale";
 import Brands from "@/components/Footer/Brands";
+import Collection from "@/components/Products/Collection";
+import Sort from "@/components/Products/Sort";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,8 +60,10 @@ const Home = ({ products }) => {
         <New />
         <Show />
         <CoastApp />
-        <FlashSale/>
+        <FlashSale />
+        <Collection/>
         <div className={styles.container}>
+          <Sort/>
           <div className={styles.cards}>
             {products.map(product => (
               <CategoryCard key={product.id} product={product} />

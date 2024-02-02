@@ -1,5 +1,4 @@
-import { faCaretRight, faCaretLeft, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Image from "next/image";
 import { useEffect } from "react";
 export default function Show() {
@@ -97,7 +96,12 @@ export default function Show() {
           id="prev-slide"
           className="slide-button material-symbols-rounded"
         >
-          <FontAwesomeIcon icon={faChevronLeft} size="1x" />
+          <Image
+            src={"/arrow-forward.svg"}
+            width={20}
+            height={20}
+            alt="chevronleft"
+          />
         </button>
         <ul className="image-list">
           <Image
@@ -159,7 +163,12 @@ export default function Show() {
           id="next-slide"
           className="slide-button material-symbols-rounded"
         >
-          <FontAwesomeIcon icon={faChevronRight} size="1x" />
+          <Image
+            src={"/arrow-back.svg"}
+            width={20}
+            height={20}
+            alt="chevronright"
+          />
         </button>
       </div>
       <div className="slider-scrollbar">

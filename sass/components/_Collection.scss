@@ -1,8 +1,9 @@
-.collection{
+.collection-sort-box{
     width: 100%;
-    margin-top:4rem;
-    margin-bottom: 4rem;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }
 .product-filter{
     display: flex;
@@ -12,7 +13,7 @@
 }
 .sort{
     display: flex;
-    gap: 2rem;
+   
 }
 .collection-sort{
     display: flex;

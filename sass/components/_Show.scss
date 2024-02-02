@@ -5,7 +5,7 @@
 .containers {
   width: $width5;
   margin: $margin;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   background-color: transparent;
 
 }
@@ -15,7 +15,7 @@
   padding-left: 10px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   overflow: auto hidden;
   scroll-snap-type: inline mandatory;
   overscroll-behavior-inline: contain;
@@ -27,9 +27,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   border: none;
   scroll-snap-align: start;
+ 
   
 }
 
@@ -62,7 +63,7 @@
   width: 100%;
   margin: $margin;
   background-color: inherit;
-  padding: 14px;
+  padding: 10px;
   background-color: transparent;
 
 }
@@ -81,7 +82,6 @@
   border: none;
   height: 50px;
   width: 50px;
-  color: #404040;
   display: flex;
   transition: 0.5s ease;
   cursor: pointer;
@@ -151,7 +151,7 @@ appearance: scrollbarbutton-right;
 }
 
 .slider-wrapper .image-list .image-item:hover {
-  opacity: 0.3;
+  
   cursor: pointer;
 
 
@@ -170,12 +170,13 @@ appearance: scrollbarbutton-right;
 }
 
 .slider-scrollbar .scrollbar-track {
-  background-color: transparent;
+ 
   width: 100%;
-  height: 2px;
+  height: 5px;
   display: flex;
   align-items: center;
   border-radius: 4px;
+  background-color: black;
   position: relative;
   -webkit-appearance: scrollbarthumb-horizontal;
   -moz-appearance: scrollbarthumb-horizontal;
@@ -189,7 +190,8 @@ appearance: scrollbarbutton-right;
 
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
-  background-color: transparent;
+  background-color: whitesmoke;
+  transition: 0.5s all;
   top: 0;
   bottom: 0;
   width: 50%;
