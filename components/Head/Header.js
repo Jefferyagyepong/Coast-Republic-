@@ -1,12 +1,33 @@
 import React, { useRef, useLayoutEffect } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
-
+import { useEffect } from "react";
 
 export default function Header() {
+  useEffect(() => {
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    // Get the header
+    var header = document.getElementById("header");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  }, []);
   return (
-    <header>
+    <header id="header" className="sticky">
       <Link href={"./"}>
         <Image src={"/crlogo.svg"} width={77} height={70} alt="logo" />
       </Link>
@@ -57,4 +78,3 @@ export default function Header() {
     </header>
   );
 }
- 

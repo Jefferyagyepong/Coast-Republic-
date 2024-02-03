@@ -10,15 +10,20 @@ header {
   justify-content: space-between;
   padding: 10px;
   top: 0;
+  position: fixed;
+  z-index: 2000;
+  background-color: transparent;
+
 
 }
-.inline{
+
+.inline {
   display: flex;
   flex-direction: row;
   align-items: center;
-    padding: 0;
-    justify-content: center;
-    gap: 0;
+  padding: 0;
+  justify-content: center;
+  gap: 0;
 }
 
 .right {
@@ -29,12 +34,14 @@ header {
   padding: 0;
   gap: 0;
 
-  
+
 }
-.header-link{
+
+.header-link {
   color: black;
   padding: 0;
 }
+
 /* nav*/
 .top-nav {
   display: flex;
@@ -60,7 +67,7 @@ header {
 }
 
 .menu>li {
-  margin: 0 ;
+  margin: 0;
   overflow: hidden;
   left: 0;
   right: 0;
@@ -121,18 +128,19 @@ header {
   .menu-button-container {
     display: flex;
   }
-    .top-nav {
+
+  .top-nav {
     display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      height: 20px;
-      right: 0;
-      margin-left: 0;
-      margin-right: 0;
-      left: 0;
-   
-    }
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 20px;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+
+  }
 
   .menu {
     position: absolute;
