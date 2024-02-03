@@ -56,10 +56,11 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 5px 8px silver;
   animation: mymove 5s infinite;
 }
 @keyframes mymove{
-  50%{box-shadow: 2px 5px 8px silver ;}
+  50%{box-shadow: 2px 5px 8px white ;}
 }
 .payment-logo{
 width: auto;
