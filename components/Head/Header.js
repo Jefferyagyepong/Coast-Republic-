@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header id="header" className="sticky">
       <Link href={"./"}>
-        <Image src={"/crlogo.svg"} width={77} height={70} alt="logo" />
+        <Image src={"/crlogo.svg"} width={77} height={70} alt="logo" className="logo" />
       </Link>
       <div className="right">
         <Image

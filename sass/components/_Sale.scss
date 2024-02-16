@@ -1,4 +1,5 @@
 @import "../abstracts//variables";
+
 .shop-now {
     width: $width2;
     margin: $margin;
@@ -16,10 +17,9 @@
     background-position: calc(50%);
     color: white;
     background-attachment: scroll;
-    margin-top:5.9rem;
-    z-index: 0;
-   
-  
+    z-index: -90;
+
+
 }
 
 .shop-now-link {
@@ -30,6 +30,8 @@
     border-radius: 4px;
     transition: 0.5s ease;
     color: white;
+    z-index: -90;
+
 }
 
 .shop-now-link:hover {
@@ -49,6 +51,7 @@
     -moz-justify-content: center;
     -o-justify-content: center;
     -ms-justify-content: center;
+    z-index: -90;
 }
 
 .flex-row {
@@ -62,7 +65,7 @@
     -moz-align-items: center;
     -o-align-items: center;
     -ms-align-items: center;
-
+    z-index: -90;
     -moz-justify-content: center;
     -o-justify-content: center;
     -ms-justify-content: center;
@@ -77,4 +80,5 @@
     transition: 0.5s;
     padding: 9px 22px;
     border: none;
+    z-index: -90;
 }
