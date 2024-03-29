@@ -27,8 +27,6 @@
 ::-webkit-scrollbar-thumb {
     background: $color17;
     transition: 0.3s ease;
-
-
 }
 
 html {
@@ -39,17 +37,11 @@ html {
 
 }
 
-
-
-
 a {
     text-decoration: none;
     transition: 0.5s ease;
 
 }
-
-
-
 
 
 .MyApp {
@@ -62,9 +54,6 @@ a {
     flex-direction: column;
     min-height: 100vh;
 }
-
-
-
 
 
 body,
@@ -80,8 +69,6 @@ html {
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-
-
 
 }
 
@@ -100,9 +87,6 @@ button {
     -moz-appearance: button;
     -o-appearance: button;
     appearance: button;
-
-
-
 }
 
 button:hover {
@@ -150,7 +134,6 @@ textarea {
     -o-appearance: textarea;
     appearance: textarea;
   
-
 }
 
 label {
@@ -197,6 +180,6 @@ li {
     display: block;
     transition: 0.5s ease;
     cursor: pointer;
-    padding: 0;
+    padding: 1vh;
 
 }
