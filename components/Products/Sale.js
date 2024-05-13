@@ -15,9 +15,9 @@ export default function Sale() {
       <span className="opacity-high">NEW SEASON</span>
       <br />
       <br />
-      <p className="opacity-high">
+      <span>
         Discount automatically applied at check out
-      </p>
+      </span>
       <br />
       <br />
       <Link href={"/shop"} className="add-to-cart">

@@ -23,16 +23,25 @@
 
 .card {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
   text-align: start;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: $margin;
+  padding: 0.5rem;
 
 }
 
 .text{
   padding: $padding-small;
+  opacity: 0.5;
+}
+.price, .description, .category{
+  opacity: 0.5;
+}
+.add-to-cart{
+  background-color: #222;
+  padding: 5px 8px;
+  margin-top: 8px;
 }

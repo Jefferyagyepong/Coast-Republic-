@@ -7,9 +7,9 @@ export default function Thrifts({ product }) {
   return (
     <div className="ibrid-box">
       <h3 className="ibrid-heading">THRIFTS ARENA</h3>
-      <p className="footer-text">
+      <span>
         Explore thousands of products, new and affordable daily
-      </p>
+      </span>
 
       <div className="arrival-card">
         <Image

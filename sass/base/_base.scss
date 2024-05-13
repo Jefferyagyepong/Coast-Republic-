@@ -97,7 +97,7 @@ input {
     display: block;
     max-width: 400px;
     font: inherit;
-    padding: 0.6rem 4.62em;
+    padding: 0.3rem 3.62em;
     border-radius: 3px;
     border: 1px solid gray;
     margin: 0 auto;
@@ -181,5 +181,46 @@ li {
     transition: 0.5s ease;
     cursor: pointer;
     padding: 1vh;
+   
 
+}
+h1 {
+    font-weight: 600;
+  
+
+}
+
+h2 {
+    font-weight: 400;
+ 
+}
+
+h3 {
+    font-weight: 200;
+    
+}
+
+h4 {
+    font-weight: 100;
+  
+}
+
+h5 {
+    font-weight: 88;
+   
+}
+
+h6 {
+    font-weight: 60;
+ 
+}
+
+p {
+    font-weight: 100;
+    width: 87%;
+    margin: $margin;
+
+}
+span{
+    opacity: 0.5;
 }

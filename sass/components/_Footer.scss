@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+
 footer {
   width: 100%;
   display: flex;
@@ -7,6 +8,7 @@ footer {
   justify-content: center;
   padding: 10px;
 }
+
 .ibrid-box-flex {
   display: flex;
   width: 100%;
@@ -33,9 +35,14 @@ hr {
 
 }
 
-.footer-sub-heading {
-  padding-bottom: -0.8rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.footer-link-item {
+  opacity: 0.5;
+  padding: 0.6rem;
+  color: $color1;
+  transition: 0.3s;
+}
+.footer-link-item:hover {
+  opacity: 0.7;
 }
 
 .footer-flex {
@@ -44,13 +51,12 @@ hr {
   align-items: center;
   justify-content: center;
 }
-
-.footer-link {
-  color: black;
-  padding: 0.6rem;
+.short-width{
+  width: 20%;
 }
 
-.payment-container{
+
+.payment-container {
   margin: $margin;
   display: flex;
   flex-direction: row;
@@ -60,16 +66,18 @@ hr {
 
 }
 
-.payment-logo{
-width: auto;
-height: auto;
-padding: 0.5rem;
-margin: 0.5rem;
-border-radius: 2px;
-box-shadow: 0 0 1 #f0f0f0 ;
-border: 1px solid $color6;
+
+.payment-logo {
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 2px;
+  box-shadow: 0 0 1 #f0f0f0;
+  border: 1px solid $color6;
 }
-.button-submit{
+
+.button-submit {
   border: none;
   background-color: $color19;
   color: $color0;
@@ -79,10 +87,12 @@ border: 1px solid $color6;
   margin-top: 1rem;
   transition: $transition-timing;
 }
+
 .button-submit:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
-.form-footer{
+
+.form-footer {
   width: 55%;
   border: none;
 }

@@ -9,7 +9,7 @@ const CategoryCard = ({ product }) => {
   return (
  
       <div className={styles.card}>
-        <Link href={"/"}>
+       <br/> <Link href={"/"}>
           <Image
             src={product.image}
             height={160}

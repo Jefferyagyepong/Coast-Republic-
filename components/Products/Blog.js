@@ -31,9 +31,9 @@ export default function Blog() {
           {" "}
           <br />
           <br />{" "}
-          <h4>
+          <span>
             <b> What Makes Men Look Weak Mistakes Killing Your confidence</b>
-          </h4>
+          </span>
         </Link>
       </div>
       <div className="blog-item">
@@ -62,9 +62,9 @@ export default function Blog() {
           {" "}
           <br />
           <br />{" "}
-          <h4>
+          <span>
             <b> How To Dress For Your Age ( 20s, 30s, 40s, 50+ )</b>
-          </h4>
+          </span>
         </Link>
       </div>
     </div>

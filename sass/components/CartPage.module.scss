@@ -16,6 +16,21 @@ padding-bottom: 6%;
   grid-template-columns:repeat(6, 1fr);
   align-items: center;
 
+}
 
+@media (max-width: 700px) {
+  .head {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      margin-top: 1rem;
+  
+    }
+        .body {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+    
+        }
 
 }

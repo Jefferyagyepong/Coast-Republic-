@@ -8,10 +8,10 @@
 }
 
 .shop-nows {
-  background: $color1;
+
   color: $color0;
   text-align: center;
-  padding: 9px 22px;
+  padding: 5px 8px;
   border: none;
   margin-top: 3rem;
   transition: $transition-timing;
@@ -19,16 +19,35 @@
 
 
 }
-.opacity-high{
- opacity: 1;
+
+.opacity-high {
+  opacity: 1;
 
 }
-.white{
+
+.proceed-link {
+  background-color: green;
+  color: white;
+  padding: 5px 8px;
+  transition: $transition-timing;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17%;
+  margin: 0 auto;
+
+}
+.proceed-link:hover{
+  opacity: 0.7;
+}
+
+.white {
   color: $color0;
 }
 
 .shop-nows:hover {
- opacity: 0.3;
+  opacity: 0.3;
 
 
 }
@@ -63,7 +82,7 @@
   -o-align-items: center;
   -ms-align-items: center;
   -moz-justify-content: center;
-    -o-justify-content: center;
-    -ms-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
 
 }

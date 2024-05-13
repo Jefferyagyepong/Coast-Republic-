@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import FootBottom from "../components/Footer/FootBottom";
+import Image from "next/image";
+import Link from "next/link.js";
 
 
 const App = () => {
@@ -32,13 +34,25 @@ const App = () => {
 
   return (
     <main>
+      <div className="integrity">
+        <Link href={"./"}>
+          <Image
+            src={"/crlogo.svg"}
+            width={77}
+            height={70}
+            alt="logo"
+            className="logo"
+          />
+        </Link>
+      </div>
+
       <div className="text-align">
         <p>You&apos;re about to pay for items added to shopping bag</p>
         <br />
-     
       </div>
       <form>
-        <h4>Fill in the form to verify your payment credentials</h4><br/>
+        <h4>Fill in the form to verify your payment credentials</h4>
+        <br />
         <section className="left">
           <div className="input-container">
             <label>Name</label>

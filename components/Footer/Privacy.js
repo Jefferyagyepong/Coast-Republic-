@@ -1,16 +1,16 @@
 export default function Privacy() {
   return (
     <div class="terms-wrap">
-      <h1 className="delivery-text">PRIVACY POLICY</h1>
+      <h2>PRIVACY POLICY</h2>
 
-      <p className="delivery-text">
+      <p>
         This Privacy Policy describes how coast republic (the “Site” or “we”)
         collects, uses, and discloses your Personal Information when you visit
         or make a purchase from the Site.
       </p>
 
-      <h3 className="delivery-text">Contact</h3>
-      <p className="delivery-text">
+      <h3>Contact</h3>
+      <p>
         After reviewing this policy, if you have additional questions, want more
         information about our privacy practices, or would like to make a
         complaint, please contact us by e-mail at coastrepgh@gmail.com or by
@@ -18,9 +18,9 @@ export default function Privacy() {
         Ghana
       </p>
 
-      <h3 className="delivery-text">Collecting Personal Information</h3>
+      <h3>Collecting Personal Information</h3>
 
-      <p className="delivery-text">
+      <p>
         When you visit the Site, we collect certain information about your
         device, your interaction with the Site, and information necessary to
         process your purchases. We may also collect additional information if
@@ -30,7 +30,7 @@ export default function Privacy() {
         more information about what Personal Information we collect and why.
       </p>
 
-      <p className="delivery-text">
+      <p>
         Device information Purpose of collection: to load the Site accurately
         for you, and to perform analytics on Site usage to optimize our Site.
         Source of collection: Collected automatically when you access our Site
@@ -41,7 +41,7 @@ export default function Privacy() {
         interact with the Site
       </p>
 
-      <p className="delivery-text">
+      <p>
         Order information Purpose of collection: to provide products or services
         to you to fulfill our contract, to process your payment information,
         arrange for shipping, and provide you with invoices and/or order
@@ -55,15 +55,15 @@ export default function Privacy() {
         phone number.
       </p>
 
-      <p className="delivery-text">
+      <p>
         Customer support information Purpose of collection: to provide customer
         support. Source of collection: collected from you Disclosure for a
         business purpose: Personal Information collected: collected from you
       </p>
 
-      <h3 className="delivery-text">Minors</h3>
+      <h3>Minors</h3>
 
-      <p className="delivery-text">
+      <p>
         The Site is not intended for individuals under the age of 18. We do not
         intentionally collect Personal Information from children. If you are the
         parent or guardian and believe your child has provided us with Personal
@@ -72,7 +72,7 @@ export default function Privacy() {
 
       <h3 className="delivery-text">Sharing Personal Information</h3>
 
-      <p className="delivery-text">
+      <p>
         We share your Personal Information with service providers to help us
         provide our services and fulfill our contracts with you, as described
         above. For example: We use Google Analytics to help us understand how
@@ -105,9 +105,9 @@ export default function Privacy() {
         https://optout.aboutads.info/.
       </p>
 
-      <h3 className="delivery-text">Using Personal Information</h3>
+      <h3>Using Personal Information</h3>
 
-      <p className="delivery-text">
+      <p>
         We use your personal Information to provide our services to you, which
         includes: offering products for sale, processing payments, shipping and
         fulfillment of your order, and keeping you up to date on new products,
@@ -121,18 +121,18 @@ export default function Privacy() {
         your fundamental rights and freedoms.
       </p>
 
-      <h3 className="delivery-text">Retention</h3>
+      <h3 >Retention</h3>
 
-      <p className="delivery-text">
+      <p>
         When you place an order through the Site, we will retain your Personal
         Information for our records unless and until you ask us to erase this
         information. For more information on your right of erasure, please see
         the ‘Your rights’ section below.
       </p>
 
-      <h3 className="delivery-text">Automatic decision-making</h3>
+      <h3>Automatic decision-making</h3>
 
-      <p className="delivery-text">
+      <p>
         If you are a resident of the EEA, you have the right to object to
         processing based solely on automated decision-making (which includes
         profiling), when that decision-making has a legal effect on you or
@@ -148,9 +148,9 @@ export default function Privacy() {
         days.
       </p>
 
-      <h3 className="delivery-text">Selling Personal Information</h3>
+      <h3>Selling Personal Information</h3>
 
-      <p className="delivery-text">
+      <p>
         Our Site sells Personal Information, as defined by the California
         Consumer Privacy Act of 2018 (“CCPA”). [Insert: categories of
         information sold; IF USING SHOPIFY AUDIENCES: information about your use
@@ -161,9 +161,9 @@ export default function Privacy() {
         information, provide information about what that incentive is.]
       </p>
 
-      <h3 className="delivery-text">Your rights</h3>
+      <h3>Your rights</h3>
 
-      <p className="delivery-text">
+      <p>
         GDPR If you are a resident of the EEA, you have the right to access the
         Personal Information we hold about you, to port it to a new service, and
         to ask that your Personal Information be corrected, updated, or erased.
@@ -185,9 +185,9 @@ export default function Privacy() {
         these requests on your behalf, please contact us at the address above.
       </p>
 
-      <h3 className="delivery-text">Cookies</h3>
+      <h3>Cookies</h3>
 
-      <p className="delivery-text">
+      <p>
         A cookie is a small amount of information that’s downloaded to your
         computer or device when you visit our Site. We use a number of different
         cookies, including functional, performance, advertising, and social
@@ -200,26 +200,26 @@ export default function Privacy() {
         are a frequent visitor.
       </p>
 
-      <h3 className="delivery-text">Do Not Track</h3>
+      <h3>Do Not Track</h3>
 
-      <p className="delivery-text">
+      <p>
         Please note that because there is no consistent industry understanding
         of how to respond to “Do Not Track” signals, we do not alter our data
         collection and usage practices when we detect such a signal from your
         browser.
       </p>
 
-      <h3 className="delivery-text">Changes</h3>
+      <h3>Changes</h3>
 
-      <p className="delivery-text">
+      <p>
         We may update this Privacy Policy from time to time in order to reflect,
         for example, changes to our practices or for other operational, legal,
         or regulatory reasons.
       </p>
 
-      <h3 className="delivery-text">Complaints</h3>
+      <h3 >Complaints</h3>
 
-      <p className="delivery-text">
+      <p>
         As noted above, if you would like to make a complaint, please contact us
         by e-mail or by mail using the details provided under “Contact” above.
         If you are not satisfied with our response to your complaint, you have

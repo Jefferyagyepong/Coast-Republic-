@@ -6,15 +6,15 @@ export default function FootBottom() {
       <div className="payment-container">
         <Image
           src={"/momo.jpg"}
-          height={28}
-          width={25}
+          height={15}
+          width={19}
           alt="momo logo"
           className="payment-logo"
         />
         <Image
           src={"/Visa.png"}
-          height={28}
-          width={25}
+          height={15}
+          width={19}
           alt="momo logo"
           className="payment-logo"
         />

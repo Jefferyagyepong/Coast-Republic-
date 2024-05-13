@@ -3,11 +3,11 @@ export default function Brands() {
     return (
       <div className="ibrid-box-flex">
         
-        <h3>Nike </h3>
-        <h3>Adidas </h3>
-        <h3> Reebok</h3>
-        <h3>Gildan</h3>
-        <h3>Essentials</h3>
+        <span>Nike </span>
+        <span>Adidas </span>
+        <span> Reebok</span>
+        <span>Gildan</span>
+        <span>Essentials</span>
       </div>
     );
 }

@@ -1,9 +1,9 @@
 export default function Terms() {
   return (
     <div className="terms-wrap">
-      <h1 className="delivery-text">Terms Of Service</h1>
+      <h2 className="delivery-text">Terms Of Service</h2>
 
-      <h3 className="delivery-text">Overview</h3>
+      <h4 className="delivery-text">Overview</h4>
 
       <p className="delivery-text">
         This website is operated by Coast Republic. Throughout the site, the

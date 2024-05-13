@@ -9,7 +9,7 @@ export default function New() {
       <h1>12</h1>
       <br />
       <br />
-      <p>Discover what just landed at Coast Republic</p>
+      <span>Discover what just landed at Coast Republic</span>
     </div>
   );
 }

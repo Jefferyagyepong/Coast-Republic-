@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
   return (
     
       <div className={styles.card}>
-        <Link href={"/"}>
+       <br/> <Link href={"/"}>
           <Image
             src={product.image}
             height={160}
@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
 
         <h4 className={styles.title}>{product.product}</h4><br/>
         <p className={styles.category}>{product.category}</p><br/>
-        <p className={styles.price}>&#8373; {product.price}</p><br/>
+        <p className={styles.price}> &#8373; {product.price}</p><br/>
         <p className={styles.description}>{product.description}</p><br/>
         <button
           onClick={() => dispatch(addToCart(product))}
