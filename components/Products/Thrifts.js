@@ -17,12 +17,12 @@ export default function Thrifts({ product }) {
             "https://images.unsplash.com/photo-1628253747716-0c4f5c90fdda?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
           alt="Air Force sneaker"
-          width={250}
-          height={350}
+          width={150}
+          height={180}
         />
-        <h5>Nike Air Force 1</h5>
+        <h5>Off-White</h5>
         <br />
-        <span>$70</span>
+        <span>$470</span>
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"

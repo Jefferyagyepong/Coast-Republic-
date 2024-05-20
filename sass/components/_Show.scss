@@ -1,63 +1,5 @@
 @import "../abstracts/variables";
 
-
-
-.containers {
-  width: $width5;
-  margin: $margin;
-  margin-bottom: 1rem;
-  background-color: transparent;
-
-}
-
-.category-item-container {
-  display: flex;
-  padding-left: 10px;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  overflow: auto hidden;
-  scroll-snap-type: inline mandatory;
-  overscroll-behavior-inline: contain;
-  margin: 0 auto;
-  background-color: transparent;
-}
-
-.category-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  border: none;
-  scroll-snap-align: start;
- 
-  
-}
-
-
-.category-img-box {
-  background-color: transparent;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  margin: 0 auto;
-
-}
-
-
-.category-content-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: transparent;
-}
-
-
 .contai {
   max-width: 1200px;
   width: 100%;
@@ -66,14 +8,39 @@
   padding: 10px;
   background-color: transparent;
 
-}
 
+}
 
 .slider-wrapper {
   position: relative;
-    transition: 0.5s ease;
+  transition: 0.3s ease;
+  background-color: transparent;
+
 
 }
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  font-size: 0;
+  border: none;
+  list-style: none;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background-color: transparent;
+
+
+}
+.slider-wrapper .image-list .image-item {
+  width: 120px;
+  height: 130px;
+  object-fit: cover;
+  padding: 6px;
+  border-radius: 3px;
+
+}
+
 
 .slider-wrapper .slide-button {
   position: absolute;
@@ -108,50 +75,29 @@
   left: -25px;
   display: none;
   -webkit-appearance: scrollbarbutton-left;
-    -moz-appearance: scrollbarbutton-left;
-    -o-appearance: scrollbarbutton-left;
-    appearance: scrollbarbutton-left;
+  -moz-appearance: scrollbarbutton-left;
+  -o-appearance: scrollbarbutton-left;
+  appearance: scrollbarbutton-left;
 }
 
 .slider-wrapper .slide-button#next-slide {
--webkit-appearance: scrollbarbutton-right;
--moz-appearance: scrollbarbutton-right;
--o-appearance: scrollbarbutton-right;
-appearance: scrollbarbutton-right;
+  -webkit-appearance: scrollbarbutton-right;
+  -moz-appearance: scrollbarbutton-right;
+  -o-appearance: scrollbarbutton-right;
+  appearance: scrollbarbutton-right;
   right: -25px;
 }
 
-.slider-wrapper .image-list {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
-  font-size: 0;
-  border: none;
-  list-style: none;
-  margin-bottom: 30px;
-  overflow-x: auto;
-  scrollbar-width: none;
 
-
-}
 
 .slider-wrapper .image-list::-webkit-scrollbar {
   display: none;
 }
 
-.slider-wrapper .image-list .image-item {
-  width: 180px;
-  height: 190px;
-  object-fit: contain;
-  padding: 6px;
-  border-radius: 3px;
 
-
-
-}
 
 .slider-wrapper .image-list .image-item:hover {
-  
+
   cursor: pointer;
 
 
@@ -170,7 +116,7 @@ appearance: scrollbarbutton-right;
 }
 
 .slider-scrollbar .scrollbar-track {
- 
+
   width: 100%;
   height: 5px;
   display: flex;
@@ -191,7 +137,7 @@ appearance: scrollbarbutton-right;
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
   background-color: whitesmoke;
-  transition: 0.5s all;
+  transition: 0.2s all;
   top: 0;
   bottom: 0;
   width: 50%;
@@ -233,8 +179,8 @@ appearance: scrollbarbutton-right;
   }
 
   .slider-wrapper .image-list .image-item {
-    width: 280px;
-    height: 380px;
+    width: 120px;
+    height: 130px;
   }
 
   .slider-scrollbar .scrollbar-thumb {

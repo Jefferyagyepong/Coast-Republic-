@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "titile": "Young Thug",
+    "title": "Young Thug",
     "product": " Young Thug ",
     "category": "T-shirt",
     "image": "/thugga.jpg",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "titile": "Vans",
+    "title": "Vans",
     "product": " Vans ",
     "category": "Sneaker",
     "image": "https://images.unsplash.com/photo-1626379530580-6a58c5cf1d5e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "titile": "Gildan",
+    "title": "Gildan",
     "product": "Gildan  ",
     "category": "T-shirt",
     "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "titile": "Adidas",
+    "title": "Adidas",
     "product": " Yeezy ",
     "category": "Sneakers",
     "image": "https://images.unsplash.com/photo-1606297199333-e93f7d726cab?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "titile": "Adidas",
+    "title": "Adidas",
     "product": " Yeezy ",
     "category": "Sneaker",
     "image": "https://images.unsplash.com/photo-1626771652942-93d834f3d1fd?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "titile": "Young Thug",
+    "title": "Young Thug",
     "product": " Young Thug  ",
     "category": "T-shirt",
     "image": "/thugga.jpg",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "titile": "Air Max 1",
+    "title": "Air Max 1",
     "product": "Hype ",
     "category": "Sneaker",
     "image": "https://images.unsplash.com/photo-1561095884-bb4b8d43c18b?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -71,7 +71,7 @@
   },
     {
       "id": 8,
-      "titile": "Air Jordan 1",
+      "title": "Air Jordan 1",
       "product": "off white ",
       "category": "Sneaker",
       "image": "https://images.unsplash.com/photo-1588099768531-a72d4a198538?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

@@ -3,6 +3,8 @@ import { PaystackButton } from "react-paystack";
 import FootBottom from "../components/Footer/FootBottom";
 import Image from "next/image";
 import Link from "next/link.js";
+import { useSelector, useDispatch } from "react-redux";
+
 
 
 const App = () => {
@@ -23,11 +25,19 @@ const App = () => {
       phone,
     },
     publicKey,
-    text: "Proceed to Pay",
+    text: "Pay Now",
     onSuccess: () =>
       alert("Order Succesfully placed "),
     onClose: () => alert("Wait! Don't leave :("),
   };
+   const cart = useSelector(state => state.cart);
+   const dispatch = useDispatch();
+    const getTotalPrice = () => {
+      return cart.reduce(
+        (accumulator, item) => accumulator + item.quantity * item.price,
+        0
+      );
+    };
 
 
 
@@ -47,8 +57,9 @@ const App = () => {
       </div>
 
       <div className="text-align">
-        <p>You&apos;re about to pay for items added to shopping bag</p>
+        <h4>You&apos;re about to pay for items added to shopping bag</h4>
         <br />
+        <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
       </div>
       <form>
         <h4>Fill in the form to verify your payment credentials</h4>
@@ -78,10 +89,14 @@ const App = () => {
               onChange={e => setPhone(e.target.value)}
             />
           </div>
+          <br />
           <div className="send-container">
             <PaystackButton className="paystack-button" {...componentProps} />
           </div>
         </section>
+        <div>
+          <h6>Powered by Paystack</h6>
+        </div>
       </form>
       <FootBottom />
     </main>

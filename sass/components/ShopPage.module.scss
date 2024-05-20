@@ -5,19 +5,16 @@
   display: flex;
   flex-direction: column;
   margin: $margin;
-  justify-content: center;
+  justify-content: start;
 
 }
 
 .cards {
   display: grid;
-  padding: $padding;
   grid-template-columns: repeat(2, 1fr);
   margin: $margin;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
-  text-align: start;
-
 
 }
 
@@ -29,8 +26,7 @@
   flex-direction: column;
   align-items: center;
   margin: $margin;
-  padding: 0.5rem;
-
+  padding: 0.25rem;
 }
 
 .text{
@@ -38,10 +34,12 @@
   opacity: 0.5;
 }
 .price, .description, .category{
+  text-align: start;
   opacity: 0.5;
 }
 .add-to-cart{
   background-color: #222;
   padding: 5px 8px;
   margin-top: 8px;
+  margin-left: 0;
 }
