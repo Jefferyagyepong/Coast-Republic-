@@ -21,10 +21,9 @@ const ProductCard = ({ product }) => {
           />
         </Link>
 
-        <h4 className={styles.title}>{product.product}</h4><br/>
-        <p className={styles.category}>{product.category}</p><br/>
-        <p className={styles.price}> &#8373; {product.price}</p><br/>
-        <p className={styles.description}>{product.description}</p><br/>
+        <h4 className={styles.title}>{product.product}</h4>
+        <p className={styles.price}> &#8373; {product.price}</p>
+        <p className={styles.description}>{product.description}</p>
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"

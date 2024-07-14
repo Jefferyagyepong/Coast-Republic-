@@ -3,7 +3,7 @@
     "id": 1,
     "product": "Air Force 1 07 black",
     "category": "sneaker",
-    "image": "/products/force1a.jpg",
+    "image": "/products/force1a.JPG",
     "price": 400.00
     
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "product": "Air Force 1 07 white",
     "category": "Sneaker",
-    "image": "/products/force2b.jpg",
+    "image": "/products/force2b.JPG",
     "price": 600.00
  
   },
@@ -19,28 +19,28 @@
     "id": 3,
     "product": "Air Force 1 07 high black",
     "category": "Sneaker",
-    "image": "/products/force3a.jpg",
+    "image": "/products/force3a.JPG",
     "price": 600.00
   },
   {
     "id": 4,
    "product": "Adidas Campus",
   "category": "Sneaker",
-  "image": "/products/campus1a.jpg",
+  "image": "/products/campus1a.JPG",
   "price": 600.00
   },
   {
     "id": 5,
    "product": "Converse Chuck Taylor ",
   "category": "Sneaker",
-  "image": "/products/chuck1a.jpg",
+  "image": "/products/chuck1a.JPG",
   "price": 600.00
   },
   {
     "id": 6,
   "product": "Timberland boots",
   "category": "Sneaker",
-  "image": "/products/tims1a.jpg",
+  "image": "/products/tims1a.JPG",
   "price": 600.00
   },
   {
