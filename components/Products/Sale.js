@@ -15,7 +15,7 @@ export default function Sale() {
       <span >NEW SEASON</span>
       <br />
       <br />
-      <span>
+      <span className="color-linear-gradiant">
         Discount automatically applied at check out
       </span>
       <br />

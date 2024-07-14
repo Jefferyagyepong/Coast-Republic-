@@ -23,6 +23,14 @@
 
 
 }
+.color-linear-gradiant{
+    padding: 1.4rem;
+        background: linear-gradient(to right, white,white,white,black,black,white,black,black );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        line-height: 28px;
+}
 .add-to-cart{
     background: $color11;
     color: $color5;

@@ -6,10 +6,10 @@ export default function Thrifts({ product }) {
   const dispatch = useDispatch();
   return (
     <div className="ibrid-box">
-      <h3 className="ibrid-heading">THRIFTS ARENA</h3>
-      <span>
+      <h3>THRIFTS ARENA</h3><br/>
+      <p>
         Explore thousands of products, new and affordable daily
-      </span>
+      </p><br/>
 
       <div className="arrival-card">
         <Image
