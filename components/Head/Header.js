@@ -12,8 +12,8 @@ export default function Header() {
         <Link href={"./"}>
           <Image
             src={"/coast.svg"}
-            width={170}
-            height={150}
+            width={90}
+            height={70}
             alt="logo"
             className="logo"
           />

@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
- 
+
 }
 
 
@@ -24,14 +24,15 @@ header {
   gap: 0;
 
 }
-.header-top{
+
+.header-top {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  
+
 }
 
 
@@ -41,7 +42,8 @@ header {
   color: $color9;
 
 }
-.header-link:hover{
+
+.header-link:hover {
   opacity: 0.7;
 }
 
@@ -56,6 +58,11 @@ header {
 
 
 
+}
+
+.logo {
+  display: block;
+  margin-left: 0;
 }
 
 .header-nav-link {
@@ -121,7 +128,7 @@ header {
 
 .menu-button::after {
   content: "";
-  margin-top:8px;
+  margin-top: 8px;
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::before {
@@ -144,20 +151,26 @@ header {
   }
 
   .top-nav {
-  display: none;
+    display: none;
   }
 
   .menu {
-   display: none;
+    display: none;
   }
 
-    .header-top {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    
-  
-    }
+  .header-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+  }
+
+  .logo {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+  }
 }
