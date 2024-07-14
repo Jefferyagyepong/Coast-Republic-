@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 export default function FlashSale() {
   return (
-    <div className="flash-flex-box ibrid-box">
-      <div className="flash-flex">
-        <h3 className="ibrid-heading">Flash Sale</h3>
-      </div>
+    <div className="flash-flex-box ">
+    
+        <h3>Flash Sale</h3><br/>
+ 
 
-      <div className="collection-cards arrival-card-brown">
+      <div className="collection-cards">
         <span>Up to 30% Off!</span>
         <br />
         <span>Sale End in:</span>

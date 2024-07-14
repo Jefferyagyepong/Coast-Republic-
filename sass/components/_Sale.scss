@@ -11,16 +11,21 @@
     border-radius: 5px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-image: url("https: //images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(50%);
     color: white;
     font-weight: 700;
     background-attachment: scroll;
+    color: black;
     z-index: -90;
 
 
+}
+.add-to-cart{
+    background: $color11;
+    color: $color5;
 }
 
 .shop-now-link {

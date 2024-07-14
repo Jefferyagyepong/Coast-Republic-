@@ -2,7 +2,8 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
 import Delivery from "../components/Footer/Delivery";
-import Footer from "../components/Footer/Footer";
+import Newsletter from "@/components/Footer/Newsletter";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function delivery() {
@@ -28,7 +29,10 @@ export default function delivery() {
           property="og:description"
           content="We deliver to all 16 regions in 🇬🇭"
         />
-        <meta property="og:url" content="https://coast-republic.vercel.app/delivery" />
+        <meta
+          property="og:url"
+          content="https://coast-republic.vercel.app/delivery"
+        />
         <meta
           property="og:image"
           content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
@@ -44,10 +48,9 @@ export default function delivery() {
       </Head>
       <main>
         <Header />
-
         <Delivery />
-
-        <Footer />
+        <Newsletter />
+        <FootBottom/>
       </main>
     </>
   );

@@ -7,47 +7,53 @@ import Link from "next/link.js";
 export default function Header() {
 
   return (
-    <header id="header" className="sticky">
-      <Link href={"./"}>
-        <Image src={"/coast.svg"} width={170} height={150} alt="logo" className="logo" />
-      </Link>
-      <div className="right">
-        <section className="top-nav">
-          <input id="menu-toggle" type="checkbox" />
-
-          <label className="menu-button-container" htmlFor="menu-toggle">
-            <div className="menu-button"></div>
-          </label>
-          <ul className="menu">
-            <li>
-              <Link href={"/about"} className="header-link">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href={"/shop"} className="header-link">
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link href={"/contact"} className="header-link">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="header-link">
-                Help Center
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"} className="header-link">
-                Refunds
-              </Link>
-            </li>
-          </ul>
-        </section>
+    <header>
+      <div className="header-top">
+        <Link href={"./"}>
+          <Image
+            src={"/coast.svg"}
+            width={170}
+            height={150}
+            alt="logo"
+            className="logo"
+          />
+        </Link>
         <CartBasket />
       </div>
+      <section className="top-nav">
+        <input id="menu-toggle" type="checkbox" />
+
+        <label className="menu-button-container" htmlFor="menu-toggle">
+          <div className="menu-button"></div>
+        </label>
+        <ul className="menu">
+          <li>
+            <Link href={"/about"} className="header-link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href={"/shop"} className="header-link">
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link href={"/contact"} className="header-link">
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link href={"/"} className="header-link">
+              Help Center
+            </Link>
+          </li>
+          <li>
+            <Link href={"/"} className="header-link">
+              Refunds
+            </Link>
+          </li>
+        </ul>
+      </section>
     </header>
   );
 }

@@ -6,13 +6,13 @@ export default function Sale() {
       <div className="flex-row">
         <h1 className="font-size">15</h1>
         <div className="flex-column">
-          <h4 className="opacity-high">%</h4>
-          <h4 className="opacity-high">OFF</h4>
+          <h4>%</h4>
+          <h4>OFF</h4>
         </div>
       </div>
       <br />
       <br />
-      <span className="opacity-high">NEW SEASON</span>
+      <span >NEW SEASON</span>
       <br />
       <br />
       <span>

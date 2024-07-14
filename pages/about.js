@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import About from "../components/About";
 import Header from "../components/Head/Header";
-import Footer from "../components/Footer/Footer";
+import Newsletter from "@/components/Footer/Newsletter";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +24,10 @@ export default function about() {
         />
         <meta property="og:title" content="Coast Republic inc" />
         <meta property="og:description" content="our story" />
-        <meta property="og:url" content="https://coast-republic.vercel.app/about" />
+        <meta
+          property="og:url"
+          content="https://coast-republic.vercel.app/about"
+        />
         <meta
           property="og:image"
           content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
@@ -43,7 +46,8 @@ export default function about() {
 
         <About />
 
-        <Footer />
+        <Newsletter />
+        <FootBottom/>
       </main>
     </>
   );

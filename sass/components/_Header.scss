@@ -5,12 +5,10 @@
 header {
   width: $width1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  top: 0;
-
+  justify-content: space-between;
+ 
 }
 
 
@@ -24,24 +22,21 @@ header {
   gap: 0;
 
 }
-
-.right {
+.header-top{
+  width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: center;
-  padding: 0;
-  gap: 0;
-
-
-
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  
 }
 
+
 .header-link {
-color: black;
   padding: 0;
   transition: 0.3s ease;
-  color: blue;
+  color: $color5;
 
 }
 .header-link:hover{
@@ -55,7 +50,8 @@ color: black;
   align-items: center;
   color: #fff;
   height: 20px;
-  padding-right: 20px;
+  width: 100%;
+
 
 }
 
@@ -195,4 +191,13 @@ color: black;
   .menu>li:not(:last-child) {
     border-bottom: 1px solid #141c3aff;
   }
+    .header-top {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    
+  
+    }
 }

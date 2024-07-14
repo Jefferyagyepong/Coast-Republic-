@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
 import Contact from "../components/Forms/Contact";
 import ContactForm from "../components/Forms/ContactForm";
-import Footer from "@/components/Footer/Footer";
-
+import Newsletter from "@/components/Footer/Newsletter";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +26,10 @@ export default function contact() {
         />
         <meta property="og:title" content="Coast Republic inc" />
         <meta property="og:description" content="contact us" />
-        <meta property="og:url" content="https://coast-republic.vercel.app/contact" />
+        <meta
+          property="og:url"
+          content="https://coast-republic.vercel.app/contact"
+        />
         <meta
           property="og:image"
           content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
@@ -47,7 +50,8 @@ export default function contact() {
 
         <Contact />
         <ContactForm />
-        <Footer />
+        <Newsletter />
+        <FootBottom/>
       </main>
     </>
   );

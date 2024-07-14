@@ -20,12 +20,12 @@
     scroll-behavior: smooth;
     border-radius: 0;
     transition: 0.3s ease;
-    background: $color6;
+
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $color17;
+  
     transition: 0.3s ease;
 }
 
@@ -162,10 +162,7 @@ input::placeholder {
   
    
 }
-::placeholder{
-    color: brown;
-   
-}
+
 
 
 footer {
@@ -193,46 +190,40 @@ li {
 
 }
 h1 {
-    font-weight: 600;
+    font-weight: 700;
   
 
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 600;
  
 }
 
 h3 {
-    font-weight: 200;
+    font-weight: 500;
     
 }
 
 h4 {
-    font-weight: 100;
+    font-weight: 400;
   
 }
 
 h5 {
-    font-weight: 88;
+    font-weight: 300;
    
 }
 
 h6 {
-    font-weight: 60;
+    font-weight: 200;
  
 }
 
-p {
-    font-weight: 100;
-    width: 87%;
-    margin: $margin;
 
-}
 
 p, span{
     line-height: 1.5;
-}
-h1,h2,h3,h4,h4,h5,h6{
-    padding: 2.5rem;
+    font-weight: 100;
+
 }

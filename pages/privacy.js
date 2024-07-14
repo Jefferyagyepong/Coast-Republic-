@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
 import Privacy from "../components/Footer/Privacy";
 import Footer from "../components/Footer/Footer";
+import Newsletter from "@/components/Footer/Newsletter";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +42,8 @@ export default function privacy() {
         <Header />
 
         <Privacy />
-        <Footer />
+        <Newsletter />
+        <FootBottom/>
       </main>
     </>
   );

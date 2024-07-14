@@ -1,29 +1,28 @@
 .arrival-card-brown {
-    background-color: black;
     color: white;
     border: none;
     border-style: none;
 }
 
-.flash-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .flash-flex-box {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    margin-top: 30px;
+
 
 }
-.time-box{
+
+.time-box {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-margin-top: 2rem;
+    margin-top: 2rem;
+  
 }
 
 .flash-card {
@@ -32,10 +31,12 @@ margin-top: 2rem;
     align-items: center;
     margin-top: 0rem;
     width: 96%;
-    border: 2px solid gray;
     padding: 10px;
     border-radius: 0 0 7px 7px;
     margin: 0 auto;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -49,7 +50,7 @@ margin-top: 2rem;
 }
 
 .time-item-color {
-    color: brown;
+    color: red;
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -62,11 +63,11 @@ progress[value] {
     -webkit-appearance: progress-bar;
     appearance: progress-bar;
 }
+
 .arrival-card-gray {
     background-color: gainsboro;
     margin-top: 0;
     border-radius: 0 0 7px 7px;
-    border: 2px solid gray;
     width: 96%;
     display: flex;
     flex-direction: column;
@@ -78,18 +79,19 @@ progress[value] {
 }
 
 .arrival-card-white-smoke {
-    background-color: whitesmoke;
+
     color: black;
 }
 
-.collection-cards{
+.collection-cards {
     border-radius: 7px 7px 0 0;
-    border: 2px solid gray;
     width: 96%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0 3rem 0;
     margin-top: 0;
+    background-color: $color2;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

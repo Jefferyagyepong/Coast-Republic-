@@ -4,68 +4,82 @@ import Image from "next/image";
 export default function Blog() {
   return (
     <div className="blog-container">
-      <br/>
-      <div className="blog-item">
-        <br />
-        <br />
-        <br />{" "}
-        <Link
-          href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
-          className=""
-          target="_blank"
-        >
+      <p>We write and share blogs on fashion. check out here</p>{" "}<br/>
+      <nav>
+        <Link href={"#image-1"} className="nav-arrows">
           <Image
-            src={"/basqu.jpg"}
-            width={170}
-            height={180}
-            alt="blog background"
-            className="blog-image"
-          />{" "}
-          <br />
-        </Link>
-        <Link
-          href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
-          className=""
-          target="_blank"
-        >
-          {" "}
-          <br />
-          <br />{" "}
-          <span>
-            <b> What Makes Men Look Weak Mistakes Killing Your confidence</b>
-          </span>
-        </Link>
-      </div>
-      <div className="blog-item">
-        <br />
-        <br />
-        <br />{" "}
-        <Link
-          href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
-          className=""
-          target=""
-        >
+            src="/arrow-back-circle-outline.svg"
+            alt="back arrow svg"
+            width={20}
+            height={20}
+          />
+        </Link> swipe
+        <Link href={"#image-2"} className="nav-arrows">
           <Image
-            src={"/blog1.jpg"}
-            width={170}
-            height={180}
-            alt="blog background"
-            className="blog-image"
-          />{" "}
-          <br />
+            src="/arrow-forward-circle-outline.svg"
+            alt="forward arrow"
+            width={20}
+            height={20}
+          />
         </Link>
-        <Link
-          href={"https://www.realmenrealstyle.com/mens-confidence-mistakes/"}
-          className=""
-          target=""
-        >
-          {" "}
-          <br />
-          <br />{" "}
-          <span>
-            <b> How To Dress For Your Age ( 20s, 30s, 40s, 50+ )</b>
-          </span>
-        </Link>
+      </nav>
+      <div className="list-wrapper">
+        <ul className="list">
+          <li className="item">
+            <div className="content">
+              <Link
+                href={
+                  "https://www.realmenrealstyle.com/mens-confidence-mistakes/"
+                }
+                target="_blank"
+              >
+                <Image
+                  src={"/basqu.jpg"}
+                  width={170}
+                  height={180}
+                  alt="basquet"
+                  id="image-1"
+                />{" "}
+              </Link>
+            </div>
+            <br />
+            <Link
+              href={
+                "https://www.realmenrealstyle.com/mens-confidence-mistakes/"
+              }
+              className="blog-link"
+            >
+              What Makes Men Look Weak Mistakes Killing Your confidence
+            </Link>
+          </li>
+          <li className="item">
+            <div className="content">
+              <Link
+                href={
+                  "https://www.realmenrealstyle.com/mens-confidence-mistakes/"
+                }
+                target=""
+              >
+                <Image
+                  src={"/blog1.jpg"}
+                  width={170}
+                  height={180}
+                  alt="blog background"
+                  id="image-2"
+                />{" "}
+              </Link>
+            </div>
+            <br />
+            <Link
+              href={
+                "https://www.realmenrealstyle.com/mens-confidence-mistakes/"
+              }
+              className="blog-link"
+            >
+              How To Dress For Your Age ( 20s, 30s, 40s, 50+ )
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );

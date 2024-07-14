@@ -2,7 +2,8 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
 import Terms from "../components/Footer/Terms";
-import Footer from "../components/Footer/Footer";
+import Newsletter from "@/components/Footer/Newsletter";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +43,8 @@ export default function terms() {
 
         <Terms />
 
-        <Footer />
+        <Newsletter />
+        <FootBottom/>
       </main>
     </>
   );
