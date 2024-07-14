@@ -33,14 +33,14 @@ const Home = ({ products }) => {
         <meta name="twitter:description" content="We sell thrifts " />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
         <meta property="og:title" content="Clothing Store" />
         <meta property="og:description" content="We sell tshirts and shoes" />
         <meta property="og:url" content="https://coast-republic.vercel.app/" />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
         <link rel="apple-touch-icon" href="/favicon.ico" />
 
