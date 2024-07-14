@@ -5,7 +5,6 @@ import About from "../components/About";
 import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function about() {
@@ -13,13 +12,23 @@ export default function about() {
     <>
       <Head>
         <title>About us | Coast Republic</title>
-        <link rel="apple-touch-icon" href="" />
-        <meta property="og:title" content="Home | Coast Republic" />
-        <meta property="og:type" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
 
-        <meta name="description" content="Coast Republic  Store" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@coastrepublicgh" />
+        <meta name="twitter:creator" content="@coastrepublicgh" />
+        <meta name="twitter:title" content="Clothing Store" />
+        <meta name="twitter:description" content="We sell thrifts " />
+        <meta
+          name="twitter:image"
+          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+        />
+        <meta property="og:title" content="Clothing Store" />
+        <meta property="og:description" content="We sell tshirts and shoes" />
+        <meta property="og:url" content="https://coast-republic.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+        />
         <meta
           name="keywords"
           content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store"
@@ -31,7 +40,7 @@ export default function about() {
       </Head>
       <main>
         <Header />
-      
+
         <About />
 
         <Footer />

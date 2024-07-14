@@ -26,15 +26,23 @@ const Home = ({ products }) => {
     <>
       <Head>
         <title>Coast Republic | T-shirts and more</title>
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta property="og:title" content="Coast Republic store." />
-        <meta property="og:type" content="E-commerce website application" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@coastrepublicgh" />
+        <meta name="twitter:creator" content="@coastrepublicgh" />
+        <meta name="twitter:title" content="Clothing Store" />
+        <meta name="twitter:description" content="We sell thrifts " />
         <meta
-          property="og:description"
-          content="Coast Republic store. We sell t-shirts and hoodies"
+          name="twitter:image"
+          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
         />
-        <meta property="og:url" content="https://coast-republic.vercel.app" />
-        <meta property="og:image" content="/crlogo2.png" />
+        <meta property="og:title" content="Clothing Store" />
+        <meta property="og:description" content="We sell tshirts and shoes" />
+        <meta property="og:url" content="https://coast-republic.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+        />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
 
         <meta name="description" content="Coast Republic  Store" />
         <meta
@@ -61,9 +69,9 @@ const Home = ({ products }) => {
         <Show />
         <CoastApp />
         <FlashSale />
-        <Collection/>
+        <Collection />
         <div className={styles.container}>
-          <Sort/>
+          <Sort />
           <div className={styles.cards}>
             {products.map(product => (
               <CategoryCard key={product.id} product={product} />
@@ -74,7 +82,7 @@ const Home = ({ products }) => {
         <Title />
         <Blog />
         <Newsletter />
-        <Brands/>
+        <Brands />
 
         <Footer />
       </main>

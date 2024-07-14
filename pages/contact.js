@@ -15,11 +15,22 @@ export default function contact() {
     <>
       <Head>
         <title>Contact Us | Coast Republic</title>
-        <link rel="apple-touch-icon" href="" />
-        <meta property="og:title" content="Home | Coast Republic" />
-        <meta property="og:type" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@coastrepublicgh" />
+        <meta name="twitter:creator" content="@coastrepublicgh" />
+        <meta name="twitter:title" content="Clothing Store" />
+        <meta name="twitter:description" content="We sell thrifts " />
+        <meta
+          name="twitter:image"
+          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+        />
+        <meta property="og:title" content="Clothing Store" />
+        <meta property="og:description" content="We sell tshirts and shoes" />
+        <meta property="og:url" content="https://coast-republic.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+        />
 
         <meta name="description" content="Coast Republic  Store" />
         <meta
@@ -33,10 +44,10 @@ export default function contact() {
       </Head>
       <main>
         <Header />
-     
+
         <Contact />
         <ContactForm />
-        <Footer/>
+        <Footer />
       </main>
     </>
   );

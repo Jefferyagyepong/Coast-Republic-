@@ -9,16 +9,9 @@ export default function Header() {
   return (
     <header id="header" className="sticky">
       <Link href={"./"}>
-        <Image src={"/crlogo.svg"} width={77} height={70} alt="logo" className="logo" />
+        <Image src={"/coast.svg"} width={170} height={150} alt="logo" className="logo" />
       </Link>
       <div className="right">
-        <Image
-          src={"/Search.svg"}
-          width={20}
-          height={30}
-          alt="cart"
-          className="search"
-        />
         <section className="top-nav">
           <input id="menu-toggle" type="checkbox" />
 
