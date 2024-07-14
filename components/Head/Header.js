@@ -34,7 +34,7 @@ export default function Header() {
           </li>
           <li>
             <Link href={"/shop"} className="header-link">
-              Products
+              Shop
             </Link>
           </li>
           <li>

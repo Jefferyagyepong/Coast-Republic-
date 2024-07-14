@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="footer-flex">
         <Link href={"/"}> Home</Link>
         <Link href={"/about"}> About</Link>
-        <Link href={"/shop"}> Product</Link>
+        <Link href={"/shop"}> shop</Link>
         <Link href={"/contact"}> Contact</Link>
       </div>
 
@@ -24,7 +24,6 @@ export default function Footer() {
       <br />
       <h4>Information</h4>
       <div className="footer-flex">
-        <Link href={"/help"}> Help Center</Link>
         <Link href={"/"}> Payment Methods</Link>
         <Link href={"/"}> Return & Refund</Link>
         <Link href={"/privacy"}> Privacy Policy</Link>
