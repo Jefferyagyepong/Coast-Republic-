@@ -16,7 +16,7 @@ const Navbar = () => {
       <Link href="/cart">
         <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
       </Link>
-      <span> {getItemsCount()}</span>
+      <b> {getItemsCount()}</b>
     </div>
   );
 };

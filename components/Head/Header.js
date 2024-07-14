@@ -15,7 +15,7 @@ export default function Header() {
             width={90}
             height={70}
             alt="logo"
-            className="logo"
+      
           />
         </Link>
         <CartBasket />

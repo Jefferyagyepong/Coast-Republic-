@@ -4,7 +4,7 @@ export default function IbridApp() {
       <div className="ibrid-box">
         <h3 className="ibrid-heading">Download Our App</h3>
         <span>
-          Unlock a world of limetless possiblities. Download the Ibrid app and
+          Unlock a world of limetless possiblities. Download the Coast Republic app and
           embark on a journey of discovery and connection.
         </span>
 
