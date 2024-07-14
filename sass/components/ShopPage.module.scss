@@ -17,6 +17,12 @@
   justify-content: space-between;
 
 }
+.inline-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
 
 .card {
   display: grid;

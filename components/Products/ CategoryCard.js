@@ -7,30 +7,30 @@ import Link from "next/link";
 const CategoryCard = ({ product }) => {
   const dispatch = useDispatch();
   return (
- 
-      <div className={styles.card}>
-       <br/> <Link href={"/"}>
-          <Image
-            src={product.image}
-            height={160}
-            width={140}
-            alt=""
-            className={styles.border}
-          />
-        </Link>
-
-        <h4 className={styles.title}>{product.product}</h4><br/>
-        <p className={styles.category}>{product.category}</p><br/>
-        <p className={styles.price}>&#8373; {product.price}</p><br/>
-        <p className={styles.description}>{product.description}</p>
-        <button
-          onClick={() => dispatch(addToCart(product))}
-          className="add-to-cart"
-        >
-          Add to Bag
-        </button>
+    <div className={styles.card}>
+      <br />{" "}
+      <Link href={"/"}>
+        <Image
+          src={product.image}
+          height={160}
+          width={147}
+          alt=""
+          className={styles.border}
+        />
+      </Link>
+      <h4 className={styles.title}>{product.product}</h4>
+      <br />
+      <div className="inline-flex">
+        <Image src={"/coast.svg"} width={30} height={40} alt="logo" />
+        <p> coast republic</p>
       </div>
-
+      <button
+        onClick={() => dispatch(addToCart(product))}
+        className="add-to-cart"
+      >
+        Add to Bag
+      </button>
+    </div>
   );
 };
 export default CategoryCard;
