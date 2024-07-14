@@ -22,7 +22,7 @@ export default function delivery() {
         />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta property="og:title" content="Coast republic" />
         <meta
@@ -35,7 +35,7 @@ export default function delivery() {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta
           name="keywords"
@@ -50,7 +50,7 @@ export default function delivery() {
         <Header />
         <Delivery />
         <Newsletter />
-        <FootBottom/>
+        <FootBottom />
       </main>
     </>
   );

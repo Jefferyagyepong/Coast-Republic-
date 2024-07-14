@@ -20,7 +20,7 @@ export default function about() {
         <meta name="twitter:description" content="our story" />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta property="og:title" content="Coast Republic inc" />
         <meta property="og:description" content="our story" />
@@ -30,7 +30,7 @@ export default function about() {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta
           name="keywords"
@@ -47,7 +47,7 @@ export default function about() {
         <About />
 
         <Newsletter />
-        <FootBottom/>
+        <FootBottom />
       </main>
     </>
   );

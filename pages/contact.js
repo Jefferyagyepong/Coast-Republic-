@@ -22,7 +22,7 @@ export default function contact() {
         <meta name="twitter:description" content="contact us " />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta property="og:title" content="Coast Republic inc" />
         <meta property="og:description" content="contact us" />
@@ -32,7 +32,7 @@ export default function contact() {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
 
         <meta name="description" content="Coast Republic  Store" />
@@ -51,7 +51,7 @@ export default function contact() {
         <Contact />
         <ContactForm />
         <Newsletter />
-        <FootBottom/>
+        <FootBottom />
       </main>
     </>
   );
