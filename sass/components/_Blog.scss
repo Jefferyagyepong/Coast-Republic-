@@ -34,6 +34,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+gap:1rem;
 }
 
 .list {
@@ -62,12 +63,7 @@ nav {
 
 }
 
-.nav-arrows {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
+
 
 .item-work {
     flex-shrink: 0;
@@ -97,7 +93,7 @@ nav {
 }
 
 .blog-link {
-    color: $color10;
+    color: black;
 }
 
 .blog-image {
