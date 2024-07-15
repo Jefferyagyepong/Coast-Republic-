@@ -99,8 +99,6 @@ input {
     font: inherit;
     padding: 0.3rem 3em;
     border-radius: 3px;
-    margin: 0 auto;
-    margin-top: 1rem;
 
 }
 
@@ -111,8 +109,6 @@ input[type=submit] {
     padding: 0.6rem 4.2rem;
     border-radius: 3px;
     transition: 0.5s;
-    margin: 0 auto;
-    margin-top: 1rem;
     cursor: pointer;
 
 }
@@ -124,7 +120,6 @@ textarea {
     padding: 0.6rem 4.2rem;
     border-radius: 3px;
     margin: 0 auto;
-    margin-top: 1rem;
     -webkit-appearance: textarea;
     -moz-appearance: textarea;
     -o-appearance: textarea;
@@ -133,7 +128,7 @@ textarea {
 }
 
 label {
-    text-align:left
+    margin-left: 2px;
 }
 
 input::-webkit-input-placeholder {
