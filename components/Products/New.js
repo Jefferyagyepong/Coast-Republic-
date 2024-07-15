@@ -7,7 +7,7 @@ export default function New() {
      
       <span>12</span><br/><br/>
     
-      <p>Discover what just landed at Coast Republic</p>
+      <p>Discover what just landed at Coast Republic</p><br/>
     </div>
   );
 }
