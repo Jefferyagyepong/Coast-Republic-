@@ -10,7 +10,7 @@ export default function Newsletter() {
           <form>
             <label for="email">Email:</label>
             <input type="email" name="email" placeholder="email" />
-           <br> <button className="button-link">Join</button>
+           <br/> <button className="button-link">Join</button>
           </form>
         </div>
       </div>
