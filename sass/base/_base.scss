@@ -97,7 +97,7 @@ input {
     display: block;
     max-width: 400px;
     font: inherit;
-    padding: 0.3rem 3.2em;
+    padding: 0.3rem 3em;
     border-radius: 3px;
     margin: 0 auto;
     margin-top: 1rem;
@@ -133,7 +133,7 @@ textarea {
 }
 
 label {
-    margin: 20px;
+    text-align:left
 }
 
 input::-webkit-input-placeholder {
