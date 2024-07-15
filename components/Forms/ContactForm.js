@@ -9,7 +9,6 @@ function ContactForm() {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
        
-          <div >
             <label for="email">Email</label>
             <input type="text" required />
             <ValidationError
@@ -34,7 +33,7 @@ function ContactForm() {
               onclick="return true"
               disabled={state.submitting}
             />
-          </div>
+          
       
       </form>
     </div>
