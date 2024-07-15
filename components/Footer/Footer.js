@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <Link href={"./"}>
-        <h2>Coast Republic Inc.</h2>
+        <h2>Coast Republic Inc.</h2><br/>
       </Link>
       <p>Your destination quality clothing and shoes</p>
       <br />
