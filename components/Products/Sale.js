@@ -4,10 +4,10 @@ export default function Sale() {
   return (
     <div className="shop-now">
       <div className="flex-row">
-        <h1 className="font-size">15</h1>
+        <h1 className="color-linear-gradiant">15</h1>
         <div className="flex-column">
-          <h4>%</h4>
-          <h4>OFF</h4>
+          <h4 className="color-linear-gradiant">%</h4>
+          <h4 className="color-linear-gradiant">OFF</h4>
         </div>
       </div>
       <br />
