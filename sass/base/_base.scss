@@ -121,17 +121,9 @@ textarea {
     -moz-appearance: textarea;
     -o-appearance: textarea;
     appearance: textarea;
-  
 }
-
-form {
-position: relative;
-}
-
-label {
-position: absolute;
-left: 10px;
-top: 10px;
+label, input {
+display: inline-block;
 }
 
 input::-webkit-input-placeholder {
