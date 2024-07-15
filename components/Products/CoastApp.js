@@ -2,7 +2,7 @@ import Image from 'next/image';
 export default function IbridApp() {
     return (
       <div className="integrity"> 
-        <h3>Download Our App</h3>
+        <h3>Download Our App</h3><br/>
         <p>
           Unlock a world of limetless possiblities. Download the Coast Republic app and
           embark on a journey of discovery and connection.
