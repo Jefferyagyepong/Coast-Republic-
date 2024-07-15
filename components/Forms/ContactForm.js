@@ -16,8 +16,8 @@ function ContactForm() {
               field="email"
               errors={state.errors}
             />
-          </div>
-          <div >
+        
+          
             <label for="comments">Message</label>
             <textarea name="comments"rows={6} required></textarea>
             <ValidationError
@@ -25,8 +25,8 @@ function ContactForm() {
               field="message"
               errors={state.errors}
             />
-          </div>
-          <div >
+        
+          
             <input
               type="submit"
               value="Send"
