@@ -82,7 +82,6 @@ button {
     transition: 0.5s ease;
     padding: 0.3rem 1rem;
     border-radius: 3px;
-    margin: 0.6rem;
     -webkit-appearance: button important;
     -moz-appearance: button;
     -o-appearance: button;
@@ -127,9 +126,14 @@ textarea {
   
 }
 
+form {
+position: relative;
+}
+
 label {
-    text-align:left;
-float:left;
+position: absolute;
+left: 10px;
+top: 10px;
 }
 
 input::-webkit-input-placeholder {
