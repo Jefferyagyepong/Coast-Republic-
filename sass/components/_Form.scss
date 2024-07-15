@@ -9,3 +9,64 @@ align-items:center;
    
 }
 
+
+input {
+    display: block;
+    max-width: 460px;
+    font: inherit;
+    border-radius: 3px;
+padding:0.6rem 3.6rem;
+
+}
+
+input[type=submit] {
+    display: block;
+    max-width: 400px;
+    font:inherit;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+padding:0.6rem 3.6rem;
+   background-color: $color9;
+color:black;
+
+}
+
+textarea {
+    display: block;
+    max-width: 460px;
+    font: inherit;
+    padding: 0.6rem 4.2rem;
+    border-radius: 3px;
+    margin: 0 auto;
+    -webkit-appearance: textarea;
+    -moz-appearance: textarea;
+    -o-appearance: textarea;
+    appearance: textarea;
+}
+label, input {
+display: block;
+}
+
+input::-webkit-input-placeholder {
+    font: inherit;
+}
+
+input::-moz-placeholder {
+    font: inherit;
+}
+
+input:-ms-input-placeholder {
+    font: inherit;
+}
+
+input::-ms-input-placeholder {
+    font: inherit;
+}
+
+input::placeholder {
+    font: inherit;
+  
+   
+}
+
