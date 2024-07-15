@@ -4,20 +4,20 @@ export default function Sale() {
   return (
     <div className="shop-now">
       <div className="flex-row">
-        <h1 className="color-linear-gradiant">15</h1>
+        <h1>15</h1>
         <div className="flex-column">
-          <h4 className="color-linear-gradiant">%</h4>
-          <h4 className="color-linear-gradiant">OFF</h4>
+          <h4 >%</h4>
+          <h4>OFF</h4>
         </div>
       </div>
       <br />
       <br />
-      <span >NEW SEASON</span>
+      <h6 >NEW SEASON</h5>
       <br />
       <br />
-      <span className="color-linear-gradiant">
+      <h6 className="color-linear-gradiant">
         Discount automatically applied at check out
-      </span>
+      </h6>
       <br />
       <br />
       <Link href={"/shop"} className="add-to-cart">
