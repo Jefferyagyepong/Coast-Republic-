@@ -69,7 +69,7 @@ html {
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-    text-align: center;
+    text-align:left;
 
 }
 
@@ -128,7 +128,8 @@ textarea {
 }
 
 label {
-    margin-left: 2px;
+    text-align:left;
+float:left;
 }
 
 input::-webkit-input-placeholder {
