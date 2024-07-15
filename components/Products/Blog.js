@@ -49,7 +49,7 @@ export default function Blog() {
               }
               className="blog-link"
             >
-              What Makes Men Look Weak Mistakes Killing Your confidence
+              <p>What Makes Men Look Weak Mistakes Killing Your confidence</p>
             </Link>
           </li>
           <li className="item">
@@ -76,7 +76,7 @@ export default function Blog() {
               }
               className="blog-link"
             >
-              How To Dress For Your Age ( 20s, 30s, 40s, 50+ )
+              <p>How To Dress For Your Age ( 20s, 30s, 40s, 50+ )</p>
             </Link>
           </li>
         </ul>
