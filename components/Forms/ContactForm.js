@@ -24,7 +24,7 @@ function ContactForm() {
               prefix="Message"
               field="message"
               errors={state.errors}
-            />
+            /><br/>
         
           
             <input
