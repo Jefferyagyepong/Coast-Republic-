@@ -1,11 +1,11 @@
 export default function Contact() {
   return (
     <div className="terms-wrap">
-      <h4>CONTACT US</h4>
-      <p clqssName="delivery-text">
-        IF YOU HAVE ANY QUESTIONS, PLEASE FEEL FREE TO REACH OUT VIA EMAIL. WE
-        WILL GET BACK TO YOU AS SOON AS WE CAN WE WOULD ALSO LOVE TO HEAR FROM
-        YOUR FEEDBACK, PLEASE LET US KNOW HOW WE CAN IMPROVE
+      <h3>Contact Us </h3>
+      <p className="delivery-text">
+        If you have any questions, please feel free to reach out via email. We
+        will get back to you as soon as we can we would also love to hear from
+        your feedback, please let us know how we can improve.
         coastrepgh@gmail.com INSTAGRAM.COM/COAST_REPUBLIC THANK YOU FOR SHOPPING
         WITH US!
       </p>
