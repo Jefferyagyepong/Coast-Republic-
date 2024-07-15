@@ -22,7 +22,7 @@ export default function Thrifts({ product }) {
         />
         <h5>Off-White</h5>
         <br />
-        <span>$90</span>
+        <h5>$90</h5>
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"
