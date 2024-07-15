@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="terms-wrap">
+    <div className="integrity">
       <h3>Contact Us </h3><br/>
       <p className="delivery-text">
         If you have any questions, please feel free to reach out via email. We
