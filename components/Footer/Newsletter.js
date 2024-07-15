@@ -6,7 +6,7 @@ export default function Newsletter() {
           <h3>Join our newsletter now!</h3><br/>
           <p>
             Register now and get our latest updates and promos
-          </p><br/>
+          </p>
           <form>
             <label for="email">Email:</label>
             <input type="email" name="email"  />
