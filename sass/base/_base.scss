@@ -74,14 +74,17 @@ html {
 }
 
 button {
+    display: block;
+    max-width: 400px;
+    font: inherit;
+    border-radius: 3px;
+    padding:0.6rem 3.6rem;
     background: none;
     color: black;
     font: inherit;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
-    padding: 0.5rem 1.2rem;
-    border-radius: 3px;
     -webkit-appearance: button important;
     -moz-appearance: button;
     -o-appearance: button;
