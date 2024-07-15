@@ -8,9 +8,10 @@ export default function Newsletter() {
             Register now and get our latest updates and promos
           </p><br/>
           <form>
+            <label for="email">Email:</label>
             <input type="email" name="email" placeholder="email" />
-            <button className="button-link">Join</button>
-          </form><br/>
+           <br> <button className="button-link">Join</button>
+          </form>
         </div>
       </div>
     );
