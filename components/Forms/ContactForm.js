@@ -15,7 +15,7 @@ function ContactForm() {
               prefix="Email"
               field="email"
               errors={state.errors}
-            />
+            /><br/>
         
           
             <label for="comments">Message</label>
