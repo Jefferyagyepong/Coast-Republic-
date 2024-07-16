@@ -1,4 +1,4 @@
-import Link from "next/link";
+ import Link from "next/link";
 
 export default function Sale() {
   return (
@@ -6,7 +6,7 @@ export default function Sale() {
       <div className="flex-row">
         <h1>15</h1>
         <div className="flex-column">
-          <h4 >%</h4>
+          <h4>%</h4>
           <h4>OFF</h4>
         </div>
       </div>
