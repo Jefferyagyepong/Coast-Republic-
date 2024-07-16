@@ -12,7 +12,7 @@ export default function Sale() {
       </div>
       <br />
       <br />
-      <h6 >NEW SEASON</h5>
+      <h6 >NEW SEASON</h6>
       <br />
       <br />
       <h6 className="color-linear-gradiant">
