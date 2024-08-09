@@ -181,12 +181,12 @@ animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 
   header {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 20px;
-
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-top: $p-t;
+      padding-bottom: $p-b;
 
   }
 
