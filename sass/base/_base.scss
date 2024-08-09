@@ -70,19 +70,21 @@ html {
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-    text-align: center;
+    text-align:left;
 
 }
 
 button {
+    display: block;
+    max-width: 400px;
+    font: inherit;
+    border-radius: 3px;
+    padding:0.6rem 3.6rem;
     background: none;
     font: inherit;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
-    padding: 0.3rem 1rem;
-    border-radius: 3px;
-    margin: 0.6rem;
     -webkit-appearance: button important;
     -moz-appearance: button;
     -o-appearance: button;
@@ -93,6 +95,7 @@ button:hover {
     opacity: 0.6;
 }
 
+<<<<<<< HEAD
 
 input:focus{
     outline: none;
@@ -139,6 +142,9 @@ input::placeholder {
   
    
 }
+=======
+
+>>>>>>> 20cc8ea130ef6db92257bb93363448d75f0f8535
 
 
 
@@ -169,42 +175,4 @@ li {
    
 
 }
-h1 {
-    font-weight: 700;
-  
 
-}
-
-h2 {
-    font-weight: 600;
- 
-}
-
-h3 {
-    font-weight: 700;
-    
-}
-
-h4 {
-    font-weight: 400;
-  
-}
-
-h5 {
-    font-weight: 300;
-   
-}
-
-h6 {
-    font-weight: 200;
- 
-}
-
-
-
-p, span{
-    line-height: 1.5;
-    font-weight: 100;
- 
-
-}

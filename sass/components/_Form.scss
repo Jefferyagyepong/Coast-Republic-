@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 
+<<<<<<< HEAD
 
 
 .form-control{
@@ -69,5 +70,79 @@ textarea{
     visibility: hidden;
     margin: 2px 0 12px 0;
     font-weight: bold;
+=======
+.form-container{
+    width: $width1;
+    display:flex;
+flex-direction:column;
+align-items:center;
+
+   
+}
+>>>>>>> 20cc8ea130ef6db92257bb93363448d75f0f8535
+
+
+input {
+    display: block;
+    max-width: 480px;
+    font: inherit;
+    border-radius: 3px;
+padding:0.6rem 3.6rem;
+background: gainsboro;
+border:none;
 
 }
+
+input[type=submit] {
+    display: block;
+    max-width: 400px;
+    font:inherit;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+padding:0.6rem 3.6rem;
+   background-color: $color9;
+color:black;
+
+}
+
+textarea {
+    display: block;
+    max-width: 480px;
+    font: inherit;
+    padding: 0.6rem 4.2rem;
+border:none;
+background:gainsboro;
+    border-radius: 3px;
+    margin: 0 auto;
+    -webkit-appearance: textarea;
+    -moz-appearance: textarea;
+    -o-appearance: textarea;
+    appearance: textarea;
+}
+label, input {
+display: block;
+}
+
+input::-webkit-input-placeholder {
+    font: inherit;
+}
+
+input::-moz-placeholder {
+    font: inherit;
+}
+
+input:-ms-input-placeholder {
+    font: inherit;
+}
+
+input::-ms-input-placeholder {
+    font: inherit;
+}
+
+input::placeholder {
+    font: inherit;
+  
+   
+}
+
