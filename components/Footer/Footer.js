@@ -4,12 +4,6 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-<<<<<<< HEAD
-      <div className="flex-align-right">
-        {" "}
-        <Link href={"./"}>
-          <h2>Coast Republic Inc.</h2>
-=======
       <Link href={"./"}>
         <h2>Coast Republic Inc.</h2><br/>
       </Link>
@@ -48,7 +42,6 @@ export default function Footer() {
         <Link href={"mailto:contact@coastrepublic.com"}>
           {" "}
           contact@coastrepublic.com
->>>>>>> 20cc8ea130ef6db92257bb93363448d75f0f8535
         </Link>
         <p>Your destination quality clothing and shoes</p>
         <ul>
