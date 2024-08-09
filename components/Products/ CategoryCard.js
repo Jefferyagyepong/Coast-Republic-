@@ -21,7 +21,7 @@ const CategoryCard = ({ product }) => {
       <h4 className={styles.title}>{product.product}</h4>
       <br />
       <div className="inline-flex">
-        <Image src={"/coast.svg"} width={30} height={40} alt="logo" />
+        <Image src={"/crlogo.svg"} width={30} height={40} alt="logo" />
         <p> coast republic</p>
       </div>
       <button

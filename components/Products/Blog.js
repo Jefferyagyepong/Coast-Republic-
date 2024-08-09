@@ -24,8 +24,8 @@ export default function Blog() {
         </Link>
       </nav>
       <div className="list-wrapper">
-        <ul className="list">
-          <li className="item">
+        <span className="list">
+          <span className="item">
             <div className="content">
               <Link
                 href={
@@ -51,8 +51,8 @@ export default function Blog() {
             >
               What Makes Men Look Weak Mistakes Killing Your confidence
             </Link>
-          </li>
-          <li className="item">
+          </span>
+          <span className="item">
             <div className="content">
               <Link
                 href={
@@ -78,8 +78,8 @@ export default function Blog() {
             >
               How To Dress For Your Age ( 20s, 30s, 40s, 50+ )
             </Link>
-          </li>
-        </ul>
+          </span>
+        </span>
       </div>
     </div>
   );

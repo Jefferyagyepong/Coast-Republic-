@@ -18,6 +18,8 @@ import FlashSale from "@/components/Products/FlashSale";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Sort from "@/components/Products/Sort";
+import Nav from "@/components/Head/Nav";
+import Toast from "@/components/Head/Toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,14 +60,16 @@ const Home = ({ products }) => {
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Coast Republic Inc" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/" />
         <meta
           name="google-site-verification"
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
       <main>
+        <Toast/>
         <Header />
+        <Nav/>
 
         <Sale />
         <Categories />

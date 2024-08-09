@@ -2,7 +2,7 @@
 export default function Newsletter() {
     return (
       <div className="newsletter-box">
-        <div className="newsletter-card">
+        
           <h3>Join our newsletter now!</h3>
           <p>
             Register now and get our latest updates and promos
@@ -12,6 +12,6 @@ export default function Newsletter() {
             <button className="button-link">Join</button>
           </form>
         </div>
-      </div>
+ 
     );
 }

@@ -6,6 +6,8 @@
   flex-direction: column;
   margin: $margin;
   justify-content: start;
+    padding-top: $p-t;
+      padding-bottom: $p-b;
 
 }
 
@@ -32,7 +34,7 @@
   flex-direction: column;
   align-items: center;
   margin: $margin;
-  padding: 0.25rem;
+
 }
 
 .text{
@@ -45,7 +47,5 @@
 }
 .add-to-cart{
   background-color: #222;
-  padding: 5px 8px;
-  margin-top: 8px;
-  margin-left: 0;
+
 }

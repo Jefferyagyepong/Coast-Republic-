@@ -40,6 +40,7 @@ html {
 a {
     text-decoration: none;
     transition: 0.5s ease;
+    color: black;
 
 }
 
@@ -65,7 +66,7 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
-    font-family: 'Berlin sans', 'Futura', 'Proxima Nova', 'Lato', 'Roboto', sans-serif;
+    font-family: 'Montserrat Medium', sans-serif;
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
@@ -75,7 +76,6 @@ html {
 
 button {
     background: none;
-    color: black;
     font: inherit;
     border: none;
     cursor: pointer;
@@ -93,47 +93,29 @@ button:hover {
     opacity: 0.6;
 }
 
+
+input:focus{
+    outline: none;
+}
 input {
+    margin-top: 2px;
     display: block;
-    max-width: 400px;
-    font: inherit;
-    padding: 0.3rem 3.2em;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-top: 1rem;
-
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid blueviolet;
 }
 
-input[type=submit] {
-    display: block;
-    max-width: 400px;
-    font: inherit;
-    padding: 0.6rem 4.2rem;
-    border-radius: 3px;
-    transition: 0.5s;
-    margin: 0 auto;
-    margin-top: 1rem;
-    cursor: pointer;
 
-}
-
-textarea {
-    display: block;
-    max-width: 400px;
-    font: inherit;
-    padding: 0.6rem 4.2rem;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-top: 1rem;
-    -webkit-appearance: textarea;
-    -moz-appearance: textarea;
-    -o-appearance: textarea;
-    appearance: textarea;
-  
+form{
+   max-width: 500px;
+   padding: 20px;
+    margin: 0  auto;
 }
 
 label {
     margin: 20px;
+    display: block;
 }
 
 input::-webkit-input-placeholder {
@@ -167,11 +149,12 @@ footer {
 ul {
     display: block;
     transition: 0.5s ease;
-    padding: 0;
+    padding: 10px;
     text-decoration: none;
     margin: 0 auto;
     list-style: none;
     text-align: center;
+
 }
 
 li {
@@ -180,7 +163,9 @@ li {
     display: block;
     transition: 0.5s ease;
     cursor: pointer;
-    padding: 1vh;
+    padding: 10px;
+        text-align: start;
+
    
 
 }

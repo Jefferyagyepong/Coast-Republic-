@@ -12,6 +12,8 @@ import {
   removeFromCart,
 } from "../redux/cart.slice";
 import styles from "../sass/components/CartPage.module.scss";
+import Nav from "@/components/Head/Nav";
+import FootBottom from "@/components/Footer/FootBottom";
 
 
 const CartPage = () => {
@@ -47,7 +49,7 @@ const CartPage = () => {
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Coast Republic Inc" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="" />
         <meta
           name="google-site-verification"
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
@@ -55,6 +57,7 @@ const CartPage = () => {
       </Head>
       <main>
         <Header />
+        <Nav/>
 
         <div className={styles.container}>
           {cart.length === 0 ? (
@@ -111,7 +114,7 @@ const CartPage = () => {
           <br />
           <Proceed />
         </div>
-        <Footer />
+    <FootBottom/>
       </main>
     </>
   );

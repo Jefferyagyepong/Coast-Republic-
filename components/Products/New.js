@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function New() {
   return (
     <div className="new">
-      <h3>WHATS NEW TODAY </h3>
+      <h3>WHATS NEW TODAY </h3><br/>
      
-      <span>12</span>
+      <span>12</span><br/><br/>
     
-      <p>Discover what just landed at Coast Republic</p>
+      <p>Discover what just landed at Coast Republic</p><br/>
     </div>
   );
 }

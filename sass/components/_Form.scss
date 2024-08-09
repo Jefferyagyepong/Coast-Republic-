@@ -1,16 +1,73 @@
 @import "../abstracts/variables";
 
-.form-container{
-    width: $width1;
-    margin: $margin;
-   
+
+
+.form-control{
+    margin-bottom: 10px;
+    position: relative;
 }
-form{
-    margin: $margin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
+.form-control label {
+   font-weight: bold;
+
+}
+.form-control input{
+  margin-top: 2px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid blueviolet;
+}
+textarea{
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid blueviolet;
+}
+.form-control input:focus {
+   outline: none;
+}
+.form-control textarea:focus {
+    outline: none;
+}
+.form-control.success input  {
+   border: 2px solid green;
+}
+@keyframes inputMove{
+    0%{
+        transform: translate(5px);
+
+        
+    }
+    25%{
+        transform: translate(-5px);
+    }
+    50%{
+        transform: translate(5px);
+    }
+    75%{
+        transform: translate(-5px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.form-control.error input{
+    border: 2px solid red;
+    animation-name: inputMove;
+    animation-duration: .5s;
+}
+.form-control .errorMessage{
+    visibility: hidden;
+    margin: 2px 0 12px 0;
+    font-weight: bold;
+
+}
+.form-control .complete-modal {
+    visibility: hidden;
+    margin: 2px 0 12px 0;
+    font-weight: bold;
 
 }
