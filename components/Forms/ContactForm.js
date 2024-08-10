@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 function ContactForm() {
   const [state, handleSubmit] = useForm("maygvdqr");
@@ -30,7 +30,8 @@ function ContactForm() {
                <button   type="submit"
               value="Send"
               onclick="return true"
-              disabled={state.submitting}>
+              disabled={state.submitting} className="button-link">
+            
           
          Submit </button>
           </div>
