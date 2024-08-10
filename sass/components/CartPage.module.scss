@@ -1,3 +1,4 @@
+@import "../abstracts/variables";
 .container {
 width:100%;
 
@@ -19,6 +20,12 @@ max-width:50px;
   align-items: center;
   justify-content: start;
 
+}
+.buttons-cart{
+  color: white;
+  padding: 8px 12px;
+  background-color: $colorgroup2b;
+  margin: 7px;
 }
 
 @media (max-width: 700px) {

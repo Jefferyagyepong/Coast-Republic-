@@ -7,7 +7,7 @@ function ContactForm() {
   }
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-contact">
         <div className="input-field">
              <input type="text" placeholder="enter your email" />
             <ValidationError

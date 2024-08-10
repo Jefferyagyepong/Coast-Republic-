@@ -76,9 +76,12 @@ text-align:center;
 }
 
 button {
-    display: block;
-    border-radius: 4px;
-    border: 2px solid $color11;
+border: none;
+padding: 15px 32px;
+background-color: $colorgroup3b;
+text-align: center;
+text-decoration: none;
+display: inline-block;
     cursor: pointer;
     transition: 0.5s ease;
     -webkit-appearance: button important;

@@ -2,43 +2,49 @@
 
 .form-container{
     width: $width1;
-    display:flex;
-flex-direction:column;
-align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
 
+  
    
 }
 .input-field textarea{
 display:block;
 width:100%;
-margin:20px;
 
+}
+.form-contact{
+   
+    width: 450px;
 }
 
 input{
 display:block;
 max-width:100%;
-padding:10px;
-border-radius:4px;
-margin:10px;
+padding:10px 0;
+border: none;
+border-bottom: 1px solid $colorgroup1a;
 }
 .input-field button{
 display:block;
 padding:10px;
 border-radius:4px;
-margin:10px;
 width:100%;
+margin-top: 10px;
 }
 
 
 
 .input-field input {
-    display: block;
-    max-width:350px;
-    font: inherit;
-    border-radius: 4px;
-border:2px solid $color11;
-background:none;
+display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid $colorgroup1a;
+    margin-bottom: 30px;
+    outline: none;
 
 }
 
@@ -46,8 +52,7 @@ background:none;
 textarea {
     display: block;
     width:100%;
-    border:2px solid $color11;
-padding:10px;
+    border:1px solid $colorgroup1a;
     border-radius: 4px;
     margin: 0 auto;
     -webkit-appearance: textarea;
@@ -82,5 +87,13 @@ input::placeholder {
     font: inherit;
   
    
+}
+
+@media (max-width: 700px) {
+.form-contact {
+
+        width: 91%;
+    }
+
 }
 

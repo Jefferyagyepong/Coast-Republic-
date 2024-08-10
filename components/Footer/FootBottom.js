@@ -2,7 +2,6 @@ import Image from "next/image";
 export default function FootBottom() {
   return (
     <div className="down">
-    
       <div className="payment-container">
         <Image
           src={"/momo.jpg"}
@@ -19,7 +18,7 @@ export default function FootBottom() {
           className="payment-logo"
         />
       </div>
-      <h6>Powered by Paystack</h6>
+      <h6 className="footer-tag">Powered by Paystack</h6>
     </div>
   );
 }

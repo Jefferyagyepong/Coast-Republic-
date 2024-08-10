@@ -19,11 +19,7 @@ const CategoryCard = ({ product }) => {
         />
       </Link>
       <h4 className={styles.title}>{product.product}</h4>
-      <br />
-      <div className="inline-flex">
-        <Image src={"/crlogo2.png"} width={15} height={10} alt="logo" />
-        <p> coast republic</p>
-      </div>
+
       <button
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"

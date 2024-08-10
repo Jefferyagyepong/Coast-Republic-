@@ -1,10 +1,11 @@
 import Link from "next/link";
-import Head from 'next/head';
+import React, { useState } from "react";
+import { PaystackButton } from "react-paystack";
+import FootBottom from "../components/Footer/FootBottom";
 import Image from "next/image";
-import Proceed from "@/components/Products/Proceed";
-import Header from "@/components/Head/Header";
-import Footer from "@/components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
+import Head from 'next/head';
+import Header from "@/components/Head/Header";
 // Importing actions from  cart.slice.js
 import {
   incrementQuantity,
@@ -13,7 +14,6 @@ import {
 } from "../redux/cart.slice";
 import styles from "../sass/components/CartPage.module.scss";
 import Nav from "@/components/Head/Nav";
-import FootBottom from "@/components/Footer/FootBottom";
 
 
 const CartPage = () => {
@@ -26,6 +26,26 @@ const CartPage = () => {
       0
     );
   };
+    const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
+    const amount = 400000;
+    const currency = "GHS";
+    const [email, setEmail] = useState("");
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+
+    const componentProps = {
+      email,
+      amount,
+      currency,
+      metadata: {
+        name,
+        phone,
+      },
+      publicKey,
+      text: "Pay Now",
+      onSuccess: () => alert("Order Succesfully placed "),
+      onClose: () => alert("Wait! Don't leave :("),
+    };
 
   return (
     <>
@@ -57,7 +77,7 @@ const CartPage = () => {
       </Head>
       <main>
         <Header />
-        <Nav/>
+        <Nav />
 
         <div className={styles.container}>
           {cart.length === 0 ? (
@@ -66,8 +86,7 @@ const CartPage = () => {
               <Link href={"/shop"}>
                 <br />
                 <br />
-
-            Back to store and add products to cart
+                Back to store and add products to cart
               </Link>
             </div>
           ) : (
@@ -84,7 +103,12 @@ const CartPage = () => {
                 // eslint-disable-next-line react/jsx-key
                 <div className={styles.body}>
                   <div className={styles.image}>
-                    <Image src={item.image} height="130" width="120" alt="product image" />
+                    <Image
+                      src={item.image}
+                      height="130"
+                      width="120"
+                      alt="product image"
+                    />
                   </div>
                   <p>{item.product}</p>
                   <p>$ {item.price}</p>
@@ -92,15 +116,20 @@ const CartPage = () => {
                   <div className={styles.buttons}>
                     <button
                       onClick={() => dispatch(incrementQuantity(item.id))}
+                      className="buttons-cart"
                     >
                       +
                     </button>
                     <button
                       onClick={() => dispatch(decrementQuantity(item.id))}
+                      className="buttons-cart"
                     >
                       -
                     </button>
-                    <button onClick={() => dispatch(removeFromCart(item.id))}>
+                    <button
+                      onClick={() => dispatch(removeFromCart(item.id))}
+                      className="buttons-cart"
+                    >
                       x
                     </button>
                   </div>
@@ -110,11 +139,46 @@ const CartPage = () => {
               <h2>Grand Total: $ {getTotalPrice()}</h2>
             </>
           )}
-          <br />
-          <br />
-          <Proceed />
+          <div className="form-container">
+            <form className="form-contact">
+              <h4>Fill in the form to verify your payment credentials</h4>
+
+              <div className="input-field">
+                <input
+                  type="text"
+                  id="name"
+                  onChange={e => setName(e.target.value)}
+                  placeholder="full name"
+                />
+              </div>
+              <div className="input-field">
+                <input
+                  type="text"
+                  id="email"
+                  onChange={e => setEmail(e.target.value)}
+                  placeholder="email"
+                />
+              </div>
+              <div className="input-field">
+                <input
+                  type="text"
+                  id="phone"
+                  onChange={e => setPhone(e.target.value)}
+                  placeholder="Phone number"
+                />
+              </div>
+              <br />
+              <div className="input-field">
+                <PaystackButton
+                  className="paystack-button"
+                  {...componentProps}
+                />
+              </div>
+            </form>
+          </div>
+
         </div>
-    <FootBottom/>
+        <FootBottom />
       </main>
     </>
   );

@@ -4,43 +4,55 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      
-     <div className="footer-align-left">
-      <Link href={"./"}>
-        <h4>Coast Republic Inc.</h4>
-      </Link>
-      <p>Your destination quality clothing and shoes</p>
+      <div className="footer-align-left">
+        <Link href={"./"}>
+          <h2 className="footer-tag">Coast Republic Inc.</h2>
+        </Link>
+        <p>Your destination quality clothing and shoes</p>
 
-      
-          <Link href={"/"}   className="footer-tag"> Home</Link>
-        
-          <Link href={"/about"} className="footer-tag"> About</Link>
-        
-<<<<<<< HEAD
-        <Link href={"/shop"} className="footer-tag"> shop</Link>
-          
-=======
-          <Link href={"/shop"} className="footer-tag"> shop</Link>
->>>>>>> b754e71d18910a101e4863e3075023f5bb5b3e51
-        
-          <Link href={"/contact"} className="footer-tag"> Contact</Link>
-      
-          <Link href={"/privacy"}  className="footer-tag"> Privacy Policy</Link>
-      
-          <Link href={"/terms"} className="footer-tag"> T & C&apos;s</Link>
-        
-  
-      <div className="footer-flex-contact">
-        <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
-        <Link href={"tel: +233 240 000000"} className="footer-tag"> +233 240 000000</Link>
-  
+        <Link href={"/"} className="footer-tag">
+          {" "}
+          Home
+        </Link>
+
+        <Link href={"/about"} className="footer-tag">
+          {" "}
+          About
+        </Link>
+
+        <Link href={"/shop"} className="footer-tag">
+          {" "}
+          shop
+        </Link>
+
+        <Link href={"/contact"} className="footer-tag">
+          {" "}
+          Contact
+        </Link>
+
+        <Link href={"/privacy"} className="footer-tag">
+          {" "}
+          Privacy Policy
+        </Link>
+
+        <Link href={"/terms"} className="footer-tag">
+          {" "}
+          T & C&apos;s
+        </Link>
+
+        <div className="footer-flex-contact">
+          <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
+          <Link href={"tel: +233 240 000000"} className="footer-tag">
+            {" "}
+            +233 240 000000
+          </Link>
         </div>
-        </div>
-      
+      </div>
+
       <hr className="short-width" />
 
       <FootBottom />
-      <h6>
+      <h6 className="footer-tag">
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
       </h6>
     </footer>
