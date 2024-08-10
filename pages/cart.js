@@ -104,10 +104,10 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
-                  <p>&#8373; {item.quantity * item.price}</p>
+                  <p>$ {item.quantity * item.price}</p>
                 </div>
               ))}
-              <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
+              <h2>Grand Total: $ {getTotalPrice()}</h2>
             </>
           )}
           <br />
