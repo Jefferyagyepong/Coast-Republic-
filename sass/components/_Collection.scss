@@ -1,13 +1,10 @@
-.collection-sort-box{
+.collection-sort-box {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    padding: 10px;
-}
-.collection-sort{
-    margin: 30px;
-}
+    padding-top: $p-t;
+    padding-bottom: $p-b;
 
-
+}

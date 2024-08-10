@@ -17,12 +17,12 @@ export default function Thrifts({ product }) {
             "/products/force1a.JPG"
           }
           alt="Air Force sneaker"
-          width={150}
+          width={170}
           height={180}
         />
         <h5>Off-White</h5>
         <br />
-        <span>$470</span>
+        <h5>$90</h5>
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"

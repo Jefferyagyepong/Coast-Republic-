@@ -40,6 +40,7 @@ html {
 a {
     text-decoration: none;
     transition: 0.5s ease;
+    color: black;
 
 }
 
@@ -65,24 +66,25 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
-    font-family: 'Berlin sans', 'Futura', 'Proxima Nova', 'Lato', 'Roboto', sans-serif;
+    font-family: 'Montserrat Medium', sans-serif;
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-    text-align: center;
+    text-align:left;
 
 }
 
 button {
+    display: block;
+    max-width: 400px;
+    font: inherit;
+    border-radius: 3px;
+    padding:0.6rem 3.6rem;
     background: none;
-    color: black;
     font: inherit;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
-    padding: 0.3rem 1rem;
-    border-radius: 3px;
-    margin: 0.6rem;
     -webkit-appearance: button important;
     -moz-appearance: button;
     -o-appearance: button;
@@ -93,70 +95,6 @@ button:hover {
     opacity: 0.6;
 }
 
-input {
-    display: block;
-    max-width: 400px;
-    font: inherit;
-    padding: 0.3rem 3.2em;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-top: 1rem;
-
-}
-
-input[type=submit] {
-    display: block;
-    max-width: 400px;
-    font: inherit;
-    padding: 0.6rem 4.2rem;
-    border-radius: 3px;
-    transition: 0.5s;
-    margin: 0 auto;
-    margin-top: 1rem;
-    cursor: pointer;
-
-}
-
-textarea {
-    display: block;
-    max-width: 400px;
-    font: inherit;
-    padding: 0.6rem 4.2rem;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-top: 1rem;
-    -webkit-appearance: textarea;
-    -moz-appearance: textarea;
-    -o-appearance: textarea;
-    appearance: textarea;
-  
-}
-
-label {
-    margin: 20px;
-}
-
-input::-webkit-input-placeholder {
-    font: inherit;
-}
-
-input::-moz-placeholder {
-    font: inherit;
-}
-
-input:-ms-input-placeholder {
-    font: inherit;
-}
-
-input::-ms-input-placeholder {
-    font: inherit;
-}
-
-input::placeholder {
-    font: inherit;
-  
-   
-}
 
 
 
@@ -167,11 +105,12 @@ footer {
 ul {
     display: block;
     transition: 0.5s ease;
-    padding: 0;
+    padding: 10px;
     text-decoration: none;
     margin: 0 auto;
     list-style: none;
     text-align: center;
+
 }
 
 li {
@@ -180,46 +119,10 @@ li {
     display: block;
     transition: 0.5s ease;
     cursor: pointer;
-    padding: 1vh;
+    padding: 10px;
+        text-align: start;
+
    
 
 }
-h1 {
-    font-weight: 700;
-  
 
-}
-
-h2 {
-    font-weight: 600;
- 
-}
-
-h3 {
-    font-weight: 700;
-    
-}
-
-h4 {
-    font-weight: 400;
-  
-}
-
-h5 {
-    font-weight: 300;
-   
-}
-
-h6 {
-    font-weight: 200;
- 
-}
-
-
-
-p, span{
-    line-height: 1.5;
-    font-weight: 100;
- 
-
-}

@@ -3,13 +3,12 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
--webkit-justify-content: space-between;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -o-align-items: center;
-    -ms-align-items: center;
- 
--moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-justify-content: space-between;
   -o-justify-content: space-between;
   -ms-justify-content: space-between;
 
@@ -22,18 +21,16 @@
   align-items: center;
 
 }
+
 .navlink {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
 }
 
 
 .navlink a {
   text-decoration: none;
-  color: black;
-}
-.navlink a:hover {
-  color: #f9826c;
+
 }
 

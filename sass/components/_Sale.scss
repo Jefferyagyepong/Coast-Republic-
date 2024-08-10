@@ -9,17 +9,15 @@
     border: none;
     justify-content: space-between;
     border-radius: 5px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     background-image: url("https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(50%);
-    color: white;
     font-weight: 700;
     background-attachment: scroll;
-    color: black;
     z-index: -90;
+    padding-top: $p-t;
+        padding-bottom: $p-b;
 
 
 }
@@ -37,13 +35,11 @@
 }
 
 .shop-now-link {
-    margin-top: 50px;
-    background-color: brown;
+
+
     text-align: center;
-    padding: 10px 20px;
     border-radius: 4px;
     transition: 0.5s ease;
-    color: white;
     z-index: -90;
 
 }
@@ -88,8 +84,6 @@
 
 
 .shop-nows {
-    background: white;
-    color: black;
     text-align: center;
     transition: 0.5s;
     padding: 9px 22px;

@@ -9,9 +9,9 @@
   },
   {
     "id": 2,
-    "product": "Air Force 1 07 white",
+    "product": "Reebok Classics",
     "category": "Sneaker",
-    "image": "/products/force2b.JPG",
+    "image": "/products/reebook1c.JPG",
     "price": 600.00
  
   },
@@ -52,7 +52,7 @@
   },
     {
       "id": 8,
-    "product": "Vans",
+    "product": "Reebok",
     "category": "Sneaker",
     "image": "/products/reebook1b.WEBP",
     "price": 600.00

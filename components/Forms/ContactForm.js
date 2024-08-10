@@ -9,32 +9,31 @@ function ContactForm() {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
        
-          <div >
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="text" required />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
-            />
-          </div>
-          <div >
-            <label for="comments">Message</label>
+            /><br/>
+        
+          
+            <label for="comments">Message:</label>
             <textarea name="comments"rows={6} required></textarea>
             <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
-            />
-          </div>
-          <div >
+            /><br/>
+        
+          
             <input
               type="submit"
               value="Send"
               onclick="return true"
               disabled={state.submitting}
             />
-          </div>
+          
       
       </form>
     </div>
