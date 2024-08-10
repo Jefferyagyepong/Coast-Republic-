@@ -8,39 +8,24 @@ align-items:center;
 
    
 }
+.input-field textarea{
+}
 
 
-input {
+.input-field input {
     display: block;
-    max-width: 480px;
+    width:100%;
     font: inherit;
     border-radius: 3px;
-padding:0.6rem 3.6rem;
-background: gainsboro;
-border:none;
+border:2px solid black;
 
 }
 
-input[type=submit] {
-    display: block;
-    max-width: 400px;
-    font:inherit;
-    border-radius: 3px;
-    transition: 0.5s;
-    cursor: pointer;
-padding:0.6rem 3.6rem;
-   background-color: $color9;
-color:black;
-
-}
 
 textarea {
     display: block;
-    max-width: 480px;
-    font: inherit;
-    padding: 0.6rem 4.2rem;
-border:none;
-background:gainsboro;
+    width:100%;
+    border:2px solid black;
     border-radius: 3px;
     margin: 0 auto;
     -webkit-appearance: textarea;
@@ -48,8 +33,11 @@ background:gainsboro;
     -o-appearance: textarea;
     appearance: textarea;
 }
-label, input {
-display: block;
+input:focus{
+outline:none;
+}
+textarea:focus{
+outline:none;
 }
 
 input::-webkit-input-placeholder {
