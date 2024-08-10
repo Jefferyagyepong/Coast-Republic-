@@ -5,7 +5,6 @@
   width: 100%;
   margin: $margin;
   background-color: inherit;
-  padding: 10px;
   background-color: transparent;
 
 
@@ -20,7 +19,7 @@
 }
 .slider-wrapper .image-list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   grid-gap: 10px;
   font-size: 0;
   border: none;
@@ -36,7 +35,6 @@
   width: 120px;
   height: 130px;
   object-fit: cover;
-  padding: 6px;
   border-radius: 3px;
 
 }

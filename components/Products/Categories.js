@@ -7,11 +7,11 @@ export default function Category() {
         <div className="category-items">
           <div className="category-item">
             <Image src={"/shirt.svg"} width={15} height={20} alt="phone" />
-            <span className="category-item-flex">T-Shirts</span>
+            <h6 className="category-item-flex">T-Shirts</h6>
           </div>
           <div className="category-item">
             <Image src={"/jacket.svg"} width={15} height={20} alt="video camera" />
-            <span className="category-item-flex">Jackets</span>
+            <h6 className="category-item-flex">Jackets</h6>
           </div>
           <div className="category-item">
             <Image
@@ -20,7 +20,7 @@ export default function Category() {
               height={20}
               alt="desktop computer"
             />
-            <span className="category-item-flex">Pants</span>
+            <h6 className="category-item-flex">Pants</h6>
           </div>
           <div className="category-item">
             <Image
@@ -29,15 +29,15 @@ export default function Category() {
               height={20}
               alt="Head phones"
             />
-            <span className="category-item-flex">Sneakers</span>
+            <h6 className="category-item-flex">Sneakers</h6>
           </div>
           <div className="category-item">
             <Image src={"/socks.svg"} width={15} height={20} alt="Head phones" />
-            <span className="category-item-flex">Socks</span>
+            <h6 className="category-item-flex">Socks</h6>
           </div>
           <div className="category-item">
             <Image src={"/watch.svg"} width={15} height={20} alt="Watches" />
-            <span className="category-item-flex">Watches</span>
+            <h6 className="category-item-flex">Watches</h6>
           </div>
         </div>
       </div>

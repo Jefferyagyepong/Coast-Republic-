@@ -6,19 +6,26 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  background-color: $color10;
-  color: $color6;
-  padding-top: 40px;
+  padding-top: $p-t;
+
+
+
+}
+.flex-align-right {
+  text-align: start;
+  width: 55%;
+ 
+
 }
 
 .ibrid-box-flex {
   display: flex;
   width: 100%;
   flex-direction: row;
-  padding: 10px;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: $p-t;
+  padding-bottom: $p-b;
 }
 
 hr {
@@ -26,41 +33,27 @@ hr {
   width: 100%;
 }
 
-.footer-heading {
-  text-align: center;
-}
 
 .footer-text {
   text-align: center;
   opacity: 0.8;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
-}
-footer a{
-  color: $color6;
-  opacity: 0.5;
 
 }
 
-.footer-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
-  padding: 10px;
-}
+
+
 .footer-flex-contact {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
-  padding: 10px;
+    text-align: start;
+    margin: 10px;
+
 }
 .short-width{
   width: 20%;
+  opacity: 0.1;
 }
 
 
@@ -77,19 +70,13 @@ footer a{
 .payment-logo {
   width: auto;
   height: auto;
-  padding: 0.5rem;
-  margin: 0.5rem;
   border-radius: 2px;
-  border: 1px solid $color3;
 }
 
 .button-submit {
   border: none;
-  color: $color0;
   text-align: center;
-  padding: 5px 11px;
   width: 66%;
-  margin-top: 1rem;
   transition: $transition-timing;
 }
 
@@ -106,10 +93,17 @@ footer a{
 
 
 .down {
-  margin: $margin;
+  margin: $p-t;
   text-align: center;
+
+}
+.newsletter-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: $p-t;
+  padding-bottom: $p-b;
 }
 
-.black {
-  color: $color1;
-}

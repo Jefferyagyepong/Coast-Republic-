@@ -1,9 +1,11 @@
 import Head from "next/head";
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Head/Header";
 import ProductCard from "../components/Products/ProductCard";
 import styles from "../sass/components/ShopPage.module.scss";
 import { getProducts } from "./api/products/index";
+import Newsletter from "@/components/Footer/Newsletter";
+import FootBottom from "@/components/Footer/FootBottom";
+import Nav from "@/components/Head/Nav";
 
 const ShopPage = ({ products }) => {
   return (
@@ -37,11 +39,12 @@ const ShopPage = ({ products }) => {
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Jeffery Agyepong" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="" />
       </Head>
 
       <main>
         <Header />
+        <Nav/>
 
         <div className={styles.container}>
           <h4 className={styles.text}>Whats new </h4>
@@ -60,7 +63,8 @@ const ShopPage = ({ products }) => {
           </div>
         </div>
 
-        <Footer />
+ 
+        <FootBottom/>
       </main>
     </>
   );

@@ -3,9 +3,8 @@ import Link from "next/link";
 export default function FlashSale() {
   return (
     <div className="flash-flex-box ">
-    
-        <h3>Flash Sale</h3><br/>
- 
+      <h3>Flash Sale</h3>
+      <br />
 
       <div className="collection-cards">
         <span>Up to 30% Off!</span>
@@ -28,14 +27,15 @@ export default function FlashSale() {
       </div>
       <div className="flash-card collection-card">
         <Image
-          src={
-            "https://images.unsplash.com/photo-1606297199333-e93f7d726cab?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
+          src={"/products/true1a.JPG"}
           width={280}
           height={300}
           alt="product"
         />
-        <h4 className="ibrid-heading">Adidas Yeezy</h4>
+        <h4 className="ibrid-heading">True Religion 
+
+          jeans
+        </h4>
         <div>
           <del>$300</del> - <span>$210</span>
         </div>

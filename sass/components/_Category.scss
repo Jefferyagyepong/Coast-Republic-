@@ -3,6 +3,8 @@
     width: $width1;
     padding: $padding;
     margin: $margin;
+    padding-top: $p-t;
+        padding-bottom: $p-b;
 }
 
 .category-heading {
@@ -21,12 +23,10 @@
 
 .category-item {
     display: flex;
-    padding: 3px 9px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: $margin;
-    border: 1px solid #808080;
     border-radius: 3px;
     transition: 0.5s;
     cursor: pointer;

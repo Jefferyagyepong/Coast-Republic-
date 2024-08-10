@@ -47,7 +47,7 @@ const App = () => {
       <div className="integrity">
         <Link href={"./"}>
           <Image
-            src={"/crlogo.svg"}
+            src={"/coast.svg"}
             width={77}
             height={70}
             alt="logo"

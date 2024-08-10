@@ -4,6 +4,7 @@ import About from "../components/About";
 import Header from "../components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
 import FootBottom from "@/components/Footer/FootBottom";
+import Nav from "@/components/Head/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function about() {
         <meta name="twitter:description" content="our story" />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta property="og:title" content="Coast Republic inc" />
         <meta property="og:description" content="our story" />
@@ -30,7 +31,7 @@ export default function about() {
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta
           name="keywords"
@@ -39,15 +40,16 @@ export default function about() {
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Jeffery Agyepong" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="" />
       </Head>
       <main>
         <Header />
+        <Nav/>
 
         <About />
 
         <Newsletter />
-        <FootBottom/>
+        <FootBottom />
       </main>
     </>
   );

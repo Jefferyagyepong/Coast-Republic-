@@ -4,17 +4,16 @@
   width: $width1;
   margin: $margin;
   text-align: center;
-  margin-top: 30px;
+    padding-top: $p-t;
+      padding-bottom: $p-b;
+
 
 }
 
 .shop-nows {
 
-  color: $color0;
   text-align: center;
-  padding: 5px 8px;
   border: none;
-  margin-top: 3rem;
   transition: $transition-timing;
   border-radius: 2px;
 
@@ -22,9 +21,6 @@
 }
 
 .proceed-link {
-  background-color: green;
-  color: white;
-  padding: 5px 8px;
   transition: $transition-timing;
   border-radius: 2px;
   display: flex;
@@ -39,9 +35,6 @@
 }
 
 
-.white {
-  color: $color0;
-}
 
 .shop-nows:hover {
   opacity: 0.3;
@@ -60,8 +53,7 @@
 .new {
   width: $width1;
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+
 
 
 }
@@ -72,15 +64,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 15%;
-  padding-bottom: 15%;
   margin: $margin;
   background-image: url("/wall.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: $color0;
-  margin-top: 4rem;
   -webkit-justify-content: center;
   -webkit-align-items: center;
   -moz-align-items: center;

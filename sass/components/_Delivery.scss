@@ -1,8 +1,9 @@
 @import "../abstracts/variables";
 .terms-wrap {
   width: $width1;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: $p-t;
+      padding-bottom: $p-b;
+  
 
 
 
@@ -11,5 +12,7 @@
   text-align: left;
   line-height: 1.9;
   font-weight: 100;
+width:93%;
+padding-left:12px;
 
 }

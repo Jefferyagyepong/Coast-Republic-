@@ -5,33 +5,55 @@
 header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: $p-t;
+      padding-bottom: $p-b;
+
 
 }
+.toast h2{
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic cubic-bezier(0.5, 1, 0.89, 1);
+  text-align: center;
+}
+@keyframes scale{
+  100%{
+    transform: scale(1);
+  }
+}
+.toast span{
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
 
+
+}
+.toast span:nth-child(1) {
+animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+
+}
+.toast span:nth-child(2) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+
+}
+@keyframes fade-in{
+  100%{
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 
 .inline {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
   justify-content: center;
-  gap: 0;
 
-}
-
-.header-top {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
 
 }
 
@@ -39,7 +61,7 @@ header {
 .header-link {
   padding: 0;
   transition: 0.3s ease;
-  color: $color9;
+
 
 }
 
@@ -52,9 +74,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   height: 20px;
   width: 100%;
+
 
 
 
@@ -158,19 +180,15 @@ header {
     display: none;
   }
 
-  .header-top {
+  header {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: $p-t;
+      padding-bottom: $p-b;
 
   }
 
-  .logo {
-    display: block;
-    margin-left: 0;
-    width: 100%;
-  }
 }
