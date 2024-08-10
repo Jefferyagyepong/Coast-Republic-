@@ -6,9 +6,9 @@ export default function Sale() {
  
       <h3>NEW SEASON</h3>
       
-      <h6>
+      <h2>
         Discount automatically applied at check out
-      </h6>
+      </h2>
       
       
       <Link href={"/shop"} className="add-to-cart">
