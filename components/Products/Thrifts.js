@@ -20,7 +20,7 @@ export default function Thrifts({ product }) {
           width={170}
           height={180}
         />
-        <h5>Off-White</h5>
+        <h5>Air Force 1 low </h5>
         <br />
         <h5>$90</h5>
         <button
