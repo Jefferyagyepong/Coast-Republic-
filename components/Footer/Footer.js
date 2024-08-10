@@ -26,7 +26,7 @@ export default function Footer() {
   
       <div className="footer-flex-contact">
         <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
-        <Link href={"tel: +233 240 000000"}> +233 240 000000</Link>
+        <Link href={"tel: +233 240 000000"} className="footer-tag"> +233 240 000000</Link>
       </div>
       </div>
     
