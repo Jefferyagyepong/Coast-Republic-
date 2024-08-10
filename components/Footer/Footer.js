@@ -15,7 +15,7 @@ export default function Footer() {
         
           <Link href={"/about"} className="footer-tag"> About</Link>
         
-          <Link href={"/shop"} className="footer-tag> shop</Link>
+          <Link href={"/shop"} className="footer-tag"> shop</Link>
         
           <Link href={"/contact"} className="footer-tag"> Contact</Link>
       
