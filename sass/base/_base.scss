@@ -70,18 +70,14 @@ html {
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-    text-align:left;
+    
 
 }
 
 button {
     display: block;
-    max-width: 400px;
     font: inherit;
     border-radius: 3px;
-    padding:0.6rem 3.6rem;
-    background: none;
-    font: inherit;
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
