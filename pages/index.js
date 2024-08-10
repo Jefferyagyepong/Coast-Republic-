@@ -78,7 +78,6 @@ const Home = ({ products }) => {
         <New />
         <Show />
         <CoastApp />
-        <FlashSale />
         <Collection />
         <div className={styles.container}>
           <Sort />
@@ -90,7 +89,6 @@ const Home = ({ products }) => {
         </div>
 
         <Title />
-        <Blog />
         <Newsletter />
         <Brands />
 
