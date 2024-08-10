@@ -34,18 +34,7 @@ function ContactForm() {
           
          Submit </button>
           </div>
-            
-         
         
-          
-           />
-   
-          
-          
-            
-            
-          
-      
       </form>
     </div>
   );
