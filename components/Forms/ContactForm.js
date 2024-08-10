@@ -9,7 +9,7 @@ function ContactForm() {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <div className="input-field">
-             <input type="text" required />
+             <input type="text" />
             <ValidationError
               prefix="Email"
               field="email"
@@ -18,7 +18,7 @@ function ContactForm() {
           </div>
           
           <div className="input-field"
-           <textarea name="comments"rows={10} required></textarea>
+           <textarea name="comments"rows={10} ></textarea>
             <ValidationError
               prefix="Message"
               field="message"
