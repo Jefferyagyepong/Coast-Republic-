@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
      <div className="footer-align-left">
       <Link href={"./"}>
-        <h2>Coast Republic Inc.</h2>
+        <h4>Coast Republic Inc.</h4>
       </Link>
       <p>Your destination quality clothing and shoes</p>
 
