@@ -10,32 +10,30 @@ export default function Footer() {
       </Link>
       <p>Your destination quality clothing and shoes</p>
 
-      <ul>
-        <li>
-          {" "}
-          <Link href={"/"}   classsName="footer-tag"> Home</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/about"} classsName="footer-tag"  > About</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/shop"} classsName="footer-tag" > shop</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/contact"} classsName="footer-tag"  > Contact</Link>
-        </li>
-        <li>
-          <Link href={"/privacy"}  classsName="footer-tag" > Privacy Policy</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/terms"} classsName="footer-tag"  > T & C&apos;s</Link>
-        </li>
       
-      </ul>
+          {" "}
+          <Link href={"/"}   className="footer-tag"> Home</Link>
+        
+          {" "}
+          <Link href={"/about"} className="footer-tag"  > About</Link>
+        
+        
+          {" "}
+          <Link href={"/shop"} className="footer-tag" > shop</Link>
+        
+        
+          {" "}
+          <Link href={"/contact"} className="footer-tag"> Contact</Link>
+        
+        
+          <Link href={"/privacy"}  className="footer-tag"> Privacy Policy</Link>
+      
+        
+          {" "}
+          <Link href={"/terms"} className="footer-tag"> T & C&apos;s</Link>
+        
+      
+      
 
       <div className="footer-flex-contact">
         <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
