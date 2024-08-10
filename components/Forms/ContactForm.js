@@ -8,31 +8,42 @@ function ContactForm() {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-       
-            <label for="email">Email:</label>
-            <input type="text" required />
+        <div className="input-field">
+             <input type="text" required />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
-            /><br/>
-        
+            />
+          </div>
           
-            <label for="comments">Message:</label>
-            <textarea name="comments"rows={6} required></textarea>
+          <div className="input-field"
+           <textarea name="comments"rows={6} required></textarea>
             <ValidationError
               prefix="Message"
               field="message"
-              errors={state.errors}
-            /><br/>
-        
+              errors={state.errors} />
+            
+          </div>
           
-            <input
-              type="submit"
+             <div className="input-field">
+               <button   type="submit"
               value="Send"
               onclick="return true"
-              disabled={state.submitting}
-            />
+              disabled={state.submitting}>
+          
+         Submit </button>
+          </div>
+            
+         
+        
+          
+           />
+   
+          
+          
+            
+            
           
       
       </form>
