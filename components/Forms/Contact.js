@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className="integrity">
-      <h3>Contact Us </h3><br/>
+      <h3>Contact Us </h3>
       <p className="delivery-text">
         If you have any questions, please feel free to reach out via email. We
         will get back to you as soon as we can we would also love to hear from
