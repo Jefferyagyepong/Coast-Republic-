@@ -26,19 +26,21 @@ max-width:50px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
-    
+    margin:0 auto;
   
     }
         .body {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
+margin:0 auto;
     
         }
 .buttons {
  display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
+margin:0 auto;
 
 }
 
