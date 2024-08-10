@@ -12,7 +12,8 @@ background-color: $color11;
 
 .footer-tag{
 color:white;
-float:left;
+display:block;
+margin:10px;
 padding: 10px;
 }
 
@@ -82,7 +83,7 @@ hr {
 }
 .footer-align-left{
 width:100%
-text-align:left
+text-align:left;
 }
 
 
