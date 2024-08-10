@@ -18,7 +18,7 @@ function ContactForm() {
           </div>
           
           <div className="input-field">
-           <textarea name="comments"rows={10} placeholder="Describe your challenges here. we offer 24 hour customer support"></textarea>
+           <textarea name="comments"rows={10} ></textarea>
             <ValidationError
               prefix="Message"
               field="message"
