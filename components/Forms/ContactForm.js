@@ -18,7 +18,7 @@ function ContactForm() {
           </div>
           
           <div className="input-field"
-           <textarea name="comments"rows={6} required></textarea>
+           <textarea name="comments"rows={10} required></textarea>
             <ValidationError
               prefix="Message"
               field="message"
