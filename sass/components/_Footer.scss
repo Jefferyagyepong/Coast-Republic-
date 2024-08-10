@@ -4,22 +4,12 @@ footer {
   width: 100%;
 display:flex;
 flex-direction:column;
-align-items: center;
+align-items:center;
   padding-top: $p-t;
 padding-bottom:0.3rem;
 background-color: $color11;
-text-align: left;
-color:blue;
 }
-footer h2, p{
- text-align:left;
-}
-.flex-align-right {
-  text-align: start;
-  width: 55%;
- 
 
-}
 .footer-tag{
 color:white;
 float:left;
@@ -41,16 +31,6 @@ hr {
 
   width: 100%;
 }
-
-
-.footer-text {
-  text-align: center;
-  opacity: 0.8;
-
-
-}
-
-
 
 .footer-flex-contact {
   display: flex;
@@ -93,18 +73,16 @@ hr {
   opacity: 0.6;
 }
 
-.form-footer {
-  width: 55%;
-  border: none;
-}
-
-
 
 
 .down {
   margin: $p-t;
   text-align: center;
 
+}
+.footer-align-left{
+width:100%
+text-align:left
 }
 
 
