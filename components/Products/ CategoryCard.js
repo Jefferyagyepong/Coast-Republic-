@@ -12,8 +12,8 @@ const CategoryCard = ({ product }) => {
       <Link href={"/"}>
         <Image
           src={product.image}
-          height={160}
-          width={147}
+          height={130}
+          width={120}
           alt=""
           className={styles.border}
         />
