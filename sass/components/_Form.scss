@@ -16,27 +16,28 @@ margin:20px;
 }
 input{
 display:block;
-width:100%;
+max-width:300px
 padding:10px;
 border-radius:4px;
 margin:10px;
 }
 .input-field button{
 display:block;
-width:100%;
 padding:10px;
 border-radius:4px;
 margin:10px;
+max-width:260px;
 }
 
 
 
 .input-field input {
     display: block;
-    width:100%;
+    max-width:350px;
     font: inherit;
-    border-radius: 3px;
+    border-radius: 4px;
 border:2px solid black;
+background:none;
 
 }
 
