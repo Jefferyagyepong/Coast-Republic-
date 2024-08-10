@@ -12,12 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <span>
+    <div className="basket-div">
       <Link href="/cart">
         <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
       </Link>
-      <b> {getItemsCount()}</b>
-    </span>
+      {getItemsCount()}
+    </div>
   );
 };
 
