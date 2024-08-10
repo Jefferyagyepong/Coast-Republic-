@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import Show from "../components/Products/Show";
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
-import Blog from "../components/Products/Blog";
-import Title from "../components/Products/Title";
 import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Products/Sale";
@@ -14,7 +12,6 @@ import { getProducts } from "./api/products/index";
 import Categories from "@/components/Products/Categories";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
-import FlashSale from "@/components/Products/FlashSale";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
@@ -79,16 +76,15 @@ const Home = ({ products }) => {
         <Show />
         <CoastApp />
         <Collection />
-        <div className={styles.container}>
+       
           
           <div className={styles.cards}>
             {products.map(product => (
               <CategoryCard key={product.id} product={product} />
             ))}
           </div>
-        </div>
+   
 
-        <Title />
         <Newsletter />
         <Brands />
 

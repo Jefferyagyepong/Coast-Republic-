@@ -12,8 +12,8 @@ const CategoryCard = ({ product }) => {
       <Link href={"/"}>
         <Image
           src={product.image}
-          height={130}
-          width={120}
+          height={100}
+          width={90}
           alt=""
           className={styles.border}
         />
@@ -21,7 +21,7 @@ const CategoryCard = ({ product }) => {
       <h4 className={styles.title}>{product.product}</h4>
       <br />
       <div className="inline-flex">
-        <Image src={"/crlogo.svg"} width={30} height={40} alt="logo" />
+        <Image src={"/crlogo2.png"} width={15} height={10} alt="logo" />
         <p> coast republic</p>
       </div>
       <button

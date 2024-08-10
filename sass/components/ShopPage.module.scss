@@ -1,17 +1,8 @@
 @import "../abstracts/variables";
 
-.container {
-  width: $width1;
-  display: flex;
-  flex-direction: column;
-  margin: $margin;
-  justify-content: start;
-
-}
-
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: $margin;
   align-items: start;
   justify-content: space-between;
@@ -45,5 +36,16 @@
 .add-to-cart{
   background-color: $color11;
 color:white;
+
+}
+@media (max-width: 700px) {
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: $margin;
+    align-items: start;
+    justify-content: space-between;
+
+  }
 
 }
