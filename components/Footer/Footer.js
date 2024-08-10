@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-     <div className="footer-align-left" >
+     <div className="footer-align-left">
       <Link href={"./"}>
         <h2>Coast Republic Inc.</h2>
       </Link>
