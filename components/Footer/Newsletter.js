@@ -1,7 +1,7 @@
 
 export default function Newsletter() {
     return (
-      <div className="newsletter-box">
+      <div className="ibrid-box">
   
           <h3>Join our newsletter now!</h3>
           <p>
