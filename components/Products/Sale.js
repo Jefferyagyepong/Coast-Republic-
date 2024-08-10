@@ -4,7 +4,7 @@ export default function Sale() {
   return (
     <div className="shop-now">
  
-      <h6>NEW SEASON</h6>
+      <h3>NEW SEASON</h3>
       
       <h6>
         Discount automatically applied at check out
