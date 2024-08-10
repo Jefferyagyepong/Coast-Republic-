@@ -13,26 +13,26 @@ export default function Footer() {
       <ul>
         <li>
           {" "}
-          <Link href={"/"}> Home</Link>
+          <Link href={"/"}   classsName="footer-tag"> Home</Link>
         </li>
         <li>
           {" "}
-          <Link href={"/about"}> About</Link>
+          <Link href={"/about"} classsName="footer-tag"  > About</Link>
         </li>
         <li>
           {" "}
-          <Link href={"/shop"}> shop</Link>
+          <Link href={"/shop"} classsName="footer-tag" > shop</Link>
         </li>
         <li>
           {" "}
-          <Link href={"/contact"}> Contact</Link>
+          <Link href={"/contact"} classsName="footer-tag"  > Contact</Link>
         </li>
         <li>
-          <Link href={"/privacy"}> Privacy Policy</Link>
+          <Link href={"/privacy"}  classsName="footer-tag" > Privacy Policy</Link>
         </li>
         <li>
           {" "}
-          <Link href={"/terms"}> T & C&apos;s</Link>
+          <Link href={"/terms"} classsName="footer-tag"  > T & C&apos;s</Link>
         </li>
       
       </ul>
