@@ -14,6 +14,6 @@ export default function Sale() {
       <Link href={"/shop"} className="add-to-cart">
         Shop Now
       </Link>
-    
+    </div>
   );
 }
