@@ -14,15 +14,15 @@ const ProductCard = ({ product }) => {
        <br/> <Link href={"/"}>
           <Image
             src={product.image}
-            height={160}
-            width={150}
+            height={130}
+            width={120}
             alt=""
             className={styles.border}
           />
         </Link>
 
         <h4 className={styles.title}>{product.product}</h4>
-        <p className={styles.price}> &#8373; {product.price}</p>
+        <p className={styles.price}> $ {product.price}</p>
         <p className={styles.description}>{product.description}</p>
         <button
           onClick={() => dispatch(addToCart(product))}

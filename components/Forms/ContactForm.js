@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 function ContactForm() {
   const [state, handleSubmit] = useForm("maygvdqr");
@@ -8,33 +8,34 @@ function ContactForm() {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-       
-            <label for="email">Email:</label>
-            <input type="text" required />
+        <div className="input-field">
+             <input type="text" placeholder="enter your email" />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
-            /><br/>
-        
+            />
+          </div>
           
-            <label for="comments">Message:</label>
-            <textarea name="comments"rows={6} required></textarea>
+          <div className="input-field">
+           <textarea name="comments"rows={10}  placeholder="Describe your challenges here. we offer 24hr chat support"></textarea>
             <ValidationError
               prefix="Message"
               field="message"
-              errors={state.errors}
-            /><br/>
-        
+              errors={state.errors} />
+            
+          </div>
           
-            <input
-              type="submit"
+             <div className="input-field">
+               <button   type="submit"
               value="Send"
               onclick="return true"
-              disabled={state.submitting}
-            />
+              disabled={state.submitting} className="button-link">
+            
           
-      
+         Submit </button>
+          </div>
+        
       </form>
     </div>
   );

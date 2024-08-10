@@ -45,7 +45,6 @@ export default function terms() {
 
         <Terms />
 
-        <Newsletter />
         <FootBottom/>
       </main>
     </>

@@ -2,11 +2,9 @@
 
 export default function Toast() {
   return (
-    <div className="toast">
-      <h2>
-        <span>We deliver to all 16 regions 🇬🇭</span>
-     
-      </h2>
-    </div>
+
+    <div class="example1">
+  <h3>  We deliver to all 16 regions 🇬🇭</h3>
+</div>
   );
 }

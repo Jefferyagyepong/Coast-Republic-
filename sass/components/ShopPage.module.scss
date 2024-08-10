@@ -6,8 +6,6 @@
   flex-direction: column;
   margin: $margin;
   justify-content: start;
-    padding-top: $p-t;
-      padding-bottom: $p-b;
 
 }
 
@@ -38,7 +36,6 @@
 }
 
 .text{
-  padding: $padding-small;
   opacity: 0.5;
 }
 .price, .description, .category{
@@ -46,6 +43,7 @@
   opacity: 0.5;
 }
 .add-to-cart{
-  background-color: #222;
+  background-color: $color11;
+color:white;
 
 }

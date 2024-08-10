@@ -40,7 +40,7 @@ html {
 a {
     text-decoration: none;
     transition: 0.5s ease;
-    color: black;
+    
 
 }
 
@@ -61,6 +61,7 @@ body,
 html {
     display: flex;
     flex-direction: column;
+text-align:center;
     min-height: 100vh;
     text-rendering: optimizeLegibility;
     width: 100vw;
@@ -70,19 +71,14 @@ html {
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-    text-align:left;
+    
 
 }
 
 button {
     display: block;
-    max-width: 400px;
-    font: inherit;
-    border-radius: 3px;
-    padding:0.6rem 3.6rem;
-    background: none;
-    font: inherit;
-    border: none;
+    border-radius: 4px;
+    border: 2px solid $color11;
     cursor: pointer;
     transition: 0.5s ease;
     -webkit-appearance: button important;

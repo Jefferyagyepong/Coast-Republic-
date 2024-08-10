@@ -19,6 +19,7 @@ export default function FootBottom() {
           className="payment-logo"
         />
       </div>
+      <h6>Powered by Paystack</h6>
     </div>
   );
 }

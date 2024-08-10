@@ -1,16 +1,20 @@
 
 export default function Newsletter() {
     return (
-      <div className="newsletter-box">
+      <div className="ibrid-box">
   
-          <h3>Join our newsletter now!</h3><br/>
+          <h3>Join our newsletter now!</h3>
           <p>
             Register now and get our latest updates and promos
-          </p><br/>
+          </p>
           <form>
-            <label for="email">Email:</label>
-            <input type="email" name="email"  />
-           <br/> <button className="button-link">Join</button>
+            <div className="input-field">
+                 <input type="email" name="email" placeholder="enter your email"/>   </div>
+            <div className="input-field">
+               <button className="button-link">Subscribe</button>
+                </div>
+           
+            
           </form>
         </div>
  

@@ -1,6 +1,7 @@
 .container {
+width:100%;
 
-  text-align: center;
+
 }
 .head{
   display: grid;
@@ -8,6 +9,9 @@
   align-items: center;
   justify-content: start;
   
+}
+.buttons{
+max-width:50px;
 }
 .body{
   display: grid;
@@ -22,14 +26,22 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
-    
+    margin:0 auto;
   
     }
         .body {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
+margin:0 auto;
     
         }
+.buttons {
+ display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+margin:0 auto;
+
+}
 
 }

@@ -17,9 +17,9 @@ import CoastApp from "@/components/Products/CoastApp";
 import FlashSale from "@/components/Products/FlashSale";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
-import Sort from "@/components/Products/Sort";
 import Nav from "@/components/Head/Nav";
-import Toast from "@/components/Head/Toast";
+
+import Toast from "../components/Head/Toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -78,10 +78,9 @@ const Home = ({ products }) => {
         <New />
         <Show />
         <CoastApp />
-        <FlashSale />
         <Collection />
         <div className={styles.container}>
-          <Sort />
+          
           <div className={styles.cards}>
             {products.map(product => (
               <CategoryCard key={product.id} product={product} />
@@ -90,7 +89,6 @@ const Home = ({ products }) => {
         </div>
 
         <Title />
-        <Blog />
         <Newsletter />
         <Brands />
 

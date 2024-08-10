@@ -84,10 +84,10 @@ const CartPage = () => {
                 // eslint-disable-next-line react/jsx-key
                 <div className={styles.body}>
                   <div className={styles.image}>
-                    <Image src={item.image} height="200" width="200" alt="" />
+                    <Image src={item.image} height="130" width="120" alt="product image" />
                   </div>
                   <p>{item.product}</p>
-                  <p>&#8373; {item.price}</p>
+                  <p>$ {item.price}</p>
                   <p>{item.quantity}</p>
                   <div className={styles.buttons}>
                     <button
@@ -104,10 +104,10 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
-                  <p>&#8373; {item.quantity * item.price}</p>
+                  <p>$ {item.quantity * item.price}</p>
                 </div>
               ))}
-              <h2>Grand Total: &#8373; {getTotalPrice()}</h2>
+              <h2>Grand Total: $ {getTotalPrice()}</h2>
             </>
           )}
           <br />

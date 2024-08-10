@@ -2,21 +2,21 @@
 
 footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+display:flex;
+flex-direction:column;
+align-items:center;
   padding-top: $p-t;
-
-
-
+padding-bottom:0.3rem;
+background-color: $color11;
 }
-.flex-align-right {
-  text-align: start;
-  width: 55%;
- 
 
+.footer-tag{
+color:white;
+display:block;
+margin:10px;
+padding: 10px;
 }
+
 
 .ibrid-box-flex {
   display: flex;
@@ -32,16 +32,6 @@ hr {
 
   width: 100%;
 }
-
-
-.footer-text {
-  text-align: center;
-  opacity: 0.8;
-
-
-}
-
-
 
 .footer-flex-contact {
   display: flex;
@@ -84,12 +74,6 @@ hr {
   opacity: 0.6;
 }
 
-.form-footer {
-  width: 55%;
-  border: none;
-}
-
-
 
 
 .down {
@@ -97,13 +81,9 @@ hr {
   text-align: center;
 
 }
-.newsletter-box{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: $p-t;
-  padding-bottom: $p-b;
+.footer-align-left{
+width:100%;
+text-align:left;
 }
+
 
