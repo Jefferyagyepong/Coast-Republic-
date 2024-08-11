@@ -6,6 +6,7 @@ import { getProducts } from "./api/products/index";
 import Newsletter from "@/components/Footer/Newsletter";
 import FootBottom from "@/components/Footer/FootBottom";
 import Nav from "@/components/Head/Nav";
+import Toast from "../components/Head/Toast";
 
 const ShopPage = ({ products }) => {
   return (
@@ -43,6 +44,7 @@ const ShopPage = ({ products }) => {
       </Head>
 
       <main>
+        <Toast />
         <Header />
         <Nav/>
 
