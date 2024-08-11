@@ -32,7 +32,7 @@ function Newsletter() {
     <div className="input-field">
         
       <button type="submit" disabled={state.submitting} className="button-link">
-        Submit
+        Subscribe 
       </button>
       </div>
   
