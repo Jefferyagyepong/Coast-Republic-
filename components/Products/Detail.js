@@ -22,7 +22,7 @@ const Detail = ({ product }) => {
         </Link>
 
         <h4>{product.product}</h4>
-        <Link href={"#"}><p className={styles.price}>View sizing</p>
+        <Link href={"/detail"}><p className={styles.price}>View sizing</p>
            </Link>
         
         <button
