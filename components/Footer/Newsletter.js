@@ -1,36 +1,40 @@
- import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
-export default function Newsletter() {
-   const [state, handleSubmit] = useForm("xzzpgjrb");
+
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
+function Newsletter() {
+  const [state, handleSubmit] = useForm("xzzpgjrb");
   if (state.succeeded) {
-      return <p>Thanks for joining our Newsletter </p>;
-    return (
-      <div className="ibrid-box">
+      return <p>Thanks for joining our Newsletter</p>;
+  }
+  return (
+       <div className="ibrid-box">
   
           <h3>Join our newsletter now!</h3>
           <p>
             Register now and get our latest updates and promos
           </p>
-          <form onSubmit={handleSubmit}>
-            <div className="input-field">
-                 <input
+    <form onSubmit={handleSubmit}>
+    
+      <input
         id="email"
         type="email" 
         name="email"
-        placeholder="enter your email"
       />
       <ValidationError 
         prefix="Email" 
         field="email"
-        errors={state.errors}/>
-         </div>
-            <div className="input-field">
-               <button type="submit" disabled={state.submitting} className="button-link">Subscribe</button>
-                </div>
-           
-            
-          </form>
-        </div>
- 
-    );
+        errors={state.errors}
+        placeholder="enter your email"
+      />
+      <button type="submit" disabled={state.submitting} className="button-link">
+        Submit
+      </button>
+    </form>
+    </div>
+  );
 }
+
+export default Newsletter;
+
+
