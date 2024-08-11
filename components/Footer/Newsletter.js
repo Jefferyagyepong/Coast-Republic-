@@ -15,7 +15,8 @@ function Newsletter() {
             Register now and get our latest updates and promos
           </p>
     <form onSubmit={handleSubmit}>
-    
+    <div className="input-field"></div>
+    <div></div>
       <input
         id="email"
         type="email" 
