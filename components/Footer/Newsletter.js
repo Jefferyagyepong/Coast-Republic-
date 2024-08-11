@@ -3,7 +3,7 @@ import { useForm, ValidationError } from "@formspree/react";
 export default function Newsletter() {
    const [state, handleSubmit] = useForm("xzzpgjrb");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p>Thanks for joining our Newsletter </p>;
     return (
       <div className="ibrid-box">
   
