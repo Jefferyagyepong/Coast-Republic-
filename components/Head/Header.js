@@ -17,7 +17,7 @@ export default function Header() {
             alt="logo"
           />
         </Link>
-        <h2 className="coast-republic-logo">Coast Republic Inc.</h2>
+        <h2>Coast Republic Inc.</h2>
         <CartBasket />
  
   
