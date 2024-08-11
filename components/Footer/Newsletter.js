@@ -20,6 +20,7 @@ function Newsletter() {
         id="email"
         type="email" 
         name="email"
+        placeholder="enter your email"
       />
       <ValidationError 
         prefix="Email" 
