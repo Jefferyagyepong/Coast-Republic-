@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Toast from "../components/Head/Toast";
 import { Inter } from "next/font/google";
 
 import Header from "../components/Head/Header";
@@ -47,6 +47,7 @@ export default function contact() {
         <link rel="icon" href="" />
       </Head>
       <main>
+        <Toast />
         <Header />
         <Nav/>
 
