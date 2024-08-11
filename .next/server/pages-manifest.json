@@ -1,6 +1,20 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_app": "pages/_app.js",
+  "/about": "pages/about.html",
+  "/api/products/[category]": "pages/api/products/[category].js",
+  "/api/products": "pages/api/products.js",
+  "/api/[name]": "pages/api/[name].js",
+  "/delivery": "pages/delivery.html",
+  "/contact": "pages/contact.html",
+  "/privacy": "pages/privacy.html",
+  "/cart": "pages/cart.html",
+  "/category/[category]": "pages/category/[category].js",
+  "/detail": "pages/detail.js",
+  "/terms": "pages/terms.html",
+  "/product": "pages/product.js",
+  "/": "pages/index.js",
+  "/shop": "pages/shop.js",
+  "/404": "pages/404.html"
 }
