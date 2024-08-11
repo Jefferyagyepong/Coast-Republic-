@@ -1,3 +1,4 @@
+import styles from "../sass/components/ShopPage.module.scss";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import About from "../components/About";
