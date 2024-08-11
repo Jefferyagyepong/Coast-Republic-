@@ -65,7 +65,7 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
-        <div className="sticky">
+        <div className={styles.sticky}>
            <Toast/>
         <Header />
           
