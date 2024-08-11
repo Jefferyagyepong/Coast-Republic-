@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 import styles from "/sass/components/ShopPage.module.scss";
-import Link from "next/link";
+
 
 
 const ProductCard = ({ product }) => {
@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
 
         <h4 className={styles.title}>{product.product}</h4>
         <Link href={"/details"}>
-          <p className={styles.price}>View sizing</p>
+          View sizing
            </Link>
         
         <button
