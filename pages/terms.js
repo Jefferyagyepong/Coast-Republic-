@@ -41,8 +41,10 @@ export default function terms() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+          <div className={styles.sticky}>
         <Toast />
         <Header />
+        </div>
         <Nav/>
 
         <Terms />
