@@ -1,4 +1,4 @@
-import styles from "../sass/components/ShopPage.module.scss";
+
 import Link from "next/link";
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
@@ -78,10 +78,10 @@ const CartPage = () => {
         />
       </Head>
       <main>
-          <div className={styles.sticky}>
+          
         <Toast />
         <Header />
-        </div>
+        
         <Nav />
 
         <div className={styles.container}>
