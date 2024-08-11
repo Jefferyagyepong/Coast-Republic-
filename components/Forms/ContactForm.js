@@ -1,7 +1,7 @@
   import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 function ContactForm() {
-  const [state, handleSubmit] = useForm("maygvdqr");
+  const [state, handleSubmit] = useForm("xzzpgjrb");
   if (state.succeeded) {
     return <p>Thanks for your response! our team will reply you soon. Kindly check your email </p>;
   }
