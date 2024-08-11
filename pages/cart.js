@@ -78,9 +78,10 @@ const CartPage = () => {
         />
       </Head>
       <main>
-          
+          <div className="sticky">
         <Toast />
         <Header />
+        </div>
         
         <Nav />
 
