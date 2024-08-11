@@ -7,7 +7,7 @@ export default function Brands() {
         <h6>Adidas </h6>
         <h6> Reebok</h6>
         <h6>Gildan</h6>
-        <h6>Essentials</h6>
+        <h6>Calvin Klien</h6>
       </div>
     );
 }
