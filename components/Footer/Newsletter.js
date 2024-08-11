@@ -22,7 +22,7 @@ export default function Newsletter() {
       <ValidationError 
         prefix="Email" 
         field="email"
-        errors={state.errors}
+        errors={state.errors}/>
          </div>
             <div className="input-field">
                <button type="submit" disabled={state.submitting} className="button-link">Subscribe</button>
