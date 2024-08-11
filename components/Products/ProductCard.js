@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
 
         <h4 className={styles.title}>{product.product}</h4>
         <p className={styles.price}> $ {product.price}</p>
-        <p>view Sizing  </p>
+        <p className={styles.price}>view Sizing  </p>
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"
