@@ -47,14 +47,13 @@ const ShopPage = ({ products }) => {
         <Nav/>
 
         <div className={styles.container}>
-          <h4 className={styles.text}>Whats new </h4>
-          <br />
-          <p className={styles.text}>
+          <h3>Whats new </h3>
+          
+          <p>
             Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one
             place
           </p>
-          <br />
-          <br />
+          
           <hr className="full-width" />
           <div className={styles.cards}>
             {products.map(product => (
