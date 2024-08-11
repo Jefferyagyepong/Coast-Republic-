@@ -5,7 +5,7 @@ import Privacy from "../components/Footer/Privacy";
 import Footer from "../components/Footer/Footer";
 import FootBottom from "@/components/Footer/FootBottom";
 import Nav from "@/components/Head/Nav";
-
+import Toast from "../components/Head/Toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function privacy() {
@@ -42,6 +42,7 @@ export default function privacy() {
         <link rel="icon" href="" />
       </Head>
       <main>
+        <Toast />
         <Header />
         <Nav/>
         <Privacy />
