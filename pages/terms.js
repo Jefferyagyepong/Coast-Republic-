@@ -5,6 +5,7 @@ import Terms from "../components/Footer/Terms";
 import Newsletter from "@/components/Footer/Newsletter";
 import FootBottom from "@/components/Footer/FootBottom";
 import Nav from "@/components/Head/Nav";
+import Toast from "../components/Head/Toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function terms() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Toast />
         <Header />
         <Nav/>
 
