@@ -1,4 +1,4 @@
-import styles from "../sass/components/ShopPage.module.scss";
+
 import Head from "next/head";
 import Toast from "../components/Head/Toast";
 import { Inter } from "next/font/google";
@@ -48,10 +48,10 @@ export default function contact() {
         <link rel="icon" href="" />
       </Head>
       <main>
-          <div className={styles.sticky}>
+       
         <Toast />
         <Header />
-        </div>
+      
         <Nav/>
 
         <Contact />
