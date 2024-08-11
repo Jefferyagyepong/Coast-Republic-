@@ -1,5 +1,9 @@
-
+ import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 export default function Newsletter() {
+   const [state, handleSubmit] = useForm("xzzpgjrb");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
     return (
       <div className="ibrid-box">
   
@@ -7,11 +11,21 @@ export default function Newsletter() {
           <p>
             Register now and get our latest updates and promos
           </p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="input-field">
-                 <input type="email" name="email" placeholder="enter your email"/>   </div>
+                 <input
+        id="email"
+        type="email" 
+        name="email"
+        placeholder="enter your email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+         </div>
             <div className="input-field">
-               <button className="button-link">Subscribe</button>
+               <button type="submit" disabled={state.submitting} className="button-link">Subscribe</button>
                 </div>
            
             
