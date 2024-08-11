@@ -47,8 +47,10 @@ export default function contact() {
         <link rel="icon" href="" />
       </Head>
       <main>
+          <div className={styles.sticky}>
         <Toast />
         <Header />
+        </div>
         <Nav/>
 
         <Contact />
