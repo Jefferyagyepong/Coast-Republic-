@@ -23,7 +23,8 @@ const ProductCard = ({ product }) => {
         </Link>
 
         <h4 className={styles.title}>{product.product}</h4>
-        <Link href={"#"}><p className={styles.price}>View sizing</p>
+        <Link href={"/details"}>
+          <p className={styles.price}>View sizing</p>
            </Link>
         
         <button
