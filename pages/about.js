@@ -5,6 +5,7 @@ import Header from "../components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
 import FootBottom from "@/components/Footer/FootBottom";
 import Nav from "@/components/Head/Nav";
+import Toast from "../components/Head/Toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function about() {
         <link rel="icon" href="" />
       </Head>
       <main>
+        <Toast />
         <Header />
         <Nav/>
 
