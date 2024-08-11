@@ -44,8 +44,10 @@ export default function about() {
         <link rel="icon" href="" />
       </Head>
       <main>
+          <div className={styles.sticky}>
         <Toast />
         <Header />
+        </div>
         <Nav/>
 
         <About />
