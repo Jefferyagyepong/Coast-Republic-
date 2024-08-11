@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 import styles from "/sass/components/ShopPage.module.scss";
@@ -22,8 +23,9 @@ const ProductCard = ({ product }) => {
         </Link>
 
         <h4 className={styles.title}>{product.product}</h4>
-        <p className={styles.price}> $ {product.price}</p>
-        <p className={styles.price}>View sizing</p>
+        <Link href={"#"}><p className={styles.price}>View sizing</p>
+           </Link>
+        
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"
