@@ -1,4 +1,4 @@
-import styles from "../sass/components/ShopPage.module.scss";
+
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
@@ -42,10 +42,10 @@ export default function terms() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          <div className={styles.sticky}>
+        
         <Toast />
         <Header />
-        </div>
+        
         <Nav/>
 
         <Terms />
