@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 import styles from "/sass/components/ShopPage.module.scss";
-import Link from "next/link";
 
 
 const Detail = ({ product }) => {
