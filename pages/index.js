@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Show from "../components/Products/Show";
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
 import Header from "../components/Head/Header";
@@ -81,7 +80,7 @@ const Home = ({ products }) => {
 
         <Thrifts />
         <New />
-        <Show />
+        
         <CoastApp />
         <Collection />
        
