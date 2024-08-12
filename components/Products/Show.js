@@ -3,7 +3,7 @@ export default function Show() {
    
   return (
    
-<section className="carousel" aria-label="Gallery">
+<section className="carousel" >
   <ol className="carousel_viewport">
     <li id="carousel_slide1"
         tabindex="0"
