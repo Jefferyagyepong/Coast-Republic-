@@ -10,8 +10,8 @@
 }
 
 ::-webkit-scrollbar {
-    height: 3px;
-    width: 7px;
+    height: 2px;
+    width: 5px;
     scroll-behavior: smooth;
     transition: 0.3s ease;
 }
@@ -21,7 +21,6 @@
     border-radius: 0;
     transition: 0.3s ease;
 
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,7 +29,7 @@
 }
 
 html {
-    font-size: 87.5%;
+    font-size: 91.5%;
     scroll-behavior: smooth;
     transition: 0.3s ease;
     overflow-x: hidden;
@@ -41,9 +40,7 @@ a {
     text-decoration: none;
     transition: 0.5s ease;
     
-
 }
-
 
 .MyApp {
     display: -webkit-box;
@@ -56,12 +53,11 @@ a {
     min-height: 100vh;
 }
 
-
 body,
 html {
     display: flex;
     flex-direction: column;
-text-align:center;
+    text-align:center;
     min-height: 100vh;
     text-rendering: optimizeLegibility;
     width: 100vw;
@@ -71,18 +67,16 @@ text-align:center;
     font: antialised;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
-background-color: #FAF9F6;
-    
-
+    background-color: #FAF9F6;
 }
 
 button {
-border: none;
-padding: 15px 32px;
-background-color: $colorgroup3b;
-text-align: center;
-text-decoration: none;
-display: inline-block;
+   border: none;
+   padding: 15px 32px;
+   background-color: $colorgroup3b;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
     cursor: pointer;
     transition: 0.5s ease;
     -webkit-appearance: button important;
@@ -96,33 +90,27 @@ button:hover {
 }
 
 
-
-
 footer {
     margin-top: auto;
 }
 
 ul {
     display: block;
-    transition: 0.5s ease;
     padding: 10px;
     text-decoration: none;
     margin: 0 auto;
     list-style: none;
-    text-align: center;
+    
 
 }
 
 li {
     margin: 0 auto;
-    text-align: center;
-    display: block;
     transition: 0.5s ease;
     cursor: pointer;
-    padding: 10px;
-        text-align: start;
 
-   
+    
+
 
 }
 
