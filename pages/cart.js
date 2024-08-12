@@ -90,8 +90,8 @@ const CartPage = () => {
             <div>
               <h3>Your Cart is Empty!</h3>
               <Link href={"/shop"}>
-                <br />
-                <br />
+              
+                
                 Back to store and add products to cart
               </Link>
             </div>
