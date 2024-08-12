@@ -45,11 +45,12 @@ export default function about() {
         <link rel="icon" href="" />
       </Head>
       <main>
+             <div className="sticky">
          
              <Toast />
         <Header />
           
-          
+          </div>
      
       
         <Nav/>
