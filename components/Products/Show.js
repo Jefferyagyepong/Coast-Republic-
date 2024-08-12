@@ -70,7 +70,7 @@ export default function Show() {
   
   
   
-  
+  /*
         <Image
             src={"/products/vans1a.WEBP"}
             className="image-item"
@@ -117,6 +117,7 @@ export default function Show() {
             width={70}
             height={60}
           />
+          */
     
   );
 }
