@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="integrity">
+    <div className="ibrid-box">
       <h3>Contact Us </h3>
       <p className="delivery-text">
         If you have any questions, please feel free to reach out via email. We
