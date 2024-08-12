@@ -161,7 +161,7 @@ export default function Privacy() {
         information, provide information about what that incentive is.]
       </p>
 
-      <h3 className="delivery/text">Your rights</h3>
+      <h3 className="delivery-text">Your rights</h3>
 
       <p className="delivery-text">
         GDPR If you are a resident of the EEA, you have the right to access the
