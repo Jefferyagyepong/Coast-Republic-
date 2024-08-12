@@ -8,7 +8,6 @@ import Sale from "../components/Products/Sale";
 import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.scss";
 import { getProducts } from "./api/products/index";
-import Categories from "@/components/Products/Categories";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
@@ -76,7 +75,7 @@ const Home = ({ products }) => {
         <Nav/>
 
         <Sale />
-        <Categories />
+        
 
         <Thrifts />
         <New />
