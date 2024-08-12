@@ -3,6 +3,8 @@ import Link from "next/link";
 export default function Show() {
    
   return (
+    <div>
+     
   
 <section className="carousel" >
   <ol className="carousel_viewport">
@@ -66,7 +68,7 @@ export default function Show() {
   </aside>
 </section
 
-  
+   </div>
   
   
   
