@@ -4,6 +4,13 @@ width:100%;
 
 
 }
+
+.sticky{
+width:100%;
+top:0;
+position:sticky;
+z-index:999;
+}
 .head{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
