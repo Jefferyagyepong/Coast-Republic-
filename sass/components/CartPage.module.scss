@@ -1,6 +1,7 @@
 @import "../abstracts/variables";
 .container {
 width:100%;
+margin-top:20px;
 
 }
 
@@ -11,6 +12,7 @@ position:sticky;
 z-index:999;
 }
 .head{
+margin-top:20px;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
