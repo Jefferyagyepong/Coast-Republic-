@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 import Image from "next/image";
