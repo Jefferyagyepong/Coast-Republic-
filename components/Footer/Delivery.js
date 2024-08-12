@@ -1,9 +1,9 @@
 export default function Delivery() {
   return (
-    <div className="terms-wrap">
+    <div className="ibrid-box">
       <h4>Delivery</h4>
 
-      <p>
+      <p className="delivery-text">
         All items are currently being made. Please allow 2-3 days for processing
         and delivery. All customers will receive delivery details via email upon
         dispatch, and are expected to follow up. tracking progress for any
