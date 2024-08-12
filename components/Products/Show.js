@@ -7,7 +7,7 @@ export default function Show() {
    
 
 <section className="carousel" aria-label="Gallery">
-  <ol classNam ="carousel__viewport">
+  <ol className="carousel__viewport">
     <li id="carousel__slide1"
         tabindex="0"
         className="carousel__slide">
