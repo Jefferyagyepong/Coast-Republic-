@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react";
+
 import Image from "next/image";
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
