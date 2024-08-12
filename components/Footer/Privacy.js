@@ -1,7 +1,7 @@
 export default function Privacy() {
   return (
     <div className="ibrid-box">
-      <h2 className="delivery-text">PRIVACY POLICY</h2>
+      <h2>PRIVACY POLICY</h2>
 
       <p className="delivery-text">
         This Privacy Policy describes how coast republic (the “Site” or “we”)
@@ -9,7 +9,7 @@ export default function Privacy() {
         or make a purchase from the Site.
       </p>
 
-      <h3 className="delivery-text">Contact</h3>
+      <h3>Contact</h3>
       <p className="delivery-text">
         After reviewing this policy, if you have additional questions, want more
         information about our privacy practices, or would like to make a
@@ -18,7 +18,7 @@ export default function Privacy() {
         Ghana.
       </p>
 
-      <h3 className="delivery-text">Collecting Personal Information</h3><br/>
+      <h3>Collecting Personal Information</h3><br/>
 
       <p className="delivery-text">
         When you visit the Site, we collect certain information about your
@@ -61,7 +61,7 @@ export default function Privacy() {
         business purpose: Personal Information collected: collected from you
       </p>
 
-      <h3 className="delivery-text">Minors</h3>
+      <h3>Minors</h3>
 
       <p className="delivery-text">
         The Site is not intended for individuals under the age of 18. We do not
@@ -70,7 +70,7 @@ export default function Privacy() {
         Information, please contact us at the address above to request deletion.
       </p>
 
-      <h3 className="delivery-text">Sharing Personal Information</h3><br/>
+      <h3>Sharing Personal Information</h3><br/>
 
       <p className="delivery-text">
         We share your Personal Information with service providers to help us
@@ -105,7 +105,7 @@ export default function Privacy() {
         https://optout.aboutads.info/.
       </p>
 
-      <h3 className="delivery-text">Using Personal Information</h3>
+      <h3>Using Personal Information</h3>
 
       <p className="delivery-text">
         We use your personal Information to provide our services to you, which
@@ -121,7 +121,7 @@ export default function Privacy() {
         your fundamental rights and freedoms.
       </p>
 
-      <h3 className="delivery-text">Retention</h3>
+      <h3>Retention</h3>
 
       <p className="delivery-text">
         When you place an order through the Site, we will retain your Personal
@@ -130,7 +130,7 @@ export default function Privacy() {
         the ‘Your rights’ section below.
       </p>
 
-      <h3 className="delivery-text">Automatic decision-making</h3>
+      <h3>Automatic decision-making</h3>
 
       <p className="delivery-text">
         If you are a resident of the EEA, you have the right to object to
@@ -148,7 +148,7 @@ export default function Privacy() {
         days.
       </p>
 
-      <h3 className="delivery-text">Selling Personal Information</h3>
+      <h3>Selling Personal Information</h3>
 
       <p className="delivery-text">
         Our Site sells Personal Information, as defined by the California
@@ -161,7 +161,7 @@ export default function Privacy() {
         information, provide information about what that incentive is.]
       </p>
 
-      <h3 className="delivery-text">Your rights</h3>
+      <h3>Your rights</h3>
 
       <p className="delivery-text">
         GDPR If you are a resident of the EEA, you have the right to access the
@@ -185,7 +185,7 @@ export default function Privacy() {
         these requests on your behalf, please contact us at the address above.
       </p>
 
-      <h3 className="delivery-text">Cookies</h3>
+      <h3>Cookies</h3>
 
       <p className="delivery-text">
         A cookie is a small amount of information that’s downloaded to your
@@ -200,7 +200,7 @@ export default function Privacy() {
         are a frequent visitor.
       </p>
 
-      <h3 className="delivery-text">Do Not Track</h3>
+      <h3>Do Not Track</h3>
 
       <p className="delivery-text">
         Please note that because there is no consistent industry understanding
@@ -209,7 +209,7 @@ export default function Privacy() {
         browser.
       </p>
 
-      <h3 className="delivery-text">Changes</h3>
+      <h3>Changes</h3>
 
       <p className="delivery-text">
         We may update this Privacy Policy from time to time in order to reflect,
@@ -217,7 +217,7 @@ export default function Privacy() {
         or regulatory reasons.
       </p>
 
-      <h3 className="delivery-text">Complaints</h3>
+      <h3>Complaints</h3>
 
       <p className="delivery-text">
         As noted above, if you would like to make a complaint, please contact us
