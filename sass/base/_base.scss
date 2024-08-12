@@ -13,7 +13,7 @@
     height: 2px;
     width: 5px;
     scroll-behavior: smooth;
-    transition: 0.3s ease;
+    
 }
 
 ::-webkit-scrollbar-track {
@@ -22,12 +22,8 @@
     transition: 0.3s ease;
 
 }
-
-::-webkit-scrollbar-thumb {
-  
-    transition: 0.3s ease;
-}
-
+ 
+    
 html {
     font-size: 87.4%;
     scroll-behavior: smooth;
