@@ -2,11 +2,11 @@ import Image from "next/image";
 export default function Show() {
    
   return (
-   
+   <div>
 <section className="carousel" >
   <ol className="carousel_viewport">
     <li id="carousel_slide1"
-        tabindex="0"
+      
         className="carousel_slide">
       <div className="carousel_snapper">
         <Link href={"#carousel_slide4"}
@@ -16,7 +16,7 @@ export default function Show() {
       </div>
     </li>
     <li id="carousel_slide2"
-        tabindex="0"
+        
         className="carousel_slide">
       <div className="carousel_snapper"></div>
       <Link href={"#carousel_slide1"}
@@ -25,7 +25,7 @@ export default function Show() {
          className="carousel_next">Go to next slide</Link>
     </li>
     <li id="carousel_slide3"
-        tabindex="0"
+      
         className="carousel_slide">
       <div className="carousel_snapper"></div>
       <Link href={"#carousel_slide2"}
@@ -34,7 +34,7 @@ export default function Show() {
          className="carousel_next">Go to next slide</Link>
     </li>
     <li id={"carousel_slide4"}
-        tabindex="0"
+      
         className="carousel_slide">
       <div className="carousel_snapper"></div>
       <Link href={"#carousel_slide3"}
@@ -64,6 +64,7 @@ export default function Show() {
     </ol>
   </aside>
 </section
+</div>
   
   
   
