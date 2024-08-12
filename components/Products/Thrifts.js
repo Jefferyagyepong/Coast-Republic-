@@ -6,10 +6,10 @@ export default function Thrifts({ product }) {
   const dispatch = useDispatch();
   return (
     <div className="ibrid-box">
-      <h3>THRIFTS ARENA</h3><br/>
+      <h3>THRIFTS ARENA</h3>
       <p>
         Explore thousands of products, new and affordable daily
-      </p><br/>
+      </p>
 
       <div className="arrival-card">
         <Image
@@ -21,7 +21,7 @@ export default function Thrifts({ product }) {
           height={180}
         />
         <h5>Air Force 1 low </h5>
-        <br />
+        
         <h5>$90</h5>
         <button
           onClick={() => dispatch(addToCart(product))}
