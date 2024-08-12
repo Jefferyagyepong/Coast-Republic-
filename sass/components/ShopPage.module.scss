@@ -3,7 +3,7 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: $margin;
+  margin: 0 auto;
   align-items: start;
   justify-content: space-between;
 
@@ -55,7 +55,7 @@ color:white;
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: $margin;
+    margin: 0 auto;
     align-items: start;
     justify-content: space-between;
 
