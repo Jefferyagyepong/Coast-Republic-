@@ -44,10 +44,10 @@ const ShopPage = ({ products }) => {
       </Head>
 
       <main>
-          
+               <div className="sticky">
         <Toast />
         <Header />
-      
+      </div>
         <Nav/>
 
         <div className={styles.container}>
