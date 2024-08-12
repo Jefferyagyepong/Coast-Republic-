@@ -5,7 +5,7 @@ footer {
 display:flex;
 flex-direction:column;
 align-items:center;
-  padding-top: $p-t;
+  padding-top: 1.3rem;
 padding-bottom:0.3rem;
 background-color: $colorgroup4b;
 }
@@ -50,7 +50,7 @@ opacity:0.3;
 
 
 .payment-container {
-  margin: $margin;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,7 +69,7 @@ opacity:0.3;
   border: none;
   text-align: center;
   width: 66%;
-  transition: $transition-timing;
+  transition: 0.3s ease;
 }
 
 .button-submit:hover {
@@ -79,7 +79,7 @@ opacity:0.3;
 
 
 .down {
-  margin: $p-t;
+  margin: 1.3rem;
   text-align: center;
 
 }
