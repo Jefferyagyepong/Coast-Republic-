@@ -10,6 +10,12 @@ background-color:white;
 z-index:999;
 
 }
+.sticky{
+width:100%;
+top:0;
+position:sticky;
+z-index:999;
+}
 .logo-name{
 font-family:'Milkshake', cursive;
 }
