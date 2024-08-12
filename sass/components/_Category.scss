@@ -1,13 +1,13 @@
 @import "../abstracts/variables";
 .category{
-width:$width;
-padding:$padding;
-margin:$margin;
+width: $width;
+padding: $padding;
+margin: $margin;
 
 }
-.catergory-heading{
+.category-heading{
 text-align:center;
-padding:$padding;
+padding: $padding;
 }
 .category-items{
 display:flex;
@@ -20,7 +20,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-margin:$margin;
+margin: $margin;
 broder-radius:3px;
 
 }
