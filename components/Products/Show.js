@@ -19,7 +19,15 @@ export default function Show() {
             height={60}
           />
          </div>
-        <div class="slide"><h1 class="slide-number">3</h1></div>
+        <div class="slide">
+                 <Image
+            src={"/products/calvin1c.JPG"}
+            className="image-item"
+            alt="img"
+            width={70}
+            height={60}
+          />
+            </div>
         <div class="slide"><h1 class="slide-number">4</h1></div>
         <div class="slide"><h1 class="slide-number">5</h1></div>
         <div class="slide"><h1 class="slide-number">6</h1></div>
