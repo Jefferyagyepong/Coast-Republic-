@@ -2,14 +2,14 @@
 export default function About() {
   return (
     <div className="ibrid-box">
-      <h1 className="delivery-text">Coast Republic Inc.</h1>
-      <p className="delivery-text">Established 2023.</p>
-      <p className="delivery-text">
+      <h1>Coast Republic Inc.</h1>
+      <p>Established 2023.</p>
+      <p>
         our physical store (inventory) is located in the Ashanti region of Ghana specifically Asokowa, kumasi. We
         deliver the products we sell accross all 16 regions.
       </p>
       <h3>Discovery</h3>
-      <p className="delivery-text">Online thrift store delivering  to your doorstep. 
+      <p>Online thrift store delivering  to your doorstep. 
         Coast Republic offers our potential customers the opportunity to 
           purchase thrift clothing and shoes, paying/checking out of system with 
           payment gateway which include Visa card and Mobile money. We collect a few information 
