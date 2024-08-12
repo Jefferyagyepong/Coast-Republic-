@@ -43,9 +43,11 @@ export default function privacy() {
         <link rel="icon" href="" />
       </Head>
       <main>
-          
-        <Toast />
+          <div className="sticky">
+              <Toast />
         <Header />
+            </div>
+      
       
       
         <Nav/>
