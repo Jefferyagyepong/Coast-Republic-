@@ -2,13 +2,13 @@ export default function Terms() {
   return (
     <div>
       <h2>Terms Of Service</h2>
-      <p className="delivery-text">
+      <p>
         This website is operated by Coast Republic. Throughout the site, the
         terms &#34;we&#34;, &#34;us&#34; and &#34;our&#34; refer to Coast
         Republic.
       </p>
 
-      <p className="delivery-text">
+      <p>
         Coast Republic offers this website, including all information, tools and
         services available from this site to you, the user, conditioned upon
         your acceptance of all terms, conditions, policies and notices stated
@@ -19,7 +19,7 @@ export default function Terms() {
         here in and/ or available by hyperlink.
       </p>
 
-      <p className="delivery-text">
+      <p>
         These terms of apply to all users of this website, including without
         limitation users who are browsers, vendors,customers, merchants,and/or
         contributors of content. Please read these Terms Of Service carefully
@@ -29,7 +29,7 @@ export default function Terms() {
         you may not access the website or use any services.
       </p>
 
-      <p className="delivery-text">
+      <p>
         If these Terms of Service are considered an offer, accounts is expressly
         limited to these Terms od Service. Any new features or tools whhich are
         added to the current store shall also be subject to the Terms and
@@ -43,7 +43,7 @@ export default function Terms() {
         allows us to sell our products and services to you.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 1 - ONLINE STORE TERMS By agreeing to these Terms of Service,you
         represent that you are at least the age of majority in your region or
         state/province of residence, or that your are the age of majority in
@@ -56,7 +56,7 @@ export default function Terms() {
         will result in immediate termination of your service.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 2 -GENERAL CONDITIONS We reserve the right to refuse service to
         anyone for any reason at any time. You understand that your content (not
         legit credit card information), may be transmit uncrypted and involve
@@ -71,7 +71,7 @@ export default function Terms() {
         otherwise affect these Terms.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION We are
         not responsible if information made available on this site is not
         accurate,complete or current. The material on this site is provided for
@@ -86,7 +86,7 @@ export default function Terms() {
         your responsibilty to monitor changes to our site.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 4 -MODIFICATIONS TO THE SERVICE AND PRICES Prices for our
         products are subject to change without notice. We reserve the right at
         any time to modify or discontinue te Service(or any part or content
@@ -95,7 +95,7 @@ export default function Terms() {
         discontinuation of the Service.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 5 -PRODUCTS OR SERVICES (if applicable) Certain products or
         services may be available exclusively online through the website. These
         products or services may have limited quantities and are subject to
@@ -116,7 +116,7 @@ export default function Terms() {
         that any errors in the Services will be corrected.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION We reserve the
         right to refuse any order you place with us. We may, in our sole
         discretion, limit or cancel quantities purchased per person, per
@@ -135,7 +135,7 @@ export default function Terms() {
         needed. For more details please review our Returns Policy.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 7- OPTIOPNAL TOOLS we may provide you with access to third-party
         tools over which we neither onitor nor have any control nor input. You
         acknowledge and agree that we provide access to such tools&quot;as
@@ -151,7 +151,7 @@ export default function Terms() {
         and/or Services shall also be subject to these Terms of Service.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 8- THIRD PARTY LINKS Certain content, products and services
         available via our Service may include aterials fro third-parties.
         Third-party links on this site may direct you to third-party websites
@@ -168,7 +168,7 @@ export default function Terms() {
         products should be directed to the third-party.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 9- USER COENTS, FEEDBACK AND OTHER SUBMISSIONS If, at our
         request, you send certain specific submissions(for example contest
         entries) or without a request fromus you send creative ideas,
@@ -196,13 +196,13 @@ export default function Terms() {
         assumme no liabilty for any commments posted by you or any third-party.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 10 - PERSONAL INFORMATION Your submission of personal
         information through the store is governed by our Privacy Policy. To view
         our Privacy Policy.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS Occasionally there may
         be information on our site or in the Service that contains typographical
         errors, inaccuracies or omissions that may relate to product
@@ -219,7 +219,7 @@ export default function Terms() {
         the Service or on any related website has been modified or updated.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 12 - PROHIBITED USES In addition to other prohibitions as set
         forth in the Terms of Service, you are prohibited from using the site or
         its content: (a) for any unlawful purpose; (b) to solicit others to
@@ -242,7 +242,7 @@ export default function Terms() {
         violating any of the prohibited uses.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY We do not
         guarantee, represent or warrant that your use of our service will be
         uninterrupted, timely, secure or error-free. We do not warrant that the
@@ -277,7 +277,7 @@ export default function Terms() {
         permitted by law.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 14 - INDEMNIFICATION You agree to indemnify, defend and hold
         harmless KRUDE and our parent, subsidiaries, affiliates, partners,
         officers, directors, agents, contractors, licensors, service providers,
@@ -288,7 +288,7 @@ export default function Terms() {
         violation of any law or the rights of a third-party.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 15 - SEVERABILITY In the event that any provision of these Terms
         of Service is determined to be unlawful, void or unenforceable, such
         provision shall nonetheless be enforceable to the fullest extent
@@ -298,7 +298,7 @@ export default function Terms() {
         provisions.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 16 - TERMINATION The obligations and liabilities of the parties
         incurred prior to the termination date shall survive the termination of
         this agreement for all purposes. These Terms of Service are effective
@@ -312,7 +312,7 @@ export default function Terms() {
         accordingly may deny you access to our Services (or any part thereof).
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 17 - ENTIRE AGREEMENT The failure of us to exercise or enforce
         any right or provision of these Terms of Service shall not constitute a
         waiver of such right or provision. These Terms of Service and any
@@ -326,13 +326,13 @@ export default function Terms() {
         party.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 18 - GOVERNING LAW These Terms of Service and any separate
         agreements whereby we provide you Services shall be governed by and
         construed in accordance with the laws of Ghana.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 19 - CHANGES TO TERMS OF SERVICE You can review the most current
         version of the Terms of Service at any time at this page. We reserve the
         right, at our sole discretion, to update, change or replace any part of
@@ -343,7 +343,7 @@ export default function Terms() {
         acceptance of those changes.
       </p>
 
-      <p className="delivery-text">
+      <p>
         SECTION 20 - CONTACT INFORMATION Questions about the Terms of Service
         should be sent to us at support@coastrepublic.com
       </p>
