@@ -65,10 +65,13 @@ const Home = ({ products }) => {
         />
       </Head>
       <main>
-        
+        <div className="sticky">
+          
            <Toast/>
         <Header />
           
+          </div>
+        
 
        
         <Nav/>
