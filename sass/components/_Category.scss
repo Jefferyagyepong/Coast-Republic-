@@ -1,1 +1,26 @@
 @import "../abstracts/variables";
+.category{
+width:$width;
+padding:$padding;
+margin:$margin;
+
+}
+.catergory-heading{
+text-align:center;
+padding:$padding;
+}
+.category-items{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+}
+.category-item{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+margin:$margin;
+broder-radius:3px;
+
+}
