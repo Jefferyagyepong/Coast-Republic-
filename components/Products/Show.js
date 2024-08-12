@@ -2,67 +2,65 @@ import Image from "next/image";
 import { useEffect } from "react";
 export default function Show() {
    
-
   return (
    
-
 <section className="carousel" aria-label="Gallery">
-  <ol className="carousel__viewport">
-    <li id="carousel__slide1"
+  <ol className="carousel_viewport">
+    <li id="carousel_slide1"
         tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper">
-        <Link href={"#carousel__slide4"}
-           className="carousel__prev">Go to last slide</Link>
-        <Link href={"#carousel__slide2"}
-           className="carousel__next">Go to next slide</Link>
+        className="carousel_slide">
+      <div className="carousel_snapper">
+        <Link href={"#carousel_slide4"}
+           className="carousel_prev">Go to last slide</Link>
+        <Link href={"#carousel_slide2"}
+           className="carousel_next">Go to next slide</Link>
       </div>
     </li>
-    <li id="carousel__slide2"
+    <li id="carousel_slide2"
         tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <Link href={"#carousel__slide1"}
-         className="carousel__prev">Go to previous slide</Link>
-      <Link href={"#carousel__slide3"}
-         className="carousel__next">Go to next slide</Link>
+        className="carousel_slide">
+      <div className="carousel_snapper"></div>
+      <Link href={"#carousel_slide1"}
+         className="carousel_prev">Go to previous slide</Link>
+      <Link href={"#carousel_slide3"}
+         className="carousel_next">Go to next slide</Link>
     </li>
-    <li id="carousel__slide3"
+    <li id="carousel_slide3"
         tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <Link href={"#carousel__slide2"}
-         className="carousel__prev">Go to previous slide</Link>
-      <Link href={"#carousel__slide4"}
-         className="carousel__next">Go to next slide</Link>
+        className="carousel_slide">
+      <div className="carousel_snapper"></div>
+      <Link href={"#carousel_slide2"}
+         className="carousel_prev">Go to previous slide</Link>
+      <Link href={"#carousel_slide4"}
+         className="carousel_next">Go to next slide</Link>
     </li>
-    <li id={"carousel__slide4"}
+    <li id={"carousel_slide4"}
         tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <Link href={"#carousel__slide3"}
-         className="carousel__prev">Go to previous slide</Link>
-      <Link href={"#carousel__slide1"}
-         className="carousel__next">Go to first slide</Link>
+        className="carousel_slide">
+      <div className="carousel_snapper"></div>
+      <Link href={"#carousel_slide3"}
+         className="carousel_prev">Go to previous slide</Link>
+      <Link href={"#carousel_slide1"}
+         className="carousel_next">Go to first slide</Link>
     </li>
   </ol>
-    <aside className="carousel__navigation">
-    <ol className="carousel__navigation-list">
-      <li className="carousel__navigation-item">
-        <Link href={"#carousel__slide1"}
-           className="carousel__navigation-button">Go to slide 1</Link>
+    <aside className="carousel_navigation">
+    <ol className="carousel_navigation-list">
+      <li className="carousel_navigation-item">
+        <Link href={"#carousel_slide1"}
+           className="carousel_navigation-button">Go to slide 1</Link>
       </li>
-      <li className="carousel__navigation-item">
-        <Link href={"#carousel__slide2"}
-           className="carousel__navigation-button">Go to slide 2</Link>
+      <li className="carousel_navigation-item">
+        <Link href={"#carousel_slide2"}
+           className="carousel_navigation-button">Go to slide 2</Link>
       </li>
-      <li className="carousel__navigation-item">
-        <Link href={"#carousel__slide3"}
-           className="carousel__navigation-button">Go to slide 3</Link>
+      <li className="carousel_navigation-item">
+        <Link href={"#carousel_slide3"}
+           className="carousel_navigation-button">Go to slide 3</Link>
       </li>
-      <li className="carousel__navigation-item">
-        <Link href={"#carousel__slide4"}
-           className="carousel__navigation-button">Go to slide 4</Link>
+      <li className="carousel_navigation-item">
+        <Link href={"#carousel_slide4"}
+           className="carousel_navigation-button">Go to slide 4</Link>
       </li>
     </ol>
   </aside>
