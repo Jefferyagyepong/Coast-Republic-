@@ -13,6 +13,8 @@
 .input-field textarea{
 display:block;
 width:100%;
+background-color:inherit;
+padding:5px 7px;
 
 }
 .form-contact{
@@ -26,6 +28,8 @@ max-width:100%;
 padding:10px 0;
 border: none;
 border-bottom: 1px solid $colorgroup1a;
+background-color:inherit;
+padding:5px 7px;
 }
 .input-field button{
 display:block;
@@ -46,6 +50,7 @@ display: block;
     margin-bottom: 30px;
     outline: none;
 border-radius:0;
+background-color:inherit;
 
 }
 
