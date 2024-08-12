@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link;
 export default function Show() {
    
   return (
-   <div>
+  
 <section className="carousel" >
   <ol className="carousel_viewport">
     <li id="carousel_slide1"
@@ -64,7 +65,7 @@ export default function Show() {
     </ol>
   </aside>
 </section
-</div>
+
   
   
   
