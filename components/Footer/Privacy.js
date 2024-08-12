@@ -1,6 +1,6 @@
 export default function Privacy() {
   return (
-    <div className="ibrid-box">
+    <div>
       <h2>PRIVACY POLICY</h2>
 
       <p className="delivery-text">
