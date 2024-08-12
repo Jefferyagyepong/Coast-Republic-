@@ -8,6 +8,8 @@ align-items:center;
 padding-right:20px;
 background-color:white;
 z-index:999;
+margin:  0 auto;
+top:0;
 
 }
 .sticky{
@@ -15,6 +17,7 @@ width:100%;
 top:0;
 position:sticky;
 z-index:999;
+margin:  0 auto;
 }
 .logo-name{
 font-family:'Milkshake', cursive;
@@ -26,6 +29,7 @@ font-family:'Milkshake', cursive;
  background-color: $colorgroup4b;
  color: white;
  top: 0;
+margin:  0 auto;
 height:18px;
  
 }
