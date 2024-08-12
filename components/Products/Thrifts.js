@@ -11,7 +11,7 @@ export default function Thrifts({ product }) {
         Explore thousands of products, new and affordable daily
       </p>
 
-      <div className="arrival-card">
+      <div className="ibrid-box">
         <Image
           src={
             "/products/force1a.JPG"
