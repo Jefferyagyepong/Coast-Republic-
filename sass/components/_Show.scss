@@ -2,7 +2,7 @@
    #slideshow {
       overflow: hidden;
       height: 510px;
-      width: 728px;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -13,8 +13,8 @@
 
     .slide {
       float: left;
-      height: 510px;
-      width: 728px;
+      height: 210px;
+      width: 100%;
     }
 
     .slide:nth-child(1) {
