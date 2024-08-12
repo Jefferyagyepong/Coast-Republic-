@@ -1,8 +1,6 @@
 @import "../abstracts/variables";
 .container {
 width:100%;
-padding-top:1.3rem;
-padding-bottom: 1.3rem;
 
 }
 
@@ -13,7 +11,7 @@ position:sticky;
 z-index:999;
 }
 .head{
-width:100%;
+
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
