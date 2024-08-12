@@ -42,10 +42,12 @@ export default function terms() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
-        
-        <Toast />
+        <div className="sticky">
+            <Toast />
         <Header />
+      
+          </div>
+        
       
         
         <Nav/>
