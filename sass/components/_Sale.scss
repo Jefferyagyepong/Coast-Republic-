@@ -5,6 +5,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+justify-content:center;
     align-items: center;
     border: none;
     justify-content: space-between;
@@ -15,9 +16,9 @@
     background-position: calc(50%);
     font-weight: 700;
     background-attachment: scroll;
-    z-index: -90;
+    z-index: 9;
     padding-top: $p-t;
-        padding-bottom: $p-b;
+    padding-bottom: $p-b;
 
 
 }
