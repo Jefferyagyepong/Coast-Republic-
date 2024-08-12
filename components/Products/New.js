@@ -5,7 +5,7 @@ export default function New() {
     <div className="ibrid-box">
      <br/> <h3>WHATS NEW TODAY </h3><br/>
      
-      <span>12</span><br/><br/>
+      <span>12</span>
     
       <p>Discover what just landed at Coast Republic</p><br/>
     </div>
