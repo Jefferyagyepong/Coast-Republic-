@@ -1,1 +1,64 @@
+@import "../abstracts/variables";
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: $margin;
+  align-items: start;
+  justify-content: space-between;
+
+}
+.sticky{
+width:100%;
+top:0;
+position:sticky;
+z-index:999;
+}
+
+.container{
+width:100%;
+text-align:left;
+}
+
+.inline-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: $margin;
+
+}
+
+      
+
+.text{
+  opacity: 0.5;
+}
+.price, .description, .category{
+  text-align: start;
+  opacity: 0.5;
+}
+.add-to-cart{
+  background-color: $color11;
+color:white;
+
+}
+@media (max-width: 700px) {
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: $margin;
+    align-items: start;
+    justify-content: space-between;
+
+  }
+
+}
