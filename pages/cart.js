@@ -1,4 +1,4 @@
-
+import styles from "../sass/components/ShopPage.module.scss";
 import Link from "next/link";
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
