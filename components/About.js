@@ -1,7 +1,7 @@
 
 export default function About() {
   return (
-    <div className="terms-wrap">
+    <div className="ibrid-box">
       <h1 className="delivery-text">Coast Republic Inc.</h1>
       <p className="delivery-text">Established 2023.</p>
       <p className="delivery-text">
