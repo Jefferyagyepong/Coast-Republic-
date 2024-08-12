@@ -123,6 +123,7 @@ const CartPage = () => {
                   <p>{item.quantity}</p>
                   <div className={styles.buttons}>
                     <button
+                      type ="button"
                       onClick={() => dispatch(incrementQuantity(item.id))}
                       className="buttons-cart"
                     >
