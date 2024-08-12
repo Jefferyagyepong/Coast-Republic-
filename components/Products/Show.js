@@ -3,8 +3,8 @@ export default function Show() {
    
   return (
 
-  <div class="carousel-container">
-  <div class="carousel-slide">
+  <div className="carousel-container">
+  <div className="carousel-slide">
        <Image
             src={"/products/vans1a.WEBP"}
             className="image-item"
@@ -13,7 +13,7 @@ export default function Show() {
             height={60}
           />
     </div>
-    <div class="carousel-slide">
+    <div className="carousel-slide">
       
             <Image
             src={"/products/george1b.JPG"}
@@ -23,7 +23,7 @@ export default function Show() {
             height={60}
           />
       </div>
-      <div class="carousel-slide">
+      <div className="carousel-slide">
         
                  <Image
             src={"/products/calvin1c.JPG"}
@@ -33,7 +33,7 @@ export default function Show() {
             height={60}
           />
         </div>
-        <div class="carousel-slide">
+        <div className="carousel-slide">
           
                  <Image
             src={"/products/calvin1a.WEBP"}
@@ -43,7 +43,7 @@ export default function Show() {
             height={60}
           />
           </div>
-          <div class="carousel-slide">
+          <div className="carousel-slide">
              
                  <Image
             src={"/products/true1a.JPG"}
@@ -55,7 +55,7 @@ export default function Show() {
     
             </div>
           
-          <div class="carousel-slide">
+          <div className="carousel-slide">
             
      
                 <Image
@@ -72,11 +72,6 @@ export default function Show() {
 </div>
 
   
-  
-  
-  
-     
-     
        
         
     
