@@ -1,20 +1,6 @@
 @import "../abstracts/variables";
  
 
-.carousel-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-.carousel-slide {
-  flex: 1 0 30%;
-  scroll-snap-align: center;
-}
-@media (max-width: 600px) {
-  .carousel-slide {
-    flex: 1 0 90%;
-  }
-}
 
 
 
