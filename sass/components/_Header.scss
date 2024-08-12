@@ -1,24 +1,12 @@
 @import "../abstracts/variables";
 
-.sticky{
-width:100%;
-top:0;
-position:sticky;
-z-index:999;
-}
-
 header {
   width: 100%;
 display:flex;
 flex-direction:row;
 align-items:center;
 
-
-
-
 }
-
-
 
 .example1 {
  width: 100%;
