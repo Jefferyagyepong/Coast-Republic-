@@ -6,7 +6,6 @@ import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
 import Contact from "../components/Forms/Contact";
 import ContactForm from "../components/Forms/ContactForm";
-import Newsletter from "@/components/Footer/Newsletter";
 import FootBottom from "@/components/Footer/FootBottom";
 import Nav from "@/components/Head/Nav";
 
