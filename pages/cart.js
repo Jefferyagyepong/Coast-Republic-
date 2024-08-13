@@ -80,11 +80,8 @@ const CartPage = () => {
       <main>
         <div className="sticky">
             <Toast />
-        <Header />
-      
-          </div>
-      
-        
+        <Header />  
+          </div>   
         <Nav />
 
         <div className={styles.container}>
@@ -150,10 +147,10 @@ const CartPage = () => {
               <h2>Grand Total: $ {getTotalPrice()}</h2>
             </>
           )}
+          <hr/>
           <div className="form-container">
             <form className="form-contact">
               <h4>Fill in the form to verify your payment credentials</h4>
-
               <div className="input-field">
                 <input
                   type="text"
