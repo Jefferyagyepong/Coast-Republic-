@@ -1,7 +1,7 @@
 export default function Delivery() {
   return (
     <div className="align-left">
-      <h2>Delivery</h4>
+      <h2>Delivery</h2>
 
       <p>
         All items are currently being made. Please allow 2-3 days for processing
