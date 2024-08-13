@@ -1,6 +1,6 @@
 export default function Privacy() {
   return (
-    <div>
+    <div className="align-left">
       <h2>PRIVACY POLICY</h2>
 
       <p>
