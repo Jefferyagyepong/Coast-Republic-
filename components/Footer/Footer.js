@@ -8,7 +8,7 @@ export default function Footer() {
         <Link href={"./"}>
           <h2 className="footer-tag">Coast Republic Inc.</h2>
         </Link>
-        <p>Your destination quality clothing and shoes</p>
+        <Address>7 Minetti ST, Asokwa-Kumasi</Addresss>
 
         <Link href={"/"} className="footer-tag">
           {" "}
@@ -38,6 +38,10 @@ export default function Footer() {
         <Link href={"/terms"} className="footer-tag">
           {" "}
           T & C&apos;s
+        </Link>
+          <Link href={"/delivery"} className="footer-tag">
+          {" "}
+          Delivery & Refunds
         </Link>
 
         <div className="footer-flex-contact">
