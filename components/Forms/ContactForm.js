@@ -7,34 +7,31 @@ function ContactForm() {
   }
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit} className="form-contact">
-        <div className="input-field">
-             <input type="text" placeholder="enter your email" />
+      <form onSubmit={handleSubmit}>
+        <label for="email">Email</label>
+             <input type="text" 
+            id="email"
+            placeholder="enter your email" />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
             />
-          </div>
-          
-          <div className="input-field">
-           <textarea name="comments"rows={10}  placeholder="Describe your challenges here. we offer 24hr chat support"></textarea>
+          <label for="message">Message</label>
+           <textarea name="comments"rows={10}  
+            id="message"
+            placeholder="Describe your challenges here. we offer 24hr chat support"></textarea>
             <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors} />
-            
-          </div>
-          
-             <div className="input-field">
-               <button   type="submit"
+              
+              <button   type="submit"
               value="Send"
               onclick="return true"
               disabled={state.submitting} className="button-link">
-            
-          
          Submit </button>
-          </div>
+          
         
       </form>
     </div>
