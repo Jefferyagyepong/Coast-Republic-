@@ -64,37 +64,23 @@ const Home = ({ products }) => {
       </Head>
       <main>
         <div className="sticky">
-          
            <Toast/>
-        <Header />
-          
-          </div>
-        
-
-       
+        <Header />   
+          </div> 
         <Nav/>
-
         <Sale />
-        
-
         <Thrifts />
         <New />
-        
         <CoastApp />
         <hr/>
         <Collection />
-       
-          
-          <div className={styles.cards}>
+              <div className={styles.cards}>
             {products.map(product => (
               <CategoryCard key={product.id} product={product} />
             ))}
           </div>
-   
-
         <Newsletter />
         <Brands />
-
         <Footer />
       </main>
     </>
