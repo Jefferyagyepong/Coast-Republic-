@@ -14,17 +14,19 @@ z-index:999;
 .head{
 margin-top:20px;
 width:100%;
-
-  display: grid;
+display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   justify-content: start;
+margin-bottom:20px;
   
 }
 .buttons{
 max-width:50px;
 }
 .body{
+padding-top:20px;
+padding-bottom:20px;
   display: grid;
   grid-template-columns:repeat(6, 1fr);
   align-items: center;
