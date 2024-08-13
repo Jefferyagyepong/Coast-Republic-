@@ -180,7 +180,7 @@ const CartPage = () => {
                   className="button-link"
                   {...componentProps}
                 />
-              </div>
+            
             </form>
           </div>
 
