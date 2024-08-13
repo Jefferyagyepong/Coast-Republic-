@@ -8,7 +8,7 @@ function ContactForm() {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <label for="email">Email</label>
+        
              <input type="text" 
             id="email"
             placeholder="enter your email" />
@@ -17,7 +17,7 @@ function ContactForm() {
               field="email"
               errors={state.errors}
             />
-          <label for="message">Message</label>
+          
            <textarea name="comments"rows={10}  
             id="message"
             placeholder="Describe your challenges here. we offer 24hr chat support"></textarea>
