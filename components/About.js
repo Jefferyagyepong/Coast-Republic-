@@ -1,7 +1,7 @@
 
 export default function About() {
   return (
-    <div>
+    <div className="align-left">
       <h1>Coast Republic Inc.</h1>
       <p>Established 2023.</p>
       <p>
