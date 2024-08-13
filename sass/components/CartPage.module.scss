@@ -41,25 +41,25 @@ margin:0 auto;
 
 @media (max-width: 700px) {
   .head {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    margin:0 auto;
+         display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+           margin:0 auto;
   
     }
         .body {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
-justify-content:center;
+          justify-content:center;
+          padding-left:20px;
 
-    
         }
 .buttons {
- display: grid;
+          display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
-margin:0 auto;
+          margin:0 auto;
 
 }
 
