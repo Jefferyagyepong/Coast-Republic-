@@ -1,57 +1,12 @@
 @import "../abstracts/variables";
 
-.form-container{
-    width: $width1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:0 auto;
-justify-content:center;
-
-}
-.input-field textarea{
-display:block;
-width:100%;
-background-color:inherit;
-padding:5px 7px;
-
-}
-.form-contact{
-   
-    width: 450px;
-}
-
-input{
-display:block;
-max-width:100%;
-padding:10px 0;
-border: none;
-border-bottom: 1px solid $colorgroup1a;
-background-color:inherit;
-padding:5px 7px;
-}
-.input-field button{
-display:block;
-padding:10px;
-border-radius:4px;
-width:100%;
-margin-top: 10px;
-}
 
 
 
-.input-field input {
-display: block;
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    border-bottom: 2px solid $colorgroup1a;
-    margin-bottom: 30px;
-    outline: none;
-border-radius:0;
-background-color:inherit;
 
-}
+
+
+
 
 
 textarea {
@@ -93,30 +48,7 @@ input::placeholder {
   
    
 }
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-select:focus,
-textarea {
-  font-size: 16px;
-}
 
-@media (max-width: 700px) {
-.form-contact {
 
-        width: 91%;
-    }
 
-}
 
