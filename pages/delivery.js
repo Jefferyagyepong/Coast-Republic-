@@ -1,3 +1,5 @@
+
+import Toast from "../components/Head/Toast";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "../components/Head/Header";
@@ -48,7 +50,11 @@ export default function delivery() {
         <link rel="icon" href="" />
       </Head>
       <main>
+        <div className="sticky">
+             <Toast />
         <Header />
+          </div>
+     
         <Nav/>
         <Delivery />
         <Newsletter />
