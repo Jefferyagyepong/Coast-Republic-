@@ -58,15 +58,15 @@ const ShopPage = ({ products }) => {
             place
           </p>
           
-          <hr className="full-width" />
+          <hr/>
           <div className={styles.cards}>
             {products.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </div>
+        <hr/>
 
- 
         <FootBottom/>
       </main>
     </>
