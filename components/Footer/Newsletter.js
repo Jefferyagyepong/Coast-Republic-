@@ -15,7 +15,7 @@ function Newsletter() {
             Register now and get our latest updates and promos
           </p>
     <form onSubmit={handleSubmit}>
-    <div className="input-field">
+    
         <input
         id="email"
         type="email" 
@@ -28,13 +28,13 @@ function Newsletter() {
         errors={state.errors}
         placeholder="enter your email"
       />
-      </div>
-    <div className="input-field">
+    
+    
         
       <button type="submit" disabled={state.submitting} className="button-link">
         Subscribe 
       </button>
-      </div>
+      
   
     </form>
     </div>
