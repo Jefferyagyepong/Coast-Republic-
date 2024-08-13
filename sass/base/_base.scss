@@ -1,51 +1,60 @@
 @import "../abstracts/variables";
 
-
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 ::-webkit-scrollbar {
-    height: 2px;
-    width: 5px;
-    scroll-behavior: smooth;
-    
+  height: 6px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  border: 1px solid #141c3a;
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
 }
 
 ::-webkit-scrollbar-track {
-    scroll-behavior: smooth;
-    border-radius: 0;
-    
-
+  scroll-behavior: smooth;
+  border-radius: 0;
+  transition: 0.3s ease;
 }
- 
-    
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  transition: 0.3s ease;
+}
+
 html {
-    font-size: 87.4%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-
+  // This defines what 1rem is
+  font-size: 88.5%;
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
+    text-rendering: optimizeLegibility;
 }
+
+a {
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+img{
+
+  object-fit: contain;
+}
+
+.MyApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 
 a {
     text-decoration: none;
     transition: 0.5s ease;
-    
-}
-
-.MyApp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 body,
@@ -58,14 +67,14 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat Medium', sans-serif;
-    font: antialised;
+  font-family: 'Oswald', sans-serif;
     -webkit-font-smoothing: antialised;
     -moz-font-smoothing: grayscale;
     background-color: #FAF9F6;
 }
 
 button {
+ outline: 0 !important;
    border: none;
    padding: 15px 32px;
    background-color: $colorgroup3b;
@@ -94,13 +103,11 @@ ul {
     margin: 0 auto;
     list-style: none;
     
-
 }
 
 li {
     margin: 0 auto;
     cursor: pointer;
 
-    
 }
 
