@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 
 .cards {
-width:100%;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -23,7 +23,7 @@ margin-top:20px;
 }
 
 .inline-flex{
-width:100%;
+
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -31,7 +31,7 @@ width:100%;
 }
 
 .card {
-width:100%;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   display: flex;
@@ -40,8 +40,6 @@ width:100%;
   margin: 0 auto;
 
 }
-
-      
 
 .text{
   opacity: 0.5;
