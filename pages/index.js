@@ -81,6 +81,7 @@ const Home = ({ products }) => {
         <New />
         
         <CoastApp />
+        <hr/>
         <Collection />
        
           
