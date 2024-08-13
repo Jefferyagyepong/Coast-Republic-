@@ -177,7 +177,7 @@ const CartPage = () => {
               
               
                 <PaystackButton
-                  className="paystack-button"
+                  className="button-link"
                   {...componentProps}
                 />
               </div>
