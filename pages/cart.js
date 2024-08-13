@@ -149,34 +149,33 @@ const CartPage = () => {
           )}
           <hr/>
           <div className="form-container">
-            <form className="form-contact">
+            <form>
               <h4>Fill in the form to verify your payment credentials</h4>
-              <div className="input-field">
+              
                 <input
                   type="text"
                   id="name"
                   onChange={e => setName(e.target.value)}
                   placeholder="full name"
                 />
-              </div>
-              <div className="input-field">
+            
+              
                 <input
                   type="text"
                   id="email"
                   onChange={e => setEmail(e.target.value)}
                   placeholder="email"
                 />
-              </div>
-              <div className="input-field">
+            
+              
                 <input
                   type="text"
                   id="phone"
                   onChange={e => setPhone(e.target.value)}
                   placeholder="Phone number"
                 />
-              </div>
-              <br />
-              <div className="input-field">
+              
+              
                 <PaystackButton
                   className="paystack-button"
                   {...componentProps}
