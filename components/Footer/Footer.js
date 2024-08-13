@@ -8,7 +8,9 @@ export default function Footer() {
         <Link href={"./"}>
           <h2 className="footer-tag">Coast Republic Inc.</h2>
         </Link>
-        <address>7 Minetti ST, Asokwa-Kumasi</address>
+        <address className="footer-tag">7 Minetti ST, Asokwa-Kumasi <br/>
+          info@coastrepublic.com
+          </address>
 
         <Link href={"/"} className="footer-tag">
           {" "}
