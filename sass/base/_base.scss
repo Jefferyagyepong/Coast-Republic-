@@ -10,29 +10,26 @@
 
 ::-webkit-scrollbar {
   height: 6px;
-  /* height of horizontal scrollbar ← You're missing this */
   width: 4px;
-  border: 1px solid #141c3a;
   scroll-behavior: smooth;
-  transition: 0.3s ease;
+  
 }
 
 ::-webkit-scrollbar-track {
   scroll-behavior: smooth;
   border-radius: 0;
-  transition: 0.3s ease;
+  
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
-  transition: 0.3s ease;
+
 }
 
 html {
-  // This defines what 1rem is
+  
   font-size: 88.5%;
   scroll-behavior: smooth;
-  transition: 0.3s ease;
     text-rendering: optimizeLegibility;
 width:100%;
 }
@@ -54,10 +51,7 @@ width:100%;
 }
 
 
-a {
-    text-decoration: none;
-    transition: 0.5s ease;
-}
+
 
 body,
 html {
