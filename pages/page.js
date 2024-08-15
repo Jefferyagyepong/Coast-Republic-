@@ -1,4 +1,4 @@
-
+import Pagination from "@/components/Pagination";
 import { getProducts } from "./api/products/index";
 export const getServerSideProps = async ({ query }) => {
   const page = query.page || 1;
