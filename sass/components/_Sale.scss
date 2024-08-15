@@ -41,21 +41,20 @@ border: none;
             animation: slowFade 32s infinite;
 }
 .slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+}
+.slowFade .slide:nth-child(1) img {
     -webkit-animation-delay: 8s;
             animation-delay: 8s;
 }
-.slowFade .slide:nth-child(2) img {
-    -webkit-animation-delay: 16s;
-            animation-delay: 16s;
-}
-.slowFade .slide:nth-child(1) img {
-    -webkit-animation-delay: 24s;
-            animation-delay: 24s;
-}
 @keyframes slowFade {
     25% {
-        opacity: 1;
-        transform: scale(1) rotate(0);
+        opacity:1;
     }
     40% {
         opacity: 0;
@@ -64,7 +63,7 @@ border: none;
 @-webkit-keyframes slowFade {
     25% {
         opacity: 1;
-        transform: scale(1) rotate(0);
+        
     }
     40% {
         opacity: 0;
