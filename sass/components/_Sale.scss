@@ -1,12 +1,6 @@
 @import "../abstracts//variables";
 
 
-.next-color{
-    color: $colorgroup2a;
-}
-.next-color-option {
-    color: $colorgroup2a;
-}
 .add-to-cart{
     background: $colorgroup5b;
     color:white;
@@ -35,7 +29,7 @@ text-align:center;
     opacity: 0;
     transform: scale(1.5) rotate(15deg);
     -webkit-animation: slowFade 32s infinite;
-    animation:  slowFade 32s infinite;
+    animation: slowFade 32s infinite;
 }
 .slowFade .slide:nth-child(5) img {
     -webkit-animation-delay: 8s; 
