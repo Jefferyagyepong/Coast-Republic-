@@ -1,13 +1,8 @@
  import Link from "next/link";
 import Image from "next/image";
-
-
-
 export default function Sale() {
-
   return (
-  
-   <div className="container-slider">
+    <div className="container-slider">
 
 
 .
@@ -32,6 +27,8 @@ export default function Sale() {
 <button className="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 </div>
  </div>
-  );
- }
  
+  );
+}
+
+
