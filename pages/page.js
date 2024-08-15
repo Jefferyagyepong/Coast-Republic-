@@ -1,3 +1,5 @@
+
+import { getProducts } from "./api/products/index";
 export const getServerSideProps = async ({ query }) => {
 3  const page = query.page || 1;
 4  const res = await fetch(`https://api.example.com/data?page=${page}`);
