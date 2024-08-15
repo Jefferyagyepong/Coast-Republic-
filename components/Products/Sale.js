@@ -2,7 +2,8 @@
 import Image from "next/image";
 
 
-function Sale() {
+
+export default function Sale() {
 
   return (
   
@@ -32,6 +33,5 @@ function Sale() {
 </div>
  </div>
   );
-}
-export default Sale;
+ }
  
