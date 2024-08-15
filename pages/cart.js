@@ -174,9 +174,9 @@ const CartPage = () => {
                   onChange={e => setPhone(e.target.value)}
                   placeholder="Phone number"
                 />
-              
+              <br/>
                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" />  I Agree Terms & Conditions
-  <input type="submit" name="submit" id="submit" />
+  <inpu<br/>
                 <PaystackButton
                   className="button-link"
                   {...componentProps}
