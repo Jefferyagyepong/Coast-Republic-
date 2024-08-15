@@ -89,8 +89,7 @@ const CartPage = () => {
             <div>
               <h3>Your Cart is Empty!</h3>
               <Link href={"/shop"}>
-              
-                
+                      
                 Back to store and add products to cart
               </Link>
             </div>
@@ -165,18 +164,17 @@ const CartPage = () => {
                   id="email"
                   onChange={e => setEmail(e.target.value)}
                   placeholder="email"
-                />
-            
-              
+                />      
+                          
                 <input
                   type="text"
                   id="phone"
                   onChange={e => setPhone(e.target.value)}
                   placeholder="Phone number"
                 />
-              <br/>
+                </br></br></br>
                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" />  I Agree Terms & Conditions
-  <br/>
+  </br></br></br>
                 <PaystackButton
                   className="button-link"
                   {...componentProps}
