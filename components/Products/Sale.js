@@ -2,12 +2,11 @@
 import Image from "next/image";
 function Sale() {
   return (
-    <div className="container">
+    <div className="container-slider">
 
  <div className="wrapper">
-             <h3 className="next-color-option">NEW SEASON</h3>
-
-      <h2 className="next-color">
+             <h3>NEW SEASON</h3>
+      <h2>
         Discount automatically applied at check out
       </h2>
 
