@@ -1,4 +1,4 @@
-import CategoryCard from "../components/Products/ CategoryCard";
+import CategoryCard from "../components/Products/CategoryCard";
 
 import styles from "../sass/components/ShopPage.module.scss";
 import Pagination from "@/components/Pagination";
