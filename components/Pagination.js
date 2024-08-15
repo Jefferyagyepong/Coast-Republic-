@@ -32,6 +32,6 @@ const Pagination = ({ totalPages, currentPage }) => {
       </button>
     </div>
   );
-};
+}
 
 export default Pagination;
