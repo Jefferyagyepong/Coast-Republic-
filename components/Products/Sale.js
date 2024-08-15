@@ -23,6 +23,10 @@ function Sale() {
              <Image  alt="product" src={"https://images.unsplash.com/photo-1531123414780-f74242c2b052?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
       
           </div>
+              <div className="slide">
+             <h2>New Season</h2>
+            <Link href={"/shop"}>Shop</Link>
+          </div>
     </div>
 
 
