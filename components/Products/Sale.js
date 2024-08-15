@@ -6,11 +6,11 @@ function Sale() {
 
   return (
   
-   <div class="container-slider">
+   <div className="container-slider">
 
 
 .
- <div class="wrapper">
+ <div className="wrapper">
              <h3 className="next-color-option">NEW SEASON</h3>
 
       <h2 className="next-color">
