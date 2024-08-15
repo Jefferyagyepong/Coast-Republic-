@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect } from 'react';
 
-function Sale() {
+export default function Sale() {
   useEffect(() => {
  var slideIndex = 0;
 carousel();
@@ -21,6 +21,7 @@ function carousel() {
   }, []);
 
   return (
+  
    <div className="shop-now">
 
    <h3 className="next-color-option">NEW SEASON</h3>
@@ -44,5 +45,4 @@ function carousel() {
  
   );
 }
-
-export default Sale;
+ 
