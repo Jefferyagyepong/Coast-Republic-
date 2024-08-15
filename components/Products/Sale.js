@@ -3,15 +3,25 @@ import Image from "next/image";
 
 
 function Sale() {
+  useEffect(() => {
+  var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+}, []);
   return (
   
-<div id="slider">
-  <div className="slides">
-	
-    <div className="slider">
-      <div className="legend"></div>
-      <div className="content">
-        <div className="content-txt">
+<div>
              <h3 className="next-color-option">NEW SEASON</h3>
 
       <h2 className="next-color">
@@ -23,29 +33,14 @@ function Sale() {
       </Link>
         </div>
       </div>
-      <div className="image">
-        <Image  alt="product"  width={370} height={350} src={"https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-<Image alt="product" width={370} height={350} src={"https://images.unsplash.com/photo-1554350747-ec45fd24f51b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-<Image   alt="product" width={370} height={350} src={"https://images.unsplash.com/photo-1531123414780-f74242c2b052?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-<Image   alt="product" width={370} height={350} src={"https://images.unsplash.com/photo-1620794341491-76be6eeb6946?q=80&w=788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
-      </div>
-    </div>
- 
-  </div>
-  <div class="switch">
-    <ul>
-      <li>
-        <div class="on"></div>
-      </li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
+      
+        <Image className="mySlides"  alt="product"  width={370} height={350} src={"https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+        <Image className="mySlides" alt="product" width={370} height={350} src={"https://images.unsplash.com/photo-1554350747-ec45fd24f51b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+         <Image  className="mySlides" alt="product" width={370} height={350} src={"https://images.unsplash.com/photo-1531123414780-f74242c2b052?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+        <Image  className="mySlides" alt="product" width={370} height={350} src={"https://images.unsplash.com/photo-1620794341491-76be6eeb6946?q=80&w=788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
+      <button className="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button className="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 </div>
-
-
- 
   );
 }
 export default Sale;
