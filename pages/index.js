@@ -16,7 +16,6 @@ import Nav from "@/components/Head/Nav";
 
 import Toast from "../components/Head/Toast";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const Home = ({ products }) => {
   return (
