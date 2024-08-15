@@ -34,7 +34,7 @@ function Sale() {
 
 
   );
-}
+};
 export default Sale;
 
 
