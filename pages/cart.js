@@ -176,7 +176,7 @@ const CartPage = () => {
                 />
               <br/>
                <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)" />  I Agree Terms & Conditions
-  <inpu<br/>
+  <br/>
                 <PaystackButton
                   className="button-link"
                   {...componentProps}
