@@ -5,7 +5,7 @@ import New from "../components/Products/New";
 import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Products/Sale";
-import CategoryCard from "../components/Products/CategoryCard";
+import CategoryCard from "../components/Products/ CategoryCard";
 import styles from "../sass/components/ShopPage.module.scss";
 import { getProducts } from "./api/products/index";
 import Newsletter from "@/components/Footer/Newsletter";
