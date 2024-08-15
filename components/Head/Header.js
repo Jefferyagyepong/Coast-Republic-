@@ -3,7 +3,7 @@ import Image from "next/image";
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 
-export default function Header() {
+ function Header() {
 
   return (
     <header>
@@ -20,3 +20,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header;
