@@ -28,15 +28,14 @@
 
 .container-slider{
     width: 100%;
-    border: 10px solid #ffffff;
-    border-radius: 8px;
-    box-shadow: 10px 25px 30px rgba(0,0,0,0.3)
+margin:0 auto;
+  
 
 }
 .wrapper{
     width: 90%;
     display: flex;
-margin:0 auto
+margin:0 auto;
 gap:2rem;
     animation: slide 16s infinite;
 }
