@@ -26,13 +26,15 @@
     }
 }
 .container{
-    width: 96%;
+    width: 100%;
+display:flex;
+align-items:center;
 margin:0 auto;
     border-radius: 8px;
 
 }
 .wrapper{
-    width: 100%;
+    width: 90%;
     display: flex;
     animation: slide 16s infinite;
 }
