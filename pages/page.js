@@ -1,5 +1,4 @@
 import Pagination from "@/components/Pagination";
-import { getProducts } from "./api/products/index";
 
 
 const Page = ({ products, totalPages, currentPage }) => {
