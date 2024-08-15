@@ -1,4 +1,4 @@
-
+1import { useState } from 'react';
 import { useRouter } from 'next/router';
 
 const Pagination = ({ totalPages, currentPage }) => {
