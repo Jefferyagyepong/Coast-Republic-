@@ -2,7 +2,7 @@
 import Image from "next/image";
 function Sale() {
   return (
-    <div className="container-slider">
+    <div className="ibrid-box">
 
  <div className="wrapper">
     
