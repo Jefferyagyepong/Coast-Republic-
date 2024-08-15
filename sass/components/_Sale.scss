@@ -25,20 +25,14 @@
         transform: translateX(-300%);
     }
 }
-.wrapper-img{
-max-width: 450px;
-margin:0 auto;
-} 
-.container-Slider{
-    width: 100%;
-margin:0 auto;
-  padding: 12px 20px;
 
-}
+.
 .wrapper{
     width: 100%;
 padding: 12px 20px;
     display: flex;
+align-items:center;
+justify-content:center;
 margin:0 auto;
     animation: slide 16s infinite;
 }
