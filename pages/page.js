@@ -73,6 +73,7 @@ export async function getStaticProps({query}) {
   products,
       totalPages: products.totalPages,
       currentPage: page,
-   }
+   };
+  }
 ​
 
