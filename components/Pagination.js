@@ -34,4 +34,4 @@ const Pagination = ({ totalPages, currentPage }) => {
   );
 };
 
-export default Pagination
+export default Pagination;
