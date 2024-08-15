@@ -6,8 +6,7 @@ function Sale() {
  
 <div className="slides slowFade">
         <div className="slide">
-          <h2>New Season</h2>
-          <Link href={"/shop"} className="add-to-cart">Shop</Link>
+          
           <Image  alt="product" src={"https://images.unsplash.com/photo-1554350747-ec45fd24f51b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} />
         </div>
         <div className="slide">
