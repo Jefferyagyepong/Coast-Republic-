@@ -38,20 +38,8 @@ height:18px;
 width:100%;
   margin: 0;
   color: white;
-  animation: example1 10s linear infinite;
-}
 
-@keyframes example1 {
-  from {
-    margin-left: 16%;
-    width: 60%;
-  }
-  to {
-    margin-left: 35%;
-    width: 100%;
-  }
 }
-
 
 .inline {
   display: flex;
