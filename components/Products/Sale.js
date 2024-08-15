@@ -1,11 +1,9 @@
  import Link from "next/link";
 import Image from "next/image";
-export default function Sale() {
+function Sale() {
   return (
     <div className="container-slider">
 
-
-.
  <div className="wrapper">
              <h3 className="next-color-option">NEW SEASON</h3>
 
@@ -30,5 +28,6 @@ export default function Sale() {
  
   );
 }
+export default Sale;
 
 
