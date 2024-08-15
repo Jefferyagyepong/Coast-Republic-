@@ -3,25 +3,14 @@ import Image from "next/image";
 
 
 function Sale() {
-  useEffect(() => {
-  var slideIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-}, []);
   return (
   
-<div>
+   <div class="container-slider">
+
+
+.
+ <div class="wrapper">
              <h3 className="next-color-option">NEW SEASON</h3>
 
       <h2 className="next-color">
@@ -41,6 +30,7 @@ function carousel() {
       <button className="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 <button className="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 </div>
+ </div>
   );
 }
 export default Sale;
