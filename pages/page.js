@@ -2,7 +2,7 @@
 import { getProducts } from "./api/products/index";
 export const getServerSideProps = async ({ query }) => {
 3  const page = query.page || 1;
-4  const res = await fetch(`https://coast-republic.vercel.app/data?page=${page}`);
+4  const res = await fetch(`https://coast-republic.vercel.app/api/products/data?page=${page}`);
 5  const data = await res.json();
 6
 7  return {
