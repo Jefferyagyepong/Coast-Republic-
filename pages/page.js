@@ -1,3 +1,4 @@
+import styles from "../sass/components/ShopPage.module.scss";
 import Pagination from "@/components/Pagination";
 
 import { getProducts } from "./api/products/index";
