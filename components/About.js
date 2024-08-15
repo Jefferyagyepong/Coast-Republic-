@@ -2,7 +2,7 @@
 export default function About() {
   return (
     <div className="align-left">
-      <h1>Coast Republic Inc.</h1>
+      <h2>About Us<h2>
       <p>Established 2023.</p>
       <p>
         our physical store (inventory) is located in the Ashanti region of Ghana specifically Asokowa, kumasi. We
