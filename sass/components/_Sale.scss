@@ -1,12 +1,39 @@
 @import "../abstracts//variables";
 
-
-
 #slider{
   width:100%;
   height:500px;
   position:relative;
   overflow:hidden;
+}
+.slider{
+  width:25%;
+  height:100%;
+  float:left;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+}
+.slide img{
+  width:100%;
+  height:100%;
+}
+.image{
+  width:100%;
+  height:100%;
+}
+.image img{
+  width:100%;
+  height:100%;
+}
+
+.slides{
+  width:400%;
+  height:100%;
+  position:relative;
+  -webkit-animation:slide 30s infinite;
+  -moz-animation:slide 30s infinite;
+  animation:slide 30s infinite;
 }
 .next-color{
     color: $colorgroup2a;
