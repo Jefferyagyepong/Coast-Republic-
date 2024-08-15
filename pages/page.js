@@ -64,18 +64,14 @@ const Page = ({ products, totalPages, currentPage }) => {
  
 export default Page;
 
-export const getServerSideProps = async ({ query }) => {
-  const page = query.page || 1;
-  const res = await fetch(`https://coast-republic.vercel.app/api/products/data?page=${page}`);
-  const data = await res.json();
 
-  return {
-    props: {
-      products,
+export async function getStaticProps({query}) {
+  const page = query.page || 1;
+  const products = await getProducts();
+  return { props: { 
+  products,
       totalPages: products.totalPages,
       currentPage: page,
-    },
-  };
-};
+   }
 ​
 
