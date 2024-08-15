@@ -29,7 +29,7 @@
     width: 96%;
 margin:0 auto;
     border-radius: 8px;
-    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+
 }
 .wrapper{
     width: 100%;
@@ -38,8 +38,8 @@ margin:0 auto;
 }
 
 .mySlides{
-    width: 100%;
-height:100%;
+    max-width:100%;
+
 }
 .next-color{
     color: $colorgroup2a;
