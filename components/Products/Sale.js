@@ -25,7 +25,7 @@ function Sale() {
           </div>
               <div className="slide">
              <h2>New Season</h2>
-            <Link href={"/shop"}>Shop</Link>
+            <Link className="add-to-cart" href={"/shop"}>Shop</Link>
           </div>
     </div>
 
