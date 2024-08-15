@@ -61,7 +61,7 @@ const Page = ({ products, totalPages, currentPage }) => {
     </>
      
   );
-};
+}
  
 export default Page;
 
