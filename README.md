@@ -12,10 +12,10 @@ UX/UI
 https://www.figma.com/design/mfQJDVhgz3oIlynsYe67PS/Coast-Republic?m=auto&t=YxRUxy0HZXfdLRxn-6
 I'm UX/UI designer. I utilized my skills using tools like Figma to prototype.
 
-Features
+Key Features
 Search functionality 
-Form Submission 
-Payment gateway visa and Momo
+Form Submission with automatic replies
+Payment gateway Api
 
 
 
