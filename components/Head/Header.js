@@ -15,7 +15,7 @@ import Link from "next/link.js";
             alt="logo"
           />
         </Link>
-        <h2 className="logo-name">Coast Republic Inc.</h2>
+        <h2 className="logo-name">Coast Republic</h2>
         <CartBasket />
     </header>
   );
