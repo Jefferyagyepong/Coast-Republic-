@@ -1,5 +1,5 @@
 
-export default function Brands() {
+ function Brands() {
     return (
       <div className="ibrid-box-flex">
         
@@ -11,3 +11,4 @@ export default function Brands() {
       </div>
     );
 }
+export default Brands;
