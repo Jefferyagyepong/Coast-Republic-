@@ -8,7 +8,7 @@ function Newsletter() {
       return <p>Thanks for joining our Newsletter</p>;
   }
   return (
-       <div className="ibrid-box bgg222">
+       <div className="ibrid-box bgg222  margin">
   
           <h3>Join our newsletter now!</h3>
           <p>
