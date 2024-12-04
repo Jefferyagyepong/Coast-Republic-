@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function IbridApp() {
     return (
-      <div className="ibrid-box"> 
+      <div className="ibrid-box bgg222"> 
         <h3>Download Our App</h3><br/>
         <p>
           Unlock a world of limetless possiblities. Download the Coast Republic app and
