@@ -15,11 +15,11 @@ import Link from "next/link";
           Terms 
         </Link>
       </div>
-
+ <br/>
       <em>
         {" "}
         <h6 className="footer-tag">Powered by Paystack</h6>
-      </em>
+      </em> <br/>
     </div>
   );
  }
