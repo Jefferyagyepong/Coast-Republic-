@@ -7,6 +7,7 @@ function Newsletter() {
     return <p>Thanks for joining our Newsletter</p>;
   }
   return (
+<<<<<<< HEAD
     <div className="ibrid-box">
       <em>
         {" "}
@@ -15,6 +16,16 @@ function Newsletter() {
 
       <p>Register now and get our latest updates and promos</p>
       <form onSubmit={handleSubmit}>
+=======
+       <div className="ibrid-box bgg222  margin">
+  
+          <h3>Join our newsletter now!</h3>
+          <p>
+            Register now and get our latest updates and promos
+          </p>
+    <form onSubmit={handleSubmit}>
+    
+>>>>>>> 81b8a603b8970c9e37ed39eae242159691509bed
         <input
           id="email"
           type="email"

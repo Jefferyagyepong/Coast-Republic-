@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 function Brands() {
+=======
+ function Brands() {
+>>>>>>> 81b8a603b8970c9e37ed39eae242159691509bed
     return (
       <div className="ibrid-box-flex">
         <h6>
