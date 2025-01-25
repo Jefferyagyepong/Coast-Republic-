@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
-// import PaystackPop from '@paystack/inline-js';
+import PaystackPop from '@paystack/inline-js';
 
 const PaystackPayment = () => {
   const [loading, setLoading] = useState(false);
@@ -10,8 +10,7 @@ const PaystackPayment = () => {
     setLoading(true);
 
     // Replace with your Paystack public key
-    const paystackPublicKey =
-      "";
+    const paystackPublicKey = process.env.paystackPublicKey;
 
     // Replace with your server's API endpoint to create a payment session
     const paymentData = {
