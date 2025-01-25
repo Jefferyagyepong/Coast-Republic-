@@ -1,9 +1,9 @@
 function Delivery() {
   return (
-    <div >
+    <div ><br/>  <br/>
       <em>
         <h2>Delivery</h2>
-      </em>
+      </em><br/>  <br/>
 
       <b>
         <p>
