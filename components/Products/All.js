@@ -6,7 +6,7 @@
       <em>
         {" "}
         <h3>Collection</h3>
-      </em>
+      </em><br/><br/>
     </div>
   );
  }
