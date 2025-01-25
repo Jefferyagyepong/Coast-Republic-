@@ -7,7 +7,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 12px 18px;
-  background-color: $color0;
+  background-color: black;
   opacity: 1;
 
   h3 {
@@ -28,7 +28,7 @@ header {
 .example1 {
   width: 100%;
   text-align: center;
-  background-color: $colorgroup4b;
+  background-color: bluw;
   color: white;
   top: 0;
   margin: 0 auto;
@@ -52,7 +52,7 @@ header {
 
 
 .header-link {
-  color: $colorgroup4b;
+  color: black;
 }
 
 .header-link:hover {
@@ -128,7 +128,7 @@ header {
     top: 3rem;
 
     a {
-      color: $bittersweet;
+      color: blue;
     }
   }
 
@@ -161,8 +161,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: $p-t;
-    padding-bottom: $p-b;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
   }
 
