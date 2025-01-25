@@ -4,14 +4,14 @@ function About() {
       
         {" "}
         
-        <p>Established .</p>
+        <article>
         <address>
-          <header><em> <h2>About Us</h2></em> </header>
+          <header> <h2>About Us</h2> </header>
           <h6>7 Minetti St, AK-717-5846 Asokwa</h6>
           <h6>info@coastrepgh.com</h6>
         </address>
-        <article>
-               <p>
+       
+      <p>
         our physical store (inventory) is located in the Ashanti region of Ghana
         specifically Asokowa, kumasi. We deliver the products we sell accross
         all 16 regions.
