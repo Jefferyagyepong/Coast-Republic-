@@ -99,6 +99,12 @@ const PaystackPayment = () => {
         />
         <link rel="icon" href="" />
       </Head>
+      <form action="#" method="POST">  
+  <input type="hidden" name="user_email" /> 
+  <input type="hidden" name="amount" /> 
+  <input type="hidden" name="cartid"/> 
+  <button type="submit" name="pay_now" id="pay-now" title="Pay now">Pay now</button>
+</form>
       <button onClick={handlePayment} disabled={loading}>
         {loading ? "Processing..." : "Pay with Paystack"}
       </button>
