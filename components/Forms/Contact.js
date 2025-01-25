@@ -1,7 +1,8 @@
 function Contact() {
   return (
     <div>
-      <h3>Contact Us </h3>
+        <em>   <h3>Contact Us </h3></em><br/><br/>
+    
       <p>
         If you have any questions, please feel free to reach out via email. We
         will get back to you as soon as we can we would also love to hear from
