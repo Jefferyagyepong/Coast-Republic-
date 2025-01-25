@@ -32,7 +32,7 @@
          const { paymentLink } = data; // Assuming your server sends back a payment link or reference
 
         // Initiating Paystack inline popup
-         const handler = window.PaystackPop.setup({
+         const handler = typeof window.PaystackPop.setup({
            key: paystackPublicKey,
            email: paymentData.email,
           amount: paymentData.amount * 100, // Convert to kobo or pesewa
