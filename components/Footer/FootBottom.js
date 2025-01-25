@@ -5,15 +5,15 @@ import Image from "next/image";
       <div className="payment-container">
         <Image
           src={"/momo.jpg"}
-          height={15}
-          width={19}
+          height={25}
+          width={39}
           alt="momo logo"
           className="payment-logo"
         />
         <Image
           src={"/Visa.png"}
-          height={15}
-          width={19}
+          height={25}
+          width={39}
           alt="momo logo"
           className="payment-logo"
         />

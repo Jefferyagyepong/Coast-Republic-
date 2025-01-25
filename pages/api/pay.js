@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Replace with your Paystack secret key
-const PAYSTACK_SECRET_KEY = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
+const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY;
 
 app.use(express.json());
 

@@ -1,22 +1,21 @@
 //abstract
-@import "abstracts/responsive";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+
+@use "abstracts/variables";
 
 //base
-@import "base/base";
-@import "base/typography";
+@use "base/base";
+@use "base/typography";
 
 //components
-@import "components/Header";
-@import "components/Newsletter";
-@import "components/Thrifts";
-@import "components/Footer";
-@import "components/Contact";
-@import "components/CartPage.module";
-@import "components/ShopPage.module";
-@import "components/Integrity";
-@import "components/Sale";
-@import "components/Form";
+@use "components/Header";
+@use "components/Newsletter";
+@use "components/Thrifts";
+@use "components/Footer";
+@use "components/Contact";
+@use "components/CartPage.module";
+@use "components/ShopPage.module";
+@use "components/Integrity";
+@use "components/Sale";
+@use "components/Form";
 
 

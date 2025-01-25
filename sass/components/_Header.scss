@@ -1,4 +1,3 @@
-@import "../abstracts/variables";
 
 header {
   width: 100%;
@@ -7,10 +6,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 12px 18px;
-  background-color: $color0;
+  background-color: #fff;
   opacity: 1;
 
-  h3 {
+  h2 {
     font-family: 'Milkshake', cursive;
     opacity: 1;
   }
@@ -28,7 +27,7 @@ header {
 .example1 {
   width: 100%;
   text-align: center;
-  background-color: $colorgroup4b;
+  background-color: #333;
   color: white;
   top: 0;
   margin: 0 auto;
@@ -52,7 +51,7 @@ header {
 
 
 .header-link {
-  color: $colorgroup4b;
+  color: white;
 }
 
 .header-link:hover {
@@ -128,7 +127,7 @@ header {
     top: 3rem;
 
     a {
-      color: $bittersweet;
+      color: black;
     }
   }
 
@@ -161,8 +160,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: $p-t;
-    padding-bottom: $p-b;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
   }
 

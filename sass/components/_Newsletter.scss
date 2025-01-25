@@ -1,27 +1,23 @@
-@import "../abstracts//variables";
-
-
 .ibrid-box {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-text-align:center;
-margin:0 auto;
-padding: 20px 28px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 28px;
 
 
 }
 
-.bgg222{
-background-color:#222;
-color:#fff;
+.bgg222 {
+    background-color: #222;
+    color: #fff;
 
 }
-.margin{
-margin-top: 1.4rem;
-;
+
+.margin {
+    margin-top: 1.4rem;
+
 }
-
-

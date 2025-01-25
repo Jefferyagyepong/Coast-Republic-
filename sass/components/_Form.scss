@@ -1,20 +1,31 @@
-@import "../abstracts/variables";
+
 
 .form-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
+fieldset {
 
+  width: 100%;
+
+  form {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 
 input[type=text],
-input[type=email],  input[type=search] {
+input[type=email],  input[type=search], input[type=number] {
   width: 500px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #666;
   border-radius: 4px;
   box-sizing: border-box;
 }
