@@ -1,16 +1,17 @@
 function About() {
   return (
-    <div className="align-left">
-      <em>
+    <div>
+      
         {" "}
-        <h2>About Us</h2>
+        
         <p>Established .</p>
         <address>
+          <header><em> <h2>About Us</h2></em> </header>
           <h6>7 Minetti St, AK-717-5846 Asokwa</h6>
-          <h6>coastrepgh@gmail.com</h6>
+          <h6>info@coastrepgh.com</h6>
         </address>
-      </em>
-      <p>
+        <article>
+               <p>
         our physical store (inventory) is located in the Ashanti region of Ghana
         specifically Asokowa, kumasi. We deliver the products we sell accross
         all 16 regions.
@@ -32,6 +33,10 @@ function About() {
         thrifts items like Kantamanto in Accra and Adum in Kumasi.All your
         favorite brand products are available.
       </p>
+          
+          </article>
+      
+ 
     </div>
   );
 }
