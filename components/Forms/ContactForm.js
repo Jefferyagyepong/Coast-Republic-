@@ -11,7 +11,7 @@ function ContactForm() {
         
              <input type="text" 
             id="email"
-            placeholder="enter your email" />
+            placeholder=" email" />
             <ValidationError
               prefix="Email"
               field="email"
