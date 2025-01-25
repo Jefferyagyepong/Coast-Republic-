@@ -1,21 +1,21 @@
 function About() {
   return (
-    <div>
+    <div className="ibrid-box">
       
-        {" "}
-          <h2>About Us</h2>
+        {" "}<br/><br/>
+          <h2>About Us</h2><br/>
         <article>
         <address>
          
           <h6>7 Minetti St, AK-717-5846 Asokwa</h6>
           <h6>info@coastrepgh.com</h6>
-        </address>
+        </address><br/>
         <body>
            <p>
         our physical store (inventory) is located in the Ashanti region of Ghana
         specifically Asokowa, kumasi. We deliver the products we sell accross
         all 16 regions.
-      </p>
+      </p><br/><br/>
       <em>
         {" "}
         <h3>Discovery</h3>
