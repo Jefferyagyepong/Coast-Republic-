@@ -11,8 +11,8 @@ function Footer() {
             <h2 className="footer-tag">Coast Republic Inc.</h2>
           </Link>
           <address className="footer-tag">
-            <h6>7 AK-717-5846 Minetti ST, Asokwa 🇬🇭</h6>
-            <h6>coastrepgh@gmail.com</h6>
+            <h6>7 AK-717-5846 Minetti ST, Asokwa 🇬🇭</h6><br/><br/>
+            <h6>info@coastrepgh@.com</h6><br/><br/>
             <div className="footer-flex-contact">
               <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
               <Link href={"tel: +233 240 000000"} className="footer-tag">
@@ -60,7 +60,7 @@ function Footer() {
           width={29}
           alt="momo logo"
           className="payment-logo"
-        />
+        />|
         <Image
           src={"/Visa.png"}
           height={25}
