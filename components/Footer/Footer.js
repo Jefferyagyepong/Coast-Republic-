@@ -4,6 +4,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer>
+      <br/>  <br/>
       <div className="footer-align-left">
         <em>
           <Link href={"./"}>
@@ -20,32 +21,32 @@ function Footer() {
               </Link>
             </div>
           </address>
-        </em>
+        </em><br/>  <br/>
         <b>
           <Link href={"/"} className="footer-tag">
             {" "}
             Home
-          </Link>
+          </Link><br/>  <br/>
 
           <Link href={"/about"} className="footer-tag">
             {" "}
             About
-          </Link>
+          </Link><br/>  <br/>
 
           <Link href={"/shop"} className="footer-tag">
             {" "}
             shop
-          </Link>
+          </Link><br/>  <br/>
 
           <Link href={"/contact"} className="footer-tag">
             {" "}
             Contact
-          </Link>
+          </Link><br/>  <br/>
 
           <Link href={"/delivery"} className="footer-tag">
             {" "}
             Delivery & Refunds
-          </Link>
+          </Link><br/>  <br/>
         </b>
       </div>
 
