@@ -89,6 +89,10 @@ opacity:0.3;
 .footer-align-left{
 width:100%;
 text-align:left;
+display: flex;
+flex-direction: column;
+column-gap: 20px;
+justify-content:space-between;
 }
 
 
