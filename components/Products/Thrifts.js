@@ -5,14 +5,14 @@ import Image from "next/image";
  function Thrifts({ product }) {
   const dispatch = useDispatch();
   return (
-    <div className="ibrid-box">
+    <div className="ibrid-box"><br/><br/>
       <em>
         {" "}
         <h3>THRIFTS ARENA</h3>
-      </em>
+      </em><br/><br/>
 
       <p>Explore thousands of products, new and affordable daily</p>
-
+<br/>
       <div className="ibrid-box">
         <Image
           src={"/products/force1a.JPG"}
@@ -20,11 +20,11 @@ import Image from "next/image";
           width={170}
           height={180}
         />
-        <em>
+        <em><br/>
           {" "}
           <h5>Air Force 1 low </h5>
           <h5>$90</h5>
-        </em>
+        </em><br/>
         <button
           onClick={() => dispatch(addToCart(product))}
           className="add-to-cart"
