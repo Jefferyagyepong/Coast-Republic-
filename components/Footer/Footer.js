@@ -42,15 +42,6 @@ function Footer() {
             Contact
           </Link>
 
-          <Link href={"/privacy"} className="footer-tag">
-            {" "}
-            Privacy Policy
-          </Link>
-
-          <Link href={"/terms"} className="footer-tag">
-            {" "}
-            T & C&apos;s
-          </Link>
           <Link href={"/delivery"} className="footer-tag">
             {" "}
             Delivery & Refunds
@@ -61,6 +52,22 @@ function Footer() {
       <hr className="short-width" />
 
       <FootBottom />
+      <div className="payment-container">
+        <Image
+          src={"/momo.jpg"}
+          height={17}
+          width={29}
+          alt="momo logo"
+          className="payment-logo"
+        />
+        <Image
+          src={"/Visa.png"}
+          height={25}
+          width={39}
+          alt="momo logo"
+          className="payment-logo"
+        />
+      </div>
       <h6 className="footer-tag">
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
       </h6>

@@ -1,115 +1,13 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
-import FootBottom from "@/components/Footer/FootBottom";
+
 import Footer from "@/components/Footer/Footer";
+import PaystackPayment from "@/components/Products/PaystackPayment";
 
-
-const PaystackPayment = () => {
-  const [loading, setLoading] = useState(false);
-
-  // Function to handle payment
-  const handlePayment = () => {
-    setLoading(true);
-
-    // Replace with your Paystack public key
-    const paystackPublicKey = process.env.paystackPublicKey;
-
-    // Replace with your server's API endpoint to create a payment session
-    const paymentData = {
-      email: "customer@example.com", // Customer email
-      amount: 1000, // Amount to pay (in the smallest unit, e.g., kobo or pesewa)
-      currency: "GHS", // Currency (Ghanaian Cedi)
-    };
-
-    // Make a request to your backend to initialize the payment
-    fetch("./api/pay.js", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(paymentData),
-    })
-      .then(response => response.json())
-      .then(data => {
-        const { paymentLink } = data; // Assuming your server sends back a payment link or reference
-
-        //ggggdtu
-        const https = require("https");
-
-        const params = JSON.stringify({
-          key: paystackPublicKey,
-          email: paymentData.email,
-          amount: paymentData.amount * 100, // Convert to kobo or pesewa
-          ref: paymentLink, // Reference from your backend
-          onClose: () => {
-            alert("Payment closed!");
-          },
-          callback: function (response) {
-            if (response.status === "success") {
-              // Handle success, send response.ref to your backend for verification
-              alert(`Payment successful! Reference: ${response.reference}`);
-            }
-          },
-        });
-
-        const options = {
-          hostname: "api.paystack.co",
-          port: 443,
-          path: "/transaction/initialize",
-          method: "POST",
-          headers: {
-            Authorization: "PAYSTACK_SECRET_KEY",
-            "Content-Type": "application/json",
-          },
-        };
-
-        const req = https
-          .request(options, res => {
-            let data = "";
-
-            res.on("data", chunk => {
-              data += chunk;
-            });
-
-            res.on("end", () => {
-              console.log(JSON.parse(data));
-            });
-          })
-          .on("error", error => {
-            console.error(error);
-          });
-
-        req.write(params);
-        req.end();
-
-        
-        // Initiating Paystack inline popup
-      
-  //       const handler = window.PaystackPop.setup({
-  //         key: paystackPublicKey,
-  //         email: paymentData.email,
-  //         amount: paymentData.amount * 100, // Convert to kobo or pesewa
-  //         ref: paymentLink, // Reference from your backend
-  //         onClose: () => {
-  //           alert("Payment closed!");
-  //         },
-  //         callback: function (response) {
-  //           if (response.status === "success") {
-  //             // Handle success, send response.ref to your backend for verification
-  //             alert(`Payment successful! Reference: ${response.reference}`);
-  //           }
-  //         },
-  //       });
-
-        handler.openIframe();
-      })
-      .catch(err => {
-        console.error("Error initializing payment", err);
-        setLoading(false);
-        alert("An error occurred while processing your payment");
-      });
-  };
+const checkout = () => {
+  const email = "user@exaple.com";
+  const amount = 1000;
+  const reference = `ref_${new Date().getTime()}`;
 
   return (
     <>
@@ -153,20 +51,12 @@ const PaystackPayment = () => {
         />
         <link rel="icon" href="" />
       </Head>
-      <fieldset>
-        <form action="#" method="POST">
-          <input type="email" name="user_email" placeholder="Email" required />
-          <input type="number" name="amount" placeholder="Amount" required />
-          <input type="text" name="cartid" placeholder="Order Id" required />
-          <button onClick={handlePayment} disabled={loading}>
-            {loading ? "Processing..." : "Pay with Paystack"}
-          </button>
-        </form>
-        <FootBottom />
-        <Footer/>
-      </fieldset>
+      <h1>Welcome to Coast Republic Store</h1>
+      <PaystackPayment email={email} amount={amount} reference={reference} />
+
+      <Footer />
     </>
   );
 };
 
-export default PaystackPayment;
+export default checkout;

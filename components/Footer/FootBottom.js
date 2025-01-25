@@ -1,23 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
  function FootBottom() {
   return (
     <div className="ibrid-box">
+    
       <div className="payment-container">
-        <Image
-          src={"/momo.jpg"}
-          height={25}
-          width={39}
-          alt="momo logo"
-          className="payment-logo"
-        />
-        <Image
-          src={"/Visa.png"}
-          height={25}
-          width={39}
-          alt="momo logo"
-          className="payment-logo"
-        />
+        <Link href={"/privacy"} className="footer-tag">
+          {" "}
+          Privacy 
+        </Link>     
+          |
+        <Link href={"/terms"} className="footer-tag">
+          {" "}
+          Terms 
+        </Link>
       </div>
+
       <em>
         {" "}
         <h6 className="footer-tag">Powered by Paystack</h6>
