@@ -91,8 +91,13 @@ width:100%;
 text-align:left;
 display: flex;
 flex-direction: column;
-column-gap: 20px;
-justify-content:space-between;
+padding: 10px 20px;
+
+address,a{
+margin:15px;
+}
+
+
 }
 
 
