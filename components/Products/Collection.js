@@ -1,10 +1,10 @@
 export default function Collection() {
   return (
-    <div className="ibrid-box">
+    <div className="ibrid-box"><br/><br/>
       <em>
         {" "}
         <h2>Our Collection</h2>
-      </em>
+      </em><br/><br/>
     </div>
   );
 }
