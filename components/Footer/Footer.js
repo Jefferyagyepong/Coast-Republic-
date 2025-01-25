@@ -11,7 +11,7 @@ function Footer() {
             <h2 className="footer-tag">Coast Republic Inc.</h2>
           </Link>
           <address className="footer-tag">
-            <h6>7 AK-717-5846 Minetti ST, Asokwa 🇬🇭</h6><br/><br/>
+            <h6> AK-717-5846 Minetti ST, Asokwa 🇬🇭</h6><br/><br/>
             <h6>info@coastrepgh@.com</h6><br/><br/>
             <div className="footer-flex-contact">
               <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
