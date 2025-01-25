@@ -17,12 +17,12 @@ const ProductCard = ({ product }) => {
           alt=""
           className={styles.border}
         />
-      </Link>
+      </Link><br/>
       <em>
         {" "}
         <h4 className={styles.title}>{product.title}</h4>
         <Link href={"/details"}>View sizing</Link>
-      </em>
+      </em><br/>
       <button
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"
