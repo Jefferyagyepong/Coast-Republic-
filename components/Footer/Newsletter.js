@@ -8,8 +8,8 @@ function Newsletter() {
   }
   return (
        <div className="ibrid-box bgg222  margin"><br/>  <br/>
-  
-          <h3>Join our newsletter now!</h3><br/>  <br/>
+  <em><h3>Join our newsletter now!</h3></em>
+         <br/>  <br/>
           <p>
             Register now and get our latest updates and promos
           </p><br/>  <br/>
