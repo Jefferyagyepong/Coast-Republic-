@@ -7,12 +7,12 @@ function Newsletter() {
     return <p>Thanks for joining our Newsletter</p>;
   }
   return (
-       <div className="ibrid-box bgg222  margin">
+       <div className="ibrid-box bgg222  margin"><br/>  <br/>
   
-          <h3>Join our newsletter now!</h3>
+          <h3>Join our newsletter now!</h3><br/>  <br/>
           <p>
             Register now and get our latest updates and promos
-          </p>
+          </p><br/>  <br/>
     <form onSubmit={handleSubmit}>
     
         <input
@@ -26,7 +26,7 @@ function Newsletter() {
           field="email"
           errors={state.errors}
           placeholder="enter your email"
-        />
+        /><br/>  <br/>
 
         <button
           type="submit"
@@ -34,7 +34,7 @@ function Newsletter() {
           className="button-link"
         >
           Subscribe
-        </button>
+        </button><br/>  <br/>
       </form>
     </div>
   );
