@@ -19,7 +19,7 @@ function Newsletter() {
           id="email"
           type="email"
           name="email"
-          placeholder="enter your email"
+          placeholder=" email"
         />
         <ValidationError
           prefix="Email"
