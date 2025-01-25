@@ -18,8 +18,8 @@ function About() {
       </p><br/><br/>
       <em>
         {" "}
-        <h3>Discovery</h3>
-      </em><br/><br/>
+        <h3>Discovery</h3><br/><br/>
+      </em>
 
       <p>
         Online thrift store delivering to your doorstep. Coast Republic offers
