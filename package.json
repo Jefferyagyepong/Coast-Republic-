@@ -47,6 +47,7 @@
   ],
   "devDependencies": {
     "@types/express": "^5.0.0",
-    "@types/node-fetch": "^2.6.12"
+    "@types/node-fetch": "^2.6.12",
+    "@types/paystack__inline-js": "^1.0.1"
   }
 }

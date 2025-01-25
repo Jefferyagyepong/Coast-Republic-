@@ -329,6 +329,11 @@
   dependencies:
     undici-types "~6.20.0"
 
+"@types/paystack__inline-js@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@types/paystack__inline-js/-/paystack__inline-js-1.0.1.tgz"
+  integrity sha512-uAXk9EJobC/0v5zetSULTU8+3lIE3Y0Q0KwpR0lF7KRf+tj4AcE87kr6b8tpRkrr6uo9qXKgyjma+bmGDhwxbQ==
+
 "@types/prop-types@*":
   version "15.7.14"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.14.tgz"
