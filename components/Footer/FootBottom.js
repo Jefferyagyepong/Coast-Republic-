@@ -5,17 +5,22 @@ import Link from "next/link";
     <div className="ibrid-box">
     
       <div className="payment-container">
-        <b>
-        <Link href={"/privacy"} className="footer-tag">
+        
+          <ul>
+            
+            <li> <Link href={"/privacy"} className="footer-tag">
           {" "}
           Privacy 
-        </Link>     
-          |
-        <Link href={"/terms"} className="footer-tag">
+        </Link>     </li>|
+             <li>    <Link href={"/terms"} className="footer-tag">
           {" "}
           Terms 
-        </Link>
-        </b>
+        </Link></li>
+            </ul>
+        
+          
+     
+        
       </div>
  <br/>
       <em>
