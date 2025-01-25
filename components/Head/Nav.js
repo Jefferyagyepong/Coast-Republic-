@@ -1,34 +1,33 @@
-
 import Link from "next/link.js";
 
-export default function Nav() {
+const Nav = () => {
   return (
-
+    <>
       <section className="top-nav">
         <input id="menu-toggle" type="checkbox" />
 
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div className="menu-button"></div>
         </label>
+
         <ul className="menu">
           <li>
-            <Link href={"/about"} className="header-link">
-              About
-            </Link>
+            <Link href={"/shop"}>Home</Link>
           </li>
           <li>
-            <Link href={"/shop"} className="header-link">
-              Shop
-            </Link>
+            <Link href={"/shop"}>Shop</Link>
           </li>
           <li>
-            <Link href={"/contact"} className="header-link">
-              Contact
-            </Link>
+            <Link href={"/about"}>About Us</Link>
           </li>
-     
+
+          <li>
+            <Link href={"/contact"}>Contact</Link>
+          </li>
         </ul>
       </section>
-
+    </>
   );
-}
+};
+
+export default Nav;

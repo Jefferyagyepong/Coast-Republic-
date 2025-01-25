@@ -18,8 +18,10 @@ const CategoryCard = ({ product }) => {
           className={styles.border}
         />
       </Link>
-      <h4 className={styles.title}>{product.product}</h4>
-
+      <em>
+        <h4 className={styles.title}>{product.title}</h4>
+        <h4 className={styles.title}>InStock: {product.inStock}</h4>
+      </em>
       <button
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"

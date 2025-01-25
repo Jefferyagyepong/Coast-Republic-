@@ -1,15 +1,21 @@
-export default function Privacy() {
+function Privacy() {
   return (
-    <div className="align-left">
-      <h2>PRIVACY POLICY</h2>
+    <div>
+      <em>
+        {" "}
+        <h2>PRIVACY POLICY</h2>
+      </em>
 
       <p>
         This Privacy Policy describes how coast republic (the “Site” or “we”)
         collects, uses, and discloses your Personal Information when you visit
         or make a purchase from the Site.
       </p>
+      <em>
+        {" "}
+        <h3>Contact</h3>
+      </em>
 
-      <h3>Contact</h3>
       <p>
         After reviewing this policy, if you have additional questions, want more
         information about our privacy practices, or would like to make a
@@ -17,8 +23,12 @@ export default function Privacy() {
         mail using the details provided below: McCarthy Hill, Greater Accra,
         Ghana.
       </p>
+      <em>
+        {" "}
+        <h3>Collecting Personal Information</h3>
+      </em>
 
-      <h3>Collecting Personal Information</h3><br/>
+      <br />
 
       <p>
         When you visit the Site, we collect certain information about your
@@ -60,8 +70,10 @@ export default function Privacy() {
         support. Source of collection: collected from you Disclosure for a
         business purpose: Personal Information collected: collected from you
       </p>
-
-      <h3>Minors</h3>
+      <em>
+        {" "}
+        <h3>Minors</h3>
+      </em>
 
       <p>
         The Site is not intended for individuals under the age of 18. We do not
@@ -69,8 +81,10 @@ export default function Privacy() {
         parent or guardian and believe your child has provided us with Personal
         Information, please contact us at the address above to request deletion.
       </p>
-
-      <h3>Sharing Personal Information</h3>
+      <em>
+        {" "}
+        <h3>Sharing Personal Information</h3>
+      </em>
 
       <p>
         We share your Personal Information with service providers to help us
@@ -104,8 +118,10 @@ export default function Privacy() {
         Digital Advertising Alliance’s opt-out portal at:
         https://optout.aboutads.info/.
       </p>
-
-      <h3>Using Personal Information</h3>
+      <em>
+        {" "}
+        <h3>Using Personal Information</h3>
+      </em>
 
       <p>
         We use your personal Information to provide our services to you, which
@@ -120,8 +136,9 @@ export default function Privacy() {
         public interest; For our legitimate interests, which do not override
         your fundamental rights and freedoms.
       </p>
-
-      <h3>Retention</h3>
+      <em>
+        <h3>Retention</h3>
+      </em>
 
       <p>
         When you place an order through the Site, we will retain your Personal
@@ -129,8 +146,9 @@ export default function Privacy() {
         information. For more information on your right of erasure, please see
         the ‘Your rights’ section below.
       </p>
-
-      <h3>Automatic decision-making</h3>
+      <em>
+        <h3>Automatic decision-making</h3>
+      </em>
 
       <p>
         If you are a resident of the EEA, you have the right to object to
@@ -147,10 +165,11 @@ export default function Privacy() {
         blacklisted IP addresses. This blacklist persists for a small number of
         days.
       </p>
+      <em>
+        <h3>Selling Personal Information</h3>
+      </em>
 
-      <h3>Selling Personal Information</h3>
-
-      <p> 
+      <p>
         Our Site sells Personal Information, as defined by the California
         Consumer Privacy Act of 2018 (“CCPA”). [Insert: categories of
         information sold; IF USING SHOPIFY AUDIENCES: information about your use
@@ -160,8 +179,9 @@ export default function Privacy() {
         affirmative authorization; if you provide a financial incentive to sell
         information, provide information about what that incentive is.]
       </p>
-
-      <h3>Your rights</h3>
+      <em>
+        <h3>Your rights</h3>
+      </em>
 
       <p>
         GDPR If you are a resident of the EEA, you have the right to access the
@@ -184,8 +204,10 @@ export default function Privacy() {
         above. If you would like to designate an authorized agent to submit
         these requests on your behalf, please contact us at the address above.
       </p>
-
-      <h3>Cookies</h3>
+      <em>
+        {" "}
+        <h3>Cookies</h3>
+      </em>
 
       <p>
         A cookie is a small amount of information that’s downloaded to your
@@ -199,8 +221,10 @@ export default function Privacy() {
         website, for instance whether it’s their first time visiting or if they
         are a frequent visitor.
       </p>
-
-      <h3>Do Not Track</h3>
+      <em>
+        {" "}
+        <h3>Do Not Track</h3>
+      </em>
 
       <p>
         Please note that because there is no consistent industry understanding
@@ -208,16 +232,20 @@ export default function Privacy() {
         collection and usage practices when we detect such a signal from your
         browser.
       </p>
-
-      <h3>Changes</h3>
+      <em>
+        {" "}
+        <h3>Changes</h3>
+      </em>
 
       <p>
         We may update this Privacy Policy from time to time in order to reflect,
         for example, changes to our practices or for other operational, legal,
         or regulatory reasons.
       </p>
-
-      <h3>Complaints</h3>
+      <em>
+        {" "}
+        <h3>Complaints</h3>
+      </em>
 
       <p>
         As noted above, if you would like to make a complaint, please contact us
@@ -232,3 +260,4 @@ export default function Privacy() {
     </div>
   );
 }
+export default Privacy;

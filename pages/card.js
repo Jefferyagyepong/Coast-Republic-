@@ -1,35 +1,36 @@
 import Head from "next/head";
 import Header from "../components/Head/Header";
-import ProductCard from "../components/Products/ProductCard";
-import styles from "../sass/components/ShopPage.module.scss";
+import Toast from "../components/Head/Toast";
+import Card from "@/components/Card";
 import { getProducts } from "./api/products/index";
-import FootBottom from "@/components/Footer/FootBottom";
-import Nav from "@/components/Head/Nav";
+import SingleProductCard from "@/components/SingleProduct";
 
-const DetailPage = ({ products }) => {
+
+const card = ({ products }) => {
+ 
   return (
     <>
       <Head>
-        <title>Shop | Coast Republic</title>
+        <title>About us | Coast Republic</title>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
         <meta name="twitter:title" content="Coast Republic inc" />
-        <meta name="twitter:description" content="T-shirt, shoes and more..." />
+        <meta name="twitter:description" content="our story" />
         <meta
           name="twitter:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta property="og:title" content="Coast Republic inc" />
-        <meta property="og:description" content="T-shirt, shoes and more..." />
+        <meta property="og:description" content="our story" />
         <meta
           property="og:url"
-          content="https://coast-republic.vercel.app/shop"
+          content="https://coast-republic.vercel.app/about"
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/hjRpfKgJ/crlogo-1.png"
+          content="https://i.postimg.cc/xCrTBdg7/coast.png"
         />
         <meta
           name="keywords"
@@ -37,33 +38,26 @@ const DetailPage = ({ products }) => {
         />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Jeffery Agyepong" />
-        <meta name="viewport" content="width=device-width,     initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width,  initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+        />
         <link rel="icon" href="" />
       </Head>
-
       <main>
-        <Header />
-        <Nav/>
-
-        <div className={styles.container}>
-        
-          <div className={styles.cards}>
-            {products.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+        <div className="sticky">
+          <Toast />
+          <Header />
         </div>
-
- 
-        <FootBottom/>
+      <SingleProductCard/>
       </main>
     </>
   );
 };
-
-export default DetailPage;
+export default card;
 
 export async function getStaticProps() {
   const products = await getProducts();
   return { props: { products } };
-}
+};
+

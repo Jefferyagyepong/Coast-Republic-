@@ -1,32 +1,33 @@
 @import "../abstracts/variables";
 
 .cards {
-
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
 
 }
-.sticky{
-width:100%;
-top:0;
-position:sticky;
-z-index:999;
+
+.sticky {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 999;
 }
 
-.container{
-width:100%;
-text-align:left;
-margin-top:20px;
+.container {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
 }
 
-.inline-flex{
+.inline-flex {
 
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -41,27 +42,27 @@ margin-top:20px;
 
 }
 
-.text{
+.text {
   opacity: 0.5;
 }
-.price, .description, .category{
-  text-align: start;
+
+.price,
+.description,
+.category {
+  text-align: left;
   opacity: 0.5;
 }
-.add-to-cart{
 
-color:white;
 
-}
+
 @media (max-width: 700px) {
-.cards {
+  .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
 
   }
 
 }
-

@@ -1,7 +1,11 @@
-export default function Terms() {
+function Terms() {
   return (
-    <div className="align-left">
-      <h2>Terms Of Service</h2>
+    <div>
+      <em>
+        {" "}
+        <h2>Terms Of Service</h2>
+      </em>
+
       <p>
         This website is operated by Coast Republic. Throughout the site, the
         terms &#34;we&#34;, &#34;us&#34; and &#34;our&#34; refer to Coast
@@ -350,3 +354,4 @@ export default function Terms() {
     </div>
   );
 }
+export default Terms;

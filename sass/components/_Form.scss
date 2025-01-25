@@ -1,13 +1,16 @@
 @import "../abstracts/variables";
-.form-container{
- border-radius: 5px;
+
+.form-container {
+  border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 
 
-input[type=text],input[type=email] {
-  width: 100%;
+
+input[type=text],
+input[type=email],  input[type=search] {
+  width: 500px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -32,44 +35,55 @@ button[type=submit]:hover {
 }
 
 textarea {
-     display: inline-block;
+  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-padding: 12px 20px;
-    width:100%;
+  padding: 12px 20px;
+  width: 100%;
 
-  
+
 }
-input:focus{
-outline:none;
+
+input:focus {
+  outline: none;
 }
-textarea:focus{
-outline:none;
+
+textarea:focus {
+  outline: none;
 }
 
 input::-webkit-input-placeholder {
-    font: inherit;
+  font: inherit;
 }
 
 input::-moz-placeholder {
-    font: inherit;
+  font: inherit;
 }
 
 input:-ms-input-placeholder {
-    font: inherit;
+  font: inherit;
 }
 
 input::-ms-input-placeholder {
-    font: inherit;
+  font: inherit;
 }
 
 input::placeholder {
-    font: inherit;
-  
-   
+  font: inherit;
+
+
 }
+@media (max-width: 700px) {
+input[type=text],
+  input[type=email], input[type=search] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-
-
-
+}

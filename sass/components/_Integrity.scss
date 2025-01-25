@@ -7,59 +7,18 @@
   text-align: center;
   border: none;
   border-radius: 2px;
-
-
-}
-
-.proceed-link {
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  width: 200px;
-  justify-content: center;
-  margin: 0 auto;
-
-}
-.proceed-link:hover{
-  opacity: 0.7;
 }
 
 
 
 .shop-nows:hover {
   opacity: 0.3;
-
-
 }
+
 @media (max-width: 700px) {
-.proceed-link {
-   
-    width: 100%;
-    
+  .proceed-link {
+ width: 100%;
 
   }
 }
 
-
-
-.thrift {
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  background-image: url("/wall.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -o-align-items: center;
-  -ms-align-items: center;
-  -moz-justify-content: center;
-  -o-justify-content: center;
-  -ms-justify-content: center;
-
-}

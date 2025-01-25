@@ -1,6 +1,7 @@
+import { useSelector } from "react-redux";
 import Navbar from "./Navbar";
 
-export default function CartBasket() {
+function CartBasket() {
   const Header = () => {
     const cart = useSelector(state => state.cart);
 
@@ -9,9 +10,6 @@ export default function CartBasket() {
     };
   };
 
-  return (
-   
-      <Navbar />
-  
-  );
+  return <Navbar />;
 }
+export default CartBasket;

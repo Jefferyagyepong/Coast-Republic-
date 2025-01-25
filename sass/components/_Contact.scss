@@ -1,21 +1,11 @@
 @import "../abstracts/variables";
-align-left{
-width:100%;
-}
-
-.align-left h1, h2, h3, p {
-  width: 88%;
-  text-align:left;
-line-height: 1.9;
-padding-left:10px;
-}
 
 
 .form-container {
   padding-top: 20px;
-padding-bottom:20px;
+  padding-bottom: 20px;
   margin: 0 auto;
   width: 100%;
-    
+
 
 }

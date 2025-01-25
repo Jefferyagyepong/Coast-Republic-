@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
 import Header from "../components/Head/Header";
@@ -16,12 +15,10 @@ import Nav from "@/components/Head/Nav";
 import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/ CategoryCard";
 
-
 const Home = ({ products }) => {
   return (
     <>
       <Head>
-        
         <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
@@ -54,7 +51,10 @@ const Home = ({ products }) => {
         />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="author" content="Coast Republic Inc" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+        />
         <link rel="icon" href="/" />
         <meta
           name="google-site-verification"
@@ -63,21 +63,21 @@ const Home = ({ products }) => {
       </Head>
       <main>
         <div className="sticky">
-           <Toast/>
-        <Header />   
-          </div> 
-        <Nav/>
+          <Toast />
+          <Header />
+        </div>
+        <Nav />
         <Sale />
         <Thrifts />
         <New />
         <CoastApp />
-        <hr/>
+        <hr />
         <Collection />
-              <div className={styles.cards}>
+        <div className={styles.cards}>
           {products.map(product => (
-              <CategoryCard  key={product.id} product={product}/>
-            ))}
-          </div>
+            <CategoryCard key={product._id} product={product} />
+          ))}
+        </div>
         <Newsletter />
         <Brands />
         <Footer />
@@ -90,4 +90,4 @@ export default Home;
 export async function getStaticProps() {
   const products = await getProducts();
   return { props: { products } };
-}
+};

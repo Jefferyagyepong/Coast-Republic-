@@ -1,13 +1,21 @@
 
 
-export default function New() {
+ function New() {
   return (
     <div className="ibrid-box">
-     <br/> <h3>WHATS NEW TODAY </h3>
-     
-      <span>12</span>
-    
-      <p>Discover what just landed at Coast Republic</p><br/>
+      <br />
+      <em>
+        {" "}
+        <h3>WHATS NEW TODAY </h3>
+      </em>
+      <b>
+        {" "}
+        <span>12</span>
+      </b>
+
+      <p>Discover what just landed at Coast Republic</p>
+      <br />
     </div>
   );
-}
+ }
+export default New;

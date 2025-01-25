@@ -5,8 +5,7 @@ footer {
 display:flex;
 flex-direction:column;
 align-items:center;
-  padding-top: 1.3rem;
-padding-bottom:0.3rem;
+padding: 20px, 30px;
 background-color: $colorgroup4b;
 }
 
@@ -44,7 +43,7 @@ opacity:0.3;
 
 }
 .short-width{
-  width: 20%;
+  width: 100%;
   opacity: 0.1;
 }
 
@@ -78,11 +77,6 @@ opacity:0.3;
 
 
 
-.down {
-  margin: 1.3rem;
-  text-align: center;
-
-}
 .footer-align-left{
 width:100%;
 text-align:left;

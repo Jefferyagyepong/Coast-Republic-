@@ -1,58 +1,61 @@
 import Image from "next/image";
 import FootBottom from "./FootBottom";
 import Link from "next/link";
-export default function Footer() {
+function Footer() {
   return (
     <footer>
       <div className="footer-align-left">
-        <Link href={"./"}>
-          <h2 className="footer-tag">Coast Republic Inc.</h2>
-        </Link>
-        <address className="footer-tag"><h6>7 AK-717-5846 Minetti ST, Asokwa 🇬🇭</h6>
-         <h6>coastrepgh@gmail.com</h6>
-          </address>
-
-        <Link href={"/"} className="footer-tag">
-          {" "}
-          Home
-        </Link>
-
-        <Link href={"/about"} className="footer-tag">
-          {" "}
-          About
-        </Link>
-
-        <Link href={"/shop"} className="footer-tag">
-          {" "}
-          shop
-        </Link>
-
-        <Link href={"/contact"} className="footer-tag">
-          {" "}
-          Contact
-        </Link>
-
-        <Link href={"/privacy"} className="footer-tag">
-          {" "}
-          Privacy Policy
-        </Link>
-
-        <Link href={"/terms"} className="footer-tag">
-          {" "}
-          T & C&apos;s
-        </Link>
-          <Link href={"/delivery"} className="footer-tag">
-          {" "}
-          Delivery & Refunds
-        </Link>
-
-        <div className="footer-flex-contact">
-          <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
-          <Link href={"tel: +233 240 000000"} className="footer-tag">
-            {" "}
-            +233 240 000000
+        <em>
+          <Link href={"./"}>
+            <h2 className="footer-tag">Coast Republic Inc.</h2>
           </Link>
-        </div>
+          <address className="footer-tag">
+            <h6>7 AK-717-5846 Minetti ST, Asokwa 🇬🇭</h6>
+            <h6>coastrepgh@gmail.com</h6>
+            <div className="footer-flex-contact">
+              <Image src={"/call.svg"} width={15} height={20} alt="call svg" />
+              <Link href={"tel: +233 240 000000"} className="footer-tag">
+                {" "}
+                +233 240 000000
+              </Link>
+            </div>
+          </address>
+        </em>
+        <b>
+          <Link href={"/"} className="footer-tag">
+            {" "}
+            Home
+          </Link>
+
+          <Link href={"/about"} className="footer-tag">
+            {" "}
+            About
+          </Link>
+
+          <Link href={"/shop"} className="footer-tag">
+            {" "}
+            shop
+          </Link>
+
+          <Link href={"/contact"} className="footer-tag">
+            {" "}
+            Contact
+          </Link>
+
+          <Link href={"/privacy"} className="footer-tag">
+            {" "}
+            Privacy Policy
+          </Link>
+
+          <Link href={"/terms"} className="footer-tag">
+            {" "}
+            T & C&apos;s
+          </Link>
+          <Link href={"/delivery"} className="footer-tag">
+            {" "}
+            Delivery & Refunds
+          </Link>
+        </b>
       </div>
 
       <hr className="short-width" />
@@ -64,3 +67,4 @@ export default function Footer() {
     </footer>
   );
 }
+export default Footer;

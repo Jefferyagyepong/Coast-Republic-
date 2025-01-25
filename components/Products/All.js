@@ -1,10 +1,13 @@
 
 
-export default function All() {
+ function All() {
   return (
     <div className="ibrid-box">
-   <h3>Collection</h3>
-     
+      <em>
+        {" "}
+        <h3>Collection</h3>
+      </em>
     </div>
   );
-}
+ }
+export default All;

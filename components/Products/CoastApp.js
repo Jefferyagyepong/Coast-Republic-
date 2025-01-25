@@ -1,11 +1,15 @@
 import Image from 'next/image';
-export default function IbridApp() {
+ function IbridApp() {
     return (
-      <div className="ibrid-box"> 
-        <h3>Download Our App</h3><br/>
+      <div className="ibrid-box">
+        <em>
+          {" "}
+          <h3>Download Our App</h3>
+        </em>
+        <br />
         <p>
-          Unlock a world of limetless possiblities. Download the Coast Republic app and
-          embark on a journey of discovery and connection.
+          Unlock a world of limetless possiblities. Download the Coast Republic
+          app and embark on a journey of discovery and connection.
         </p>
 
         <div className="ibrid-flex">
@@ -14,4 +18,5 @@ export default function IbridApp() {
         </div>
       </div>
     );
-}
+ }
+export default IbridApp;

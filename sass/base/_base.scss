@@ -12,13 +12,13 @@
   height: 6px;
   width: 4px;
   scroll-behavior: smooth;
-  
+
 }
 
 ::-webkit-scrollbar-track {
   scroll-behavior: smooth;
   border-radius: 0;
-  
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,18 +27,19 @@
 }
 
 html {
-  
+
   font-size: 88.5%;
   scroll-behavior: smooth;
-    text-rendering: optimizeLegibility;
-width:100%;
+  text-rendering: optimizeLegibility;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
-  
+
 }
-img{
+
+img {
 
   object-fit: contain;
 }
@@ -47,7 +48,7 @@ img{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-width:100%;
+  width: 100%;
 }
 
 
@@ -55,56 +56,56 @@ width:100%;
 
 body,
 html {
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    min-height: 100vh;
-    text-rendering: optimizeLegibility;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Oswald', sans-serif;
-    -webkit-font-smoothing: antialised;
-    -moz-font-smoothing: grayscale;
-    background-color: #FAF9F6;
+  -webkit-font-smoothing: antialised;
+  -moz-font-smoothing: grayscale;
+  background-color: #FAF9F6;
 }
 
 button {
- outline: 0 !important;
-   border: none;
-   padding: 15px 32px;
-   background-color:#4CAF50;
-   text-align: center;
-color:white;
-   text-decoration: none;
-   display: inline-block;
-    cursor: pointer;
-    -webkit-appearance: button important;
-    -moz-appearance: button;
-    -o-appearance: button;
-    appearance: button;
+  outline: 0 !important;
+  margin-top: 30px;
+  border: none;
+  padding: 15px 32px;
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-appearance: button important;
+  -moz-appearance: button;
+  -o-appearance: button;
+  appearance: button;
 }
 
 button:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 
 footer {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 ul {
-    display: block;
-    text-decoration: none;
-    margin: 0 auto;
-    list-style: none;
-    
+  display: block;
+  text-decoration: none;
+  list-style: none;
+
 }
 
 li {
-    margin: 0 auto;
-    cursor: pointer;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s ease;
 
 }
-
