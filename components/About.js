@@ -34,10 +34,7 @@ function About() {
         favorite brand products are available.
       </p>
           </body>
-          <footer><h5>Established @2023</h5></footer>
-       
-     
-          
+          <footer><h5>Established @2023</h5></footer>         
           </article>
       
  
