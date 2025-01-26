@@ -13,7 +13,7 @@ export default function Products() {
 
   const fetchProducts = async (page) => {
     setLoading(true);
-    const res = await fetch(`/api/products?page=${page}&limit=10`);
+    const res = await fetch(`/api/products/data?page=${page}&limit=10`);
     const data = await res.json();
     setProducts(data.data);
     setTotalPages(data.totalPages);
