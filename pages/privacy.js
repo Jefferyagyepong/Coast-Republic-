@@ -52,7 +52,7 @@ export default function privacy() {
       
         <Nav/>
         <Privacy />
-        <FootBottom />
+        
       </main>
     </>
   );
