@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="ibrid-box">
+    <div className="ibrid-box-line">
       
         {" "}<br/><br/>
           <h2>About Us</h2><br/>
