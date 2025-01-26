@@ -44,6 +44,11 @@ export default function Products() {
           </div>
         ))}
       </div>
+           <div className={styles.cards}>
+          {products.map(product => (
+            <CategoryCard key={product._id} product={product} />
+          ))}
+        </div>
 
       <div className="pagination">
         <button
