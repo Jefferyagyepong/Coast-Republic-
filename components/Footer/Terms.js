@@ -1,7 +1,10 @@
 function Terms() {
   return (
-    <div>
-      <em>
+    <div className= "ibrid-box">
+      
+       <article>
+               <section> 
+                   <em>
         {" "}
         <h2>Terms Of Service</h2>
       </em>
@@ -11,8 +14,12 @@ function Terms() {
         terms &#34;we&#34;, &#34;us&#34; and &#34;our&#34; refer to Coast
         Republic.
       </p>
-
-      <p>
+                </section>
+               </article>
+              
+                  <article>
+               <section> 
+           <p>
         Coast Republic offers this website, including all information, tools and
         services available from this site to you, the user, conditioned upon
         your acceptance of all terms, conditions, policies and notices stated
@@ -22,7 +29,12 @@ function Terms() {
         including those additional terms and conditions and policies referenced
         here in and/ or available by hyperlink.
       </p>
-
+                </section>
+               </article>
+              
+               <article>
+               <section> 
+      
       <p>
         These terms of apply to all users of this website, including without
         limitation users who are browsers, vendors,customers, merchants,and/or
@@ -32,8 +44,13 @@ function Terms() {
         do not agree to all of the terms and conditions of this agreement, then
         you may not access the website or use any services.
       </p>
+                </section>
+               </article>
 
-      <p>
+             
+               <article>
+               <section> 
+           <p>
         If these Terms of Service are considered an offer, accounts is expressly
         limited to these Terms od Service. Any new features or tools whhich are
         added to the current store shall also be subject to the Terms and
@@ -46,7 +63,14 @@ function Terms() {
         store is hosted on vercel. They provide us with hosting platform that
         allows us to sell our products and services to you.
       </p>
+            
+                </section>
+               </article>
 
+  
+               <article>
+               <section> 
+      
       <p>
         SECTION 1 - ONLINE STORE TERMS By agreeing to these Terms of Service,you
         represent that you are at least the age of majority in your region or
@@ -59,8 +83,13 @@ function Terms() {
         code of a destructive nature. A breach or violation of any of the Terms
         will result in immediate termination of your service.
       </p>
+                </section>
+               </article>
 
-      <p>
+             
+               <article>
+               <section> 
+           <p>
         SECTION 2 -GENERAL CONDITIONS We reserve the right to refuse service to
         anyone for any reason at any time. You understand that your content (not
         legit credit card information), may be transmit uncrypted and involve
@@ -74,8 +103,14 @@ function Terms() {
         this agreement are included for convinience only and will not limit or
         otherwise affect these Terms.
       </p>
+                </section>
+               </article>
 
-      <p>
+ 
+             
+               <article>
+               <section> 
+            <p>
         SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION We are
         not responsible if information made available on this site is not
         accurate,complete or current. The material on this site is provided for
@@ -89,7 +124,14 @@ function Terms() {
         obligation to update any information on our site. You agree that it is
         your responsibilty to monitor changes to our site.
       </p>
+                </section>
+               </article>
 
+
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 4 -MODIFICATIONS TO THE SERVICE AND PRICES Prices for our
         products are subject to change without notice. We reserve the right at
@@ -98,8 +140,13 @@ function Terms() {
         any third party for any modification, price change, suspension or
         discontinuation of the Service.
       </p>
+                </section>
+               </article>
 
-      <p>
+             
+               <article>
+               <section> 
+           <p>
         SECTION 5 -PRODUCTS OR SERVICES (if applicable) Certain products or
         services may be available exclusively online through the website. These
         products or services may have limited quantities and are subject to
@@ -119,8 +166,14 @@ function Terms() {
         material purchased or obtained by you will meet your expectations, or
         that any errors in the Services will be corrected.
       </p>
+                </section>
+               </article>
 
-      <p>
+ 
+             
+               <article>
+               <section> 
+            <p>
         SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION We reserve the
         right to refuse any order you place with us. We may, in our sole
         discretion, limit or cancel quantities purchased per person, per
@@ -138,7 +191,14 @@ function Terms() {
         dates, so that we can complete your transactions and contact you as
         needed. For more details please review our Returns Policy.
       </p>
+                </section>
+               </article>
 
+
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 7- OPTIOPNAL TOOLS we may provide you with access to third-party
         tools over which we neither onitor nor have any control nor input. You
@@ -154,7 +214,13 @@ function Terms() {
         (including, the release of new tools and resources). Such new features
         and/or Services shall also be subject to these Terms of Service.
       </p>
-
+             
+            
+                </section>
+               </article>
+   <article>
+               <section> 
+      
       <p>
         SECTION 8- THIRD PARTY LINKS Certain content, products and services
         available via our Service may include aterials fro third-parties.
@@ -171,8 +237,13 @@ function Terms() {
         Complaints, claims, concerns, or questions regarding third-party
         products should be directed to the third-party.
       </p>
+                </section>
+               </article>
 
-      <p>
+             
+               <article>
+               <section> 
+            <p>
         SECTION 9- USER COENTS, FEEDBACK AND OTHER SUBMISSIONS If, at our
         request, you send certain specific submissions(for example contest
         entries) or without a request fromus you send creative ideas,
@@ -199,14 +270,26 @@ function Terms() {
         commments you make and their accuracy. We take no responsibility and
         assumme no liabilty for any commments posted by you or any third-party.
       </p>
+                </section>
+               </article>
 
-      <p>
+
+             
+               <article>
+               <section> 
+         <p>
         SECTION 10 - PERSONAL INFORMATION Your submission of personal
         information through the store is governed by our Privacy Policy. To view
         our Privacy Policy.
       </p>
+       
+                </section>
+               </article>
 
-      <p>
+   
+               <article>
+               <section> 
+          <p>
         SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS Occasionally there may
         be information on our site or in the Service that contains typographical
         errors, inaccuracies or omissions that may relate to product
@@ -222,7 +305,13 @@ function Terms() {
         any related website, should be taken to indicate that all information in
         the Service or on any related website has been modified or updated.
       </p>
-
+                </section>
+               </article>
+  
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 12 - PROHIBITED USES In addition to other prohibitions as set
         forth in the Terms of Service, you are prohibited from using the site or
@@ -245,8 +334,13 @@ function Terms() {
         right to terminate your use of the Service or any related website for
         violating any of the prohibited uses.
       </p>
+                </section>
+               </article>
 
-      <p>
+       
+               <article>
+               <section> 
+            <p>
         SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY We do not
         guarantee, represent or warrant that your use of our service will be
         uninterrupted, timely, secure or error-free. We do not warrant that the
@@ -280,10 +374,15 @@ function Terms() {
         jurisdictions, our liability shall be limited to the maximum extent
         permitted by law.
       </p>
+                </section>
+               </article>
 
-      <p>
+             
+               <article>
+               <section> 
+           <p>
         SECTION 14 - INDEMNIFICATION You agree to indemnify, defend and hold
-        harmless KRUDE and our parent, subsidiaries, affiliates, partners,
+        harmless COAST REPUBLIC and our parent, subsidiaries, affiliates, partners,
         officers, directors, agents, contractors, licensors, service providers,
         subcontractors, suppliers, interns and employees, harmless from any
         claim or demand, including reasonable attorneys’ fees, made by any
@@ -291,7 +390,14 @@ function Terms() {
         Service or the documents they incorporate by reference, or your
         violation of any law or the rights of a third-party.
       </p>
+                </section>
+               </article>
 
+ 
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 15 - SEVERABILITY In the event that any provision of these Terms
         of Service is determined to be unlawful, void or unenforceable, such
@@ -301,7 +407,13 @@ function Terms() {
         shall not affect the validity and enforceability of any other remaining
         provisions.
       </p>
+                </section>
+               </article>
 
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 16 - TERMINATION The obligations and liabilities of the parties
         incurred prior to the termination date shall survive the termination of
@@ -315,7 +427,13 @@ function Terms() {
         all amounts due up to and including the date of termination; and/or
         accordingly may deny you access to our Services (or any part thereof).
       </p>
+                </section>
+               </article>
 
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 17 - ENTIRE AGREEMENT The failure of us to exercise or enforce
         any right or provision of these Terms of Service shall not constitute a
@@ -329,14 +447,25 @@ function Terms() {
         of these Terms of Service shall not be construed against the drafting
         party.
       </p>
+                </section>
+               </article>
 
-      <p>
+             
+               <article>
+               <section> 
+        <p>
         SECTION 18 - GOVERNING LAW These Terms of Service and any separate
         agreements whereby we provide you Services shall be governed by and
         construed in accordance with the laws of Ghana.
       </p>
+                </section>
+               </article>
 
-      <p>
+    
+       
+               <article>
+               <section> 
+          <p>
         SECTION 19 - CHANGES TO TERMS OF SERVICE You can review the most current
         version of the Terms of Service at any time at this page. We reserve the
         right, at our sole discretion, to update, change or replace any part of
@@ -346,11 +475,20 @@ function Terms() {
         the posting of any changes to these Terms of Service constitutes
         acceptance of those changes.
       </p>
-
+                </section>
+               </article>
+  
+             
+               <article>
+               <section> 
+      
       <p>
         SECTION 20 - CONTACT INFORMATION Questions about the Terms of Service
         should be sent to us at support@coastrepublic.com
       </p>
+                </section>
+               </article>
+
     </div>
   );
 }
