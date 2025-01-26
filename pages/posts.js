@@ -24,7 +24,7 @@ export default function Products({products}) {
   //};
 
   useEffect(() => {
-    fetchProducts(currentPage);
+    getProducts(currentPage);
   }, [currentPage]);
 
   return (
