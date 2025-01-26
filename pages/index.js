@@ -5,7 +5,7 @@ import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Products/Sale";
 import styles from "../sass/components/ShopPage.module.scss";
-//import { getProducts } from "./api/products/index";
+import { getProducts } from "./api/products/index";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
