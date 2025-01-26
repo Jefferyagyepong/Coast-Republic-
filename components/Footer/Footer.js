@@ -54,20 +54,28 @@ function Footer() {
 
       <FootBottom />
       <div className="payment-container">
-        <Image
+        <ul clasName="list-inline">
+        <li>
+               <Image
           src={"/momo.jpg"}
           height={17}
           width={29}
           alt="momo logo"
           className="payment-logo"
         />|
-        <Image
+        </li>
+         <li>
+              <Image
           src={"/Visa.png"}
           height={25}
           width={39}
           alt="momo logo"
           className="payment-logo"
-        /> <br/>
+        />
+        </li>
+        </ul>
+   
+     <br/>
       </div> <br/>
       <h6 className="footer-tag">
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
