@@ -1,6 +1,7 @@
 // pages/index.js
 
 // pages/products.js
+import styles from "../sass/components/ShopPage.module.scss";
 import CategoryCard from "@/components/Products/ CategoryCard";
 import { getProducts } from "./api/products/index";
 import { useState, useEffect } from 'react';
