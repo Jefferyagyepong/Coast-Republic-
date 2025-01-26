@@ -9,7 +9,7 @@ const CategoryCard = ({ product }) => {
   return (
     <div className={styles.card}>
       <br />{" "}
-      <Link href={"/"}>
+      
         <Image
           src={product.image}
           height={100}
@@ -17,11 +17,14 @@ const CategoryCard = ({ product }) => {
           alt=""
           className={styles.border}
         />
-      </Link>
+    
       <em>
         <h4 className={styles.title}>{product.title}</h4>
         <h4 className={styles.title}>InStock: {product.inStock}</h4>
       </em>
+             <Link href={`/products/${product.id}`}>
+              <a>View Details</a>
+            </Link>
       <button
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"
