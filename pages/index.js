@@ -16,7 +16,7 @@ import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/ CategoryCard";
 
 const Home = ({ products }) => {
-  const [products, setProducts] = useState([]);
+
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
