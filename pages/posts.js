@@ -1,63 +1,56 @@
-// pages/products.js
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
 
-export default function Products() {
-  const [products, setProducts] = useState([]);
-  const [totalPages, setTotalPages] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [loading, setLoading] = useState(true);
-
-  const fetchProducts = async (page) => {
-    setLoading(true);
-    const res = await fetch(`https:/coast-republic/api/posts?page=${page}&limit=10`);
-    const data = await res.json();
-    setProducts(data.data);
-    setTotalPages(data.totalPages);
-    setCurrentPage(data.currentPage);
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    fetchProducts(currentPage);
-  }, [currentPage]);
-
+export default function Products({ products }) {
   return (
     <div>
-      <h1>Our Products</h1>
-
-      {loading && <p>Loading products...</p>}
-
+      <h1>Product Listing</h1>
       <div className="product-list">
-        {products.map(product => (
-          <div key={product.id} className="product-item">
-            <Image src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
+        {products.map((product) => (
+          <div key={product.id} className="product-card">
+            <img src={product.image} alt={product.name} />
+            <h2>{product.name}</h2>
             <p>{product.description}</p>
-            <p><strong>${product.price}</strong></p>
-            <Link href={`/products/${product.id}`}>
-              <a>View Details</a>
-            </Link>
+            <p>{product.price}</p>
           </div>
         ))}
       </div>
 
-      <div className="pagination">
-        <button
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage(currentPage - 1)}
-        >
-          Previous
-        </button>
-        <span>{currentPage} of {totalPages}</span>
-        <button
-          disabled={currentPage === totalPages}
-          onClick={() => setCurrentPage(currentPage + 1)}
-        >
-          Next
-        </button>
-      </div>
+      <style jsx>{`
+        .product-list {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .product-card {
+          border: 1px solid #ddd;
+          padding: 20px;
+          text-align: center;
+          width: 200px;
+        }
+        .product-card img {
+          width: 100%;
+          height: auto;
+        }
+      `}</style>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  // Get the file path of the products.json
+  const filePath = path.join(process.cwd(), 'public/products.json');
+
+  // Read the file contents
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+
+  // Parse the JSON data
+  const products = JSON.parse(fileContents);
+
+  // Return the products data as props
+  return {
+    props: {
+      products,
+    },
+  };
 }
