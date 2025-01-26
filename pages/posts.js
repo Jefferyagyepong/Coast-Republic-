@@ -11,7 +11,7 @@ export default function Products() {
 
   const fetchProducts = async (page) => {
     setLoading(true);
-    const res = await fetch(`https:/coast-republic/api/products/?page=${page}&limit=10`);
+    const res = await fetch(`https:/coast-republic/api/posts?page=${page}&limit=10`);
     const data = await res.json();
     setProducts(data.data);
     setTotalPages(data.totalPages);
