@@ -32,19 +32,6 @@ export default function Products({products}) {
 
       {loading && <p>Loading products...</p>}
 
-      //<div className="product-list">
-       // {products.map(product => (
-        //  <div key={product.id} className="product-item">
-          //  <img src={product.image} alt={product.name} />
-           // <h3>{product.name}</h3>
-           // <p>{product.description}</p>
-            //<p><strong>${product.price}</strong></p>
-            //<Link href={`/products/${product.id}`}>
-             // <a>View Details</a>
-            //</Link>
-          //</div>
-       // ))}
-      //</div>
            <div className={styles.cards}>
           {products.map(product => (
             <CategoryCard key={product._id} product={product} />
