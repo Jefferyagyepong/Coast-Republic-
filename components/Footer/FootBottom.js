@@ -22,8 +22,8 @@ import Link from "next/link";
      
         
       </div>
- <br/>
-      <em>
+ 
+      <em><br/>
         {" "}
         <h6 className="footer-tag">Powered by Paystack</h6>
       </em> <br/>
