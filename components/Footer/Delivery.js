@@ -21,6 +21,9 @@ function Delivery() {
       </b>
            </section>
         </article>
+          <h6 className="footer-tag">
+        &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
+      </h6> <br/>
 
     </div>
   );
