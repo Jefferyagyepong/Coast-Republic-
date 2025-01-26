@@ -1,7 +1,10 @@
 function Delivery() {
   return (
-    <div ><br/>  <br/>
-      <em>
+    <div >
+      <article> 
+        <section>
+          
+                <em>
         <h2>Delivery</h2>
       </em><br/>  <br/>
 
@@ -16,6 +19,9 @@ function Delivery() {
           the package. Coast Republic will not replace any packages.
         </p>
       </b>
+           </section>
+        </article>
+
     </div>
   );
 }
