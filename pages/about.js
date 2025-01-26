@@ -58,7 +58,7 @@ export default function about() {
         <About />
 
         <Newsletter />
-        <FootBottom />
+       
       </main>
     </>
   );
