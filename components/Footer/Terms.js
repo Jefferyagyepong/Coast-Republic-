@@ -15,7 +15,7 @@ function Terms() {
         Republic.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
               
                   <article>
                <section> 
@@ -30,7 +30,7 @@ function Terms() {
         here in and/ or available by hyperlink.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
               
                <article>
                <section> 
@@ -45,7 +45,7 @@ function Terms() {
         you may not access the website or use any services.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -65,7 +65,7 @@ function Terms() {
       </p>
             
                 </section>
-               </article>
+               </article><br/><br/>
 
   
                <article>
@@ -84,7 +84,7 @@ function Terms() {
         will result in immediate termination of your service.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -104,7 +104,7 @@ function Terms() {
         otherwise affect these Terms.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
  
              
@@ -125,7 +125,7 @@ function Terms() {
         your responsibilty to monitor changes to our site.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
 
              
@@ -141,7 +141,7 @@ function Terms() {
         discontinuation of the Service.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -167,7 +167,7 @@ function Terms() {
         that any errors in the Services will be corrected.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
  
              
@@ -192,7 +192,7 @@ function Terms() {
         needed. For more details please review our Returns Policy.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
 
              
@@ -217,7 +217,7 @@ function Terms() {
              
             
                 </section>
-               </article>
+               </article><br/><br/>
    <article>
                <section> 
       
@@ -238,7 +238,7 @@ function Terms() {
         products should be directed to the third-party.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -271,7 +271,7 @@ function Terms() {
         assumme no liabilty for any commments posted by you or any third-party.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
 
              
@@ -284,7 +284,7 @@ function Terms() {
       </p>
        
                 </section>
-               </article>
+               </article><br/><br/>
 
    
                <article>
@@ -306,7 +306,7 @@ function Terms() {
         the Service or on any related website has been modified or updated.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
   
              
                <article>
@@ -335,7 +335,7 @@ function Terms() {
         violating any of the prohibited uses.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
        
                <article>
@@ -375,7 +375,7 @@ function Terms() {
         permitted by law.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -391,7 +391,7 @@ function Terms() {
         violation of any law or the rights of a third-party.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
  
              
@@ -408,7 +408,7 @@ function Terms() {
         provisions.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -428,7 +428,7 @@ function Terms() {
         accordingly may deny you access to our Services (or any part thereof).
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -448,7 +448,7 @@ function Terms() {
         party.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
              
                <article>
@@ -459,7 +459,7 @@ function Terms() {
         construed in accordance with the laws of Ghana.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
 
     
        
@@ -476,7 +476,7 @@ function Terms() {
         acceptance of those changes.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
   
              
                <article>
@@ -487,7 +487,7 @@ function Terms() {
         should be sent to us at support@coastrepublic.com
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
      
  <h6 className="footer-tag">
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
