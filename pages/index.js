@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState, useEffect } from 'react';
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
 import Header from "../components/Head/Header";
