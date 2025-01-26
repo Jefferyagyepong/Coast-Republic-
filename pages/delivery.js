@@ -58,7 +58,7 @@ export default function delivery() {
         <Nav/>
         <Delivery />
         <Newsletter />
-        <FootBottom />
+        
       </main>
     </>
   );
