@@ -26,28 +26,7 @@ const CartPage = () => {
       0
     );
   };
-  const publicKey = "pk_test_e44bf87ec09165000fabee1d8ea8df1ec5d27f04";
-  const amount = 400000;
-  const currency = "GHS";
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [check, setCheck] = useState("");
 
-  const componentProps = {
-    email,
-    amount,
-    currency,
-    metadata: {
-      name,
-      phone,
-      check,
-    },
-    publicKey,
-    text: "Pay Now",
-    onSuccess: () => alert("Order Succesfully placed "),
-    onClose: () => alert("Wait! Don't leave :("),
-  };
 
   return (
     <>
@@ -152,40 +131,6 @@ const CartPage = () => {
             </>
           )}
           <hr />
-          <div className="form-container">
-            <form>
-              <h4>Fill in the form to verify your payment credentials</h4>
-              <input
-                type="text"
-                id="name"
-                onChange={e => setName(e.target.value)}
-                placeholder="full name"
-              />
-              <input
-                type="text"
-                id="email"
-                onChange={e => setEmail(e.target.value)}
-                placeholder="email"
-              />
-              <input
-                type="text"
-                id="phone"
-                onChange={e => setPhone(e.target.value)}
-                placeholder="Phone number"
-              />
-
-              <div>
-                <input
-                  type="checkbox"
-                  id="check"
-                  onChange={e => setCheck(e.target.value)}
-                />{" "}
-                I Agree Terms & Conditions
-              </div>
-
-              <PaystackButton className="button-link" {...componentProps} />
-            </form>
-          </div>
         </div>
         <FootBottom />
       </main>
