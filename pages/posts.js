@@ -1,30 +1,26 @@
-// pages/index.js
-
 // pages/products.js
-import styles from "../sass/components/ShopPage.module.scss";
-import CategoryCard from "@/components/Products/ CategoryCard";
-import { getProducts } from "./api/products/index";
+
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-export default function Products({products}) {
+export default function Products() {
   const [products, setProducts] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  //const fetchProducts = async (page) => {
-    //setLoading(true);
-    //const res = await fetch(`/api/products/data?page=${page}&limit=10`);
-    //const data = await res.json();
-    //setProducts(data.data);
-    //setTotalPages(data.totalPages);
-    //setCurrentPage(data.currentPage);
-    //setLoading(false);
-  //};
+  const fetchProducts = async (page) => {
+    setLoading(true);
+    const res = await fetch(`/api/products?page=${page}&limit=10`);
+    const data = await res.json();
+    setProducts(data.data);
+    setTotalPages(data.totalPages);
+    setCurrentPage(data.currentPage);
+    setLoading(false);
+  };
 
   useEffect(() => {
-    getProducts(currentPage);
+    fetchProducts(currentPage);
   }, [currentPage]);
 
   return (
@@ -33,11 +29,19 @@ export default function Products({products}) {
 
       {loading && <p>Loading products...</p>}
 
-           <div className={styles.cards}>
-          {products.map(product => (
-            <CategoryCard key={product._id} product={product} />
-          ))}
-        </div>
+      <div className="product-list">
+        {products.map(product => (
+          <div key={product.id} className="product-item">
+            <img src={product.image} alt={product.name} />
+            <h3>{product.name}</h3>
+            <p>{product.description}</p>
+            <p><strong>${product.price}</strong></p>
+            <Link href={`/products/${product.id}`}>
+              <a>View Details</a>
+            </Link>
+          </div>
+        ))}
+      </div>
 
       <div className="pagination">
         <button
@@ -57,16 +61,3 @@ export default function Products({products}) {
     </div>
   );
 }
-
-export async function getStaticProps() {
-  const products = await getProducts();
-    setLoading(true);
-  //const res = await fetch(`/api/products/data?page=${page}&limit=10`);
-    //const data = await res.json();
-    setProducts(products.data);
-    setTotalPages(products.totalPages);
-    setCurrentPage(products.currentPage);
-    setLoading(false);
-  return { props: { products } };
-};
-
