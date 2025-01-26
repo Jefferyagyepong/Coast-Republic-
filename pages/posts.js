@@ -1,5 +1,5 @@
 // pages/products.js
-
+import Imafe from 'next/image'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
@@ -32,7 +32,7 @@ export default function Products() {
       <div className="product-list">
         {products.map(product => (
           <div key={product.id} className="product-item">
-            <img src={product.image} alt={product.name} />
+            <Image src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p><strong>${product.price}</strong></p>
