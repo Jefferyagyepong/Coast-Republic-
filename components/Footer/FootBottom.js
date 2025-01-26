@@ -6,7 +6,7 @@ import Link from "next/link";
     
       <div className="payment-container">
         
-          <ul>
+          <ul className="list-inline">
             
             <li> <Link href={"/privacy"} className="footer-tag">
           {" "}
