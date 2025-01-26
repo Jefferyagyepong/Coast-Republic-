@@ -1,6 +1,6 @@
 function Delivery() {
   return (
-    <div className="ibrid-box">
+    <div className="ibrid-box-line">
       <article> 
         <section>
           
