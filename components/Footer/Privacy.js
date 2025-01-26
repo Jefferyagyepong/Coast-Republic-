@@ -7,14 +7,14 @@ function Privacy() {
         {" "}
         <h2>PRIVACY POLICY</h2>
       </em>
-
+<br/><br/>
       <p>
         This Privacy Policy describes how coast republic (the “Site” or “we”)
         collects, uses, and discloses your Personal Information when you visit
         or make a purchase from the Site.
       </p>
             </section>
-         </article> 
+         </article> <br/><br/>
          <article> 
               <section> 
                   <em>
@@ -30,7 +30,7 @@ function Privacy() {
         Ghana.
       </p>
                 </section>
-          </article>
+          </article><br/><br/>
               <article> 
                 <section>
                        <em>
@@ -81,7 +81,7 @@ function Privacy() {
         business purpose: Personal Information collected: collected from you
       </p>
                    </section>
-                </article>
+                </article><br/><br/>
                  <article> 
                    <section> 
                     
@@ -97,7 +97,7 @@ function Privacy() {
         Information, please contact us at the address above to request deletion.
       </p>
                     </section>
-                  </article>
+                  </article><br/><br/>
                     <article> 
                         <section> 
         
@@ -139,7 +139,7 @@ function Privacy() {
         https://optout.aboutads.info/.
       </p>
         </section>
-                      </article>
+                      </article><br/><br/>
                   
          <article>
              <section> 
@@ -162,7 +162,7 @@ function Privacy() {
         your fundamental rights and freedoms.
       </p>
               </section>
-           </article>
+           </article><br/><br/>
               <article> 
                    <section> 
                     
@@ -177,7 +177,7 @@ function Privacy() {
         the ‘Your rights’ section below.
       </p>
                     </section>
-                </article>
+                </article><br/><br/>
                     <article> 
                          <section>
                              <em>
@@ -200,7 +200,7 @@ function Privacy() {
         days.
       </p>
                            </section>
-                      </article>
+                      </article><br/><br/>
                         <article>
                              <section>
                                
@@ -219,7 +219,7 @@ function Privacy() {
         information, provide information about what that incentive is.]
       </p>
                                </section>
-                           </article>
+                           </article><br/><br/>
                 <article>
                    <section> 
                      
@@ -250,7 +250,7 @@ function Privacy() {
         these requests on your behalf, please contact us at the address above.
       </p>
                     </section>
-                   </article>
+                   </article><br/><br/>
                     <article> 
                        <section>
                          
@@ -273,7 +273,7 @@ function Privacy() {
         are a frequent visitor.
       </p>
                          </section>
-                      </article>
+                      </article><br/><br/>
                       
          <article>
             <section>
@@ -289,7 +289,7 @@ function Privacy() {
         browser.
       </p>
                </section>
-           </article>         
+           </article>         <br/><br/>
             <article>
                <section> 
                 
@@ -304,7 +304,7 @@ function Privacy() {
         or regulatory reasons.
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
     
     <article>
                <section>
@@ -324,7 +324,7 @@ function Privacy() {
         https://ico.org.uk/make-a-complaint/] Last updated: April 08, 2023
       </p>
                 </section>
-               </article>
+               </article><br/><br/>
                <h6 className="footer-tag">
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
       </h6> <br/>
