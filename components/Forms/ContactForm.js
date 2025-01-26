@@ -9,7 +9,7 @@ function ContactForm() {
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         
-             <input type="text" 
+             <input type="email" 
             id="email"
             placeholder=" email" />
             <ValidationError
