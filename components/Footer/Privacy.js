@@ -67,7 +67,7 @@ function Privacy() {
         risk or fraud, and when in line with the preferences you have shared
         with us, provide you with information or advertising relating to our
         products or services. Source of collection: collected from you.
-        Disclosure for a business purpose: shared with our processor Shopify
+        Disclosure for a business purpose: shared with our processor Paystack
         Personal Information collected: name, billing address, shipping address,
         payment information (including credit card numbers), email address, and
         phone number.
