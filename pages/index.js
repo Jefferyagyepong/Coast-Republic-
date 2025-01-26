@@ -5,7 +5,7 @@ import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Products/Sale";
 import styles from "../sass/components/ShopPage.module.scss";
-//import { getProducts } from "./api/products/index";
+import { getProducts } from "./api/products/index";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
@@ -15,7 +15,7 @@ import Nav from "@/components/Head/Nav";
 import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/ CategoryCard";
 
-const Home = () => {
+const Home = ({Products}) => {
    
   return (
     <>
@@ -89,7 +89,7 @@ const Home = () => {
   );
 };
 export default Home;
-//export async function getStaticProps() {
-  //const products = await getProducts();
- // return { props: { products } };
+export async function getStaticProps() {
+  const products = await getProducts();
+  return { props: { products } };
 }
