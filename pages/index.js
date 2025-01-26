@@ -16,7 +16,7 @@ import Nav from "@/components/Head/Nav";
 import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/ CategoryCard";
 
-const Home = ({ products }) => {
+const Home = () => {
    const [products, setProducts] = useState([]);
 
   const [totalPages, setTotalPages] = useState(0);
@@ -124,7 +124,7 @@ const Home = ({ products }) => {
 };
 export default Home;
 
-export async function getStaticProps() {
-  const products = await getProducts();
-  return { props: { products } };
-};
+//export async function getStaticProps() {
+  //const products = await getProducts();
+ // return { props: { products } };
+//};
