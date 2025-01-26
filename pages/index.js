@@ -23,15 +23,7 @@ const Home = ({products}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
- const getProducts = async (page) => {
-    
-    const res = await fetch(`https:/coast-republic/api/products/index?page=${page}&limit=10`);
-    const data = await res.json();
-    setProducts(product.data);
-    setTotalPages(products.totalPages);
-    setCurrentPage(products.currentPage);
-  
-  };
+
 
   useEffect(() => {
     getProducts(currentPage);
@@ -124,7 +116,11 @@ const Home = ({products}) => {
 };
 export default Home;
 
-//export async function getStaticProps() {
-  //const products = await getProducts();
- // return { props: { products } };
-//};
+export async function getStaticProps() {
+  const products = await getProducts();
+setProducts(product.data);
+    setTotalPages(products.totalPages);
+    setCurrentPage(products.currentPage);
+  
+  return { props: { products } };
+};
