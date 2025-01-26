@@ -61,7 +61,7 @@ function Footer() {
           height={17}
           width={29}
           alt="momo logo"
-          className="payment-logo"
+          className="footer-tag"
         />|
         </li>
          <li>
@@ -70,7 +70,7 @@ function Footer() {
           height={25}
           width={39}
           alt="momo logo"
-          className="payment-logo"
+          className="footer-tag"
         />
         </li>
         </ul>
