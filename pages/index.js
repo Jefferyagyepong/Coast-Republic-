@@ -22,13 +22,13 @@ const Home = ({ products }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const fetchProducts = async (page) => {
+  const getProducts = async (page) => {
     setLoading(true);
     const res = await fetch(`https:/coast-republic/api/posts?page=${page}&limit=10`);
     const data = await res.json();
-    setProducts(data.data);
-    setTotalPages(data.totalPages);
-    setCurrentPage(data.currentPage);
+    setProducts(products.data);
+    setTotalPages(products.totalPages);
+    setCurrentPage(products.currentPage);
     setLoading(false);
   };
 
