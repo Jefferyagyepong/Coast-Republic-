@@ -25,9 +25,7 @@ function Privacy() {
       <p>
         After reviewing this policy, if you have additional questions, want more
         information about our privacy practices, or would like to make a
-        complaint, please contact us by e-mail at info@coastrepublicgh.com or by
-        mail using the details provided below: McCarthy Hill, Greater Accra,
-        Ghana.
+        complaint, please contact us by e-mail at info@coastrepublicgh.com.
       </p>
                 </section>
           </article><br/><br/>
