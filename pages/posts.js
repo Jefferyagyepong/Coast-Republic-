@@ -1,11 +1,12 @@
 // pages/index.js
 
 // pages/products.js
+import CategoryCard from "@/components/Products/ CategoryCard";
 import { getProducts } from "./api/products/index";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-export default function Products() {
+export default function Products({products}) {
   const [products, setProducts] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
