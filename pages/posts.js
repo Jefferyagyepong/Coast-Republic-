@@ -1,7 +1,7 @@
 // pages/index.js
 
 // pages/products.js
-
+import { getProducts } from "./api/products/index";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
