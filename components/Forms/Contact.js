@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div>
+    <div className="ibrid-box">
         <article>
             <section>
                       <em>   <h3>Contact Us </h3></em><br/><br/>
