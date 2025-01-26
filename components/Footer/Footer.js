@@ -54,27 +54,23 @@ function Footer() {
 
       <FootBottom />
       <div className="payment-container">
-        <ul clasName="list-inline">
-        <li>
+      
+        
                <Image
           src={"/momo.jpg"}
           height={17}
           width={29}
           alt="momo logo"
           className="footer-tag"
-        />|
-        </li>
-         <li>
+        /> |
+              
               <Image
           src={"/Visa.png"}
           height={25}
           width={39}
           alt="momo logo"
           className="footer-tag"
-        />
-        </li>
-        </ul>
-   
+        />  
      <br/>
       </div> <br/>
       <h6 className="footer-tag">
