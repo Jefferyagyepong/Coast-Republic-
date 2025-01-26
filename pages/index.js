@@ -16,6 +16,24 @@ import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/ CategoryCard";
 
 const Home = ({ products }) => {
+  const [products, setProducts] = useState([]);
+  const [totalPages, setTotalPages] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+
+  const fetchProducts = async (page) => {
+    setLoading(true);
+    const res = await fetch(`https:/coast-republic/api/posts?page=${page}&limit=10`);
+    const data = await res.json();
+    setProducts(data.data);
+    setTotalPages(data.totalPages);
+    setCurrentPage(data.currentPage);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchProducts(currentPage);
+  }, [currentPage]);
   return (
     <>
       <Head>
