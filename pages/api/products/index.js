@@ -12,8 +12,6 @@ export default function handler(req, res) {
     const products = getProducts();
     res.status(200).json(products);
   }
-}
-export default function handler(req, res) {
   const { page = 1, limit = 10 } = req.query;  // Default page is 1, limit is 10
   const totalProducts = 100;  // Let's assume there are 100 products in total
 
@@ -41,4 +39,5 @@ export default function handler(req, res) {
     totalPages: totalPages,
     currentPage: Number(page),
   });
+  
 }
