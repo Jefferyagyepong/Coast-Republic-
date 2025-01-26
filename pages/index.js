@@ -22,14 +22,14 @@ const Home = ({ products }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const getProducts = async (page) => {
-  
-    const res = await fetch(`https:/coast-republic/api/posts?page=${page}&limit=10`);
+ const getProducts = async (page) => {
+    setLoading(true);
+    const res = await fetch(`https:/coast-republic/api/products/index?page=${page}&limit=10`);
     const data = await res.json();
-    setProducts(products.data);
-    setTotalPages(products.totalPages);
-    setCurrentPage(products.currentPage);
-  
+    setProducts(data.data);
+    setTotalPages(data.totalPages);
+    setCurrentPage(data.currentPage);
+    setLoading(false);
   };
 
   useEffect(() => {
