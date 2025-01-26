@@ -1,4 +1,5 @@
 // pages/api/products.js
+import data from './data.json';
 
 // pages/api/products.js
 
