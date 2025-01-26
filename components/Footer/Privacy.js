@@ -1,6 +1,6 @@
 function Privacy() {
   return (
-    <div className="ibrid-box-line">
+    <div className="ibrid-box-line-law">
       <article>
            <section> 
                 <em>
