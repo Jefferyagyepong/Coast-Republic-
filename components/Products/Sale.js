@@ -6,7 +6,7 @@ function Sale() {
       <div className="slide">
         <Image
           width={1080}
-          height={700}
+          height={900}
           alt="product"
           src={
             "https://images.unsplash.com/photo-1577983127195-95ada1fa7387?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -39,7 +39,7 @@ function Sale() {
       <div className="slide">
         <Image
          width={1080}
-          height={700}
+          height={900}
           alt="product"
           src={
             "https://images.unsplash.com/photo-1598457577935-662aa6d06382?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -50,7 +50,7 @@ function Sale() {
       <div className="slide">
         <Image
         width={1080}
-          height={700}
+          height={900}
           alt="product"
           src={
             "https://images.unsplash.com/photo-1704949841973-9db544ac35ec?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
