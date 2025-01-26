@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useState, useEffect } from 'react';
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
 import Header from "../components/Head/Header";
@@ -18,16 +17,6 @@ import CategoryCard from "@/components/Products/ CategoryCard";
 
 const Home = ({products}) => {
    
-
-  const [totalPages, setTotalPages] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [loading, setLoading] = useState(true);
-
-
-
-  useEffect(() => {
-    getProducts(currentPage);
-  }, [currentPage]);
   return (
     <>
       <Head>
@@ -91,21 +80,6 @@ const Home = ({products}) => {
           ))}
           
           
-      <div className="pagination">
-        <button
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage(currentPage - 1)}
-        >
-          Previous
-        </button>
-        <span>{currentPage} of {totalPages}</span>
-        <button
-          disabled={currentPage === totalPages}
-          onClick={() => setCurrentPage(currentPage + 1)}
-        >
-          Next
-        </button>
-      </div>
         </div>
         <Newsletter />
         <Brands />
@@ -118,9 +92,6 @@ export default Home;
 
 export async function getStaticProps() {
   const products = await getProducts();
-setProducts(product.data);
-    setTotalPages(products.totalPages);
-    setCurrentPage(products.currentPage);
   
   return { props: { products } };
 };
