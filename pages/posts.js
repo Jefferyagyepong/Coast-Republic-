@@ -11,15 +11,15 @@ export default function Products() {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const fetchProducts = async (page) => {
-    setLoading(true);
-    const res = await fetch(`/api/products/data?page=${page}&limit=10`);
-    const data = await res.json();
-    setProducts(data.data);
-    setTotalPages(data.totalPages);
-    setCurrentPage(data.currentPage);
-    setLoading(false);
-  };
+  //const fetchProducts = async (page) => {
+    //setLoading(true);
+    //const res = await fetch(`/api/products/data?page=${page}&limit=10`);
+    //const data = await res.json();
+    //setProducts(data.data);
+    //setTotalPages(data.totalPages);
+    //setCurrentPage(data.currentPage);
+    //setLoading(false);
+  //};
 
   useEffect(() => {
     fetchProducts(currentPage);
@@ -31,19 +31,19 @@ export default function Products() {
 
       {loading && <p>Loading products...</p>}
 
-      <div className="product-list">
-        {products.map(product => (
-          <div key={product.id} className="product-item">
-            <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-            <p><strong>${product.price}</strong></p>
-            <Link href={`/products/${product.id}`}>
-              <a>View Details</a>
-            </Link>
-          </div>
-        ))}
-      </div>
+      //<div className="product-list">
+       // {products.map(product => (
+        //  <div key={product.id} className="product-item">
+          //  <img src={product.image} alt={product.name} />
+           // <h3>{product.name}</h3>
+           // <p>{product.description}</p>
+            //<p><strong>${product.price}</strong></p>
+            //<Link href={`/products/${product.id}`}>
+             // <a>View Details</a>
+            //</Link>
+          //</div>
+       // ))}
+      //</div>
            <div className={styles.cards}>
           {products.map(product => (
             <CategoryCard key={product._id} product={product} />
@@ -71,6 +71,13 @@ export default function Products() {
 
 export async function getStaticProps() {
   const products = await getProducts();
+    setLoading(true);
+  //const res = await fetch(`/api/products/data?page=${page}&limit=10`);
+    //const data = await res.json();
+    setProducts(products.data);
+    setTotalPages(products.totalPages);
+    setCurrentPage(products.currentPage);
+    setLoading(false);
   return { props: { products } };
 };
 
