@@ -89,9 +89,7 @@ const Home = () => {
   );
 };
 export default Home;
-
-//export async function getStaticProps() {
-  //const products = await getProducts();
-  
-  //return { props: { products } };
-};
+export async function getStaticProps() {
+  const products = await getProducts();
+  return { props: { products } };
+}
