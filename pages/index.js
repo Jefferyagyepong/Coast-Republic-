@@ -16,21 +16,21 @@ import Nav from "@/components/Head/Nav";
 import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/ CategoryCard";
 
-const Home = () => {
-   const [products, setProducts] = useState([]);
+const Home = ({products}) => {
+   
 
   const [totalPages, setTotalPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
  const getProducts = async (page) => {
-    setLoading(true);
+    
     const res = await fetch(`https:/coast-republic/api/products/index?page=${page}&limit=10`);
     const data = await res.json();
-    setProducts(data.data);
-    setTotalPages(data.totalPages);
-    setCurrentPage(data.currentPage);
-    setLoading(false);
+    setProducts(product.data);
+    setTotalPages(products.totalPages);
+    setCurrentPage(products.currentPage);
+  
   };
 
   useEffect(() => {
