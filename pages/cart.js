@@ -70,7 +70,7 @@ const CartPage = () => {
           {cart.length === 0 ? (
             <div>
               <h3>Your Cart is Empty!</h3>
-              <Link href={"/shop"}>Back to store and add products to cart</Link>
+              <Link href={"/shop"}>click here to sho now</Link>
             </div>
           ) : (
             <>
