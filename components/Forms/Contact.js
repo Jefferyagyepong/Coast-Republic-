@@ -1,7 +1,9 @@
 function Contact() {
   return (
     <div>
-        <em>   <h3>Contact Us </h3></em><br/><br/>
+        <article>
+            <section>
+                      <em>   <h3>Contact Us </h3></em><br/><br/>
     
       <p>
         If you have any questions, please feel free to reach out via email. We
@@ -10,6 +12,9 @@ function Contact() {
         email us at coastrepgh@gmail.com or follow us on instagram.com/coast_republic. Thank you for shopping
         with us!
       </p>
+                 </section>
+             </article>
+  
     </div>
   );
 }
