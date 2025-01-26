@@ -1,7 +1,9 @@
 function Privacy() {
   return (
-    <div>
-      <em>
+    <div className="ibrid-box">
+      <article>
+           <section> 
+                <em>
         {" "}
         <h2>PRIVACY POLICY</h2>
       </em>
@@ -11,7 +13,11 @@ function Privacy() {
         collects, uses, and discloses your Personal Information when you visit
         or make a purchase from the Site.
       </p>
-      <em>
+            </section>
+         </article> 
+         <article> 
+              <section> 
+                  <em>
         {" "}
         <h3>Contact</h3>
       </em>
@@ -23,12 +29,16 @@ function Privacy() {
         mail using the details provided below: McCarthy Hill, Greater Accra,
         Ghana.
       </p>
-      <em>
+                </section>
+          </article>
+              <article> 
+                <section>
+                       <em>
         {" "}
         <h3>Collecting Personal Information</h3>
       </em>
 
-      <br />
+      
 
       <p>
         When you visit the Site, we collect certain information about your
@@ -70,6 +80,11 @@ function Privacy() {
         support. Source of collection: collected from you Disclosure for a
         business purpose: Personal Information collected: collected from you
       </p>
+                   </section>
+                </article>
+                 <article> 
+                   <section> 
+                    
       <em>
         {" "}
         <h3>Minors</h3>
@@ -81,6 +96,11 @@ function Privacy() {
         parent or guardian and believe your child has provided us with Personal
         Information, please contact us at the address above to request deletion.
       </p>
+                    </section>
+                  </article>
+                    <article> 
+                        <section> 
+        
       <em>
         {" "}
         <h3>Sharing Personal Information</h3>
@@ -118,7 +138,12 @@ function Privacy() {
         Digital Advertising Alliance’s opt-out portal at:
         https://optout.aboutads.info/.
       </p>
-      <em>
+        </section>
+                      </article>
+                  
+         <article>
+             <section> 
+                   <em>
         {" "}
         <h3>Using Personal Information</h3>
       </em>
@@ -136,6 +161,11 @@ function Privacy() {
         public interest; For our legitimate interests, which do not override
         your fundamental rights and freedoms.
       </p>
+              </section>
+           </article>
+              <article> 
+                   <section> 
+                    
       <em>
         <h3>Retention</h3>
       </em>
@@ -146,7 +176,11 @@ function Privacy() {
         information. For more information on your right of erasure, please see
         the ‘Your rights’ section below.
       </p>
-      <em>
+                    </section>
+                </article>
+                    <article> 
+                         <section>
+                             <em>
         <h3>Automatic decision-making</h3>
       </em>
 
@@ -165,6 +199,11 @@ function Privacy() {
         blacklisted IP addresses. This blacklist persists for a small number of
         days.
       </p>
+                           </section>
+                      </article>
+                        <article>
+                             <section>
+                               
       <em>
         <h3>Selling Personal Information</h3>
       </em>
@@ -179,6 +218,12 @@ function Privacy() {
         affirmative authorization; if you provide a financial incentive to sell
         information, provide information about what that incentive is.]
       </p>
+                               </section>
+                           </article>
+                <article>
+                   <section> 
+                     
+
       <em>
         <h3>Your rights</h3>
       </em>
@@ -204,6 +249,12 @@ function Privacy() {
         above. If you would like to designate an authorized agent to submit
         these requests on your behalf, please contact us at the address above.
       </p>
+                    </section>
+                   </article>
+                    <article> 
+                       <section>
+                         
+
       <em>
         {" "}
         <h3>Cookies</h3>
@@ -221,7 +272,12 @@ function Privacy() {
         website, for instance whether it’s their first time visiting or if they
         are a frequent visitor.
       </p>
-      <em>
+                         </section>
+                      </article>
+                      
+         <article>
+            <section>
+                  <em>
         {" "}
         <h3>Do Not Track</h3>
       </em>
@@ -232,6 +288,11 @@ function Privacy() {
         collection and usage practices when we detect such a signal from your
         browser.
       </p>
+               </section>
+           </article>         
+            <article>
+               <section> 
+                
       <em>
         {" "}
         <h3>Changes</h3>
@@ -242,7 +303,12 @@ function Privacy() {
         for example, changes to our practices or for other operational, legal,
         or regulatory reasons.
       </p>
-      <em>
+                </section>
+               </article>
+    
+    <article>
+               <section>
+                      <em>
         {" "}
         <h3>Complaints</h3>
       </em>
@@ -257,6 +323,12 @@ function Privacy() {
         data protection authority in your jurisdiction. For example:
         https://ico.org.uk/make-a-complaint/] Last updated: April 08, 2023
       </p>
+                </section>
+               </article>
+  
+
+  
+ 
     </div>
   );
 }
