@@ -69,11 +69,10 @@ const Home = ({ products }) => {
         <Thrifts />
         <New />
         <CoastApp />
-      
+      <hr />
         
         <Collection />
-          <div className= "product-card">
-            
+          <div className= "product-card">            
         {products.map((product) => (              
           <span key={product.slug}>
           <Link href={`/products/${product.slug}`}>
