@@ -12,7 +12,7 @@ import { getProducts } from "./api/products/index";
 
 const ProductPage = ({ products }) => {   
  
-    { paths, fallback: false };
+    //{ paths, fallback: false };
   return (
      
     <div>
