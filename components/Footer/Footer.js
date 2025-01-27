@@ -33,7 +33,7 @@ function Footer() {
             About
           </Link><br/>  <br/>
 
-          <Link href={"/shop"} className="footer-tag">
+          <Link href={"/products/"} className="footer-tag">
             {" "}
             shop
           </Link><br/>  <br/>
