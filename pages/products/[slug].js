@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import { getProducts } from "./api/products/index";
 
 
-const ProductLage = ({ products }) => {   
-  if (!product) return <div>Product not found</div>;
-
-  
+const ProductPage = ({ products }) => {   
+ 
+   
   return (
+     
     <div>
       <h1>{product.name}</h1>
       <p>{product.description}</p>
