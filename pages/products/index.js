@@ -56,7 +56,7 @@ const ProductList = ({ products }) => {
         </div>
     <div>
       <h1>our collection</h1>
-      <div >
+      <div  className="product-card">
         {products.map((product) => (              
           <span key={product.slug}>
           <Link href={`/products/${product.slug}`}>
