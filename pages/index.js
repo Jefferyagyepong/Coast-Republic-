@@ -69,10 +69,11 @@ const Home = ({ products }) => {
         <Thrifts />
         <New />
         <CoastApp />
+        <hr/>
         
         <Collection />
           <div className= "product-card">
-            <hr/><br/>
+            
         {products.map((product) => (              
           <span key={product.slug}>
           <Link href={`/products/${product.slug}`}>
@@ -80,17 +81,15 @@ const Home = ({ products }) => {
           src={product.image}
           height={100}
           width={90}
-         alt=" product"
-       
+         alt=" product"       
         />
           <h4>{product.name}</h4><br/>
       
             </Link>
             </span>
-  
           
         ))}
-        <hr/><br/>
+      
       </div>
         
         <Newsletter />
