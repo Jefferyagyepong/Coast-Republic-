@@ -1,6 +1,20 @@
-// pages/products.js
-import Link from 'next/link';
+import New from "../components/Products/New";
+import Header from "../components/Head/Header";
+import Footer from "../components/Footer/Footer";
+import Sale from "../components/Products/Sale";
+import styles from "../sass/components/ShopPage.module.scss";
 import { getProducts } from "./api/products/index";
+import Newsletter from "@/components/Footer/Newsletter";
+import CoastApp from "@/components/Products/CoastApp";
+import Brands from "@/components/Footer/Brands";
+import Collection from "@/components/Products/Collection";
+import Nav from "@/components/Head/Nav";
+
+import Toast from "../components/Head/Toast";
+import CategoryCard from "@/components/Products/ CategoryCard";
+
+const Home = ({ products }) => {   
+  return (
 
 
 <>
