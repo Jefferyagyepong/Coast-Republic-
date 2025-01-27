@@ -1,4 +1,4 @@
-
+import styles from "../sass/components/ShopPage.module.scss";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import React from 'react';
@@ -56,7 +56,7 @@ const ProductList = ({ products }) => {
         </div>
     <div>
       <h1>our collection</h1>
-      <div  className="product-card">
+      <div {styles.card}>
         {products.map((product) => (              
           <span key={product.slug}>
           <Link href={`/products/${product.slug}`}>
