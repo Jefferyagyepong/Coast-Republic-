@@ -1,6 +1,6 @@
 // pages/products/[slug].js
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+
 import { getProducts } from "./api/products/index";
 // Generate paths for each product's slug
   const paths = products.map(product => ({
