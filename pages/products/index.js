@@ -56,9 +56,9 @@ const ProductList = ({ products }) => {
         </div>
     <div>
       <h1>our collection</h1>
-      <ul >
+      <div className ="card">
         {products.map((product) => (
-          <li key={product.slug} className="card">
+          <span key={product.slug}>
             <Link href={`/products/${product.slug}`}>
                     <Image
           src={product.image}
@@ -77,9 +77,9 @@ const ProductList = ({ products }) => {
       >
         Add to Bag
       </button>
-          </li>
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
     </main>
     </>
