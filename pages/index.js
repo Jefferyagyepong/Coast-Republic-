@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from 'next/link';
+import Image from 'next/image';
 import Thrifts from "../components/Products/Thrifts";
 import New from "../components/Products/New";
 import Header from "../components/Head/Header";
