@@ -69,9 +69,10 @@ const Home = ({ products }) => {
         <Thrifts />
         <New />
         <CoastApp />
-        <hr />
+        
         <Collection />
           <div className= "product-card">
+            <hr/><br/>
         {products.map((product) => (              
           <span key={product.slug}>
           <Link href={`/products/${product.slug}`}>
@@ -89,6 +90,7 @@ const Home = ({ products }) => {
   
           
         ))}
+        <hr/><br/>
       </div>
         
         <Newsletter />
