@@ -1,3 +1,4 @@
+import Toast from "../components/Head/Toast";
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
