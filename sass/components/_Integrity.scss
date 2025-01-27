@@ -8,6 +8,12 @@
 }
 
 .product-card{
+width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .shop-nows:hover {
