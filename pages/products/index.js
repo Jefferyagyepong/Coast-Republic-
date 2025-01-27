@@ -32,6 +32,8 @@ const ProductList = ({ products }) => {
           alt=" product"
        
         />
+          <h4>{product.name}</h4>
+      
             </Link>
           </li>
         ))}
@@ -41,3 +43,18 @@ const ProductList = ({ products }) => {
 };
 
 export default ProductList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
