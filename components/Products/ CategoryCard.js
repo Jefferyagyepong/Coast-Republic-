@@ -31,15 +31,5 @@ const CategoryCard = ({ product }) => {
 };
 export default CategoryCard;
 
-      <Link href={`/products/${product.slug}`}>
-                    <Image
-          src={product.image}
-          height={100}
-          width={90}
-          alt=" product"
-       
-        />
-          <h4>{product.name}</h4>
-      
-            </Link>
+   
 
