@@ -2,17 +2,19 @@
 import { useRouter } from 'next/router';
 
 import { getProducts } from "./api/products/index";
-// Generate paths for each product's slug
+
+
+const ProductPage = ({ products }) => {   
+  
+  // Generate paths for each product's slug
   const paths = products.map(product => ({
     params: { slug: product.slug }
   }));
-
+return  { paths, fallback: false };
   
 }
-
-const ProductPage = ({ products }) => {   
  
-    //{ paths, fallback: false };
+   
   return (
      
     <div>
