@@ -70,6 +70,7 @@ const ProductList = ({ products }) => {
           <h4>{product.name}</h4>
       
             </Link>
+            </span>
   
           
         ))}
