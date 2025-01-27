@@ -22,7 +22,7 @@ const ProductList = ({ products }) => {
   return (
     <>
           <Head>
-        <title>Coast Republic | T-shirts and more</title>
+        <title>Shop our products. </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
@@ -44,6 +44,10 @@ const ProductList = ({ products }) => {
         <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"/>
       </Head>
       <main>
+             <div className="sticky">
+          <Toast />
+          <Header />
+        </div>
     <div>
       <h1>Product List</h1>
       <ul>
