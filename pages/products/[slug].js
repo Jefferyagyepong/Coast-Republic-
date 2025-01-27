@@ -1,12 +1,13 @@
 // pages/products/[slug].js
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import data from './data.json';
+import { getProducts } from "./api/products/index";
 
-export async function getStaticPaths() {
-  // Simulate fetching JSON from a local file
-  const res = await import('./data.json');
-  const products = res.default;
+export async function getStaticProps(){
+  const products = await getProducts();
+  return {props: {products}};
+}
+
 
   // Generate paths for each product's slug
   const paths = products.map(product => ({
