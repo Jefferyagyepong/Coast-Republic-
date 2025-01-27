@@ -1,5 +1,4 @@
-import CategoryCard from "@/components/Products/ CategoryCard";
-import styles from "../sass/components/ShopPage.module.scss";
+
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import React from 'react';
