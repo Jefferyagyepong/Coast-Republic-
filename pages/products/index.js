@@ -55,7 +55,7 @@ const ProductList = ({ products }) => {
         </div>
     <div>
       <h1>our collection</h1>
-      <ul className=card>
+      <ul className="card">
         {products.map((product) => (
           <li key={product.slug}>
             <Link href={`/products/${product.slug}`}>
