@@ -1,5 +1,5 @@
 // pages/products/[slug].js
-import { useRouter } from 'next/router';
+
 
 import { getProducts } from "./api/products/index";
 
