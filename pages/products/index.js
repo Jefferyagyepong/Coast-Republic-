@@ -54,8 +54,8 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
     <div>
-      <h1>Product List</h1>
-      <ul>
+      <h1>our collection</h1>
+      <ul className=card>
         {products.map((product) => (
           <li key={product.slug}>
             <Link href={`/products/${product.slug}`}>
