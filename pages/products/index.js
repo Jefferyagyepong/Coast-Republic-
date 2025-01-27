@@ -64,9 +64,12 @@ const ProductList = ({ products }) => {
             place
           </p>
           
-          <hr/>
+      
         </em>
+        
       <br/>
+      <hr/>
+         <br/>
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
