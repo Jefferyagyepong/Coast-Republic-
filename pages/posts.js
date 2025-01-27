@@ -17,23 +17,23 @@ export default function Products({ products }) {
         ))}
       </div>
 
-      <style jsx>{`
-        .product-list {
-          display: flex;
-          gap: 20px;
-          flex-wrap: wrap;
-        }
-        .product-card {
-          border: 1px solid #ddd;
-          padding: 20px;
-          text-align: center;
-          width: 200px;
-        }
-        .product-card img {
-          width: 100%;
-          height: auto;
-        }
-      `}</style>
+      //<style jsx>{`
+        //.product-list {
+         // display: flex;
+          //gap: 20px;
+          //flex-wrap: wrap;
+       // }
+        //.product-card {
+          //border: 1px solid #ddd;
+          //padding: 20px;
+         // text-align: center;
+          //width: 200px;
+      //  }
+        //.product-card img {
+          //width: 100%;
+          //height: auto;
+       // }
+      //`}</style>
     </div>
   );
 }
