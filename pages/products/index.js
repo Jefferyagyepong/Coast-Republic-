@@ -19,18 +19,16 @@ export async function getStaticProps() {
 const ProductList = ({ products }) => {
   return (
     <div>
-    
+      <h1>Product List</h1>
       <ul>
         {products.map((product) => (
           <li key={product.slug}>
             <Link href={`/products/${product.slug}`}>
-              
-              {product.image}
+              <a>{product.name}</a>
             </Link>
           </li>
-          </ul>
         ))}
-      
+      </ul>
     </div>
   );
 };
