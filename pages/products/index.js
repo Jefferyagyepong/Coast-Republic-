@@ -64,7 +64,7 @@ const ProductList = ({ products }) => {
         ))}
       </ul>
     </div>
-    <main>
+    </main>
     </>
   );
 };
