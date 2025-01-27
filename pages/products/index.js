@@ -6,6 +6,8 @@ import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cart.slice";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -21,6 +23,7 @@ export async function getStaticProps() {
 }
 
 const ProductList = ({ products }) => {
+  const dispatch = useDispatch();
   return (
     <>
           <Head>
