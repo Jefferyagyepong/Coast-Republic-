@@ -1,6 +1,6 @@
 // pages/products.js
 import Link from 'next/link';
-import data from './data.json';
+import { getProducts } from "./api/products/index";
 
 export async function getStaticProps(){
   const products = await getProducts();
