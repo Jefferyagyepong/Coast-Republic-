@@ -2,10 +2,10 @@
 import Link from 'next/link';
 import data from './data.json';
 
-export async function getStaticProps() {
-  // Simulate fetching JSON from a local file or an API
-  const res = await import('./data.json');
-  const products = res.default;
+export async function getStaticProps(){
+  const products = await getProducts();
+  return {props: {products}};
+}
 
   return {
     props: {
