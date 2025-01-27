@@ -24,7 +24,7 @@ const ProductList = ({ products }) => {
         {products.map((product) => (
           <li key={product.slug}>
             <Link href={`/products/${product.slug}`}>
-              <a>{product.name}</a>
+              <a>{product.image}</a>
             </Link>
           </li>
         ))}
