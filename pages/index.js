@@ -1,4 +1,6 @@
 import Head from "next/head";
+import fs from 'fs';
+import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
 import Thrifts from "../components/Products/Thrifts";
