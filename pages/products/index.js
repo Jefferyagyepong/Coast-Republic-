@@ -55,21 +55,14 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
     <div>
-      <br/>
-      <em>
-           <h3>Whats new </h3><br/>
-          
+            
+           <h3>Whats new </h3><br/>          
           <p>
             Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one
             place
           </p>
           
-      
-        </em>
-        
-      <br/>
-      <hr/>
-         <br/>
+              
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
@@ -78,14 +71,11 @@ const ProductList = ({ products }) => {
           src={product.image}
           height={100}
           width={90}
-         alt=" product"
-       
+         alt=" product"       
         />
-          <h4>{product.name}</h4><br/>
-      
+          <h4>{product.name}</h4>     
             </Link>
-            </span>
-  
+            </span>  
           
         ))}
       </div>
