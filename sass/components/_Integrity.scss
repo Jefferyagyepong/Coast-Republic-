@@ -21,9 +21,16 @@ width: 100%;
 }
 
 @media (max-width: 700px) {
-  .proceed-link {
- width: 100%;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
 
   }
+
 }
+
+
 
