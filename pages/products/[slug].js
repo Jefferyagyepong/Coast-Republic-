@@ -22,6 +22,7 @@ const ProductPage = ({ products }) => {
     </div>
   );
 }
+export default ProductPage;
 
 export async function getStaticProps({ params }){
   const products = await getProducts();
