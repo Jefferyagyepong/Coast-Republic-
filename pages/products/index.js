@@ -29,8 +29,8 @@ const ProductList = ({ products }) => {
           src={product.image}
           height={100}
           width={90}
-          alt=""
-          className={styles.border}
+          alt=" product"
+       
         />
             </Link>
           </li>
