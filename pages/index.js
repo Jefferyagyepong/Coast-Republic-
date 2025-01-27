@@ -13,7 +13,7 @@ import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
 
 import Toast from "../components/Head/Toast";
-import CategoryCard from "@/components/Products/CategoryCard";
+import CategoryCard from "@/components/Products/ CategoryCard";
 
 const Home = ({ products }) => {   
   return (
