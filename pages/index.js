@@ -69,7 +69,7 @@ const Home = ({ products }) => {
         <Thrifts />
         <New />
         <CoastApp />
-        <hr/>
+      
         
         <Collection />
           <div className= "product-card">
@@ -83,7 +83,7 @@ const Home = ({ products }) => {
           width={90}
          alt=" product"       
         />
-          <h4>{product.name}</h4><br/>
+          <h4>{product.name}</h4>
       
             </Link>
             </span>
