@@ -9,22 +9,17 @@ const CategoryCard = ({ product }) => {
   return (
     <div className={styles.card}>
       <br />{" "}
-      
+       <Link href={`/products/${product.slug}`}>
         <Image
           src={product.image}
           height={100}
-          width={90}
+          width={120}
           alt=""
           className={styles.border}
         />
-    
-      <em>
-        <h4 className={styles.title}>{product.title}</h4>
-        <h4 className={styles.title}>InStock: {product.inStock}</h4>
-      </em>
-             <Link href={`/products/${product.id}`}>
-              <a>View Details</a>
-            </Link>
+      <h4>{product.name}</h4>
+         </Link>
+           
       <button
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"
@@ -35,3 +30,16 @@ const CategoryCard = ({ product }) => {
   );
 };
 export default CategoryCard;
+
+      <Link href={`/products/${product.slug}`}>
+                    <Image
+          src={product.image}
+          height={100}
+          width={90}
+          alt=" product"
+       
+        />
+          <h4>{product.name}</h4>
+      
+            </Link>
+
