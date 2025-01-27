@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
