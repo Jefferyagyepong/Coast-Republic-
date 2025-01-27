@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 
@@ -24,7 +25,13 @@ const ProductList = ({ products }) => {
         {products.map((product) => (
           <li key={product.slug}>
             <Link href={`/products/${product.slug}`}>
-              <a>{product.image}</a>
+                    <Image
+          src={product.image}
+          height={100}
+          width={90}
+          alt=""
+          className={styles.border}
+        />
             </Link>
           </li>
         ))}
