@@ -7,12 +7,12 @@ import { getProducts } from "./api/products/index";
     params: { slug: product.slug }
   }));
 
-  return { paths, fallback: false };
+  
 }
 
 const ProductPage = ({ products }) => {   
  
-   
+    { paths, fallback: false };
   return (
      
     <div>
@@ -21,7 +21,7 @@ const ProductPage = ({ products }) => {
       {/* Add other details or components as needed */}
     </div>
   );
-}
+};
 export default ProductPage;
 
 export async function getStaticProps({ params }){
