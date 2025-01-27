@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export async function getStaticProps() {
   // Simulate fetching JSON from a local file or an API
-  const res = await import('../data/products.json');
+  const res = await import('/products.json');
   const products = res.default;
 
   return {
