@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
-
+import Image from 'next/image';
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -52,6 +52,13 @@ export async function getStaticProps({ params }) {
 const ProductPage = ({ product }) => {
   return (
     <div>
+                     <Image
+          src={product.image}
+          height={100}
+          width={90}
+          alt=" product"
+       
+        />
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
