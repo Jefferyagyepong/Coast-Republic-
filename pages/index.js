@@ -4,16 +4,25 @@ import New from "../components/Products/New";
 import Header from "../components/Head/Header";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Products/Sale";
-import styles from "../sass/components/ShopPage.module.scss";
-import { getProducts } from "./api/products/index";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
-
 import Toast from "../components/Head/Toast";
-import CategoryCard from "@/components/Products/ CategoryCard";
+
+export async function getStaticProps() {
+  // Read the products JSON file from the public directory
+  const filePath = path.join(process.cwd(), 'public', 'data', 'products.json');
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+
+  // Parse the file content into a JavaScript object
+  const products = JSON.parse(fileContents);
+
+  return {
+    props: { products }, // Pass products data to the page component
+  };
+}
 
 const Home = ({ products }) => {   
   return (
@@ -52,12 +61,26 @@ const Home = ({ products }) => {
         <CoastApp />
         <hr />
         <Collection />
-        <div className={styles.cards}>
-         {products.map(product => (
-         <CategoryCard key={product._id} product={product} />
-         ))}
+          <div className= "product-card">
+        {products.map((product) => (              
+          <span key={product.slug}>
+          <Link href={`/products/${product.slug}`}>
+          <Image
+          src={product.image}
+          height={100}
+          width={90}
+         alt=" product"
+       
+        />
+          <h4>{product.name}</h4><br/>
+      
+            </Link>
+            </span>
+  
           
-           </div>
+        ))}
+      </div>
+        
         <Newsletter />
         <Brands />
         <Footer />
@@ -66,8 +89,8 @@ const Home = ({ products }) => {
  );
 };
 export default Home;
-export async function getStaticProps(){
-  const products = await getProducts();
-  return {props: {products}};
-}
+
+
+
+
 
