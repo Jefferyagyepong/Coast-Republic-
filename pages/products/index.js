@@ -56,7 +56,17 @@ const ProductList = ({ products }) => {
         </div>
     <div>
       <br/>
-      <h3>our collection</h3><br/>
+      <em>
+           <h3>Whats new </h3><br/>
+          
+          <p>
+            Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one
+            place
+          </p>
+          
+          <hr/>
+        </em>
+      <br/>
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
