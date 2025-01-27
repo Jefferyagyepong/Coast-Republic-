@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch the specific product based on the slug
-  const res = await import('../../data/products.json');
+  const res = await import('../../public/products.json');
   const products = res.default;
   const product = products.find(p => p.slug === params.slug);
 
