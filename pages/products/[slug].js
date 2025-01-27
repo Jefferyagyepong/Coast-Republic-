@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 export async function getStaticPaths() {
   // Simulate fetching JSON from a local file
-  const res = await import('../../public/products.json');
+  const res = await import('/public/products.json');
   const products = res.default;
 
   // Generate paths for each product's slug
