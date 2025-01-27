@@ -18,18 +18,24 @@ export async function getStaticProps() {
 
 const ProductList = ({ products }) => {
   return (
-    <div>
-      <h1>Product List</h1>
-      <ul>
+    <>
+          // <div className={styles.cards}>
+        // {products.map(product => (
+         //<CategoryCard key={product._id} product={product} />
+         )//)}
+          
+           //</div>
+      
         {products.map((product) => (
           <li key={product.slug}>
             <Link href={`/products/${product.slug}`}>
-              <a>{product.name}</a>
+              
+              <a>{product.image}</a>
             </Link>
           </li>
         ))}
-      </ul>
-    </div>
+      
+    </>
   );
 };
 
