@@ -33,3 +33,63 @@ h6 {
     font-weight: 200;
 
 }
+
+
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.sticky {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+
+
+.inline-flex {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.text {
+  opacity: 0.5;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+
+  }
+
+}
+
