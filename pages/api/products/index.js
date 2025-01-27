@@ -1,4 +1,4 @@
-import data from './data.json';
+@use data from './data.json';
 
 export function getProducts() {
   return data;
