@@ -11,9 +11,9 @@ export default function handler(req, res) {
   } else {
     const products = getProducts();
     res.status(200).json(products);
-};
- 
 }
+ 
+};
  
   
 
