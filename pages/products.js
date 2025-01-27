@@ -72,11 +72,5 @@ export async function getStaticProps(){
   return {props: {products}};
 }
 
-  return {
-    props: {
-      products
-    }
-  };
-}
 
 
