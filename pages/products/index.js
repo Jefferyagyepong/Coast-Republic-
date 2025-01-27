@@ -1,5 +1,4 @@
-import styles from "../sass/components/ShopPage.module.scss";
-import CategoryCard from "@/components/Products/CategoryCard";
+
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import React from 'react';
@@ -57,21 +56,20 @@ const ProductList = ({ products }) => {
         </div>
     <div>
       <h1>our collection</h1>
-      <div {styles.card}>
-        {products.map((product) => (
-               <CategoryCard key={product.slug}  />
-          //<span key={product.slug}>
-            //<Link href={`/products/${product.slug}`}>
-                //    <Image
-          //src={product.image}
-         // height={100}
-          //:width={90}
-         // alt=" product"
+      <div >
+        {products.map((product) => (              
+          <span key={product.slug}>
+          <Link href={`/products/${product.slug}`}>
+          <Image
+          src={product.image}
+          height={100}
+          width={90}
+         alt=" product"
        
-        ///>
-         // <h4>{product.name}</h4>
+        />
+          <h4>{product.name}</h4>
       
-           // </Link>
+            </Link>
   
           
         ))}
