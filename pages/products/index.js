@@ -59,26 +59,21 @@ const ProductList = ({ products }) => {
       <h1>our collection</h1>
       <div className ="card">
         {products.map((product) => (
-          <span key={product.slug}>
-            <Link href={`/products/${product.slug}`}>
-                    <Image
-          src={product.image}
-          height={100}
-          width={90}
-          alt=" product"
+               <CategoryCard key={product.slug}}  />
+          //<span key={product.slug}>
+            //<Link href={`/products/${product.slug}`}>
+                //    <Image
+          //src={product.image}
+         // height={100}
+          //:width={90}
+         // alt=" product"
        
-        />
-          <h4>{product.name}</h4>
+        ///>
+         // <h4>{product.name}</h4>
       
-            </Link>
-                 <button
-                  
-        onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart"
-      >
-        Add to Bag
-      </button>
-          </span>
+           // </Link>
+  
+          
         ))}
       </div>
     </div>
@@ -89,6 +84,12 @@ const ProductList = ({ products }) => {
 
 export default ProductList;
 
+
+
+
+
+
+   
 
 
 
