@@ -1,44 +1,34 @@
-import Link from "next/link";
-const Products = ({ data }) => {
-    const products = data;
-    return (
-        <>
-            {products.map(({ id, name, seo:  { description }}) =>(
-            <div key={id} className="product">
-                <h2>{name}</h2>
-                <p>{description}</p>
-                <Link href={`/products/${permalink}`}>
-                    <a>View</a>
-                </Link>
-                
-            </div>
-            ))}
-        </>
-    );
-};
-export async function getServerSideProps() {
-    const headers = {
-        "X-Autorization": process.env.CHEC_AI_KEY,
-        Accept: "application/json",
-        "Content-Type": "application/json",
+// pages/products.js
+import Link from 'next/link';
 
-    };
-    const res = await fetch("/pages/api/[name].js", {
-      method: "GET",
-      headers: headers,
-    });
-    const data = await res.json();
-    if (!data) {
-        return {
-            redirect: {
-                destination: "/",
-                permanent: false,
-            },
-        };
+export async function getStaticProps() {
+  // Simulate fetching JSON from a local file or an API
+  const res = await import('../data/products.json');
+  const products = res.default;
 
+  return {
+    props: {
+      products
     }
-    return {
-        props: data,
-    };
+  };
 }
-export default Products;
+
+export default function ProductsPage({ products }) {
+  return (
+    <div>
+      <h1>Product Listings</h1>
+      <ul>
+        {products.map(product => (
+          <li key={product.id}>
+            <Link href={`/products/${product.slug}`}>
+              <a>
+                <h2>{product.name}</h2>
+                <p>{product.description}</p>
+              </a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
