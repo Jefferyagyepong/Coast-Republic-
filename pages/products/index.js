@@ -68,7 +68,7 @@ const ProductList = ({ products }) => {
          alt=" product"
        
         />
-          <h4>{product.name}</h4>
+          <h4>{product.name}</h4><br/>
       
             </Link>
             </span>
