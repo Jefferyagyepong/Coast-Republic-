@@ -23,6 +23,8 @@ export async function getStaticProps() {
 }
 
 const ProductList = ({ products }) => {
+  const handleClick = () => {
+    console.log('Button clicked!'); // Log the message to the console
   const dispatch = useDispatch();
   return (
     <>
@@ -70,6 +72,7 @@ const ProductList = ({ products }) => {
       
             </Link>
                  <button
+                  onClick={handleClick}
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"
       >
