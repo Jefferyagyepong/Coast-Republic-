@@ -2,7 +2,13 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { getProducts } from "./api/products/index";
+// Generate paths for each product's slug
+  const paths = products.map(product => ({
+    params: { slug: product.slug }
+  }));
 
+  return { paths, fallback: false };
+}
 
 const ProductPage = ({ products }) => {   
  
@@ -24,13 +30,7 @@ export async function getStaticProps(param){
 }
 
 
-  // Generate paths for each product's slug
-  const paths = products.map(product => ({
-    params: { slug: product.slug }
-  }));
-
-  return { paths, fallback: false };
-}
+  
 
 
 
