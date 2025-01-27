@@ -59,7 +59,7 @@ const ProductList = ({ products }) => {
       <h1>our collection</h1>
       <div className ="card">
         {products.map((product) => (
-               <CategoryCard key={product.slug}}  />
+               <CategoryCard key={product.slug}  />
           //<span key={product.slug}>
             //<Link href={`/products/${product.slug}`}>
                 //    <Image
