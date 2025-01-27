@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import Image from 'next/image';
 
 export default function Products({ products }) {
   return (
@@ -8,7 +9,7 @@ export default function Products({ products }) {
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} />
+            <Image src={product.image} alt={product.name} />
             <h2>{product.name}</h2>
             <p>{product.description}</p>
             <p>{product.price}</p>
