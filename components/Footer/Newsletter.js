@@ -1,43 +1,60 @@
-import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useState } from 'react';
 
-function Newsletter() {
-  const [state, handleSubmit] = useForm("xzzpgjrb");
-  if (state.succeeded) {
-    return <p>Thanks for joining our Newsletter</p>;
-  }
+const SubscribeForm = () => {
+  const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        setSuccess(true);
+        setEmail('');
+      } else {
+        const data = await res.json();
+        setError(data.message || 'Something went wrong');
+      }
+    } catch (err) {
+      setError('Error connecting to the server.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
-       <div className="form-container  bgg222  "><br/>  <br/>
-  <em><h3>Join our newsletter now!</h3></em>
-         <br/>  <br/>
-          <p>
-            Register now and get our latest updates and promos
-          </p><br/>  <br/>
-    <form onSubmit={handleSubmit}>
-    
+    <div>
+      <h2>Subscribe to our Newsletter</h2>
+      {success && <p>Thanks for subscribing!</p>}
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      
+      <form onSubmit={handleSubmit}>
         <input
-          id="email"
           type="email"
-          name="email"
-          placeholder=" email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email"
+          required
         />
-        <ValidationError
-          prefix="Email"
-          field="email"
-          errors={state.errors}
-          placeholder="enter your email"
-        /><br/>  <br/>
-
-        <button
-          type="submit"
-          disabled={state.submitting}
-          className="button-link"
-        >
-          Subscribe
-        </button><br/>  <br/>
+        <button type="submit" disabled={isLoading}>
+          {isLoading ? 'Subscribing...' : 'Subscribe'}
+        </button>
       </form>
     </div>
   );
-}
+};
 
-export default Newsletter;
+export default SubscribeForm;
