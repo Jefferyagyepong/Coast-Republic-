@@ -23,7 +23,7 @@ const ProductPage = ({ products }) => {
   );
 }
 
-export async function getStaticProps({ param }){
+export async function getStaticProps({ params }){
   const products = await getProducts();
   const product = products.find(p => p.slug === params.slug);
   return {props: {products}};
