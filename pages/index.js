@@ -15,7 +15,7 @@ import Nav from "@/components/Head/Nav";
 import Toast from "../components/Head/Toast";
 import CategoryCard from "@/components/Products/CategoryCard";
 
-const Home = ({products}) => {   
+const Home = ({ products }) => {   
   return (
     <>
       <Head>
