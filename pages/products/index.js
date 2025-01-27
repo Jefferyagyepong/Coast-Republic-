@@ -66,6 +66,12 @@ const ProductList = ({ products }) => {
           <h4>{product.name}</h4>
       
             </Link>
+                 <button
+        onClick={() => dispatch(addToCart(product))}
+        className="add-to-cart"
+      >
+        Add to Bag
+      </button>
           </li>
         ))}
       </ul>
