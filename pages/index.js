@@ -74,10 +74,10 @@ const Home = ({Products}) => {
         <CoastApp />
         <hr />
         <Collection />
-      //  <div className={styles.cards}>
-        //  {products.map(product => (
-           // <CategoryCard key={product._id} product={product} />
-         // ))}
+        <div className={styles.cards}>
+         {products.map(product => (
+         <CategoryCard key={product._id} product={product} />
+         ))}
           
           
         </div>
