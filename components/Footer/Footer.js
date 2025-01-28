@@ -73,7 +73,7 @@ function Footer() {
         /> 
               
               <Image
-          src={"/Visa.png"}
+          src={"/Airtel-Money-logo.jpg"}
           height={30}
           width={36}
           alt="momo logo"
