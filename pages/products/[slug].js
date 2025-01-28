@@ -93,10 +93,10 @@ const ProductPage = ({ product }) => {
           width={90}
           alt=" product"
        
-        />
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
+        /><br/>
+      <h1>{product.name}</h1><br/>
+      <p>{product.description}</p><br/>
+      <p>Price: ${product.price}</p><br/>
       <Link href="/products">
         <a>Back to product list</a>
       </Link>
