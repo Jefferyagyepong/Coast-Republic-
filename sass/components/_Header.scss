@@ -14,20 +14,6 @@ header {
     opacity: 1;
   }
 }
-/* Add this to your globals.css file */
-
-.fade-text {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade-text.visible {
-  opacity: 1;
-}
-
-.fade-text.hidden {
-  opacity: 0;
-}
 
 
 
