@@ -54,20 +54,28 @@ function Footer() {
 
       <FootBottom />
       <div className="payment-container">
+            
+               <Image
+          src={"/telecel.jpg"}
+          height={30}
+          width={35}
+          alt="momo logo"
+          className="footer-tag"
+        /> 
       
         
                <Image
           src={"/momo.jpg"}
-          height={17}
-          width={29}
+          height={30}
+          width={35}
           alt="momo logo"
           className="footer-tag"
-        /> |
+        /> 
               
               <Image
           src={"/Visa.png"}
-          height={25}
-          width={39}
+          height={30}
+          width={36}
           alt="momo logo"
           className="footer-tag"
         />  
