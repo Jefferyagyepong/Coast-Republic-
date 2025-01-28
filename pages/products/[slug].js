@@ -1,5 +1,5 @@
-import Header from "../components/Head/Header";
-import Toast from "../components/Head/Toast";
+import Header from "@/components/Head/Header";
+import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
 import React from 'react';
