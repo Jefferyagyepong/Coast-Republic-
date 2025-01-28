@@ -15,9 +15,6 @@ header {
   }
 }
 
-
-
-
 .sticky {
   width: 100%;
   top: 0;
@@ -27,6 +24,23 @@ header {
 }
 
 
+.example1 {
+  width: 100%;
+  text-align: center;
+  background-color: #800000;
+  top: 0;
+  margin: 0 auto;
+  height: 18px;
+
+}
+
+.example1 h6 {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  text-shadow: 4px #fff;
+
+}
 
 .inline {
   display: flex;
@@ -150,4 +164,3 @@ header {
 
   }
 }
-
