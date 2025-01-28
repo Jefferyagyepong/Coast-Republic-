@@ -79,6 +79,13 @@ function Footer() {
           alt="momo logo"
           className="footer-tag"
         />  
+                <Image
+          src={"/Airtel.PNG"}
+          height={30}
+          width={36}
+          alt="momo logo"
+          className="footer-tag"
+        />  
      <br/>
       </div> <br/>
       <h6 className="footer-tag">
