@@ -89,8 +89,8 @@ const ProductPage = ({ product }) => {
     <div>
                      <Image
           src={product.image}
-          height={100}
-          width={90}
+          height={400}
+          width={500}
           alt=" product"
        
         /><br/>
