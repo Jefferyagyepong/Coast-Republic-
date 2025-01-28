@@ -23,11 +23,11 @@ header {
   margin: 0 auto;
 }
 
-$fade-duration: 2s;
+
 
 .example1 h6 {
   opacity: 0;
-  animation: fadeIn $fade-duration forwards;
+  animation: fadeIn 2s forwards;
 
   @keyframes fadeIn {
     to {
