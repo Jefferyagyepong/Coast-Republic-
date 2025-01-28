@@ -14,7 +14,7 @@ import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
-import Toast from "../components/Head/Toast";
+import Toast from "@/components/Head/Toast";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
