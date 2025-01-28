@@ -71,14 +71,7 @@ function Footer() {
           alt="momo logo"
           className="footer-tag"
         /> 
-              
-              <Image
-          src={"/Airtel-Money-logo.jpg"}
-          height={30}
-          width={36}
-          alt="momo logo"
-          className="footer-tag"
-        />  
+      
                 <Image
           src={"/Airtel.PNG"}
           height={30}
