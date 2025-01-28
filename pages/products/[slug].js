@@ -94,7 +94,7 @@ const ProductPage = ({ product }) => {
           alt=" product"
        
         /><br/>
-      <h1>{product.name}</h1><br/>
+      <h4>{product.name}</h4><br/>
       <p>{product.description}</p><br/>
       <p>Price: ${product.price}</p><br/>
       <Link href="/products">
