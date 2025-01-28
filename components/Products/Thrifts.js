@@ -23,7 +23,7 @@ import Image from "next/image";
           <h5>Air Force 1 low </h5>
           <h5>$90</h5>
         </em><br/>
-        <Link href={/products}>
+        <Link href={"/products"}>
           shop Now
           </Link>
   
