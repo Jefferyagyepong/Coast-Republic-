@@ -85,7 +85,7 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
-        </div><br/>
+        </div><br/> <hr/>
     <div>
                      <Image
           src={product.image}
@@ -107,6 +107,7 @@ const ProductPage = ({ product }) => {
         Add to Bag
       </button>
     </div>
+    <br/> <hr/>
         <Newsletter />
     
     </main>
