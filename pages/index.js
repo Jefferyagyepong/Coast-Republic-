@@ -1,5 +1,5 @@
+
 import Head from "next/head";
-import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
-import Toast from "@/components/Head/Toast";
+import Toast from "../components/Head/Toast";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -30,7 +30,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ products }) => {   
-    const images = [
+     const images = [
     'https://images.unsplash.com/photo-1508507031248-e96f9cd82522?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'https://images.unsplash.com/photo-1704949841973-9db544ac35ec?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -61,17 +61,17 @@ const Home = ({ products }) => {
       </Head>
       <main>
         <div className="sticky">
-        <Toast />
-        <Header />
+          <Toast />
+          <Header />
         </div>
         <Nav />
-        <Sale  images={images} interval={3000}/>
+        <Sale   images={images} interval={3000}/>
         <Thrifts />
         <New />
-        <CoastApp />              
+        <CoastApp />
+        <hr />
         <Collection />
-        
-        <div className= "product-card">            
+          <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
           <Link href={`/products/${product.slug}`}>
@@ -79,14 +79,16 @@ const Home = ({ products }) => {
           src={product.image}
           height={100}
           width={90}
-         alt=" product"       
-          />
-        <h4>{product.name}</h4>      
+         alt=" product"
+       
+        />
+          <h4>{product.name}</h4><br/>
+      
             </Link>
             </span>
+  
           
         ))}
-      
       </div>
         
         <Newsletter />
