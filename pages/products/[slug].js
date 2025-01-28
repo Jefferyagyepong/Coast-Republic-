@@ -86,7 +86,7 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div><br/> <hr/>
-    <div>
+    <div className="ibrid-box">
                      <Image
           src={product.image}
           height={400}
