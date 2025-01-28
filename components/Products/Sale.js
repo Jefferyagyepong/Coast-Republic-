@@ -1,5 +1,5 @@
 
-
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Slideshow = ({ images, interval = 3000 }) => {
@@ -23,7 +23,7 @@ const Slideshow = ({ images, interval = 3000 }) => {
 
   return (
     <div style={styles.container}>
-      <img
+      <Image
         src={images[currentSlide]}
         alt={`Slide ${currentSlide + 1}`}
         style={styles.image}
