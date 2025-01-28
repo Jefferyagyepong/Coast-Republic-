@@ -56,7 +56,7 @@ function Footer() {
       <div className="payment-container">
             
                <Image
-          src={"/telecel.jpg"}
+          src={"/telecel.JPG"}
           height={30}
           width={35}
           alt="momo logo"
