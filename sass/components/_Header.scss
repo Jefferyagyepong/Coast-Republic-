@@ -30,7 +30,7 @@ background-color: #800000;
 .example1 h6 {
 
 transform: translateX(-100%);
-  animation: slideInLeft $slide-duration forwards;
+  animation: slideInLeft 2s forwards;
 
   @keyframes slideInLeft {
     to {
