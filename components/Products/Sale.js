@@ -93,7 +93,7 @@ APPLY CODE FLASHI5 AT CHECKOUT
      </div>
   
   );
-};
+}
 export default Sale;
 
 
