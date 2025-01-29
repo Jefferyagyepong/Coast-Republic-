@@ -8,7 +8,7 @@ import Thrifts from "@/components/Products/Thrifts";
 import New from "@/components/Products/New";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
-import Sale from "@/components/Products/Sale";
+//import Sale from "@/components/Products/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
@@ -65,7 +65,7 @@ const Home = ({ products }) => {
           <Header />
         </div>
         <Nav />
-        <Sale />
+        //<Sale />
         <Thrifts />
         <New />
         <CoastApp />
