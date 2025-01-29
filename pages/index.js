@@ -4,17 +4,17 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
-import Thrifts from "../components/Products/Thrifts";
-import New from "../components/Products/New";
-import Header from "../components/Head/Header";
-import Footer from "../components/Footer/Footer";
-import Sale from "../components/Products/Sale";
+import Thrifts from "@/components/Products/Thrifts";
+import New from "@/components/Products/New";
+import Header from "@/components/Head/Header";
+import Footer from "@/components/Footer/Footer";
+import Sale from "@/components/Products/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
 import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
-import Toast from "../components/Head/Toast";
+import Toast from "@/components/Head/Toast";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
