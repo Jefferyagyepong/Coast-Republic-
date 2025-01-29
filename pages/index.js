@@ -65,7 +65,7 @@ const Home = ({ products }) => {
           <Header />
         </div>
         <Nav />
-        <Sale />  //images={images} interval={3000}
+        <Sale /> 
         <Thrifts />
         <New />
         <CoastApp />
@@ -103,7 +103,7 @@ export default Home;
 
 
 
-
+ //images={images} interval={3000}
  
 
 
