@@ -94,6 +94,6 @@ APPLY CODE FLASHI5 AT CHECKOUT
   
   );
 }
-export default Sale;
+export default Show;
 
 
