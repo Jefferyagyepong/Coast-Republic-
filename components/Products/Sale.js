@@ -67,6 +67,7 @@
 //};
 
 //export default Slideshow;
+import Link from 'next/link';
 
 const Show (){
   return(
