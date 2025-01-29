@@ -71,15 +71,15 @@ import Link from 'next/link';
 
 function Show (){
   return(
-  <div>
-    <h2>
+  <div className="ibrid-box">
+    <br/> <h1>
       SALE
-      </h2>
+      </h1>  <br/>  <br/> <br/>
       <p>
         EXTRA 15% OFF
 SELECTED SALE ITEMS
 APPLY CODE FLASHI5 AT CHECKOUT
-         </p>
+         </p> <br/> <br/>
         <Link href={"/products"}>
           Shop now
              </Link>
