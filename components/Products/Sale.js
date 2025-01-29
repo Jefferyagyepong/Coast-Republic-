@@ -69,7 +69,7 @@
 //export default Slideshow;
 import Link from 'next/link';
 
-const Show (){
+function Show (){
   return(
   <div>
     <h2>
