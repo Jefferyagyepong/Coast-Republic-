@@ -71,10 +71,13 @@ import Link from 'next/link';
 
 function Show (){
   return(
-  <div className="ibrid-box">
-    <br/> <h1>
+  <div className="sale-box">
+    <br/> <b>
+      
+      <h1>
       SALE
-      </h1>  <br/>  <br/> <br/>
+      </h1>
+      </b>  <br/>  <br/> <br/>
       <p>
         EXTRA 15% OFF
 SELECTED SALE ITEMS
