@@ -4,7 +4,7 @@ import Link from 'next/link';
   return (
  <div  className="footer-align-left">
  
-<h2>Journal: Designer pairs in our collection </h2>
+<h5>Journal: Designer pairs in our collection </h5>
 <Link href={"/products"}>Shop now</Link>
 
 
