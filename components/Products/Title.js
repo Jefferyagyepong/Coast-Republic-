@@ -5,7 +5,7 @@ function Title() {
  <div  className="footer-align-left">
   
     
-<h2>Sneakers: Designer pairs in our collection </h2>
+<h5>Sneakers: Designer pairs in our collection </h5>
 <Link href={"/products"}>Shop now</Link>
 
 
