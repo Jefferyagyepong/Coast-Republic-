@@ -179,14 +179,15 @@ Marketing partners (only with your consent)</p>
 
 <article>
 <h5>9. Contact Us</h5>
-<p>For any questions or concerns about this
- Privacy Policy, please contact us at:</p>
+<p>For any questions or concerns about this Privacy Policy, please contact us at:</p>
+</article>
 
+<article>
 <p>COAST REPUBLIC</p>
 <p>Email: info@coastrepublicgh.com</p>
 <p>Address: 7 Minneti ST, Asokwa</p>
 </article>
-</article>
+
    
   );
 }
