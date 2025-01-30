@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Collection() {
   return (
  <div  className="footer-align-left">
