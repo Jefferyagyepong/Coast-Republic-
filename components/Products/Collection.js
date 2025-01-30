@@ -4,7 +4,7 @@ export default function Collection() {
  <div  className="footer-align-left">
  
     
-<h2>Tees: Designer pairs in our collection </h2>
+<h5>Tees: Designer pairs in our collection </h5>
 <Link href={"/products"}>Shop now</Link>
 
 
