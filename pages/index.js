@@ -1,7 +1,5 @@
 
 import Head from "next/head";
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
 import Thrifts from "@/components/Products/Thrifts";
@@ -31,11 +29,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ products }) => {   
-     //const images = [
-    //'https://images.unsplash.com/photo-1508507031248-e96f9cd82522?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    //'https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-   // 'https://images.unsplash.com/photo-1704949841973-9db544ac35ec?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
- // ];
+    
   return (
     <>
       <Head>
@@ -73,26 +67,7 @@ const Home = ({ products }) => {
         <CoastApp />
         <hr />
         <Collection />
-          <div className= "product-card">
-        {products.map((product) => (              
-          <span key={product.slug}>
-          <Link href={`/products/${product.slug}`}>
-          <Image
-          src={product.image}
-          height={100}
-          width={90}
-         alt=" product"
-       
-        />
-          <h4>{product.name}</h4><br/>
-      
-            </Link>
-            </span>
-  
-          
-        ))}
-      </div>
-        
+    
         <Newsletter />
         <Brands />
         <Footer />
