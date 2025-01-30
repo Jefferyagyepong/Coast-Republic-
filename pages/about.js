@@ -1,4 +1,5 @@
-
+import Toast from "@/components/Head/Toast";
+import Header from "@/components/Head/Header";
 import Head from "next/head";
 
 export default function About() {
