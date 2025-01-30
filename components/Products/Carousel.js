@@ -1,126 +1,52 @@
-import { useState, useRef } from "react";
+"use client";
+import Image from 'next/image';
 
+import { useRef, useState } from "react";
 
 const images = [
   "/thugga.jpg",
-  "/thugga.jpg",
-  "/thugga.jpg",
-  "/thugga.jpg",
+  "/images/image2.jpg",
+  "/images/image3.jpg",
+  "/images/image4.jpg",
 ];
 
-const ImageCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const startTouch = useRef(0);
+export default function ImageCarousel() {
+  const carouselRef = useRef(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
-  const handleTouchStart = (e) => {
-    startTouch.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = (e) => {
-    const endTouch = e.changedTouches[0].clientX;
-    if (startTouch.current - endTouch > 50) {
-      nextSlide();
+  const handleScroll = () => {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+      setScrollProgress(progress);
     }
-    if (endTouch - startTouch.current > 50) {
-      prevSlide();
-    }
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleRadioChange = (e) => {
-    setCurrentIndex(Number(e.target.value));
   };
 
   return (
-    <div
-      className="carousel-container"
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-    >
+    <div className="relative w-full max-w-2xl mx-auto">
+      {/* Carousel Container */}
       <div
-        className="carousel"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        ref={carouselRef}
+        onScroll={handleScroll}
+        className="flex overflow-x-scroll scrollbar-hide space-x-4 p-2"
       >
         {images.map((src, index) => (
-          <span key={index} src={src} alt={`Slide ${index}`} className="slide" />
+          <img
+            key={index}
+            src={src}
+            alt={`Slide ${index + 1}`}
+            className="w-64 h-40 object-cover rounded-lg flex-shrink-0"
+          />
         ))}
       </div>
 
-      {/* Radio Buttons */}
-      <div className="radio-buttons">
-        {images.map((_, index) => (
-          <label key={index}>
-            <input
-              type="radio"
-              name="carousel"
-              value={index}
-              checked={currentIndex === index}
-              onChange={handleRadioChange}
-            />
-          </label>
-        ))}
+      {/* Scroll Indicator */}
+      <div className="mt-2 w-full h-1 bg-gray-300 rounded-full relative">
+        <div
+          className="h-1 bg-blue-500 rounded-full transition-all"
+          style={{ width: `${scrollProgress}%` }}
+        />
       </div>
-
-      <style jsx>{`
-        .carousel-container {
-        padding: 10px 20px;
-          width: 100%;
-          max-width: 800px;
-          overflow: hidden;
-          position: relative;
-        }
-
-        .carousel {
-        padding:5px 10px;
-          display: flex;
-          transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-          width: 200px;
-          height: 190px;
-          background:#808080;
-          flex-shrink: 0;
-          object-fit: cover;
-        }
-
-        .radio-buttons {
-          position: absolute;
-          bottom: 10px;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          gap: 10px;
-        }
-
-        .radio-buttons label {
-          cursor: pointer;
-        }
-
-        .radio-buttons input[type="radio"] {
-          width: 12px;
-          height: 12px;
-          background-color: #fff;
-          border-radius: 50%;
-          border: 2px solid #fff;
-          appearance: none;
-        }
-
-        .radio-buttons input[type="radio"]:checked {
-          background-color: #333;
-        }
-      `}</style>
     </div>
   );
-};
-
-export default ImageCarousel;
+}
