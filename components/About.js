@@ -1,51 +1,30 @@
 function About() {
   return (
-    <div className="ibrid-box-line">
-      
-        {" "}<br/><br/>
-          <h2>About Us</h2><br/>
-        <article>
-        <address>
-         
-          <h6>7 Minetti St, AK-717-5846 Asokwa</h6>
-          <h6>info@coastrepgh.com</h6>
-        </address><br/>
+        <h1 >About Us</h1>
+        
         <section>
-               <p>
-        our physical store (inventory) is located in the Ashanti region of Ghana
-        specifically Asokowa, kumasi. We deliver the products we sell accross
-        all 16 regions.
-      </p>
-          </section>
-            <section>
-                  <em>
-        {" "}
-        <h3>Discovery</h3><br/><br/>
-      </em>
-
-      <p>
-        Online thrift store delivering to your doorstep. Coast Republic offers
-        our potential customers the opportunity to purchase thrift clothing and
-        shoes, paying/checking out of system with payment gateway which include
-        Visa card and Mobile money. We collect a few information when a customer
-        places an order. This information is very important and help us in
-        successfully delivering items to customers. We encourage customers to
-        provide us with accrate information. Coast Republic is here to ease the
-        stress our potential customers go through assessing popular markets for
-        thrifts items like Kantamanto in Accra and Adum in Kumasi.All your
-        favorite brand products are available.
-      </p>
+          <p>
+            Welcome to Coast Republic , your go-to destination for high-quality products at unbeatable prices. We are dedicated to providing you with the best shopping experience, offering a wide range of products with excellent customer service.
+          </p>
           
-          </section>
-      <footer>
-        <p>Established on <time datetime="2024-05-16">May 16</time></p>
-        </footer>
-  
-                 
-          </article>
-      
- 
-    </div>
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to bring you top-quality products while ensuring an effortless and enjoyable shopping experience. We carefully select our products to ensure they meet the highest standards.
+          </p>
+
+          <h2>Why Choose Us?</h2>
+          <ul>
+            <li>💎 **Premium Quality Products** – We source only the best products.</li>
+            <li>🚚 **Fast & Reliable Shipping** – Get your orders quickly and safely.</li>
+            <li>💰 **Affordable Prices** – Enjoy competitive prices without compromising quality.</li>
+            <li>📞 **Exceptional Customer Support** – We’re always here to assist you.</li>
+          </ul>
+
+          <h2>Contact Us</h2>
+          <p>
+            Have questions? We would love to hear from you! Contact us at <a href="mailto:support@ecommerce.com" className="text-blue-600">support@ecommerce.com</a>.
+          </p>
+        </section>
   );
 }
 export default About;
