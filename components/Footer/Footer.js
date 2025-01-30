@@ -7,32 +7,48 @@ function Footer() {
       
       <div className="footer-align-left">
  
-        <b>
-          <Link href={"/"} className="footer-tag">
+        <ul>
+        <li>
+                <Link href={"/"} className="footer-tag">
             {" "}
             Home
           </Link>
-
-          <Link href={"/about"} className="footer-tag">
+           </li>
+         <li>
+               <Link href={"/about"} className="footer-tag">
             {" "}
             About
           </Link>
-
-          <Link href={"/products"} className="footer-tag">
+           </li>
+         <li> 
+               <Link href={"/products"} className="footer-tag">
             {" "}
             shop
           </Link>
-
-          <Link href={"/contact"} className="footer-tag">
+          </li>
+         <li> 
+               <Link href={"/contact"} className="footer-tag">
             {" "}
             Contact
           </Link>
-
-          <Link href={"/delivery"} className="footer-tag">
+          </li>
+         <li> 
+             <Link href={"/delivery"} className="footer-tag">
             {" "}
             Delivery & Refunds
           </Link>
-        </b>
+          </li>
+        </ul>
+    
+
+     
+
+     
+
+     
+
+       
+        
       </div>
 
         <div className="footer-align-left"> 
