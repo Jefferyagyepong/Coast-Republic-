@@ -5,7 +5,7 @@ export default function Collection() {
         
      </div>
     
-<h2>Jeans: Designer pairs in our collection </h2>
+<h2>Tees: Designer pairs in our collection </h2>
 <Link href={"/products"}>Shop now</Link>
 
 
