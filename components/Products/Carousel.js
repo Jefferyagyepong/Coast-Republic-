@@ -30,9 +30,13 @@ const ImageCarousel = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
+  };
+
+  const handleRadioChange = (e) => {
+    setCurrentIndex(Number(e.target.value));
   };
 
   return (
@@ -47,6 +51,21 @@ const ImageCarousel = () => {
       >
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Slide ${index}`} className="slide" />
+        ))}
+      </div>
+
+      {/* Radio Buttons */}
+      <div className="radio-buttons">
+        {images.map((_, index) => (
+          <label key={index}>
+            <input
+              type="radio"
+              name="carousel"
+              value={index}
+              checked={currentIndex === index}
+              onChange={handleRadioChange}
+            />
+          </label>
         ))}
       </div>
 
@@ -67,6 +86,32 @@ const ImageCarousel = () => {
           width: 100%;
           flex-shrink: 0;
           object-fit: cover;
+        }
+
+        .radio-buttons {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 10px;
+        }
+
+        .radio-buttons label {
+          cursor: pointer;
+        }
+
+        .radio-buttons input[type="radio"] {
+          width: 12px;
+          height: 12px;
+          background-color: #fff;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          appearance: none;
+        }
+
+        .radio-buttons input[type="radio"]:checked {
+          background-color: #333;
         }
       `}</style>
     </div>
