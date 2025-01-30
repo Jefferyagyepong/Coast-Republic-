@@ -7,6 +7,7 @@ import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
+import Filter from "@/components/Products/Filter";
 
 
 export async function getStaticProps() {
@@ -55,6 +56,7 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
     <div>
+      <Filter />
       <br/>
       <h3>our collection</h3><br/>
       <div className= "product-card">
