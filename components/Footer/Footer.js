@@ -38,28 +38,19 @@ function Footer() {
             Delivery & Refunds
           </Link>
           </li>
-        </ul>
-    
-
-     
-
-     
-
-     
-
-       
-        
+        </ul><br/>
+                 
       </div>
 
         <div className="footer-align-left"> 
-        <h3>GET THE COAST REPUBLIC APP </h3>
+        <strong>GET THE COAST REPUBLIC APP </strong><br/>
         <p>
       Download and enjoy our app anytime, anywhere for IOS and Android devices.
         </p><br/>
 
         <div className="ibrid-flex">
-          <Image src={"/apple.svg"} alt="apple" width={120} height={60} />
-          <Image src={"/android.svg"} alt="android" width={120} height={60} />
+          <Image src={"/apple.svg"} alt="apple" width={70} height={60} />
+          <Image src={"/android.svg"} alt="android" width={70} height={60} />
         </div>
       </div>
 
