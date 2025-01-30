@@ -13,6 +13,7 @@ import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
+import Carousel from "@/components/Products/Carousel";
 
 
 
@@ -52,6 +53,7 @@ const Home = ({ products }) => {
         <Thrifts />
         <Jeans />
         <New />
+        <Carousel />
         <CoastApp />
         <hr />
         <Collection />
