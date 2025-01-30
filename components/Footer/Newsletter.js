@@ -39,10 +39,8 @@ const SubscribeForm = () => {
   return (
     <div className="footer-align-left">
       <h4>SUBSCRIBE TO OUR NEWSLETTER </h4>
-      <p>
-        //Stay in the loop with the latest style news and get an exclusive 10% off when you subscribe to our emails.
-//Exclusions apply. Learn more about our Privacy Policy <Link href={"/privacy"}> here. </Link> <Link href={"/terms"}> Terms and conditions </Link> apply.
-        </p>
+    .
+        
       {success && <p>Thanks for subscribing!</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
       
