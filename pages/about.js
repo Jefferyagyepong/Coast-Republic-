@@ -3,7 +3,7 @@ import Header from "@/components/Head/Header";
 import About from "@/components/About";
 import Head from "next/head";
 
-export default function About() {
+export default function AboutUs() {
   return (
     <>
 
