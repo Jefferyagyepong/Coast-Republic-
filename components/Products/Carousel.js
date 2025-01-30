@@ -85,7 +85,9 @@ const ImageCarousel = () => {
         }
 
         .slide {
-          width: 100%;
+          width: 200px;
+          height: 190px;
+          background:#808080;
           flex-shrink: 0;
           object-fit: cover;
         }
