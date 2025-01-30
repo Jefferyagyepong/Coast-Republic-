@@ -1,6 +1,6 @@
 function Privacy() {
   return (
-    <div >
+    <div>
       <article>
   <h3>Effective Date: 20-01-2025</h3>
 
