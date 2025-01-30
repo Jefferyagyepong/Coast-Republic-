@@ -71,7 +71,7 @@ const ImageCarousel = () => {
 
       <style jsx>{`
         .carousel-container {
-        background: red;
+        padding: 10px 20px;
           width: 100%;
           max-width: 800px;
           overflow: hidden;
