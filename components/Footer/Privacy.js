@@ -122,7 +122,7 @@ Marketing partners (only with your consent)</p>
 <article>
   <h5>5. Your Rights and Choices</h5>
 
-<p>Depending on your location, you may have the following rights:</p
+<p>Depending on your location, you may have the following rights:</p>
 <ul>
 <li>
   Access & Update: Request access to or update your data.
