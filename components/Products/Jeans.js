@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 const images = [
   "/thugga.jpg",
  
@@ -12,7 +13,7 @@ function Show (){
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((src, index) => (
-          <img key={index} src={src} alt="img" className="slide" />
+          <Image key={index} src={src} alt="img" className="slide" />
         ))}
       </div>
     
