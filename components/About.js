@@ -1,5 +1,6 @@
 function About() {
   return (
+    <>
         <h1 >About Us</h1>
         
         <section>
@@ -25,6 +26,7 @@ function About() {
             Have questions? We would love to hear from you! Contact us at <a href="mailto:support@ecommerce.com" className="text-blue-600">support@ecommerce.com</a>.
           </p>
         </section>
+        </>
   );
 }
 export default About;
