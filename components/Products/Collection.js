@@ -1,6 +1,6 @@
 export default function Collection() {
   return (
- <div className="ibrid-box">
+ <div  className="footer-align-left">
     <div className="jean-bg">
         
      </div>
