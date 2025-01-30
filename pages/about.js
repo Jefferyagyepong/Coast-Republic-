@@ -1,20 +1,12 @@
 
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import About from "../components/About";
-import Header from "../components/Head/Header";
-import Newsletter from "@/components/Footer/Newsletter";
-import FootBottom from "@/components/Footer/FootBottom";
-import Nav from "@/components/Head/Nav";
-import Toast from "../components/Head/Toast";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function about() {
+export default function About() {
   return (
     <>
+
       <Head>
-        <title>About us | Coast Republic</title>
+          <title>About Us - Coast Republic Inc.</title>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
@@ -44,22 +36,42 @@ export default function about() {
         <meta name="viewport" content="width=device-width,  initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
         <link rel="icon" href="" />
       </Head>
-      <main>
-             <div className="sticky">
+      <main >
+              <div className="sticky">
          
              <Toast />
         <Header />
           
           </div>
      
-      
-        <Nav/>
+        <h1 >About Us</h1>
+        
+        <section>
+          <p>
+            Welcome to Coast Republic , your go-to destination for high-quality products at unbeatable prices. We are dedicated to providing you with the best shopping experience, offering a wide range of products with excellent customer service.
+          </p>
+          
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to bring you top-quality products while ensuring an effortless and enjoyable shopping experience. We carefully select our products to ensure they meet the highest standards.
+          </p>
 
-        <About />
+          <h2>Why Choose Us?</h2>
+          <ul>
+            <li>💎 **Premium Quality Products** – We source only the best products.</li>
+            <li>🚚 **Fast & Reliable Shipping** – Get your orders quickly and safely.</li>
+            <li>💰 **Affordable Prices** – Enjoy competitive prices without compromising quality.</li>
+            <li>📞 **Exceptional Customer Support** – We’re always here to assist you.</li>
+          </ul>
 
-        <Newsletter />
-       
+          <h2>Contact Us</h2>
+          <p>
+            Have questions? We'd love to hear from you! Contact us at <a href="mailto:support@ecommerce.com" className="text-blue-600">support@ecommerce.com</a>.
+          </p>
+        </section>
       </main>
     </>
   );
 }
+
+
