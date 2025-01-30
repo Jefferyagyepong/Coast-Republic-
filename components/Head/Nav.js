@@ -11,6 +11,12 @@ const Breadcrumbs = () => {
         <li>
           <Link href="/">Home</Link>
         </li>
+         <li>
+          <Link href="/products">Shop</Link>
+        </li>
+         <li>
+          <Link href="/delivery">Delivery</Link>
+        </li>
         {pathSegments.map((segment, index) => {
           const href = "/" + pathSegments.slice(0, index + 1).join("/");
           return (
