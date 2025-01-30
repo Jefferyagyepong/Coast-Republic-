@@ -19,10 +19,7 @@ function Show (){
 <h5>Jeans: Designer pairs in our collection </h5>
 <Link href={"/products"}>Shop now</Link>
 
-
-     </div>
-    
-      <style jsx>{`
+  <style jsx>{`
         .carousel-container {
         padding: 10px 20px;
           width: 100%;
@@ -47,6 +44,9 @@ function Show (){
         
         }
       `}</style>
+     </div>
+    
+    
   
   );
 }
