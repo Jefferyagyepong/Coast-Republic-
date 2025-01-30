@@ -4,47 +4,46 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer>
-      <br/>  <br/>
+      
       <div className="footer-align-left">
  
         <b>
           <Link href={"/"} className="footer-tag">
             {" "}
             Home
-          </Link><br/>  <br/>
+          </Link>
 
           <Link href={"/about"} className="footer-tag">
             {" "}
             About
-          </Link><br/>  <br/>
+          </Link>
 
           <Link href={"/products"} className="footer-tag">
             {" "}
             shop
-          </Link><br/>  <br/>
+          </Link>
 
           <Link href={"/contact"} className="footer-tag">
             {" "}
             Contact
-          </Link><br/>  <br/>
+          </Link>
 
           <Link href={"/delivery"} className="footer-tag">
             {" "}
             Delivery & Refunds
-          </Link><br/>  <br/>
+          </Link>
         </b>
       </div>
 
-      <hr className="short-width" />
-           <div> 
+        <div className="footer-align-left"> 
         <h3>GET THE COAST REPUBLIC APP </h3>
         <p>
       Download and enjoy our app anytime, anywhere for IOS and Android devices.
         </p><br/>
 
         <div className="ibrid-flex">
-          <Image src={"/apple.svg"} alt="apple" width={170} height={100} />
-          <Image src={"/android.svg"} alt="android" width={170} height={100} />
+          <Image src={"/apple.svg"} alt="apple" width={120} height={60} />
+          <Image src={"/android.svg"} alt="android" width={120} height={60} />
         </div>
       </div>
 
