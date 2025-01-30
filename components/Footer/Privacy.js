@@ -160,7 +160,7 @@ Marketing partners (only with your consent)</p>
 
 
 <article>  
-<h5>7. Children's Privacy</h5>
+<h5>7. Children&apos;s Privacy</h5>
 <p>Our services are not intended for
    children under 13 (or the applicable
    age in your country). We do not knowingly 
