@@ -5,7 +5,7 @@ function Show (){
  <div  className="footer-align-left">
  
     
-<h2>Jeans: Designer pairs in our collection </h2>
+<h5>Jeans: Designer pairs in our collection </h5>
 <Link href={"/products"}>Shop now</Link>
 
 
