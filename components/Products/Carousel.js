@@ -1,22 +1,46 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const images = [
   "/thugga.jpg",
-  "/images/image2.jpg",
-  "/images/image3.jpg",
-  "/images/image4.jpg",
+  "/thugga.jpg",
+  "/thugga.jpg",
+  "/thugga.jpg",
 ];
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const startTouch = useRef(0);
 
-  const handleSlideChange = (event) => {
-    setCurrentIndex(Number(event.target.value));
+  const handleTouchStart = (e) => {
+    startTouch.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    const endTouch = e.changedTouches[0].clientX;
+    if (startTouch.current - endTouch > 50) {
+      nextSlide();
+    }
+    if (endTouch - startTouch.current > 50) {
+      prevSlide();
+    }
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   return (
-    <div className="carousel-container">
-      {/* Image Slider */}
+    <div
+      className="carousel-container"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       <div
         className="carousel"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -26,70 +50,23 @@ const ImageCarousel = () => {
         ))}
       </div>
 
-      {/* Slider Bar */}
-      <input
-        type="range"
-        min="0"
-        max={images.length - 1}
-        value={currentIndex}
-        onChange={handleSlideChange}
-        className="slider"
-      />
-
       <style jsx>{`
         .carousel-container {
           width: 100%;
           max-width: 800px;
           overflow: hidden;
           position: relative;
-          text-align: center;
         }
 
         .carousel {
           display: flex;
           transition: transform 0.5s ease-in-out;
-          width: 300px;
-          margin: 0 auto;
         }
 
         .slide {
           width: 100%;
           flex-shrink: 0;
           object-fit: cover;
-        }
-
-        .slider {
-          width: 100%;
-          margin-top: 10px;
-          -webkit-appearance: none;
-          height: 5px;
-          background: #ddd;
-          border-radius: 5px;
-          outline: none;
-          opacity: 0.9;
-          transition: opacity 0.2s;
-        }
-
-        .slider:hover {
-          opacity: 1;
-        }
-
-        .slider::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 15px;
-          height: 15px;
-          background: #333;
-          border-radius: 50%;
-          cursor: pointer;
-        }
-
-        .slider::-moz-range-thumb {
-          width: 15px;
-          height: 15px;
-          background: #333;
-          border-radius: 50%;
-          cursor: pointer;
         }
       `}</style>
     </div>
