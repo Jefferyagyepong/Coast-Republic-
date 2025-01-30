@@ -89,7 +89,7 @@ APPLY CODE FLASHI5 AT CHECKOUT
           
     <br/><br/><br/><br/>
      <Link href={"/terms"}>
-          T&Cs apply
+          T&Cs apply<br/>
              </Link><br/>
 
 
