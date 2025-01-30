@@ -79,6 +79,7 @@ const ImageCarousel = () => {
         }
 
         .carousel {
+        background:red;
           display: flex;
           transition: transform 0.5s ease-in-out;
         }
