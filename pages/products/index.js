@@ -56,9 +56,10 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
     <div>
+          <h3>our collection</h3><br/>
       <Filter />
       <br/>
-      <h3>our collection</h3><br/>
+  
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
