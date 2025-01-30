@@ -7,7 +7,7 @@ function Show (){
   return(
  <div  className="footer-align-left">
   
-      <div>
+      <div clasName="ibrid-box">
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Slide ${index}`} className="slide" />
         ))}
