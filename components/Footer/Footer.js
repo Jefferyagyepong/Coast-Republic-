@@ -51,6 +51,17 @@ function Footer() {
       </div>
 
       <hr className="short-width" />
+           <div> 
+        <h3>GET THE COAST REPUBLIC APP </h3>
+        <p>
+      Download and enjoy our app anytime, anywhere for IOS and Android devices.
+        </p><br/>
+
+        <div className="ibrid-flex">
+          <Image src={"/apple.svg"} alt="apple" width={170} height={100} />
+          <Image src={"/android.svg"} alt="android" width={170} height={100} />
+        </div>
+      </div>
 
       <FootBottom />
       <h5>COAST REPUBLIC ACCEPTS </h5>
