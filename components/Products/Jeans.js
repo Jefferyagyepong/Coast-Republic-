@@ -12,7 +12,7 @@ function Show (){
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Slide ${index}`} className="slide" />
+          <img key={index} src={src} alt="img" className="slide" />
         ))}
       </div>
     
