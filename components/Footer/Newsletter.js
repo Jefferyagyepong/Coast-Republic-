@@ -39,7 +39,7 @@ const SubscribeForm = () => {
   return (
     <div className="footer-align-left">
       <h4>SUBSCRIBE TO OUR NEWSLETTER </h4>
-    .
+    
         
       {success && <p>Thanks for subscribing!</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
