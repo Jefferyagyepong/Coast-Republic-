@@ -4,23 +4,19 @@ const images = [
   "/images/image1.jpg",
   "/images/image2.jpg",
   "/images/image3.jpg",
+  "/images/image4.jpg",
 ];
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+  const handleSlideChange = (event) => {
+    setCurrentIndex(Number(event.target.value));
   };
 
   return (
     <div className="carousel-container">
+      {/* Image Slider */}
       <div
         className="carousel"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -30,8 +26,15 @@ const ImageCarousel = () => {
         ))}
       </div>
 
-      <button className="prev" onClick={prevSlide}>&#10094;</button>
-      <button className="next" onClick={nextSlide}>&#10095;</button>
+      {/* Slider Bar */}
+      <input
+        type="range"
+        min="0"
+        max={images.length - 1}
+        value={currentIndex}
+        onChange={handleSlideChange}
+        className="slider"
+      />
 
       <style jsx>{`
         .carousel-container {
@@ -39,38 +42,53 @@ const ImageCarousel = () => {
           max-width: 800px;
           overflow: hidden;
           position: relative;
+          text-align: center;
         }
-        
+
         .carousel {
           display: flex;
           transition: transform 0.5s ease-in-out;
           width: ${images.length * 100}%;
         }
-        
+
         .slide {
           width: 100%;
           flex-shrink: 0;
           object-fit: cover;
         }
 
-        .prev, .next {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background: rgba(0, 0, 0, 0.5);
-          color: white;
-          border: none;
-          padding: 10px;
-          cursor: pointer;
-          font-size: 24px;
-          z-index: 10;
+        .slider {
+          width: 100%;
+          margin-top: 10px;
+          -webkit-appearance: none;
+          height: 5px;
+          background: #ddd;
+          border-radius: 5px;
+          outline: none;
+          opacity: 0.9;
+          transition: opacity 0.2s;
         }
 
-        .prev { left: 10px; }
-        .next { right: 10px; }
+        .slider:hover {
+          opacity: 1;
+        }
 
-        .prev:hover, .next:hover {
-          background: rgba(0, 0, 0, 0.8);
+        .slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 15px;
+          height: 15px;
+          background: #333;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+          width: 15px;
+          height: 15px;
+          background: #333;
+          border-radius: 50%;
+          cursor: pointer;
         }
       `}</style>
     </div>
