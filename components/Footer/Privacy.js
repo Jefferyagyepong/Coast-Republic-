@@ -4,7 +4,7 @@ function Privacy() {
       <article>
   <h3>Effective Date: 20-01-2025</h3>
 
-<p>COAST REPUBLIC INC. ("we," "our," or "us") respects
+<p>COAST REPUBLIC INC. (we, our, or us) respects
    your privacy and is committed to protecting the personal
    information you provide when using our website and services. 
   This Privacy Policy explains how we collect, use, disclose, 
