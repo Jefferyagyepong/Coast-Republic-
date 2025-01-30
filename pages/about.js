@@ -1,5 +1,6 @@
 import Toast from "@/components/Head/Toast";
 import Header from "@/components/Head/Header";
+import About from "@/components/About";
 import Head from "next/head";
 
 export default function About() {
@@ -38,12 +39,11 @@ export default function About() {
         <link rel="icon" href="" />
       </Head>
       <main >
-              <div className="sticky">
-         
-             <Toast />
+          <div className="sticky">         
+          <Toast />
         <Header />
-          
-          </div>
+        </div>
+        <About />
      
 
       </main>
