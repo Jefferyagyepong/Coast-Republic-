@@ -14,7 +14,7 @@ import Nav from "@/components/Head/Nav";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 import Carousel from "@/components/Products/Carousel";
-
+import Search from "@/components/Head/Search";
 
 
 const Home = ({ products }) => {   
@@ -48,6 +48,7 @@ const Home = ({ products }) => {
           <Toast />
           <Header />
         </div>
+        <Search />
         <Nav />
         <Sale /> 
         <Thrifts />
