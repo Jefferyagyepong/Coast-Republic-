@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Show (){
   return(
  <div className="pdt-box">
-  <Image src={"/thugga.jpg"} width={480} height={600}  alt="img"/>
+  <Image src="/thugga.jpg" width={480} height={600}  alt="pic"/>
   
       
     
