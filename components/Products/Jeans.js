@@ -7,7 +7,10 @@ function Show (){
   return(
  <div  className="footer-align-left">
   
-      <div clasName="ibrid-box">
+          <div
+        className="carousel"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
         {images.map((src, index) => (
           <img key={index} src={src} alt={`Slide ${index}`} className="slide" />
         ))}
