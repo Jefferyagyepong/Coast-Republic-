@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const images = [
   "/images/image1.jpg",
@@ -9,13 +9,15 @@ const images = [
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
-    return () => clearInterval(interval);
-  }, []);
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
   return (
     <div className="carousel-container">
@@ -28,6 +30,9 @@ const ImageCarousel = () => {
         ))}
       </div>
 
+      <button className="prev" onClick={prevSlide}>&#10094;</button>
+      <button className="next" onClick={nextSlide}>&#10095;</button>
+
       <style jsx>{`
         .carousel-container {
           width: 100%;
@@ -38,7 +43,7 @@ const ImageCarousel = () => {
         
         .carousel {
           display: flex;
-          transition: transform 0.8s ease-in-out;
+          transition: transform 0.5s ease-in-out;
           width: ${images.length * 100}%;
         }
         
@@ -46,6 +51,26 @@ const ImageCarousel = () => {
           width: 100%;
           flex-shrink: 0;
           object-fit: cover;
+        }
+
+        .prev, .next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          font-size: 24px;
+          z-index: 10;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .prev:hover, .next:hover {
+          background: rgba(0, 0, 0, 0.8);
         }
       `}</style>
     </div>
