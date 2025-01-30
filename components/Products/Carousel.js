@@ -39,7 +39,7 @@ const ImageCarousel = () => {
       <style jsx>{`
         .carousel-container {
           width: 100%;
-          max-width: 400px;
+          max-width: 800px;
           overflow: hidden;
           position: relative;
           text-align: center;
