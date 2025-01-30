@@ -1,5 +1,8 @@
 import Link from 'next/link';
-
+const images = [
+  "/thugga.jpg",
+ 
+];
 function Show (){
   return(
  <div  className="footer-align-left">
