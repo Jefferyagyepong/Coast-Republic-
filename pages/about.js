@@ -59,15 +59,15 @@ export default function About() {
 
           <h2>Why Choose Us?</h2>
           <ul>
-            <li>💎 Premium Quality Products – We source only the best products.</li>
-            <li>🚚 Fast & Reliable Shipping – Get your orders quickly and safely.</li>
-            <li>💰 Affordable Prices – Enjoy competitive prices without compromising quality.</li>
-            <li>📞 Exceptional Customer Support – We’re always here to assist you.</li>
+            <li>💎 **Premium Quality Products** – We source only the best products.</li>
+            <li>🚚 **Fast & Reliable Shipping** – Get your orders quickly and safely.</li>
+            <li>💰 **Affordable Prices** – Enjoy competitive prices without compromising quality.</li>
+            <li>📞 **Exceptional Customer Support** – We’re always here to assist you.</li>
           </ul>
 
           <h2>Contact Us</h2>
           <p>
-            Have questions? We'd love to hear from you! Contact us at <a href="mailto:support@ecommerce.com" className="text-blue-600">support@ecommerce.com</a>.
+            Have questions? We would love to hear from you! Contact us at <a href="mailto:support@ecommerce.com" className="text-blue-600">support@ecommerce.com</a>.
           </p>
         </section>
       </main>
