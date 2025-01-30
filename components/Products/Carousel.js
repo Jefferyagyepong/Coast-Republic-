@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import Image from 'next/image';
+
 
 const images = [
   "/thugga.jpg",
@@ -51,7 +51,7 @@ const ImageCarousel = () => {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((src, index) => (
-          <Image key={index} src={src} alt={`Slide ${index}`} className="slide" />
+          <span key={index} src={src} alt={`Slide ${index}`} className="slide" />
         ))}
       </div>
 
