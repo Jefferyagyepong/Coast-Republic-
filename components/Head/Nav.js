@@ -1,89 +1,30 @@
-/* Navbar container */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #333;
-  color: white;
-}
+import { useState } from "react";
+import styles from "../styles/Navbar.module.css"; // Import the CSS module
 
-/* Logo */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
 
-/* Hamburger icon */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>MyLogo</div>
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
+      {/* Hamburger Icon */}
+      <div 
+        className={`${styles.hamburger} ${open ? styles.open : ""}`} 
+        onClick={() => setOpen(!open)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-/* Open state for hamburger */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* Navigation links */
-.navLinks {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.navLinks li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.navLinks li a:hover {
-  color: #ffcc00;
-}
-
-/* Responsive: Show hamburger menu on small screens */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .navLinks {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #222;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .navLinks.show {
-    transform: translateY(0);
-  }
-
-  .navLinks li {
-    margin: 10px 0;
-  }
+      {/* Navigation Links */}
+      <ul className={`${styles.navLinks} ${open ? styles.show : ""}`}>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  );
 }
