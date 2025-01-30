@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
-import styles from "../styles/Faq.module.css";
+
 
 const faqData = [
   {
@@ -34,16 +34,16 @@ const FAQ = () => {
         <title>FAQ - Your Store</title>
         <meta name="description" content="Frequently Asked Questions about our products and services." />
       </Head>
-      <div className={styles.container}>
+      <div className="container">
         <h1>Frequently Asked Questions</h1>
-        <div className={styles.faqList}>
+        <div className="faqList">
           {faqData.map((item, index) => (
-            <div key={index} className={styles.faqItem}>
-              <button onClick={() => toggleFAQ(index)} className={styles.question}>
+            <div key={index} className="faqItem">
+              <button onClick={() => toggleFAQ(index)} className="question">
                 {item.question}
                 <span className={styles.arrow}>{openIndex === index ? "▲" : "▼"}</span>
               </button>
-              {openIndex === index && <p className={styles.answer}>{item.answer}</p>}
+              {openIndex === index && <p className="answer">{item.answer}</p>}
             </div>
           ))}
         </div>
