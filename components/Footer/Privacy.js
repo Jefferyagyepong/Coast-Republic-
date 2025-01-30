@@ -186,7 +186,7 @@ Marketing partners (only with your consent)</p>
 <p>Email: info@coastrepublicgh.com</p>
 <p>Address: 7 Minneti ST, Asokwa</p>
 </article>
-
+</article>
    
   );
 }
