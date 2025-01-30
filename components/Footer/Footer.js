@@ -41,62 +41,54 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Follow Us</h4>
           <ul className="social-links">
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        
+            <li><Link href={"https://facebook.com"} target="_blank" rel="noopener noreferrer">Facebook</Link></li>
+            <li><Link href={"https://twitter.com"} target="_blank" rel="noopener noreferrer">Twitter</Link></li>
+            <li><Link href={"https://instagram.com"} target="_blank" rel="noopener noreferrer">Instagram</Link></li>        
           </ul>
         </div>
       </div>
-              <div className="footer-align-left"> 
-        <h4>GET THE COAST REPUBLIC APP </h4><br/>
-        <p>
-      Download and enjoy our app anytime, anywhere for IOS and Android devices.
-        </p><br/>
+      
+        <div className="footer-align-left"> 
+        <h4>GET THE COAST REPUBLIC APP </h4>
+        <p>Download and enjoy our app anytime, anywhere for IOS and Android devices.</p>
 
-        <div className="ibrid-flex">
+      <div className="ibrid-flex">
           <Image src={"/apple.svg"} alt="apple" width={40} height={30} />
           <Image src={"/android.svg"} alt="android" width={40} height={30} />
         </div>
       </div>
-      
-      
-      
-          <h5>COAST REPUBLIC ACCEPTS </h5>
-      <div className="payment-container">
-            
-               <Image
+                        
+      <h5>COAST REPUBLIC ACCEPTS </h5>
+      <div className="payment-container">            
+          <Image
           src={"/telecel.JPG"}
           height={30}
           width={35}
           alt="momo logo"
           className="footer-tag"
-        /> 
-      
-        
-               <Image
+        />               
+          <Image
           src={"/momo.jpg"}
           height={30}
           width={35}
           alt="momo logo"
           className="footer-tag"
-        /> 
-              
-              <Image
+        />               
+          <Image
           src={"/Visa.png"}
           height={30}
           width={36}
           alt="momo logo"
           className="footer-tag"
         />  
-                <Image
+         <Image
           src={"/Airtel-Money-logo.jpg"}
           height={30}
           width={36}
           alt="momo logo"
           className="footer-tag"
         />  
-     <br/>
+     
       </div> 
 
       {/* Copyright */}
