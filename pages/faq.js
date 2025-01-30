@@ -41,7 +41,7 @@ const FAQ = () => {
             <div key={index} className="faqItem">
               <button onClick={() => toggleFAQ(index)} className="question">
                 {item.question}
-                <span className={styles.arrow}>{openIndex === index ? "▲" : "▼"}</span>
+                <span className="arrow">{openIndex === index ? "▲" : "▼"}</span>
               </button>
               {openIndex === index && <p className="answer">{item.answer}</p>}
             </div>
