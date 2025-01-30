@@ -48,7 +48,8 @@ const ImageCarousel = () => {
         .carousel {
           display: flex;
           transition: transform 0.5s ease-in-out;
-          width: ${images.length * 100}%;
+          width: 300px;
+          margin: 0 auto;
         }
 
         .slide {
