@@ -9,7 +9,6 @@ import Footer from "@/components/Footer/Footer";
 import Sale from "@/components/Products/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Products/CoastApp";
-import Brands from "@/components/Footer/Brands";
 import Collection from "@/components/Products/Collection";
 import Nav from "@/components/Head/Nav";
 import Toast from "@/components/Head/Toast";
@@ -58,7 +57,7 @@ const Home = ({ products }) => {
         <Collection />
     
         <Newsletter />
-        <Brands />
+      
         <Footer />
       </main>
    </>
