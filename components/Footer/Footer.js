@@ -53,6 +53,7 @@ function Footer() {
       <hr className="short-width" />
 
       <FootBottom />
+      <h5>COAST REPUBLIC ACCEPTS </h5>
       <div className="payment-container">
             
                <Image
