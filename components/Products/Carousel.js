@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Carousel.module.css"; // Import CSS styles
+import Image from 'next/image';
 
 const images = [
   "/images/img1.jpg",
@@ -11,10 +11,10 @@ const images = [
 
 const ImageCarousel = () => {
   return (
-    <div className={styles.carouselContainer}>
-      <div className={styles.carousel}>
+    <div className="carouselContainer">
+      <div className="carousel">
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Image ${index + 1}`} className={styles.image} />
+          <Image width={60} height={60} key={index} src={src} alt={`Image ${index + 1}`} className={styles.image} />
         ))}
       </div>
     </div>
