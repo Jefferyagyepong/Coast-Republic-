@@ -18,6 +18,32 @@ function Show (){
 
 
      </div>
+    
+      <style jsx>{`
+        .carousel-container {
+        padding: 10px 20px;
+          width: 100%;
+          max-width: 800px;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .carousel {
+        padding:5px 10px;
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+          width: 200px;
+          height: 190px;
+          flex-shrink: 0;
+          object-fit: cover;
+        }
+
+        
+        }
+      `}</style>
   
   );
 }
