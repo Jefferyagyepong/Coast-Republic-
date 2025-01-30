@@ -43,14 +43,14 @@ function Footer() {
       </div>
 
         <div className="footer-align-left"> 
-        <strong>GET THE COAST REPUBLIC APP </strong><br/>
+        <h4>GET THE COAST REPUBLIC APP </h4><br/>
         <p>
       Download and enjoy our app anytime, anywhere for IOS and Android devices.
         </p><br/>
 
         <div className="ibrid-flex">
-          <Image src={"/apple.svg"} alt="apple" width={70} height={60} />
-          <Image src={"/android.svg"} alt="android" width={70} height={60} />
+          <Image src={"/apple.svg"} alt="apple" width={40} height={30} />
+          <Image src={"/android.svg"} alt="android" width={40} height={30} />
         </div>
       </div>
 
