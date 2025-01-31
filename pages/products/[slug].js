@@ -7,8 +7,6 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
-//import { useDispatch } from "react-redux";
-//import { addToCart } from "../../redux/cart.slice";
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -56,7 +54,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-    const dispatch = useDispatch();
+   
   return (
     <>
           <Head>
