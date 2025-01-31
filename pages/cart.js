@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart, updateQuantity, clearCart } from "../redux/cartslice";
+import { removeFromCart, updateQuantity, clearCart } from "@/redux/cartslice.js";
 import { useRouter } from "next/router";
 
 const CartPage = () => {
