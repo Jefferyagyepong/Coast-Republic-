@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CartBasket from "./CartBasket";
+//import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
           />
         </Link>
         <h2 className="logo-name">Coast Republic</h2>
-        <CartBasket />
+        //<CartBasket />
     </header>
   );
 }
