@@ -58,7 +58,7 @@ const ProductPage = ({ product }) => {
   return (
     <>
           <Head>
-        <title>Coast Republic | T-shirts and more</title>
+        <title> T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
