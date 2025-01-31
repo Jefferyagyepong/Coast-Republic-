@@ -1,9 +1,9 @@
 
-import Toast from "../components/Head/Toast";
+import Toast from "@/components/Head/Toast";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Header from "../components/Head/Header";
-import Delivery from "../components/Footer/Delivery";
+import Header from "@/components/Head/Header";
+import Delivery from "@/components/Footer/Delivery";
 import Newsletter from "@/components/Footer/Newsletter";
 import FootBottom from "@/components/Footer/FootBottom";
 import Nav from "@/components/Head/Nav";
