@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
-import FootBottom from "../components/Footer/FootBottom";
+import FootBottom from "@/components/Footer/FootBottom";
 import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
-import Toast from "../components/Head/Toast";
-import actions from  cart.slice.js
+import Toast from "@/components/Head/Toast";
+
 import {
   incrementQuantity,
   decrementQuantity,
