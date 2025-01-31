@@ -100,12 +100,8 @@ const ProductPage = ({ product }) => {
       <Link href="/products">
         Back to product list
       </Link>
-      /*  <button
-        onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart"
-      >
-        Add to Bag
-      </button>*/
+  
+      
     </div>
     <br/> <hr/>
         <Newsletter />
