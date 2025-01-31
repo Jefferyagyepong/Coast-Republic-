@@ -14,7 +14,7 @@ function Header() {
           />
         </Link>
         <h2 className="logo-name">Coast Republic</h2>
-        //<CartBasket />
+    
     </header>
   );
 }
