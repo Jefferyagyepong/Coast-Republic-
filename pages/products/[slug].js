@@ -7,6 +7,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
+
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -54,11 +55,11 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-   
+  
   return (
     <>
           <Head>
-        <title> T-shirts and more</title>
+        <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
@@ -99,7 +100,6 @@ const ProductPage = ({ product }) => {
         Back to product list
       </Link>
   
-      
     </div>
     <br/> <hr/>
         <Newsletter />
@@ -110,18 +110,3 @@ const ProductPage = ({ product }) => {
 };
 
 export default ProductPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
