@@ -41,8 +41,8 @@ an order, or contact us, we may collect:</p>
   
 </ul>
 
-<p>Payment details (processed securely by 
-  third-party payment processors)</p>
+<p>Payment details processed securely by 
+  third-party payment processors</p>
   
 </article>
 
@@ -111,7 +111,7 @@ an order, or contact us, we may collect:</p>
  <h5>3. How We Share Your Information</h5>
 <p>We do not sell your personal data.
  However, we may share it with:</p>
-<p>Third-party service providers (e.g., payment processors, shipping partners)
+<p>Third-party service providers e.g., payment processors, shipping partners
 Legal authorities if required by law or for fraud prevention
 Marketing partners (only with your consent)</p>
 </article>
