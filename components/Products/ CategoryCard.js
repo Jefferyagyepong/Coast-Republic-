@@ -20,12 +20,7 @@ const CategoryCard = ({ product }) => {
       <h4>{product.name}</h4>
          </Link>
            
-     /* <button
-        onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart"
-      >
-        Add to Bag
-      </button>*/
+    
     </div>
   );
 };
