@@ -13,7 +13,7 @@ import {
   decrementQuantity,
   removeFromCart,
 } from "@/redux/cart.slice";
-import styles from "../sass/components/CartPage.module.scss";
+import styles from "@/sass/components/CartPage.module.scss";
 import Nav from "@/components/Head/Nav";
 
 const CartPage = () => {
