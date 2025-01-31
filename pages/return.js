@@ -32,7 +32,7 @@ const ReturnPolicy = () => {
         <h2>Exchanges</h2>
         <p>
           If you received a defective or damaged item, we will replace it free of charge. Please contact us at
-          <strong> support@yourstore.com </strong> for further assistance.
+          <strong> support@coastrepublic.com </strong> for further assistance.
         </p>
 
         <h2>Non-Returnable Items</h2>
@@ -44,7 +44,7 @@ const ReturnPolicy = () => {
         </ul>
 
         <h2>How to Initiate a Return</h2>
-        <p>To start a return, contact us at <strong>returns@yourstore.com</strong>. We’ll provide a return shipping label and instructions.</p>
+        <p>To start a return, contact us at <strong>returns@coastrepublic.com</strong>. We’ll provide a return shipping label and instructions.</p>
 
         <p>If you have any questions, feel free to reach out at <strong>support@yourstore.com</strong>.</p>
       </div>
