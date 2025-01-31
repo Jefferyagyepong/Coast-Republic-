@@ -12,7 +12,7 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-} from "../redux/cart.slice";
+} from "@/redux/cart.slice";
 import styles from "../sass/components/CartPage.module.scss";
 import Nav from "@/components/Head/Nav";
 
