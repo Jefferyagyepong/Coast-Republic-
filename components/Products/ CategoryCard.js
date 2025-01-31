@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "/sass/components/ShopPage.module.scss";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cart.slice";
+//import { useDispatch } from "react-redux";
+//import { addToCart } from "../../redux/cart.slice";
 import Link from "next/link";
 
 const CategoryCard = ({ product }) => {
-  const dispatch = useDispatch();
+ // const dispatch = useDispatch();
   return (
     <div className={styles.card}>
       <br />{" "}
@@ -20,12 +20,12 @@ const CategoryCard = ({ product }) => {
       <h4>{product.name}</h4>
          </Link>
            
-      <button
+     /* <button
         onClick={() => dispatch(addToCart(product))}
         className="add-to-cart"
       >
         Add to Bag
-      </button>
+      </button>*/
     </div>
   );
 };
