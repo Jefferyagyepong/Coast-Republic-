@@ -54,7 +54,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const ProductPage = ({ product }) => {
+const ProductPage = () => {
   
   return (
     <>
