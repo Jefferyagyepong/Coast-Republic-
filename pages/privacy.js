@@ -4,6 +4,7 @@ import Head from "next/head";
 import Header from "@/components/Head/Header";
 
 import Toast from "@/components/Head/Toast";
+import Privacy from "@/components/Footer/Privacy";
 
 
 
