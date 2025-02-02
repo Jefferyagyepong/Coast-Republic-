@@ -1,55 +1,48 @@
-import { useState, useEffect } from "react";
+import { useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
 
 const images = [
-  "/images/image1.jpg",
-  "/images/image2.jpg",
-  "/images/image3.jpg",
+  "/products/george1a.JPG",
+  "/products/force1b.JPG",
+  "/products/tim1b.JPG",
+  "/products/calvin1c.JPG",
+  "/products/george1b.JPG",
 ];
 
-const ImageCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function Carousel() {
+  const scrollContainerRef = useRef(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+  const scrollLeft = () => {
+    scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
+  };
 
-    return () => clearInterval(interval);
-  }, []);
+  const scrollRight = () => {
+    scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
+  };
 
   return (
-    <div className="carousel-container">
-      <div
-        className="carousel"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
+    <div className="carousel">
+      <button className="scrollButton" onClick={scrollLeft}>
+        ‹
+      </button>
+      <div className="carouselContainer" ref={scrollContainerRef}>
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Slide ${index}`} className="slide" />
+          <div key={index} className="carouselItem">
+            <Image
+              src={src}
+              alt={`Image ${index + 1}`}
+              width={90}
+              height={90}
+            />
+          </div>
         ))}
       </div>
-
-      <style jsx>{`
-        .carousel-container {
-          width: 100%;
-          max-width: 800px;
-          overflow: hidden;
-          position: relative;
-        }
-        
-        .carousel {
-          display: flex;
-          transition: transform 0.8s ease-in-out;
-          width: ${images.length * 100}%;
-        }
-        
-        .slide {
-          width: 100%;
-          flex-shrink: 0;
-          object-fit: cover;
-        }
-      `}</style>
+   
+      <button className="scrollButton" onClick={scrollRight}>
+        ›
+      </button>
     </div>
   );
-};
-
-export default ImageCarousel;
+}
