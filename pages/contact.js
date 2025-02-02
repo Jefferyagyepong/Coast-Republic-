@@ -67,11 +67,11 @@ const Contact = () => {
           </form>
         )}
 
-        <div className="mt-6 border-t pt-4 text-center">
-          <h2 className="text-lg font-semibold">Our Contact Details</h2>
-          <p className="text-gray-700">📍 123 Fashion Street, New York, NY</p>
-          <p className="text-gray-700">📞 +1 (123) 456-7890</p>
-          <p className="text-gray-700">✉️ support@fashionstore.com</p>
+        <div>
+          <h2>Our Contact Details</h2>
+          <p>📍 123 Fashion Street, New York, NY</p>
+          <p>📞 +1 (123) 456-7890</p>
+          <p>✉️ support@fashionstore.com</p>
         </div>
       </div>
     </div>
