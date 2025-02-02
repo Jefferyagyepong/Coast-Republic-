@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Categories</h4>
           <ul>
-            <li><Link href="/products">Tees</Link></li>
-            <li><Link href="products">Jeans & Khaki </Link></li>
-            <li><Link href="/products">Sneakers</Link></li>
-            <li><Link href="/products">Sports Jerseys </Link></li>
+            <li><Link href="/products/">Tees</Link></li>
+            <li><Link href="products/">Jeans & Khaki </Link></li>
+            <li><Link href="/products/">Sneakers</Link></li>
+            <li><Link href="/products/">Sports Jerseys </Link></li>
           </ul>
         </div>
 
