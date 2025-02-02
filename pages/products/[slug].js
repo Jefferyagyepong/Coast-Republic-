@@ -98,7 +98,7 @@ const ProductPage = ({ product }) => {
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
       <Link href="/products">
-        Back to product list
+        Back to Shop Now
       </Link>
         <button
         onClick={() => dispatch(addToCart(product))}
