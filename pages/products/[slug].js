@@ -1,4 +1,5 @@
 import Toast from "@/components/Head/Toast";
+import Header from "@/components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
 import React from 'react';
@@ -97,7 +98,7 @@ const ProductPage = ({ product }) => {
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
       <Link href="/products">
-        <a>Back to product list</a>
+        Back to product list
       </Link>
         <button
         onClick={() => dispatch(addToCart(product))}
