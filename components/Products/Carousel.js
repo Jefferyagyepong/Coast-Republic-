@@ -1,52 +1,48 @@
-"use client";
-import Image from 'next/image';
+import { useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-import { useRef, useState } from "react";
 
 const images = [
-  "/thugga.jpg",
-  "/images/image2.jpg",
-  "/images/image3.jpg",
-  "/images/image4.jpg",
+  "/products/george1a.JPG",
+  "/products/force1b.JPG",
+  "/products/tim1b.JPG",
+  "/products/calvin1c.JPG",
+  "/products/george1b.JPG",
 ];
 
-export default function ImageCarousel() {
-  const carouselRef = useRef(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
+export default function Carousel() {
+  const scrollContainerRef = useRef(null);
 
-  const handleScroll = () => {
-    if (carouselRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
-      const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
-      setScrollProgress(progress);
-    }
+  const scrollLeft = () => {
+    scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
   };
 
   return (
-    <div className="relative w-full max-w-2xl mx-auto">
-      {/* Carousel Container */}
-      <div
-        ref={carouselRef}
-        onScroll={handleScroll}
-        className="flex overflow-x-scroll scrollbar-hide space-x-4 p-2"
-      >
+    <div className="carousel">
+      <button className="scrollButton" onClick={scrollLeft}>
+        ‹
+      </button>
+      <div className="carouselContainer" ref={scrollContainerRef}>
         {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Slide ${index + 1}`}
-            className="w-64 h-40 object-cover rounded-lg flex-shrink-0"
-          />
+          <div key={index} className="carouselItem">
+            <Image
+              src={src}
+              alt={`Image ${index + 1}`}
+              width={90}
+              height={90}
+            />
+          </div>
         ))}
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="mt-2 w-full h-1 bg-gray-300 rounded-full relative">
-        <div
-          className="h-1 bg-blue-500 rounded-full transition-all"
-          style={{ width: `${scrollProgress}%` }}
-        />
-      </div>
+   
+      <button className="scrollButton" onClick={scrollRight}>
+        ›
+      </button>
     </div>
   );
 }

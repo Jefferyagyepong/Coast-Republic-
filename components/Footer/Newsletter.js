@@ -1,56 +1,65 @@
-import { useState } from 'react';
+import { useState } from "react";
+import Link from "next/link";
 
 const SubscribeForm = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
     setSuccess(false);
 
     try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
       });
 
       if (res.ok) {
         setSuccess(true);
-        setEmail('');
+        setEmail("");
       } else {
         const data = await res.json();
-        setError(data.message || 'Something went wrong');
+        setError(data.message || "Something went wrong");
       }
     } catch (err) {
-      setError('Error connecting to the server.');
+      setError("Error connecting to the server.");
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <div>
-      <h2>Subscribe to our Newsletter</h2>
+    <div className="footer-align-left">
+      <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+      <p>
+        Stay in the loop wit the latest styles news and get exclusively 10% off
+        when you subscribe to our emails. Learn more about our Privacy Policy{" "}
+        <Link href={"/policy"}> here. </Link>
+        Learn more about our Privacy Policy{" "}
+        <Link href={"/policy"}> Terms and conditions. </Link>
+        apply
+      </p>
       {success && <p>Thanks for subscribing!</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      
+      {error && <p style={{ color: "red" }}>{error}</p>}
+
       <form onSubmit={handleSubmit}>
         <input
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={e => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
         />
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? 'Subscribing...' : 'Subscribe'}
+        <button type="submit" disabled={isLoading} >
+          {isLoading ? "Subscribing..." : "Subscribe"}
         </button>
       </form>
     </div>

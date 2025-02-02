@@ -1,15 +1,11 @@
-
-
-
 // components/PaystackPayment.js
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const PaystackPayment = ({ email, amount, reference }) => {
-  
   useEffect(() => {
     // Dynamically load the Paystack script
-    const script = document.createElement('script');
-    script.src = 'https://js.paystack.co/v1/inline.js';
+    const script = document.createElement("script");
+    script.src = "https://js.paystack.co/v1/inline.js";
     script.async = true;
     document.body.appendChild(script);
 
@@ -46,14 +42,9 @@ const PaystackPayment = ({ email, amount, reference }) => {
 
   return (
     <div>
-    
-       
-          <button onClick={handlePayment}>Pay with Paystack</button>
-       
-    
+      <button onClick={handlePayment}>Pay with Paystack</button>
     </div>
   );
 };
 
 export default PaystackPayment;
-
