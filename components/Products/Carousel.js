@@ -1,6 +1,10 @@
-import { useRef } from "react";
-import Image from "next/image";
-import Link from "next/link";
+
+
+
+
+
+import React from "react";
+import Image from 'next/image';
 
 
 const images = [
@@ -11,38 +15,16 @@ const images = [
   "/products/george1b.JPG",
 ];
 
-export default function Carousel() {
-  const scrollContainerRef = useRef(null);
-
-  const scrollLeft = () => {
-    scrollContainerRef.current.scrollBy({ left: -200, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    scrollContainerRef.current.scrollBy({ left: 200, behavior: "smooth" });
-  };
-
+const ImageCarousel = () => {
   return (
-    <div className="carousel">
-      <button className="scrollButton" onClick={scrollLeft}>
-        ‹
-      </button>
-      <div className="carouselContainer" ref={scrollContainerRef}>
+    <div className="carouselContainer">
+      <div className="carousel">
         {images.map((src, index) => (
-          <div key={index} className="carouselItem">
-            <Image
-              src={src}
-              alt={`Image ${index + 1}`}
-              width={90}
-              height={90}
-            />
-          </div>
+          <Image key={index} src={src} alt={`Image ${index + 1}`}  width={60} height={60}  />
         ))}
       </div>
-   
-      <button className="scrollButton" onClick={scrollRight}>
-        ›
-      </button>
     </div>
   );
-}
+};
+
+export default ImageCarousel;
