@@ -4,7 +4,7 @@ import Head from "next/head";
 import Header from "@/components/Head/Header";
 
 import Toast from "@/components/Head/Toast";
-import Privacy from "@/components/Footer/Privacy";
+import PrivacyPage from "@/components/Footer/Privacy";
 
 
 
@@ -65,5 +65,5 @@ const Privacy = () => {
     </>
   );
 };
-export default Privacy;
+export default PrivacyPage;
 
