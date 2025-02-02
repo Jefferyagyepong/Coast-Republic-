@@ -14,44 +14,44 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
-      <div className="max-w-2xl bg-white p-8 shadow-lg rounded-lg w-full">
-        <h1 className="text-2xl font-bold mb-4 text-center">Contact Us</h1>
-        <p className="text-gray-600 text-center mb-6">
+    <div>
+      <div>
+        <h1>Contact Us</h1>
+        <p>
           Have questions? We're here to help! Fill out the form below, and we'll get back to you.
         </p>
 
         {submitted ? (
-          <div className="text-green-600 text-center font-semibold">
+          <div>
             ✅ Your message has been sent. We'll get back to you soon!
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit}>
             <div>
-              <label className="block font-semibold">Name</label>
+              <label>Name</label>
               <input
                 type="text"
                 required
-                className="w-full p-2 border rounded-md"
+               
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div>
-              <label className="block font-semibold">Email</label>
+              <label>Email</label>
               <input
                 type="email"
                 required
-                className="w-full p-2 border rounded-md"
+             
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
-              <label className="block font-semibold">Message</label>
+              <label>Message</label>
               <textarea
                 required
-                className="w-full p-2 border rounded-md"
+            
                 rows="4"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -60,7 +60,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition"
+        
             >
               Send Message
             </button>
