@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function Delivery() {
   return (
     <div className="ibrid-box-line">
@@ -30,5 +29,3 @@ function Delivery() {
   );
 }
 export default Delivery;
-=======
->>>>>>> 4aeb9a5b6fadb37cc983e34bcf41a738cd60ff8b

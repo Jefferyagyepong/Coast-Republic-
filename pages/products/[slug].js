@@ -97,11 +97,7 @@ const ProductPage = ({ product }) => {
       <p>{product.description}</p><br/>
       <p>Price: ${product.price}</p><br/>
       <Link href="/products">
-<<<<<<< HEAD
-      Back to Shop more
-=======
         Back to product list
->>>>>>> 4aeb9a5b6fadb37cc983e34bcf41a738cd60ff8b
       </Link>
   
     </div>

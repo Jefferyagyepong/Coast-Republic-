@@ -6,21 +6,14 @@ import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import Sale from "@/components/Products/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
-// import CoastApp from "@/components/Products/CoastApp";
 import Collection from "@/components/Products/Collection";
-import Nav from "@/components/Head/Nav";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
-import Carousel from "@/components/Products/Carousel";
-<<<<<<< HEAD
-import Shop from "@/components/Products/Shop";
 
-=======
 import Search from "@/components/Head/Search";
->>>>>>> 4aeb9a5b6fadb37cc983e34bcf41a738cd60ff8b
 
 
-const Home = ({ products }) => {   
+const Home = () => {   
     
   return (
     <>
@@ -73,17 +66,13 @@ const Home = ({ products }) => {
           <Header />
         </div>
         <Search />
-        <Nav />
         <Sale />
         <Thrifts />
         <Jeans />
         <New />
-        <Carousel />
-        <br></br>
-        <br></br>
-        <Shop /> <br></br>
-        <br></br>
-        {/* <CoastApp /> */}
+    
+       
+   
         <hr />
         <Collection />
         <Newsletter />
