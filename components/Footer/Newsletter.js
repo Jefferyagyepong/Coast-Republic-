@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
