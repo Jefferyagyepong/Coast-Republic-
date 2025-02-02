@@ -18,12 +18,12 @@ const Contact = () => {
       <div>
         <h1>Contact Us</h1>
         <p>
-          Have questions? We're here to help! Fill out the form below, and we'll get back to you.
+          Have questions? We are here to help! Fill out the form below, and we will get back to you.
         </p>
 
         {submitted ? (
           <div>
-            ✅ Your message has been sent. We'll get back to you soon!
+            ✅ Your message has been sent. We will get back to you soon!
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
@@ -69,9 +69,9 @@ const Contact = () => {
 
         <div>
           <h2>Our Contact Details</h2>
-          <p>📍 123 Fashion Street, New York, NY</p>
-          <p>📞 +1 (123) 456-7890</p>
-          <p>✉️ support@fashionstore.com</p>
+          <p>📍 7 Minneti ST, Asokwa, ASK</p>
+          <p>📞 +233 200-0000</p>
+          <p>✉️ support@coastrepublic.com</p>
         </div>
       </div>
     </div>
