@@ -16,13 +16,13 @@ function Privacy() {
 </article>
 
 <article>
-<h4>1.Information We Collect</h4>
+<h2>1.Information We Collect</h2>
 
 <p>We collect different types of information
  when you interact with our e-commerce website:</p>
 </article>
 <article>
-<h5>a. Personal Information</h5>
+<h2>a. Personal Information</h2>
 <p>When you create an account, place 
 an order, or contact us, we may collect:</p>
 <ul>
@@ -49,7 +49,7 @@ an order, or contact us, we may collect:</p>
 
 <article>
  
-<h5>b. Non-Personal Information</h5>
+<h2>b. Non-Personal Information</h2>
 <p>We automatically collect data when you 
   visit our site, including:</p>
 
@@ -75,7 +75,7 @@ an order, or contact us, we may collect:</p>
 
 
 <article>
-  <h5>c. Cookies and Tracking Technologies</h5>
+  <h2>c. Cookies and Tracking Technologies</h2>
 <p>We use cookies and similar technologies to 
   improve user experience, analyze site traffic, 
   and personalize content. You can manage cookie 
@@ -85,7 +85,7 @@ an order, or contact us, we may collect:</p>
 
 
 <article>
-<h5>2. How We Use Your Information</h5>
+<h2>2. How We Use Your Information</h2>
 <p>We use your data for the following purposes:</p>
 
 <ul>
@@ -108,7 +108,7 @@ an order, or contact us, we may collect:</p>
 </article>
 
 <article>
- <h5>3. How We Share Your Information</h5>
+ <h2>3. How We Share Your Information</h2>
 <p>We do not sell your personal data.
  However, we may share it with:</p>
 <p>Third-party service providers e.g., payment processors, shipping partners
@@ -117,7 +117,7 @@ Marketing partners (only with your consent)</p>
 </article>
 
 <article>    
-<h5>4. Data Security</h5>
+<h2>4. Data Security</h2>
 <p>We take appropriate measures to protect
    your personal information from unauthorized 
   access, alteration, or disclosure. 
@@ -128,7 +128,7 @@ Marketing partners (only with your consent)</p>
 </article>
 
 <article>
-<h5>5. Your Rights and Choices</h5>
+<h2>5. Your Rights and Choices</h2>
 <p>Depending on your location, you may have 
   the following rights:</p>
 <ul>
@@ -150,7 +150,7 @@ Marketing partners (only with your consent)</p>
 </article> 
 
 <article> 
-<h5>6. Third-Party Links</h5>
+<h2>6. Third-Party Links</h2>
 <p>Our website may contain links to 
   third-party websites. We are not responsible
   for their privacy policies or practices. 
@@ -160,7 +160,7 @@ Marketing partners (only with your consent)</p>
 
 
 <article>  
-<h5>7. Children&apos;s Privacy</h5>
+<h2>7. Children&apos;s Privacy</h2>
 <p>Our services are not intended for
    children under 13 (or the applicable
    age in your country). We do not knowingly 
@@ -171,14 +171,14 @@ Marketing partners (only with your consent)</p>
 
 
 <article>
-<h5>8. Changes to This Privacy Policy</h5>
+<h2>8. Changes to This Privacy Policy</h2>
 <p>We may update this Privacy Policy from
    time to time. Any changes will be posted 
   on this page with the updated Effective Date.</p>
 </article>
 
 <article>
-<h5>9. Contact Us</h5>
+<h2>9. Contact Us</h2>
 <p>For any questions or concerns about this Privacy Policy, please contact us at:</p>
 </article>
 
