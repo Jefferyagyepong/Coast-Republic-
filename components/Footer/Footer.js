@@ -128,6 +128,7 @@ const Footer = () => {
         }
         .social-links li {
           display: inline;
+          margin-right: 10px;
        
         }
         .footer-bottom {
