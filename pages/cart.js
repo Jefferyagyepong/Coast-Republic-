@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
-import FootBottom from "../components/Footer/FootBottom";
 import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
@@ -132,7 +131,7 @@ const CartPage = () => {
           )}
           <hr />
         </div>
-        <FootBottom />
+     
       </main>
     </>
   );
