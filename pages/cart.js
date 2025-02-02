@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
-import Toast from "../components/Head/Toast";
+import Toast from "@/components/Head/Toast";
 // Importing actions from  cart.slice.js
 import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
 } from "@/redux/cart.slice";
-import styles from "../sass/components/CartPage.module.scss";
+import styles from "@/sass/components/CartPage.module.scss";
 
 
 const CartPage = () => {
