@@ -23,6 +23,9 @@ export default function NewsletterForm() {
   return (
     <div>
       <h3>Subscribe to our Newsletter</h3>
+  
+<p>Stay in the loop with the latest style news and get an exclusive 10% off when you subscribe to our emails.
+Exclusions apply. Learn more about our Privacy Policy <Link href={"/privacy"}> here</Link>. <Link href={"/terms"}>Terms and conditions </Link> apply.</p>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
