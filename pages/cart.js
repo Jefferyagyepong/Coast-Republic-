@@ -11,9 +11,9 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-} from "../redux/cart.slice";
+} from "@/redux/cart.slice";
 import styles from "../sass/components/CartPage.module.scss";
-import Nav from "@/components/Head/Nav";
+
 
 const CartPage = () => {
   const cart = useSelector(state => state.cart);
@@ -63,7 +63,7 @@ const CartPage = () => {
           <Toast />
           <Header />
         </div>
-        <Nav />
+  
 
         <div className={styles.container}>
           {cart.length === 0 ? (
