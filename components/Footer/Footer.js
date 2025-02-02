@@ -95,7 +95,7 @@ const Footer = () => {
         width: 100%;
           background: #222;
           color: #fff;
-          padding: 20px 0;
+          padding: 10px 20px;
           text-align: center;
         }
         .container {
@@ -119,7 +119,7 @@ const Footer = () => {
           margin: 5px 0;
         }
         .footer-section ul li a {
-          color: #ccc;
+          color: #fff;
           text-decoration: none;
           font-size: 14px;
         }
@@ -128,7 +128,7 @@ const Footer = () => {
         }
         .social-links li {
           display: inline;
-          margin-right: 10px;
+       
         }
         .footer-bottom {
           margin-top: 20px;
