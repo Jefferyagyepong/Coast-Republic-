@@ -21,6 +21,7 @@
     margin: 10px;
 
 }
+<<<<<<< HEAD
 //carousel
 .carousel {
     display: flex;
@@ -166,4 +167,42 @@
 
 .scrollButton:hover {
     background-color: #000;
+=======
+
+
+faqList {
+  border-top: 1px solid #ddd;
+}
+
+.faqItem {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.question {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 18px;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.answer {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.arrow {
+  font-size: 16px;
+>>>>>>> 4aeb9a5b6fadb37cc983e34bcf41a738cd60ff8b
 }

@@ -12,8 +12,12 @@ import Nav from "@/components/Head/Nav";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 import Carousel from "@/components/Products/Carousel";
+<<<<<<< HEAD
 import Shop from "@/components/Products/Shop";
 
+=======
+import Search from "@/components/Head/Search";
+>>>>>>> 4aeb9a5b6fadb37cc983e34bcf41a738cd60ff8b
 
 
 const Home = ({ products }) => {   
@@ -68,6 +72,7 @@ const Home = ({ products }) => {
           <Toast />
           <Header />
         </div>
+        <Search />
         <Nav />
         <Sale />
         <Thrifts />

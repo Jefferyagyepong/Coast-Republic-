@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,6 +44,29 @@ export default function Carousel() {
       <button className="scrollButton" onClick={scrollRight}>
         ›
       </button>
+=======
+import React from "react";
+import Image from 'next/image';
+
+const images = [
+  "/images/img1.jpg",
+  "/images/img2.jpg",
+  "/images/img3.jpg",
+  "/images/img4.jpg",
+  "/images/img5.jpg",
+];
+
+const ImageCarousel = () => {
+  return (
+    <div className="carouselContainer">
+      <div className="carousel">
+        {images.map((src, index) => (
+          <Image key={index} src={src} alt={`Image ${index + 1}`}  width={60} height={60}  />
+        ))}
+      </div>
+>>>>>>> 4aeb9a5b6fadb37cc983e34bcf41a738cd60ff8b
     </div>
   );
-}
+};
+
+export default ImageCarousel;
