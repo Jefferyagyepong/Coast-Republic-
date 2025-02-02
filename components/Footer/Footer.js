@@ -92,6 +92,7 @@ const Footer = () => {
 
       <style jsx>{`
         .footer {
+        width: 100%;
           background: #222;
           color: #fff;
           padding: 20px 0;
