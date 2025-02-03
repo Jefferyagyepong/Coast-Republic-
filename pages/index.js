@@ -69,12 +69,15 @@ const Home = () => {
         <Sale />
         <Thrifts />
         <Jeans />
+          <hr />
         <New />
     <Carousel />
        
    
         <hr />
         <Collection />
+        
+          <hr />
         <Newsletter />
         <Footer />
       </main>
