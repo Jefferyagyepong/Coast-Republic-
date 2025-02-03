@@ -67,14 +67,14 @@ width: 100%
   white-space: nowrap; /* Prevents wrapping */
   scroll-snap-type: x mandatory; /* Enables snapping effect */
   gap: 10px; /* Adds spacing between images */
-  padding-bottom: 10px; /* Space for scrollbar */
+  padding-bottom: 20px; /* Space for scrollbar */
 }
 carousel::-webkit-scrollbar {
   display: none;
 }
 
 .carousel img {
-  width: 200px; /* Adjust image size */
+  width: 130px; /* Adjust image size */
   height: auto;
   flex-shrink: 0; /* Prevents images from shrinking */
   scroll-snap-align: start; /* Snaps images to the start */
