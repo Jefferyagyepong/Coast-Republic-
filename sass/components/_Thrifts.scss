@@ -58,3 +58,22 @@ faqList {
 .arrow {
   font-size: 16px;
 }
+.carousel {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping */
+  scroll-snap-type: x mandatory; /* Enables snapping effect */
+  gap: 10px; /* Adds spacing between images */
+  padding-bottom: 10px; /* Space for scrollbar */
+}
+carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel img {
+  width: 200px; /* Adjust image size */
+  height: auto;
+  flex-shrink: 0; /* Prevents images from shrinking */
+  scroll-snap-align: start; /* Snaps images to the start */
+  border-radius: 10px; /* Optional: rounded corners */
+}
