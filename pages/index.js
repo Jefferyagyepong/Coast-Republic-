@@ -11,7 +11,7 @@ import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 import Carousel from "@/components/Products/Carousel"; 
 
-
+import Search from "@/components/Head/Search";
 
 const Home = () => {   
     
@@ -65,6 +65,7 @@ const Home = () => {
           <Toast />
           <Header />
         </div>
+        <Search />
       
         <Sale />
         <Thrifts />
