@@ -11,7 +11,7 @@ function Header() {
             <Image src={"/crlogo.svg"} width={90} height={70} alt="logo" />
           </Link>
           <h3>Coast Republic</h3>
-           <Link href="/" className="font-bold text-lg">E-Commerce Store</Link>
+           <Link href="/search" >E-Commerce Store</Link>
       <div className="space-x-4">
         <Link href="/search">Search</Link>
       </div>
