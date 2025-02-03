@@ -21,7 +21,7 @@ const ImageCarousel = () => {
     <div className="carouselContainer">
       <div className="carousel">
         {images.map((src, index) => (
-          <Image key={index} src={src} alt={`Image ${index + 1}`}  width={60} height={60}  />
+          <Image key={index} src={src} alt={`Image ${index + 1}`}  width={160} height={160}  />
         ))}
       </div>
     </div>
