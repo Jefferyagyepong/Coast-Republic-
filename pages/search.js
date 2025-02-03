@@ -47,7 +47,7 @@ const SearchPage = ({ products }) => {
 
 // Fetch data at build time
 export async function getStaticProps() {
-  const products = require("@/public/data/products.json"); // Load local JSON file
+  const products = require('/public/data/products.json'); // Load local JSON file
   return {
     props: { products },
   };
