@@ -106,12 +106,15 @@ const Footer = () => {
         }
         .footer-section {
           max-width: 200px;
+             color: #fff;
+          
         }
         .footer-section h4 {
           margin-bottom: 10px;
           font-size: 16px;
         }
         .footer-section ul {
+        color: #fff;
           list-style: none;
           padding: 0;
         }
