@@ -30,7 +30,7 @@ const CartPage = () => {
   return (
     <>
       <Head>
-        <title>Cart Page | T-shirts and more</title>
+        <title>Cart </title>
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta property="og:title" content="Coast Republic store." />
         <meta property="og:type" content="E-commerce website application" />
