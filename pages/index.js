@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import Head from "next/head";
 import Thrifts from "@/components/Products/Thrifts";
 import New from "@/components/Products/New";
