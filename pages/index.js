@@ -72,6 +72,7 @@ const Home = () => {
           <hr />
         <New />
     <Carousel />
+    <Link href="/products/">Shop Now</Link>
        
    
         <hr />
