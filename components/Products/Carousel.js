@@ -18,14 +18,14 @@ export default function ImageCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  //useEffect(() => {
-  //  const handleScroll = () => {
-    //  if (carouselRef.current) {
-     //   const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
-      //  const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
-     //   setScrollProgress(progress);
-     // }
-   // }, [scrollProgress]); 
+useEffect(() => {
+   const handleScroll = () => {
+     if (carouselRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+        const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+        setScrollProgress(progress);
+      }
+   }, []); 
 
     const carousel = carouselRef.current;
     if (carousel) {
