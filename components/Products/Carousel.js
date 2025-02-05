@@ -1,7 +1,7 @@
-
+"use client"; // If using Next.js App Router
 
 import Image from 'next/image';
-"use client"; // If using Next.js App Router
+
 
 import { useRef, useState, useEffect } from "react";
 
