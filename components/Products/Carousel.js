@@ -13,6 +13,16 @@ const images = [
 ];
 
 const ImageCarousel = () => {
+    const [scrollProgress, setScrollProgress] = useState(0);
+    useEffect(() => {
+    const handleScroll = () => {
+      if (carouselRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+        const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+        setScrollProgress(progress);
+      }
+    }, []);
+  
   return (
     <div className="carouselContainer">
       <div className="carousel">
