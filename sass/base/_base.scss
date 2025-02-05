@@ -72,10 +72,7 @@ html {
 
 button {
   outline: 0 !important;
-  margin-top: 30px;
   border: none;
-  padding: 15px 32px;
-  background-color: #4CAF50;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -95,23 +92,4 @@ button:hover {
 footer {
   margin-top: auto;
 }
-
-ul {
-  display: block;
-  text-decoration: none;
-  list-style: none;
-
-}
-.list-inline{
-display: flex;
-flex-direction: row;
-align-items: center;
-
-}
-
-li {
-  cursor: pointer;
-  padding: 10px;
-  transition: 0.3s ease;
-
 }
