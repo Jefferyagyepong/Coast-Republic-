@@ -25,7 +25,7 @@ export default function ImageCarousel() {
         const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
         setScrollProgress(progress);
       }
-    };
+    },  [scrollProgress]); 
 
     const carousel = carouselRef.current;
     if (carousel) {
