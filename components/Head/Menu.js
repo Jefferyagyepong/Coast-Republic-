@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from 'next/link';
-import styles from "@/sass/ShopPage.module.scss"; // Import CSS file
+import styles from "../sass/ShopPage.module.scss"; // Import CSS file
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
