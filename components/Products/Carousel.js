@@ -3,9 +3,17 @@
 
 
 
-import React from "react";
-import Image from 'next/image';
 
+
+
+
+
+
+
+
+"use client"; // If using Next.js App Router
+
+import { useRef, useState, useEffect } from "react";
 
 const images = [
   "/products/george1a.JPG",
@@ -16,16 +24,45 @@ const images = [
   "/products/george1b.JPG",
 ];
 
-const ImageCarousel = () => {
+export default function ImageCarousel() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (carouselRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+        const progress = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+        setScrollProgress(progress);
+      }
+    };
+
+    const carousel = carouselRef.current;
+    if (carousel) {
+      carousel.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (carousel) {
+        carousel.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
+
   return (
-    <div className="carouselContainer">
-      <div className="carousel">
+    <div className="carousel-container">
+      {/* Image Carousel */}
+      <div ref={carouselRef} className="carousel">
         {images.map((src, index) => (
-          <Image key={index} src={src} alt={`Image ${index + 1}`}  width={160} height={160}  />
+          <img key={index} src={src} alt={`Image ${index}`} className="carousel-image" />
         ))}
+      </div>
+
+      {/* Scroll Progress Bar */}
+      <div className="progress-bar-container">
+        <div className="progress-bar" style={{ width: `${scrollProgress}%` }}></div>
       </div>
     </div>
   );
-};
+}
 
-export default ImageCarousel;
