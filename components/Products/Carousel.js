@@ -19,6 +19,12 @@ const ImageCarousel = () => {
         {images.map((src, index) => (
           <Image key={index} src={src} alt={`Image ${index + 1}`}  width={160} height={160}  />
         ))}
+        
+      {/* Scroll Progress Bar */}
+      <div className="progress-bar-container">
+        <div className="progress-bar" style={{ width: `${scrollProgress}%` }}></div>
+      </div>
+  
       </div>
     </div>
   );
