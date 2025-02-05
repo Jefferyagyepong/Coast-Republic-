@@ -61,24 +61,16 @@ const Home = () => {
       </Head>
       <main>
         <div className="sticky">
-          <Toast />
-          <Header />
-        </div>
-       
-      
+        <Toast />
+        <Header />
+        </div>             
         <Sale />
         <Thrifts />
-        <Jeans />
-          
+        <Jeans />          
         <New />
-    <Carousel />
-    <Link href="/products/" className="product-link">Shop Now</Link>
-       
-   
-        <hr />
-        <Collection />
-        
-          
+        <Carousel />
+        <Link href="/products/" className="product-link">Shop Now</Link>                  
+        <Collection />                
         <Newsletter />
         <Footer />
       </main>
