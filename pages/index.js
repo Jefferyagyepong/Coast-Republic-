@@ -69,16 +69,16 @@ const Home = () => {
         <Sale />
         <Thrifts />
         <Jeans />
-          <hr />
+          
         <New />
     <Carousel />
-    <Link href="/products/">Shop Now</Link>
+    <Link href="/products/" className="product-link">Shop Now</Link>
        
    
         <hr />
         <Collection />
         
-          <hr />
+          
         <Newsletter />
         <Footer />
       </main>
