@@ -1,16 +1,6 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
+import Image from 'next/image';
 "use client"; // If using Next.js App Router
 
 import { useRef, useState, useEffect } from "react";
@@ -54,7 +44,7 @@ export default function ImageCarousel() {
       {/* Image Carousel */}
       <div ref={carouselRef} className="carousel">
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Image ${index}`} className="carousel-image" />
+          <Image key={index} src={src} alt={`Image ${index}`} width={120}height={120}className="carousel-image" />
         ))}
       </div>
 
