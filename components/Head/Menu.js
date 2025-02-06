@@ -26,6 +26,10 @@ export default function HamburgerMenu() {
         <Link href="#">About</Link>
         <Link href="/contact">Contact</Link>
       </div>
+      
+      <style jsx>{`
+  
+      `}</style>
     </div>
   );
 }
