@@ -28,6 +28,7 @@ export default function NewsletterForm() {
 <p>Stay in the loop with the latest style news and get an exclusive 10% off when you subscribe to our emails.
 Exclusions apply. Learn more about our Privacy Policy <Link href={"/privacy"}> here</Link>. <Link href={"/terms"}>Terms and conditions </Link> apply.</p>
 <br/>
+<div className="formContainer">
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -39,6 +40,7 @@ Exclusions apply. Learn more about our Privacy Policy <Link href={"/privacy"}> h
         <button type="submit">Subscribe</button>
       </form>
       {message && <p>{message}</p>}
+        </div>
     </div>
   );
 }
