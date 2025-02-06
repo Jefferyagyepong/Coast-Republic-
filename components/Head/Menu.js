@@ -1,6 +1,6 @@
 // components/HamburgerMenu.js
 import { useState } from "react";
-import "../styles/hamburger.css";
+
 
 export default function HamburgerMenu() {
   const [open, setOpen] = useState(false);
