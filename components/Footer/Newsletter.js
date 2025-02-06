@@ -29,14 +29,16 @@ export default function NewsletterForm() {
 Exclusions apply. Learn more about our Privacy Policy <Link href={"/privacy"}> here</Link>. <Link href={"/terms"}>Terms and conditions </Link> apply.</p>
 <br/>
 <div className="formContainer">
-      <form onSubmit={handleSubmit}>
-        <input
+      <form onSubmit={handleSubmit} className="form">
+<div className="inputGroup">
+                <input
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={e => setEmail(e.target.value)}
           required
         />
+        </div>
         <button type="submit">Subscribe</button>
       </form>
       {message && <p>{message}</p>}
