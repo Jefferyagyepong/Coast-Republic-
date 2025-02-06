@@ -1,10 +1,9 @@
-// components/HamburgerMenu.js
-import { useState } from "react";
+
+
 import Link from 'next/link';
 
-
 export default function HamburgerMenu() {
-  const [open, setOpen] = useState(false);
+
 
   return (
     <nav>
