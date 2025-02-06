@@ -7,13 +7,11 @@ function Header() {
   return (
     <>
       <header>
-        <Menu />   
-        <div className="header-inline">
+        <Menu />           
         <Link href={"./"}>            
         <Image src={"/crlogo.svg"} width={70} height={60} alt="logo" />
         <h5>Coast Republic</h5>
-        </Link>            
-        </div>                                 
+        </Link>                                      
         <CartBasket />    
       </header>
     </>
