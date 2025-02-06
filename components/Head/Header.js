@@ -8,10 +8,10 @@ function Header() {
     <>
       <header>
         <Menu />   
-        <div>
+        <div className="header-inline">
         <Link href={"./"}>            
-        <Image src={"/crlogo.svg"} width={90} height={70} alt="logo" />
-        <h3>Coast Republic</h3>
+        <Image src={"/crlogo.svg"} width={70} height={60} alt="logo" />
+        <h5>Coast Republic</h5>
         </Link>            
         </div>                                 
         <CartBasket />    
