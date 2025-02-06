@@ -1,5 +1,6 @@
 // components/HamburgerMenu.js
 import { useState } from "react";
+import Link from 'next/link';
 
 
 export default function HamburgerMenu() {
@@ -20,9 +21,10 @@ export default function HamburgerMenu() {
         <div className="hamburger-icon"></div>
       </label>
       <div className="menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <Link href="/">Home</Link>
+        <Link href="/products/">Shop</Link>
+        <Link href="#">About</Link>
+        <Link href="/contact">Contact</Link>
       </div>
     </div>
   );
