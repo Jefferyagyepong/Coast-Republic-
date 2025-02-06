@@ -8,11 +8,13 @@ function Header() {
     <>
       <header>
         <Menu />   
-          <Link href={"./"}>            
-          <Image src={"/crlogo.svg"} width={90} height={70} alt="logo" />
-            <h3>Coast Republic</h3>
-              </Link>                               
-          <CartBasket />    
+        <div>
+        <Link href={"./"}>            
+        <Image src={"/crlogo.svg"} width={90} height={70} alt="logo" />
+        <h3>Coast Republic</h3>
+        </Link>            
+        </div>                                 
+        <CartBasket />    
       </header>
     </>
   );
