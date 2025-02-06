@@ -31,6 +31,7 @@ Exclusions apply. Learn more about our Privacy Policy <Link href={"/privacy"}> h
 <div className="formContainer">
       <form onSubmit={handleSubmit} className="form">
 <div className="inputGroup">
+  <label>Email</label>
                 <input
           type="email"
           placeholder="Enter your email"
