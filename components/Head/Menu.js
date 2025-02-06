@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from '../sass/ShopPage.module.css';
+import styles from './sass/Navbar.module.sass';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
