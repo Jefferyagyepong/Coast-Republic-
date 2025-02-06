@@ -1,21 +1,20 @@
 import { useState } from "react";
 import Link from 'next/link';
-import ShopPage from './sass/ShopPage.module.scss'; // Import CSS file
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.container}>
+    <nav className="navbar">
+      <div className="container">
         <div className={styles.logo}>My Logo</div>
         <button
-          className={styles.hamburger}
+          className="hamburger"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? "✖" : "☰"}
         </button>
-        <ul className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
+        <ul className="menu" ${isOpen ? styles.open : ""}`}>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -30,6 +29,10 @@ const HamburgerMenu = () => {
           </li>
         </ul>
       </div>
+      
+      <style jsx>{`
+     
+      `}</style>
     </nav>
   );
 };
