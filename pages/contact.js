@@ -14,7 +14,9 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    
+
+    <div className="formContainer">
       <div>
         <h1>Contact Us</h1>
         <p>
@@ -26,7 +28,7 @@ const Contact = () => {
             ✅ Your message has been sent. We will get back to you soon!
           </div>
         ) : (
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className=form>
             <div>
               <label>Name</label>
               <input
@@ -37,7 +39,7 @@ const Contact = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div>
+            <div className="inputGroup">
               <label>Email</label>
               <input
                 type="email"
