@@ -49,7 +49,7 @@ const Contact = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div>
+            <div className="inputGroup">
               <label>Message</label>
               <textarea
                 required
