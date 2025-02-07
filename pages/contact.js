@@ -28,7 +28,7 @@ const Contact = () => {
             ✅ Your message has been sent. We will get back to you soon!
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className=form>
+          <form onSubmit={handleSubmit} className="form">
             <div>
               <label>Name</label>
               <input
