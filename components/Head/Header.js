@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
       <header>
-        <Menu />           
+                 
         <Link href={"./"}>            
        
         <h5>Coast Republic</h5>
