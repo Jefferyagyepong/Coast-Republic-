@@ -1,6 +1,5 @@
 
 import CartBasket from "./CartBasket";
-import Menu from "./Menu";
 import Link from "next/link.js";
 
 function Header() {
