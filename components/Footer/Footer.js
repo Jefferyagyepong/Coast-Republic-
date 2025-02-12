@@ -48,15 +48,7 @@ const Footer = () => {
         </div>
       </div>
       
-        <div className="footer-align-left"> 
-        <h4>GET THE COAST REPUBLIC APP </h4>
-        <p>Download and enjoy our app anytime, anywhere for IOS and Android devices.</p>
-
-      <div className="ibrid-flex">
-          <Image src={"/apple.svg"} alt="apple" width={40} height={30} />
-          <Image src={"/android.svg"} alt="android" width={40} height={30} />
-        </div>
-      </div>
+       
                         
       <h5>COAST REPUBLIC ACCEPTS </h5>
       <div className="payment-container">            
