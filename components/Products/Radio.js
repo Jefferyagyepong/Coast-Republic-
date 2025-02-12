@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Carousel.css"; // Import CSS file
+import Image from "next/image";
+
 
 const CarouselRadio = () => {
   return (
@@ -11,13 +12,13 @@ const CarouselRadio = () => {
         <input type="radio" name="radio-btn" id="slide3" />
 
         <div className="slide first">
-          <img src="https://via.placeholder.com/800x400/ff7f7f/fff?text=Slide+1" alt="Slide 1" />
+          <Image src="https://via.placeholder.com/800x400/ff7f7f/fff?text=Slide+1" alt="Slide 1" />
         </div>
         <div className="slide">
-          <img src="https://via.placeholder.com/800x400/7f7fff/fff?text=Slide+2" alt="Slide 2" />
+          <Image src="https://via.placeholder.com/800x400/7f7fff/fff?text=Slide+2" alt="Slide 2" />
         </div>
         <div className="slide">
-          <img src="https://via.placeholder.com/800x400/7fff7f/fff?text=Slide+3" alt="Slide 3" />
+          <Image src="https://via.placeholder.com/800x400/7fff7f/fff?text=Slide+3" alt="Slide 3" />
         </div>
       </div>
 
