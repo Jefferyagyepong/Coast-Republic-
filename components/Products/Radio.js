@@ -12,7 +12,15 @@ const CarouselRadio = () => {
         <input type="radio" name="radio-btn" id="slide3" />
 
         <div className="slide first">
-          <Image src="https://via.placeholder.com/800x400/ff7f7f/fff?text=Slide+1" alt="Slide 1" />
+        <div className="footer-align-left"> 
+        <h4>GET THE COAST REPUBLIC APP </h4>
+        <p>Download and enjoy our app anytime, anywhere for IOS and Android devices.</p>
+
+      <div className="ibrid-flex">
+          <Image src={"/apple.svg"} alt="apple" width={40} height={30} />
+          <Image src={"/android.svg"} alt="android" width={40} height={30} />
+        </div>
+      </div>
         </div>
         <div className="slide">
           <Image src="https://via.placeholder.com/800x400/7f7fff/fff?text=Slide+2" alt="Slide 2" />
