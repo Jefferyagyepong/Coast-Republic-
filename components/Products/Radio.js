@@ -6,12 +6,12 @@ const CarouselRadio = () => {
   return (
     <div className="carouselRadio">
       {/* Slides */}
-      <div className="slides">
+      <div className="slidesRadio">
         <input type="radio" name="radio-btn" id="slide1" defaultChecked />
         <input type="radio" name="radio-btn" id="slide2" />
         <input type="radio" name="radio-btn" id="slide3" />
 
-        <div className="slide first">
+        <div className="slideRadio first">
         <div className="footer-align-left"> 
         <h4>GET THE COAST REPUBLIC APP </h4>
         <p>Download and enjoy our app anytime, anywhere for IOS and Android devices.</p>
@@ -22,10 +22,10 @@ const CarouselRadio = () => {
         </div>
       </div>
         </div>
-        <div className="slide">
+        <div className="slideRadio">
           <Image src="https://via.placeholder.com/800x400/7f7fff/fff?text=Slide+2" alt="Slide 2" />
         </div>
-        <div className="slide">
+        <div className="slideRadio">
           <Image src="https://via.placeholder.com/800x400/7fff7f/fff?text=Slide+3" alt="Slide 3" />
         </div>
       </div>
