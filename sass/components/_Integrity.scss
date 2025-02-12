@@ -1,6 +1,6 @@
 
 
-.carouselRadio {
+.carousel {
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -9,18 +9,18 @@
   border-radius: 10px;
 }
 
-.slidesRadio {
+.slides {
   display: flex;
   width: 300%;
   transition: transform 0.5s ease-in-out;
 }
 
-.slideRadio {
+.slide {
   width: 100%;
   flex: 1 0 100%;
 }
 
-.slideRadio img {
+.slide img {
   width: 100%;
   border-radius: 10px;
 }
