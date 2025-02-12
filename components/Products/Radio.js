@@ -11,14 +11,11 @@ const CarouselRadio = () => {
         <input type="radio" name="radio-btn" id="slide2" />
         <input type="radio" name="radio-btn" id="slide3" />
 
-        <div className="slideRadio first">
-      
+        <div className="slideRadio first">      
         <h4>GET THE COAST REPUBLIC APP </h4>
-        <p>Download and enjoy our app anytime, anywhere for IOS and Android devices.</p>
-        <div className="ibrid-flex">
+        <p>Download and enjoy our app anytime, anywhere for IOS and Android devices.</p>        
         <Image src={"/apple.svg"} alt="apple" width={40} height={30} />
         <Image src={"/android.svg"} alt="android" width={40} height={30} />
-        </div>
         </div>
         
         <div className="slideRadio">
