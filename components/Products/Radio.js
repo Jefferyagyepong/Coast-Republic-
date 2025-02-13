@@ -11,7 +11,7 @@ const CarouselRadio = () => {
         <input type="radio" name="radio-btn" id="slide2" />
         <input type="radio" name="radio-btn" id="slide3" />
 
-        <div className="slide first">      
+        <div className="slide">      
  hello
           </div>
                         
