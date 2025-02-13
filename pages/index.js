@@ -72,7 +72,7 @@ const Home = () => {
         <Link href="/products/" className="product-link">Shop Now</Link>                  
         <Collection />
         <Radio />                
-        <Newsletter />
+        
         <Footer />
       </main>
     </>
