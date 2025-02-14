@@ -7,12 +7,13 @@ function Header() {
     <>
       <header>
                  
-        <Link href={"./"}>            
-       
+        <Link href={"./"}>                   
         <h5>Coast Republic</h5>
-        </Link>                                      
+        </Link>        
+        <div>                              
         <CartBasket />    
         <Menu />
+        </div>
       </header>
     </>
   );
