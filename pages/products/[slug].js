@@ -1,4 +1,6 @@
 import Toast from "@/components/Head/Toast";
+import { useState } from "react";
+
 import Header from "@/components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
