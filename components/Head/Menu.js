@@ -18,9 +18,9 @@ const HamburgerMenu = () => {
       <nav className={`menu ${isOpen ? "show" : ""}`}>
         <ul>
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/shop">Shop</Link></Link>
-          <li><Link href="#">Services</Link></Link>
-          <li><Link href="#">Contact</Link></Link>
+          <li><Link href="/shop">Shop</Link></li>
+          <li><Link href="#">Services</Link></li>
+          <li><Link href="#">Contact</Link></li>
         </ul>
       </nav>
     </>
