@@ -1,4 +1,4 @@
-import Menu from "@/components/Head/Menu";
+import Menu from "./Menu";
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 
