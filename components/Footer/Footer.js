@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from "next/link";
-import Newsletter from "@/components/Footer/Newsletter";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <Newsletter />
+      
       <div className="container">
         {/* Categories Section */}
         <div className="footer-section">
