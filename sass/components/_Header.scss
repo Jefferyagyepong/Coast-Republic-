@@ -1,48 +1,34 @@
 /* Hamburger Button */
-.hamburger {
+.hamburger-btn {
   background: none;
   border: none;
+  font-size: 24px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
   padding: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
 }
 
-.hamburger span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: black;
-  transition: 0.3s;
-}
-
-/* Animate Hamburger */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Menu Styles */
+/* Navigation Menu */
 .menu {
-  display: none;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 200px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu.show {
-  display: block;
+  transform: translateX(0);
 }
 
 .menu ul {
@@ -52,15 +38,20 @@
 }
 
 .menu li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
 }
 
 .menu a {
   text-decoration: none;
-  color: black;
-  display: block;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
 }
+
+.menu a:hover {
+  color: #ff9800;
+}
+
 
 
 
