@@ -1,24 +1,30 @@
 import { useState } from "react";
-import "../public/hamburger.css"; // Import the global CSS file
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+    <>
+      <div className="hamburger-menu">
+        <button 
+          className={`hamburger ${isOpen ? "open" : ""}`} 
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <ul className={`menu ${isOpen ? "show" : ""}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <nav className={`menu ${isOpen ? "show" : ""}`}>
+        <ul>
+          <li><Link href="#">Home</Link></li>
+          <li><Link href="#">About</Link></li>
+          <li><Link href="#">Services</Link></li>
+          <li><Link href="#">Contact</Link></li>
+        </ul>
+      </nav>
+    </>
   );
 };
 
