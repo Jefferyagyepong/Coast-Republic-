@@ -4,7 +4,7 @@ import Image from "next/image";
 function All() {
   return (
     <div className="footer-align-left">
-      <Image src={"/products/force3a.JPG"} alt="img" width={360} height={500} />
+      <Image src={"https://images.unsplash.com/photo-1584386450584-c6d766612a45?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fE5pa2UlMjBBaXIlMjBzbmVha2VyfGVufDB8fDB8fHww"} alt="img" width={380} height={800} />
       <h5>Sneakers: Designer pairs in our collection </h5>
       <Link href={"/products"}>Shop now</Link>
     </div>

@@ -1,4 +1,6 @@
 import Toast from "@/components/Head/Toast";
+import { useState } from "react";
+
 import Header from "@/components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
@@ -56,6 +58,15 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
+    const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % product.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + product.length) % images.length);
+  };
     const dispatch = useDispatch();
   return (
     <>
@@ -86,14 +97,42 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div><br/>
-    <div>
-                     <Image
+      
+         <div className="carousel-container">      
+         <div className="carousel"> 
+          <Image
           src={product.image}
-          height={100}
-          width={90}
+          height={400}
+          width={390}
           alt=" product"
        
         />
+          <Image
+          src={product.image}
+          height={400}
+          width={390}
+          alt=" product"
+       
+        />
+          <Image
+          src={product.image}
+            height={400}
+          width={390}
+          alt=" product"
+       
+        />
+          <Image
+          src={product.image}
+          height={400}
+          width={390}
+          alt=" product"       
+        />    
+      </div>
+      
+      <button className="prev button" onClick={prevSlide}>&lt;</button>
+      <button className="next button" onClick={nextSlide}>&gt;</button>
+    </div>
+          
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
@@ -102,11 +141,8 @@ const ProductPage = ({ product }) => {
       </Link>
         <button
         onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart"
-      >
-        Add to Bag
+        className="add-to-cart">Add to Basket
       </button>
-    </div>
         <Newsletter />
     
     </main>

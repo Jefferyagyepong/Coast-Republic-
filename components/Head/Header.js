@@ -1,4 +1,4 @@
-
+import Menu from "./Menu";
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 
@@ -6,6 +6,7 @@ function Header() {
   return (
     <>
       <header>
+<<<<<<< HEAD
         <nav>
           <ul>
             <li>
@@ -27,6 +28,16 @@ function Header() {
           <h5>Coast Republic</h5>
         </Link>
         <CartBasket />
+=======
+                 
+        <Link href={"./"}>                   
+        <h5>Coast Republic</h5>
+        </Link>       
+         <Menu />
+        <CartBasket />    
+  
+    
+>>>>>>> f3867ee28e57010638532bf39166e3e2da417ef8
       </header>
     </>
   );
