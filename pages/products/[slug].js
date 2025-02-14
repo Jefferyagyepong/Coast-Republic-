@@ -103,36 +103,36 @@ const ProductPage = ({ product }) => {
       <div className="carousel">
                    <Image
           src={product.image}
-          height={100}
-          width={90}
+          height={400}
+          width={390}
           alt=" product"
        
         />
                  <Image
           src={product.image}
-          height={100}
-          width={90}
+          height={400}
+          width={390}
           alt=" product"
        
         />
                  <Image
           src={product.image}
-          height={100}
-          width={90}
+            height={400}
+          width={390}
           alt=" product"
        
         />
                  <Image
           src={product.image}
-          height={100}
-          width={90}
+            height={400}
+          width={390}
           alt=" product"
        
         />
     
       </div>
-      <button className="prev" onClick={prevSlide}>&lt;</button>
-      <button className="next" onClick={nextSlide}>&gt;</button>
+      <button className="prev button" onClick={prevSlide}>&lt;</button>
+      <button className="next button" onClick={nextSlide}>&gt;</button>
     </div>
           
       <h1>{product.name}</h1>
