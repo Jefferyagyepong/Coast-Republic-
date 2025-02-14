@@ -1,4 +1,4 @@
-
+import Link from 'next/link';
 import Head from "next/head";
 import Thrifts from "@/components/Products/Thrifts";
 import New from "@/components/Products/New";
@@ -9,8 +9,7 @@ import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
-
-import Search from "@/components/Head/Search";
+import Carousel from "@/components/Products/Carousel"; 
 
 
 const Home = () => {   
@@ -62,19 +61,16 @@ const Home = () => {
       </Head>
       <main>
         <div className="sticky">
-          <Toast />
-          <Header />
-        </div>
-        <Search />
+        <Toast />
+        <Header />
+        </div>             
         <Sale />
         <Thrifts />
-        <Jeans />
+        <Jeans />          
         <New />
-    
-       
-   
-        <hr />
-        <Collection />
+        <Carousel />
+        <Link href="/products/" className="product-link">Shop Now</Link>                  
+        <Collection />                
         <Newsletter />
         <Footer />
       </main>

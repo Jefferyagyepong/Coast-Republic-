@@ -1,157 +1,76 @@
-/* Navbar container */
+/* Navbar Styles */
 .navbar {
+  background: #333;
+  padding: 16px;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: #333;
-  color: white;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 /* Logo */
 .logo {
-  font-size: 24px;
+  color: white;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Hamburger icon */
+/* Hamburger Button */
 .hamburger {
-  display: none;
-  flex-direction: column;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
   cursor: pointer;
+  display: none;
 }
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
-
-/* Open state for hamburger */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* Navigation links */
-.navLinks {
-  display: flex;
+/* Navigation Menu */
+.menu {
   list-style: none;
+  display: flex;
   gap: 20px;
 }
 
-.navLinks li a {
+.menu li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  transition: background 0.3s;
 }
 
-.navLinks li a:hover {
-  color: #ffcc00;
+.menu li a:hover {
+  background: #444;
+  border-radius: 5px;
 }
 
-/* Responsive: Show hamburger menu on small screens */
+/* Responsive for Mobile */
 @media (max-width: 768px) {
   .hamburger {
-    display: flex;
+    display: block;
   }
 
-  .navLinks {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    background: #222;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+    text-align: center;
   }
 
-  .navLinks.show {
-    transform: translateY(0);
+  .menu.open {
+    display: flex;
   }
 
-  .navLinks li {
-    margin: 10px 0;
+  .menu li {
+    padding: 16px;
   }
-}
-
-
-.cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
-  align-items: flex-start;
-  justify-content: space-between;
-
-}
-
-.sticky {
-  width: 100%;
-  top: 0;
-  position: sticky;
-  z-index: 999;
-}
-
-.container {
-  width: 100%;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.inline-flex {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.card {
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-
-}
-
-.text {
-  opacity: 0.5;
-}
-
-.price,
-.description,
-.category {
-  text-align: left;
-  opacity: 0.5;
-}
-
-
-
-@media (max-width: 700px) {
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    align-items: flex-start;
-    justify-content: space-between;
-
-  }
-
 }

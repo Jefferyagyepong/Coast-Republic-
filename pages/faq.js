@@ -34,7 +34,7 @@ const FAQ = () => {
         <title>FAQ - Your Store</title>
         <meta name="description" content="Frequently Asked Questions about our products and services." />
       </Head>
-      <div className="container">
+      <div className="ibrid-box">
         <h1>Frequently Asked Questions</h1>
         <div className="faqList">
           {faqData.map((item, index) => (

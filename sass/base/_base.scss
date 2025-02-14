@@ -28,7 +28,7 @@
 
 html {
 
-  font-size: 88.5%;
+  font-size: 95.5%;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   width: 100%;
@@ -72,20 +72,21 @@ html {
 
 button {
   outline: 0 !important;
-  margin-top: 30px;
   border: none;
-  padding: 15px 32px;
-  background-color: #4CAF50;
   text-align: center;
+  background-color: #0070f3;
   color: white;
-  text-decoration: none;
-  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s;
   -webkit-appearance: button important;
   -moz-appearance: button;
   -o-appearance: button;
   appearance: button;
 }
+
 
 button:hover {
   opacity: 0.6;
@@ -96,22 +97,3 @@ footer {
   margin-top: auto;
 }
 
-ul {
-  display: block;
-  text-decoration: none;
-  list-style: none;
-
-}
-.list-inline{
-display: flex;
-flex-direction: row;
-align-items: center;
-
-}
-
-li {
-  cursor: pointer;
-  padding: 10px;
-  transition: 0.3s ease;
-
-}

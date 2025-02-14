@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Categories</h4>
           <ul>
-            <li><Link href="/category/electronics">Tees</Link></li>
-            <li><Link href="/category/clothing">Jeans & Khaki </Link></li>
-            <li><Link href="/category/home-kitchen">Sneakers</Link></li>
-            <li><Link href="/category/sports">Sports Jerseys </Link></li>
+            <li><Link href="/products/">Tees</Link></li>
+            <li><Link href="products/">Jeans & Khaki </Link></li>
+            <li><Link href="/products/">Sneakers</Link></li>
+            <li><Link href="/products/">Sports Jerseys </Link></li>
           </ul>
         </div>
 
@@ -22,8 +22,8 @@ const Footer = () => {
           <ul>
             <li><Link href={"/contact"}>Contact Us</Link></li>
             <li><Link href={"/delivery"}>Delivery Info</Link></li>
-            <li><Link href={"/delivery"}>Returns & Refunds</Link></li>
-            <li><Link href={"/help/f"}>FAQ</Link></li>
+            <li><Link href={"/return"}>Returns & Refunds</Link></li>
+            <li><Link href={"/faq"}>FAQ</Link></li>
           </ul>
         </div>
 
@@ -92,9 +92,10 @@ const Footer = () => {
 
       <style jsx>{`
         .footer {
+        width: 100%;
           background: #222;
           color: #fff;
-          padding: 20px 0;
+          padding: 10px 20px;
           text-align: center;
         }
         .container {
@@ -105,12 +106,15 @@ const Footer = () => {
         }
         .footer-section {
           max-width: 200px;
+             color: #fff;
+          
         }
         .footer-section h4 {
           margin-bottom: 10px;
           font-size: 16px;
         }
         .footer-section ul {
+        color: #fff;
           list-style: none;
           padding: 0;
         }
@@ -118,7 +122,7 @@ const Footer = () => {
           margin: 5px 0;
         }
         .footer-section ul li a {
-          color: #ccc;
+          color: #fff;
           text-decoration: none;
           font-size: 14px;
         }
@@ -128,6 +132,7 @@ const Footer = () => {
         .social-links li {
           display: inline;
           margin-right: 10px;
+       
         }
         .footer-bottom {
           margin-top: 20px;
