@@ -1,3 +1,70 @@
+/* Hamburger Button */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
+}
+
+/* Animate Hamburger */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu Styles */
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+
+
+
 .header-inline{
 display:flex;
 flex-direction: row;
