@@ -97,43 +97,40 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div><br/>
-    <div>
       
-         <div className="carousel-container">
-      <div className="carousel">
-                   <Image
+         <div className="carousel-container">      
+          <Image
           src={product.image}
           height={400}
           width={390}
           alt=" product"
        
         />
-                 <Image
+          <Image
           src={product.image}
           height={400}
           width={390}
           alt=" product"
        
         />
-                 <Image
+          <Image
           src={product.image}
             height={400}
           width={390}
           alt=" product"
        
         />
-                 <Image
+          <Image
           src={product.image}
-            height={400}
+          height={400}
           width={390}
-          alt=" product"
-       
-        />
-    
+          alt=" product"       
+        />    
       </div>
+      
       <button className="prev button" onClick={prevSlide}>&lt;</button>
       <button className="next button" onClick={nextSlide}>&gt;</button>
-    </div>
+    
           
       <h1>{product.name}</h1>
       <p>{product.description}</p>
@@ -143,11 +140,8 @@ const ProductPage = ({ product }) => {
       </Link>
         <button
         onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart"
-      >
-        Add to Bag
+        className="add-to-cart">Add to Basket
       </button>
-    </div>
         <Newsletter />
     
     </main>
