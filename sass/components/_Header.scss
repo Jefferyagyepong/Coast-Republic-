@@ -5,6 +5,9 @@ align-items: center;
 justify-content: center;
 
 }
+nav input [type='checkbox'], nav label{
+  display: none;
+}
 header {
   width: 100%;
   display: flex;
