@@ -108,6 +108,27 @@ const ProductPage = ({ product }) => {
           alt=" product"
        
         />
+                 <Image
+          src={product.image}
+          height={100}
+          width={90}
+          alt=" product"
+       
+        />
+                 <Image
+          src={product.image}
+          height={100}
+          width={90}
+          alt=" product"
+       
+        />
+                 <Image
+          src={product.image}
+          height={100}
+          width={90}
+          alt=" product"
+       
+        />
     
       </div>
       <button className="prev" onClick={prevSlide}>&lt;</button>
