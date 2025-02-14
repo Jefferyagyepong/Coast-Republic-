@@ -6,23 +6,21 @@ const HamburgerMenu = () => {
 
   return (
     <>
-      <div className="hamburger-menu">
-        <button 
-          className={`hamburger ${isOpen ? "open" : ""}`} 
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      {/* Hamburger Icon / Close Button */}
+      <button 
+        className="hamburger-btn" 
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? "✖" : "☰"}
+      </button>
 
+      {/* Navigation Menu */}
       <nav className={`menu ${isOpen ? "show" : ""}`}>
         <ul>
-          <li><Link href="#">Home</Link></li>
-          <li><Link href="#">About</Link></li>
-          <li><Link href="#">Services</Link></li>
-          <li><Link href="#">Contact</Link></li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/shop">Shop</a></Link>
+          <li><Link href="#">Services</a></Link>
+          <li><Link href="#">Contact</a></Link>
         </ul>
       </nav>
     </>
