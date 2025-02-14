@@ -11,7 +11,7 @@ import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 import Carousel from "@/components/Products/Carousel"; 
 import Radio from "@/components/Products/Radio";
-
+import Newsletter from "@/components/Footer/Newsletter";
 const Home = () => {   
     
   return (
@@ -72,7 +72,7 @@ const Home = () => {
         <Link href="/products/" className="product-link">Shop Now</Link>                  
         <Collection />
         <Radio />                
-        
+        <Newsletter />
         <Footer />
       </main>
     </>
