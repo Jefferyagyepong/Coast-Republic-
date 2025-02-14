@@ -87,13 +87,22 @@ const ProductPage = ({ product }) => {
           <Header />
         </div><br/>
     <div>
-                     <Image
+      
+         <div className="carousel-container">
+      <div className="carousel">
+                   <Image
           src={product.image}
           height={100}
           width={90}
           alt=" product"
        
         />
+    
+      </div>
+      <button className="prev" onClick={prevSlide}>&lt;</button>
+      <button className="next" onClick={nextSlide}>&gt;</button>
+    </div>
+          
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
