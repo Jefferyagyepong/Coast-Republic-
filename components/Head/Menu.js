@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
