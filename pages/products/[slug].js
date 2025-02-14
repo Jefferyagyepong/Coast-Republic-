@@ -61,11 +61,11 @@ const ProductPage = ({ product }) => {
     const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % images.length);
+    setCurrent((prev) => (prev + 1) % product.length);
   };
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+    setCurrent((prev) => (prev - 1 + product.length) % images.length);
   };
     const dispatch = useDispatch();
   return (
