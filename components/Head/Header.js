@@ -10,10 +10,10 @@ function Header() {
         <Link href={"./"}>                   
         <h5>Coast Republic</h5>
         </Link>        
-        <div>                              
+                                      
         <CartBasket />    
         <Menu />
-        </div>
+    
       </header>
     </>
   );
