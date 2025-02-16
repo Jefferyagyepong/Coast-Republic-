@@ -111,17 +111,14 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div>
+        <div class="imagecarousel">
+          <Image src={product.image} height={400} width={390} alt=" product" />{" "}
+          <Image src={product.image} height={400} width={390} alt=" product" />{" "}
+          <Image src={product.image} height={400} width={390} alt=" product" />{" "}
+          <Image src={product.image} height={400} width={390} alt=" product" />{" "}
+          <Image src={product.image} height={400} width={390} alt=" product" />
+        </div>
 
-    
-  <Image
-              src={product.image}
-              height={400}
-              width={390}
-              alt=" product"
-         
-            />
-      
-          
         <div className="inline">
           <h5>{product.name}</h5>
 

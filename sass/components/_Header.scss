@@ -150,7 +150,7 @@ menu ul li a{
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: black;
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {

@@ -1,54 +1,29 @@
-        .carousel-frame {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-       
-          transition: background .4s ease-in;
-          overflow: hidden;
-          position: absolute;
-          font-size: 0;
-        }
+.imagecarousel {
+width: 100%;
+  display: flex;
+  margin: 0 auto;
+  gap: 20px;
+  overflow: hidden;
+}
 
-       
+.imagecarousel img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
 
-        .carousel-radio {
-          display: none;
-        }
+.imagecarousel {
+  animation: bannermove 50s linear infinite;
+}
 
-        .carousel-radio:checked+label {
-          cursor: unset;
-          top: 0%;
-          left: calc((100% - var(--width))/2);
-          margin-left: 0%;
-          margin-right: 0%;
-          width: var(--width);
-          height: 100%;
-          transform: translate(0) scale(1);
-        }
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
 
-        .carousel-radio:checked+label~label {
-          left: calc(var(--width) + (100% - var(--width))/2);
-          margin-left: calc(var(--width) * -1);
-          margin-right: var(--width);
-
-        }
-
-        .carousel-item {
-          display: inline-block;
-          width: calc((100% - var(--width))/2);
-          height: 100%;
-          transition: all 0.25s ease-in-out;
-          cursor: pointer;
-          position: relative;
-          left: var(--width);
-          margin-left: calc(var(--width) * -1);
-          margin-right: calc(var(--width) - (100% - var(--width))/2);
-          transform: translate(0) scale(var(--scale));
-          overflow: scroll;
-          padding: 0px;
-          font-size: initial;
-        }
-
+  100% {
+    transform: translateX(-50%);
+  }
+}
 inline{
   width: 100%;
   display: flex;
