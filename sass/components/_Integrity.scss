@@ -1,53 +1,63 @@
-.carousel-container {
-  position: relative;
-  width: 400px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
+        .carousel-frame {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+       
+          transition: background .4s ease-in;
+          overflow: hidden;
+          position: absolute;
+          font-size: 0;
+        }
 
-.carouselSlug {
+       
+
+        .carousel-radio {
+          display: none;
+        }
+
+        .carousel-radio:checked+label {
+          cursor: unset;
+          top: 0%;
+          left: calc((100% - var(--width))/2);
+          margin-left: 0%;
+          margin-right: 0%;
+          width: var(--width);
+          height: 100%;
+          transform: translate(0) scale(1);
+        }
+
+        .carousel-radio:checked+label~label {
+          left: calc(var(--width) + (100% - var(--width))/2);
+          margin-left: calc(var(--width) * -1);
+          margin-right: var(--width);
+
+        }
+
+        .carousel-item {
+          display: inline-block;
+          width: calc((100% - var(--width))/2);
+          height: 100%;
+          transition: all 0.25s ease-in-out;
+          cursor: pointer;
+          position: relative;
+          left: var(--width);
+          margin-left: calc(var(--width) * -1);
+          margin-right: calc(var(--width) - (100% - var(--width))/2);
+          transform: translate(0) scale(var(--scale));
+          overflow: scroll;
+          padding: 0px;
+          font-size: initial;
+        }
+
+inline{
+  width: 100%;
   display: flex;
-  width: 100%;
-  height: 250px;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-}
-
-.carouselslug img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.active {
-  opacity: 1;
-}
-
-.button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
+  gap: 2rem;
+  padding: 10px 20px;
+  }
 
 
 .carousel {

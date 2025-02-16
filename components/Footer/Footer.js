@@ -120,6 +120,13 @@ const Footer = () => {
           text-decoration: none;
           font-size: 14px;
         }
+          .payment-container{
+          
+          display:flex;
+          flex-direction: row;
+          align-items:center;
+          justify-content: center;
+          }
         .footer-section ul li a:hover {
           color: #fff;
         }
