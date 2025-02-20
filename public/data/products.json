@@ -9,17 +9,16 @@
     "brand": "Nike"
   },
   {
-<<<<<<< HEAD
+
     "slug": " Reebok Classics",
     "name": " Reebok Classics",
     "description": "This is a great product.",
     "_id": 2,
-=======
+
     "slug": "Reebok Classics",
     "name": "Reebok Classics",
     "description": "This is a great product",
-    "_id": 2,    
->>>>>>> 619fe514628a33d29523e226354badea0cc20258
+    "_id": 3,
     "image": "/products/reebook1c.JPG",
     "price": 90.00,
     "brand": "Reebok"
@@ -52,17 +51,16 @@
     "brand": "Converse"
   },
   {
-<<<<<<< HEAD
+
     "slug": " Timberland boots",
     "name": " Timberland boots",
     "description": "This is a great product.",
     "_id": 6,
-=======
+
     "slug": "Timberland boots",
     "name": "Timberland boots",
     "description": "This is a great product",
     "_id": 6,    
->>>>>>> 619fe514628a33d29523e226354badea0cc20258
     "image": "/products/tims1a.JPG",
     "price": 170.00,
     "brand": "Timberland"
