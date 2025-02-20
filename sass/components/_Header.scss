@@ -49,9 +49,7 @@ background-color: #d3d3d3;
 .example1 h6 {
 font-size: 30px;
 color: #000;
-
-transform: translateX(-100%);
-  animation: slideInLeft 2s linear infinite;
+animation: slideInLeft 2s linear infinite;
 
   @keyframes slideInLeft {
 from{
