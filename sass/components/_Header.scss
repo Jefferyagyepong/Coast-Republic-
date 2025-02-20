@@ -37,7 +37,12 @@ header {
 .example1{
 background-color: #d3d3d3;
 
-padding:20px 30px;
+ position: absolute;
+  left: 0;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: bold;
+  animation: moveText 5s linear infinite;
 }
  
 
