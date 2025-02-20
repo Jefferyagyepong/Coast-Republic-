@@ -41,14 +41,13 @@ width:100%;
   white-space: nowrap;
   font-size: 24px;
   font-weight: bold;
-  animation: moveText 5s linear infinite;
+  animation:  slideInLeft 5s linear infinite;
 }
  
 
 .example1 h6 {
 font-size: 30px;
 color: #000;
-animation: slideInLeft 2s linear infinite;
 
   @keyframes slideInLeft {
 from{
