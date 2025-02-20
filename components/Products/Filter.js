@@ -37,18 +37,18 @@ const ProductFilter = () => {
 
   return (
     <div>
-      <h2>Product List</h2>
+      
 
       {/* Category Filter */}
-      <select onChange={(e) => setCategory(e.target.value)}>
+      <select onChange={e => setCategory(e.target.value)}>
         <option value="">All Categories</option>
-        <option value="Electronics">Electronics</option>
-        <option value="Home & Kitchen">Home & Kitchen</option>
-        <option value="Stationery">Stationery</option>
+        <option value="Sneakers">Sneakers</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Tees">Tees</option>
       </select>
 
       {/* Sorting */}
-      <select onChange={(e) => setSortOrder(e.target.value)}>
+      <select onChange={e => setSortOrder(e.target.value)}>
         <option value="">Sort by Price</option>
         <option value="asc">Low to High</option>
         <option value="desc">High to Low</option>
@@ -56,7 +56,7 @@ const ProductFilter = () => {
 
       {/* Product List */}
       <ul>
-        {filteredProducts.map((product) => (
+        {filteredProducts.map(product => (
           <li key={product.id}>
             {product.name} - ${product.price}
           </li>

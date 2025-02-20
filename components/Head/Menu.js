@@ -14,13 +14,13 @@ function Menu() {
           </Link>
         </li>
         <li>
-          <Link href={"/shop"} id="link">
+          <Link href={"/products"} id="link">
             Shop
           </Link>
         </li>
         <li>
-          <Link href={"/"} id="link">
-            Track an order
+          <Link href={"/delivery"} id="link">
+           Delivery Info
           </Link>
         </li>
         <li>

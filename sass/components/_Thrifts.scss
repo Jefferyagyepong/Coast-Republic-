@@ -1,24 +1,23 @@
-
 .ibrid-flex {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   column-gap: 20px;
   justify-content: space-between;
 
 }
 
 .ibrid-heading {
-    padding: 0px;
+  padding: 0px;
 }
 
 .add-to-cart {
-    text-align: center;
-    border-radius: 4px;
-    transition: 0.5s ease;
-    padding: 6px 12px;
-    margin: 10px;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.5s ease;
+  padding: 6px 12px;
+  margin: 10px;
 
 }
 
@@ -58,17 +57,26 @@ faqList {
 .arrow {
   font-size: 16px;
 }
-.carouselContainer{
-width: 100%
+
+.carouselContainer {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2rem;
+ 
 }
+
 .carousel {
   display: flex;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  white-space: nowrap; /* Prevents wrapping */
-  scroll-snap-type: x mandatory; /* Enables snapping effect */
-  gap: 10px; /* Adds spacing between images */
-  padding-bottom: 20px; /* Space for scrollbar */
+padding: 10px 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* Prevents wrapping */
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  
+  margin: 0 auto;
 }
+
 carousel::-webkit-scrollbar {
   height: 8px;
 }
@@ -87,9 +95,10 @@ carousel::-webkit-scrollbar {
 }
 
 .carousel img {
-  width: 130px; /* Adjust image size */
-  height: auto;
-  flex-shrink: 0; /* Prevents images from shrinking */
-  scroll-snap-align: start; /* Snaps images to the start */
-  border-radius: 10px; /* Optional: rounded corners */
+
+margin: 0 auto;
+  flex-shrink: 0;
+ 
+  scroll-snap-align: start;
+
 }

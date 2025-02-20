@@ -10,6 +10,7 @@ import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 import Carousel from "@/components/Products/Carousel"; 
+import All from '@/components/Products/All';
 
 
 const Home = () => {   
@@ -71,6 +72,7 @@ const Home = () => {
         <Carousel />
         <Link href="/products/" className="product-link">Shop Now</Link>                  
         <Collection />
+       <All />
                       
         <Newsletter />
         <Footer />

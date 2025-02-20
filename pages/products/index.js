@@ -25,7 +25,7 @@ const ProductList = ({ products }) => {
   return (
     <>
       <Head>
-        <title>Shop our products. </title>
+        <title>Shop Now. </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />

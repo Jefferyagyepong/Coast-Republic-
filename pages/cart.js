@@ -137,7 +137,7 @@ const CartPage = () => {
   );
 };
 
-// export default CartPage;
+export default CartPage;
 // import { useSelector, useDispatch } from "react-redux";
 // import { removeFromCart, clearCart } from "../store/cartSlice";
 // import { useState } from "react";
