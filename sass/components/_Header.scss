@@ -45,13 +45,15 @@ padding:20px 30px;
 color: #000;
 
 transform: translateX(-100%);
-  animation: slideInLeft 2s forwards;
+  animation: slideInLeft 2s linear infinite;
 
   @keyframes slideInLeft {
-    to {
-      transform: translateX(0);
-    }
+     left: 0;
   }
+  to {
+    left: 100%;
+  }
+
 }
 
 
