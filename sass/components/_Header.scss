@@ -154,7 +154,7 @@ width:100;
     width: max-content;
     align-items: end;
     margin-top: 13px;
-    translate: calc(100% + 24px) 0; /*24px is the padding left and right we gave the navbar. So, adding to the translate to align with edges*/
+    translate: calc(100% + 64px) 0; /*24px is the padding left and right we gave the navbar. So, adding to the translate to align with edges*/
     transition: translate 0.24s ease-in-out;
   }
 
