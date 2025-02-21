@@ -37,22 +37,23 @@ header {
 .example1{
 background-color: #d3d3d3;
 width:100%;
-  left: 0;
-  white-space: nowrap;
-  font-size: 24px;
-  font-weight: bold;
-  animation:  slideInLeft 5s linear infinite;
+        position: absolute;
+            left: 0;
+            font-size: 24px;
+            font-weight: bold;
+            white-space: nowrap;
+            animation: moveRight 5s linear infinite;
 }
  
 
   @keyframes slideInLeft {
-from{
-     left: 0;
-  }
-  to {
-    left: 100%;
-  }
-}
+   from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+            }
+        }
 
 
 .inline {
