@@ -73,7 +73,6 @@ from{
 
 
 #navbar {
-  padding: 14px 24px;
   background: #f9e4bc;
   position: sticky;
   position: -webkit-sticky;
@@ -107,6 +106,7 @@ from{
   flex-direction: row;
   gap: 28px;
   font-size: 14px;
+width:100;
 }
 
 .navbar-links > a {
