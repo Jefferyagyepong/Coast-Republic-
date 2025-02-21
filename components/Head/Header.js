@@ -6,15 +6,15 @@ function Header() {
   return (
     <>
       <header>
-      
-        <div className="inline">
-       
-          <Menu />
           <Link href={"./"}>
           <h5>Coast Republic</h5>
         </Link>
+        <div className="inline">
+       
+          <Menu />
+         <CartBasket />
         </div>
-           <CartBasket />
+        
       </header>
     </>
   );
