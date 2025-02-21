@@ -148,13 +148,13 @@ width:100;
   #navbar-link-area > .navbar-links {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -20px;
     display: flex;
     flex-direction: column;
     width: max-content;
     align-items: end;
     margin-top: 13px;
-    translate: calc(100% + 64px) 0; /*24px is the padding left and right we gave the navbar. So, adding to the translate to align with edges*/
+    translate: calc(100% + 14px) 0; /*24px is the padding left and right we gave the navbar. So, adding to the translate to align with edges*/
     transition: translate 0.24s ease-in-out;
   }
 
