@@ -4,22 +4,22 @@ import Image from "next/image";
 function All() {
   return (
         
-  <div class="carousel-container">
+  <div className="carousel-container">
         <input type="radio" name="carousel" id="slide1" checked>
         <input type="radio" name="carousel" id="slide2">
         <input type="radio" name="carousel" id="slide3">
 
-        <div class="slides">
-            <div class="slide">
+        <div className="slides">
+            <div className="slide">
                  <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
       <h5>How to dress for your age</h5><br/>
       <Link href={"/products"}>Read</Link>
                 </div>
-            <div class="slide">Slide 2</div>
-            <div class="slide">Slide 3</div>
+            <div className="slide">Slide 2</div>
+            <div className="slide">Slide 3</div>
         </div>
 
-        <div class="nav">
+        <div className="nav">
             <label for="slide1"></label>
             <label for="slide2"></label>
             <label for="slide3"></label>
