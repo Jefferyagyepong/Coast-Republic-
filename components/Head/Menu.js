@@ -11,10 +11,10 @@ function Menu() {
         <span class="text text-bold"></span>
       </div>
       <div class="text navbar-links">
-        <a href="/">Home</a>
-        <a href="/b">Blog</a>
-        <a href="/a">About</a>
-        <a href="/c">Contact</a>
+        <Link href="/">Home</Link>
+        <Link href="/b">Blog</Link>
+        <Link href="/a">About</Link>
+        <Link href="/c">Contact</Link >
       </div>
     </div>
   </div>
