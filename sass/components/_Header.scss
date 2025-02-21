@@ -119,6 +119,101 @@ from{
   color: black;
 }
 
+/*Mobile*/
+@media screen and (max-width: 600px){
+
+  #menu-btn {
+    display: block;
+    user-select: none;
+  }
+
+  #menu-btn > span {
+    display: block;
+    position: relative;
+  }
+
+  #menu-btn > span::before {
+    content: "Menu";
+    z-index: 1;
+  }
+
+  #navbar-link-area {
+    position: relative;
+    padding: 4px;
+    z-index: 22;
+    transition: z-index 0.24s ease-in-out;
+  }
+
+  #navbar-link-area > .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: end;
+    margin-top: 13px;
+    translate: calc(100% + 24px) 0; /*24px is the padding left and right we gave the navbar. So, adding to the translate to align with edges*/
+    transition: translate 0.24s ease-in-out;
+  }
+
+  #navbar-link-area .navbar-links > a:first-child {
+    margin-top: 40px;
+  }
+  
+  #menu-bg {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 67.5%;
+    height: 100lvh;
+    background-color: #f8f0c6;
+    translate: 100% 0;
+    transition: translate 0.24s ease-in-out;
+  }
+
+  /* CLOSE GYMNASTICS */
+  #defocus {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    padding: 6px;
+    z-index: 21;
+  }
+
+  #defocus::before {
+    content: "Fit_to_Size";
+    color: red;
+    opacity: 0;
+  }
+
+  #navbar-link-area:focus,
+  #navbar-link-area:focus-within,
+  #navbar-link-area:hover {
+    z-index: 20;
+  }
+
+  #navbar-link-area:focus #menu-btn > span::before,
+  #navbar-link-area:focus-within #menu-btn > span::before,
+  #navbar-link-area:hover #menu-btn > span::before {
+    content: "Close";
+  }
+
+  #navbar-link-area:focus #menu-bg,
+  #navbar-link-area:focus-within #menu-bg,
+  #navbar-link-area:hover #menu-bg {
+    translate: 0 0;
+  }
+
+  #navbar-link-area:focus .navbar-links,
+  #navbar-link-area:focus-within .navbar-links,
+  #navbar-link-area:hover .navbar-links {
+    translate: 0 0;
+  }
+}
 
 
 
