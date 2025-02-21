@@ -37,12 +37,14 @@ header {
 .example1{
 background-color: #d3d3d3;
 width:100%;
-        position: absolute;
+
+        h6{
             left: 0;
             font-size: 24px;
             font-weight: bold;
             white-space: nowrap;
             animation: moveRight 5s linear infinite;
+}
 }
  
 
