@@ -3,7 +3,7 @@ function Menu() {
   return (
   <div id="navbar">
   <div id="navbar-content">
-    <span className="text text-bold">=</span>
+    <span className="text text-bold"></span>
     <div id="defocus"></div>
     <div id="navbar-link-area">
       <div id="menu-bg"></div>
