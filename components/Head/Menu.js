@@ -1,35 +1,24 @@
 import Link from "next/link";
 function Menu() {
   return (
-    <section className="top-nav">
-      <input id="menu-toggle" type="checkbox" />
-
-      <label className="menu-button-container" htmlFor="menu-toggle">
-        <div className="menu-button"></div>
-      </label>
-      <ul className="menu">
-        <li>
-          <Link href={"/"} id="link">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href={"/products"} id="link">
-            Shop
-          </Link>
-        </li>
-        <li>
-          <Link href={"/delivery"} id="link">
-           Delivery Info
-          </Link>
-        </li>
-        <li>
-          <Link href={"/contact"} id="link">
-            Contact Us
-          </Link>
-        </li>
-      </ul>
-    </section>
+  <div id="navbar">
+  <div id="navbar-content">
+    <span class="text text-bold">M😋ji</span>
+    <div id="defocus"></div>
+    <div id="navbar-link-area">
+      <div id="menu-bg"></div>
+      <div id="menu-btn">
+        <span class="text text-bold"></span>
+      </div>
+      <div class="text navbar-links">
+        <a href="/">Home</a>
+        <a href="/b">Blog</a>
+        <a href="/a">About</a>
+        <a href="/c">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
   );
 }
 export default Menu;
