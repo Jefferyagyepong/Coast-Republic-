@@ -1,29 +1,5 @@
-.imagecarousel {
-width: 100%;
-  display: flex;
-  margin: 0 auto;
-  gap: 20px;
-  overflow: hidden;
-}
 
-.imagecarousel img {
-  margin: 0px 0px;
-  box-shadow: 2px 2px 8px #8a8a8a;
-}
-
-.imagecarousel {
-  animation: bannermove 50s linear infinite;
-}
-
-@keyframes bannermove {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
+ 
 inline{
   width: 100%;
   display: flex;
@@ -35,72 +11,9 @@ inline{
   }
 
 
-.carousel {
-  width: 100%;
-  margin: 0 auto;
-}
 
-.slides {
-  display: flex;
-  width: 300%;
-  transition: transform 0.5s ease-in-out;
-}
 
-.slide {
-  width: 100%;
-padding: 10px 20px;
-margin: 0 auto;
-  flex: 1 0 100%;
-}
 
-.slide img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Hide radio buttons */
-input[type="radio"] {
-  display: none;
-}
-
-/* Navigation buttons */
-.navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-
-.nav-btn {
-  width: 12px;
-  height: 12px;
-  background-color: gray;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-/* Change slide on radio checked */
-#slide1:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-/* Highlight active dot */
-#slide1:checked ~ .navigation label:nth-child(1),
-#slide2:checked ~ .navigation label:nth-child(2),
-#slide3:checked ~ .navigation label:nth-child(3) {
-  background-color: black;
-}
 
 
 
