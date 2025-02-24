@@ -1,24 +1,37 @@
 import Link from "next/link";
 function Menu() {
   return (
-  <div id="navbar">
-  <div id="navbar-content">
-    <span className="text text-bold"></span>
-    <div id="defocus"></div>
-    <div id="navbar-link-area">
-      <div id="menu-bg"></div>
-      <div id="menu-btn">
-        <span className="text text-bold"></span>
-      </div>
-      <div className="text navbar-links">
-        <Link href="/">Home</Link>
-        <Link href="/b">Blog</Link>
-        <Link href="/a">About</Link>
-        <Link href="/c">Contact</Link >
-      </div>
-    </div>
+<nav role="navigation">
+  <div id="menuToggle">
+  
+    <input type="checkbox" id="menuCheckbox" />
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+ 
+      <li>
+        <Link href="#">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+        </Link>
+      </li>
+      <li>
+        <Link href="#about">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+        </Link>
+      </li>
+    
+      <li><label for="menuCheckbox"><Link>Info</Link></label></li>
+      <li><label for="menuCheckbox"><Link>Contact</Link></label></li>
+
+      <li>
+        <Link href="https://erikterwan.com/" target="_blank">Show me more</Link>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
   );
 }
 export default Menu;
