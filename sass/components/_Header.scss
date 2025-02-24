@@ -75,149 +75,146 @@ width:100%;
 }
 
 
-#navbar {
-width:100%;
-  
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 20;
+/* Menu code starts here */
+
+#menuToggle{
+  display: block;
+  /* You can also use relative/absolute here if you want to stay on the top */
+  position: fixed;
+  top: 50px;
+  left: 50px;  
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-#navbar-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  
-}
-
-#menu-btn {
-  display: none;
-}
-
-#menu-bg {
-  display: none;
-}
-
-#defocus {
-  display: none;
-}
-
-.navbar-links {
-  display: flex;
-  flex-direction: row;
-  gap: 28px;
-  font-size: 14px;
-width:100;
-}
-
-.navbar-links > a {
-  position: relative;
+#menuToggle a{
   text-decoration: none;
-  transition: color 0.4s ease-in-out;
+  color: #232323;
+  transition: color 0.3s ease;
 }
 
-.navbar-links > a:hover {
-  color: black;
+#menuToggle a:hover{
+  color: tomato;
 }
 
-/*Mobile*/
-@media screen and (max-width: 600px){
 
-  #menu-btn {
-    display: block;
-    user-select: none;
-  }
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px; 
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */ 
+  -webkit-touch-callout: none;
+}
 
-  #menu-btn > span {
-    display: block;
-    position: relative;
-  }
-
-  #menu-btn > span::before {
-    content: "Menu";
-    z-index: 1;
-  }
-
-  #navbar-link-area {
-    position: relative;
-    padding: 4px;
-    z-index: 22;
-    transition: z-index 0.24s ease-in-out;
-  }
-
-  #navbar-link-area > .navbar-links {
-    position: absolute;
-    top: 100%;
-    right: -200px;
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    align-items: end;
-    margin-top: 13px;
-    translate: calc(100% + 14px) 0; /*24px is the padding left and right we gave the navbar. So, adding to the translate to align with edges*/
-    transition: translate 0.24s ease-in-out;
-  }
-
-  #navbar-link-area .navbar-links > a:first-child {
-    margin-top: 40px;
-  }
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
   
-  #menu-bg {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 67.5%;
-    height: 100lvh;
-    background-color: #f8f0c6;
-    translate: 100% 0;
-    transition: translate 0.24s ease-in-out;
-  }
-
-  /* CLOSE GYMNASTICS */
-  #defocus {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    translate: 0 -50%;
-    padding: 6px;
-    z-index: 21;
-  }
-
-  #defocus::before {
-    content: "Fit_to_Size";
-    color: red;
-    opacity: 0;
-  }
-
-  #navbar-link-area:focus,
-  #navbar-link-area:focus-within,
-  #navbar-link-area:hover {
-    z-index: 20;
-  }
-
-  #navbar-link-area:focus #menu-btn > span::before,
-  #navbar-link-area:focus-within #menu-btn > span::before,
-  #navbar-link-area:hover #menu-btn > span::before {
-    content: "Close";
-  }
-
-  #navbar-link-area:focus #menu-bg,
-  #navbar-link-area:focus-within #menu-bg,
-  #navbar-link-area:hover #menu-bg {
-    translate: 0 0;
-  }
-
-  #navbar-link-area:focus .navbar-links,
-  #navbar-link-area:focus-within .navbar-links,
-  #navbar-link-area:hover .navbar-links {
-    translate: 0 0;
-  }
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
 
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  max-width: 400px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label
+{
+  cursor: pointer;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 
