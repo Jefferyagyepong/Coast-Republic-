@@ -4,7 +4,7 @@ import Image from "next/image";
 function All() {
   return (
     <>
-      <center>
+      
 
         <div className="slider">
             <div className="imgs_slides">
@@ -67,8 +67,10 @@ function All() {
             </div>
         
         </div>
+           </div>
  
-    </center>
+    
+    
         
     </>
   );
