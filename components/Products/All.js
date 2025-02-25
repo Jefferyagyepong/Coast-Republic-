@@ -3,6 +3,7 @@ import Image from "next/image";
 
 function All() {
   return (
+    <>
       <center>
 
         <div className="slider">
@@ -69,7 +70,7 @@ function All() {
  
     </center>
         
-    
+    </>
   );
 }
 export default All;
