@@ -2,21 +2,16 @@ import Link from "next/link";
 function Menu() {
   return (
 <>
-<div id="menuToggle">
-  <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-      <Link href="#"><li>Home</li></Link>
-      <Link href="#"><li>Shop</li></Link>
-      <Link href="#"><li>Trade-in</li></Link>
-      <Link href="#"><li>Contact</li></Link>
-      <Link href="#"><li>About</li></Link>
-      <Link href="#"><li>Log In / Sign Up</li></Link>
-      <Link href="#"><li>Vier Cart</li></Link>
-     </ul>
-</div>
+<input className="side-menu" type="checkbox" id="side-menu"/>
+        <label className="hamb" for="side-menu"><span className="hamb-line"></span></label>
+   
+        <nav className="nav">
+            <ul className="menu">
+                <li><Link href="#">Gallery</Link></li>
+                <li><Link href="#">Blog</Link> </li>
+                <li><Link href="#">About</Link></li>
+            </ul>
+        </nav>
     </>
   );
 }
