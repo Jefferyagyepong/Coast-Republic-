@@ -3,29 +3,73 @@ import Image from "next/image";
 
 function All() {
   return (
-        
-  <div className="carousel-container">
-        <input type="radio" name="carousel" id="slide1" checked />
-        <input type="radio" name="carousel" id="slide2" />
-        <input type="radio" name="carousel" id="slide3" />
+      <center>
 
-        <div className="slides">
-            <div className="slide">
+        <div className="slider">
+            <div className="imgs_slides">
+
+                <!-- Radio buttons start -->
+                <input type="radio" name="radio-btn" id="radio1" />
+
+                <input type="radio" name="radio-btn" id="radio2" />
+
+                <input type="radio" name="radio-btn" id="radio3" />
+
+                <input type="radio" name="radio-btn" id="radio4" />
+
+                <input type="radio" name="radio-btn" id="radio5" />
+
+          
+                <div className="first slide">
+     
                  <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
       <h5>How to dress for your age</h5><br/>
-      <Link href={"/products"}>Read</Link>
-                </div>
-            <div className="slide">Slide 2</div>
-            <div className="slide">Slide 3</div>
-        </div>
 
-        <div className="nav">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
+                <div className="slide">
+              
+                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
+      <h5>How to dress for your age</h5><br/>
+
+                </div>
+                <div className="slide">
+ 
+                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
+      <h5>How to dress for your age</h5><br/>
+
+                </div>
+                <div className="slide">
+      
+                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
+      <h5>How to dress for your age</h5><br/>
+
+                </div>
+                <div className="slide">
+     
+                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
+      <h5>How to dress for your age</h5><br/>
+
+                </div>
+            
+            </div>
+
+
+            <div class="navigation">
+                <label for="radio1" className="navigation-btn">
+                </label>
+                <label for="radio2" className="navigation-btn">
+                </label>
+                <label for="radio3" className="navigation-btn">
+                </label>
+                <label for="radio4" className="navigation-btn">
+                </label>
+                <label for="radio5" className="navigation-btn">
+                </label>
+            </div>
+        
         </div>
-    </div>
-    
+ 
+    </center>
+        
     
   );
 }
