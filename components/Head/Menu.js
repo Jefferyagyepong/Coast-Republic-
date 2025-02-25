@@ -1,7 +1,7 @@
 import Link from "next/link";
 function Menu() {
   return (
- <!-- Logo -->
+<div>
       
         <input className="side-menu" type="checkbox" id="side-menu"/>
         <label className="hamb" for="side-menu"><span className="hamb-line"></span></label>
@@ -13,7 +13,8 @@ function Menu() {
                 <li><Link href="#">About Us</Link></li>
         <li><Link href="#">Privacy</Link></li>
             </ul>
-        </nav
+        </nav>
+    </div>
   );
 }
 export default Menu;
