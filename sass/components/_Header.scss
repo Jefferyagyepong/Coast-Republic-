@@ -120,6 +120,7 @@ transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation f
   transform: rotate(0deg) scale(0.2, 0.2); /* applies a rotation of 0 degrees and a scale of 0.2 to the element, making it very small and invisible.*/
 }
 #menu {
+position:absolute;
   
   right: -300px;/* This property moves the menu outisde of the viewport*/
   top: 80px; /*This property sets the distance between the top edge of the menu and the top edge of the #menuToggle div.*/
