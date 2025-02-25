@@ -8,7 +8,6 @@ function All() {
         <div className="slider">
             <div className="imgs_slides">
 
-                <!-- Radio buttons start -->
                 <input type="radio" name="radio-btn" id="radio1" />
 
                 <input type="radio" name="radio-btn" id="radio2" />
