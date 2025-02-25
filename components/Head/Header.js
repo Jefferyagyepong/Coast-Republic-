@@ -11,8 +11,9 @@ function Header() {
         </Link>
         <div className="inline">
        
-          <Menu />
+      
          <CartBasket />
+            <Menu />
         </div>
         
       </header>
