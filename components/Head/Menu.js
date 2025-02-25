@@ -5,7 +5,7 @@ function Menu() {
       
         <input className="side-menu" type="checkbox" id="side-menu"/>
         <label className="hamb" for="side-menu"><span className="hamb-line"></span></label>
-        <!-- Menu -->
+       
         <nav className="nav">
             <ul className="menu">
                 <li><Link href="#">Shop</Link></li>
