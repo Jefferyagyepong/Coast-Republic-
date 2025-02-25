@@ -75,78 +75,70 @@ width:100%;
 }
 
 
-/* Nav menu */
-.nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: var(--black);
-    overflow: hidden;
-
+#menuToggle {
+  position: relative;
+  z-index: 1;
+ }
+#menuToggle input {
+  position: absolute;
+  width:40px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; /* in order to place the checkbox over the hamburguer */
+  -webkit-touch-callout: none;
 }
-.menu a{
-    display: block;
-    padding: 30px;
-    color: var(--white);
+#menuToggle span {
+  display: block; /* to ensure that each span element occupies its own line. */
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px; /* create some spacing between the span elements. */
+  position: relative; /* allow for positioning changes in relation to the parent div.*/
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1; /* ensure that the span element is under the checkbox */
 }
-.menu a:hover{
-    background-color: var(--gray);
+#menuToggle span {
+transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
 }
-.nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
+#menuToggle span:first-child {
+  transform-origin: 0% 0%; /*sets the origin of the transform property to the top left corner of the element.*/
 }
-/* Menu Icon */
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-}/* Style label tag */
-
-.hamb-line {
-    background: var(--white);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-
-} /* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%; /*sets the origin of the transform property to the bottom left corner of the element.*/
 }
-.hamb-line::before{
-    top: 5px;
+#menuToggle input:checked ~ span {/* selects all span elements that come after an input element that is checked inside the #menuToggle element. */
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
 }
-.hamb-line::after{
-    top: -5px;
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
 }
-
-.side-menu {
-    display: none;
+#menuToggle input:checked ~ span:nth-last-child(3) { /* selects the third span element from the end that comes after an input element that is checked inside the #menuToggle element. */
+  opacity: 0; /* sets the opacity of the element to 0, making it invisible. */
+  transform: rotate(0deg) scale(0.2, 0.2); /* applies a rotation of 0 degrees and a scale of 0.2 to the element, making it very small and invisible.*/
 }
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
+#menu {
+  position: absolute; /* allow us to position the menu on top of the rest of the content. */
+  left: -300px;/* This property moves the menu outisde of the viewport*/
+  top: 80px; /*This property sets the distance between the top edge of the menu and the top edge of the #menuToggle div.*/
+  width: 200px; 
+  margin: -100px 0 0 -50px;/* The negative margin values are used to move the menu up and to the left to center it vertically and horizontally within the #menuToggle div. */
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none; /* removes the default bullet points of the list. */
+  -webkit-font-smoothing: antialiased; /*This property sets the font smoothing for webkit browsers. */
+  
+  transition: left 0.5s; /* This property sets the transition effect for the left property. This will create a smooth animation when the menu slides in from the left.*/
 }
 
-body:has(.side-menu:checked) {
-  overflow: hidden;
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul {
+  left:40px;
 }
