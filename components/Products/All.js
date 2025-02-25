@@ -6,7 +6,7 @@ function All() {
     <>
       
 
-        <div className="slider">
+        <div className="ibrid-box">
             <div className="imgs_slides">
 
                 <input type="radio" name="radio-btn" id="radio1" />
