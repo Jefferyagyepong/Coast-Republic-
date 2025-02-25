@@ -2,15 +2,21 @@ import Link from "next/link";
 function Menu() {
   return (
 <>
-    <Link href="" className="logo">CSS Nav</Link>
-  <input className="menu-btn" type="checkbox" id="menu-btn" />
-  <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
-  <ul class="menu">
-    <li><Link href="#work">Our Work</Link></li>
-    <li><Link href="#about">About</Link></li>
-    <li><Link href="#careers">Careers</Link></li>
-    <li><Link href="#contact">Contact</Link></li>
-  </ul>
+<div id="menuToggle">
+  <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <Link href="#"><li>Home</li></Link>
+      <Link href="#"><li>Shop</li></Link>
+      <Link href="#"><li>Trade-in</li></Link>
+      <Link href="#"><li>Contact</li></Link>
+      <Link href="#"><li>About</li></Link>
+      <Link href="#"><li>Log In / Sign Up</li></Link>
+      <Link href="#"><li>Vier Cart</li></Link>
+     </ul>
+</div>
     </>
   );
 }
