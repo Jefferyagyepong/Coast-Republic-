@@ -11,9 +11,7 @@ function Menu() {
               <span className="line line2"></span>
               <span className="line line3"></span>
             </div>  
-          <div className="logo">
-            <h1>Navbar</h1>
-          </div>
+        
           <div className="menu-items">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
