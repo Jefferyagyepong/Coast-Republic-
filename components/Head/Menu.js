@@ -2,20 +2,28 @@ import Link from "next/link";
 function Menu() {
   return (
 <>
-        <section className="top-nav">
-  
-    <input id="menu-toggle" type="checkbox" />
-    <label className='menu-button-container' for="menu-toggle">
-    <div className='menu-button'></div>
-  </label>
-     <ul className="menu">
-      <li><Link href="/">Home</Link></li>
-         <li><Link href="/products/">Shop</Link></li>
-       <li><Link href="/privacy">Privacy</Link></li>
-       <li><Link href="/delivery">Track Order</Link></li>
-       <li><Link href="/about">About Us</Link></li>
-    </ul>
-  </section>
+ <nav>
+      <div className="navbar">
+        <div className="container nav-container">
+            <input className="checkbox" type="checkbox" name="" id="" />
+            <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+            </div>  
+          <div className="logo">
+            <h1>Navbar</h1>
+          </div>
+          <div className="menu-items">
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/about">About</Link></li>
+            <li><Link href="/products/">Shop</Link></li>
+            <li><Link href="/privacy">Privacy</Link></li>
+            <li><Link href="/contact">contact</Link></li>
+          </div>
+        </div>
+      </div>
+    </nav>
     </>
   );
 }
