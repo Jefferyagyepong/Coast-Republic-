@@ -1,5 +1,6 @@
 import Toast from "@/components/Head/Toast";
 import { useState } from "react";
+import Link from "next/link";
 
 import Header from "@/components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
