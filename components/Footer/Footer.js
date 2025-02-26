@@ -83,66 +83,6 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Coast Republic Store. All rights reserved.</p>
       </div>
-
-      <style jsx>{`
-        .footer {
-        width: 100%;
-          background: #222;
-          color: #fff;
-          padding: 10px 20px;
-          text-align: center;
-          margin-bottom: 0;
-        }
-        .container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 30px;
-        }
-        .footer-section {
-          max-width: 200px;
-             color: #fff;
-          
-        }
-        .footer-section h4 {
-          margin-bottom: 10px;
-          font-size: 16px;
-        }
-        .footer-section ul {
-        color: #fff;
-          list-style: none;
-          padding: 0;
-        }
-        .footer-section ul li {
-          margin: 5px 0;
-        }
-        .footer-section ul li a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 14px;
-        }
-          .payment-container{
-          
-          display:flex;
-          flex-direction: row;
-          align-items:center;
-          justify-content: center;
-          }
-        .footer-section ul li a:hover {
-          color: #fff;
-        }
-        .social-links li {
-          display: inline;
-          margin-right: 10px;
-       
-        }
-        .footer-bottom {
-          margin-top: 20px;
-          font-size: 12px;
-          border-top: 1px solid #444;
-          padding-top: 10px;
-        }
-      `}</style>
     </footer>
   );
 };
