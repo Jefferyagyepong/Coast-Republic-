@@ -96,42 +96,93 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
-        </div><br/>
-      
-         <div className="carousel-container">      
-         <div className="carousel"> 
-          <Image
-          src={product.image}
-          height={400}
-          width={390}
-          alt=" product"
-       
-        />
-          <Image
-          src={product.image}
-          height={400}
-          width={390}
-          alt=" product"
-       
-        />
-          <Image
-          src={product.image}
-            height={400}
-          width={390}
-          alt=" product"
-       
-        />
-          <Image
+        </div>
+    <section className="carousel" aria-label="Gallery">
+  <ol className="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        className="carousel__slide">
+      <div className="carousel__snapper">
+        <Link href="#carousel__slide4"
+           className="carousel__prev">Go to last slide</Link>
+        <Link href="#carousel__slide2"
+           className="carousel__next">Go to next slide</Link>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        className="carousel__slide">
+      <div className="carousel__snapper"></div>
+      <Link href="#carousel__slide1"
+         className="carousel__prev">Go to previous slide</Link>
+      <Link href="#carousel__slide3"
+         className="carousel__next">Go to next slide</Link>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        className="carousel__slide">
+      <div className="carousel__snapper"></div>
+      <Link href="#carousel__slide2"
+         className="carousel__prev">Go to previous slide</Link>
+      <Link href="#carousel__slide4"
+         className="carousel__next">Go to next slide</Link>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        className="carousel__slide">
+      <div className="carousel__snapper"></div>
+      <Link href="#carousel__slide3"
+         className="carousel__prev">Go to previous slide</Link>
+      <Link href="#carousel__slide1"
+         className="carousel__next">Go to first slide</Link>
+    </li>
+  </ol>
+  <aside className="carousel__navigation">
+    <ol className="carousel__navigation-list">
+      <li className="carousel__navigation-item">
+        <Link href="#carousel__slide1"
+           className="carousel__navigation-button">
+             <Image
           src={product.image}
           height={400}
           width={390}
           alt=" product"       
-        />    
-      </div>
+        /> </Link>
+      </li>
+      <li className="carousel__navigation-item">
+        <Link href="#carousel__slide2"
+           className="carousel__navigation-button">  <Image
+          src={product.image}
+          height={400}
+          width={390}
+          alt=" product"       
+        />   </Link>
+      </li>
+      <li className="carousel__navigation-item">
+        <Link href="#carousel__slide3"
+           className="carousel__navigation-button">  <Image
+          src={product.image}
+          height={400}
+          width={390}
+          alt=" product"       
+        />   </Link>
+      </li>
+      <li className="carousel__navigation-item">
+        <Link href="#carousel__slide4"
+           className="carousel__navigation-button">  <Image
+          src={product.image}
+          height={400}
+          width={390}
+          alt=" product"       
+        />   </Link>
+      </li>
+    </ol>
+  </aside>
+</section>
       
-      <button className="prev button" onClick={prevSlide}>&lt;</button>
-      <button className="next button" onClick={nextSlide}>&gt;</button>
-    </div>
+         
+         
+    
           
       <h1>{product.name}</h1>
       <p>{product.description}</p>
