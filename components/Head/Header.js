@@ -7,12 +7,12 @@ function Header() {
     <>
       <header>
        
-        <div className="inline">      
+        
             <Menu />
+      
        <Link href={"./"}>
           <h5>Coast Republic</h5>
         </Link>
-        </div>
     
          <CartBasket />
         
