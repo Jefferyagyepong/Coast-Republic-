@@ -91,6 +91,7 @@ const Footer = () => {
           color: #fff;
           padding: 10px 20px;
           text-align: center;
+          margin-bottom: 0;
         }
         .container {
           display: flex;
