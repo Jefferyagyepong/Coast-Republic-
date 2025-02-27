@@ -11,7 +11,14 @@ import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 import Carousel from "@/components/Products/Carousel"; 
 import All from '@/components/Products/All';
+  const images = [
+  "/products/george1a.JPG",
 
+  "/products/force1b.JPG",
+  "/products/tim1b.JPG",
+  "/products/calvin1c.JPG",
+  "/products/george1b.JPG",
+];
 
 const Home = () => {   
     
