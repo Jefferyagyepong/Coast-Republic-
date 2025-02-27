@@ -110,7 +110,7 @@ const ProductPage = ({ product }) => {
     <div className="slideshowContainer">
       <div className="slides">
         <div className="slide">
-  <Image
+         <Image
           src={product.image}
           height={400}
           width={390}
@@ -125,13 +125,6 @@ const ProductPage = ({ product }) => {
         <button onClick={goToNextSlide} className="button-carousel">&gt;</button>
       </div>
     </div>
-  );
-};
-
-export default Slideshow;
-
-         
-         
           
       <h1>{product.name}</h1>
       <p>{product.description}</p>
