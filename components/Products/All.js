@@ -1,13 +1,11 @@
+
+import { useState } from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from 'react';
+
 function All() {
   return (
     <>
-
-
-
-
 const Slideshow = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -24,25 +22,26 @@ const Slideshow = ({ slides }) => {
   return (
     <div className="slideshowContainer">
       <div className="slides">
+    
         <div className="slide">
          <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
-      <h5>How to dress for your age</h5><br/>
-          // <h2>{slides[currentSlide].title}</h2>
-          // <p>{slides[currentSlide].content}</p>
+      <h5>How to dress for your age</h5>         
         </div>
+    
      <div className="slide">
          <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
       <h5>How to dress for your age</h5><br/>
-          // <h2>{slides[currentSlide].title}</h2>
-          // <p>{slides[currentSlide].content}</p>
-        </div>
+     
       </div>
 
    <div className="controls">
         <button onClick={goToPreviousSlide} className="button-carousel">&lt;</button>
         <button onClick={goToNextSlide} className="button-carousel">&gt;</button>
       </div>
-            
+              
+        </div>
+    
+        </div>
     </>
   );
 }
