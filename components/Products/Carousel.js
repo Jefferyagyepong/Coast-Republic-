@@ -31,14 +31,7 @@ const DraggableCarousel = ({ images }) => {
     const walk = (x - startX) * 3; // Scroll-fast
     carouselRef.current.scrollLeft = scrollLeft - walk;
   };
-  const images = [
-  "/products/george1a.JPG",
 
-  "/products/force1b.JPG",
-  "/products/tim1b.JPG",
-  "/products/calvin1c.JPG",
-  "/products/george1b.JPG",
-];
 
   return (
     <div
