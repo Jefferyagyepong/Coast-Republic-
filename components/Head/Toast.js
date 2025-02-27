@@ -1,11 +1,11 @@
 function Toast() {
   return (
-    <div className="example1">
-      <strong>
-        {" "}
-        <h6> We deliver to all 16 regions 🇬🇭</h6>
-      </strong>
-    </div>
+ <div className="masking-container">
+      
+ <h6 className="masked-text"> We deliver to all 16 regions 🇬🇭</h6>
+</div>
+
+
   );
 }
 export default Toast;
