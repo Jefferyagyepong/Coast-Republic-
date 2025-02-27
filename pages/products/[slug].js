@@ -96,92 +96,49 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div>
-    <section className="carousel" aria-label="Gallery">
-  <ol className="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper">
-        <Link href="#carousel__slide4"
-           className="carousel__prev">Go to last slide</Link>
-        <Link href="#carousel__slide2"
-           className="carousel__next">Go to next slide</Link>
-      </div>
-    </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <Link href="#carousel__slide1"
-         className="carousel__prev">Go to previous slide</Link>
-      <Link href="#carousel__slide3"
-         className="carousel__next">Go to next slide</Link>
-    </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <Link href="#carousel__slide2"
-         className="carousel__prev">Go to previous slide</Link>
-      <Link href="#carousel__slide4"
-         className="carousel__next">Go to next slide</Link>
-    </li>
-    <li id="carousel__slide4"
-        tabindex="0"
-        className="carousel__slide">
-      <div className="carousel__snapper"></div>
-      <Link href="#carousel__slide3"
-         className="carousel__prev">Go to previous slide</Link>
-      <Link href="#carousel__slide1"
-         className="carousel__next">Go to first slide</Link>
-    </li>
-  </ol>
-  <aside className="carousel__navigation">
-    <ol className="carousel__navigation-list">
-      <li className="carousel__navigation-item">
-        <Link href="#carousel__slide1"
-           className="carousel__navigation-button">
-             <Image
+    // components/Slideshow.js
+import { useState } from 'react';
+import styles from './Slideshow.module.css';
+
+const Slideshow = ({ slides }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  const goToPreviousSlide = () => {
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
+    );
+  };
+
+  return (
+    <div className=slideshowContainer>
+      <div className=slides>
+        <div className=slide>
+  <Image
           src={product.image}
           height={400}
           width={390}
           alt=" product"       
-        /> </Link>
-      </li>
-      <li className="carousel__navigation-item">
-        <Link href="#carousel__slide2"
-           className="carousel__navigation-button">  <Image
-          src={product.image}
-          height={400}
-          width={390}
-          alt=" product"       
-        />   </Link>
-      </li>
-      <li className="carousel__navigation-item">
-        <Link href="#carousel__slide3"
-           className="carousel__navigation-button">  <Image
-          src={product.image}
-          height={400}
-          width={390}
-          alt=" product"       
-        />   </Link>
-      </li>
-      <li className="carousel__navigation-item">
-        <Link href="#carousel__slide4"
-           className="carousel__navigation-button">  <Image
-          src={product.image}
-          height={400}
-          width={390}
-          alt=" product"       
-        />   </Link>
-      </li>
-    </ol>
-  </aside>
-</section>
-      
-         
-         
+        /> 
     
+        </div>
+      </div>
+
+      <div className=controls>
+        <button onClick={goToPreviousSlide} className="button-carousel">&lt;</button>
+        <button onClick={goToNextSlide} className="button-carousel">&gt;</button>
+      </div>
+    </div>
+  );
+};
+
+export default Slideshow;
+
+         
+         
           
       <h1>{product.name}</h1>
       <p>{product.description}</p>
