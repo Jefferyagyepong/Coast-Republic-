@@ -1,3 +1,4 @@
+
 import Toast from "@/components/Head/Toast";
 import { useState } from "react";
 import Header from "@/components/Head/Header";
@@ -55,17 +56,22 @@ export async function getStaticProps({ params }) {
     props: { product }, // Pass the product data to the page
   };
 }
+const Slideshow = ({ slides }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  const goToPreviousSlide = () => {
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
+    );
+  };
+
 
 const ProductPage = ({ product }) => {
-    const [current, setCurrent] = useState(0);
 
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % product.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + product.length) % images.length);
-  };
     const dispatch = useDispatch();
   return (
     <>
@@ -96,27 +102,14 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div>
-    // components/Slideshow.js
-import { useState } from 'react';
-import styles from './Slideshow.module.css';
 
-const Slideshow = ({ slides }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
 
-  const goToPreviousSlide = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
-    );
-  };
 
   return (
-    <div className=slideshowContainer>
-      <div className=slides>
-        <div className=slide>
+    <div className="slideshowContainer">
+      <div className="slides">
+        <div className="slide">
   <Image
           src={product.image}
           height={400}
@@ -127,7 +120,7 @@ const Slideshow = ({ slides }) => {
         </div>
       </div>
 
-      <div className=controls>
+      <div className="controls">
         <button onClick={goToPreviousSlide} className="button-carousel">&lt;</button>
         <button onClick={goToNextSlide} className="button-carousel">&gt;</button>
       </div>
