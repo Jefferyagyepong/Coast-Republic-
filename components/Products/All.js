@@ -22,15 +22,15 @@ const Slideshow = ({ slides }) => {
   };
 
   return (
-    <div className=slideshowContainer>
-      <div className=slides>
-        <div className=slide>
+    <div className="slideshowContainer">
+      <div className="slides">
+        <div className="slide">
          <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
       <h5>How to dress for your age</h5><br/>
           // <h2>{slides[currentSlide].title}</h2>
           // <p>{slides[currentSlide].content}</p>
         </div>
-     <div className=slide>
+     <div className="slide">
          <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
       <h5>How to dress for your age</h5><br/>
           // <h2>{slides[currentSlide].title}</h2>
@@ -38,15 +38,11 @@ const Slideshow = ({ slides }) => {
         </div>
       </div>
 
-      <div className=controls>
+   <div className="controls">
         <button onClick={goToPreviousSlide} className="button-carousel">&lt;</button>
-     
-          
-
- 
-    
-    
-        
+        <button onClick={goToNextSlide} className="button-carousel">&gt;</button>
+      </div>
+            
     </>
   );
 }
