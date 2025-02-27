@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import { useState } from 'react';
 function All() {
   return (
     <>
 
-import { useState } from 'react';
+
 
 
 const Slideshow = ({ slides }) => {
