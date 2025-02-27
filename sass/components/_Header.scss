@@ -78,6 +78,7 @@ width:100%;
 .navbar {
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  background-color: #222;
 }
 
 .nav-container {
@@ -100,7 +101,7 @@ width:100%;
   color: #0e2431;
   font-weight: 500;
   font-size: 1.2rem;
-  padding: 0.7rem;
+  padding: 0.8rem;
 }
 
 .navbar .nav-container a:hover{
@@ -139,10 +140,10 @@ width:100%;
 
 .nav-container .hamburger-lines .line {
   display: block;
-  height: 4px;
+  height: 3px;
   width: 100%;
-  // border-radius: 10px;
-  // background: #0e2431;
+  border-radius: 10px;
+  background: #0e2431;
 }
 
 .nav-container .hamburger-lines .line1 {
