@@ -39,7 +39,7 @@ const Slideshow = ({ slides }) => {
       </div>
 
       <div className=controls>
-        <button onClick={goToPreviousSlide}>&lt;</button>
+        <button onClick={goToPreviousSlide} className="button-carousel">&lt;</button>
      
           
 
