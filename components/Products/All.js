@@ -4,70 +4,45 @@ import Image from "next/image";
 function All() {
   return (
     <>
-      
 
-        <div className="ibrid-box">
-            <div className="imgs_slides">
+import { useState } from 'react';
 
-                <input type="radio" name="radio-btn" id="radio1" />
 
-                <input type="radio" name="radio-btn" id="radio2" />
+const Slideshow = ({ slides }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-                <input type="radio" name="radio-btn" id="radio3" />
+  const goToNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
 
-                <input type="radio" name="radio-btn" id="radio4" />
+  const goToPreviousSlide = () => {
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
+    );
+  };
 
-                <input type="radio" name="radio-btn" id="radio5" />
-
-          
-                <div className="first slide">
-     
-                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
+  return (
+    <div className=slideshowContainer>
+      <div className=slides>
+        <div className=slide>
+         <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
       <h5>How to dress for your age</h5><br/>
-
-                <div className="slide">
-              
-                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
-      <h5>How to dress for your age</h5><br/>
-
-                </div>
-                <div className="slide">
- 
-                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
-      <h5>How to dress for your age</h5><br/>
-
-                </div>
-                <div className="slide">
-      
-                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
-      <h5>How to dress for your age</h5><br/>
-
-                </div>
-                <div className="slide">
-     
-                 <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
-      <h5>How to dress for your age</h5><br/>
-
-                </div>
-            
-            </div>
-
-
-            <div class="navigation">
-                <label for="radio1" className="navigation-btn">
-                </label>
-                <label for="radio2" className="navigation-btn">
-                </label>
-                <label for="radio3" className="navigation-btn">
-                </label>
-                <label for="radio4" className="navigation-btn">
-                </label>
-                <label for="radio5" className="navigation-btn">
-                </label>
-            </div>
-        
+          // <h2>{slides[currentSlide].title}</h2>
+          // <p>{slides[currentSlide].content}</p>
         </div>
-           </div>
+     <div className=slide>
+         <Image src={"/basqu.jpg"} alt="img" width={370} height={700} />
+      <h5>How to dress for your age</h5><br/>
+          // <h2>{slides[currentSlide].title}</h2>
+          // <p>{slides[currentSlide].content}</p>
+        </div>
+      </div>
+
+      <div className=controls>
+        <button onClick={goToPreviousSlide}>&lt;</button>
+     
+          
+
  
     
     
