@@ -10,6 +10,16 @@ const DraggableCarousel = ({ images }) => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const carouselRef = useRef(null);
 
+    const images = [
+  "/products/george1a.JPG",
+
+  "/products/force1b.JPG",
+  "/products/tim1b.JPG",
+  "/products/calvin1c.JPG",
+  "/products/george1b.JPG",
+];
+
+
   const handleMouseDown = (e) => {
     setDragging(true);
     setStartX(e.pageX - carouselRef.current.offsetLeft);
