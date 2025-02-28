@@ -15,7 +15,7 @@ const Slideshow = ({ slides }) => {
 
 function SlugCarousel () {
   return(
-    <>
+  
       <div className="slideshowContainer">
       <div className="slides">
         <div className="slide">
@@ -52,8 +52,8 @@ function SlugCarousel () {
             
     </div>
     </div>
-    </>
+  
   );
-    }
+  }
 export default SlugCarousel;
           
