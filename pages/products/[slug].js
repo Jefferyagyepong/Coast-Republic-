@@ -57,20 +57,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-
 const ProductPage = ({ product }) => {
-const Slideshow = ({ slides }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
-
-  const goToPreviousSlide = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
-    );
-  };
 
     const dispatch = useDispatch();
   return (
@@ -103,16 +90,20 @@ const Slideshow = ({ slides }) => {
           <Header />
         </div>
     
-      <h1>{product.name}</h1>
+      <h4>{product.name}</h4>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
+  
       <Link href="/products">
         Back to Shop Now
       </Link>
+  
         <button
         onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart">Add to Basket
-      </button>
+        className="add-to-cart">
+        Add to Basket
+        </button>
+          
         <Newsletter />
     
     </main>
