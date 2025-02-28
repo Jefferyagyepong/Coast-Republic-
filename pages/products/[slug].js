@@ -102,11 +102,7 @@ const Slideshow = ({ slides }) => {
           <Toast />
           <Header />
         </div>
-
-
-
-
-  return (
+    
     <div className="slideshowContainer">
       <div className="slides">
         <div className="slide">
