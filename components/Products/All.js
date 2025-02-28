@@ -18,7 +18,7 @@ function All() {
 
 
   return (
-    <>
+
     <div className="slideshowContainer">
       <div className="slides">
     
@@ -41,7 +41,7 @@ function All() {
         </div>
     
         </div>
-    </>
+
   );
 }
 export default All;
