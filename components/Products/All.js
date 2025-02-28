@@ -4,9 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 function All() {
-  return (
-    <>
-const Slideshow = ({ slides }) => {
+    const Slideshow = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToNextSlide = () => {
@@ -19,7 +17,9 @@ const Slideshow = ({ slides }) => {
     );
   };
 
+
   return (
+    <>
     <div className="slideshowContainer">
       <div className="slides">
     
