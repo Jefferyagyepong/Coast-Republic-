@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from 'react';
 const Slideshow = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
