@@ -9,23 +9,28 @@ function Menu() {
       </label>
       <ul className="menu">
         <li>
-          <Link href={"/"} id="link">
-            Home
+          <Link href={"/about"} id="header-link">
+            About
           </Link>
         </li>
         <li>
-          <Link href={"/products"} id="link">
+          <Link href={"/products/"} id="footer-link">
             Shop
           </Link>
         </li>
         <li>
-          <Link href={"/delivery"} id="link">
-           Delivery Info
+          <Link href={"/contact"} id="footer-link">
+            Contact
           </Link>
         </li>
         <li>
-          <Link href={"/contact"} id="link">
-            Contact Us
+          <Link href={"/help"} id="footer-link">
+            Help Center
+          </Link>
+        </li>
+        <li>
+          <Link href={"/refund"} id="footer-link">
+            Refunds
           </Link>
         </li>
       </ul>

@@ -19,7 +19,7 @@ header {
   justify-content: space-between;
   padding: 12px 18px;
   background-color: snow;
-  opacity: 1;
+  // opacity: 1;
 
   h2 {
     font-family: 'Milkshake', cursive;
@@ -31,7 +31,7 @@ header {
   width: 100%;
   top: 0;
   position: sticky;
-  z-index: 999;
+  // z-index: 999;
   margin: 0 auto;
 }
 .example1{
@@ -70,21 +70,18 @@ transform: translateX(-100%);
 .header-link:hover {
   opacity: 0.7;
 }
-
-.menu {
-  display: none;
-  
+#header-link{
+  color: black;
 }
-
-
-
+/* nav*/
 .top-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #000;
   height: 50px;
-
+  padding: 1em;
+    z-index: 999;
 }
 
 .menu {
@@ -93,16 +90,13 @@ transform: translateX(-100%);
   list-style-type: none;
   margin: 0;
   padding: 0;
-    color: #000;
+    z-index: 999;
 }
 
 .menu>li {
   margin: 0 1rem;
   overflow: hidden;
-  color: #000;
-}
-menu ul li a{
-    color: #000;
+ 
 }
 
 .menu-button-container {
@@ -113,23 +107,21 @@ menu ul li a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    color: #000;
+ 
 }
 
 #menu-toggle {
   display: none;
-    color: #000;
 }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: gray;
-  color: #000;
+  background-color: black;
   position: absolute;
-  height: 1px;
-  width: 20px;
+  height: 2px;
+  width: 25px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
@@ -150,7 +142,7 @@ menu ul li a{
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button {
-  background: black;
+  background: rgba(255, 255, 255, 0);
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {
@@ -162,21 +154,17 @@ menu ul li a{
   .menu-button-container {
     display: flex;
   }
-  #link {
-    color: black;
-  }
-
 
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 0;
+    margin-top: 90px;
     right: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 2rem;
   }
 
   #menu-toggle~.menu li {
@@ -185,8 +173,8 @@ menu ul li a{
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    background-color: #141c3aff;
-      color: #000;
+    background-color: whitesmoke;
+
   }
 
   #menu-toggle:checked~.menu li {
@@ -201,6 +189,7 @@ menu ul li a{
     margin: 0;
     padding: 0.9em 0;
     width: 100%;
+    color: #000;
 
   }
 
