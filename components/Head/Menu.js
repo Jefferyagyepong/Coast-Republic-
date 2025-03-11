@@ -37,7 +37,7 @@ function Menu() {
 //       </ul>
 //     </section>
 
-// <>
+<>
  <nav>
       <div className="navbar">
         <div className="container nav-container">
