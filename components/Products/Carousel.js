@@ -1,5 +1,6 @@
 // components/ImageCarousel.js
 import { useState } from 'react';
+import Image from "next/image";
 
 
 const ImageCarousel = ({ images }) => {
@@ -24,7 +25,7 @@ const ImageCarousel = ({ images }) => {
       </button>
       
       <div className="carousel-slide">
-        <img 
+        <Image
           src={images[currentIndex]} 
           alt={`Slide ${currentIndex + 1}`}
           className="carousel-image"
