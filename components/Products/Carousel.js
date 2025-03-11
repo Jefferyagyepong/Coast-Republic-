@@ -1,58 +1,51 @@
+// components/ImageCarousel.js
+import { useState } from 'react';
 
 
+const ImageCarousel = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-// components/DraggableCarousel.js
-import { useState, useRef } from 'react';
-import Image from "next/image";
-const DraggableCarousel = ({ images }) => {
-  const [dragging, setDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const carouselRef = useRef(null);
-
-
-
-  const handleMouseDown = (e) => {
-    setDragging(true);
-    setStartX(e.pageX - carouselRef.current.offsetLeft);
-    setScrollLeft(carouselRef.current.scrollLeft);
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
-  const handleMouseLeave = () => {
-    setDragging(false);
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
-
-  const handleMouseUp = () => {
-    setDragging(false);
-  };
-
-  const handleMouseMove = (e) => {
-    if (!dragging) return;
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 3; // Scroll-fast
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
-
 
   return (
-    <div
-      ref={carouselRef}
-      className="carousel"
-      onMouseDown={handleMouseDown}
-      onMouseLeave={handleMouseLeave}
-      onMouseUp={handleMouseUp}
-      onMouseMove={handleMouseMove}
-    >
-      <div className="carousel__inner">
-        {images.map((image, index) => (
-          <div key={index} className="carousel__item">
-            <Image src={image.src} alt={image.alt} className="carousel__image" />
-          </div>
+    <div className="carousel-container">
+      <button className="carousel-button prev" onClick={prevSlide}>
+        &#10094;
+      </button>
+      
+      <div className="carousel-slide">
+        <img 
+          src={images[currentIndex]} 
+          alt={`Slide ${currentIndex + 1}`}
+          className="carousel-image"
+        />
+      </div>
+      
+      <button className="carousel-button next" onClick={nextSlide}>
+        &#10095;
+      </button>
+
+      <div className="carousel-dots">
+        {images.map((_, index) => (
+          <span 
+            key={index}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          />
         ))}
       </div>
     </div>
   );
 };
 
-export default DraggableCarousel;
+export default ImageCarousel;
