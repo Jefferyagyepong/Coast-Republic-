@@ -2,7 +2,7 @@ function Toast() {
   return (
  <div className="masking-container">
       
- <h6 className="masked-text"> We deliver to all 16 regions 🇬🇭</h6>
+ <h6 className="fade-in"> We deliver to all 16 regions 🇬🇭</h6>
 </div>
 
 
