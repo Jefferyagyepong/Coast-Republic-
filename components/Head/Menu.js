@@ -1,7 +1,7 @@
 import Link from "next/link";
 function Menu() {
   return (
-<<<<<<< HEAD
+
     <section className="top-nav">
       <input id="menu-toggle" type="checkbox" />
 
