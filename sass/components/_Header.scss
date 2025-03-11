@@ -69,7 +69,6 @@ header {
 #header-link{
   color: black;
 }
-/* nav*/
 
 
 .navbar {
@@ -82,7 +81,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   color: #000;
   height: 50px;
   padding: 1em;
@@ -111,13 +109,11 @@ header {
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
- 
+  align-items: center; 
 }
 
 #menu-toggle {
   display: none;
-
 }
 
 .navbar .nav-container li {
@@ -139,7 +135,6 @@ header {
 
 .nav-container {
   display: block;
-
   background-color: black;
   position: absolute;
   height: 2px;
@@ -189,6 +184,7 @@ header {
 
 #menu-toggle:checked+.menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
+}
 
 .nav-container .hamburger-lines .line2 {
   transition: transform 0.2s ease-in-out;
@@ -286,4 +282,5 @@ header {
 
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
+}
 }
