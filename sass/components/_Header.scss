@@ -62,13 +62,13 @@ header {
 .header-link:hover {
   opacity: 0.7;
 }
-<<<<<<< HEAD
+
 #header-link{
   color: black;
 }
 /* nav*/
 .top-nav {
-=======
+
 
 
 .navbar {
@@ -78,23 +78,22 @@ header {
 }
 
 .nav-container {
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
+
   color: #000;
   height: 50px;
   padding: 1em;
     z-index: 999;
-=======
+
   height: 62px;
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
+
 }
 
 .navbar .menu-items {
   display: flex;
-<<<<<<< HEAD
+
   flex-direction: row;
   list-style-type: none;
   margin: 0;
@@ -121,7 +120,7 @@ header {
 
 #menu-toggle {
   display: none;
-=======
+
 }
 
 .navbar .nav-container li {
@@ -138,19 +137,19 @@ header {
 
 .navbar .nav-container a:hover{
     font-weight: bolder;
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
+
 }
 
 .nav-container {
   display: block;
-<<<<<<< HEAD
+
   background-color: black;
   position: absolute;
   height: 2px;
   width: 25px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
-=======
+
   position: relative;
   height: 60px;
 }
@@ -164,7 +163,7 @@ header {
   z-index: 5;
   opacity: 0;
   cursor: pointer;
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
+
 }
 
 .nav-container .hamburger-lines {
@@ -193,13 +192,12 @@ header {
   transition: transform 0.4s ease-in-out;
 }
 
-<<<<<<< HEAD
 #menu-toggle:checked+.menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
-=======
+
 .nav-container .hamburger-lines .line2 {
   transition: transform 0.2s ease-in-out;
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
+
 }
 
 .nav-container .hamburger-lines .line3 {
@@ -207,7 +205,7 @@ header {
   transition: transform 0.4s ease-in-out;
 }
 
-<<<<<<< HEAD
+
 @media (max-width: 700px) {
   .menu-button-container {
     display: flex;
@@ -234,7 +232,7 @@ header {
     background-color: whitesmoke;
 
   }
-=======
+
 .navbar .menu-items {
   padding-top: 120px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
@@ -266,13 +264,13 @@ header {
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
+
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
 }
 
-<<<<<<< HEAD
+
   .menu>li {
     display: flex;
     justify-content: center;
@@ -280,11 +278,11 @@ header {
     padding: 0.9em 0;
     width: 100%;
     color: #000;
-=======
+
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
   transform: scaleY(0);
 }
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
+
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
