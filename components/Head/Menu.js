@@ -38,7 +38,7 @@ function Menu() {
 //     </section>
 
 <>
- <nav>
+ <nav className="nav-box">
       <div className="navbar">
         <div className="container nav-container">
             <input className="checkbox" type="checkbox" name="" id="" />
