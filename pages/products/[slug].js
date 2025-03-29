@@ -8,7 +8,7 @@ import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
-import Image from 'next/image';
+
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 // This function generates the paths for each product based on the slugs.
