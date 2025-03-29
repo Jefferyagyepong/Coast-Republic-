@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(filePath, 'utf8');
 
   // Parse the file content into a JavaScript object
-  const products = JSON.parse(fileContents);
+  const products = JSON.stringify(fileContents);
 
   // Find the product by slug
   const product = products.find((product) => product.slug === slug);
