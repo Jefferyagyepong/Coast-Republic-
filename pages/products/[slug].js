@@ -1,6 +1,6 @@
-
 import Toast from "@/components/Head/Toast";
-import { useState } from "react";
+
+
 import Header from "@/components/Head/Header";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
@@ -8,7 +8,7 @@ import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
-import Image from 'next/image';
+
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart.slice";
 // This function generates the paths for each product based on the slugs.
@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(filePath, 'utf8');
 
   // Parse the file content into a JavaScript object
-  const products = JSON.parse(fileContents);
+  const products = JSON.stringify(fileContents);
 
   // Find the product by slug
   const product = products.find((product) => product.slug === slug);
@@ -88,22 +88,24 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
-        </div>
+        </div><br/>
+    <div>
+      
     
-      <h4>{product.name}</h4>
+          
+      <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
-  
       <Link href="/products">
         Back to Shop Now
       </Link>
-  
         <button
         onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart">
-        Add to Basket
-        </button>
-          
+        className="add-to-cart"
+      >
+        Add to Bag
+      </button>
+    </div>
         <Newsletter />
     
     </main>

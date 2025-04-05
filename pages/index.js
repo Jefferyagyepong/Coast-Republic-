@@ -9,8 +9,13 @@ import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
+<<<<<<< HEAD
 // import Carousel from "@/components/Products/Carousel"; 
 import All from '@/components/Products/All';
+=======
+import Carousel from "@/components/Products/Carousel"; 
+
+>>>>>>> 5386b7c8794cd13b1b32d8f725eef20da21100e7
     const images = [
   "/products/george1a.JPG",
 
@@ -79,9 +84,7 @@ const Home = () => {
         <New />
         {/* <Carousel /> */}
         <Link href="/products/" className="product-link">Shop Now</Link>                  
-        <Collection />
-       <All />
-                      
+        <Collection />     
         <Newsletter />
         <Footer />
       </main>
