@@ -1,42 +1,6 @@
 import Link from "next/link";
 function Menu() {
   return (
-<<<<<<< HEAD
-    <section className="top-nav">
-      <input id="menu-toggle" type="checkbox" />
-
-      <label className="menu-button-container" htmlFor="menu-toggle">
-        <div className="menu-button"></div>
-      </label>
-      <ul className="menu">
-        <li>
-          <Link href={"/about"} id="header-link">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href={"/products/"} id="footer-link">
-            Shop
-          </Link>
-        </li>
-        <li>
-          <Link href={"/contact"} id="footer-link">
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link href={"/help"} id="footer-link">
-            Help Center
-          </Link>
-        </li>
-        <li>
-          <Link href={"/refund"} id="footer-link">
-            Refunds
-          </Link>
-        </li>
-      </ul>
-    </section>
-=======
 <>
  <nav>
       <div className="navbar">
@@ -59,7 +23,6 @@ function Menu() {
       </div>
     </nav>
     </>
->>>>>>> 97304adc0f8a33939577fa2a7dfe76cd1ee2c096
   );
 }
 export default Menu;

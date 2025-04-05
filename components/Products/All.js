@@ -1,9 +1,10 @@
 
 import { useState } from 'react';
 import Image from "next/image";
+  
+  
 
-function All() {
-    const Slideshow = ({ slides }) => {
+function All ({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToNextSlide = () => {
@@ -45,5 +46,3 @@ function All() {
   );
 }
 export default All;
-
-

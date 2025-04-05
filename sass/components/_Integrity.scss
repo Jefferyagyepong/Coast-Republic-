@@ -1,5 +1,4 @@
-
-inline{
+inline {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -7,35 +6,9 @@ inline{
   align-items: center;
   gap: 2rem;
   padding: 10px 20px;
-  }
-* {
-  box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
 }
 
-*::-webkit-scrollbar {
-  width: 0;
-}
 
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
-
-ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .carousel {
   position: relative;
@@ -74,7 +47,7 @@ ol, li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-40%,70px);
+  transform: translate3d(-50%, -40%, 70px);
   color: #fff;
   font-size: 2em;
 }
@@ -188,24 +161,6 @@ ol, li {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .shop-nows {
 
   text-align: center;
@@ -213,8 +168,8 @@ ol, li {
   border-radius: 2px;
 }
 
-.product-card{
-width: 100%;
+.product-card {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -238,24 +193,23 @@ width: 100%;
 
 }
 
-.jean-bg{
-width:100%;
-a{
-text-decoration: underline;
-text-align: left;
-}
-}
+.jean-bg {
+  width: 100%;
 
-.sale-box{
-width:100%;
-background: #800000;
-color: #fff;
-a{
-text-decoration: underline;
-color: #fff;
+  a {
+    text-decoration: underline;
+    text-align: left;
+  }
 }
 
+.sale-box {
+  width: 100%;
+  background: #800000;
+  color: #fff;
+
+  a {
+    text-decoration: underline;
+    color: #fff;
+  }
+
 }
-
-
-
