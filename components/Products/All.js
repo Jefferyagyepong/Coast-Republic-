@@ -1,10 +1,8 @@
 
-<<<<<<< HEAD
 import { useState } from 'react';
 import Image from "next/image";
   
   
-
 function All ({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -35,7 +33,7 @@ function All ({ slides }) {
      
       </div>
 
-   <div className="controls">
+        <div className="controls">
         <button onClick={goToPreviousSlide} className="button-carousel">&lt;</button>
         <button onClick={goToNextSlide} className="button-carousel">&gt;</button>
       </div>
@@ -47,5 +45,4 @@ function All ({ slides }) {
   );
 }
 export default All;
-=======
->>>>>>> 5386b7c8794cd13b1b32d8f725eef20da21100e7
+
