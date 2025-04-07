@@ -27,10 +27,7 @@ const ProductList = ({ products }) => {
 
   return (
     <>
-
-          <Head>
-
-
+      
           <Head>
 
         <title>Shop our products. </title>
@@ -54,13 +51,19 @@ const ProductList = ({ products }) => {
         <link rel="icon" href="/" />
         <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"/>
       </Head>
+
+    
       <main>
        <div className="sticky">
        <Toast />
-      <Header />
-    <div>
+       <Header />
+       <div>
+
+    
       <h3>our collection</h3>
       <Filter />
+
+    
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
