@@ -27,13 +27,12 @@ const ProductList = ({ products }) => {
 
   return (
     <>
-<<<<<<< HEAD
-          <Head>
-=======
 
           <Head>
 
->>>>>>> 5386b7c8794cd13b1b32d8f725eef20da21100e7
+
+          <Head>
+
         <title>Shop our products. </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
@@ -56,15 +55,12 @@ const ProductList = ({ products }) => {
         <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"/>
       </Head>
       <main>
-             <div className="sticky">
-          <Toast />
-          <Header />
-        </div>
+       <div className="sticky">
+       <Toast />
+      <Header />
     <div>
-          <h3>our collection</h3><br/>
+      <h3>our collection</h3>
       <Filter />
-      <br/>
-  
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
@@ -73,18 +69,13 @@ const ProductList = ({ products }) => {
           src={product.image}
           height={100}
           width={90}
-         alt=" product"
-       
+         alt=" product"       
         />
-          <h4>{product.name}</h4><br/>
+          <h4>{product.name}</h4>
       
             </Link>
-            </span>
-  
-          
+         </span>          
         ))}
-      </div>
-    </div>
     </main>
     </>
   );
