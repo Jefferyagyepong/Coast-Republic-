@@ -1,16 +1,13 @@
-import Toast from "@/components/Head/Toast";
-
-
 import Header from "@/components/Head/Header";
+import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
 import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import Image from 'next/image';
 
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cart.slice";
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -40,7 +37,7 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(filePath, 'utf8');
 
   // Parse the file content into a JavaScript object
-  const products = JSON.stringify(fileContents);
+  const products = JSON.parse(fileContents);
 
   // Find the product by slug
   const product = products.find((product) => product.slug === slug);
@@ -58,8 +55,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-
-    const dispatch = useDispatch();
+   
   return (
     <>
           <Head>
@@ -88,24 +84,24 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
-        </div><br/>
-    <div>
-      
-    
-          
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
+        </div><br/> <hr/>
+    <div className="ibrid-box">
+                     <Image
+          src={product.image}
+          height={400}
+          width={400}
+          alt=" product"
+       
+        /><br/>
+      <h4>{product.name}</h4><br/>
+      <p>{product.description}</p><br/>
+      <p>Price: ${product.price}</p><br/>
       <Link href="/products">
-        Back to Shop Now
+        Back to product list
       </Link>
-        <button
-        onClick={() => dispatch(addToCart(product))}
-        className="add-to-cart"
-      >
-        Add to Bag
-      </button>
+  
     </div>
+    <br/> <hr/>
         <Newsletter />
     
     </main>
