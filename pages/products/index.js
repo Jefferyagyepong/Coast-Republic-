@@ -6,7 +6,6 @@ import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
-import Filter from "@/components/Products/Filter";
 
 
 export async function getStaticProps() {
@@ -27,9 +26,7 @@ const ProductList = ({ products }) => {
 
   return (
     <>
-      
           <Head>
-
         <title>Shop our products. </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
@@ -51,19 +48,24 @@ const ProductList = ({ products }) => {
         <link rel="icon" href="/" />
         <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"/>
       </Head>
-
-    
       <main>
-       <div className="sticky">
-       <Toast />
-       <Header />
-       <div>
-
-    
-      <h3>our collection</h3>
-      <Filter />
-
-    
+             <div className="sticky">
+          <Toast />
+          <Header />
+        </div>
+    <div>
+      <br/>
+      <em>
+           <h3>Whats new </h3><br/>
+          
+          <p>
+            Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one
+            place
+          </p>
+          
+          <hr/>
+        </em>
+      <br/>
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
@@ -72,16 +74,23 @@ const ProductList = ({ products }) => {
           src={product.image}
           height={100}
           width={90}
-         alt=" product"       
+         alt=" product"
+       
         />
-          <h4>{product.name}</h4>
+          <h4>{product.name}</h4><br/>
       
             </Link>
-         </span>          
+            </span>
+  
+          
         ))}
+      </div>
+    </div>
     </main>
     </>
   );
 };
 
 export default ProductList;
+
+
