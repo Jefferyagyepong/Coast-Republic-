@@ -3,7 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .header-inline{
@@ -26,8 +25,7 @@ header {
   padding: 12px 18px;
   background-color: snow;
   opacity: 1;
-
-  h2 {
+   h2 {
     font-family: 'Milkshake', cursive;
     opacity: 1;
   }
@@ -44,7 +42,6 @@ header {
 .masking-container {
   background-color: #808080;
 }
-
 
 .masked-text {
   font-size: 1rem;
@@ -135,7 +132,6 @@ header {
 .menu>li {
   margin: 0 1rem;
   overflow: hidden;
-
 }
 
 .menu-button-container {
@@ -148,7 +144,6 @@ header {
   align-items: center;
   background-color: tomato;
   align-items: center; 
-
 }
 
 #menu-toggle {
@@ -170,9 +165,9 @@ header {
 .navbar .nav-container a:hover {
   font-weight: bolder;
 }
+  
 .navbar .nav-container a:hover{
     font-weight: bolder;
-
 }
 
 .nav-container {
@@ -269,8 +264,7 @@ header {
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     background-color: whitesmoke;
-
-  }
+}
 
 .navbar .menu-items {
   padding-top: 120px;
