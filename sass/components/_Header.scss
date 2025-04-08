@@ -55,27 +55,6 @@ header {
   animation: animate-background 5s infinite alternate linear;
 }
 
-@keyframes animate-background {
-  0% {
-    background-position: 0 50%;
-  }
-
-  100% {
-    background-position: 100% 50%;
-}
-.fade-in {
-  animation: fadeIn 1.5s ease-in;
-}
-
-@keyframes fadeIn {
-  0% { 
-    opacity: 0; 
-  }
-  100% { 
-    opacity: 1;
-
-  }
-}
 
 .inline {
   display: flex;
@@ -331,5 +310,5 @@ header {
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
-}
+  }
 
