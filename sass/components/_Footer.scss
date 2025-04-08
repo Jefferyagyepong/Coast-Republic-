@@ -4,8 +4,7 @@
   flex-direction: row;
   align-items: left;
   justify-content: flex-start;
-
-  img {
+img {
     justify-content: flex-start;
   }
 }
@@ -80,7 +79,6 @@
 }
 
 .payment-container {
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -94,7 +92,6 @@
 .social-links li {
   display: inline;
   margin-right: 10px;
-
 }
 
 .footer-bottom {
@@ -118,4 +115,3 @@
     margin: 0 auto;
   }
 
-}
