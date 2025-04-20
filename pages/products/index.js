@@ -26,13 +26,7 @@ const ProductList = ({ products }) => {
 
   return (
     <>
-<<<<<<< HEAD
-
           <Head>
-
-=======
-          <Head>
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
         <title>Shop our products. </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />

@@ -1,23 +1,12 @@
-<<<<<<< HEAD
-import Toast from "@/components/Head/Toast";
-=======
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
-<<<<<<< HEAD
-import React from "react";
-import Link from "next/link";
-import fs from "fs";
-import path from "path";
-=======
 import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -66,11 +55,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-<<<<<<< HEAD
-  const dispatch = useDispatch();
-=======
    
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
   return (
     <>
       <Head>
@@ -120,22 +105,6 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
-<<<<<<< HEAD
-        </div>
-        <br />
-        <div>
-          <h1>{product.name}</h1>
-          <p>{product.description}</p>
-          <p>Price: ${product.price}</p>
-          <Link href="/products">Back to Shop Now</Link>
-          <button
-            onClick={() => dispatch(addToCart(product))}
-            className="add-to-cart"
-          >
-            Add to Bag
-          </button>
-        </div>
-=======
         </div><br/> <hr/>
     <div className="ibrid-box">
                      <Image
@@ -154,7 +123,6 @@ const ProductPage = ({ product }) => {
   
     </div>
     <br/> <hr/>
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
         <Newsletter />
       </main>
     </>

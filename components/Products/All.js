@@ -1,6 +1,4 @@
 
-<<<<<<< HEAD
-=======
 import { useState } from 'react';
 import Image from "next/image";
   
@@ -48,4 +46,3 @@ function All ({ slides }) {
 }
 export default All;
 
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf

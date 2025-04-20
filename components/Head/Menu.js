@@ -1,10 +1,6 @@
 import Link from "next/link";
 function Menu() {
   return (
-<<<<<<< HEAD
-=======
-
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
 <>
  <nav className="nav-box">
       <div className="navbar">
@@ -27,10 +23,6 @@ function Menu() {
       </div>
     </nav>
     </>
-<<<<<<< HEAD
-=======
-
->>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
   );
 }
 export default Menu;
