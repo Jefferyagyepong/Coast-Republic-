@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // components/ImageCarousel.js
 import { useState } from 'react';
 import Image from "next/image";
@@ -52,4 +50,3 @@ const ImageCarousel = ({ images }) => {
 };
 
 export default ImageCarousel;
->>>>>>> 5386b7c8794cd13b1b32d8f725eef20da21100e7

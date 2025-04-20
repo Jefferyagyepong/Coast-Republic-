@@ -11,7 +11,7 @@ function Header() {
             <Menu />
       
        <Link href={"./"}>
-          <h5>Coast Republic</h5>
+          <h4>Coast Republic</h4>
         </Link>
     
          <CartBasket />

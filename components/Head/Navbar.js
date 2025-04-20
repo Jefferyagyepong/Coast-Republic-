@@ -13,10 +13,14 @@ const Navbar = () => {
 
   return (
     <div className="basket-div">
+      <Link href="#">
+        <Image src={"/person.svg"} width={35} height={30} alt="logo" />
+      </Link>
+
       <Link href="/cart">
         <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
       </Link>
-      {getItemsCount()}
+      <div className="count">{getItemsCount()}</div>
     </div>
   );
 };
