@@ -6,7 +6,6 @@ import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
-import Filter from "@/components/Products/Filter";
 
 
 export async function getStaticProps() {
@@ -27,9 +26,13 @@ const ProductList = ({ products }) => {
 
   return (
     <>
+<<<<<<< HEAD
 
           <Head>
 
+=======
+          <Head>
+>>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
         <title>Shop our products. </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
@@ -57,10 +60,18 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
     <div>
-          <h3>our collection</h3><br/>
-      <Filter />
       <br/>
-  
+      <em>
+           <h3>Whats new </h3><br/>
+          
+          <p>
+            Tens of COAST REPUBLIC&apos;s latest arrivals and drops all in one
+            place
+          </p>
+          
+          <hr/>
+        </em>
+      <br/>
       <div className= "product-card">
         {products.map((product) => (              
           <span key={product.slug}>
@@ -87,3 +98,5 @@ const ProductList = ({ products }) => {
 };
 
 export default ProductList;
+
+

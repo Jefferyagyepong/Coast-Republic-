@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 import Toast from "@/components/Head/Toast";
+=======
+>>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
 import Header from "@/components/Head/Header";
+import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import Head from "next/head";
+<<<<<<< HEAD
 import React from "react";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+=======
+import React from 'react';
+import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
+import Image from 'next/image';
+>>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
 
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/cart.slice";
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -56,7 +66,11 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
+<<<<<<< HEAD
   const dispatch = useDispatch();
+=======
+   
+>>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
   return (
     <>
       <Head>
@@ -106,6 +120,7 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
+<<<<<<< HEAD
         </div>
         <br />
         <div>
@@ -120,6 +135,26 @@ const ProductPage = ({ product }) => {
             Add to Bag
           </button>
         </div>
+=======
+        </div><br/> <hr/>
+    <div className="ibrid-box">
+                     <Image
+          src={product.image}
+          height={400}
+          width={400}
+          alt=" product"
+       
+        /><br/>
+      <h4>{product.name}</h4><br/>
+      <p>{product.description}</p><br/>
+      <p>Price: ${product.price}</p><br/>
+      <Link href="/products">
+        Back to product list
+      </Link>
+  
+    </div>
+    <br/> <hr/>
+>>>>>>> a01e40f9996636cd88a38fa75f5b874fe72ec0cf
         <Newsletter />
       </main>
     </>

@@ -1,5 +1,4 @@
 
-
 .container {
 width:100%;
 margin-top:20px;
@@ -12,6 +11,7 @@ top:0;
 position:sticky;
 z-index:999;
 }
+
 .head{
 margin-top: 20px;
   width: 100%;
@@ -19,12 +19,13 @@ margin-top: 20px;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px;  
 }
+
 .buttons{
 max-width:50px;
 }
+
 .body{
 margin-top: 20px;
   width: 100%;
@@ -33,9 +34,8 @@ margin-top: 20px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
- 
-
 }
+
 .buttons-cart{
   color: white;
   padding: 8px 12px;
@@ -43,27 +43,28 @@ margin-top: 20px;
   margin: 7px;
 }
 
+
 @media (max-width: 700px) {
+  
   .head {
          display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
-           margin:0 auto;
+           margin:0 auto;  
+         }
   
-    }
         .body {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
         margin: 0 auto;
-
         }
+  
 .buttons {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           align-items: center;
           margin:0 auto;
-
-}
+         }
 
 }
