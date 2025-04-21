@@ -1,13 +1,15 @@
 
 .container {
-  max-width: calc(100% - 20px);
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 
 }
 
 .sticky{
-  max-width: calc(100% - 20px);
+   width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 top:0;
@@ -17,7 +19,8 @@ z-index:999;
 
 .head{
 margin-top: 20px;
-   max-width: calc(100% - 20px);
+   width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   display: grid;
@@ -33,7 +36,8 @@ max-width:50px;
 
 .body{
 margin-top: 20px;
-   max-width: calc(100% - 20px);
+    width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   display: grid;
