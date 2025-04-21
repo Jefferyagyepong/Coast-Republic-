@@ -1,6 +1,6 @@
 .ibrid-flex {
-  display: flex;
-  max-width: calc(100% - 20px);
+  width: 1200px;
+  max-width: 100%;
   padding: 0 10px;
   flex-direction: row;
   align-items: left;
@@ -38,7 +38,8 @@ footer .container .footer-section ul {
 }
 
 .footer {
-   max-width: calc(100% - 20px);
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 
@@ -121,7 +122,8 @@ footer .container .footer-section ul {
 
 
 .footer-align-left {
- max-width: calc(100% - 20px);
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   text-align: left;
