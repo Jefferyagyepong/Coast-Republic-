@@ -1,5 +1,6 @@
 .inline {
-  width: 100%;
+   width: 1200px;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,12 +17,14 @@
   border-radius: 2px;
 }
 .product-container{
-  width: 100%;
+   width: 1200px;
+  max-width: 100%;
   padding: 10px 16px;
 }
 
 .product-card {
-  width: 100%;
+   width: 1200px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -50,7 +53,8 @@
 }
 
 .jean-bg {
-  width: 100%;
+ width: 1200px;
+  max-width: 100%;
 
   a {
     text-decoration: underline;
@@ -59,7 +63,8 @@
 }
 
 .sale-box {
-  width: 100%;
+   width: 1200px;
+  max-width: 100%;
   background: #800000;
   color: #fff;
 
