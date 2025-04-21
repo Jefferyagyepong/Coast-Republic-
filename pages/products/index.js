@@ -77,13 +77,16 @@ const ProductList = ({ products }) => {
           <div className="product-card">
             {products.map(product => (
               <span key={product.slug}>
-                <Link href={`/products/${product.slug}`}>
-                  <Image
+                <div>
+                 <Image
                     src={product.image}
                     height={100}
-                    width={90}
+                    width={190}
                     alt=" product"
                   />
+                  </div>
+                <Link href={`/products/${product.slug}`}>
+           
                   <h4>{product.name}</h4><br/>
                   <h5>{ product.price}</h5>
                   <br />
