@@ -60,7 +60,11 @@
 
 .sale-box {
    width: 1200px;
-  max-width: 100%;
+display:flex;
+flex-direction: column;
+align-items: center;
+gap: 1.6rem;
+  max-width: 90%;
   background: #800000;
   color: #fff;
 
