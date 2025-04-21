@@ -1,14 +1,15 @@
 
 .container {
- width: 1200px;
-  max-width: 100%;
-margin-top:20px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
 
 }
 
 .sticky{
- width: 1200px;
-  max-width: 100%;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
 top:0;
 position:sticky;
 z-index:999;
@@ -16,8 +17,9 @@ z-index:999;
 
 .head{
 margin-top: 20px;
-   width: 1200px;
-  max-width: 100%;
+   max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
@@ -31,8 +33,9 @@ max-width:50px;
 
 .body{
 margin-top: 20px;
-    width: 1200px;
-  max-width: 100%;
+   max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
