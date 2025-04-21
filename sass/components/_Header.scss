@@ -64,6 +64,7 @@ header {
 animation-name: example;
 animation-duration: 10s;
 animation-delay: 20s;
+  animation-iteration-count: infinite;
 
   h6 {
     font-size: 16px;
