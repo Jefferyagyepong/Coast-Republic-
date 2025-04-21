@@ -26,7 +26,7 @@
 
 html {
 
-  font-size: 95.5%;
+  font-size: 90.5%;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   width: 100%;
@@ -34,7 +34,7 @@ html {
 
 a {
   text-decoration: none;
-
+list-style: none;
 }
 
 img {
@@ -93,4 +93,12 @@ button:hover {
 
 footer {
   margin-top: auto;
+}
+ul{
+  list-style: none;
+  padding: auto;
+}
+li{
+  text-decoration: none;
+  
 }

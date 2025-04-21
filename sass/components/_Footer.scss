@@ -4,17 +4,14 @@
   flex-direction: row;
   align-items: left;
   justify-content: flex-start;
-img {
+
+  img {
     justify-content: flex-start;
   }
 }
 
-.payment-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+.footer-link {
+  text-decoration: none;
 }
 
 
@@ -22,6 +19,10 @@ img {
   width: auto;
   height: auto;
   border-radius: 2px;
+}
+
+footer .container .footer-section ul {
+  text-decoration: none;
 }
 
 .button-submit {
@@ -37,8 +38,8 @@ img {
 
 .footer {
   width: 100%;
-  background: #222;
-  color: #fff;
+
+  color: #000;
   padding: 10px 20px;
   text-align: center;
 
@@ -53,36 +54,50 @@ img {
 
 .footer-section {
   max-width: 200px;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+
 
 }
 
 .footer-section h4 {
   margin-bottom: 10px;
   font-size: 16px;
+  color: #222;
+  font-weight: 700;
 }
 
 .footer-section ul {
-  color: #fff;
+
   list-style: none;
   padding: 0;
+  text-decoration: none;
+
 }
 
 .footer-section ul li {
-  margin: 5px 0;
+  text-decoration: none;
+  margin: 14px 0;
+
+
 }
 
 .footer-section ul li a {
-  color: #fff;
-  text-decoration: none;
+  color: #333;
+  font-weight: 300;
   font-size: 14px;
+
+
 }
 
 .payment-container {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 .footer-section ul li a:hover {
@@ -115,4 +130,3 @@ img {
     margin: 0 auto;
   }
 }
-

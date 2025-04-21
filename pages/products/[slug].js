@@ -7,6 +7,8 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/cart.slice";
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -55,6 +57,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
+  const dispatch = useDispatch();
    
   return (
     <>
@@ -105,24 +108,24 @@ const ProductPage = ({ product }) => {
         <div className="sticky">
           <Toast />
           <Header />
-        </div><br/> <hr/>
-    <div className="ibrid-box">
-                     <Image
-          src={product.image}
-          height={400}
-          width={400}
-          alt=" product"
-       
-        /><br/>
-      <h4>{product.name}</h4><br/>
-      <p>{product.description}</p><br/>
-      <p>Price: ${product.price}</p><br/>
-      <Link href="/products">
-        Back to product list
-      </Link>
-  
-    </div>
-    <br/> <hr/>
+        </div>
+        <br /> <hr />
+        <div className="ibrid-box">
+          <Image src={product.image} height={400} width={400} alt=" product" />
+          <br />
+          <h4>{product.name}</h4>
+          <br />
+          <p>{product.description}</p>
+          <br />
+          <p>Price: ${product.price}</p>
+          <br />
+          <Link href="/products">Back to product list</Link>
+          <button onClick={() => dispatch(addToCart(product))}>
+            {" "}
+            Add to cart
+          </button>
+        </div>
+        <br /> <hr />
         <Newsletter />
       </main>
     </>
