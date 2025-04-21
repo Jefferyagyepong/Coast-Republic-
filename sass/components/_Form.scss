@@ -26,17 +26,14 @@ padding: 2px 4px;
 
 .inputGroup input,
 .inputGroup textarea {
+
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
-.inputGroup textarea {
-  height: 100px;
-  resize: none;
-}
+
 
 .button {
   background-color: #0070f3;
