@@ -77,7 +77,7 @@ function Show() {
       </b>{" "}
       <br /> <br /> <br />
       <p>
-        EXTRA 15% OFF SELECTED SALE ITEMS APPLY CODE FLASHI5 AT CHECKOUT
+        EXTRA 15% OFF SELECTED SALE ITEMS APPLY CODE COASTI5 AT CHECKOUT
       </p>{" "}
       <br /> <br />
       <Link href={"/products"}>Shop now</Link>
