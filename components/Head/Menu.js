@@ -1,5 +1,5 @@
 // components/HamburgerMenu.jsx
-
+import Link from 'next/link';
 
 export default function HamburgerMenu() {
   return (
