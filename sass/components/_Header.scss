@@ -1,4 +1,73 @@
+//hamburger menu
 
+
+/* components/HamburgerMenu.module.css */
+.nav {
+  position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 20px;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.checkbox:checked + .label .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.checkbox:checked + .label .line:nth-child(2) {
+  opacity: 0;
+}
+
+.checkbox:checked + .label .line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  width: 200px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox:checked ~ .menu {
+  transform: translateX(0);
+}
+
+.link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.link:hover {
+  background: #f0f0f0;
+}
 @keyframes example {
   0%   {background-color: red;color:snow;}
   25%  {background-color: yellow;color:black;}
