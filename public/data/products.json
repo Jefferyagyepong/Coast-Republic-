@@ -2,7 +2,7 @@
 {
     "slug": "Air Force 1 07 black",
     "name": "Air Force 1 07 black",
-    "description": "This is a great product",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 19.99,
     "_id": 1,
     "image": "/products/force1a.JPG",
@@ -11,7 +11,7 @@
   {
     "slug": "Reebok classics",
     "name": "Reebok classics",
-    "description": "This is a great product",
+    "description":"Lorem ipsum dalot gunt Dreh",
     "price": 19.99,
     "_id": 2,
     "image": "/products/reebook1c.JPG",
@@ -20,7 +20,7 @@
   {
     "slug": "Air Force 1 07 high black",
     "name": "Air Force 1 07 high black",
-    "description": "This is a great product",
+    "description":"Lorem ipsum dalot gunt Dreh",
     "_id": 3,
     "image": "/products/force3a.JPG",
     "price": 130.00,
@@ -29,7 +29,7 @@
   {
     "slug": " Adidas Campus",
     "name": " Adidas Campus",
-    "description": "This is a great product.",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "_id": 4,
     "image": "/products/campus1a.JPG",
     "price": 85.00,
@@ -38,7 +38,7 @@
   {
     "slug": "Converse Chuck Taylor",
     "name": "Converse Chuck Taylor",
-    "description": "This is a great product.",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "_id": 5,
     "image": "/products/chuck1a.JPG",
     "price": 75.00,
@@ -47,7 +47,7 @@
   {
     "slug": "Timberland Boots",
     "name": "Timberland Boots",
-    "description": "This is a great product.",
+    "description":"Lorem ipsum dalot gunt Dreh",
     "_id": 6,
     "image": "/products/tims1a.JPG",
     "price": 75.00,
@@ -56,7 +56,7 @@
   {
     "slug": "vans",
     "name": "vans",
-    "description": "This is a great product.",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "_id": 7,
     "image": "/products/vans1a.WEBP",
     "price": 80.00,
@@ -65,7 +65,7 @@
   {
     "slug": "Reebok",
     "name": "Reebok",
-    "description": "This is a great product",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "_id": 8,
     "image": "/products/reebook1b.WEBP",
     "price": 120.00,
