@@ -17,6 +17,7 @@ export default function Carousel({ images }) {
           margin: 0 auto;
           overflow: hidden;
           position: relative;
+          padding:20px 30px;
         }
 
         .carousel-inner {
