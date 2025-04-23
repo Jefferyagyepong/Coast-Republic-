@@ -87,7 +87,7 @@ const ProductList = ({ products }) => {
                   </div>
                 <Link href={`/products/${product.slug}`}>
            
-                  <h4>{product.name}</h4><br/>
+                  <h4>{product.name}</h4>
                   <h5>{ product.price}</h5>
                   
                 </Link>
