@@ -9,7 +9,7 @@ import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
-import Back from "@/components/Forms/Back";
+import BackTo from "@/components/Products/BackTo";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -103,7 +103,7 @@ const ProductList = ({ products }) => {
         </div>
         <br/>
         <hr/>
-        <Back />
+        <BackTo />
         <br/>
         <hr/>
         <Newsletter />
