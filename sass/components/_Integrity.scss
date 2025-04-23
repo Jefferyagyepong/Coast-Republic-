@@ -18,15 +18,15 @@
 }
 .product-container{
    width:100%;
-  padding: 10px 14px;
+  padding: 20px 30px;
 }
 
 .product-card {
-  padding: 8px 1px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   align-items: flex-start;
+  text-align: start;
   justify-content: space-between;
  
 }
