@@ -1,7 +1,6 @@
 .ibrid-flex {
-  width: 1200px;
-  max-width: 100%;
-  padding: 0 10px;
+width:100;
+padding:10px 14px;
   flex-direction: row;
   align-items: left;
   justify-content: flex-start;
@@ -38,23 +37,16 @@ footer .container .footer-section ul {
 }
 
 .footer {
-  width: 1200px;
-  max-width: 100%;
+ width:100%;
   margin: 0 auto;
-  padding: 0 10px;
-
+padding:10px 14px;
   color: #000;
 
   text-align: center;
 
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
+
 
 .footer-section {
   max-width: 200px;
@@ -122,10 +114,9 @@ footer .container .footer-section ul {
 
 
 .footer-align-left {
-  width: 1200px;
-  max-width: 100%;
+ width:100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 10px 14px;
   text-align: left;
   display: flex;
   justify-content: center;
