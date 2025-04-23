@@ -5,13 +5,15 @@ import Image from "next/image";
 function Header() {
   return (
     <>
-        <header>       
-        <Menu />
-        <Link href={"./"}>
-        <h4 className="logoName">Coast Republic</h4>
-        </Link>
-        <CartBasket />
-      </header>
+           <header>       
+            <div>                
+            <Menu />
+            <Link href={"./"}>
+            <h4 className="logoName">Coast Republic</h4>
+            </Link>
+            </div>  
+            <CartBasket />
+            </header>
     </>
   );
 }
