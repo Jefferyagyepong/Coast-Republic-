@@ -31,7 +31,9 @@ width:100%;
   }
 }
 
-
+.logoName{
+color:Snow;
+}
 /* components/HamburgerMenu.module.css */
 .nav {
   position: relative;
@@ -56,6 +58,12 @@ width:100%;
   height: 3px;
   background: #000;
   transition: all 0.3s ease;
+}
+.line2{
+width:55%;
+}
+.line3{
+width:22%;
 }
 
 .checkbox:checked + .label .line:nth-child(1) {
