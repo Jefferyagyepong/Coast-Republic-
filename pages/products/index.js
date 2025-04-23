@@ -1,4 +1,5 @@
 import Header from "@/components/Head/Header";
+import Footer from "@/components/Foot/Footer";
 import Toast from "@/components/Head/Toast";
 import React from "react";
 import Link from "next/link";
@@ -95,6 +96,7 @@ const ProductList = ({ products }) => {
             ))}
           </div>
         </div>
+        <Footer />
       </main>
     </>
   );
