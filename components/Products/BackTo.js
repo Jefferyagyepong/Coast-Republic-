@@ -33,10 +33,8 @@ export default function BackToTop() {
         <button
           onClick={scrollToTop}
           style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '20px',
-            padding: '10px 15px',
+         
+            
             backgroundColor: '#0070f3',
             color: '#fff',
             border: 'none',
