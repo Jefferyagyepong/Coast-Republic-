@@ -13,7 +13,7 @@ width:100%;
 
 .text-change::before {
   content: "First";
-  animation: changeText 6s infinite;
+  animation: changeText 16s infinite;
 }
 
 @keyframes changeText {
