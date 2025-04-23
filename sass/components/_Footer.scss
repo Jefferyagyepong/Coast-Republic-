@@ -1,9 +1,9 @@
 .ibrid-flex {
-width:100%;
-padding:10px 14px;
-  flex-direction: row;
-  align-items: left;
-  justify-content: flex-start;
+    width:100%;
+    padding:10px 14px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: flex-start;
 
   img {
     justify-content: flex-start;
@@ -11,39 +11,40 @@ padding:10px 14px;
 }
 
 .footer-link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
 .payment-logo {
-  width: auto;
-  height: auto;
-  border-radius: 2px;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
 }
 
 footer .container .footer-section ul {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .button-submit {
-  border: none;
-  text-align: center;
-  width: 66%;
+    border: none;
+    text-align: center;
+    width: 66%;
 
 }
 
 .button-submit:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .footer {
-   width:100%;
-   margin: 0 auto;
-   padding:10px 14px;
-   display:flex;
-   flex-direction:column;
-   color: #000;
-   text-align: center;
+    width:100%;
+    margin: 0 auto;
+    padding:10px 14px;
+    display:flex;
+    flex-direction:column;
+justify-content: start;
+    color: #000;
+    text-align: center;
 }
 
 
