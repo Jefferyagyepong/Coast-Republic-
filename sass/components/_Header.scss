@@ -3,9 +3,7 @@
   font-size: 14px;
   position: relative;
   min-height: 30px;
-
-width:100%;
-
+  width:100%;
   background-color: gold;
   padding: 10px 13px;
 
@@ -14,6 +12,7 @@ width:100%;
 .text-change::before {
   content: "First";
   animation: changeText 16s infinite;
+animation-delay:10s ease;
 }
 
 @keyframes changeText {
