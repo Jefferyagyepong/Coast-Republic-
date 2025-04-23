@@ -9,7 +9,7 @@ import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
-import Back from "@/components/Form/Back";
+import Back from "@/components/Forms/Back";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
