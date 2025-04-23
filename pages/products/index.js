@@ -91,7 +91,7 @@ const ProductList = ({ products }) => {
                   <h4>{product.name}</h4>
                   <p>{product.description}</p>
                   <p>{product.description}</p><br/>
-                  <h5> GH₵ { product.price}</h5>
+                  <h5> GH₵ { product.price}</h5><br/>
                   
                 </Link>
               </span>
