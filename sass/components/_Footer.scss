@@ -1,5 +1,5 @@
 .ibrid-flex {
-width:100;
+width:100%;
 padding:10px 14px;
   flex-direction: row;
   align-items: left;
@@ -37,63 +37,53 @@ footer .container .footer-section ul {
 }
 
 .footer {
- width:100%;
-  margin: 0 auto;
-padding:10px 14px;
-  color: #000;
-
-  text-align: center;
-
+   width:100%;
+   margin: 0 auto;
+   padding:10px 14px;
+   display:flex;
+   flex-direction:column;
+   color: #000;
+   text-align: center;
 }
-
 
 
 .footer-section {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-
-
-
+   max-width: 200px;
+   display: flex;
+   flex-direction: column;
 }
 
 .footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #222;
-  font-weight: 700;
+   margin-bottom: 10px;
+   font-size: 16px;
+   color: #222;
+   font-weight: 700;
 }
 
 .footer-section ul {
-
-  list-style: none;
-  padding: 0;
-  text-decoration: none;
-
+   list-style: none;
+   padding: 0;
+   text-decoration: none;
 }
 
 .footer-section ul li {
-  text-decoration: none;
-  margin: 14px 0;
-
-
+   text-decoration: none;
+   margin: 14px 0;
 }
 
 .footer-section ul li a {
-  color: #333;
-  font-weight: 300;
-  font-size: 14px;
-
-
+   color: #333;
+   font-weight: 300;
+   font-size: 14px;
 }
 
 .payment-container {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+   margin-top: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
 }
 
 .footer-section ul li a:hover {
