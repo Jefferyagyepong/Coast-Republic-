@@ -104,7 +104,7 @@ const ProductList = ({ products }) => {
         <br/>
         <hr/>
         <Back />
-        <Br/>
+        <br/>
         <hr/>
         <Newsletter />
         <Footer />
