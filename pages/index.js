@@ -9,7 +9,7 @@ import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
-import Carousel from '@/components/Products/Carousel';
+
 
 import All from '@/components/Products/All';
                                 
