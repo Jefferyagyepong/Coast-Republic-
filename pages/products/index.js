@@ -9,6 +9,8 @@ import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
+import Back from "@/components/Form/Back";
+
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
   const filePath = path.join(process.cwd(), "public", "data", "products.json");
@@ -99,6 +101,11 @@ const ProductList = ({ products }) => {
             ))}
           </div>
         </div>
+        <br/>
+        <hr/>
+        <Back />
+        <Br/>
+        <hr/>
         <Newsletter />
         <Footer />
       </main>
