@@ -1,52 +1,58 @@
-// components/ImageCarousel.js
-import { useState } from 'react';
-import Image from "next/image";
-
-
-const ImageCarousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
+// components/Carousel.js
+export default function Carousel({ images }) {
   return (
-    <div className="carousel-container">
-      <button className="carousel-button prev" onClick={prevSlide}>
-        &#10094;
-      </button>
-      
-      <div className="carousel-slide">
-        <Image
-          src={images[currentIndex]} 
-          alt={`Slide ${currentIndex + 1}`}
-          className="carousel-image"
-        />
-      </div>
-      
-      <button className="carousel-button next" onClick={nextSlide}>
-        &#10095;
-      </button>
-
-      <div className="carousel-dots">
-        {images.map((_, index) => (
-          <span 
-            key={index}
-            className={`dot ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => setCurrentIndex(index)}
-          />
+    <div className="carousel">
+      <div className="carousel-inner">
+        {images.map((src, index) => (
+          <div key={index} className="carousel-item">
+            <img src={src} alt={`Slide ${index + 1}`} />
+          </div>
         ))}
       </div>
+
+      <style jsx>{`
+        .carousel {
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .carousel-inner {
+          display: flex;
+          width: ${images.length * 100}%;
+          animation: slide ${images.length * 5}s infinite;
+        }
+
+        .carousel-item {
+          flex: 0 0 ${100 / images.length}%;
+          width: ${100 / images.length}%;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          display: block;
+        }
+
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+          ${images.map(
+            (_, index) => `
+              ${(index + 1) * (100 / images.length)}% {
+                transform: translateX(-${(index + 1) * (100 / images.length)}%);
+              }
+            `
+          ).join('')}
+          100% {
+            transform: translateX(-${100 * images.length}%);
+          }
+        }
+      `}</style>
     </div>
   );
-};
-
-export default ImageCarousel;
+}
