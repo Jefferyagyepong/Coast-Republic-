@@ -98,6 +98,7 @@ const ProductList = ({ products }) => {
             ))}
           </div>
         </div>
+        <Newsletter />
         <Footer />
       </main>
     </>
