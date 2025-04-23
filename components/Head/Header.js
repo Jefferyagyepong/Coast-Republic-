@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
            <header>       
-            <div>                
+            <div className="header-inline">                
             <Menu />
             <Link href={"./"}>
             <h4 className="logoName">Coast Republic</h4>
