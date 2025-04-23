@@ -80,8 +80,8 @@ const ProductList = ({ products }) => {
                 <div>
                  <Image
                     src={product.image}
-                    height={100}
-                    width={190}
+                    height={150}
+                    width={210}
                     alt=" product"
                   />
                   </div>
@@ -89,7 +89,7 @@ const ProductList = ({ products }) => {
            
                   <h4>{product.name}</h4><br/>
                   <h5>{ product.price}</h5>
-                  <br />
+                  
                 </Link>
               </span>
             ))}
