@@ -1,4 +1,29 @@
 //hamburger menu
+.text-change {
+  font-size: 24px;
+  position: relative;
+  min-height: 30px; /* Prevent layout shift */
+}
+
+.text-change::before {
+  content: "First";
+  animation: changeText 6s infinite;
+}
+
+@keyframes changeText {
+  0%, 25% {
+    content: "Welcome to Our Store";
+  }
+  25%, 50% {
+    content: "We deliver across West Africa 🇬🇭🇳🇬🇨🇮";
+  }
+  50%, 75% {
+    content: "EVERYTHING TEE";
+  }
+  75%, 100% {
+    content: "Subscribe to our Newsletter";
+  }
+}
 
 
 /* components/HamburgerMenu.module.css */
