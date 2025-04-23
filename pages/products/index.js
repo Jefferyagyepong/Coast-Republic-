@@ -103,7 +103,10 @@ const ProductList = ({ products }) => {
         </div>
         <br/>
         <hr/>
+        <br/>
         <BackTo />
+          
+        <br/>
         <br/>
         <hr/>
         <Newsletter />
