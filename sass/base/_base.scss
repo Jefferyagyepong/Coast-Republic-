@@ -1,35 +1,36 @@
+html {
+  overflow-y: scroll; /* Always show scrollbar to avoid width changes */
+    font-size: 90.5%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+scrollbar-width: thin; /* Firefox: Thin scrollbar */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-::-webkit-scrollbar {
-  height: 6px;
-  width: 4px;
-  scroll-behavior: smooth;
-
-}
-
-::-webkit-scrollbar-track {
-  scroll-behavior: smooth;
-  border-radius: 0;
-
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0;
-
-}
-
-html {
-
-  font-size: 90.5%;
-  scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
-  width: 100%;
 }
 
 a {
