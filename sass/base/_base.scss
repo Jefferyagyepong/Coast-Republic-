@@ -20,7 +20,19 @@ scrollbar-width: thin; /* Firefox: Thin scrollbar */
 
 
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  background-color: #FAF9F6;
+  min-height: 100vh;
+}
 
+.nav-container,
+.nav-menu {
+  max-width: 100%;
+  width: 100%;
+}
 
 
 
@@ -48,25 +60,6 @@ img {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-}
-
-
-
-
-body,
-html {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  min-height: 100vh;
-  text-rendering: optimizeLegibility;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Oswald', sans-serif;
-  -webkit-font-smoothing: antialised;
-  -moz-font-smoothing: grayscale;
-  background-color: #FAF9F6;
 }
 
 button {
