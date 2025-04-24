@@ -30,8 +30,9 @@
 }
 
 .question {
-   width: 1200px;
-  max-width: 100%;
+   width:100%;
+display:flex;
+flex-direction:column;
   background: none;
   border: none;
   font-size: 18px;
