@@ -27,6 +27,12 @@ const HamburgerMenu = () => {
       </ul>
       
       <address>Dadiesoaba, Asafo </address>
+          <div className="footer-bottom">
+        <p>
+          © {new Date().getFullYear()} Coast Republic Store. All rights
+          reserved.
+        </p>
+      </div>
     </nav>
   );
 };
