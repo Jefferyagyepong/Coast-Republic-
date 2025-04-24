@@ -1,18 +1,12 @@
 function New() {
   return (
     <div className="ibrid-box">
-    
-      <em>
-        {" "}
-        <h3>WHATS NEW TODAY </h3>
-      </em>
-    
+
+        <h3>WHATS NEW TODAY </h3>    
       <b>
         {" "}
         <span>12</span>
       </b>
-
-
       <p>Discover what just landed at Coast Republic</p>
 
     </div>
