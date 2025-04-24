@@ -62,28 +62,7 @@ img {
   width: 100%;
 }
 
-button {
-  outline: 0 !important;
-  border: none;
-  text-align: center;
-  background-color: #0070f3;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
-  -webkit-appearance: button important;
-  -moz-appearance: button;
-  -o-appearance: button;
-  appearance: button;
 }
-
-
-button:hover {
-  opacity: 0.6;
-}
-
 
 footer {
   margin-top: auto;
