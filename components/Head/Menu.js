@@ -26,13 +26,7 @@ const HamburgerMenu = () => {
         <li><Link href="contact">CONTACT US</Link></li>
       </ul>
       
-      <address>Dadiesoaba, Asafo </address>
-          <div className="footer-bottom">
-        <p>
-          © {new Date().getFullYear()} Coast Republic Store. All rights
-          reserved.
-        </p>
-      </div>
+    
     </nav>
   );
 };
