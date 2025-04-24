@@ -1,23 +1,32 @@
-// components/HamburgerMenu.jsx
+// HamburgerMenu.jsx
+import React, { useState } from 'react';
 import Link from 'next/link';
-// components/HamburgerMenu.jsx
 
+const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default function HamburgerMenu() {
   return (
-    <nav className="nav">
-      <input type="checkbox" className= "checkbox" id="hamburger-toggle" />
-      <label htmlFor="hamburger-toggle" className="label">
-        <span className="line line1"></span>
-        <span className="line line2"></span>
-        <span className="line line3"></span>
+    <nav className="nav-container">
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        className="nav-toggle"
+        checked={isOpen}
+        onChange={() => setIsOpen(!isOpen)}
+      />
+      <label htmlFor="nav-toggle" className="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </label>
-      <ul className="menu">
-        <li><Link href="/" className="link">Home</Link></li>
-        <li><Link href="/about" className="link">About</Link></li>
-        <li><Link href="/services" className="link">Services</Link></li>
-        <li><Link href="/contact" className="link">Contact</Link></li>
+      <ul className="nav-menu">
+        <li><Linkhref="#home">Home</Link></li>
+        <li><Link href="#about">About</Link></li>
+        <li><Link href="#services">Services</Link></li>
+        <li><Link href="#contact">Contact</Link></li>
       </ul>
     </nav>
   );
-}
+};
+
+export default HamburgerMenu;
