@@ -13,8 +13,8 @@ function All() {
         height={800}
       />
       <h5>Sneakers: Designer pairs in our collection </h5>
-      <br />
-      <br />
+      
+      
       <Link href={"/products"}>Shop now</Link>
     </div>
   );
