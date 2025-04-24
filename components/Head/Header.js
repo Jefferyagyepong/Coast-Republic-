@@ -5,13 +5,11 @@ import Image from "next/image";
 function Header() {
   return (
     <>
-           <header>       
-            <div className="header-inline">                
+           <header>                           
             <Menu />
             <Link href={"./"}>
             <h4 className="logoName">Coast Republic</h4>
-            </Link>
-            </div>  
+            </Link>            
             <CartBasket />
             </header>
     </>
