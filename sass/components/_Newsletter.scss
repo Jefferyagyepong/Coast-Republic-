@@ -1,6 +1,5 @@
 .ibrid-box {
-     width: 1200px;
-  max-width: 100%;
+ width:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +7,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 20px 30px;
-  column-gap: 20px;
+
   justify-content: space-between;
           }
 
@@ -62,13 +61,7 @@ background-repeat: no-repeat;
     color: #fff;
 }
 
-.margin{
-margin-top: 1.4rem;
-}
 
-.margin {
-    margin-top: 1.4rem;
-}
 
 .black-bg{
     background-color: #000;
