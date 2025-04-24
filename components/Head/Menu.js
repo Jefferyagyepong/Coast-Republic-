@@ -20,10 +20,10 @@ const HamburgerMenu = () => {
         <span></span>
       </label>
       <ul className="nav-menu">
-        <li><Linkhref="#home">Home</Link></li>
-        <li><Link href="#about">About</Link></li>
-        <li><Link href="#services">Services</Link></li>
-        <li><Link href="#contact">Contact</Link></li>
+        <li><Link href="./">HOME</Link></li>
+        <li><Link href="/shop">SHOP NOW </Link></li>
+        <li><Link href="/delivery">DELIVERY INFOMATION</Link></li>
+        <li><Link href="contact">CONTACT US</Link></li>
       </ul>
     </nav>
   );
