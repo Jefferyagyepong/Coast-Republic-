@@ -110,18 +110,33 @@ const ProductPage = ({ product }) => {
           <Header />
         </div>
     
-        <div className="ibrid-box">
-          <div className="carousel-container">
-            
-                   <div className="carousel">
-               <Image src={product.image} height={400} width={400} alt=" product" />
-     <Image src={product.image} height={400} width={400} alt=" product" />
-     <Image src={product.image} height={400} width={400} alt=" product" />
-     <Image src={product.image} height={400} width={400} alt=" product" />
+   <div className="ibrid-box">        
+   <div class="slider">
   
-            </div>
-            </div>
-       
+  <Link href="#slide-1">1</Link>
+  <Link href="#slide-2">2</Link>
+  <Link href="#slide-3">3</Link>
+  <Link href="#slide-4">4</Link>
+  <Link href="#slide-5">5</Link>
+
+     <div class="slides">
+    <div id="slide-1">
+    <Image src={product.image} height={400} width={400} alt=" product" />      
+    </div>
+    <div id="slide-2">
+    <Image src={product.image} height={400} width={400} alt=" product" />       
+    </div>
+    <div id="slide-3">
+       <Image src={product.image} height={400} width={400} alt=" product" />         
+      </div>
+        <div id="slide-4">
+      <Image src={product.image} height={400} width={400} alt=" product" />       
+        </div>
+         <div id="slide-5">
+        <Image src={product.image} height={400} width={400} alt=" product" />         
+       </div>
+      </div>
+      </div>    
         <div className="align-left">
           
               <h4>{product.name}</h4>
@@ -152,3 +167,17 @@ const ProductPage = ({ product }) => {
 };
 
 export default ProductPage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
