@@ -1,5 +1,8 @@
 .align-left{
 text-align:start;
+display:flex;
+align-items: start;
+flex-direction:column;
 }
 
 .add-to-cart {
@@ -11,7 +14,7 @@ text-align:start;
      }
 
 .slider {
-  width: 600px;
+  width: 350px;
   text-align: center;
   overflow: hidden;
 padding:20px;
