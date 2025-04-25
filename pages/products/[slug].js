@@ -153,14 +153,14 @@ const ProductPage = ({ product }) => {
         </div>
         
         <Newsletter />
-        <footer className="fixed-links">
+  
           <button onClick={() => dispatch(addToCart(product))}>
             {" "}
             Add to cart
           </button>
           
           
-          </footer>
+          
       </main>
     </>
   );
