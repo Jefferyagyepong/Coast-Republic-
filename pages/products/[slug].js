@@ -144,13 +144,16 @@ const ProductPage = ({ product }) => {
           
    
         </div>
-          
-              <h4>{product.name}</h4>
+        <div className="newsletter-container"> 
+             <h4>{product.name}</h4>
           <p>{product.description}</p>
               <p>{product.description}</p>
             <p>{product.description}</p>
               <p>{product.description}</p>
           <p>Price: ${product.price}</p>
+          </div>
+          
+           
                     
         
         <Newsletter />
