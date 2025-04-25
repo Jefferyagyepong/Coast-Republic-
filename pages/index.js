@@ -82,6 +82,7 @@ const Home = () => {
         <Jeans />          
         <Carousel images={images} />
         <New />
+        
         <Link href="/products/" className="product-link">Shop Now</Link>                  
         <Collection />     
         <Newsletter />
