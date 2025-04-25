@@ -109,24 +109,43 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div>
-        <br /> <hr />
+    
         <div className="ibrid-box">
-          <Image src={product.image} height={400} width={400} alt=" product" />
-          <br />
-          <h4>{product.name}</h4>
-          <br />
+          <div className="carousel-container">
+            
+                   <div className="carousel">
+               <Image src={product.image} height={400} width={400} alt=" product" />
+     <Image src={product.image} height={400} width={400} alt=" product" />
+     <Image src={product.image} height={400} width={400} alt=" product" />
+     <Image src={product.image} height={400} width={400} alt=" product" />
+  
+            </div>
+            </div>
+       
+        <div className="align-left">
+          
+              <h4>{product.name}</h4>
           <p>{product.description}</p>
-          <br />
+              <p>{product.description}</p>
+            <p>{product.description}</p>
+              <p>{product.description}</p>
           <p>Price: ${product.price}</p>
-          <br />
-          <Link href="/products">Back to product list</Link>
+                    
+          </div>
+          
+          
+   
+        </div>
+        
+        <Newsletter />
+        <footer className="fixed-links">
           <button onClick={() => dispatch(addToCart(product))}>
             {" "}
             Add to cart
           </button>
-        </div>
-        <br /> <hr />
-        <Newsletter />
+          
+          
+          </footer>
       </main>
     </>
   );
