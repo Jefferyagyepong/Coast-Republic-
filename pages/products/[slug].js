@@ -137,7 +137,7 @@ const ProductPage = ({ product }) => {
        </div>
       </div>
       </div>    
-        <div className="align-left">
+        
           
               <h4>{product.name}</h4>
           <p>{product.description}</p>
@@ -146,7 +146,7 @@ const ProductPage = ({ product }) => {
               <p>{product.description}</p>
           <p>Price: ${product.price}</p>
                     
-          </div>
+          
           
           
    
