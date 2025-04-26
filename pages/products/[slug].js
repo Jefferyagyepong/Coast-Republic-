@@ -159,9 +159,10 @@ const ProductPage = ({ product }) => {
             {" "}
             ADD TO CART
           </button>
+          <hr/>
           
           <Link className="secondary-btn" href={"/cart"}>VIEW CART</Link>
-        
+          <hr/>
         <Newsletter />
   
           
