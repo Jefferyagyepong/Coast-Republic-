@@ -1,57 +1,44 @@
-.formContainer {
-  width: 1200px;
-  max-width: 100%;
-padding: 10px 14px;
-  background-color: gray;
-  border-radius:4px;
+/* app/components/OrderSummary.css */
+.order-summary {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-.form {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.order-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.order-items {
+  margin-bottom: 20px;
+}
+
+.order-item {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
 
-.inputGroup {
-  margin-bottom: 15px;
+.order-details {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
 
-.inputGroup label {
-  display: block;
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.order-detail.total {
   font-weight: bold;
-  margin-bottom: 5px;
-text-align:center;
-}
-
-.inputGroup input,
-.inputGroup textarea {
-
-   width: 1200px;
-  max-width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-outline:none;
-}
-
-
-
-.button {
-  background-color: #0070f3;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #005bb5;
+  font-size: 1.1rem;
 }
 
 
