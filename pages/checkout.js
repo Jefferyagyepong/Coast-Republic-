@@ -23,16 +23,7 @@ const checkout = () => {
     total: 86.38,
     };
   
-  
-  const cart = useSelector(state => state.cart);
-  const dispatch = useDispatch();
 
-  const getTotalPrice = () => {
-    return cart.reduce(
-      (accumulator, item) => accumulator + item.quantity * item.price,
-      0
-    );
-  };
 
 
 
