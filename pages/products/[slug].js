@@ -159,10 +159,10 @@ const ProductPage = ({ product }) => {
             {" "}
             ADD TO CART
           </button>
-          <hr/>
+          <br/>
           
           <Link  className="product-link" href={"/cart"}>VIEW CART</Link>
-          <hr/>
+          <br/>
         <Newsletter />
   
           
