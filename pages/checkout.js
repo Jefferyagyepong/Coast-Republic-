@@ -69,7 +69,7 @@ const checkout = () => {
       </Head>
       <Header />
       <h3>SECURE CHECKOUT</h3>
-    <OrderSummary
+    <OrderSum
         items={orderData.items}
         subtotal={orderData.subtotal}
         tax={orderData.tax}
