@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import Header from "@/components/Head/Header";
+import OrderSum from "@/components/Products/OrderSum";
 
 import Footer from "@/components/Footer/Footer";
 import PaystackPayment from "@/components/Products/PaystackPayment";
@@ -51,7 +53,9 @@ const checkout = () => {
         />
         <link rel="icon" href="" />
       </Head>
-      <h1>Welcome to Coast Republic Store</h1>
+      <Header />
+      <h3>SECURE CHECKOUT</h3>
+      <OrderSum />
       <PaystackPayment email={email} amount={amount} reference={reference} />
 
       <Footer />
