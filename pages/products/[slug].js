@@ -161,7 +161,7 @@ const ProductPage = ({ product }) => {
           </button>
           <hr/>
           
-          <Link className="secondary-btn" href={"/cart"}>VIEW CART</Link>
+          <Link  className="product-link" href={"/cart"}>VIEW CART</Link>
           <hr/>
         <Newsletter />
   
