@@ -156,13 +156,13 @@ const ProductPage = ({ product }) => {
            
                     
           <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>
-            {" "}
+          
             ADD TO CART
           </button>
-          <br/>
+          
           
           <Link  className="product-link" href={"/cart"}>VIEW CART</Link>
-          <br/>
+          
         <Newsletter />
   
           
