@@ -11,6 +11,19 @@ const checkout = () => {
   const amount = 1000;
   const reference = `ref_${new Date().getTime()}`;
 
+//order
+
+  const orderData = {
+    items: [
+      { name: 'Product 1', price: 29.99 },
+      { name: 'Product 2', price: 49.99 },
+    ],
+    subtotal: 79.98,
+    tax: 6.40,
+    total: 86.38,
+  
+
+
   return (
     <>
       <Head>
@@ -55,7 +68,13 @@ const checkout = () => {
       </Head>
       <Header />
       <h3>SECURE CHECKOUT</h3>
-      <OrderSum />
+    <OrderSummary
+        items={orderData.items}
+        subtotal={orderData.subtotal}
+        tax={orderData.tax}
+        total={orderData.total}
+        
+      />
       <PaystackPayment email={email} amount={amount} reference={reference} />
 
       <Footer />
@@ -64,3 +83,10 @@ const checkout = () => {
 };
 
 export default checkout;
+
+
+
+
+
+
+
