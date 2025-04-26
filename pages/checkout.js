@@ -21,6 +21,7 @@ const checkout = () => {
     subtotal: 79.98,
     tax: 6.40,
     total: 86.38,
+    };
   
 
 
