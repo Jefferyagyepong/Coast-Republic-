@@ -19,39 +19,16 @@ text-align:center;
 }
 .product-container{
    width:100%;
-    margin-top:1rem;
-    padding: 20px;
-
-display: flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-margin: 0 auto;
-
+   background: hsl(0%, 0%, 92%);
+   margin: 0 auto;
 }
 
 .product-card {
   display: grid;
-    width:100%;
+  width:100%;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
-  align-items: flex-start;
-  text-align: start;
-  justify-content: center;
-background: hsl(0%, 0%, 92%);
-    gap:1rem;
-    margin-top:1rem;
-
-img{
-marging:top 10px;
-margin-bottom: 10px;
-
-}
-a{
-color: #333;
-}
-
- 
+    
 }
 
 .shop-nows:hover {
@@ -62,13 +39,6 @@ color: #333;
   .product-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    align-items: flex-start;
-text-align:start;
-    justify-content: center;
-
-
-
   }
 
 }
