@@ -80,7 +80,7 @@ const CartPage = () => {
           {cart.length === 0 ? (
             <div>
               <h3>Your Cart is Empty!</h3>
-              <Link href={"/products"}>click here to sho now</Link>
+              <Link href={"/products"}>click here to shop now</Link>
             </div>
           ) : (
             <>
@@ -93,7 +93,7 @@ const CartPage = () => {
                 <div>Actions</div>
                 <div>Total Price</div>
               </div>
-              <hr />
+              
               {cart.map(item => (
                 // eslint-disable-next-line react/jsx-key
                 <div className={styles.body}>
@@ -139,18 +139,18 @@ const CartPage = () => {
               ))}
               <h2>Grand Total: $ {getTotalPrice()}</h2>
                   </div>
-  <OrderSum
-        items={orderData.items}
-        subtotal={orderData.subtotal}
-        tax={orderData.tax}
-        total={orderData.total}
-        />
+
             
                 </>
           )}
           
+          <OrderSum
+        items={orderData.items}
+        subtotal={orderData.subtotal}
+        tax={orderData.tax}
+        total={orderData.total}
         
-
+/>
         
       </main>
     </>
