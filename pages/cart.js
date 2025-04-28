@@ -80,7 +80,7 @@ const CartPage = () => {
           {cart.length === 0 ? (
             <div>
               <h3>Your Cart is Empty!</h3>
-              <Link href={"/products"}>click here to shop now</Link>
+              <Link href={"/products"}>click here to sho now</Link>
             </div>
           ) : (
             <>
@@ -93,7 +93,7 @@ const CartPage = () => {
                 <div>Actions</div>
                 <div>Total Price</div>
               </div>
-              
+              <hr />
               {cart.map(item => (
                 // eslint-disable-next-line react/jsx-key
                 <div className={styles.body}>
@@ -139,18 +139,18 @@ const CartPage = () => {
               ))}
               <h2>Grand Total: $ {getTotalPrice()}</h2>
                   </div>
-
-            
-                </>
-          )}
-          
-          <OrderSum
+  <OrderSum
         items={orderData.items}
         subtotal={orderData.subtotal}
         tax={orderData.tax}
         total={orderData.total}
+        />
+            
+                </>
+          )}
+          
         
-/>
+
         
       </main>
     </>
@@ -158,79 +158,3 @@ const CartPage = () => {
 };
 
 export default CartPage;
-// import { useSelector, useDispatch } from "react-redux";
-// import { removeFromCart, clearCart } from "../store/cartSlice";
-// import { useState } from "react";
-
-// export default function CartPage() {
-//   const dispatch = useDispatch();
-//   const { cartItems, totalQuantity, totalPrice } = useSelector(
-//     state => state.cart
-//   );
-//   const [form, setForm] = useState({ name: "", email: "", address: "" });
-
-//   const handleRemove = id => {
-//     dispatch(removeFromCart(id));
-//   };
-
-//   const handleCheckout = e => {
-//     e.preventDefault();
-
-//     if (!form.name || !form.email || !form.address) {
-//       alert("Please fill in all fields.");
-//       return;
-//     }
-
-//     console.log("Order Placed", { cartItems, form });
-
-//     dispatch(clearCart());
-//     alert("Order placed successfully!");
-//   };
-
-//   return (
-//     <div>
-//       <h1>Shopping Cart</h1>
-//       {cartItems.length === 0 ? (
-//         <p>Your cart is empty.</p>
-//       ) : (
-//         <div>
-//           <ul>
-//             {cartItems.map(item => (
-//               <li key={item.id}>
-//                 {item.name} - ${item.price} x {item.quantity}
-//                 <button onClick={() => handleRemove(item.id)}>Remove</button>
-//               </li>
-//             ))}
-//           </ul>
-//           <h3>Total Items: {totalQuantity}</h3>
-//           <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
-//           <button onClick={() => dispatch(clearCart())}>Clear Cart</button>
-//         </div>
-//       )}
-
-//       <h2>Checkout</h2>
-//       <form onSubmit={handleCheckout}>
-//         <input
-//           type="text"
-//           placeholder="Name"
-//           value={form.name}
-//           onChange={e => setForm({ ...form, name: e.target.value })}
-//         />
-//         <input
-//           type="email"
-//           placeholder="Email"
-//           value={form.email}
-//           onChange={e => setForm({ ...form, email: e.target.value })}
-//         />
-//         <input
-//           type="text"
-//           placeholder="Address"
-//           value={form.address}
-//           onChange={e => setForm({ ...form, address: e.target.value })}
-//         />
-//         <button type="submit">Place Order</button>
-//       </form>
-//     </div>
-//   );
-// }
-
