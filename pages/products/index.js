@@ -81,14 +81,14 @@ const ProductList = ({ products }) => {
           <div className="product-card">
             {products.map(product => (
               <span key={product.slug}>
-                <div>
+                
                  <Image
                     src={product.image}
                     height={150}
                     width={210}
                     alt=" product"
                   />
-                  </div>
+                
                 <Link href={`/products/${product.slug}`}>
            
                   <h4>{product.name}</h4>
