@@ -35,8 +35,10 @@ export default function BackToTop() {
           style={{
          
             
-            backgroundColor: '#0070f3',
+            backgroundColor: '#222',
             color: '#fff',
+            margin: 0 auto;
+            text-align:center;
             border: 'none',
             borderRadius: '5px',
             cursor: 'pointer',
