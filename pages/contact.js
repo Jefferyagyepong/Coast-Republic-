@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Header from "./@components/Head/Header";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,8 +14,9 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <Header />
     
-
     <div className="formContainer">
       <div>
         <h1>Contact Us</h1>
@@ -70,13 +71,16 @@ const Contact = () => {
         )}
 
         <div>
-          <h2>Our Contact Details</h2>
-          <p>📍 7 Minneti ST, Asokwa, ASK</p>
+          <h2>IN STORE WAREHOUSE </h2>
+          <p>📍 7 Asafo Dadiesoaba</p>
           <p>📞 +233 200-0000</p>
           <p>✉️ support@coastrepublic.com</p>
         </div>
       </div>
     </div>
+    </>
+    
+
   );
 };
 
