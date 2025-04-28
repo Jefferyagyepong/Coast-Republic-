@@ -71,7 +71,7 @@ const checkout = () => {
         <link rel="icon" href="" />
       </Head>
       <Header />
-      <h3>SECURE CHECKOUT</h3>
+      <h3 className="text-align-center">SECURE CHECKOUT</h3>
     <OrderSum
         items={orderData.items}
         subtotal={orderData.subtotal}
