@@ -138,19 +138,17 @@ const CartPage = () => {
                 </div>
               ))}
               <h2>Grand Total: $ {getTotalPrice()}</h2>
-                  </div>
+            </>
+          )}
+          
+        
+        </div>
   <OrderSum
         items={orderData.items}
         subtotal={orderData.subtotal}
         tax={orderData.tax}
         total={orderData.total}
         />
-            
-                </>
-          )}
-          
-        
-
         
       </main>
     </>
