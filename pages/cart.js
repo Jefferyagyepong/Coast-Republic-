@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
+import OrderSum from "@/components/Products/OrderSum";
 import Toast from "@/components/Head/Toast";
 // Importing action from  cart.slice.js
 import {
@@ -129,9 +130,10 @@ const CartPage = () => {
               <h2>Grand Total: $ {getTotalPrice()}</h2>
             </>
           )}
+          
           <hr />
         </div>
-     
+     <OrderSum />
       </main>
     </>
   );
