@@ -44,7 +44,7 @@ export default function NewsletterForm() {
       <br />
       <div className="formContainer">
         <form onSubmit={handleSubmit} className="form">
-          <div className="inputGroup">
+          <div className="form-group">
             <label>Email</label>
             <input
               type="email"
