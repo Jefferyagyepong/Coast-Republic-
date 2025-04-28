@@ -150,7 +150,7 @@ const CartPage = () => {
         total={orderData.total}
         />
         
-        <Link href={"/checkout"}><h2>SECURE CHECKOUT</h2></Link>
+        <Link className="text-align-center" href={"/checkout"}><h2>SECURE CHECKOUT</h2></Link>
         
       </main>
     </>
