@@ -77,7 +77,7 @@ const ProductList = ({ products }) => {
         </div>
         <div className="product-container">
           <h4>Shop Tees</h4>
-          <br />
+          
           <div className="product-card">
             {products.map(product => (
               <span key={product.slug}>
