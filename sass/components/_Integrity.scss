@@ -19,12 +19,12 @@ text-align:center;
 }
 .product-container{
    width:100%;
-  padding: 7px 9px;
+
 display: flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-gap:40px;
+
 }
 
 .product-card {
@@ -35,6 +35,7 @@ gap:40px;
   text-align: start;
   justify-content: space-between;
 background: hsl(0%, 0%, 92%);
+gap:10px;
 
 
 img{
