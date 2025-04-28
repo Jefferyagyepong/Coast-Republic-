@@ -33,8 +33,8 @@ export default function Carousel({ images }) {
         }
 
         img {
-          width: 100%;
-          height: auto;
+          width: 300px;
+       
           object-fit: cover;
           display: block;
         }
