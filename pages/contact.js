@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Header from "./@components/Head/Header";
+import Header from "@/components/Head/Header";
+import Footer from "@/components/Footer/Footer";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -78,6 +79,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    <Footer />
     </>
     
 
