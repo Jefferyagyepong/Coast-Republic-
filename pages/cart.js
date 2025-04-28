@@ -74,7 +74,7 @@ const CartPage = () => {
             </div>
           ) : (
             <>
-              <hr />
+              
               <div className={styles.head}>
                 <div>Product</div>
                 <div>Name</div>
