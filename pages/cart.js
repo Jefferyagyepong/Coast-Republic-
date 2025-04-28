@@ -28,6 +28,16 @@ const CartPage = () => {
   };
 
 
+  const orderData = {
+    items: [
+      { name: 'Product 1', price: 29.99 },
+      { name: 'Product 2', price: 49.99 },
+    ],
+    subtotal: 79.98,
+    tax: 6.40,
+    total: 86.38,
+    };
+
   return (
     <>
       <Head>
