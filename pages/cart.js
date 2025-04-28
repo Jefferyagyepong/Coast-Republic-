@@ -150,6 +150,8 @@ const CartPage = () => {
         total={orderData.total}
         />
         
+        <Link><h2>SECURE CHECKOUT</h2><</Link>
+        
       </main>
     </>
   );
