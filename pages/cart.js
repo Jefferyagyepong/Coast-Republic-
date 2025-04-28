@@ -131,7 +131,7 @@ const CartPage = () => {
             </>
           )}
           
-          <hr />
+        
         </div>
      <OrderSum />
       </main>
