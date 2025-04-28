@@ -19,6 +19,8 @@ text-align:center;
 }
 .product-container{
    width:100%;
+    margin-top:1rem;
+    padding: 20px;
 
 display: flex;
 flex-direction:column;
@@ -35,6 +37,7 @@ justify-content:center;
   text-align: start;
   justify-content: space-between;
 background: hsl(0%, 0%, 92%);
+    gap:1rem;
 
 
 
