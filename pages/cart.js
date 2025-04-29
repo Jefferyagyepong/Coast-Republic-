@@ -136,9 +136,50 @@ const CartPage = () => {
                   </div>
                   <p>$ {item.quantity * item.price}</p>
                 </div>
+                
               ))}
               <h2>Grand Total: $ {getTotalPrice()}</h2>
-            </>
+           
+                  <div className="order-details">
+        <div className="order-detail">
+               <div className={styles.buttons}>
+                    <button
+                      type="button"
+                      onClick={() => dispatch(incrementQuantity(item.id))}
+                      className="buttons-cart"
+                    >
+                      +
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => dispatch(decrementQuantity(item.id))}
+                      className="buttons-cart"
+                    >
+                      -
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => dispatch(removeFromCart(item.id))}
+                      className="buttons-cart"
+                    >
+                      x
+                    </button>
+                  </div>
+          <span>Subtotal</span>
+          <span>${subtotal.toFixed(2)}</span>
+        </div>
+        <div className="order-detail">
+          <span>Tax</span>
+          <span>${tax.toFixed(2)}</span>
+        </div>
+        <div className="order-detail total">
+          <span>Total</span>
+             <h2>Grand Total: $ {getTotalPrice()}</h2>
+        </div>
+      </div>
+            
+            
+             </>
           )}
           
         
