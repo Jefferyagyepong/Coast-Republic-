@@ -91,10 +91,10 @@ const ProductList = ({ products }) => {
                 
                 <Link href={`/products/${product.slug}`}>
            
-                  <h4>{product.name}</h4>
+                  <h5>{product.name}</h5>
                   <p>{product.description}</p>
-                  <p>{product.description}</p><br/>
-                  <h5> GH₵ { product.price}</h5><br/>
+                  <p>{product.description}</p>
+                  <h3> GH₵ { product.price}</h3>
                   
                 </Link>
               </span>
