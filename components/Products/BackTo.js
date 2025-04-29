@@ -37,6 +37,7 @@ export default function BackToTop() {
             
             backgroundColor: '#222',
             color: '#fff',
+            margin: '0 auto',
             textAlign: 'center',
             border: 'none',
             borderRadius: '5px',
