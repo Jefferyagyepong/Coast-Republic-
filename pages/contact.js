@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
     
     <div className="contact-container">
-      
+      <div>
         <h2>Contact Us</h2>
         <p>
           Have questions? We are here to help! Fill out the form below, and we will get back to you.
