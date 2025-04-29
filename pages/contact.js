@@ -64,6 +64,8 @@ const Contact = () => {
       <main>
         <div className="sticky">
         <Toast />
+        <Header />
+        </div>
     
     <div className="formContainer">
       <div>
