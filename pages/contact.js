@@ -67,9 +67,9 @@ const Contact = () => {
         <Header />
         </div>
     
-    <div className="formContainer">
+    <div className="contact-container">
       <div>
-        <h1>Contact Us</h1>
+        <h2>Contact Us</h2>
         <p>
           Have questions? We are here to help! Fill out the form below, and we will get back to you.
         </p>
