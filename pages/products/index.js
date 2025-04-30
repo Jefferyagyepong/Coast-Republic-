@@ -115,7 +115,7 @@ const ProductList = ({ products }) => {
           id="category"
           value={filterCategory}
           onChange={handleFilter}
-          placeholder="e.g., Electronics, Clothing"
+          placeholder="e.g., T-shirts, Sneakers"
         />
       </div>
 
