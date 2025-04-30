@@ -25,6 +25,37 @@ export async function getStaticProps() {
 }
 
 const ProductList = ({ products }) => {
+  const [products, setProducts] = useState(products);
+  const [filterCategory, setFilterCategory] = useState('');
+  const [sortOrder, setSortOrder] = useState(''); // 'lowToHigh' or empty
+
+  // Handle filtering by category
+  const handleFilter = (e) => {
+    const category = e.target.value.toLowerCase();
+    setFilterCategory(category);
+    let filteredProducts = products;
+
+    if (category) {
+      filteredProducts = products.filter((product) =>
+        product.category.toLowerCase().includes(category)
+      );
+    }
+
+    // Apply sorting after filtering
+    if (sortOrder === 'lowToHigh') {
+      filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
+    }
+
+    setProducts(filteredProducts);
+  };
+
+  // Handle sorting by price (low to high)
+  const handleSort = () => {
+    const sortedProducts = [...products].sort((a, b) => a.price - b.price);
+    setProducts(sortedProducts);
+    setSortOrder('lowToHigh');
+  };
+  
   return (
     <>
       <Head>
@@ -77,10 +108,24 @@ const ProductList = ({ products }) => {
         </div>
         <div className="product-container">
           <h4>Shop Tees</h4>
+                <div className="filter">
+        <label htmlFor="category">Filter by Category: </label>
+        <input
+          type="text"
+          id="category"
+          value={filterCategory}
+          onChange={handleFilter}
+          placeholder="e.g., Electronics, Clothing"
+        />
+      </div>
+
+      {/* Sort Button */}
+      <button onClick={handleSort}>Sort by Price: Low to High</button>
           
-          <div className="product-card">
+          <ul className="product-card">
+            {products.length > 0 ? (
             {products.map(product => (
-              <span key={product.slug}>
+              <li key={product.slug}>
                 
                  <Image
                     src={product.image}
@@ -94,21 +139,17 @@ const ProductList = ({ products }) => {
                   <h5>{product.name}</h5>
                   <p>{product.description}</p>
                   <p>{product.description}</p>
-                  <h3> GH₵ { product.price}</h3>
+                  <h3> GH₵ { product.price.toFixed(2)}</h3>
                   
                 </Link>
-              </span>
-            ))}
-          </div>
-        </div>
-        <br/>
-        <hr/>
-        <br/>
-        <BackTo />
-          
-        <br/>
-        <br/>
-        <hr/>
+              </li>
+            ))
+           ):(
+         <p> No products found</p>
+            )}
+          </ul>
+        </div>                   
+        <BackTo />                              
         <Newsletter />
         <Footer />
       </main>
