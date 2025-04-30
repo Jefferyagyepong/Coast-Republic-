@@ -6,7 +6,7 @@
     "price": 19.99,
     "_id": 1,
     "image": "/products/force1a.JPG",
-    "brand": "Nike"
+  "category": "Sneaker"
   },
   {
     "slug": "Reebok classics",
@@ -15,7 +15,7 @@
     "price": 19.99,
     "_id": 2,
     "image": "/products/reebook1c.JPG",
-    "brand": "Nike"
+  "category": "Sneaker"
   },
   {
     "slug": "Air Force 1 07 high black",
@@ -24,7 +24,7 @@
     "_id": 3,
     "image": "/products/force3a.JPG",
     "price": 130.00,
-    "brand": "Nike"
+  "category": "Sneaker"
   },
   {
     "slug": " Adidas Campus",
@@ -33,7 +33,7 @@
     "_id": 4,
     "image": "/products/campus1a.JPG",
     "price": 85.00,
-    "brand": "Adidas"
+  "category": "Sneaker"
   },
   {
     "slug": "Converse Chuck Taylor",
@@ -42,7 +42,7 @@
     "_id": 5,
     "image": "/products/chuck1a.JPG",
     "price": 75.00,
-    "brand": "Converse"
+  "category": "Sneaker"
   },
   {
     "slug": "Timberland Boots",
@@ -51,7 +51,7 @@
     "_id": 6,
     "image": "/products/tims1a.JPG",
     "price": 75.00,
-    "brand": "Timberland"
+  "category": "Sneaker"
   },
   {
     "slug": "vans",
@@ -60,7 +60,7 @@
     "_id": 7,
     "image": "/products/vans1a.WEBP",
     "price": 80.00,
-    "brand": "Vans"
+  "category": "Sneaker"
   },
   {
     "slug": "Reebok",
@@ -69,6 +69,6 @@
     "_id": 8,
     "image": "/products/reebook1b.WEBP",
     "price": 120.00,
-    "brand": "Reebok"
+    "category": "Sneaker"
   }
 ]
