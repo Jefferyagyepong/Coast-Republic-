@@ -25,7 +25,7 @@ export async function getStaticProps() {
 }
 
 const ProductList = ({ products }) => {
-  const [products, setProducts] = useState(products);
+  const [data, setData] = useState(products);
   const [filterCategory, setFilterCategory] = useState('');
   const [sortOrder, setSortOrder] = useState(''); // 'lowToHigh' or empty
 
@@ -33,10 +33,10 @@ const ProductList = ({ products }) => {
   const handleFilter = (e) => {
     const category = e.target.value.toLowerCase();
     setFilterCategory(category);
-    let filteredProducts = products;
+    let filteredProducts = data;
 
     if (category) {
-      filteredProducts = products.filter((product) =>
+      filteredProducts = data.filter((product) =>
         product.category.toLowerCase().includes(category)
       );
     }
@@ -51,7 +51,7 @@ const ProductList = ({ products }) => {
 
   // Handle sorting by price (low to high)
   const handleSort = () => {
-    const sortedProducts = [...products].sort((a, b) => a.price - b.price);
+    const sortedProducts = [...data].sort((a, b) => a.price - b.price);
     setProducts(sortedProducts);
     setSortOrder('lowToHigh');
   };
