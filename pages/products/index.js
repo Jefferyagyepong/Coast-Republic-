@@ -24,7 +24,6 @@ export async function getStaticProps() {
   };
 }
 
-const ProductList = ({ products }) => {
   const [data, setData] = useState(products);
   const [filterCategory, setFilterCategory] = useState('');
   const [sortOrder, setSortOrder] = useState(''); // 'lowToHigh' or empty
@@ -55,6 +54,8 @@ const ProductList = ({ products }) => {
     setProducts(sortedProducts);
     setSortOrder('lowToHigh');
   };
+const ProductList = ({ products }) => {
+
   
   return (
     <>
