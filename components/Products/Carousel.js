@@ -1,11 +1,12 @@
 // components/Carousel.js
+import Image from "next/image";
 export default function Carousel({ images }) {
   return (
     <div className="carousel">
       <div className="carousel-inner">
         {images.map((src, index) => (
           <div key={index} className="carousel-item">
-            <img src={src} alt={`Slide ${index + 1}`} />
+            <Image src={src} alt={`Slide ${index + 1}`} />
           </div>
         ))}
       </div>
