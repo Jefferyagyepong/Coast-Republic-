@@ -15,7 +15,7 @@
     "name": "Reebok classics",     
     "image": "/products/reebook1c.JPG",
     "category": "Sneaker",
-    "description":"Lorem ipsum dalot gunt Dreh",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 109.99
 
   },
@@ -25,7 +25,7 @@
     "name": "Air Force 1 07 high black",
     "image": "/products/force3a.JPG",
      "category": "Sneaker",
-    "description":"Lorem ipsum dalot gunt Dreh",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 130.00
 
   },
@@ -55,7 +55,7 @@
     "name": "Timberland Boots",
     "image": "/products/tims1a.JPG",
     "category": "Sneaker",
-    "description":"Lorem ipsum dalot gunt Dreh",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 275.00
 
   },
