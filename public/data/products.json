@@ -1,74 +1,82 @@
 [
 {
-    "slug": "Air Force 1 07 black",
-    "name": "Air Force 1 07 black",
-    "description": "Lorem ipsum dalot gunt Dreh",
-    "price": 19.99,
     "_id": 1,
+    "slug": "Air Force 1 07 black",
+    "name": "Air Force 1 07 black",       
     "image": "/products/force1a.JPG",
-  "category": "Sneaker"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 109.99
+
   },
   {
-    "slug": "Reebok classics",
-    "name": "Reebok classics",
-    "description":"Lorem ipsum dalot gunt Dreh",
-    "price": 19.99,
     "_id": 2,
+    "slug": "Reebok classics",
+    "name": "Reebok classics",     
     "image": "/products/reebook1c.JPG",
-  "category": "Sneaker"
+    "category": "Sneaker",
+    "description":"Lorem ipsum dalot gunt Dreh",
+    "price": 109.99,
+
   },
   {
+    "_id": 3,
     "slug": "Air Force 1 07 high black",
     "name": "Air Force 1 07 high black",
-    "description":"Lorem ipsum dalot gunt Dreh",
-    "_id": 3,
     "image": "/products/force3a.JPG",
+     "category": "Sneaker",
+    "description":"Lorem ipsum dalot gunt Dreh",
     "price": 130.00,
-  "category": "Sneaker"
+
   },
   {
+    "_id": 4,
     "slug": " Adidas Campus",
     "name": " Adidas Campus",
-    "description": "Lorem ipsum dalot gunt Dreh",
-    "_id": 4,
     "image": "/products/campus1a.JPG",
-    "price": 85.00,
-  "category": "Sneaker"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 185.00,
+ 
   },
   {
+    "_id": 5,
     "slug": "Converse Chuck Taylor",
     "name": "Converse Chuck Taylor",
-    "description": "Lorem ipsum dalot gunt Dreh",
-    "_id": 5,
     "image": "/products/chuck1a.JPG",
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 75.00,
-  "category": "Sneaker"
+
   },
   {
+    "_id": 6,
     "slug": "Timberland Boots",
     "name": "Timberland Boots",
-    "description":"Lorem ipsum dalot gunt Dreh",
-    "_id": 6,
     "image": "/products/tims1a.JPG",
-    "price": 75.00,
-  "category": "Sneaker"
+    "category": "Sneaker",
+    "description":"Lorem ipsum dalot gunt Dreh",
+    "price": 275.00,
+
   },
   {
+    "_id": 7,
     "slug": "vans",
     "name": "vans",
-    "description": "Lorem ipsum dalot gunt Dreh",
-    "_id": 7,
     "image": "/products/vans1a.WEBP",
+    "category": "Sneaker"
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 80.00,
-  "category": "Sneaker"
+
   },
   {
+    "_id": 8,
     "slug": "Reebok",
     "name": "Reebok",
-    "description": "Lorem ipsum dalot gunt Dreh",
-    "_id": 8,
     "image": "/products/reebook1b.WEBP",
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
     "price": 120.00,
-    "category": "Sneaker"
+
   }
 ]
