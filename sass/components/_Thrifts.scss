@@ -1,3 +1,33 @@
+}
+        .filter {
+          margin-bottom: 20px;
+        }
+        .filter input {
+          padding: 8px;
+          width: 200px;
+        }
+        button {
+          padding: 10px 20px;
+          background-color: #0070f3;
+          color: white;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+        button:hover {
+          background-color: #005bb5;
+        }
+        .product-list {
+          list-style: none;
+          padding: 0;
+        }
+        .product-list li {
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+        }
+
+
+
 .contact-container{
 width:100%;
 flex-direction:column;
