@@ -141,7 +141,7 @@ export default function ProductList() {
         {products.length > 0 ? (
           products.map((product) => (
             <li key={product.id}>
-              {product.name} - {product.category} - ${product.price.toFixed(2)}
+              {product.image} -  {product.name} - {product.category} - ${product.price.toFixed(2)}
             </li>
           ))
         ) : (
