@@ -35,7 +35,7 @@ const ProductList = ({ products }) => {
   const handleFilter = (e) => {
     const category = e.target.value.toLowerCase();
     setFilterCategory(category);
-    let filteredProducts = data;
+    let filteredProducts = products;
 
     if (category) {
       filteredProducts = data.filter((product) =>
