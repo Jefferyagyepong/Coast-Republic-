@@ -125,7 +125,7 @@ const ProductList = ({ products }) => {
           
           <ul className="product-card">
             {products.length > 0 ? (
-            {products.map(product => (
+            products.map((product) => (
               <li key={product.slug}>
                 
                  <Image
@@ -134,7 +134,7 @@ const ProductList = ({ products }) => {
                     width={210}
                     alt=" product"
                   />
-                
+  
                 <Link href={`/products/${product.slug}`}>
            
                   <h5>{product.name}</h5>
