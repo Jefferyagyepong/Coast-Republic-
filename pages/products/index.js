@@ -95,10 +95,10 @@ const [filter, setFilter] = useState('All');
           <Header />
         </div>
         <div className="product-container">
-          <h4>Shop Tees</h4>  
-                            <div className="controls">
-        <label>
-          Filter by Category:
+          <h3>Our collection</h3>  
+         <div className="controls">
+          <label>
+           Filter by Category:
           <select onChange={(e) => setFilter(e.target.value)} value={filter}>
             {categories.map((category) => (
               <option key={category} value={category}>
