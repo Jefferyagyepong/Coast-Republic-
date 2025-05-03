@@ -23,3 +23,11 @@ background: gold;
 color:black;
 
 }
+.sticky-div{
+  position: fixed; /* Makes the footer stick to the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures footer stays above other content */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+} 
