@@ -139,7 +139,7 @@ const ProductPage = ({ product }) => {
       </div>
       </div>                                           
         </div>
-        <div> 
+        <div className=slug-content-text> 
          <h4>Name: {product.name}</h4>
           <p>Description:{product.description}</p>
               <p>{product.description}</p>
@@ -149,8 +149,8 @@ const ProductPage = ({ product }) => {
           </div>                                         
           <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
-          </button>                    
-          <Link  className="product-link" href={"/cart"}>VIEW CART</Link>          
+          </button> <br />                   
+          <Link href={"/cart"}>VIEW CART</Link>          
      
        <ItemsLike /> 
              <Newsletter />                              
