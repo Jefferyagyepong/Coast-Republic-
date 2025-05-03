@@ -71,11 +71,9 @@ img {
   border: none;
   border-radius: 8px; /* Rounded corners */
   text-align:center;
-width:100%;
-margin:0 auto;
+  width:100%;
+  margin:0 auto;
   font-weight: 600;
-margin-left:10px;
-margin-right:10px;
 
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -101,9 +99,8 @@ margin-right:10px;
   background-color: transparent;
   border: 2px solid #ff5e00;
   color: #ff5e00;
-width:100%;
-margin:0 auto;
-margin-top: 1rem;
+  width:100%;
+  margin:0 auto;
   padding: 10px 22px;
   border-radius: 8px;
   font-size: 16px;
