@@ -21,11 +21,13 @@ text-align:center;
    width:100%;
    background: hsl(0%, 0%, 92%);
    margin: 0 auto;
+padding-top:50px;
 }
 
 .product-card {
   display: grid;
 background:#fff;
+padding-top:30px;
 border-radius:4px;
   width:100%;
   grid-template-columns: repeat(3, 1fr);
