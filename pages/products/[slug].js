@@ -153,7 +153,8 @@ const ProductPage = ({ product }) => {
           <ul><li>
                    <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
-          </button> <br />                   
+          </button> </li>
+          <li>                  
           <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
             </li></ul>
                 
