@@ -111,7 +111,7 @@ const ProductPage = ({ product }) => {
           <Header />
         </div>
     
-   <div className="container">        
+   <div className="slug-container">        
    <div class="slider">
   
   <Link href="#slide-1">1</Link>
