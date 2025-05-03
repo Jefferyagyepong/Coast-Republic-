@@ -150,10 +150,13 @@ const ProductPage = ({ product }) => {
           </div>
           <Faq />
          <div className="forms-container">
-              <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
+          <ul><li>
+                   <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
           </button> <br />                   
-          <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link>          
+          <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
+            </li></ul>
+                
      
           </div>                                   
       
