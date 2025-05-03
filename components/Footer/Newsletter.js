@@ -60,17 +60,17 @@ export default function NewsletterForm() {
       </div>
             <div className="payment-container">
         <Image
-          src={"/telecel.JPG"}
+          src={"/logo-whatsapp.svg"}
           height={30}
           width={35}
           alt="momo logo"
           className="footer-tag"
         />
         <Image
-          src={"/momo.jpg"}
+          src={"/mail.svg"}
           height={30}
           width={35}
-          alt="momo logo"
+          alt="mail-icon"
           className="footer-tag"
         />
 
