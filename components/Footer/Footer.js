@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand Info */}
         <div className="footer-section brand-info">
-          <h2 className="footer-logo">Coast Repubpic</h2>
+          <h2 className="footer-logo">Coast Republic</h2>
           <p>Elevate your style with the latest fashion trends. Discover unique designs crafted for you.</p>
         </div>
 
@@ -15,10 +15,8 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Shop</h3>
           <ul>
-            <li><Link href="/category/women">Women</Link></li>
-            <li><Link href="/category/men">Men</Link></li>
-            <li><Link href="/category/accessories">Accessories</Link></li>
-            <li><Link href="/category/sale">Sale</Link></li>
+              
+            <li><Link href="/category/men">Men</Link></li>       
           </ul>
         </div>
 
@@ -26,48 +24,15 @@ const Footer = () => {
           <h3>Help</h3>
           <ul>
             <li><Link href="/faq">FAQ</Link></li>
-            <li><Link href="/shipping">Shipping</Link></li>
+            <li><Link href="/delivery">Shipping</Link></li>
             <li><Link href="/returns">Returns</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
 
-        {/* Social Media Section */}
-        <div className="footer-section">
-          <h4>Follow Us</h4>
-          <ul className="social-links">
-            <li>
-              <Link
-                href={"https://facebook.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"https://twitter.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"https://instagram.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+  
 
-      <h5>WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
+      <h5 className ="text-align-center">WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
@@ -102,7 +67,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>
+        <p className ="text-align-center">
           © {new Date().getFullYear()} Coast Republic Store. All rights
           reserved.
         </p>
