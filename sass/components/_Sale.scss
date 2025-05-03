@@ -9,20 +9,17 @@
      }
 
 .slider {
-  width: 350px;
+  width: 100%;
   text-align: center;
   overflow: hidden;
+background: hsl(0%, 0%, 92%);
 padding:20px;
 }
 
 .slides {
-  display: flex;
-  
+  display: flex;  
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  
-  
-  
+  scroll-snap-type: x mandatory;    
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   
