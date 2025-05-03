@@ -120,18 +120,18 @@ const [filter, setFilter] = useState('All');
                                  
           <ul className="product-card">      
             {filteredProducts.map((product) => (
-              <li key={product.slug}>                
-                 <Image
+              <li key={product.slug}>                        
+                <Link href={`/products/${product.slug}`}>           
+                  <Image
                     src={product.image}
                     height={150}
                     width={210}
                     alt=" product"
                   />  
-                <Link href={`/products/${product.slug}`}>           
-                  <h5>{product.name}</h5>
+                  <h3>{product.name}</h3>
                   <p>{product.description}</p>
                   <p>{product.description}</p>
-                  <h3>GH₵ { product.price.toFixed(2)}</h3>               
+                  <h5>GH₵ { product.price.toFixed(2)}</h5>               
                 </Link>
               </li>
             ))}
