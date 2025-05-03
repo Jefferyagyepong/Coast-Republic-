@@ -145,7 +145,7 @@ const ProductPage = ({ product }) => {
               <p>{product.description}</p>
             <p>{product.description}</p>
               <p>{product.description}</p>
-          <p>Price: GH₵{product.price}</p>
+          <p>Price: GH₵ {product.price}</p>
           </div>                                         
           <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
