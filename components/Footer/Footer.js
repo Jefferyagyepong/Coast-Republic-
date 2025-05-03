@@ -30,7 +30,9 @@ const Footer = () => {
           </ul>
         </div>
 
-  
+        {/* Social Media Section */}
+ 
+      </div>
 
       <h5 className ="text-align-center">WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
       <div className="payment-container">
