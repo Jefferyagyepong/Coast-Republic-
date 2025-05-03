@@ -4,59 +4,31 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        {/* Categories Section */}
+      <div className="footer-container">
+        {/* Brand Info */}
+        <div className="footer-section brand-info">
+          <h2 className="footer-logo">Coast Repubpic</h2>
+          <p>Elevate your style with the latest fashion trends. Discover unique designs crafted for you.</p>
+        </div>
+
+        {/* Navigation Links */}
         <div className="footer-section">
-          <h4>Categories</h4>
+          <h3>Shop</h3>
           <ul>
-            <li>
-              <Link href="/products/" className="footer-link">
-                Tees
-              </Link>
-            </li>
+            <li><Link href="/category/women">Women</Link></li>
+            <li><Link href="/category/men">Men</Link></li>
+            <li><Link href="/category/accessories">Accessories</Link></li>
+            <li><Link href="/category/sale">Sale</Link></li>
           </ul>
         </div>
 
-        {/* Customer Service Section */}
         <div className="footer-section">
-          <h4>Customer Service</h4>
+          <h3>Help</h3>
           <ul>
-            <li>
-              <Link href={"/contact"} className="footer-link">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href={"/delivery"} className="footer-link">
-                Delivery Info
-              </Link>
-            </li>
-            <li>
-              <Link href={"/return"} className="footer-link">
-                Returns & Refunds
-              </Link>
-            </li>
-            <li>
-              <Link href={"/faq"} className="footer-link">
-                FAQ
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        {/* Legal Section */}
-        <div className="footer-section">
-          <h4>Legal</h4>
-          <ul>
-            <li>
-              <Link href={"/terms"}>Terms & Conditions</Link>
-            </li>
-            <li>
-              <Link href={"/privacy"}>Privacy Policy</Link>
-            </li>
-            <li>
-              <Link href={"/cookies"}>Cookie Policy</Link>
-            </li>
+            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/shipping">Shipping</Link></li>
+            <li><Link href="/returns">Returns</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
 
