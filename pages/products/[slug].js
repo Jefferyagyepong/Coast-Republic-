@@ -137,20 +137,15 @@ const ProductPage = ({ product }) => {
        </div>
       </div>
       </div>    
-        
-        
-          
-          
-          
-   
+                                       
         </div>
-        <div className="newsletter-container"> 
-             <h4>{product.name}</h4>
-          <p>{product.description}</p>
+        <div> 
+             <h4>Name: {product.name}</h4>
+          <p>Description:{product.description}</p>
               <p>{product.description}</p>
             <p>{product.description}</p>
               <p>{product.description}</p>
-          <p>Price: ${product.price}</p>
+          <p>Price: Gh{product.price}</p>
           </div>
           
            
