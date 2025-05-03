@@ -95,7 +95,28 @@ const [filter, setFilter] = useState('All');
           <Header />
         </div>
         <div className="product-container">
-          <h4>Shop Tees</h4>                
+          <h4>Shop Tees</h4>  
+                            <div className="controls">
+        <label>
+          Filter by Category:
+          <select onChange={(e) => setFilter(e.target.value)} value={filter}>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Sort by:
+          <select onChange={(e) => setSort(e.target.value)} value={sort}>
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="price-asc">Price (Low to High)</option>
+            <option value="price-desc">Price (High to Low)</option>
+          </select>
+        </label>
+      </div>
           <ul className="product-card">      
             {products.map((product) => (
               <li key={product.slug}>                
