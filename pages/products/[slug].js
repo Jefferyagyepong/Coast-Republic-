@@ -59,6 +59,33 @@ export async function getStaticProps({ params }) {
 
 const ProductPage = ({ product }) => {
   const dispatch = useDispatch();
+  
+  
+  const faqData = [
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept Visa, MasterCard, PayPal, and Apple Pay.",
+  },
+  {
+    question: "How long does shipping take?",
+    answer: "Shipping usually takes 5-7 business days, depending on your location.",
+  },
+  {
+    question: "Can I return a product?",
+    answer: "Yes, we have a 30-day return policy. Please check our Return Policy page for more details.",
+  },
+  {
+    question: "Do you offer international shipping?",
+    answer: "Yes, we ship worldwide. Shipping rates vary by country.",
+  },
+];
+
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
    
   return (
     <>
