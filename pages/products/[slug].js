@@ -175,7 +175,18 @@ const FAQ = () => {
             <p>{product.description}</p>
               <p>{product.description}</p>
           <p>Price: GH₵ {product.price}</p>
-          </div>                                         
+          </div>
+           <div className="faqList">
+          {faqData.map((item, index) => (
+            <div key={index} className="faqItem">
+              <button onClick={() => toggleFAQ(index)} className="question">
+                {item.question}
+                <span className="arrow">{openIndex === index ? "▲" : "▼"}</span>
+              </button>
+              {openIndex === index && <p className="answer">{item.answer}</p>}
+            </div>
+          ))}
+        </div>                                            
           <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
           </button> <br />                   
