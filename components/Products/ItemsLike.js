@@ -19,7 +19,7 @@ export default function ItemsYouMayLike() {
             <h3>{item.name}</h3>
             <p>{item.price}</p>
             
-              <Link href={`/products/${product.slug}`}>           
+              <Link href={"/products"}>           
                  View Details               
                 </Link>
         
