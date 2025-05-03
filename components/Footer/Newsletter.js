@@ -24,7 +24,7 @@ export default function NewsletterForm() {
   return (
     <div className="newsletter-container">
       <div>
-        <h3>Be the first to know</h3>
+        <h3>Subscribe to our newsletter for exclusive offers and updates</h3>
       </div>
       <br />
       <p>
