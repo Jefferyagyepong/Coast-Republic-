@@ -149,7 +149,10 @@ const ProductPage = ({ product }) => {
           <p>Price: GH₵ {product.price}</p>
           </div>
           <Faq />
-         <div className="forms-container sticky-div">
+                                       
+          <ItemsLike /> 
+          <Newsletter />
+             <div className="forms-container sticky-div">
           <ul><li>
                    <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
@@ -159,10 +162,8 @@ const ProductPage = ({ product }) => {
             </li></ul>
                 
      
-          </div>                                   
-      
-       <ItemsLike /> 
-             <Newsletter />                              
+          </div>        
+                                        
       </main>
     </>
   );
