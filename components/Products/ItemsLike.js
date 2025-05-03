@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const items = [
-  { id: 1, name: 'Item 1', price: '$10', image: '/thugga.jpg' },
-  { id: 2, name: 'Item 2', price: '$20', image: '/images/item2.jpg' },
-  { id: 3, name: 'Item 3', price: '$30', image: '/images/item3.jpg' },
+  { id: 1, name: 'Item 1', price: 'GHS 300', image: '/thugga.jpg' },
+  { id: 2, name: 'Item 2', price: 'GHS 900',  image: '/products/force1c.JPG'},
+  { id: 3, name: 'Item 3', price: 'GHS 750', image: '/products/force2a.jpg' },
 ];
 
 export default function ItemsYouMayLike() {
