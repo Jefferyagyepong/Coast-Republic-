@@ -145,7 +145,7 @@ const ProductPage = ({ product }) => {
               <p>{product.description}</p>
             <p>{product.description}</p>
               <p>{product.description}</p>
-          <p>Price: Gh{product.price}</p>
+          <p>Price: GH₵{product.price}</p>
           </div>
           
            
