@@ -62,30 +62,30 @@ export default function NewsletterForm() {
             <div className="payment-container">
         <Image
           src={"/logo-whatsapp.svg"}
-          height={30}
-          width={35}
+          height={10}
+          width={15}
           alt="momo logo"
           className="footer-tag"
         />
         <Image
           src={"/mail.svg"}
-          height={30}
-          width={35}
+          height={10}
+          width={15}
           alt="mail-icon"
           className="footer-tag"
         />
 
         <Image
           src={"/logo-facebook.svg"}
-          height={30}
-          width={36}
+          height={10}
+          width={15}
           alt="facebook icon"
           className="footer-tag"
         />
         <Image
           src={"/logo-twitter.svg"}
-          height={30}
-          width={36}
+          height={10}
+          width={15}
           alt="twitter icon"
           className="footer-tag"
         />
