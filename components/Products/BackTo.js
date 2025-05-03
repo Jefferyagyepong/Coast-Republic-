@@ -36,6 +36,9 @@ export default function BackToTop() {
          
             
             backgroundColor: '#222',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             color: '#fff',
             margin: '0 auto',
             textAlign: 'center',
