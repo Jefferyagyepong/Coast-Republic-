@@ -1,6 +1,7 @@
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
+import ItemsLike from "@/components/Products/ItemsLike";
 import Head from "next/head";
 import React from 'react';
 import Link from 'next/link';
@@ -136,33 +137,23 @@ const ProductPage = ({ product }) => {
         <Image src={product.image} height={400} width={400} alt=" product" />         
        </div>
       </div>
-      </div>    
-                                       
+      </div>                                           
         </div>
         <div> 
-             <h4>Name: {product.name}</h4>
+         <h4>Name: {product.name}</h4>
           <p>Description:{product.description}</p>
               <p>{product.description}</p>
             <p>{product.description}</p>
               <p>{product.description}</p>
           <p>Price: GH₵{product.price}</p>
-          </div>
-          
-           
-                    
-          <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>
-          
+          </div>                                         
+          <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
-          </button>
-          
-          
-          <Link  className="product-link" href={"/cart"}>VIEW CART</Link>
-          
-        <Newsletter />
-  
-          
-          
-          
+          </button>                    
+          <Link  className="product-link" href={"/cart"}>VIEW CART</Link>          
+     
+       <ItemsLike /> 
+             <Newsletter />                              
       </main>
     </>
   );
