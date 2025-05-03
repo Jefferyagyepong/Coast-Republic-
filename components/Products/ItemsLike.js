@@ -18,7 +18,11 @@ export default function ItemsYouMayLike() {
             <Image src={item.image} alt={item.name} className="item-image"  width={200} height={150}/>
             <h3>{item.name}</h3>
             <p>{item.price}</p>
-            <Link href={`/items/${item.id}`}>View Details</Link>
+            
+              <Link href={`/products/${product.slug}`}>           
+                 View Details               
+                </Link>
+        
           </div>
         ))}
       </div>
