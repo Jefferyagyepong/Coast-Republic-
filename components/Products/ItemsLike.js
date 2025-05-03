@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const items = [
-  { id: 1, name: 'Item 1', price: 'GHS 300', image: '/thugga.jpg' },
-  { id: 2, name: 'Item 2', price: 'GHS 900',  image: '/products/force1c.JPG'},
-  { id: 3, name: 'Item 3', price: 'GHS 750', image: '/products/force2a.JPG' },
+  { id: 1, name: 'Young Thug Tee', price: 'GHS 300', image: '/thugga.jpg' },
+  { id: 2, name: 'Nike Air Force 1 Tripple Black', price: 'GHS 900',  image: '/products/force1c.JPG'},
+  { id: 3, name: 'Nike Air Force 1 White', price: 'GHS 750', image: '/products/force2a.JPG' },
 ];
 
 export default function ItemsYouMayLike() {
