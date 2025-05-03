@@ -3,6 +3,7 @@ import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Products/ItemsLike";
 import Head from "next/head";
+import Faq from "@/components/Footer/Faq";
 import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
@@ -147,6 +148,7 @@ const ProductPage = ({ product }) => {
               <p>{product.description}</p>
           <p>Price: GH₵ {product.price}</p>
           </div>
+          <Faq />
                                             
           <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
             ADD TO CART
