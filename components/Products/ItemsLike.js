@@ -1,5 +1,6 @@
 // components/ItemsYouMayLike.js
 import Link from 'next/link';
+import Image from 'next/image';
 
 const items = [
   { id: 1, name: 'Item 1', price: '$10', image: '/thugga.jpg' },
@@ -14,7 +15,7 @@ export default function ItemsYouMayLike() {
       <div className="items-grid">
         {items.map((item) => (
           <div key={item.id} className="item-card">
-            <img src={item.image} alt={item.name} className="item-image" />
+            <Image src={item.image} alt={item.name} className="item-image"  width={200} height={150}/>
             <h3>{item.name}</h3>
             <p>{item.price}</p>
             <Link href={`/items/${item.id}`}>View Details</Link>
