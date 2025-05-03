@@ -95,7 +95,7 @@ const [filter, setFilter] = useState('All');
           <Header />
         </div>
         <div className="product-container">
-          <h3>Our collection</h3>  
+          <h3>Our collection</h3>  <br />
          <div className="controls">
           <label>
            Filter by Category:
