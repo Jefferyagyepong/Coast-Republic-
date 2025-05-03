@@ -143,11 +143,7 @@ const [filter, setFilter] = useState('All');
       </main>
       
       <style jsx global>{`
-        .product-list-container {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 20px;
-        }
+    
         .controls {
           display: flex;
           gap: 20px;
@@ -165,31 +161,13 @@ const [filter, setFilter] = useState('All');
           border: 1px solid #ccc;
           border-radius: 4px;
         }
-        .product-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 20px;
-        }
-        .product-card {
-          border: 1px solid #ddd;
-          border-radius: 8px;
-          padding: 15px;
-          text-align: center;
-          background: #fff;
-        }
+    }
         .product-card img {
           max-width: 100%;
           height: auto;
           border-radius: 4px;
         }
-        .product-card h3 {
-          font-size: 18px;
-          margin: 10px 0;
-        }
-        .product-card p {
-          margin: 5px 0;
-          color: #555;
-        }
+    
       `}</style>
     </>
   );
