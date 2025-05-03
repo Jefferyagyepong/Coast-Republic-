@@ -27,7 +27,22 @@ export async function getStaticProps() {
 
 const ProductList = ({ products }) => {
 
+const [filter, setFilter] = useState('All');
+  const [sort, setSort] = useState('name-asc');
 
+  // Get unique categories for filter dropdown
+  const categories = ['All', ...new Set(products.map((product) => product.category))];
+
+  // Filter and sort products
+  const filteredProducts = products
+    .filter((product) => filter === 'All' || product.category === filter)
+    .sort((a, b) => {
+      if (sort === 'price-asc') return a.price - b.price;
+      if (sort === 'price-desc') return b.price - a.price;
+      if (sort === 'name-asc') return a.name.localeCompare(b.name);
+      if (sort === 'name-desc') return b.name.localeCompare(a.name);
+      return 0;
+    });
   
   return (
     <>
