@@ -139,7 +139,7 @@ const ProductPage = ({ product }) => {
       </div>
       </div>                                           
         </div>
-        <div className=slug-content-text> 
+        <div className="slug-content-text"> 
          <h4>Name: {product.name}</h4>
           <p>Description:{product.description}</p>
               <p>{product.description}</p>
