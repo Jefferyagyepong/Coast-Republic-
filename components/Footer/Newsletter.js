@@ -58,38 +58,37 @@ export default function NewsletterForm() {
         </form>
         {message && <p>{message}</p>}
       </div>
-             <div className="footer-section">
-          <h4>Follow Us</h4>
-          <ul className="social-links">
-            <li>
-              <Link
-                href={"https://facebook.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"https://twitter.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"https://instagram.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </Link>
-            </li>
-          </ul>
-        </div>
+            <div className="payment-container">
+        <Image
+          src={"/telecel.JPG"}
+          height={30}
+          width={35}
+          alt="momo logo"
+          className="footer-tag"
+        />
+        <Image
+          src={"/momo.jpg"}
+          height={30}
+          width={35}
+          alt="momo logo"
+          className="footer-tag"
+        />
+
+        <Image
+          src={"/logo-facebook.svg"}
+          height={30}
+          width={36}
+          alt="facebook icon"
+          className="footer-tag"
+        />
+        <Image
+          src={"/logo-twitter.svg"}
+          height={30}
+          width={36}
+          alt="twitter icon"
+          className="footer-tag"
+        />
+      </div>
     </div>
   );
 }
