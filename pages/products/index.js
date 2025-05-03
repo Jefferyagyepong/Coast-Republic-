@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import Toast from "@/components/Head/Toast";
@@ -27,36 +27,7 @@ export async function getStaticProps() {
 
 const ProductList = ({ products }) => {
 
-  const [data, setData] = useState(products);
-  const [filterCategory, setFilterCategory] = useState('');
-  const [sortOrder, setSortOrder] = useState(''); // 'lowToHigh' or empty
 
-  // Handle filtering by category
-  const handleFilter = (e) => {
-    const category = e.target.value.toLowerCase();
-    setFilterCategory(category);
-    let filteredProducts = products;
-
-    if (category) {
-      filteredProducts = data.filter((product) =>
-        product.category.toLowerCase().includes(category)
-      );
-    }
-
-    // Apply sorting after filtering
-    if (sortOrder === 'lowToHigh') {
-      filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
-    }
-
-    setProducts(filteredProducts);
-  };
-
-  // Handle sorting by price (low to high)
-  const handleSort = () => {
-    const sortedProducts = [...data].sort((a, b) => a.price - b.price);
-    setProducts(sortedProducts);
-    setSortOrder('lowToHigh');
-  };
   
   return (
     <>
@@ -109,46 +80,24 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
         <div className="product-container">
-          <h4>Shop Tees</h4>
-                <div className="filter">
-        <label htmlFor="category">Filter by Category: </label>
-        <input
-          type="text"
-          id="category"
-          value={filterCategory}
-          onChange={handleFilter}
-          placeholder="e.g., T-shirts, Sneakers"
-        />
-      </div>
-
-      {/* Sort Button */}
-      <button onClick={handleSort}>Sort by Price: Low to High</button>
-          
-          <ul className="product-card">
-            {products.length > 0 ? (
-            products.map((product) => (
-              <li key={product.slug}>
-                
+          <h4>Shop Tees</h4>                
+          <ul className="product-card">      
+            {products.map((product) => (
+              <li key={product.slug}>                
                  <Image
                     src={product.image}
                     height={150}
                     width={210}
                     alt=" product"
-                  />
-  
-                <Link href={`/products/${product.slug}`}>
-           
+                  />  
+                <Link href={`/products/${product.slug}`}>           
                   <h5>{product.name}</h5>
                   <p>{product.description}</p>
                   <p>{product.description}</p>
-                  <h3> GH₵ { product.price.toFixed(2)}</h3>
-                  
+                  <h3>GH₵ { product.price.toFixed(2)}</h3>               
                 </Link>
               </li>
-            ))
-           ):(
-         <p> No products found</p>
-            )}
+            ))}
           </ul>
         </div>                   
         <BackTo />                              
