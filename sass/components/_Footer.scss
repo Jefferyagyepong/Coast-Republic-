@@ -43,35 +43,58 @@ footer .container .footer-section ul {
   font-family: 'Arial', sans-serif;
 }
 
-
-.footer-section {
-   max-width: 200px;
-   display: flex;
-   flex-direction: column;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
 }
 
-.footer-section h4 {
-   margin-bottom: 10px;
-   font-size: 16px;
-   color: #222;
-   font-weight: 700;
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.brand-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .footer-section ul {
-   list-style: none;
-   padding: 0;
-   text-decoration: none;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-   text-decoration: none;
-   margin: 14px 0;
+  margin-bottom: 10px;
 }
 
 .footer-section ul li a {
-   color: #333;
-   font-weight: 300;
-   font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
 }
 
 .payment-container {
@@ -83,14 +106,7 @@ footer .container .footer-section ul {
    gap: 1rem;
 }
 
-.footer-section ul li a:hover {
-  color: #fff;
-}
 
-.social-links li {
-  display: inline;
-  margin-right: 10px;
-}
 
 .footer-bottom {
   margin-top: 20px;
