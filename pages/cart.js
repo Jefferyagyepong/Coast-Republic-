@@ -121,7 +121,7 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
-                  <p>$ {item.quantity * item.price}</p>
+                  <p>GHS {item.quantity * item.price}</p>
                 </div>
               ))}
           
