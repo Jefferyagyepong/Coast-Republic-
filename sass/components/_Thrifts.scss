@@ -63,20 +63,21 @@ padding-top: 40px;
   margin: 10px;
 }
 
-
-.faqList {
+.faq-container{
 background: hsl(0%, 0%, 74%);
-width:1200px;
-max-width:100%;
-color: #fff;
+width:100%;
+padding:10px 14px;
+}
+.faqList {
 margin:0 auto;
 font-weight:bold;
 }
 
 .faqItem {
-  border-bottom: 1px solid #ddd;
-  width:100%;
-text-align:start;
+ display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
 
 }
 
