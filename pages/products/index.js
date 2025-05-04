@@ -128,10 +128,10 @@ const [filter, setFilter] = useState('All');
                     width={210}
                     alt=" product"
                   />  
-                  <h3>{product.name}</h3>
+                  <h3><b>{product.name}</b></h3>
                   <p>{product.description}</p>
                   <p>{product.description}</p>
-                  <h5>GH₵ { product.price.toFixed(2)}</h5>               
+                  <p>GH₵ { product.price.toFixed(2)}</p>               
                 </Link>
               </li>
             ))}
