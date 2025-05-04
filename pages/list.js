@@ -2,6 +2,7 @@
 
 // components/ProductList.js
 import { useState } from 'react';
+import Image from "next/image";
 
 // Sample JSON data (replace with your own or fetch from an API)
 const products = [
@@ -79,7 +80,7 @@ export default function ProductList() {
       <div className="product-grid">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} />
+            <Image src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>Category: {product.category}</p>
             <p>Price: ${product.price.toFixed(2)}</p>
