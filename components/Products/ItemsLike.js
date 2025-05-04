@@ -15,7 +15,7 @@ export default function ItemsYouMayLike() {
       <div className="items-grid">
         {items.map((item) => (
           <div key={item.id} className="item-card">
-            <Image src={item.image} alt={item.name} className="item-image"  width={150} height={100}/>
+            <br />  <Image src={item.image} alt={item.name} className="item-image"  width={150} height={100}/>
            <br /> <h3>{item.name}</h3><br />
             <p>{item.price}</p><br />
             
