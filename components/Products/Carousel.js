@@ -13,13 +13,13 @@ export default function Carousel({ images }) {
 
       <style jsx>{`
         .carousel {
-          width: 100%;
-          max-width: 600px;
+          width: 1200px;
+          max-width:100%;    
           background:hsl(0%, 0%, 92%);
           margin: 0 auto;
           overflow: hidden;
           position: relative;
-          padding:20px 30px;
+       
         }
 
         .carousel-inner {
