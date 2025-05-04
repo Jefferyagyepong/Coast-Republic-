@@ -12,7 +12,7 @@ function All() {
         width={380}
         height={800}
       />
-      <h3>SNEAKERS: Designer pairs in our collection </h3>
+      <h3>SNEAKERS</h3>
       
       
       <Link href={"/products"}>Shop now</Link>
