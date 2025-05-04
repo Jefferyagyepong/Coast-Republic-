@@ -131,7 +131,14 @@ const CartPage = () => {
           )}
           <hr />
         </div>
+           <div className="forms-container sticky-div">
+          <ul>
+          <li>                  
+          <Link className="view-cart-btn"href={"/checkout"}>CHECKOUT</Link> 
+            </li></ul>
+                
      
+          </div>     
       </main>
     </>
   );
