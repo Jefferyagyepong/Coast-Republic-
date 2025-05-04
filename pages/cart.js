@@ -140,42 +140,8 @@ const CartPage = () => {
               ))}
               <h2>Grand Total: $ {getTotalPrice()}</h2>
            
-                  <div className="order-details">
-        <div className="order-detail">
-               <div className={styles.buttons}>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(incrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(decrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      -
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(removeFromCart(item.id))}
-                      className="buttons-cart"
-                    >
-                      x
-                    </button>
-                  </div>
-          <span>Subtotal</span>
-          <span>${subtotal.toFixed(2)}</span>
-        </div>
-        <div className="order-detail">
-          <span>Tax</span>
-          <span>${tax.toFixed(2)}</span>
-        </div>
-        <div className="order-detail total">
-          <span>Total</span>
-             <h2>Grand Total: $ {getTotalPrice()}</h2>
-        </div>
+      
+  
       </div>
             
             
@@ -184,12 +150,7 @@ const CartPage = () => {
           
         
         </div>
-  <OrderSum
-        items={orderData.items}
-        subtotal={orderData.subtotal}
-        tax={orderData.tax}
-        total={orderData.total}
-        />
+  
         
         <Link className="text-align-center" href={"/checkout"}><h2>SECURE CHECKOUT</h2></Link>
         
