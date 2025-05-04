@@ -68,10 +68,9 @@ const CartPage = () => {
 
         <div className={styles.container}>
           {cart.length === 0 ? (
-            <div>
+            <div className="cart-empty-container">
               <h3>Your Cart is Empty!</h3>
-              <Link href={"/products"}>click here to shop now</Link>
-          
+     
              <ItemsLike />
                 </div>
            
