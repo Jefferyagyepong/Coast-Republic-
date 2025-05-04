@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand Info */}
         <div className="footer-section brand-info">
-          <h2 className="footer-logo">Coast Republic</h2>
+          <h3 className="footer-logo">Coast Republic</h3>
           <p>Elevate your style with the latest fashion trends. Discover unique designs crafted for you.</p>
         </div>
 
