@@ -65,17 +65,18 @@ padding-top: 40px;
 
 
 .faqList {
-background: hsl(0%, 0%, 64%);
+background: hsl(0%, 0%, 74%);
 width:1200px;
 max-width:100%;
-color: #222;
+color: #fff;
 margin:0 auto;
+font-weight:bold;
 }
 
 .faqItem {
   border-bottom: 1px solid #ddd;
   width:100%;
-
+text-align:start;
 
 }
 
