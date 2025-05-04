@@ -16,7 +16,7 @@ const Footer = () => {
           <h3>Shop</h3>
           <ul>
               
-            <li><Link href="/shop">Men</Link></li>       
+            <li><Link href="/products/">Men</Link></li>       
           </ul>
         </div>
 
