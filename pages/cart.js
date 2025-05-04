@@ -78,6 +78,11 @@ const CartPage = () => {
           ) : (
             <>
               
+              
+              
+                <div className="order-summary">
+      <h2>Order Summary</h2>
+      <div className="order-items">
        
               {cart.map(item => (
                 // eslint-disable-next-line react/jsx-key
@@ -122,11 +127,26 @@ const CartPage = () => {
                   <p>$ {item.quantity * item.price}</p>
                 </div>
               ))}
-              <h2>Grand Total: $ {getTotalPrice()}</h2>
+              
             </>
           )}
-          <hr />
+      
+      </div>
+      <div className="order-details">
+        <div className="order-detail">
+          <span>Subtotal</span>
+  
         </div>
+    
+        <div className="order-detail total">
+          <span>Total</span>
+          <h2>GHS {getTotalPrice()}</h2>
+        </div>
+      </div>
+    </div>
+              
+                                           
+                                            
            <div className="forms-container sticky-div">
           <ul>
           <li>                  
