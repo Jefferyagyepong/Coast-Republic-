@@ -19,7 +19,6 @@ export default function Carousel({ images }) {
           margin: 0 auto;
           overflow: hidden;
           position: relative;
-          background:red;
           padding-top:40px;
           padding-bottom:40px;
        
