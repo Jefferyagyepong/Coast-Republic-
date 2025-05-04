@@ -66,7 +66,7 @@ const CartPage = () => {
         </div>
   
 
-        <div className={styles.container}>
+        <div className="cart-container">
           {cart.length === 0 ? (
             <div className="cart-empty-container">
               <h3>Your Cart is Empty!</h3>
@@ -81,27 +81,26 @@ const CartPage = () => {
               
               
                 <div className="order-summary">
-      <h2>Order Summary</h2>
-      <div className="order-items">
+               <h2>Order Summary</h2>
+                <div className="order-items">
        
               {cart.map(item => (
                 // eslint-disable-next-line react/jsx-key
-                <div className={styles.body}>
-                  <div className={styles.image}>
+                                                                                      
                     <Image
                       src={item.image}
                       height="110"
                       width="90"
                       alt="product image"
                     />
-                  </div>
+                  
                 
                     <p>{item.product}</p>
                     <p>$ {item.price}</p>
                     <p>{item.quantity}</p>
              
 
-                  <div className={styles.buttons}>
+               
                     <button
                       type="button"
                       onClick={() => dispatch(incrementQuantity(item.id))}
@@ -123,30 +122,19 @@ const CartPage = () => {
                     >
                       x
                     </button>
-                  </div>
+             
                   <p>$ {item.quantity * item.price}</p>
-                </div>
-              ))}
-              
-            </>
-          )}
-      
-      </div>
-      <div className="order-details">
-        <div className="order-detail">
-          <span>Subtotal</span>
-  
-        </div>
-    
-        <div className="order-detail total">
+                
+                <div className="order-detail total">
           <span>Total</span>
           <h2>GHS {getTotalPrice()}</h2>
         </div>
       </div>
     </div>
-              
-                                           
-                                            
+           ))}               
+            </>
+          )}
+                                                                                                                    
            <div className="forms-container sticky-div">
           <ul>
           <li>                  
@@ -155,6 +143,7 @@ const CartPage = () => {
                 
      
           </div>     
+    </div>     
       </main>
     </>
   );
