@@ -20,6 +20,8 @@ export default function Carousel({ images }) {
           overflow: hidden;
           position: relative;
           background:red;
+          padding-top:40px;
+          padding-bottom:40px;
        
         }
 
