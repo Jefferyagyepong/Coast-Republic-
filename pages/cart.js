@@ -77,16 +77,8 @@ const CartPage = () => {
             
           ) : (
             <>
-              <hr />
-              <div className={styles.head}>
-                <div>Product</div>
-                <div>Name</div>
-                <div>Price</div>
-                <div>Quantity</div>
-                <div>Actions</div>
-                <div>Total Price</div>
-              </div>
-              <hr />
+              
+       
               {cart.map(item => (
                 // eslint-disable-next-line react/jsx-key
                 <div className={styles.body}>
