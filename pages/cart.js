@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
+import ItemsLike from "@/components/Products/ItemsLike";
 // Importing action from  cart.slice.js
 import {
   incrementQuantity,
@@ -71,6 +72,8 @@ const CartPage = () => {
               <h3>Your Cart is Empty!</h3>
               <Link href={"/products"}>click here to sho now</Link>
             </div>
+            <ItemsLike />
+            
           ) : (
             <>
               <hr />
