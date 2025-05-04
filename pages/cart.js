@@ -133,7 +133,7 @@ const CartPage = () => {
     </div>
            ))}               
             </>
-          )}
+          
                                                                                                                     
            <div className="forms-container sticky-div">
           <ul>
