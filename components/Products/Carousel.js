@@ -6,7 +6,7 @@ export default function Carousel({ images }) {
       <div className="carousel-inner">
         {images.map((src, index) => (
           <div key={index} className="carousel-item">
-            <Image src={src} alt={`Slide ${index + 1}`} width={200} height={150} />
+            <Image src={src} alt={`Slide ${index + 1}`} width={250} height={200} />
           </div>
         ))}
       </div>
