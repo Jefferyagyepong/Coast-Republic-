@@ -148,6 +148,7 @@ const ProductPage = ({ product }) => {
               <p>{product.description}</p>
           <p>Price: GH₵ {product.price}</p>
           </div>
+          <h4>Shipping and Delivery Information </h4>
           <Faq />
                                        
           <ItemsLike /> 
