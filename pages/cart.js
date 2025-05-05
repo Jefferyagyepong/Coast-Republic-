@@ -75,7 +75,7 @@ const CartPage = () => {
                 <div className="forms-container sticky-div">
           <ul>
           <li>                  
-          <Link className="view-cart-btn"href={"/checkout"}>BACK TO SHOP</Link> 
+          <Link className="view-cart-btn"href={"/products/"}>BACK TO SHOP</Link> 
             </li></ul>
                 
      
