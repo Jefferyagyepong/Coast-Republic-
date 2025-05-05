@@ -69,7 +69,8 @@ const CartPage = () => {
         <div className={styles.container}>
           {cart.length === 0 ? (
             <div className="cart-empty-container">
-              <h3>Your Cart is Empty!</h3>
+              <h1>Cart Empty!</h1>
+             <p>Cart Empty</p>
      
                 <div className="forms-container sticky-div">
           <ul>
