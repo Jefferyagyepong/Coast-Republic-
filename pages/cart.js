@@ -99,8 +99,9 @@ const CartPage = () => {
                   </div>
                 
                     <p>{item.product}</p>
-                    <p>$ {item.price}</p>
-                    <p>{item.quantity}</p>
+             <p>{item.name}</p>        
+                    <p>Price: GHS {item.price}</p>
+                    <p>Quantity: {item.quantity}</p>
              
 
                   <div className={styles.buttons}>
@@ -126,7 +127,7 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
-                  <p>$ {item.quantity * item.price}</p>
+                  <p>GHS {item.quantity * item.price}</p>
                 </div>
               ))}
             <div style={styles.summary}>
