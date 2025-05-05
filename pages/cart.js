@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
-import ItemsLike from "@/components/Products/ItemsLike";
+
 // Importing action from  cart.slice.js
 import {
   incrementQuantity,
@@ -71,7 +71,14 @@ const CartPage = () => {
             <div className="cart-empty-container">
               <h3>Your Cart is Empty!</h3>
      
-             <ItemsLike />
+                <div className="forms-container sticky-div">
+          <ul>
+          <li>                  
+          <Link className="view-cart-btn"href={"/checkout"}>BACK TO SHOP</Link> 
+            </li></ul>
+                
+     
+          </div>    
                 </div>
            
             
@@ -137,14 +144,7 @@ const CartPage = () => {
               <p>Shipping: Free</p>
               <p style={styles.total}>Total: <h2>Grand Total: $ {getTotalPrice()}</h2></p>
             </div>
-            <button style={styles.checkoutBtn}>Proceed to Checkout</button>
-          </div>
-              
-            </>
-          )}
-          <hr />
-        </div>
-           <div className="forms-container sticky-div">
+              <div className="forms-container sticky-div">
           <ul>
           <li>                  
           <Link className="view-cart-btn"href={"/checkout"}>SECURE CHECKOUT</Link> 
@@ -152,6 +152,13 @@ const CartPage = () => {
                 
      
           </div>     
+          </div>
+              
+            </>
+          )}
+          <hr />
+        </div>
+    
       </main>
     </>
   );
