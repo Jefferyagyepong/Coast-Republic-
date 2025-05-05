@@ -130,7 +130,16 @@ const CartPage = () => {
                   <p>$ {item.quantity * item.price}</p>
                 </div>
               ))}
-              <h2>Grand Total: $ {getTotalPrice()}</h2>
+                        <div style={styles.summary}>
+            <h2 style={styles.summaryTitle}>Order Summary</h2>
+            <div style={styles.summaryDetails}>
+              <p>Subtotal: <h2>Grand Total: $ {getTotalPrice()}</h2></p>
+              <p>Shipping: Free</p>
+              <p style={styles.total}>Total: <h2>Grand Total: $ {getTotalPrice()}</h2></p>
+            </div>
+            <button style={styles.checkoutBtn}>Proceed to Checkout</button>
+          </div>
+              
             </>
           )}
           <hr />
