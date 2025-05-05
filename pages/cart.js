@@ -13,7 +13,7 @@ import {
   decrementQuantity,
   removeFromCart,
 } from "@/redux/cart.slice";
-import styles from "@/sass/components/CartPage.module.scss";
+
 
 
 const CartPage = () => {
@@ -60,6 +60,7 @@ const CartPage = () => {
         />
       </Head>
       <main>
+            <>
         <div className="sticky">
           <Toast />
           <Header />
