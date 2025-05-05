@@ -13,7 +13,7 @@ import {
   decrementQuantity,
   removeFromCart,
 } from "@/redux/cart.slice";
-
+import styles from "@/sass/components/CartPage.module.scss";
 
 
 const CartPage = () => {
@@ -60,7 +60,6 @@ const CartPage = () => {
         />
       </Head>
       <main>
-            <>
         <div className="sticky">
           <Toast />
           <Header />
@@ -78,21 +77,27 @@ const CartPage = () => {
             
           ) : (
             <>
-
-    <div className="order-summary">
-      <h2>Order Summary</h2>
-      <div className="order-items">
-
-          {cart.map(item => (
+              <hr />
+              <div className={styles.head}>
+                <div>Product</div>
+                <div>Name</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Actions</div>
+                <div>Total Price</div>
+              </div>
+              <hr />
+              {cart.map(item => (
                 // eslint-disable-next-line react/jsx-key
-
+                <div className={styles.body}>
+                  <div className={styles.image}>
                     <Image
                       src={item.image}
                       height="110"
                       width="90"
                       alt="product image"
                     />
-                  
+                  </div>
                 
                     <p>{item.product}</p>
                     <p>$ {item.price}</p>
@@ -122,31 +127,25 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
-                  <p>GHS {item.quantity * item.price}</p>
+                  <p>$ {item.quantity * item.price}</p>
                 </div>
               ))}
-          
-    <div className="order-detail total">
-          <span>Total</span>
-    <h2>GHS  {getTotalPrice()}</h2>
+              <h2>Grand Total: $ {getTotalPrice()}</h2>
+            </>
+          )}
+          <hr />
         </div>
-
-       <div className="forms-container. sticky-div">
+           <div className="forms-container sticky-div">
           <ul>
           <li>                  
           <Link className="view-cart-btn"href={"/checkout"}>SECURE CHECKOUT</Link> 
-          </li>
-          </ul>
-                     
+            </li></ul>
+                
+     
           </div>     
-        </div>
-            </>
-          )}
-      </div>
       </main>
     </>
   );
 };
 
 export default CartPage;
-
