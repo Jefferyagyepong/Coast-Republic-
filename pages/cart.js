@@ -130,13 +130,15 @@ const CartPage = () => {
                   <p>GHS {item.quantity * item.price}</p>
                 </div>
               ))}
-            <div style={styles.summary}>
-            <h2 style={styles.summaryTitle}>Order Summary</h2>
-            <div style={styles.summaryDetails}>
+            <div className="order-details">
+            <h2>Order Summary</h2>
+            <div classNam="order-detail">
               <p>Subtotal: <h2>GHS {getTotalPrice()}</h2></p>
               <p>Shipping: Free</p>
-              <p style={styles.total}>Total: <h2>GHS {getTotalPrice()}</h2></p>
+                <div classNam="order-detail">
+              <p style={styles.total}>Total: <h4>GHS {getTotalPrice()}</h4></p>
             </div>
+             </div>
               <div className="forms-container sticky-div">
              <ul>
              <li>                  
