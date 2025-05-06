@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useCart } from '../context/CartContext';
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import Image from "next/image";
