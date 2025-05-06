@@ -145,6 +145,7 @@ const CartPage = () => {
                 <div className="order-detail">
               <span>Total: <h4>GHS {getTotalPrice().toFixed(2)}</h4></span>
             </div>
+               </div>
              </div>
               <div className="forms-container sticky-div">
              <ul>
