@@ -156,7 +156,7 @@ const CartPage = () => {
             </div>
                  
               </div>
-                 </div>
+            
              
               <div className="forms-container sticky-div">
              <ul>
@@ -165,7 +165,7 @@ const CartPage = () => {
             </li>
             </ul>                    
           </div>     
-      
+           </div>
             </>
           )}        
         </div>     
