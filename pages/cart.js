@@ -130,13 +130,20 @@ const CartPage = () => {
                   <p>GHS {item.quantity * item.price}</p>
                 </div>
               ))}
+               <div className="order-summary">
+                   <h2>Order Summary</h2>
+                <div className="order-items">
+                   <div className="order-item">
+                  <span>Price: GHS {item.price}</span>
+                   <span>{item.name}</span>      
+                  <span>Quantity: {item.quantity}</span>
             <div className="order-details">
-            <h2>Order Summary</h2>
-            <div classNam="order-detail">
-              <p>Subtotal: <h2>GHS {getTotalPrice()}</h2></p>
-              <p>Shipping: Free</p>
-                <div classNam="order-detail">
-              <p style={styles.total}>Total: <h4>GHS {getTotalPrice()}</h4></p>
+       
+            <div className="order-detail">
+              <span>Subtotal: <h2>GHS {getTotalPrice()}</h2></span>
+              <span>Shipping: Free</p>
+                <div className="order-detail">
+              <span>Total: <h4>GHS {getTotalPrice()}</h4></span>
             </div>
              </div>
               <div className="forms-container sticky-div">
@@ -156,3 +163,33 @@ const CartPage = () => {
 };
 
 export default CartPage;
+
+
+
+
+
+ <div className="order-summary">
+      <h2>Order Summary</h2>
+      <div className="order-items">
+        {items.map((item, index) => (
+          <div key={index} className="order-item">
+            <span>{item.name}</span>
+            <span>${item.price.toFixed(2)}</span>
+          </div>
+        ))}
+      </div>
+      <div className="order-details">
+        <div className="order-detail">
+          <span>Subtotal</span>
+          <span>${subtotal.toFixed(2)}</span>
+        </div>
+        <div className="order-detail">
+          <span>Tax</span>
+          <span>${tax.toFixed(2)}</span>
+        </div>
+        <div className="order-detail total">
+          <span>Total</span>
+          <span>${total.toFixed(2)}</span>
+        </div>
+      </div>
+    </div>
