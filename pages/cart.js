@@ -100,7 +100,7 @@ const CartPage = () => {
                 
                     <p>{item.product}</p>
              <p>{item.name}</p>        
-                    <p>Price: GHS {item.price}</p>
+                    <p>Price: GHS {item.price.toFixed(2)}</p>
                     <p>Quantity: {item.quantity}</p>
              
 
@@ -127,14 +127,14 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
-                  <p>GHS {item.quantity * item.price}</p>
+                  <p>GHS {item.quantity * item.price.toFixed(2)}</p>
                 </div>
               ))}
                <div className="order-summary">
                    <h2>Order Summary</h2>
                 <div className="order-items">
                    <div className="order-item">
-                  <span>Price: GHS {item.price}</span>
+                  <span>Price: GHS {item.price.toFixed(2)}</span>
                    <span>{item.name}</span>      
                   <span>Quantity: {item.quantity}</span>
             <div className="order-details">
@@ -143,7 +143,7 @@ const CartPage = () => {
               <span>Subtotal: <h2>GHS {getTotalPrice()}</h2></span>
               <span>Shipping: Free</p>
                 <div className="order-detail">
-              <span>Total: <h4>GHS {getTotalPrice()}</h4></span>
+              <span>Total: <h4>GHS {getTotalPrice().toFixed(2)}</h4></span>
             </div>
              </div>
               <div className="forms-container sticky-div">
@@ -168,28 +168,3 @@ export default CartPage;
 
 
 
- <div className="order-summary">
-      <h2>Order Summary</h2>
-      <div className="order-items">
-        {items.map((item, index) => (
-          <div key={index} className="order-item">
-            <span>{item.name}</span>
-            <span>${item.price.toFixed(2)}</span>
-          </div>
-        ))}
-      </div>
-      <div className="order-details">
-        <div className="order-detail">
-          <span>Subtotal</span>
-          <span>${subtotal.toFixed(2)}</span>
-        </div>
-        <div className="order-detail">
-          <span>Tax</span>
-          <span>${tax.toFixed(2)}</span>
-        </div>
-        <div className="order-detail total">
-          <span>Total</span>
-          <span>${total.toFixed(2)}</span>
-        </div>
-      </div>
-    </div>
