@@ -65,31 +65,29 @@ const CartPage = () => {
           <Header />
         </div>
   
-
         <div className={styles.container}>
+  
           {cart.length === 0 ? (
             <div className="cart-empty-container">
-              <h1>Cart Empty!</h1>
-             <p>Cart Empty</p>
-     
-                <div className="forms-container sticky-div">
+            <h1>Cart Empty!</h1>
+            <p>Cart Empty</p>     
+           <div className="forms-container sticky-div">
           <ul>
           <li>                  
           <Link className="view-cart-btn"href={"/products/"}>BACK TO SHOP</Link> 
-            </li></ul>
-                
-     
+          </li>
+         </ul>       
           </div>    
-                </div>
-           
-            
+          </div>
+                       
           ) : (
             <>
                                             
-              {cart.map(item => (
-                // eslint-disable-next-line react/jsx-key
-                <div className={styles.body}>
-                  <div className={styles.image}>
+            {cart.map(item => (
+            // eslint-disable-next-line react/jsx-key
+            <div className={styles.body}>
+            
+              <div className={styles.image}>
                     <Image
                       src={item.image}
                       height="110"
@@ -98,17 +96,17 @@ const CartPage = () => {
                     />
                   </div>
                 
-                    <p>{item.product}</p>
+             <p>{item.product}</p>
              <p>{item.name}</p>        
-                    <p>Price: GHS {item.price.toFixed(2)}</p>
-                    <p>Quantity: {item.quantity}</p>
+             <p>Price: GHS {item.price.toFixed(2)}</p>
+             <p>Quantity: {item.quantity}</p>
              
 
-                  <div className={styles.buttons}>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(incrementQuantity(item.id))}
-                      className="buttons-cart"
+            <div className={styles.buttons}>
+            <button
+               type="button"
+                onClick={() => dispatch(incrementQuantity(item.id))}
+                  className="buttons-cart"
                     >
                       +
                     </button>
@@ -127,41 +125,49 @@ const CartPage = () => {
                       x
                     </button>
                   </div>
+
+                        
                   <p>GHS {item.quantity * item.price.toFixed(2)}</p>
-                </div>
+              
               ))}
                <div className="order-summary">
-                   <h2>Order Summary</h2>
+
+                <h2>Order Summary</h2>
                 <div className="order-items">
-                   <div className="order-item">
+                 
+                  <div className="order-item">
                   <span>Price: GHS {item.price.toFixed(2)}</span>
-                   <span>{item.name}</span>      
+                  <span>{item.name}</span>      
                   <span>Quantity: {item.quantity}</span>
-                     </div>
                   </div>
+                 
+                  </div>
+                 
             <div className="order-details">       
+                 
             <div className="order-detail">
               <span>Subtotal: <h2>GHS {getTotalPrice()}</h2></span>
               <span>Shipping: Free</span>
-                <div className="order-detail">
+              </div>
+                 
+            <div className="order-detail">
               <span>Total: <h4>GHS {getTotalPrice().toFixed(2)}</h4></span>
             </div>
-               </div>
+                 
               </div>
+                 </div>
              
               <div className="forms-container sticky-div">
              <ul>
              <li>                  
-              <Link className="view-cart-btn"href={"/checkout"}>SECURE CHECKOUT</Link> 
+            <Link className="view-cart-btn"href={"/checkout"}>SECURE CHECKOUT</Link> 
             </li>
             </ul>                    
           </div>     
       
             </>
           )}        
-        </div>    
-          
-                 </div>    
+        </div>     
       </main>
     </>
   );
