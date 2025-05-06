@@ -137,8 +137,9 @@ const CartPage = () => {
                   <span>Price: GHS {item.price.toFixed(2)}</span>
                    <span>{item.name}</span>      
                   <span>Quantity: {item.quantity}</span>
-            <div className="order-details">
-       
+                     </div>
+                  </div>
+            <div className="order-details">       
             <div className="order-detail">
               <span>Subtotal: <h2>GHS {getTotalPrice()}</h2></span>
               <span>Shipping: Free</span>
@@ -146,7 +147,7 @@ const CartPage = () => {
               <span>Total: <h4>GHS {getTotalPrice().toFixed(2)}</h4></span>
             </div>
                </div>
-             </div>
+             
               <div className="forms-container sticky-div">
              <ul>
              <li>                  
@@ -154,7 +155,7 @@ const CartPage = () => {
             </li>
             </ul>                    
           </div>     
-          </div>              
+      
             </>
           )}        
         </div>    
