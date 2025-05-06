@@ -141,7 +141,7 @@ const CartPage = () => {
        
             <div className="order-detail">
               <span>Subtotal: <h2>GHS {getTotalPrice()}</h2></span>
-              <span>Shipping: Free</p>
+              <span>Shipping: Free</span>
                 <div className="order-detail">
               <span>Total: <h4>GHS {getTotalPrice().toFixed(2)}</h4></span>
             </div>
