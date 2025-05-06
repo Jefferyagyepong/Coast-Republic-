@@ -160,6 +160,8 @@ const CartPage = () => {
             </>
           )}        
         </div>    
+          
+                 </div>    
       </main>
     </>
   );
