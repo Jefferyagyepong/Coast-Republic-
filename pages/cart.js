@@ -128,7 +128,8 @@ const CartPage = () => {
 
                         
                   <p>GHS {item.quantity * item.price.toFixed(2)}</p>
-              
+
+                </div>
               ))}
                <div className="order-summary">
 
