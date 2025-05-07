@@ -25,8 +25,6 @@ export async function getStaticProps() {
   };
 }
 
-const ProductList = ({ products }) => {
-
 
 const CartPage = ({products}) => {
 
