@@ -6,7 +6,26 @@ import Image from "next/image";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
+import fs from "fs";
+import path from "path";
 
+
+
+
+export async function getStaticProps() {
+  // Read the products JSON file from the public directory
+  const filePath = path.join(process.cwd(), "public", "data", "products.json");
+  const fileContents = fs.readFileSync(filePath, "utf8");
+
+  // Parse the file content into a JavaScript object
+  const products = JSON.parse(fileContents);
+
+  return {
+    props: { products }, // Pass products data to the page component
+  };
+}
+
+const ProductList = ({ products }) => {
 
 
 const CartPage = ({products}) => {
