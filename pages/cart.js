@@ -3,31 +3,15 @@ import { useCart } from '../context/CartContext';
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import Image from "next/image";
-import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 
-// Importing action from  cart.slice.js
-import {
-  incrementQuantity,
-  decrementQuantity,
-  removeFromCart,
-} from "@/redux/cart.slice";
-import styles from "@/sass/components/CartPage.module.scss";
 
 
-const CartPage = () => {
-  const cart = useSelector(state => state.cart);
-  const dispatch = useDispatch();
+const CartPage = ({products}) => {
 
-  const getTotalPrice = () => {
-    return cart.reduce(
-      (accumulator, item) => accumulator + item.quantity * item.price,
-      0
-    );
-  };
-
+  const { cartItems, addItem, removeItem } = useCart();
 
   return (
     <>
@@ -65,117 +49,39 @@ const CartPage = () => {
           <Toast />
           <Header />
         </div>
+    <div>
+      <h1>Shopping Cart</h1>
+      <button
+        onClick={() => addItem(products)}
   
-        <div className={styles.container}>
-  
-          {cart.length === 0 ? (
-            <div className="cart-empty-container">
-            <h1>Cart Empty!</h1>
-            <p>Cart Empty</p>     
-           <div className="forms-container sticky-div">
-          <ul>
-          <li>                  
-          <Link className="view-cart-btn"href={"/products/"}>BACK TO SHOP</Link> 
-          </li>
-         </ul>       
-          </div>    
-          </div>
-                       
-          ) : (
-            <>
-                                            
-            {cart.map(item => (
-            // eslint-disable-next-line react/jsx-key
-            <div className={styles.body}>
-            
-              <div className={styles.image}>
-                    <Image
-                      src={item.image}
-                      height="110"
-                      width="90"
-                      alt="product image"
-                    />
-                  </div>
-                
-             <p>{item.product}</p>
-             <p>{item.name}</p>        
-             <p>Price: GHS {item.price.toFixed(2)}</p>
-             <p>Quantity: {item.quantity}</p>
+      >
+        Add Sample Item
+      </button>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <ul>
+          {cartItems.map((item) => (
+            <li key={item.id}>
+              {item.name} - ${item.price} (Qty: {item.quantity})
+              <button
+                onClick={() => removeItem(item.id)}
              
-
-            <div className={styles.buttons}>
-            <button
-               type="button"
-                onClick={() => dispatch(incrementQuantity(item.id))}
-                  className="buttons-cart"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(decrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      -
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(removeFromCart(item.id))}
-                      className="buttons-cart"
-                    >
-                      x
-                    </button>
-                  </div>
-
-                        
-                  <p>GHS {item.quantity * item.price.toFixed(2)}</p>
-
-                </div>
-              ))}
-               <div className="order-summary">
-
-                <h2>Order Summary</h2>
-                <div className="order-items">
-                 
-                  <div className="order-item">
-                  <span>Price: GHS {item.price.toFixed(2)}</span>
-                  <span>{item.name}</span>      
-                  <span>Quantity: {item.quantity}</span>
-                  </div>
-                 
-                  </div>
-                 
-            <div className="order-details">       
-                 
-            <div className="order-detail">
-              <span>Subtotal: <h2>GHS {getTotalPrice()}</h2></span>
-              <span>Shipping: Free</span>
-              </div>
-                 
-            <div className="order-detail">
-              <span>Total: <h4>GHS {getTotalPrice().toFixed(2)}</h4></span>
-            </div>
-                 
-              </div>
-            
-             
-              <div className="forms-container sticky-div">
-             <ul>
-             <li>                  
-            <Link className="view-cart-btn"href={"/checkout"}>SECURE CHECKOUT</Link> 
+              >
+                Remove
+              </button>
             </li>
-            </ul>                    
-          </div>     
-           </div>
-            </>
-          )}        
-        </div>     
+          ))}
+        </ul>
+      )}
+    </div>
       </main>
     </>
   );
 };
 
 export default CartPage;
+
 
 
 
