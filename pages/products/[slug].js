@@ -9,8 +9,8 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
-import { useDispatch } from "react-redux";
-import { addToCart } from "@/redux/cart.slice";
+import { useCart } from '../context/CartContext';
+
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -59,7 +59,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-  const dispatch = useDispatch();
+  const { addItem } = useCart();
      
   return (
     <>
@@ -155,9 +155,13 @@ const ProductPage = ({ product }) => {
           <Newsletter />
              <div className="forms-container sticky-div">
           <ul><li>
-                   <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
-            ADD TO CART
-          </button> </li>
+                   <button
+              onClick={() => addItem(product)}
+            
+            >
+              Add to Cart
+            </button>
+            </li>
           <li>                  
           <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
             </li></ul>
@@ -180,7 +184,39 @@ export default ProductPage;
 
 
 
+import { useCart } from '../context/CartContext';
+import Link from 'next/link';
 
+export default function Home() {
+  const { addItem } = useCart();
+
+  const products = [
+    { id: 1, name: 'Sample Product 1', price: 29.99 },
+    { id: 2, name: 'Sample Product 2', price: 49.99 },
+  ];
+
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Products</h1>
+      <Link href="/cart">
+        <a>Go to Cart</a>
+      </Link>
+      <ul>
+        {products.map((product) => (
+          <li key={product.id}>
+            {product.name} - ${product.price}
+            <button
+              onClick={() => addItem(product)}
+              style={{ marginLeft: '10px' }}
+            >
+              Add to Cart
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 
 
