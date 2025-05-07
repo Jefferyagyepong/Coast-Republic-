@@ -184,40 +184,4 @@ export default ProductPage;
 
 
 
-import { useCart } from '../context/CartContext';
-import Link from 'next/link';
-
-export default function Home() {
-  const { addItem } = useCart();
-
-  const products = [
-    { id: 1, name: 'Sample Product 1', price: 29.99 },
-    { id: 2, name: 'Sample Product 2', price: 49.99 },
-  ];
-
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1>Products</h1>
-      <Link href="/cart">
-        <a>Go to Cart</a>
-      </Link>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name} - ${product.price}
-            <button
-              onClick={() => addItem(product)}
-              style={{ marginLeft: '10px' }}
-            >
-              Add to Cart
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-
-
 
