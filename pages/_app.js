@@ -2,7 +2,7 @@ import "/sass/main.scss";
 config.autoAddCss = false;
 import { Provider } from 'react-redux';
 import { store } from '../store';
-import { CartProvider } from '../context/CartContext';
+import { CartProvider } from '../context/cartContext';
 
 
 function MyApp({ Component, pageProps }) {
