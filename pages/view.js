@@ -1,6 +1,6 @@
 // app/cart/page.jsx
 'use client';
-
+import Image from "next/image";
 import { useState } from 'react';
 
 export default function CartPage() {
@@ -40,7 +40,7 @@ export default function CartPage() {
           <div style={styles.items}>
             {cartItems.map((item) => (
               <div key={item.id} style={styles.item}>
-                <img src={item.image} alt={item.name} style={styles.image} />
+                <Image src={item.image} alt={item.name} style={styles.image} />
                 <div style={styles.details}>
                   <h3 style={styles.itemName}>{item.name}</h3>
                   <p style={styles.itemSize}>Size: {item.size}</p>
