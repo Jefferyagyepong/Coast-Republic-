@@ -1,34 +1,22 @@
 import Link from "next/link";
-import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import Image from "next/image";
-import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
-// Importing action from  cart.slice.js
-import {
-  incrementQuantity,
-  decrementQuantity,
-  removeFromCart,
-} from "@/redux/cart.slice";
-import styles from "@/sass/components/CartPage.module.scss";
 
 
-const CartPage = () => {
-  const cart = useSelector(state => state.cart);
-  const dispatch = useDispatch();
 
-  const getTotalPrice = () => {
-    return cart.reduce(
-      (accumulator, item) => accumulator + item.quantity * item.price,
-      0
-    );
-  };
+import { useCart } from '../context/CartContext';
 
+export default function CartPage() {
+  const { cartItems, addItem, removeItem } = useCart();
+
+  // Example item to add to cart
+  const sampleItem = { id: 1, name: 'Sample Product', price: 29.99 };
 
   return (
-    <>
+        <>
       <Head>
         <title>Cart </title>
         <link rel="apple-touch-icon" href="/favicon.ico" />
@@ -63,79 +51,34 @@ const CartPage = () => {
           <Toast />
           <Header />
         </div>
-  
-
-        <div className={styles.container}>
-          {cart.length === 0 ? (
-            <div>
-              <h3>Your Cart is Empty!</h3>
-              <Link href={"/products"}>click here to sho now</Link>
-            </div>
-          ) : (
-            <>
-              
-              <div className={styles.head}>
-                <div>Product</div>
-                <div>Name</div>
-                <div>Price</div>
-                <div>Quantity</div>
-                <div>Actions</div>
-                <div>Total Price</div>
-              </div>
-      
-              {cart.map(item => (
-                // eslint-disable-next-line react/jsx-key
-                <div className={styles.body}>
-                  <div className={styles.image}>
-                    <Image
-                      src={item.image}
-                      height="110"
-                      width="90"
-                      alt="product image"
-                    />
-                  </div>
-                
-                    <p>{item.product}</p>
-                    <p>$ {item.price}</p>
-                    <p>{item.quantity}</p>
-             
-
-                  <div className={styles.buttons}>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(incrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(decrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      -
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(removeFromCart(item.id))}
-                      className="buttons-cart"
-                    >
-                      x
-                    </button>
-                  </div>
-                  <p>$ {item.quantity * item.price}</p>
-                </div>
-              ))}
- 
-              <h2>Grand Total: $ {getTotalPrice()}</h2>
-            </>
-          )}
-        
-        </div>
-     
+    <div style={{ padding: '20px' }}>
+      <h1>Shopping Cart</h1>
+      <button
+        onClick={() => addItem(sampleItem)}
+        style={{ marginBottom: '20px' }}
+      >
+        Add Sample Item
+      </button>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty.</p>
+      ) : (
+        <ul>
+          {cartItems.map((item) => (
+            <li key={item.id}>
+              {item.name} - ${item.price} (Qty: {item.quantity})
+              <button
+                onClick={() => removeItem(item.id)}
+                style={{ marginLeft: '10px' }}
+              >
+                Remove
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+       
       </main>
     </>
   );
-};
-
-export default CartPage;
+}
