@@ -61,7 +61,7 @@ export async function getStaticProps({ params }) {
 
 const ProductPage = ({ product }) => {
   const dispatch = useDispatch();
-     
+       const { cartItems, addItem, removeItem } = useCart();
   return (
     <>
       <Head>
