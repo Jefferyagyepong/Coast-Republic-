@@ -9,7 +9,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/cartContext';
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
