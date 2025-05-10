@@ -9,6 +9,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
+import { useCart } from '../context/CartContext';
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/cart.slice";
 
