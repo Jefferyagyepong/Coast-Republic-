@@ -5,6 +5,7 @@ config.autoAddCss = false;
 
 import store from "../redux/store";
 import { Provider } from "react-redux";
+import { CartProvider } from '../context/CartContext;
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,3 +14,7 @@ export default function App({ Component, pageProps }) {
     </Provider>
   );
 }
+
+
+
+
