@@ -3,11 +3,12 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-import store from "../redux/store";
-import { Provider } from "react-redux";
-import { CartProvider } from "../context/cartContext";
 
-export default function App({ Component, pageProps }) {
+import { CartProvider } from "../context/cartContext";
+import { Provider } from 'react-redux';
+import { store } from "../redux/store";
+
+function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Component {...pageProps} />
@@ -15,6 +16,5 @@ export default function App({ Component, pageProps }) {
   );
 }
 
-
-
+export default MyApp;
 
