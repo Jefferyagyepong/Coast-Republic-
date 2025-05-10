@@ -1,7 +1,7 @@
 
 import { createContext, useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart } from '../store/cartSlice';
+import { addToCart, removeFromCart } from '../redux/cart.slice';
 
 const CartContext = createContext();
 
