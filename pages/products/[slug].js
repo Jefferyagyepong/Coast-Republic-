@@ -10,8 +10,6 @@ import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
 import { useCart } from '../context/CartContext';
-import { useDispatch } from "react-redux";
-import { addToCart } from "@/redux/cart.slice";
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -60,7 +58,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-  const dispatch = useDispatch();
+
        const { cartItems, addItem, removeItem } = useCart();
   return (
     <>
@@ -155,9 +153,15 @@ const ProductPage = ({ product }) => {
           <Newsletter />
              <div className="forms-container sticky-div">
           <ul><li>
-                   <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
+            
+          
+            <button
+        onClick={() => addItem(product)}
+        className="primary-btn"
+      >
             ADD TO CART
-          </button> </li>
+          </button> 
+          </li>
           <li>                  
           <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
             </li></ul>
