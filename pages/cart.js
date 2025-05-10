@@ -7,7 +7,7 @@ import Toast from "@/components/Head/Toast";
 
 
 
-import { useCart } from '@/context/CartContext';
+import { useCart } from '@/context/cartContext';
 
 export default function CartPage() {
   const { cartItems, addItem, removeItem } = useCart();
