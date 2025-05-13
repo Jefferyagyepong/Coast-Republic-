@@ -1,7 +1,7 @@
 import { useCart } from '@/context/cartContext';
-
+import { useSelector, useDispatch } from "react-redux";
 export default function CartPage() {
-  const { cartItems, addItem, removeItem } = useCart();
+const cart = useSelector(state => state.cart);
 
   // Example item to add to cart
   const sampleItem = { id: 1, name: 'Sample Product', price: 29.99 };
