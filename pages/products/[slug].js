@@ -59,7 +59,7 @@ export async function getStaticProps({ params }) {
 
 const ProductPage = ({ product }) => {
 
-       const { cartItems, addItem, removeItem } = useCart();
+  const { addItem } = useCart();
   return (
     <>
       <Head>
@@ -155,12 +155,7 @@ const ProductPage = ({ product }) => {
           <ul><li>
             
           
-            <button
-        onClick={() => addItem(product)}
-        className="primary-btn"
-      >
-            ADD TO CART
-          </button> 
+            <button onClick={() => addItem(product)}>Add to Cart</button>
           </li>
           <li>                  
           <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
