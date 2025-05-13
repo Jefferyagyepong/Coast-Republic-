@@ -1,36 +1,35 @@
-import { useCart } from '@/context/cartContext';
-import { useSelector, useDispatch } from "react-redux";
-export default function CartPage() {
-const cart = useSelector(state => state.cart);
+import { useCart } from '../context/CartContext';
 
-  // Example item to add to cart
-  const sampleItem = { id: 1, name: 'Sample Product', price: 29.99 };
+export default function Cart() {
+  const { cartItems, removeItem, updateItemQuantity, totalPrice } = useCart();
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Shopping Cart</h1>
-      <button
-        onClick={() => addItem(sampleItem)}
-        style={{ marginBottom: '20px' }}
-      >
-        Add Sample Item
-      </button>
-      {cart.length === 0 ? (
+    <div className="container">
+      <h2>Shopping Cart</h2>
+      {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <ul>
-          {cart.map((item) => (
-            <li key={item.id}>
-              {item.name} - ${item.price} (Qty: {item.quantity})
-              <button
-                onClick={() => removeItem(item.id)}
-                style={{ marginLeft: '10px' }}
-              >
-                Remove
-              </button>
-            </li>
+        <>
+          {cartItems.map((item) => (
+            <div key={item.id} className="cart-item">
+              <span>{item.name} - ${item.price}</span>
+              <div>
+                <input
+                  type="number"
+                  value={item.quantity}
+                  onChange={(e) =>
+                    updateItemQuantity(item.id, parseInt(e.target.value))
+                  }
+                  min="1"
+                />
+                <button onClick={() => removeItem(item.id)}>Remove</button>
+              </div>
+            </div>
           ))}
-        </ul>
+          <h3>Order Summary</h3>
+          <p>Total Items: {cartItems.reduce((sum, item) => sum + item.quantity, 0)}</p>
+          <p>Total Price: ${totalPrice.toFixed(2)}</p>
+        </>
       )}
     </div>
   );
