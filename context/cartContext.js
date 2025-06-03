@@ -1,30 +1,55 @@
-import { createContext, useContext } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart, updateQuantity } from '../store/cartSlice';
+// context/CartContext.js
+import { createContext, useContext, useState } from 'react';
 
-const cartContext = createContext();
+const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state.cart.items);
+  const [cart, setCart] = useState([]);
 
-  const addItem = (item) => dispatch(addToCart(item));
-  const removeItem = (id) => dispatch(removeFromCart(id));
-  const updateItemQuantity = (id, quantity) =>
-    dispatch(updateQuantity({ id, quantity }));
+  // Add item to cart
+  const addToCart = (item) => {
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((i) => i.id === item.id);
+      if (existingItem) {
+        return prevCart.map((i) =>
+          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+        );
+      }
+      return [...prevCart, { ...item, quantity: 1 }];
+    });
+  };
 
-  const totalPrice = cartItems.reduce(
-    (total, item) => total + item.price * item.quantity,
-    0
-  );
+  // Remove item from cart
+  const removeFromCart = (id) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+  };
+
+  // Update item quantity
+  const updateQuantity = (id, quantity) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+      )
+    );
+  };
+
+  // Clear cart
+  const clearCart = () => setCart([]);
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addItem, removeItem, updateItemQuantity, totalPrice }}
+      value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart }}
     >
       {children}
     </CartContext.Provider>
   );
 };
 
-export const useCart = () => useContext(cartContext);
+// Custom hook to use cart context
+export const useCart = () => {
+  const context = useContext(CartContext);
+  if (!context) {
+    throw new Error('useCart must be used within a CartProvider');
+  }
+  return context;
+};
