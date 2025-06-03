@@ -1,21 +1,39 @@
 // context/CartContext.js
-import { createContext, useContext, useState, useEffect } from 'react';
-
-const CartContext = createContext();
-
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const savedCart = localStorage.getItem('cart');
-      return savedCart ? JSON.parse(savedCart) : [];
-    }
-    return [];
-  });
+  const [cart, setCart] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5; // Number of items per page
 
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }, [cart]);
+  // Calculate paginated items
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = cart.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(cart.length / itemsPerPage);
 
-  // Rest of the provider code (addToCart, removeFromCart, etc.) remains the same
-  // ...
+  // Pagination controls
+  const nextPage = () => {
+    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+  };
+  const prevPage = () => {
+    setCurrentPage((prev) => Math.max(prev - 1, 1));
+  };
+
+  return (
+    <CartContext.Provider
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        updateQuantity,
+        clearCart,
+        currentItems,
+        currentPage,
+        totalPages,
+        nextPage,
+        prevPage,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
 };
