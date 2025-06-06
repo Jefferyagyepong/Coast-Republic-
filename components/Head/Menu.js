@@ -1,40 +1,34 @@
-import Link from "next/link";
-function Menu() {
-  return (
-    <>
-      <nav className="nav-box">
-        <div className="navbar">
-          <div className="container nav-container">
-            <input className="checkbox" type="checkbox" name="" id="" />
-            <div className="hamburger-lines">
-              <span className="line line1"></span>
-              <span className="line line2"></span>
-              <span className="line line3"></span>
-            </div>
+// HamburgerMenu.jsx
+import React, { useState } from 'react';
+import Link from 'next/link';
 
-            <div className="menu-items">
-              <ul>
-                <li>
-                  <Link id="menu-link" href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/about">About</Link>
-                </li>
-                <li>
-                  <Link href="/products/">Shop</Link>
-                </li>
-                <li>
-                  <Link href="/privacy">Privacy</Link>
-                </li>
-                <li>
-                  <Link href="/contact">contact</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </>
+const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="nav-container">
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        className="nav-toggle"
+        checked={isOpen}
+        onChange={() => setIsOpen(!isOpen)}
+      />
+      <label htmlFor="nav-toggle" className="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul className="nav-menu">
+        <li><Link href="/">HOME</Link></li>
+        <li><Link href="/products/">SHOP NOW </Link></li>
+        <li><Link href="/delivery">DELIVERY INFOMATION</Link></li>
+        <li><Link href="/contact">CONTACT US</Link></li>
+      </ul>
+      
+    
+    </nav>
   );
-}
-export default Menu;
+};
+
+export default HamburgerMenu;

@@ -1,12 +1,17 @@
-
+.text-align-center{
+text-align:center;
+}
 .container {
 width:100%;
-margin-top:20px;
+  margin: 0 auto;
+  
 
 }
 
 .sticky{
-width:100%;
+ width:100%;
+  margin: 0 auto;
+  
 top:0;
 position:sticky;
 z-index:999;
@@ -14,7 +19,9 @@ z-index:999;
 
 .head{
 margin-top: 20px;
-  width: 100%;
+width:100%;
+  margin: 0 auto;
+  
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
@@ -28,7 +35,9 @@ max-width:50px;
 
 .body{
 margin-top: 20px;
-  width: 100%;
+width:100%;
+  margin: 0 auto;
+  
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;

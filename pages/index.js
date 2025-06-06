@@ -10,7 +10,7 @@ import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 
-// import Carousel from "@/components/Products/Carousel"; 
+
 import All from '@/components/Products/All';
                                 
 import Carousel from "@/components/Products/Carousel"; 
@@ -80,7 +80,9 @@ const Home = () => {
         <Sale />
         <Thrifts />
         <Jeans />          
+        <Carousel images={images} />
         <New />
+        
         <Link href="/products/" className="product-link">Shop Now</Link>                  
         <Collection />     
         <Newsletter />

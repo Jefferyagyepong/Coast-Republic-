@@ -3,13 +3,18 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-import store from "../redux/store";
-import { Provider } from "react-redux";
 
-export default function App({ Component, pageProps }) {
+import { CartProvider } from "../context/cartContext";
+
+
+
+function MyApp({ Component, pageProps }) {
   return (
-    <Provider store={store}>
+     <CartProvider>
       <Component {...pageProps} />
-    </Provider>
+    </CartProvider>
   );
 }
+
+export default MyApp;
+

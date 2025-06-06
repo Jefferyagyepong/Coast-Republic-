@@ -1,13 +1,15 @@
 .inline {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 10px 20px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
 }
-
+.product-link{
+text-align:center;
+}
 
 
 .shop-nows {
@@ -16,21 +18,48 @@
   border-radius: 2px;
 }
 .product-container{
-  width: 100%;
-  padding: 10px 16px;
+   width:100%;
+   background: hsl(0%, 0%, 92%);
+   margin: 0 auto;
+padding-top:50px;
+padding-bottom:50px;
+h3,h4,h5,h6{
+padding-left:10px;
+}
 }
 
 .product-card {
-  width: 100%;
   display: grid;
+background:#fff;
+padding-top:30px;
+padding-bottom:30px;
+border-radius:4px;
+  width:100%;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
-  align-items: flex-start;
-  justify-content: space-between;
-  h4, h5{
-    color: black;
-  }
+align-items: center;
+justify-content: start;
+padding-left: 10px;
+list-style:none;
+margin: 0 auto;
 
+
+a{
+padding-top: 20px;
+text-decoration:none;
+cursor:pointer;
+transition: 0.2s ease;
+
+h3,h4,h5,h6, p{
+margin:6px;
+}
+
+img{
+display: block;
+margin-left:0;
+margin-top: 30px;
+}
+}
+    
 }
 
 .shop-nows:hover {
@@ -41,17 +70,13 @@
   .product-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    align-items: flex-start;
-    justify-content: space-between;
-
   }
 
 }
 
 .jean-bg {
-  width: 100%;
-
+width:100%;
+padding:10px 14px;
   a {
     text-decoration: underline;
     text-align: left;
@@ -59,7 +84,13 @@
 }
 
 .sale-box {
-  width: 100%;
+   width:100%;
+margin: 0 auto;
+display:flex;
+flex-direction: column;
+align-items: center;
+gap: 1.6rem;
+padding:20px 30px;
   background: #800000;
   color: #fff;
 

@@ -1,74 +1,82 @@
 [
 {
-    "slug": "Air Force 1 07 black",
-    "name": "Air Force 1 07 black",
-    "description": "This is a great product",
-    "price": 19.99,
     "_id": 1,
-    "image": "/products/force1a.JPG",
-    "brand": "Nike"
+    "slug": "Air Force 1 07 black",
+    "name": "Air Force 1 07 black",       
+    "image": "/products/force1c.JPG",
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 1109.99
+
   },
   {
-    "slug": "Reebok classics",
-    "name": "Reebok classics",
-    "description": "This is a great product",
-    "price": 19.99,
     "_id": 2,
+    "slug": "Reebok classics",
+    "name": "Reebok classics",     
     "image": "/products/reebook1c.JPG",
-    "brand": "Nike"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 1109.99
+
   },
   {
+    "_id": 3,
     "slug": "Air Force 1 07 high black",
     "name": "Air Force 1 07 high black",
-    "description": "This is a great product",
-    "_id": 3,
     "image": "/products/force3a.JPG",
-    "price": 130.00,
-    "brand": "Nike"
+     "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 1130.00
+
   },
   {
+    "_id": 4,
     "slug": " Adidas Campus",
     "name": " Adidas Campus",
-    "description": "This is a great product.",
-    "_id": 4,
     "image": "/products/campus1a.JPG",
-    "price": 85.00,
-    "brand": "Adidas"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 1185.00
+ 
   },
   {
+    "_id": 5,
     "slug": "Converse Chuck Taylor",
     "name": "Converse Chuck Taylor",
-    "description": "This is a great product.",
-    "_id": 5,
     "image": "/products/chuck1a.JPG",
-    "price": 75.00,
-    "brand": "Converse"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 750.00
+
   },
   {
+    "_id": 6,
     "slug": "Timberland Boots",
     "name": "Timberland Boots",
-    "description": "This is a great product.",
-    "_id": 6,
     "image": "/products/tims1a.JPG",
-    "price": 75.00,
-    "brand": "Timberland"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 375.00
+
   },
   {
-    "slug": "vans",
-    "name": "vans",
-    "description": "This is a great product.",
     "_id": 7,
+    "slug": "Vans Ski Low",
+    "name": "Vans Ski Low",
     "image": "/products/vans1a.WEBP",
-    "price": 80.00,
-    "brand": "Vans"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 700.00
+
   },
   {
+    "_id": 8,
     "slug": "Reebok",
     "name": "Reebok",
-    "description": "This is a great product",
-    "_id": 8,
     "image": "/products/reebook1b.WEBP",
-    "price": 120.00,
-    "brand": "Reebok"
+    "category": "Sneaker",
+    "description": "Lorem ipsum dalot gunt Dreh",
+    "price": 600.00
+
   }
 ]

@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import Header from "@/components/Head/Header";
+import OrderSum from "@/components/Products/OrderSum";
 
 import Footer from "@/components/Footer/Footer";
 import PaystackPayment from "@/components/Products/PaystackPayment";
@@ -8,6 +10,23 @@ const checkout = () => {
   const email = "user@exaple.com";
   const amount = 1000;
   const reference = `ref_${new Date().getTime()}`;
+
+//order
+
+  const orderData = {
+    items: [
+      { name: 'Product 1', price: 29.99 },
+      { name: 'Product 2', price: 49.99 },
+    ],
+    subtotal: 79.98,
+    tax: 6.40,
+    total: 86.38,
+    };
+  
+
+
+
+
 
   return (
     <>
@@ -51,7 +70,15 @@ const checkout = () => {
         />
         <link rel="icon" href="" />
       </Head>
-      <h1>Welcome to Coast Republic Store</h1>
+      <Header />
+      <h3 className="text-align-center">SECURE CHECKOUT</h3>
+    <OrderSum
+        items={orderData.items}
+        subtotal={orderData.subtotal}
+        tax={orderData.tax}
+        total={orderData.total}
+        
+      />
       <PaystackPayment email={email} amount={amount} reference={reference} />
 
       <Footer />
@@ -60,3 +87,10 @@ const checkout = () => {
 };
 
 export default checkout;
+
+
+
+
+
+
+

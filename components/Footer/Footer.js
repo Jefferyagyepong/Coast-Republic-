@@ -4,98 +4,37 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        {/* Categories Section */}
+      <div className="footer-container">
+        {/* Brand Info */}
+        <div className="footer-section brand-info">
+          <h3 className="footer-logo">Coast Republic</h3>
+          <p>Elevate your style with the latest fashion trends. Discover unique designs crafted for you.</p>
+        </div>
+
+        {/* Navigation Links */}
         <div className="footer-section">
-          <h4>Categories</h4>
+          <h3>Shop</h3>
           <ul>
-            <li>
-              <Link href="/products/" className="footer-link">
-                Tees
-              </Link>
-            </li>
+              
+            <li><Link href="/products/">Men</Link></li>       
           </ul>
         </div>
 
-        {/* Customer Service Section */}
         <div className="footer-section">
-          <h4>Customer Service</h4>
+          <h3>Help</h3>
           <ul>
-            <li>
-              <Link href={"/contact"} className="footer-link">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href={"/delivery"} className="footer-link">
-                Delivery Info
-              </Link>
-            </li>
-            <li>
-              <Link href={"/return"} className="footer-link">
-                Returns & Refunds
-              </Link>
-            </li>
-            <li>
-              <Link href={"/faq"} className="footer-link">
-                FAQ
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        {/* Legal Section */}
-        <div className="footer-section">
-          <h4>Legal</h4>
-          <ul>
-            <li>
-              <Link href={"/terms"}>Terms & Conditions</Link>
-            </li>
-            <li>
-              <Link href={"/privacy"}>Privacy Policy</Link>
-            </li>
-            <li>
-              <Link href={"/cookies"}>Cookie Policy</Link>
-            </li>
+            <li><Link href="/faq">FAQ</Link></li>
+            <li><Link href="/delivery">Shipping</Link></li>
+            <li><Link href="/returns">Returns</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
 
         {/* Social Media Section */}
-        <div className="footer-section">
-          <h4>Follow Us</h4>
-          <ul className="social-links">
-            <li>
-              <Link
-                href={"https://facebook.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"https://twitter.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"https://instagram.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </Link>
-            </li>
-          </ul>
-        </div>
+ 
       </div>
 
-      <h5>WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
+      <h5 className ="text-align-center">WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
@@ -130,7 +69,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>
+        <p className ="text-align-center">
           © {new Date().getFullYear()} Coast Republic Store. All rights
           reserved.
         </p>

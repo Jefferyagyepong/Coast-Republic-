@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import Header from "@/components/Head/Header";
+import Footer from "@/components/Footer/Footer";
 import Toast from "@/components/Head/Toast";
 import React from "react";
 import Link from "next/link";
@@ -6,6 +8,9 @@ import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import Head from "next/head";
+import Newsletter from "@/components/Footer/Newsletter";
+
+import BackTo from "@/components/Products/BackTo";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -21,6 +26,24 @@ export async function getStaticProps() {
 }
 
 const ProductList = ({ products }) => {
+
+const [filter, setFilter] = useState('All');
+  const [sort, setSort] = useState('name-asc');
+
+  // Get unique categories for filter dropdown
+  const categories = ['All', ...new Set(products.map((product) => product.category))];
+
+  // Filter and sort products
+  const filteredProducts = products
+    .filter((product) => filter === 'All' || product.category === filter)
+    .sort((a, b) => {
+      if (sort === 'price-asc') return a.price - b.price;
+      if (sort === 'price-desc') return b.price - a.price;
+      if (sort === 'name-asc') return a.name.localeCompare(b.name);
+      if (sort === 'name-desc') return b.name.localeCompare(a.name);
+      return 0;
+    });
+  
   return (
     <>
       <Head>
@@ -72,27 +95,80 @@ const ProductList = ({ products }) => {
           <Header />
         </div>
         <div className="product-container">
-          <h4>Shop Tees</h4>
-          <br />
-          <div className="product-card">
-            {products.map(product => (
-              <span key={product.slug}>
-                <Link href={`/products/${product.slug}`}>
+          <h3>Our collection</h3>  <br />
+         <div className="controls">
+          <label>
+           Filter by Category:
+          <select onChange={(e) => setFilter(e.target.value)} value={filter}>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Sort by:
+          <select onChange={(e) => setSort(e.target.value)} value={sort}>
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="price-asc">Price (Low to High)</option>
+            <option value="price-desc">Price (High to Low)</option>
+          </select>
+        </label>
+      </div>
+                                 
+          <ul className="product-card">      
+            {filteredProducts.map((product) => (
+              <li key={product.slug}>                        
+                <Link href={`/products/${product.slug}`}>           
                   <Image
                     src={product.image}
-                    height={100}
-                    width={90}
+                    height={150}
+                    width={210}
                     alt=" product"
-                  />
-                  <h4>{product.name}</h4><br/>
-                  <h5>{ product.price}</h5>
-                  <br />
+                  />  
+                  <h3><b>{product.name}</b></h3>
+                  <p>{product.description}</p>
+                  <p>{product.description}</p>
+                  <p>GH₵ { product.price.toFixed(2)}</p>               
                 </Link>
-              </span>
+              </li>
             ))}
-          </div>
-        </div>
+          </ul>
+        </div>                   
+        <BackTo />                              
+        <Newsletter />
+        <Footer />
       </main>
+      
+      <style jsx global>{`
+    
+        .controls {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+        .controls label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+        }
+        .controls select {
+          padding: 8px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+    }
+        .product-card img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 4px;
+        }
+    
+      `}</style>
     </>
   );
 };

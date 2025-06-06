@@ -12,9 +12,8 @@ function Show() {
         height={700}
         alt="img"
       />
-      <h5>Journal: Designer pairs in our collection </h5>
-      <br />
-      <br />
+      <h3>DESIGNER PAIRS IN OUR COLLECTION</h3>
+          
       <Link href={"/products"}>Shop now</Link>
     </div>
   );

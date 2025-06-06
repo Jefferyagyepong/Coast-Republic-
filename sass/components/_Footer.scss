@@ -1,9 +1,9 @@
 .ibrid-flex {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: left;
-  justify-content: flex-start;
+    width:100%;
+    padding:10px 14px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: flex-start;
 
   img {
     justify-content: flex-start;
@@ -11,103 +11,102 @@
 }
 
 .footer-link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
 .payment-logo {
-  width: auto;
-  height: auto;
-  border-radius: 2px;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
 }
 
 footer .container .footer-section ul {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .button-submit {
-  border: none;
-  text-align: center;
-  width: 66%;
+    border: none;
+    text-align: center;
+    width: 66%;
 
 }
 
 .button-submit:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .footer {
-  width: 100%;
-
-  color: #000;
-  padding: 10px 20px;
-  text-align: center;
-
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-family: 'Arial', sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
 }
 
 .footer-section {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-
-
-
+  margin-bottom: 20px;
 }
 
-.footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #222;
-  font-weight: 700;
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.brand-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .footer-section ul {
-
   list-style: none;
   padding: 0;
-  text-decoration: none;
-
 }
 
 .footer-section ul li {
-  text-decoration: none;
-  margin: 14px 0;
-
-
+  margin-bottom: 10px;
 }
 
 .footer-section ul li a {
-  color: #333;
-  font-weight: 300;
+  color: #ccc;
+  text-decoration: none;
   font-size: 14px;
-
-
-}
-
-.payment-container {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
   color: #fff;
 }
 
-.social-links li {
-  display: inline;
-  margin-right: 10px;
+.payment-container {
+   margin-top: 1rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
 }
+
+
 
 .footer-bottom {
   margin-top: 20px;
@@ -118,15 +117,17 @@ footer .container .footer-section ul {
 
 
 .footer-align-left {
-  width: 100%;
+ width:100%;
+  margin: 0 auto;
+  padding: 10px 14px;
   text-align: left;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 20px;
-  margin: 0 auto;
+ 
 
   img {
     margin: 0 auto;
+
   }
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ export default function NewsletterForm() {
   return (
     <div className="newsletter-container">
       <div>
-        <h3>Be the first to know</h3>
+        <h3>Subscribe to our newsletter for exclusive offers and updates</h3>
       </div>
       <br />
       <p>
@@ -44,7 +45,7 @@ export default function NewsletterForm() {
       <br />
       <div className="formContainer">
         <form onSubmit={handleSubmit} className="form">
-          <div className="inputGroup">
+          <div className="form-group">
             <label>Email</label>
             <input
               type="email"
@@ -57,6 +58,37 @@ export default function NewsletterForm() {
           <button type="submit">SignUp</button>
         </form>
         {message && <p>{message}</p>}
+      </div>
+            <div className="payment-container">
+        <Image
+          src={"/logo-whatsapp.svg"}
+          height={10}
+          width={15}
+          alt="momo logo"
+          className="footer-tag"
+        />
+        <Image
+          src={"/mail.svg"}
+          height={10}
+          width={15}
+          alt="mail-icon"
+          className="footer-tag"
+        />
+
+        <Image
+          src={"/logo-facebook.svg"}
+          height={10}
+          width={15}
+          alt="facebook icon"
+          className="footer-tag"
+        />
+        <Image
+          src={"/logo-twitter.svg"}
+          height={10}
+          width={15}
+          alt="twitter icon"
+          className="footer-tag"
+        />
       </div>
     </div>
   );
