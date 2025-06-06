@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
+import Header from "@/components/Head/Header";
+import Footer from "@/components/Footer/Footer";
 
 
 const faqData = [
@@ -32,8 +34,12 @@ const FAQ = () => {
     <>
       <Head>
         <title>FAQ - Your Store</title>
-        <meta name="description" content="Frequently Asked Questions about our products and services." />
+        <meta
+          name="description"
+          content="Frequently Asked Questions about our products and services."
+        />
       </Head>
+      <Header />
       <div className="ibrid-box">
         <h1>Frequently Asked Questions</h1>
         <div className="faqList">
@@ -48,6 +54,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
