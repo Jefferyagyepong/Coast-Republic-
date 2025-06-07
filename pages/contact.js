@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <>
-<<<<<<< HEAD
+
       <Header />
 
       <div className="formContainer">
@@ -30,7 +30,7 @@ const Contact = () => {
             Have questions? We are here to help! Fill out the form below, and we
             will get back to you.
           </p>
-=======
+
        <Head>
         <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
@@ -86,7 +86,7 @@ const Contact = () => {
         <p>
           Have questions? We are here to help! Fill out the form below, and we will get back to you.
         </p>
->>>>>>> 1db6be9581d344dfc4bcf51a2f955d4fb0255fde
+
 
           {submitted ? (
             <div>
@@ -126,7 +126,6 @@ const Contact = () => {
             </form>
           )}
 
-<<<<<<< HEAD
           <div>
             <h2>Our Contact Details</h2>
             <p>📍 7 Minneti ST, Asokwa, ASK</p>
@@ -137,7 +136,6 @@ const Contact = () => {
       </div>
       <Footer/>
     </>
-=======
         <div>
           <h2>IN STORE WAREHOUSE </h2>
           <p>📍 7 Asafo Dadiesoaba</p>
@@ -150,8 +148,6 @@ const Contact = () => {
     </main>
     </>
     
-
->>>>>>> 1db6be9581d344dfc4bcf51a2f955d4fb0255fde
   );
 };
 
