@@ -91,5 +91,5 @@ export default function Search() {
         <div>
             <input type="search" name="" value={searchTerm} placeholder="search products..." onChange={(e) => setSearchTerm}>
         </div>
-    )
+    );
 }
