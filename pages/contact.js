@@ -3,7 +3,6 @@ import Header from "@/components/Head/Header";
 import { useState } from "react";
 import Head from "next/head";
 import Toast from "@/components/Head/Toast";
-import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 const Contact = () => {
   const [name, setName] = useState("");
