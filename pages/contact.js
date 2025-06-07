@@ -19,17 +19,7 @@ const Contact = () => {
 
   return (
     <>
-
-      <Header />
-
-      <div className="formContainer">
-        <div>
-          <h1>Contact Us</h1>
-          <p>
-            Have questions? We are here to help! Fill out the form below, and we
-            will get back to you.
-          </p>
-
+    
        <Head>
         <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
@@ -73,12 +63,23 @@ const Contact = () => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-      <main>
-        <div className="sticky">
+      
+      <div className="sticky">
         <Toast />
         <Header />
         </div>
     
+ 
+
+      <div className="formContainer">
+        <div>
+          <h1>Contact Us</h1>
+          <p>
+            Have questions? We are here to help! Fill out the form below, and we
+            will get back to you.
+          </p>
+
+  
     <div className="contact-container">
       <div>
         <h2>Contact Us</h2>
@@ -144,10 +145,10 @@ const Contact = () => {
       </div>
     </div>
     <Footer />
-    </main>
+  
     </>
     
   );
-};
+}
 
 export default Contact;
