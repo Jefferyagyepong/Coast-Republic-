@@ -9,7 +9,8 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
-import { useCart } from "@/context/cartContext";
+// components/Cart.js
+import { useCart } from '../context/CartContext';
 
 
 // This function generates the paths for each product based on the slugs.
