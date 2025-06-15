@@ -68,18 +68,7 @@ const Contact = () => {
         <Toast />
         <Header />
         </div>
-    
- 
-
-      <div className="formContainer">
-        <div>
-          <h1>Contact Us</h1>
-          <p>
-            Have questions? We are here to help! Fill out the form below, and we
-            will get back to you.
-          </p>
-
-  
+      
     <div className="contact-container">
       <div>
         <h2>Contact Us</h2>
@@ -94,7 +83,7 @@ const Contact = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="form">
-              <div>
+              <div className="inputGroup">
                 <label>Name</label>
                 <input
                   type="text"
