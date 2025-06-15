@@ -11,7 +11,7 @@ import path from 'path';
 import Image from 'next/image';
 // components/Cart.js
 import { useCart } from '../context/CartContext';
-
+import Cart from '../components/Cart';
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -149,6 +149,7 @@ const ProductPage = ({ product }) => {
               <p>{product.description}</p>
           <p>Price: GH₵ {product.price}</p>
           </div>
+          <Cart />
           <Faq />
                                        
           <ItemsLike /> 
