@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 
-import { CartProvider } from "../context/cartContext";
+import { CartProvider } from "@/context/cartContext";
 
 
 
