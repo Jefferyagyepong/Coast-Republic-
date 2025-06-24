@@ -18,8 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <>
-    
+    <>  
        <Head>
         <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
@@ -63,6 +62,7 @@ const Contact = () => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
+      <main>
       
       <div className="sticky">
         <Toast />
@@ -116,9 +116,8 @@ const Contact = () => {
           )}
 
       <Footer/>
-    </>
-        
-
+      </main>
+    </>        
   );
 }
 
