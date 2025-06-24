@@ -115,14 +115,6 @@ const Contact = () => {
             </form>
           )}
 
-          <div>
-            <h2>Our Contact Details</h2>
-            <p>📍 7 Minneti ST, Asokwa, ASK</p>
-            <p>📞 +233 200-0000</p>
-            <p>✉️ support@coastrepublic.com</p>
-          </div>
-        </div>
-      </div>
       <Footer/>
     </>
         
