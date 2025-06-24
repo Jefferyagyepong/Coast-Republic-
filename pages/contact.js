@@ -69,21 +69,22 @@ const Contact = () => {
         <Header />
         </div>
       
-    <div className="contact-container">
-      <div>
+     <div className="contact-container">    
         <h2>Contact Us</h2>
         <p>
-          Have questions? We are here to help! Fill out the form below, and we will get back to you.
+         Have questions? We are here to help! Fill out the form below, and we will get back to you.
         </p>
-
-
+        
           {submitted ? (
+            
             <div>
               ✅ Your message has been sent. We will get back to you soon!
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="form">
-              <div className="inputGroup">
+            
+             <form onSubmit={handleSubmit} className="form">
+             
+               <div className="inputGroup">
                 <label>Name</label>
                 <input
                   type="text"
@@ -92,6 +93,7 @@ const Contact = () => {
                   onChange={e => setName(e.target.value)}
                 />
               </div>
+              
               <div className="inputGroup">
                 <label>Email</label>
                 <input
@@ -101,6 +103,7 @@ const Contact = () => {
                   onChange={e => setEmail(e.target.value)}
                 />
               </div>
+              
               <div className="inputGroup">
                 <label>Message</label>
                 <textarea
@@ -114,7 +117,6 @@ const Contact = () => {
               <button type="submit">Send Message</button>
             </form>
           )}
-
       <Footer/>
       </main>
     </>        
