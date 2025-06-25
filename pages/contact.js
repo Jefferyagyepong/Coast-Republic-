@@ -68,7 +68,9 @@ const Contact = () => {
         <Toast />
         <Header />
         </div> 
+            
         <h2>Contact Us</h2>
+            
         <p>
          Have questions? We are here to help! Fill out the form below, and we will get back to you.
         </p>
@@ -90,7 +92,7 @@ const Contact = () => {
                   value={name}
                   onChange={e => setName(e.target.value)}
                 />
-              </div>
+                </div>
               
               <div className="inputGroup">
                 <label>Email</label>
@@ -100,7 +102,8 @@ const Contact = () => {
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                 />
-              </div>
+               </div>
+                    
               
               <div className="inputGroup">
                 <label>Message</label>
