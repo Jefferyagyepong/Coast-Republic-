@@ -95,10 +95,10 @@ const [filter, setFilter] = useState('All');
           <Header />
         </div>
         <div className="product-container">
-          <h3>Our collection</h3>  <br />
-         <div className="controls">
-          <label>
-           Filter by Category:
+          <h4>Shop Tees</h4>  
+                            <div className="controls">
+        <label>
+          Filter by Category:
           <select onChange={(e) => setFilter(e.target.value)} value={filter}>
             {categories.map((category) => (
               <option key={category} value={category}>
@@ -120,18 +120,18 @@ const [filter, setFilter] = useState('All');
                                  
           <ul className="product-card">      
             {filteredProducts.map((product) => (
-              <li key={product.slug}>                        
-                <Link href={`/products/${product.slug}`}>           
-                  <Image
+              <li key={product.slug}>                
+                 <Image
                     src={product.image}
                     height={150}
                     width={210}
                     alt=" product"
                   />  
-                  <h3><b>{product.name}</b></h3>
+                <Link href={`/products/${product.slug}`}>           
+                  <h5>{product.name}</h5>
                   <p>{product.description}</p>
                   <p>{product.description}</p>
-                  <p>GH₵ { product.price.toFixed(2)}</p>               
+                  <h3>GH₵ { product.price.toFixed(2)}</h3>               
                 </Link>
               </li>
             ))}
