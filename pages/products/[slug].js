@@ -3,15 +3,13 @@ import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Products/ItemsLike";
 import Head from "next/head";
-import Faq from "@/components/Footer/Faq";
 import React from 'react';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
-// components/Cart.js
-import { useCart } from '@/context/CartContext';
-import Cart from '@/components/Head/Cart';
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/cart.slice";
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -60,8 +58,8 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-
-  const { addItem } = useCart();
+  const dispatch = useDispatch();
+   
   return (
     <>
       <Head>
@@ -141,48 +139,24 @@ const ProductPage = ({ product }) => {
       </div>
       </div>                                           
         </div>
-        <div className="slug-content-text"> 
+        <div> 
          <h4>Name: {product.name}</h4>
           <p>Description:{product.description}</p>
               <p>{product.description}</p>
             <p>{product.description}</p>
               <p>{product.description}</p>
-          <p>Price: GH₵ {product.price}</p>
-          </div>
-          <Cart />
-          <Faq />
-                                       
-          <ItemsLike /> 
-          <Newsletter />
-             <div className="forms-container sticky-div">
-          <ul><li>
-            
-          
-            <button onClick={() => addItem(product)}>Add to Cart</button>
-          </li>
-          <li>                  
-          <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
-            </li></ul>
-                
+          <p>Price: GH₵{product.price}</p>
+          </div>                                         
+          <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
+            ADD TO CART
+          </button>                    
+          <Link  className="product-link" href={"/cart"}>VIEW CART</Link>          
      
-          </div>        
-                                        
+       <ItemsLike /> 
+             <Newsletter />                              
       </main>
     </>
   );
 };
 
 export default ProductPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
