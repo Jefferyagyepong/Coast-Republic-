@@ -7,9 +7,9 @@
     gap: 10px;
     padding: 10px 14px;
 }
-.product-link{
-text-align:center;
-}
+  .product-link{
+   text-align:center;
+   }
 
 
 .shop-nows {
@@ -18,11 +18,11 @@ text-align:center;
   border-radius: 2px;
 }
 .product-container{
-   width:100%;
- 
+   width:100%; 
    margin: 0 auto;
 padding-top:50px;
 padding-bottom:50px;
+    
 h3,h4,h5,h6{
 padding-left:10px;
 }
@@ -33,15 +33,7 @@ padding-left:10px;
   width:100%;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: start;
-  padding-left: 10px;
-  list-style:none;
-  margin: 0 auto;
-    ul{
-        margin 0 auto;
-        padding:20px;
-    }
-
+    
 a{
 text-decoration:none;
 cursor:pointer;
