@@ -90,20 +90,23 @@ const [filter, setFilter] = useState('All');
         />
       </Head>
       <main>
+            
         <div className="sticky">
-          <Toast />
-          <Header />
+        <Toast />
+        <Header />
         </div>
+       <h4>Shop Tees</h4>     
         <div className="product-container">
-          <h4>Shop Tees</h4>  
-                            <div className="controls">
-        <label>
+    
+            
+          <div className="controls">
+          <label>
           Filter:
           <select onChange={(e) => setFilter(e.target.value)} value={filter} className="background-bg">
-            {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
+          {categories.map((category) => (
+          <option key={category} value={category}>
+            {category}
+            </option>
             ))}
           </select>
         </label>
