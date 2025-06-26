@@ -19,9 +19,10 @@
 }
 .product-container{
    width:100%; 
-   margin: 0 auto;
-padding-top:50px;
-padding-bottom:50px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
     
 h3,h4,h5,h6{
 padding-left:10px;
@@ -30,9 +31,7 @@ padding-left:10px;
 
 .product-card {
   display: grid;
-  width:100%;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
     
 a{
 text-decoration:none;
