@@ -98,10 +98,9 @@ const [filter, setFilter] = useState('All');
             <br /><br /><br />
        <h4>Shop Tees</h4>   
            <br /><br /><br />
-        <div className="product-container">
-    
-            
-          <div className="controls">
+
+
+                  <div className="controls">
           <label>
           Filter:
           <select onChange={(e) => setFilter(e.target.value)} value={filter} className="background-bg">
@@ -122,6 +121,10 @@ const [filter, setFilter] = useState('All');
           </select>
         </label>
       </div>
+        <div className="product-container">
+    
+            
+    
                                  
           <ul className="product-card">      
             {filteredProducts.map((product) => (
