@@ -96,7 +96,8 @@ const [filter, setFilter] = useState('All');
         <Header />
         </div>
             <br /><br /><br />
-       <h4>Shop Tees</h4>     
+       <h4>Shop Tees</h4>   
+           <br /><br /><br />
         <div className="product-container">
     
             
