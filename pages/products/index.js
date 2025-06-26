@@ -121,11 +121,7 @@ const [filter, setFilter] = useState('All');
           </select>
         </label>
       </div>
-        <div className="product-container">
-    
-            
-    
-                                 
+        <div className="product-container">                               
           <ul className="product-card">      
             {filteredProducts.map((product) => (
               <li key={product.slug}>                
