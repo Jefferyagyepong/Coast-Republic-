@@ -32,9 +32,10 @@ padding-left:10px;
 .product-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+       grid-gap: 20px;
     li{
-        border: 1px solid #222;
-        grid-gap: 20px;
+        border-style: groove;
+     
     }
     
 a{
