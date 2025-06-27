@@ -5,9 +5,8 @@ import Image from "next/image";
 import { useSelector, useDispatch } from "react-redux";
 import Head from "next/head";
 import Header from "@/components/Head/Header";
-import OrderSum from "@/components/Products/OrderSum";
 import Toast from "@/components/Head/Toast";
-// Importing action from  cart.slice.js
+// Importing actions from  cart.slice.js
 import {
   incrementQuantity,
   decrementQuantity,
@@ -28,20 +27,10 @@ const CartPage = () => {
   };
 
 
-  const orderData = {
-    items: [
-      { name: 'Product 1', price: 29.99 },
-      { name: 'Product 2', price: 49.99 },
-    ],
-    subtotal: 79.98,
-    tax: 6.40,
-    total: 86.38,
-    };
-
   return (
     <>
       <Head>
-        <title>Cart </title>
+        <title>Cart Page | T-shirts and more</title>
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta property="og:title" content="Coast Republic store." />
         <meta property="og:type" content="E-commerce website application" />
@@ -80,11 +69,11 @@ const CartPage = () => {
           {cart.length === 0 ? (
             <div>
               <h3>Your Cart is Empty!</h3>
-              <Link href={"/products"}>click here to shop now</Link>
+              <Link href={"/products"}>click here to sho now</Link>
             </div>
           ) : (
             <>
-              
+              <hr />
               <div className={styles.head}>
                 <div>Product</div>
                 <div>Name</div>
@@ -136,63 +125,13 @@ const CartPage = () => {
                   </div>
                   <p>$ {item.quantity * item.price}</p>
                 </div>
-                
               ))}
               <h2>Grand Total: $ {getTotalPrice()}</h2>
-           
-                  <div className="order-details">
-        <div className="order-detail">
-               <div className={styles.buttons}>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(incrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      +
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(decrementQuantity(item.id))}
-                      className="buttons-cart"
-                    >
-                      -
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => dispatch(removeFromCart(item.id))}
-                      className="buttons-cart"
-                    >
-                      x
-                    </button>
-                  </div>
-          <span>Subtotal</span>
-          <span>${subtotal.toFixed(2)}</span>
-        </div>
-        <div className="order-detail">
-          <span>Tax</span>
-          <span>${tax.toFixed(2)}</span>
-        </div>
-        <div className="order-detail total">
-          <span>Total</span>
-             <h2>Grand Total: $ {getTotalPrice()}</h2>
-        </div>
-      </div>
-            
-            
-             </>
+            </>
           )}
-          
-        
+          <hr />
         </div>
-  <OrderSum
-        items={orderData.items}
-        subtotal={orderData.subtotal}
-        tax={orderData.tax}
-        total={orderData.total}
-        />
-        
-        <Link className="text-align-center" href={"/checkout"}><h2>SECURE CHECKOUT</h2></Link>
-        
+     
       </main>
     </>
   );
