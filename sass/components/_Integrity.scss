@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    padding: 10px 14px;
+  padding: 60px 20px 20px;
 }
   .product-link{
    text-align:center;
@@ -43,7 +43,7 @@ a{
 text-decoration:none;
 cursor:pointer;
 transition: 0.2s ease;
-padding:10px 14px;
+  padding: 60px 20px 20px;
 
 h3,h4,h5,h6, p{
 margin:6px;
@@ -78,7 +78,7 @@ border-radius:2px;
 
 .jean-bg {
 width:100%;
-padding:10px 14px;
+  padding: 60px 20px 20px;
   a {
     text-decoration: underline;
     text-align: left;
@@ -94,7 +94,7 @@ align-items: center;
   padding: 60px 20px 20px;
 backgroung-image: url("https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: length;
     background:#446677;
   color: #fff;
 h3{
