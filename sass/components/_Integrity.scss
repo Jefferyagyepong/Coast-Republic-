@@ -66,6 +66,12 @@ margin-left:0;
   .product-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    list-style:none;
+    li{
+     border:0.1px solid #9ca7ab;
+padding-top:20px;
+border-radius:2px;
   }
 
 }
@@ -89,7 +95,7 @@ gap: 1.6rem;
 padding:20px 30px;
 backgroung-image: url("https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background:#446677;
-  color: #691c1e;
+  color: #fff;
 h3{
 line-height: 20px;
 }
