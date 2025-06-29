@@ -21,7 +21,6 @@
 
 .card-container{
 width:100%;
-padding: 60px 20px 20px;
 }
 
 .product-container{
@@ -43,6 +42,7 @@ margin-top:30px;
   padding: 0;
 display:grid;
 grid-template-columns: 1fr 2fr;
+gap:20px;
 }
 
 .product-card li {
