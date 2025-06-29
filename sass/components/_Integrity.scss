@@ -52,6 +52,8 @@ margin-top:30px;
 }
 
 .product-card li {
+display:grid;
+grid-template-columns: masonry;
   padding: 8px;
   margin-bottom: 7px;
  border:0.1px solid #9ca7ab;
@@ -75,11 +77,7 @@ transition: 0.2s ease;
 }
 
 @media (max-width: 700px) {
-  .product-card {
-
-    
-    list-style:none;      
-  }
+ 
       .product-container{
    width:100%; 
 
