@@ -37,8 +37,11 @@ padding: 60px 20px 20px;
 
 .product-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+gap: 20px;
   list-style:none;
 }
     
