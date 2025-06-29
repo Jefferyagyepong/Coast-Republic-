@@ -43,26 +43,23 @@ margin-top:30px;
   margin: 0;
   padding: 0;
 
-  list-style:none;
 }
     
-
-
-.product-card h3,h4,h5,h6, p{
-margin:6px;
+.product-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.product-card img{
-display: block;
-margin-left:0;
-
-}
-
-    
-.product-card li{
-     border:0.1px solid #9ca7ab;
+.product-card li {
+  padding: 8px;
+  margin-bottom: 7px;
+ border:0.1px solid #9ca7ab;
 border-radius:2px;
 }
+
+
+
 product-card a{
 text-decoration:none;
 cursor:pointer;
