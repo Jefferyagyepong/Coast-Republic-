@@ -119,8 +119,9 @@ const [filter, setFilter] = useState('All');
           </select>
         </label>
       </div>
-        <div className="product-container">                               
-          <ul className="product-card">      
+        <div className ="product-container">                               
+        <div className="product-card">
+            <ul>      
             {filteredProducts.map((product) => (
               <li key={product.slug}>                
                  <Image
@@ -137,7 +138,8 @@ const [filter, setFilter] = useState('All');
                 </Link>
               </li>
             ))}
-          </ul>
+          </ul>    </div>      
+          
              </div>      
         </div>                   
         <BackTo />                              
