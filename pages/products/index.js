@@ -95,11 +95,9 @@ const [filter, setFilter] = useState('All');
         <Toast />
         <Header />
         </div>
-    <div className=”product-card-container”>
+    <div className=”-card-container”>
        <h4>Shop Tees</h4>   
     
-
-
                   <div className="controls">
           <label>
           Filter:
