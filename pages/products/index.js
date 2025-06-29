@@ -95,9 +95,9 @@ const [filter, setFilter] = useState('All');
         <Toast />
         <Header />
         </div>
-            <br /><br /><br />
+    <div className=”product-card-container”>
        <h4>Shop Tees</h4>   
-           <br /><br /><br />
+    
 
 
                   <div className="controls">
@@ -140,6 +140,7 @@ const [filter, setFilter] = useState('All');
               </li>
             ))}
           </ul>
+             </div>      
         </div>                   
         <BackTo />                              
         <Newsletter />
