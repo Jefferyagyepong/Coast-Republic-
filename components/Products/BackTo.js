@@ -33,8 +33,8 @@ export default function BackToTop() {
         <button
           onClick={scrollToTop}
           style={{
-         
-            
+
+
             backgroundColor: '#222',
             display: 'flex',
             alignItems: 'center',

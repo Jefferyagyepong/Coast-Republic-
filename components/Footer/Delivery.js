@@ -15,7 +15,7 @@ const Delivery = () => {
     <div className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold mb-4">Delivery Information</h1>
-        
+
         {/* Delivery Options */}
         <div className="mb-6">
           <h2 className="text-lg font-semibold mb-2">Select Delivery Option</h2>

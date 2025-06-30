@@ -8,8 +8,8 @@ import PrivacyPage from "@/components/Footer/Privacy";
 
 
 
-const Privacy = () => {   
-    
+const Privacy = () => {
+
   return (
     <>
       <Head>
@@ -60,7 +60,7 @@ const Privacy = () => {
           <Toast />
           <Header />
         </div>
- <Privacy />
+        <Privacy />
       </main>
     </>
   );

@@ -1,8 +1,8 @@
 function Toast() {
   return (
- <div className="text-change">
-      
-</div>
+    <div className="text-change">
+
+    </div>
 
 
   );

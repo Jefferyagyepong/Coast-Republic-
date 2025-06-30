@@ -76,20 +76,20 @@ const products = [
   },
 ];
 export default function Search() {
-    const [searcTerm, setSearchTer] = useState('');
-    const [filteredProducts, setFilteredProducts] = useState(products);
-    //handle search filtering
-    useEffect(() => {
-        const filtered = products.filter((product) =>
-            product.name.toLocaleLowerCase().includes(searcTerm.toLocaleLowerCase()) ||
-            product.description.toLocaleLowerCase().includes(searcTerm.toLocaleLowerCase())
-        );
-        setFilteredProducts(filtered);
-
-    }, [searcTerm]);
-    return (
-        <div>
-            <input type="search" name="" value={searchTerm} placeholder="search products..." onChange={(e) => setSearchTerm}/>
-        </div>
+  const [searcTerm, setSearchTer] = useState('');
+  const [filteredProducts, setFilteredProducts] = useState(products);
+  //handle search filtering
+  useEffect(() => {
+    const filtered = products.filter((product) =>
+      product.name.toLocaleLowerCase().includes(searcTerm.toLocaleLowerCase()) ||
+      product.description.toLocaleLowerCase().includes(searcTerm.toLocaleLowerCase())
     );
+    setFilteredProducts(filtered);
+
+  }, [searcTerm]);
+  return (
+    <div>
+      <input type="search" name="" value={searchTerm} placeholder="search products..." onChange={(e) => setSearchTerm} />
+    </div>
+  );
 }

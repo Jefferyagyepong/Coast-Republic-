@@ -59,7 +59,7 @@ export default function NewsletterForm() {
         </form>
         {message && <p>{message}</p>}
       </div>
-            <div className="payment-container">
+      <div className="payment-container">
         <Image
           src={"/logo-whatsapp.svg"}
           height={10}

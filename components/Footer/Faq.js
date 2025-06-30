@@ -34,7 +34,7 @@ const FAQ = () => {
         <title>FAQ - Your Store</title>
         <meta name="description" content="Frequently Asked Questions about our products and services." />
       </Head>
-      <div className="faq-container">   
+      <div className="faq-container">
         <div className="faqList">
           {faqData.map((item, index) => (
             <div key={index} className="faqItem">

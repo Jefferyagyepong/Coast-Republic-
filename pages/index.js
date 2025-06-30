@@ -12,10 +12,10 @@ import Jeans from "@/components/Products/Jeans";
 
 
 import All from '@/components/Products/All';
-                                
-import Carousel from "@/components/Products/Carousel"; 
 
-    const images = [
+import Carousel from "@/components/Products/Carousel";
+
+const images = [
   "/products/george1a.JPG",
 
   "/products/force1b.JPG",
@@ -25,8 +25,8 @@ import Carousel from "@/components/Products/Carousel";
 ];
 
 
-const Home = () => {   
-    
+const Home = () => {
+
   return (
     <>
       <Head>
@@ -74,17 +74,17 @@ const Home = () => {
       </Head>
       <main>
         <div className="sticky">
-        <Toast />
-        <Header />
-        </div>             
+          <Toast />
+          <Header />
+        </div>
         <Sale />
         <Thrifts />
-        <Jeans />          
+        <Jeans />
         <Carousel images={images} />
         <New />
-        
-        <Link href="/products/" className="product-link">Shop Now</Link>                  
-        <Collection />     
+
+        <Link href="/products/" className="product-link">Shop Now</Link>
+        <Collection />
         <Newsletter />
         <Footer />
       </main>

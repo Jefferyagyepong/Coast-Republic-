@@ -60,11 +60,11 @@ export async function getStaticProps({ params }) {
 
 const ProductPage = ({ product }) => {
   const dispatch = useDispatch();
-     
+
   return (
     <>
       <Head>
-        <title>Coast Republic | T-shirts and more</title>
+        <title>Coast Republic | Product details</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
@@ -111,59 +111,63 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div>
-    
-   <div className="slug-container">        
-   <div class="slider">
-  
-  <Link href="#slide-1">1</Link>
-  <Link href="#slide-2">2</Link>
-  <Link href="#slide-3">3</Link>
-  <Link href="#slide-4">4</Link>
-  <Link href="#slide-5">5</Link>
 
-     <div class="slides">
-    <div id="slide-1">
-    <Image src={product.image} height={400} width={400} alt=" product" />      
-    </div>
-    <div id="slide-2">
-    <Image src={product.image} height={400} width={400} alt=" product" />       
-    </div>
-    <div id="slide-3">
-       <Image src={product.image} height={400} width={400} alt=" product" />         
-      </div>
-        <div id="slide-4">
-      <Image src={product.image} height={400} width={400} alt=" product" />       
-        </div>
-         <div id="slide-5">
-        <Image src={product.image} height={400} width={400} alt=" product" />         
-       </div>
-      </div>
-      </div>                                           
-        </div>
-        <div className="slug-content-text"> 
-         <h4>Name: {product.name}</h4>
-          <p>Description:{product.description}</p>
-              <p>{product.description}</p>
-            <p>{product.description}</p>
-              <p>{product.description}</p>
-          <p>Price: GH₵ {product.price}</p>
+        <div className="slug-container">
+          <div class="slider">
+
+            <Link href="#slide-1">1</Link>
+            <Link href="#slide-2">2</Link>
+            <Link href="#slide-3">3</Link>
+            <Link href="#slide-4">4</Link>
+            <Link href="#slide-5">5</Link>
+
+            <div class="slides">
+              <div id="slide-1">
+                <Image src={product.image} height={400} width={400} alt=" product" />
+              </div>
+              <div id="slide-2">
+                <Image src={product.image} height={400} width={400} alt=" product" />
+              </div>
+              <div id="slide-3">
+                <Image src={product.image} height={400} width={400} alt=" product" />
+              </div>
+              <div id="slide-4">
+                <Image src={product.image} height={400} width={400} alt=" product" />
+              </div>
+              <div id="slide-5">
+                <Image src={product.image} height={400} width={400} alt=" product" />
+              </div>
+            </div>
           </div>
-          <Faq />
-                                       
-          <ItemsLike /> 
-          <Newsletter />
-             <div className="forms-container sticky-div">
-          <ul><li>
-                   <button className="primary-btn" onClick={() => dispatch(addToCart(product))}>          
-            ADD TO CART
-          </button> </li>
-          <li>                  
-          <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
-            </li></ul>
-                
-     
-          </div>        
-                                        
+        </div>
+        <div className="slug-content-text">
+          <h4>Name: {product.name}</h4>
+          <p>Description:{product.description}</p>
+          <p>{product.description}</p>
+          <p>{product.description}</p>
+          <p>{product.description}</p>
+          <p>Price: GH₵ {product.price}</p>
+        </div>
+        <Faq />
+
+        <ItemsLike />
+        <Newsletter />
+        <div className="forms-container sticky-div">
+          <ul>
+            <li>
+
+              <button onClick={() => dispatch(addToCart(product))}>
+                ADD TO CART
+              </button>
+            </li>
+
+            <li>
+              <Link className="view-cart-btn" href={"/cart"}>VIEW CART</Link>
+            </li>
+          </ul>
+
+        </div>
+
       </main>
     </>
   );

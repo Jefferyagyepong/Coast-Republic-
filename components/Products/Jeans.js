@@ -13,7 +13,7 @@ function Show() {
         alt="img"
       />
       <h3>DESIGNER PAIRS IN OUR COLLECTION</h3>
-          
+
       <Link href={"/products"}>Shop now</Link>
     </div>
   );

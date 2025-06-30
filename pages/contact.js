@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
@@ -63,75 +63,75 @@ const Contact = () => {
       </Head>
       <main>
         <div className="sticky">
-        <Toast />
-        <Header />
+          <Toast />
+          <Header />
         </div>
-    
-    <div className="contact-container">
-      <div>
-        <h2>Contact Us</h2>
-        <p>
-          Have questions? We are here to help! Fill out the form below, and we will get back to you.
-        </p>
 
-        {submitted ? (
+        <div className="contact-container">
           <div>
-            ✅ Your message has been sent. We will get back to you soon!
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="form">
+            <h2>Contact Us</h2>
+            <p>
+              Have questions? We are here to help! Fill out the form below, and we will get back to you.
+            </p>
+
+            {submitted ? (
+              <div>
+                ✅ Your message has been sent. We will get back to you soon!
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="form">
+                <div>
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    required
+
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className="inputGroup">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    required
+
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className="inputGroup">
+                  <label>Message</label>
+                  <textarea
+                    required
+
+                    rows="4"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  />
+                </div>
+
+                <button
+                  type="submit"
+
+                >
+                  Send Message
+                </button>
+              </form>
+            )}
+
             <div>
-              <label>Name</label>
-              <input
-                type="text"
-                required
-               
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+              <h2>IN STORE WAREHOUSE </h2>
+              <p>📍 7 Asafo Dadiesoaba</p>
+              <p>📞 +233 200-0000</p>
+              <p>✉️ support@coastrepublic.com</p>
             </div>
-            <div className="inputGroup">
-              <label>Email</label>
-              <input
-                type="email"
-                required
-             
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className="inputGroup">
-              <label>Message</label>
-              <textarea
-                required
-            
-                rows="4"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </div>
-
-            <button
-              type="submit"
-        
-            >
-              Send Message
-            </button>
-          </form>
-        )}
-
-        <div>
-          <h2>IN STORE WAREHOUSE </h2>
-          <p>📍 7 Asafo Dadiesoaba</p>
-          <p>📞 +233 200-0000</p>
-          <p>✉️ support@coastrepublic.com</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <Footer />
-    </main>
+        <Footer />
+      </main>
     </>
-    
+
 
   );
 };

@@ -63,7 +63,7 @@ const CartPage = () => {
           <Toast />
           <Header />
         </div>
-  
+
 
         <div className={styles.container}>
           {cart.length === 0 ? (
@@ -94,11 +94,11 @@ const CartPage = () => {
                       alt="product image"
                     />
                   </div>
-                
-                    <p>{item.product}</p>
-                    <p>$ {item.price}</p>
-                    <p>{item.quantity}</p>
-             
+
+                  <p>{item.product}</p>
+                  <p>$ {item.price}</p>
+                  <p>{item.quantity}</p>
+
 
                   <div className={styles.buttons}>
                     <button
@@ -131,7 +131,7 @@ const CartPage = () => {
           )}
           <hr />
         </div>
-     
+
       </main>
     </>
   );

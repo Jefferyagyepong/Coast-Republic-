@@ -2,7 +2,7 @@ function New() {
   return (
     <div className="ibrid-box">
 
-        <h3>WHATS NEW TODAY </h3>    
+      <h3>WHATS NEW TODAY </h3>
       <b>
         {" "}
         <span>12</span>

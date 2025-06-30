@@ -15,8 +15,8 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Shop</h3>
           <ul>
-              
-            <li><Link href="/products/">Men</Link></li>       
+
+            <li><Link href="/products/">Men</Link></li>
           </ul>
         </div>
 
@@ -31,10 +31,10 @@ const Footer = () => {
         </div>
 
         {/* Social Media Section */}
- 
+
       </div>
 
-      <h5 className ="text-align-center">WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
+      <h5 className="text-align-center">WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
@@ -69,7 +69,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p className ="text-align-center">
+        <p className="text-align-center">
           © {new Date().getFullYear()} Coast Republic Store. All rights
           reserved.
         </p>
