@@ -119,8 +119,8 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div>
-            <div>
+          <div className="row">
+            <div className="column">
               <ul>
                 {filteredProducts.map((product) => (
                   <li key={product.slug}>
