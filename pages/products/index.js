@@ -119,8 +119,8 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div className="row">
-            <div className="column">
+          <div className="grid-container">
+     
               <ul>
                 {filteredProducts.map((product) => (
                   <li key={product.slug}>
@@ -138,7 +138,7 @@ const ProductList = ({ products }) => {
                     </Link>
                   </li>
                 ))}
-              </ul>    </div>
+              </ul> 
 
           </div>
         </div>
