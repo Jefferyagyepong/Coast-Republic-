@@ -19,39 +19,23 @@
   border-radius: 2px;
 }
 
-grid-container{
-width:100%;
-display:grid;
-grid-column-templates: 1fr 2fr;
-padding: 60px 20px 20px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
-  
-.column ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-
-
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
 }
-
-.column li {
-
- border:0.1px solid #9ca7ab;
-border-radius:2px;
-}
-
-
-
-column a{
-text-decoration:none;
-cursor:pointer;
-transition: 0.2s ease;
-color:#000;
-
-}
-     
+ 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
