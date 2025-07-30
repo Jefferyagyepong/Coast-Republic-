@@ -119,11 +119,10 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div className="grid-container">
+          <div className="grid">
      
-              <ul>
                 {filteredProducts.map((product) => (
-                  <li key={product.slug}>
+                  <div key={product.slug} className="card">
                     <Image
                       src={product.image}
                       height={150}
@@ -136,9 +135,9 @@ const ProductList = ({ products }) => {
                       <p>{product.description}</p>
                       <h3>GH₵ {product.price.toFixed(2)}</h3>
                     </Link>
-                  </li>
+                  </div>
                 ))}
-              </ul> 
+              
 
           </div>
         </div>
