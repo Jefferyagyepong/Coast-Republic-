@@ -30,14 +30,14 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Coast Republic | T-shirts and more</title>
+        <title>Coast Republic | Clothing & Shoes</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
         <meta name="twitter:title" content="Coast Republic inc" />
         <meta
           name="twitter:description"
-          content="T-shirts, Sneakers & more.... "
+          content=" Discover unique designs crafted for you..... "
         />
         <meta
           name="twitter:image"
