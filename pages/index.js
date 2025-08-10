@@ -41,7 +41,7 @@ const Home = () => {
         />
         <meta
           name="twitter:image"
-          content="https://imgur.com/a/Yfw9KlD" />
+          content="https://imgur.com/a/3LyXcLb" />
         <meta property="og:title" content="Coast Republic inc" />
         <meta
           property="og:description"
