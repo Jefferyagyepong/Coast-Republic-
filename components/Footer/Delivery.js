@@ -14,7 +14,7 @@ const Delivery = () => {
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-bold mb-4">Delivery Information</h1>
+        <h1>Delivery Information</h1>
 
         {/* Delivery Options */}
         <div>
@@ -31,7 +31,7 @@ const Delivery = () => {
         </div>
 
         {/* Address Form */}
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit}>
           <div>
             <label>Address</label>
             <input
