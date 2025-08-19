@@ -6,11 +6,14 @@ function Header() {
     <>
       <header>
 
-          <Menu />
+        <Menu />
+        <div>
           <Link href={"./"}>
             <h4>Coast Republic</h4>
           </Link>
-          <CartBasket />
+        </div>
+
+        <CartBasket />
 
       </header>
     </>
