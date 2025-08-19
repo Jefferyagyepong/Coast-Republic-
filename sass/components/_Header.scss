@@ -151,10 +151,8 @@ header {
   width:100%;
   background-color: #173856;
   opacity: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+ display: grid;
+ grid-template-rows: 3fr 1fr;
   
 }
 
