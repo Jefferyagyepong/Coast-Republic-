@@ -130,14 +130,7 @@ color:Snow;
   color: black;
 }
 
-// basket div style
-.basket-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 
-}
 
 .count {
   color: #dcd3cc;
@@ -151,8 +144,9 @@ header {
   width:100%;
   background-color: #173856;
   opacity: 1;
- display: grid;
- grid-template-rows: 3fr 1fr;
+ display: flex;
+ flex-direction:row;
+ align-items: center;
   
 }
 
