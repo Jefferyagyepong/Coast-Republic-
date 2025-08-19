@@ -8,6 +8,47 @@
   letter-spacing: 2px;
 }
 
+#link {
+  color: black;
+}
+
+// basket div style
+.basket-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.count {
+  color: #dcd3cc;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: -21px;
+  margin-top: -30px;
+}
+
+header {
+  width:100%;
+  background-color: #173856;
+  opacity: 1;
+  
+}
+
+.sticky {
+ 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+flex-direction:column;
+  align-items: center;
+  width: 100%;
+
+}
+
 
 //hamburger menu
 
@@ -138,46 +179,7 @@ color:Snow;
 
 
 
-#link {
-  color: black;
-}
 
-// basket div style
-.basket-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-
-}
-
-.count {
-  color: #dcd3cc;
-  font-weight: 700;
-  font-size: 14px;
-  margin-left: -21px;
-  margin-top: -30px;
-}
-
-header {
-  width:100%;
-  background-color: #173856;
-  opacity: 1;
-  
-}
-
-.sticky {
- 
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-flex-direction:column;
-  align-items: center;
-  width: 100%;
-
-}
 
 
 
