@@ -7,7 +7,9 @@ function Header() {
     <>
       <header>
         <Menu />
- 
+        <Link href={"./"}>
+          <h4>Coast Republic</h4>
+        </Link>
         <CartBasket />
       </header>
     </>
