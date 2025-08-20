@@ -9,7 +9,7 @@ function Header() {
         <Menu />
         <div>
           <Link href={"./"}>
-            <h4>Coast Republic</h4>
+            <h4 className="logo">Coast Republic</h4>
           </Link>
         </div>
 
