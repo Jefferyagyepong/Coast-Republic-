@@ -1,6 +1,6 @@
 function New() {
   return (
-    <div className="footer-align-left">
+    <div className="ibrid-box">
 
       <h3>WHATS NEW TODAY </h3>
       <b>
