@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import Head from "next/head";
 import Thrifts from "@/components/Products/Thrifts";
 import New from "@/components/Products/New";
@@ -82,7 +82,6 @@ const Home = () => {
         <Carousel images={images} />
         <New />
 
-        <Link href="/products/" className="product-link">Shop Now</Link>
         <Collection />
         <Newsletter />
         <Footer />

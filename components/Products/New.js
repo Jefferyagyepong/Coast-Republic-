@@ -9,6 +9,8 @@ function New() {
       </b>
       <p>Discover what just landed at Coast Republic</p>
 
+     <Link href="/products/" className="product-link">Shop Now</Link>
+
     </div>
   );
 }
