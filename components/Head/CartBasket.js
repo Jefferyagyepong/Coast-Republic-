@@ -10,6 +10,12 @@ function CartBasket() {
     };
   };
 
-  return <Navbar />;
+  return(
+  <div>
+  <Navbar />
+  </div>
+
+  );
+
 }
 export default CartBasket;
