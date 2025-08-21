@@ -18,7 +18,7 @@ const Navbar = () => {
       </Link>
 
      
-      <div>
+      <div className="flex-row">
         <Link href="/cart">
         <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
       </Link>
