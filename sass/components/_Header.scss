@@ -136,12 +136,11 @@ animation-delay:10s ease;
 
 
 .flex-row{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  float: right;
-  gap: 10px;
+  display:inline;
+float: right;
+padding:0;
+  
+  
 }
 
 header {
