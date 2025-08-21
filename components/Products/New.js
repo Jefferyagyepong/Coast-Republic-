@@ -1,3 +1,4 @@
+import Link from "next/link";
 function New() {
   return (
     <div className="ibrid-box">
