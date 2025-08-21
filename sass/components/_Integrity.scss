@@ -1,16 +1,16 @@
 .inline {
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   padding: 60px 20px 20px;
 }
 
-  .product-link{
-   text-align:center;
-   }
+.product-link {
+  text-align: center;
+}
 
 
 .shop-nows {
@@ -35,7 +35,7 @@
   text-align: center;
   transition: box-shadow 0.3s ease;
 }
- 
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -51,8 +51,8 @@
     flex: 100%;
     max-width: 100%;
   }
-    }
-  
+}
+
 .shop-nows:hover {
   opacity: 0.3;
 }
@@ -60,28 +60,24 @@
 
 
 .sale-box {
-width:100%;
-margin: 0 auto;
-display:flex;
-flex-direction: column;
-align-items: center;
-    gap:2rem;
-padding: 60px 20px 20px;
-background-image: url(/public/background.svg);
-background-size: cover;
-// background-color: #DB162F;
-background-repeat: no-repeat;
-background-size: auto;
- color: #fff;
-    
-h3{
-line-height: 20px;
-}
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 60px 20px 20px;
+  background-image: url("/public/background.svg");
+  background-size: cover;
+  color: #fff;
+
+  h3 {
+    line-height: 20px;
+  }
 
   a {
     text-decoration: underline;
-      padding:12px;
+    padding: 12px;
     color: #fff;
   }
 }
-
