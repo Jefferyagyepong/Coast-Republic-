@@ -11,9 +11,8 @@ function CartBasket() {
   };
 
   return(
-  <div>
+
   <Navbar />
-  </div>
 
   );
 
