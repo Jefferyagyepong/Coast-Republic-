@@ -139,7 +139,9 @@ animation-delay:10s ease;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  float: right;
+  gap: 10px;
 }
 
 header {
