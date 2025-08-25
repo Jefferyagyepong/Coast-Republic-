@@ -13,16 +13,14 @@ const Navbar = () => {
 
   return (
     <>
-    
 
-     
+
+
       <div className="flex-row">
-            <Link href="#">
-        <Image src={"/person.svg"} width={35} height={30} alt="logo" />
-      </Link>
+
         <Link href="/cart">
-        <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
-      </Link>
+          <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
+        </Link>
         {getItemsCount()}</div>
     </>
   );
