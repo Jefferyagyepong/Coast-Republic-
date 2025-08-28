@@ -40,8 +40,7 @@ const Home = () => {
           content=" Discover unique designs crafted for you..... "
         />
         <meta
-          name="twitter:image"
-          content="/background.svg" />
+          name="twitter:image" content="/backg.png" />
         <meta property="og:title" content="Coast Republic inc" />
         <meta
           property="og:description"
