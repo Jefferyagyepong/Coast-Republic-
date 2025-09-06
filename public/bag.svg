@@ -25,12 +25,12 @@
      showgrid="false"
      units="px"
      inkscape:zoom="0.39108446"
-     inkscape:cx="438.5242"
-     inkscape:cy="377.15639"
+     inkscape:cx="1121.2412"
+     inkscape:cy="559.98135"
      inkscape:window-width="1280"
-     inkscape:window-height="703"
+     inkscape:window-height="800"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -40,7 +40,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g1006">
+       id="g1006"
+       transform="matrix(1.2568407,0,0,1.2568407,-51.538983,-20.642809)"
+       style="fill:#ececec;stroke:#ffffff">
       <path
          fill="none"
          stroke="#000000"
@@ -49,7 +51,8 @@
          stroke-width="8.46667"
          fill-rule="evenodd"
          d="m 109.03698,78.960896 a 4.2333333,4.2333333 0 0 0 -4.23333,4.233333 v 57.150001 c 0,8.001 6.81566,14.81667 14.81666,14.81667 h 71.96667 c 8.001,0 14.81666,-6.48494 14.81666,-14.48594 V 83.194229 a 4.2333333,4.2333333 0 0 0 -4.23333,-4.233333 z"
-         id="path824" />
+         id="path824"
+         style="fill:#ececec;stroke:#ffffff" />
       <path
          fill="none"
          stroke="#000000"
@@ -58,9 +61,10 @@
          stroke-width="8.46667"
          fill-rule="evenodd"
          d="M 130.20365,78.960896 V 70.49423 a 25.4,25.4 0 0 1 25.4,-25.4 v 0 a 25.4,25.4 0 0 1 25.4,25.4 v 8.466666"
-         id="path826" />
+         id="path826"
+         style="fill:#ececec;stroke:#ffffff" />
       <rect
-         style="fill:#000000;fill-rule:evenodd;stroke-width:0.264583"
+         style="fill:#ececec;fill-rule:evenodd;stroke-width:0.264583;stroke:#ffffff"
          id="rect860"
          width="6.4569468"
          height="22.519741"
@@ -68,7 +72,7 @@
          y="78.960899"
          ry="3.2284734" />
       <rect
-         style="fill:#000000;fill-rule:evenodd;stroke-width:0.264583"
+         style="fill:#ececec;fill-rule:evenodd;stroke-width:0.264583;stroke:#ffffff"
          id="rect860-9"
          width="6.4569468"
          height="22.519741"

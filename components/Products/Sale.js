@@ -6,11 +6,11 @@ function Show() {
     <div className="sale-box">
 
       <b>
-        <h1>SALE</h1>
+        <h1>NEW ARRIVALS</h1>
       </b>{" "}
 
       <p>
-        EXTRA 15% OFF SELECTED SALE ITEMS APPLY CODE COASTI5 AT CHECKOUT
+   GET ALL DISCOUNTS AND DELIVERY INFORMATION AT CHECKOUT
       </p>{" "}
 
       <Link href={"/products"}>Shop now</Link>

@@ -5,12 +5,10 @@ function Show() {
   return (
     <div className="footer-align-left">
       <Image
-        src={
-          "/gyamfua black OLIVE.svg"
-        }
-        width={380}
-        height={700}
+        src={"/gyamfua black OLIVE.svg"}
         alt="img"
+        width={1200}
+        height={400}
       />
       <h3>DESIGNER PAIRS IN OUR COLLECTION</h3>
 

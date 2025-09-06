@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import Thrifts from "@/components/Products/Thrifts";
 import New from "@/components/Products/New";
@@ -10,28 +9,20 @@ import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 
-<<<<<<< HEAD
-                                
-import Carousel from "@/components/Products/Carousel"; 
-=======
-
-import All from '@/components/Products/All';
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
+import All from "@/components/Products/All";
 
 import Carousel from "@/components/Products/Carousel";
 
 const images = [
-  "/products/george1a.JPG",
+  "/GYAMFUA.svg",
 
   "/products/force1b.JPG",
-  "/products/tim1b.JPG",
-  "/products/calvin1c.JPG",
-  "/products/george1b.JPG",
+  "/airjordan.svg",
+  "/gyamfua black OLIVE.svg",
+  "/wrangler.svg",
 ];
 
-
 const Home = () => {
-
   return (
     <>
       <Head>
@@ -44,8 +35,7 @@ const Home = () => {
           name="twitter:description"
           content=" Discover unique designs crafted for you..... "
         />
-        <meta
-          name="twitter:image" content="/backg.png" />
+        <meta name="twitter:image" content="/backg.png" />
         <meta property="og:title" content="Coast Republic inc" />
         <meta
           property="og:description"

@@ -1,5 +1,4 @@
 .ibrid-box {
-<<<<<<< HEAD
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,32 +6,15 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 60px 20px 20px;
+  justify-content: space-between;
 
   h4,
   p {
     text-align: start;
   }
 
-
-  justify-content: space-between;
 }
-=======
- width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-  padding: 60px 20px 20px;
- justify-content: space-between;
-h4, p{
-text-align:start;
-}
- 
-          }
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
 
 .container {
   max-width: 800px;
@@ -42,36 +24,16 @@ text-align:start;
 }
 
 .ibrid-box-line {
-<<<<<<< HEAD
-  width: 1200px;
-  max-width: 100%;
+  width: 100%;
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #333;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-attachment: fixed;
-  background-position: center;
-  color: #fff;
-  text-align: left;
-=======
- width:100%;
- padding: 10px 15px;
- display: flex;
- flex-direction: column;
- align-items: center;
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
 }
 
 .ibrid-box-line-law {
   width: 1200px;
   max-width: 100%;
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,24 +44,8 @@ text-align:start;
   background-color: #333;
   background-image: url("https://images.unsplash.com/photo-1589307904488-7d60ff29c975?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
-  background-origin: border-box;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: left;
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
- padding: 10px 20px;
-background-color: #333;
-background-image: url("https://images.unsplash.com/photo-1589307904488-7d60ff29c975?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-background-repeat: no-repeat;
   background-size: auto;
- text-align:left;
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
+  text-align: left;
 }
 
 .bgg222 {
@@ -109,49 +55,40 @@ background-repeat: no-repeat;
 
 
 
-<<<<<<< HEAD
 .black-bg {
   background-color: #000;
   width: 200px;
   margin: 0 auto;
   border: none;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 60px 20px 20px;
   text-align: center;
 }
 
 .color-black {
   color: black;
-=======
-.black-bg{
-    background-color: #000;
-    width: 200px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 3px;
-  padding: 60px 20px 20px;
-   text-align: center;
- }
-    
-.color-black{
-    color: black;
 }
-.newsletter-container{
-     width: 1200px;
-     max-width: 100%;
-padding: 60px 20px 20px;
-     margin-top:1rem;
-     margin: 0 auto;
-background-color:#e9dcc5;
-  
 
-    
-p, h3,h4,h5,h6,label{
-        text-align: start;
-        line-height: 1.5;
-color:#04080b;
-    }
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
+.newsletter-container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 60px 20px 20px;
+  margin-top: 1rem;
+  margin: 0 auto;
+  background-color: #e9dcc5;
+
+
+
+  p,
+  h3,
+  h4,
+  h5,
+  h6,
+  label {
+    text-align: start;
+    line-height: 1.5;
+    color: #04080b;
+  }
 }
 
 .newsletter-container {
@@ -159,7 +96,7 @@ color:#04080b;
   max-width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: hsla(0, 0, 92% );
+  background: hsla(0, 0, 92%);
   margin-top: 1rem;
   margin: 0 auto;
 

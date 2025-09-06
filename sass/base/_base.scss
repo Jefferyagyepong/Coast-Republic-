@@ -52,7 +52,8 @@ list-style: none;
 
 img {
 
-  object-fit: contain;
+  max-width: 100%;
+  height: auto;
 }
 
 .MyApp {
