@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { CartContext } from "./CartContext";
-import styles from "./CartPage.module.css";
+import { CartContext } from "./context/CartContext";
 import Image from "next/image";
 
 const CartPage = () => {

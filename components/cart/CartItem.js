@@ -1,7 +1,6 @@
 // /components/cart/CartItem.jsx
-import { useCart } from '@/context/CartContext';
-import Image from 'next/image';
-
+import { useCart } from "@/pages/context/CartContext";
+import Image from "next/image";
 
 export default function CartItem({ item }) {
   const { removeFromCart, updateQuantity } = useCart();
@@ -24,12 +23,7 @@ export default function CartItem({ item }) {
             +
           </button>
         </div>
-        <button
-        
-          onClick={() => removeFromCart(item.id)}
-        >
-          Remove
-        </button>
+        <button onClick={() => removeFromCart(item.id)}>Remove</button>
       </div>
     </div>
   );

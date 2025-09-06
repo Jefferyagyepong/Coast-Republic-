@@ -1,6 +1,5 @@
 // /components/cart/CartSummary.jsx
-import { useCart } from "@/context/CartContext";
-
+import { useCart } from "@/pages/context/CartContext";
 
 export default function CartSummary() {
   const { getCartTotal } = useCart();
