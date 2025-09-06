@@ -1,17 +1,17 @@
 import Head from "next/head";
-import Thrifts from "@/components/Products/Thrifts";
-import New from "@/components/Products/New";
+import Thrifts from "@/components/Parts/Thrifts";
+import New from "@/components/Parts/New";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
-import Sale from "@/components/Products/Sale";
+import Sale from "@/components/Parts/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
-import Collection from "@/components/Products/Collection";
+import Collection from "@/components/Parts/Collection";
 import Toast from "@/components/Head/Toast";
-import Jeans from "@/components/Products/Jeans";
+import Jeans from "@/components/Parts/Jeans";
 
-import All from "@/components/Products/All";
+import All from "@/components/Parts/All";
 
-import Carousel from "@/components/Products/Carousel";
+import Carousel from "@/components/Parts/Carousel";
 
 const images = [
   "/GYAMFUA.svg",

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import Toast from "@/components/Head/Toast";
@@ -10,7 +10,7 @@ import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
-import BackTo from "@/components/Products/BackTo";
+import BackTo from "@/components/Parts/BackTo";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -26,21 +26,23 @@ export async function getStaticProps() {
 }
 
 const ProductList = ({ products }) => {
-
-  const [filter, setFilter] = useState('All');
-  const [sort, setSort] = useState('name-asc');
+  const [filter, setFilter] = useState("All");
+  const [sort, setSort] = useState("name-asc");
 
   // Get unique categories for filter dropdown
-  const categories = ['All', ...new Set(products.map((product) => product.category))];
+  const categories = [
+    "All",
+    ...new Set(products.map(product => product.category)),
+  ];
 
   // Filter and sort products
   const filteredProducts = products
-    .filter((product) => filter === 'All' || product.category === filter)
+    .filter(product => filter === "All" || product.category === filter)
     .sort((a, b) => {
-      if (sort === 'price-asc') return a.price - b.price;
-      if (sort === 'price-desc') return b.price - a.price;
-      if (sort === 'name-asc') return a.name.localeCompare(b.name);
-      if (sort === 'name-desc') return b.name.localeCompare(a.name);
+      if (sort === "price-asc") return a.price - b.price;
+      if (sort === "price-desc") return b.price - a.price;
+      if (sort === "name-asc") return a.name.localeCompare(b.name);
+      if (sort === "name-desc") return b.name.localeCompare(a.name);
       return 0;
     });
 
@@ -90,7 +92,6 @@ const ProductList = ({ products }) => {
         />
       </Head>
       <main>
-
         <div className="sticky">
           <Toast />
           <Header />
@@ -101,8 +102,12 @@ const ProductList = ({ products }) => {
           <div className="controls">
             <label>
               Filter:
-              <select onChange={(e) => setFilter(e.target.value)} value={filter} className="background-bg">
-                {categories.map((category) => (
+              <select
+                onChange={e => setFilter(e.target.value)}
+                value={filter}
+                className="background-bg"
+              >
+                {categories.map(category => (
                   <option key={category} value={category}>
                     {category}
                   </option>
@@ -111,7 +116,11 @@ const ProductList = ({ products }) => {
             </label>
             <label>
               Sort:
-              <select onChange={(e) => setSort(e.target.value)} value={sort} className="background-bg">
+              <select
+                onChange={e => setSort(e.target.value)}
+                value={sort}
+                className="background-bg"
+              >
                 <option value="name-asc">Name (A-Z)</option>
                 <option value="name-desc">Name (Z-A)</option>
                 <option value="price-asc">Price (Low to High)</option>
@@ -120,25 +129,22 @@ const ProductList = ({ products }) => {
             </label>
           </div>
           <div className="grid">
-     
-                {filteredProducts.map((product) => (
-                  <div key={product.slug} className="card">
-                    <Image
-                      src={product.image}
-                      height={150}
-                      width={210}
-                      alt=" product"
-                    />
-                    <Link href={`/products/${product.slug}`}>
-                      <h5>{product.name}</h5>
-                      <p>{product.description}</p>
-                      <p>{product.description}</p>
-                      <h3>GH₵ {product.price.toFixed(2)}</h3>
-                    </Link>
-                  </div>
-                ))}
-              
-
+            {filteredProducts.map(product => (
+              <div key={product.slug} className="card">
+                <Image
+                  src={product.image}
+                  height={150}
+                  width={210}
+                  alt=" product"
+                />
+                <Link href={`/products/${product.slug}`}>
+                  <h5>{product.name}</h5>
+                  <p>{product.description}</p>
+                  <p>{product.description}</p>
+                  <h3>GH₵ {product.price.toFixed(2)}</h3>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
         <BackTo />

@@ -1,57 +1,76 @@
-import React, { useContext } from "react";
-import { CartContext } from "../context/CartContext";
-import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  removeFromCart,
+  updateQuantity,
+  clearCart,
+} from "../store/cartSlice.js";
+import { useRouter } from "next/router";
 
-const CartPage = ({ products }) => {
-  const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
+const CartPage = () => {
+  const { cartItems, totalQuantity, totalPrice } = useSelector(
+    state => state.cart
+  );
+  const dispatch = useDispatch();
+  const router = useRouter();
 
-  const calculateTotal = () => {
-    return cart
-      .reduce((total, item) => total + item.price * item.quantity, 0)
-      .toFixed(2);
+  const handleCheckout = () => {
+    alert("Proceeding to checkout!");
+    dispatch(clearCart());
+    router.push("/checkout");
   };
 
   return (
-    <div>
-      <h1>Your Cart</h1>
-      {cart.length === 0 ? (
+    <div style={{ padding: "20px" }}>
+      <h1>Shopping Cart</h1>
+      {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
-        <div>
-          <div>
-            {cart.map(item => (
-              <div key={item.id}>
-                <Image src={item.image} alt={item.name} />
-                <div>
-                  <h3>{item.name}</h3>
-                  <p>Price: ${item.price.toFixed(2)}</p>
-                  <div>
-                    <button
-                      onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                      disabled={item.quantity <= 1}
-                    >
-                      -
+        <>
+          <table border="1" cellPadding="10">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cartItems.map(item => (
+                <tr key={item.id}>
+                  <td>{item.name}</td>
+                  <td>${item.price}</td>
+                  <td>
+                    <input
+                      type="number"
+                      value={item.quantity}
+                      min="1"
+                      onChange={e =>
+                        dispatch(
+                          updateQuantity({
+                            id: item.id,
+                            quantity: Number(e.target.value),
+                          })
+                        )
+                      }
+                      style={{ width: "50px" }}
+                    />
+                  </td>
+                  <td>${item.totalPrice}</td>
+                  <td>
+                    <button onClick={() => dispatch(removeFromCart(item.id))}>
+                      Remove
                     </button>
-                    <span>{item.quantity}</span>
-                    <button
-                      onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                    >
-                      +
-                    </button>
-                  </div>
-                  <p>Subtotal: ${(item.price * item.quantity).toFixed(2)}</p>
-                  <button onClick={() => removeFromCart(item.id)}>
-                    Remove
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className={styles.cartSummary}>
-            <h2>Total: ${calculateTotal()}</h2>
-            <button>Proceed to Checkout</button>
-          </div>
-        </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <h3>Total Items: {totalQuantity}</h3>
+          <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
+          <button onClick={handleCheckout}>Proceed to Checkout</button>
+        </>
       )}
     </div>
   );
