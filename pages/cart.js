@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import Image from "next/image";
 
-const CartPage = () => {
+const CartPage = ({ products }) => {
   const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
 
   const calculateTotal = () => {
@@ -12,24 +12,20 @@ const CartPage = () => {
   };
 
   return (
-    <div className={styles.cartContainer}>
+    <div>
       <h1>Your Cart</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
         <div>
-          <div className={styles.cartItems}>
+          <div>
             {cart.map(item => (
-              <div key={item.id} className={styles.cartItem}>
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  className={styles.itemImage}
-                />
-                <div className={styles.itemDetails}>
+              <div key={item.id}>
+                <Image src={item.image} alt={item.name} />
+                <div>
                   <h3>{item.name}</h3>
                   <p>Price: ${item.price.toFixed(2)}</p>
-                  <div className={styles.quantityControl}>
+                  <div>
                     <button
                       onClick={() => updateQuantity(item.id, item.quantity - 1)}
                       disabled={item.quantity <= 1}
@@ -44,10 +40,7 @@ const CartPage = () => {
                     </button>
                   </div>
                   <p>Subtotal: ${(item.price * item.quantity).toFixed(2)}</p>
-                  <button
-                    className={styles.removeButton}
-                    onClick={() => removeFromCart(item.id)}
-                  >
+                  <button onClick={() => removeFromCart(item.id)}>
                     Remove
                   </button>
                 </div>
@@ -56,9 +49,7 @@ const CartPage = () => {
           </div>
           <div className={styles.cartSummary}>
             <h2>Total: ${calculateTotal()}</h2>
-            <button className={styles.checkoutButton}>
-              Proceed to Checkout
-            </button>
+            <button>Proceed to Checkout</button>
           </div>
         </div>
       )}
