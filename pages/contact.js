@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Head/Header";
 import Head from "next/head";
 import Toast from "@/components/Head/Toast";
+import Footer from "@/components/Footer/Footer";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

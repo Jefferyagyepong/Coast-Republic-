@@ -6,21 +6,13 @@ import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Products/ItemsLike";
 import Head from "next/head";
 import Faq from "@/components/Footer/Faq";
-<<<<<<< HEAD
 import React from "react";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
-=======
-import React from 'react';
-import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
-import Image from 'next/image';
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/cart.slice";
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -69,12 +61,8 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-<<<<<<< HEAD
-const { addToCart } = useCart();
-=======
   const dispatch = useDispatch();
 
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
   return (
     <>
       <Head>
@@ -128,10 +116,6 @@ const { addToCart } = useCart();
 
         <div className="slug-container">
           <div class="slider">
-<<<<<<< HEAD
-=======
-
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
             <Link href="#slide-1">1</Link>
             <Link href="#slide-2">2</Link>
             <Link href="#slide-3">3</Link>
@@ -140,7 +124,6 @@ const { addToCart } = useCart();
 
             <div class="slides">
               <div id="slide-1">
-<<<<<<< HEAD
                 <Image
                   src={product.image}
                   height={400}
@@ -179,21 +162,6 @@ const { addToCart } = useCart();
                   width={400}
                   alt=" product"
                 />
-=======
-                <Image src={product.image} height={400} width={400} alt=" product" />
-              </div>
-              <div id="slide-2">
-                <Image src={product.image} height={400} width={400} alt=" product" />
-              </div>
-              <div id="slide-3">
-                <Image src={product.image} height={400} width={400} alt=" product" />
-              </div>
-              <div id="slide-4">
-                <Image src={product.image} height={400} width={400} alt=" product" />
-              </div>
-              <div id="slide-5">
-                <Image src={product.image} height={400} width={400} alt=" product" />
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
               </div>
             </div>
           </div>
@@ -213,9 +181,11 @@ const { addToCart } = useCart();
         <div className="forms-container sticky-div">
           <ul>
             <li>
-<<<<<<< HEAD
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
+              <button onClick={() => dispatch(addToCart(product))}>
+                ADD TO CART
+              </button>
             </li>
+
             <li>
               <Link className="view-cart-btn" href={"/cart"}>
                 VIEW CART
@@ -223,21 +193,6 @@ const { addToCart } = useCart();
             </li>
           </ul>
         </div>
-=======
-
-              <button onClick={() => dispatch(addToCart(product))}>
-                ADD TO CART
-              </button>
-            </li>
-
-            <li>
-              <Link className="view-cart-btn" href={"/cart"}>VIEW CART</Link>
-            </li>
-          </ul>
-
-        </div>
-
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
       </main>
     </>
   );
