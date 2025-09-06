@@ -1,15 +1,12 @@
 import "/sass/main.scss";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import { CartProvider } from "../context/CartContext";
 config.autoAddCss = false;
 
-import store from "../redux/store";
-import { Provider } from "react-redux";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Provider store={store}>
+    <CartProvider>
       <Component {...pageProps} />
-    </Provider>
+    </CartProvider>
   );
 }
