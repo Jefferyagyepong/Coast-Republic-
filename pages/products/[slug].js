@@ -1,20 +1,16 @@
-"use client";
-
-import React from "react";
-import { addToCart } from "@/context/CartContext";
-import fs from "fs";
-import path from "path";
-import Link from "next/link";
-import Image from "next/image";
+import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Products/ItemsLike";
-import Faq from "@/components/Footer/Faq";
-import Header from "@/components/Head/Header";
-
-
 import Head from "next/head";
-
+import Faq from "@/components/Footer/Faq";
+import React from "react";
+import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import Image from "next/image";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/cart.slice";
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -62,8 +58,9 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const SlugPage = ({ product }) => {
-  const addToCart = addToCart();
+const ProductPage = ({ product }) => {
+  const dispatch = useDispatch();
+
   return (
     <>
       <Head>
@@ -109,91 +106,94 @@ const SlugPage = ({ product }) => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-      <div className="sticky">
-        <Toast />
-        <Header />
-      </div>
+      <main>
+        <div className="sticky">
+          <Toast />
+          <Header />
+        </div>
 
-      <div className="slug-container">
-        <div class="slider">
-          <Link href="#slide-1">1</Link>
-          <Link href="#slide-2">2</Link>
-          <Link href="#slide-3">3</Link>
-          <Link href="#slide-4">4</Link>
-          <Link href="#slide-5">5</Link>
+        <div className="slug-container">
+          <div class="slider">
+            <Link href="#slide-1">1</Link>
+            <Link href="#slide-2">2</Link>
+            <Link href="#slide-3">3</Link>
+            <Link href="#slide-4">4</Link>
+            <Link href="#slide-5">5</Link>
 
-          <div class="slides">
-            <div id="slide-1">
-              <Image
-                src={product.image}
-                height={400}
-                width={400}
-                alt=" product"
-              />
-            </div>
-            <div id="slide-2">
-              <Image
-                src={product.image}
-                height={400}
-                width={400}
-                alt=" product"
-              />
-            </div>
-            <div id="slide-3">
-              <Image
-                src={product.image}
-                height={400}
-                width={400}
-                alt=" product"
-              />
-            </div>
-            <div id="slide-4">
-              <Image
-                src={product.image}
-                height={400}
-                width={400}
-                alt=" product"
-              />
-            </div>
-            <div id="slide-5">
-              <Image
-                src={product.image}
-                height={400}
-                width={400}
-                alt=" product"
-              />
+            <div class="slides">
+              <div id="slide-1">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-2">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-3">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-4">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-5">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="slug-content-text">
-        <h4>Name: {product.name}</h4>
-        <p>Description:{product.description}</p>
-        <p>{product.description}</p>
-        <p>{product.description}</p>
-        <p>{product.description}</p>
-        <p>Price: GH₵ {product.price}</p>
-      </div>
+        <div className="slug-content-text">
+          <h4>Name: {product.name}</h4>
+          <p>Description:{product.description}</p>
+          <p>{product.description}</p>
+          <p>{product.description}</p>
+          <p>{product.description}</p>
+          <p>Price: GH₵ {product.price}</p>
+        </div>
+        <Faq />
 
-      <div className="forms-container sticky-div">
-        <ul>
-          <li>
-            <button onClick={() => addToCart(product)}>ADD TO CART</button>
-          </li>
+        <ItemsLike />
+        <Newsletter />
+        <div className="forms-container sticky-div">
+          <ul>
+            <li>
+              <button onClick={() => dispatch(addToCart(product))}>
+                ADD TO CART
+              </button>
+            </li>
 
-          <li>
-            <Link className="view-cart-btn" href={"/cart"}>
-              VIEW CART
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <Faq />
-
-      <ItemsLike />
-      <Newsletter />
+            <li>
+              <Link className="view-cart-btn" href={"/cart"}>
+                VIEW CART
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </main>
     </>
   );
 };
 
-export default SlugPage;
+export default ProductPage;
