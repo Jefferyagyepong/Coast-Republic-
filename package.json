@@ -1,4 +1,5 @@
 {
+  
   "name": "coast-republic",
   "version": "0.1.0",
   "private": true,
@@ -49,5 +50,9 @@
     "@types/express": "^5.0.0",
     "@types/node-fetch": "^2.6.12",
     "@types/paystack__inline-js": "^1.0.1"
-  }
+  },
+
+  "engines": {
+    "node": ">=18.17.0"}
+  
 }
