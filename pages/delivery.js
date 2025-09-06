@@ -78,7 +78,7 @@ const Delivery = () => {
           </form>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -46,12 +46,12 @@ export default function Carousel({ images }) {
             transform: translateX(0);
           }
           ${images.map(
-            (_, index) => `
+        (_, index) => `
               ${(index + 1) * (100 / images.length)}% {
                 transform: translateX(-${(index + 1) * (100 / images.length)}%);
               }
             `
-          ).join('')}
+      ).join('')}
           100% {
             transform: translateX(-${100 * images.length}%);
           }

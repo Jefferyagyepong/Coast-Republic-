@@ -37,7 +37,7 @@ const ProductFilter = () => {
 
   return (
     <div>
-      
+
 
       {/* Category Filter */}
       <select onChange={e => setCategory(e.target.value)}>

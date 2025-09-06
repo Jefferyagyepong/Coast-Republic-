@@ -6,14 +6,14 @@ function Show() {
     <div className="footer-align-left">
       <Image
         src={
-          "https://images.unsplash.com/photo-1548883354-7622d03aca27?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          "/gyamfua black OLIVE.svg"
         }
         width={380}
         height={700}
         alt="img"
       />
       <h3>DESIGNER PAIRS IN OUR COLLECTION</h3>
-          
+
       <Link href={"/products"}>Shop now</Link>
     </div>
   );

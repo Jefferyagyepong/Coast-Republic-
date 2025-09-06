@@ -1,14 +1,15 @@
 .inline {
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 20px 20px;
 }
-.product-link{
-text-align:center;
+
+.product-link {
+  text-align: center;
 }
 
 
@@ -19,7 +20,7 @@ text-align:center;
 }
 .product-container{
    width:100%;
-
+   background: hsl(0%, 0%, 92%);
    margin: 0 auto;
 padding-top:50px;
 padding-bottom:50px;
@@ -28,75 +29,65 @@ padding-left:10px;
 }
 }
 
-.product-card {
+.grid {
   display: grid;
-background:#fff;
-padding-top:30px;
-padding-bottom:30px;
-border-radius:4px;
-  width:100%;
-  grid-template-columns: repeat(3, 1fr);
-align-items: center;
-justify-content: start;
-padding-left: 10px;
-list-style:none;
-margin: 0 auto;
-
-
-a{
-padding-top: 20px;
-text-decoration:none;
-cursor:pointer;
-transition: 0.2s ease;
-
-h3,h4,h5,h6, p{
-margin:6px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
-img{
-display: block;
-margin-left:0;
-margin-top: 30px;
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
 }
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
-    
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .shop-nows:hover {
   opacity: 0.3;
 }
 
-@media (max-width: 700px) {
-  .product-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-}
-
-.jean-bg {
-width:100%;
-padding:10px 14px;
-  a {
-    text-decoration: underline;
-    text-align: left;
-  }
-}
 
 .sale-box {
-   width:100%;
-margin: 0 auto;
-display:flex;
-flex-direction: column;
-align-items: center;
-gap: 1.6rem;
-padding:20px 30px;
-  background: #800000;
+  margin-top: 6rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 60px 20px 20px;
+  background-image: url('/background.svg');
+  background-size: cover;
   color: #fff;
+
+  h3 {
+    line-height: 20px;
+  }
 
   a {
     text-decoration: underline;
+    padding: 12px;
     color: #fff;
   }
 }
-

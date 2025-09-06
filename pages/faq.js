@@ -54,7 +54,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

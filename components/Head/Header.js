@@ -1,17 +1,21 @@
 import CartBasket from "./CartBasket";
 import Link from "next/link.js";
 import Menu from "./Menu";
-import Image from "next/image";
 function Header() {
   return (
     <>
-           <header>                           
-            <Menu />
-            <Link href={"./"}>
-            <h4 className="header-logo">Coast Republic</h4>
-            </Link>            
-            <CartBasket />
-            </header>
+      <header>
+
+        <Menu />
+        <div>
+          <Link href={"./"}>
+            <h4 className="logo">Coast Republic</h4>
+          </Link>
+        </div>
+
+        <CartBasket />
+
+      </header>
     </>
   );
 }

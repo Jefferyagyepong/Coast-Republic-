@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import Head from "next/head";
 import Thrifts from "@/components/Products/Thrifts";
 import New from "@/components/Products/New";
@@ -10,10 +10,17 @@ import Collection from "@/components/Products/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Products/Jeans";
 
+<<<<<<< HEAD
                                 
 import Carousel from "@/components/Products/Carousel"; 
+=======
 
-    const images = [
+import All from '@/components/Products/All';
+>>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
+
+import Carousel from "@/components/Products/Carousel";
+
+const images = [
   "/products/george1a.JPG",
 
   "/products/force1b.JPG",
@@ -23,24 +30,22 @@ import Carousel from "@/components/Products/Carousel";
 ];
 
 
-const Home = () => {   
-    
+const Home = () => {
+
   return (
     <>
       <Head>
-        <title>Coast Republic | T-shirts and more</title>
+        <title>Coast Republic | Clothing & Shoes</title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
         <meta name="twitter:title" content="Coast Republic inc" />
         <meta
           name="twitter:description"
-          content="T-shirts, Sneakers & more.... "
+          content=" Discover unique designs crafted for you..... "
         />
         <meta
-          name="twitter:image"
-          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
+          name="twitter:image" content="/backg.png" />
         <meta property="og:title" content="Coast Republic inc" />
         <meta
           property="og:description"
@@ -72,17 +77,16 @@ const Home = () => {
       </Head>
       <main>
         <div className="sticky">
-        <Toast />
-        <Header />
-        </div>             
+          <Toast />
+          <Header />
+        </div>
         <Sale />
         <Thrifts />
-        <Jeans />          
+        <Jeans />
         <Carousel images={images} />
         <New />
-        
-        <Link href="/products/" className="product-link">Shop Now</Link>                  
-        <Collection />     
+
+        <Collection />
         <Newsletter />
         <Footer />
       </main>
@@ -90,11 +94,3 @@ const Home = () => {
   );
 };
 export default Home;
-
-
-
-
-
- 
-
-

@@ -4,7 +4,7 @@ import Header from "@/components/Head/Header";
 const Terms = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <div className="footer-align-left">
         <div>
           <h1>Terms & Conditions</h1>
@@ -46,13 +46,13 @@ const Terms = () => {
           <h2>5. Contact Information</h2>
           <p>
             If you have any questions, feel free to contact us at{" "}
-            <strong>support@fashionstore.com</strong>.
+            <strong>support@coastrepubublicstore.com</strong>.
           </p>
 
           <p>Last updated: February 2025</p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

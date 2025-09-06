@@ -13,7 +13,7 @@ function Title() {
         height={700}
       />
       <h5>Sneakers: Designer pairs in our collection </h5>
-        
+
       <Link href={"/products"}>Shop now</Link>
     </div>
   );

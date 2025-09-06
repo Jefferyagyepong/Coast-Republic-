@@ -13,8 +13,8 @@ function All() {
         height={800}
       />
       <h3>SNEAKERS</h3>
-      
-      
+
+
       <Link href={"/products"}>Shop now</Link>
     </div>
   );

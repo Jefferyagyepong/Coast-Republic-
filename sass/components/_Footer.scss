@@ -1,6 +1,6 @@
 .ibrid-flex {
     width:100%;
-    padding:10px 14px;
+  padding: 60px 20px 20px;
     flex-direction: row;
     align-items: left;
     justify-content: flex-start;
@@ -37,8 +37,8 @@ footer .container .footer-section ul {
 }
 
 .footer {
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color:#0c0e1a;
+  color:#c8beb2;
   padding: 60px 20px 20px;
   font-family: 'Arial', sans-serif;
 }
@@ -58,7 +58,7 @@ footer .container .footer-section ul {
 .footer-logo {
   font-size: 28px;
   font-weight: bold;
-  color: #fff;
+   color: #382f28;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -67,14 +67,14 @@ footer .container .footer-section ul {
 .brand-info p {
   font-size: 14px;
   line-height: 1.6;
-  color: #ccc;
+ color: #c8beb2;
 }
 
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  color: #fff;
+color:#c8beb2;
 }
 
 .footer-section ul {
@@ -87,14 +87,14 @@ footer .container .footer-section ul {
 }
 
 .footer-section ul li a {
-  color: #ccc;
+  color: #c8beb2;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #fff;
+  color: #382f28;
 }
 
 .payment-container {
@@ -119,7 +119,7 @@ footer .container .footer-section ul {
 .footer-align-left {
  width:100%;
   margin: 0 auto;
-  padding: 10px 14px;
+  padding: 60px 20px 20px;
   text-align: left;
   display: flex;
   justify-content: center;

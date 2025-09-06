@@ -12,6 +12,7 @@ const Navbar = () => {
   // };
 
   return (
+<<<<<<< HEAD
     <div className="basket-div">
       <Link href="#">
         <Image src={"/person.svg"} width={35} height={30} alt="logo" />
@@ -22,6 +23,19 @@ const Navbar = () => {
       </Link>
       {/* <div className="count">{getItemsCount()}</div> */}
     </div>
+=======
+    <>
+
+
+
+      <div className="flex-row">
+
+        <Link href="/cart">
+          <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
+        </Link>
+        {getItemsCount()}</div>
+    </>
+>>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
   );
 };
 

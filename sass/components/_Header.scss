@@ -1,26 +1,17 @@
-//logo
-
-.header-logo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 
 //hamburger menu
-
-/* HamburgerMenu.css */
-.nav-container {
-  
-  width: 20%;
+.nav-container{
+  width: 5%;
 }
-
+/* HamburgerMenu.css */
 .nav-toggle {
   display: none;
 }
-
+.logo{
+  color:#fff;
+  font-size: 20px;
+  line-height: 1.3;
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -44,13 +35,14 @@
   display: flex;
   gap: 20px;
 }
+.nav-menu-link{
+  color:#fff;
+}
 
 .nav-menu li a {
   text-decoration: none;
-  color: #333;
-  padding: 10px;
+  color: #fff;
   display: block;
-  font-size: 16px;
 }
 
 .nav-menu li a:hover {
@@ -71,7 +63,6 @@
     width: 100%;
     background: #fff;
     flex-direction: column;
-    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -106,9 +97,9 @@
   font-size: 14px;
 text-align:center;
   position: relative;
-  min-height: 30px;
+  min-height: 60px;
   width:100%;
-  background-color: gold;
+  background-color: #dcd3cc;
   padding: 10px 13px;
 
 }
@@ -134,9 +125,6 @@ animation-delay:10s ease;
   }
 }
 
-.logoName{
-color:Snow;
-}
 
 
 
@@ -145,33 +133,28 @@ color:Snow;
   color: black;
 }
 
-// basket div style
-.basket-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 
-}
 
-.count {
-  color: gold;
-  font-weight: 700;
-  font-size: 14px;
-  margin-left: -21px;
-  margin-top: -30px;
+.flex-row{
+  display:inline;
+float: right;
+padding:0;
+  
+  
 }
 
 header {
   width:100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 12px;
-  background-color: #222;
+  background-color: #173856;
   opacity: 1;
+display: flex;
+  justify-content: space-between; /* Spreads items across the row */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Optional padding */
   
+}
+header > * {
+  margin: 0 10px; /* Optional spacing between elements */
 }
 
 .sticky {
@@ -202,130 +185,5 @@ flex-direction:column;
 }
 
 
-
-/* HamburgerMenu.css */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  overflow-y: scroll;
-  scrollbar-width: thin;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-body.no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
-.nav-container {
-width:20%;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  padding: 15px;
-}
-
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: snow;
-  margin: 5px 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.nav-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  color: #333;
-  padding: 1rem;
-  display: block;
-  font-size: clamp(14px, 2.5vw, 16px);
-}
-
-.nav-menu li a:hover {
-  color: #007bff;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transform: translateX(-100%);
-  }
-
-  .nav-toggle:checked ~ .nav-menu {
-    display: flex;
-    transform: translateX(0);
-  }
-
-  .nav-toggle:checked + .hamburger span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .nav-toggle:checked + .hamburger span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav-toggle:checked + .hamburger span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-  }
-}
-
-/* Desktop styles */
-@media (min-width: 769px) {
-  .nav-menu {
-    display: flex !important;
-    position: static;
-    width: auto;
-    height: auto;
-    transform: none;
-    box-shadow: none;
-  }
-}
 
 

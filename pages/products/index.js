@@ -27,7 +27,7 @@ export async function getStaticProps() {
 
 const ProductList = ({ products }) => {
 
-const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('All');
   const [sort, setSort] = useState('name-asc');
 
   // Get unique categories for filter dropdown
@@ -43,11 +43,11 @@ const [filter, setFilter] = useState('All');
       if (sort === 'name-desc') return b.name.localeCompare(a.name);
       return 0;
     });
-  
+
   return (
     <>
       <Head>
-        <title>Shop our products. </title>
+        <title>Coast Republic | Our collection </title>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@coastrepublicgh" />
         <meta name="twitter:creator" content="@coastrepublicgh" />
@@ -90,58 +90,62 @@ const [filter, setFilter] = useState('All');
         />
       </Head>
       <main>
+
         <div className="sticky">
           <Toast />
           <Header />
         </div>
-        <div className="product-container">
-          <h3>Our collection</h3>  <br />
-         <div className="controls">
-          <label>
-           Filter by Category:
-          <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-            {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Sort by:
-          <select onChange={(e) => setSort(e.target.value)} value={sort}>
-            <option value="name-asc">Name (A-Z)</option>
-            <option value="name-desc">Name (Z-A)</option>
-            <option value="price-asc">Price (Low to High)</option>
-            <option value="price-desc">Price (High to Low)</option>
-          </select>
-        </label>
-      </div>
-                                 
-          <ul className="product-card">      
-            {filteredProducts.map((product) => (
-              <li key={product.slug}>                        
-                <Link href={`/products/${product.slug}`}>           
-                  <Image
-                    src={product.image}
-                    height={150}
-                    width={210}
-                    alt=" product"
-                  />  
-                  <h3><b>{product.name}</b></h3>
-                  <p>{product.description}</p>
-                  <p>{product.description}</p>
-                  <p>GH₵ { product.price.toFixed(2)}</p>               
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>                   
-        <BackTo />                              
+        <div className="card-container">
+          <h4>Our Collection </h4>
+
+          <div className="controls">
+            <label>
+              Filter:
+              <select onChange={(e) => setFilter(e.target.value)} value={filter} className="background-bg">
+                {categories.map((category) => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Sort:
+              <select onChange={(e) => setSort(e.target.value)} value={sort} className="background-bg">
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+                <option value="price-asc">Price (Low to High)</option>
+                <option value="price-desc">Price (High to Low)</option>
+              </select>
+            </label>
+          </div>
+          <div className="grid">
+     
+                {filteredProducts.map((product) => (
+                  <div key={product.slug} className="card">
+                    <Image
+                      src={product.image}
+                      height={150}
+                      width={210}
+                      alt=" product"
+                    />
+                    <Link href={`/products/${product.slug}`}>
+                      <h5>{product.name}</h5>
+                      <p>{product.description}</p>
+                      <p>{product.description}</p>
+                      <h3>GH₵ {product.price.toFixed(2)}</h3>
+                    </Link>
+                  </div>
+                ))}
+              
+
+          </div>
+        </div>
+        <BackTo />
         <Newsletter />
         <Footer />
       </main>
-      
+
       <style jsx global>{`
     
         .controls {
