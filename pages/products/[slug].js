@@ -63,6 +63,7 @@ export async function getStaticProps({ params }) {
 }
 
 const SlugPage = ({ product }) => {
+  const addToCart = addToCart();
   return (
     <>
       <Head>
