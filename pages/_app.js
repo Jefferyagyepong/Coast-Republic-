@@ -1,6 +1,6 @@
 import "/sass/main.scss";
-import { CartProvider } from "./context/CartContext";
-config.autoAddCss = false;
+import { CartProvider } from "../context/CartContext";
+
 
 export default function App({ Component, pageProps }) {
   return (

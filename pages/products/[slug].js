@@ -1,5 +1,5 @@
 "use client";
-import { useCart } from "@/pages/context/CartContext";
+import { useCart } from "@/context/CartContext";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
