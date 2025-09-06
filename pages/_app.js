@@ -3,18 +3,14 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-
-import { CartProvider } from "../context/cartContext";
-
-
+import { CartProvider } from "@/context/CartContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-     <CartProvider>
+    <CartProvider>
       <Component {...pageProps} />
     </CartProvider>
   );
 }
 
 export default MyApp;
-

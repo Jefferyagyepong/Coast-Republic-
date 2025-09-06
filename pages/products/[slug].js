@@ -1,15 +1,16 @@
+"use client";
+import { useCart } from "@/context/CartContext";
 import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Products/ItemsLike";
 import Head from "next/head";
 import Faq from "@/components/Footer/Faq";
-import React from 'react';
-import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
-import Image from 'next/image';
-import { useCart } from '@/context/cartContext';
+import React from "react";
+import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import Image from "next/image";
 
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
@@ -58,8 +59,7 @@ export async function getStaticProps({ params }) {
 }
 
 const ProductPage = ({ product }) => {
-
-  const { addItem } = useCart();
+const { addToCart } = useCart();
   return (
     <>
       <Head>
@@ -110,76 +110,86 @@ const ProductPage = ({ product }) => {
           <Toast />
           <Header />
         </div>
-    
-   <div className="slug-container">        
-   <div class="slider">
-  
-  <Link href="#slide-1">1</Link>
-  <Link href="#slide-2">2</Link>
-  <Link href="#slide-3">3</Link>
-  <Link href="#slide-4">4</Link>
-  <Link href="#slide-5">5</Link>
 
-     <div class="slides">
-    <div id="slide-1">
-    <Image src={product.image} height={400} width={400} alt=" product" />      
-    </div>
-    <div id="slide-2">
-    <Image src={product.image} height={400} width={400} alt=" product" />       
-    </div>
-    <div id="slide-3">
-       <Image src={product.image} height={400} width={400} alt=" product" />         
-      </div>
-        <div id="slide-4">
-      <Image src={product.image} height={400} width={400} alt=" product" />       
-        </div>
-         <div id="slide-5">
-        <Image src={product.image} height={400} width={400} alt=" product" />         
-       </div>
-      </div>
-      </div>                                           
-        </div>
-        <div className="slug-content-text"> 
-         <h4>Name: {product.name}</h4>
-          <p>Description:{product.description}</p>
-              <p>{product.description}</p>
-            <p>{product.description}</p>
-              <p>{product.description}</p>
-          <p>Price: GH₵ {product.price}</p>
+        <div className="slug-container">
+          <div class="slider">
+            <Link href="#slide-1">1</Link>
+            <Link href="#slide-2">2</Link>
+            <Link href="#slide-3">3</Link>
+            <Link href="#slide-4">4</Link>
+            <Link href="#slide-5">5</Link>
+
+            <div class="slides">
+              <div id="slide-1">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-2">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-3">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-4">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+              <div id="slide-5">
+                <Image
+                  src={product.image}
+                  height={400}
+                  width={400}
+                  alt=" product"
+                />
+              </div>
+            </div>
           </div>
-          <Faq />
-                                       
-          <ItemsLike /> 
-          <Newsletter />
-             <div className="forms-container sticky-div">
-          <ul><li>
-            
-          
-            <button onClick={() => addItem(product)}>Add to Cart</button>
-          </li>
-          <li>                  
-          <Link className="view-cart-btn"href={"/cart"}>VIEW CART</Link> 
-            </li></ul>
-                
-     
-          </div>        
-                                        
+        </div>
+        <div className="slug-content-text">
+          <h4>Name: {product.name}</h4>
+          <p>Description:{product.description}</p>
+          <p>{product.description}</p>
+          <p>{product.description}</p>
+          <p>{product.description}</p>
+          <p>Price: GH₵ {product.price}</p>
+        </div>
+        <Faq />
+
+        <ItemsLike />
+        <Newsletter />
+        <div className="forms-container sticky-div">
+          <ul>
+            <li>
+              <button onClick={() => addToCart(product)}>Add to Cart</button>
+            </li>
+            <li>
+              <Link className="view-cart-btn" href={"/cart"}>
+                VIEW CART
+              </Link>
+            </li>
+          </ul>
+        </div>
       </main>
     </>
   );
 };
 
 export default ProductPage;
-
-
-
-
-
-
-
-
-
-
-
-
-

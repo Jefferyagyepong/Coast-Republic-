@@ -1,39 +1,48 @@
-// context/CartContext.js
-export const CartProvider = ({ children }) => {
+// /context/CartContext.jsx
+import { createContext, useContext, useState } from "react";
+
+const CartContext = createContext();
+
+export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // Number of items per page
 
-  // Calculate paginated items
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = cart.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(cart.length / itemsPerPage);
-
-  // Pagination controls
-  const nextPage = () => {
-    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+  const addToCart = product => {
+    setCart(prev => {
+      const existingItem = prev.find(item => item.id === product.id);
+      if (existingItem) {
+        return prev.map(item =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      }
+      return [...prev, { ...product, quantity: 1 }];
+    });
   };
-  const prevPage = () => {
-    setCurrentPage((prev) => Math.max(prev - 1, 1));
+
+  const removeFromCart = id => {
+    setCart(prev => prev.filter(item => item.id !== id));
+  };
+
+  const updateQuantity = (id, quantity) => {
+    setCart(prev =>
+      prev.map(item =>
+        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+      )
+    );
+  };
+
+  const getCartTotal = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
   return (
     <CartContext.Provider
-      value={{
-        cart,
-        addToCart,
-        removeFromCart,
-        updateQuantity,
-        clearCart,
-        currentItems,
-        currentPage,
-        totalPages,
-        nextPage,
-        prevPage,
-      }}
+      value={{ cart, addToCart, removeFromCart, updateQuantity, getCartTotal }}
     >
       {children}
     </CartContext.Provider>
   );
-};
+}
+
+export const useCart = () => useContext(CartContext);

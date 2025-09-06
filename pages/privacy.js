@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 
 import Header from "@/components/Head/Header";
@@ -6,10 +5,7 @@ import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import PrivacyPage from "@/components/Footer/Privacy";
 
-
-
-const Privacy = () => {   
-    
+const Privacy = () => {
   return (
     <>
       <Head>
@@ -60,10 +56,9 @@ const Privacy = () => {
           <Toast />
           <Header />
         </div>
- <Privacy />
+        <Privacy />
       </main>
     </>
   );
 };
 export default PrivacyPage;
-

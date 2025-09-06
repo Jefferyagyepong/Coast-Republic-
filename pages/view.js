@@ -1,5 +1,5 @@
 // components/Cart.js
-import { useCart } from '@/context/cartContext';
+import { useCart } from "@/context/CartContext";
 
 export default function Cart() {
   const {
@@ -13,14 +13,14 @@ export default function Cart() {
     updateQuantity,
   } = useCart();
 
-  const sampleItem = { id: 1, name: 'Sample Product', price: 29.99 };
+  const sampleItem = { id: 1, name: "Sample Product", price: 29.99 };
 
   return (
     <div>
       <h2>Shopping Cart</h2>
       <button onClick={() => addToCart(sampleItem)}>Add Sample Item</button>
       <ul>
-        {currentItems.map((item) => (
+        {currentItems.map(item => (
           <li key={item.id}>
             {item.name} - ${item.price} x {item.quantity}
             <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>

@@ -87,9 +87,9 @@ export default function Search() {
         setFilteredProducts(filtered);
 
     }, [searcTerm]);
-    return (
-        <div>
-            <input type="search" name="" value={searchTerm} placeholder="search products..." onChange={(e) => setSearchTerm}>
-        </div>
-    )
+  return (
+    <div>
+      <input type="search" name="" value={searchTerm} placeholder="search products..." onChange={(e) => setSearchTerm}/>
+    </div>
+  );
 }
