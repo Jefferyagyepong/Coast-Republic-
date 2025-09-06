@@ -1,5 +1,7 @@
 import { useState } from "react";
-
+import Header from "@/components/Head/Header";
+import Head from "next/head";
+import Toast from "@/components/Head/Toast";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,17 +17,6 @@ const Contact = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      <Header />
-
-      <div className="formContainer">
-        <div>
-          <h1>Contact Us</h1>
-          <p>
-            Have questions? We are here to help! Fill out the form below, and we
-            will get back to you.
-          </p>
-=======
       <Head>
         <title>Coast Republic | T-shirts and more</title>
         <meta name="twitter:card" content="summary_large_image" />
@@ -74,7 +65,6 @@ const Contact = () => {
           <Toast />
           <Header />
         </div>
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
 
         <div className="contact-container">
           <div>
@@ -105,18 +95,6 @@ const Contact = () => {
                     type="email"
                     required
 
-<<<<<<< HEAD
-        <div>
-          <h2>IN STORE WAREHOUSE </h2>
-          <p>📍 7 Asafo Dadiesoaba</p>
-          <p>📞 +233 200-0000</p>
-          <p>✉️ support@coastrepublic.com</p>
-        </div>
-      </div>
-    </div>
-    <Footer />
-   
-=======
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -151,13 +129,8 @@ const Contact = () => {
         </div>
         <Footer />
       </main>
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
     </>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
   );
 };
 

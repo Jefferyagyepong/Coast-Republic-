@@ -5,14 +5,10 @@ import Header from "@/components/Head/Header";
 import Toast from "@/components/Head/Toast";
 import PrivacyPage from "@/components/Footer/Privacy";
 
-<<<<<<< HEAD
-const Privacy = () => {
-=======
 
 
 const Privacy = () => {
 
->>>>>>> 0e36f048fa4763fea18f3576d321091242c36645
   return (
     <>
       <Head>
