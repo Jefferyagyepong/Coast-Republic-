@@ -1,5 +1,5 @@
-// app/page.js or a client component
-"use client"; // Mark as client component
+
+"use client"; 
 
 import { useState, useEffect } from "react";
 
@@ -11,7 +11,7 @@ export default function ProductsPage() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch("/api/products");
+        const response = await fetch("./api/products/products.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
