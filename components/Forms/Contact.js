@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 function Contact() {
   return (
     <div className="ibrid-box-line">

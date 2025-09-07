@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
 // components/PaystackPayment.js
 import { useEffect } from "react";
 

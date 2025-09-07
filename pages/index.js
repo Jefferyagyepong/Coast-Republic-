@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head";
 import Thrifts from "@/components/Parts/Thrifts";
 import New from "@/components/Parts/New";

@@ -31,7 +31,7 @@ function ContactForm() {
         <button
           type="submit"
           value="Send"
-          onclick="return true"
+          onClick="return true"
           disabled={state.submitting}
           className="button-link"
         >

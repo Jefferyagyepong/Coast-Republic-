@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 function Privacy() {
   return (
     <div className="footer-align-left">

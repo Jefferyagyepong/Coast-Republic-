@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Image from "next/image";
 function IbridApp() {
   return (

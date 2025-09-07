@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 // components/Carousel.js
 import Image from "next/image";
 export default function Carousel({ images }) {

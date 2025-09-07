@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Header from "@/components/Head/Header";
 import Head from "next/head";

@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 // components/ItemsYouMayLike.js
 import Link from 'next/link';
 import Image from 'next/image';

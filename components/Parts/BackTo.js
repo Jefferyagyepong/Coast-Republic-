@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 'use client'; // Ensure this is a client component
 
 import { useState, useEffect } from 'react';

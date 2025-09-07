@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 function Terms() {
   return (
     <div className="ibrid-box-line-law">
