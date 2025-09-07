@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Product from "@/components/Product";
-import Cart from "@/components/Cart";
+
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -25,7 +25,7 @@ export default function Home() {
         ))}
       </div>
       <div className="mt-8">
-        <Cart />
+      
       </div>
     </div>
   );
