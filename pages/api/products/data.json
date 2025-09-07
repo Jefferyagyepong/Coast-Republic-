@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "slug": "Air Force 1 07 black",
+        "name": "Air Force 1 07 black",
+        "image": "/products/force1c.JPG",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 1109.99
+    },
+    {
+        "_id": 2,
+        "slug": "Reebok classics",
+        "name": "Reebok classics",
+        "image": "/products/reebook1c.JPG",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 1109.99
+    },
+    {
+        "_id": 3,
+        "slug": "Air Force 1 07 high black",
+        "name": "Air Force 1 07 high black",
+        "image": "/products/force3a.JPG",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 1130.00
+    },
+    {
+        "_id": 4,
+        "slug": " Adidas Campus",
+        "name": " Adidas Campus",
+        "image": "/products/campus1a.JPG",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 1185.00
+    },
+    {
+        "_id": 5,
+        "slug": "Converse Chuck Taylor",
+        "name": "Converse Chuck Taylor",
+        "image": "/products/chuck1a.JPG",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 750.00
+    },
+    {
+        "_id": 6,
+        "slug": "Timberland Boots",
+        "name": "Timberland Boots",
+        "image": "/products/tims1a.JPG",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 375.00
+    },
+    {
+        "_id": 7,
+        "slug": "Vans Ski Low",
+        "name": "Vans Ski Low",
+        "image": "/products/vans1a.WEBP",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 700.00
+    },
+    {
+        "_id": 8,
+        "slug": "Reebok",
+        "name": "Reebok",
+        "image": "/products/reebook1b.WEBP",
+        "category": "Sneaker",
+        "description": "Lorem ipsum dalot gunt Dreh",
+        "price": 600.00
+    }
+]

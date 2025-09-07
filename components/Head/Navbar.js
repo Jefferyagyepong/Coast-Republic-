@@ -1,20 +1,19 @@
-import Link from "next/link";
-import Image from "next/image";
+"use client";
+
+import { useCart } from "@/context/CartContext";
 
 
-const Navbar = () => {
-
+export default function Navbar() {
+  const { getCartCount, setShowCart } = useCart();
 
   return (
-    <>
-      <div className="flex-row">
-        <Link href="/cart">
-          <Image src={"/bag.svg"} width={55} height={65} alt="logo" />
-        </Link>
-        {0}
+    <nav>
+      <div>
+     
+        <button onClick={() => setShowCart(true)}>
+          Cart ({getCartCount()})
+        </button>
       </div>
-    </>
+    </nav>
   );
-};
-
-export default Navbar;
+}
