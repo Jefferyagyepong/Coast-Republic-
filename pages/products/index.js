@@ -107,7 +107,7 @@ export default function Products({ products }) {
 
                 <h2>{product.name}</h2>
                 <p>Price: GHS{product.price}</p>
-                <Link href={`/products/${product.id}`}>
+                 <Link href={`/products/${product.id}`}>
                   <button className= "viewButton">View Details</button>
                 </Link>
               </div>
