@@ -1,44 +1,32 @@
-
-"use client"; 
+"use client";
 
 import { useState, useEffect } from "react";
+import Product from "@/components/Product";
+import Cart from "@/components/Cart";
 
-export default function ProductsPage() {
+export default function Home() {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchProducts() {
-      try {
-        const response = await fetch("./api/products/products.json");
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setProducts(data);
-      } catch (e) {
-        setError(e.message);
-      } finally {
-        setLoading(false);
-      }
+      const response = await fetch("https://fake");
+      const data = await response.json();
+      setProducts(data);
     }
     fetchProducts();
   }, []);
 
-  if (loading) return <p>Loading products...</p>;
-  if (error) return <p>Error: {error}</p>;
-
   return (
-    <div>
-      <h1>Products</h1>
-      <ul>
+    <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-4">E-Commerce Store</h1>
+      <div className="grid grid-cols-3 gap-4">
         {products.map(product => (
-          <li key={product.id}>
-            {product.name} - ${product.price}
-          </li>
+          <Product key={product.id} product={product} />
         ))}
-      </ul>
+      </div>
+      <div className="mt-8">
+        <Cart />
+      </div>
     </div>
   );
 }

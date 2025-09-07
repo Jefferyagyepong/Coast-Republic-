@@ -3,7 +3,7 @@
 import "/sass/main.scss";
 
 import { CartProvider } from "../context/CartContext";
-import ProductList from "@/components/ProductList";
+import ProductList from "@/components/Product";
 import Cart from "@/components/Cart";
 import CartOverlay from "@/components/CartOverlay";
 
