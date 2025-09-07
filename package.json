@@ -16,7 +16,8 @@
   "dependencies": {
     "next": "^15.5.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "sass": "^1.92.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
