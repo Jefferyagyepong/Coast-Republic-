@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
 // app/components/OrderSummary.jsx
 export default function OrderSummary({ items, subtotal, tax, total }) {

@@ -1,5 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Image from "next/image";
+
 import Link from "next/link";
 function FootBottom() {
   return (
