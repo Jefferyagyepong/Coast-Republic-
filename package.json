@@ -28,76 +28,31 @@
   "@formspree/react": "^2.5.1",
   
     
-  "@fortawesome/fontawesome-svg-core": "^6.7.2",
-  
-    
-  "@fortawesome/free-brands-svg-icons": "^6.7.2",
-  
-    
-  "@fortawesome/free-regular-svg-icons": "^6.7.2",
-  
-    
-  "@fortawesome/free-solid-svg-icons": "^6.7.2",
-  
-    
-  "@fortawesome/react-fontawesome": "^0.2.2",
-  
-    
-  "@paystack/inline-js": "^2.22.1",
-  
-    
   "@reduxjs/toolkit": "^1.9.7",
-  
-    
-  "@types/markerclustererplus": "2.1.33",
   
     
   "@types/react": "16.9.49",
   
     
-  "axios": "^1.7.9",
-  
-    
-  "cors": "^2.8.5",
-  
-    
-  "es6-shim": "^0.35.8",
-  
-    
   "eslint": "8.35.0",
   
     
-  "eslint-config-next": "^13.5.8",
+  "eslint-config-next": "^15.5.2",
   
     
-  "express": "^4.21.2",
+  "next": "^15.5.2",
   
     
-  "next": "^15.1.6",
+  "react": "^19.1.1",
   
     
-  "next-redux-wrapper": "^8.1.0",
-  
-    
-  "node-fetch": "^2.7.0",
-  
-    
-  "react": "^18.3.1",
-  
-    
-  "react-dom": "^18.3.1",
-  
-    
-  "react-paystack": "^4.0.3",
+  "react-dom": "^19.1.1",
   
     
   "react-redux": "^8.1.3",
   
     
-  "sass": "^1.83.4",
-  
-    
-  "use-places-autocomplete": "^4.0.1"
+  "sass": "^1.83.4"
   
   },
   
@@ -137,22 +92,6 @@
   ]
   
   ],
-  
-  "devDependencies": {
-  
-    
-  "@types/express": "^5.0.0",
-  
-    
-  "@types/node-fetch": "^2.6.12",
-  
-    
-  "@types/paystack__inline-js": "^1.0.1",
-  
-    
-  "webpack": "^5.101.3"
-  
-  },
   
   "engines": {
   
