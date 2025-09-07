@@ -1,6 +1,7 @@
-import CartBasket from "./CartBasket";
+
 import Link from "next/link.js";
 import Menu from "./Menu";
+import Navbar from "./Navbar";
 function Header() {
   return (
     <>
@@ -13,7 +14,7 @@ function Header() {
           </Link>
         </div>
 
-        <CartBasket />
+     <Navbar />
 
       </header>
     </>
