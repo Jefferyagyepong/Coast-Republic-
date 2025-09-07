@@ -9,7 +9,7 @@ import Collection from "@/components/Parts/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Parts/Jeans";
 
-import All from "@/components/Parts/All";
+
 
 import Carousel from "@/components/Parts/Carousel";
 

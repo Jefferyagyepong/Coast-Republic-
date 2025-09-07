@@ -1,0 +1,17 @@
+{
+  "name": "coast-republic-",
+  "version": "1.0.0",
+  "description": "First, run the development server: npm run dev # or yarn dev # or pnpm dev Open http://localhost:3000 with your browser to see the result.",
+  "main": "next.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
