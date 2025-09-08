@@ -57,3 +57,112 @@
         flex: 0 0 100%; /* Stack items vertically on small screens */
     }
 }
+
+
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    width: 200%; /* Double width for two slides */
+    transition: transform 0.5s ease;
+}
+
+.carouselTrack {
+    display: flex;
+    width: 100%;
+}
+
+.carouselItem {
+    flex: 0 0 25%; /* Each item takes 25% for two-column layout */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.carouselImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.carouselInfo {
+    margin-top: 10px;
+}
+
+.carouselBrand {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.prevButton, .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prevButton {
+    left: 10px;
+}
+
+.nextButton {
+    right: 10px;
+}
+
+.prevButton:hover, .nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animation for swipe (manual control via JavaScript or CSS classes) */
+.carouselSlide1 {
+    transform: translateX(0);
+}
+
+.carouselSlide2 {
+    transform: translateX(-50%);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .carouselItem {
+        flex: 0 0 50%; /* Single column on mobile */
+    }
+    .carousel {
+        width: 100%; /* Adjust width for single slide */
+    }
+    .carouselSlide1 {
+        transform: translateX(0);
+    }
+    .carouselSlide2 {
+        transform: translateX(0);
+    }
+}
+
+.shopNow {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.shopNow:hover {
+    background-color: #333;
+}
