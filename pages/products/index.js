@@ -101,7 +101,7 @@ const ProductList = ({ products }) => {
         </div>
         <div>
           <h4>Our Collection </h4>
-//filter
+
           <div className="controls">
             <label>
               Filter:
