@@ -93,91 +93,36 @@ padding-left:10px;
 }
 
 
-/* Product item styling */
-.product-item {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between products */
+    justify-content: center;
+    padding: 20px;
 }
 
-.product-item:hover {
-  transform: translateY(-5px); /* Subtle hover effect */
+.product-item {
+    flex: 0 0 calc(50% - 10px); /* Two columns with adjusted gap */
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .product-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
-.product-item h3,h2{
-  font-size: 1.2rem;
-  margin: 10px 0;
+.product-info {
+    margin-top: 10px;
 }
 
-.product-item p {
-  color: #555;
-  font-size: 1rem;
+.product-price {
+    font-weight: bold;
+    color: #000;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .product-list {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product-list {
-    grid-template-columns: 2fr; /* Single column for small screens */
-    gap: 10px;
-  }
-
-  .product-item {
-    padding: 10px;
-  }
-
-  .product-item h3 {
-    font-size: 1rem;
-  }
-
-  .product-item p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Container for the product listing */
-.product-list {
-  list-style: none; /* Remove default bullets */
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 20px; /* Space between grid items */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); /* Responsive columns */
-}
-
-/* Styling for each product item */
-.product-list li {
-  background: #f9f9f9; /* Light background for items */
-  border: 1px solid #ddd; /* Border for definition */
-  border-radius: 8px; /* Rounded corners */
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.2s; /* Smooth hover effect */
-}
-
-.product-list li:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* Responsive adjustments */
 @media (max-width: 600px) {
-  .product-list {
-    grid-template-columns: 1fr; /* Single column for small screens */
-  }
+    .product-item {
+        flex: 0 0 100%; /* Stack items vertically on small screens */
+    }
 }
