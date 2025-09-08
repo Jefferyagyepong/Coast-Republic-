@@ -1,3 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
 // Use "use client" for App Router since Context API requires client-side rendering
 "use client";
 

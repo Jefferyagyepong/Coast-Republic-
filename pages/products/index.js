@@ -1,120 +1,189 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
-/* eslint-disable react/react-in-jsx-scope */
-// pages/products.js
+/* eslint-disable no-undef */
+import { useState } from "react";
 import Header from "@/components/Head/Header";
+import Footer from "@/components/Footer/Footer";
 import Toast from "@/components/Head/Toast";
-import Image from "next/image";
+import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import fs from "fs";
+import path from "path";
+import Head from "next/head";
+import Newsletter from "@/components/Footer/Newsletter";
 
-// Static JSON data (for demonstration; could be imported from a file)
-const staticProducts = [
-  {
-    _id: 1,
+import BackTo from "@/components/Parts/BackTo";
 
-    name: "Air Force 1 07 black",
-    image: "/products/force1c.JPG",
-
-    price: 1109.99,
-  },
-  {
-    _id: 2,
-
-    name: "Wrangler Men Jeans",
-    image: "/wrangler.svg",
-
-    price: 1109.99,
-  },
-  {
-    _id: 3,
-
-    name: "Air Force 1 07 high black",
-    image: "/products/force3a.JPG",
-
-    price: 1130.0,
-  },
-  {
-    _id: 4,
-
-    name: " Adidas Campus",
-    image: "/products/campus1a.JPG",
-    price: 1185.0,
-  },
-  {
-    _id: 5,
-
-    name: "T -Shirt Amonoo Gyamfuah",
-    image: "/gyamfua black OLIVE.svg",
-
-    price: 750.0,
-  },
-  {
-    _id: 6,
-
-    name: "T- Shirt Amonoo Gyamfuah",
-    image: "/GYAMFUA.svg",
-
-    price: 375.0,
-  },
-  {
-    _id: 7,
-
-    name: "Vans Ski Low",
-    image: "/products/vans1a.WEBP",
-
-    price: 700.0,
-  },
-  {
-    _id: 8,
-
-    name: "Reebok",
-    image: "/products/reebook1b.WEBP",
-
-    price: 600.0,
-  },
-];
-
-// Fetch data at build time (optional, replace with your API)
 export async function getStaticProps() {
-  // Using static data for this example
-  const products = staticProducts;
+  // Read the products JSON file from the public directory
+  const filePath = path.join(process.cwd(), "public", "data", "products.json");
+  const fileContents = fs.readFileSync(filePath, "utf8");
+
+  // Parse the file content into a JavaScript object
+  const products = JSON.parse(fileContents);
 
   return {
-    props: {
-      products,
-    },
+    props: { products }, // Pass products data to the page component
   };
 }
 
-export default function Products({ products }) {
+const ProductList = ({ products }) => {
+  const [filter, setFilter] = useState("All");
+  const [sort, setSort] = useState("name-asc");
+
+  // Get unique categories for filter dropdown
+  const categories = [
+    "All",
+    ...new Set(products.map(product => product.category)),
+  ];
+
+  // Filter and sort products
+  const filteredProducts = products
+    .filter(product => filter === "All" || product.category === filter)
+    .sort((a, b) => {
+      if (sort === "price-asc") return a.price - b.price;
+      if (sort === "price-desc") return b.price - a.price;
+      if (sort === "name-asc") return a.name.localeCompare(b.name);
+      if (sort === "name-desc") return b.name.localeCompare(a.name);
+      return 0;
+    });
+
   return (
     <>
+      <Head>
+        <title>Coast Republic | Our collection </title>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@coastrepublicgh" />
+        <meta name="twitter:creator" content="@coastrepublicgh" />
+        <meta name="twitter:title" content="Coast Republic inc" />
+        <meta
+          name="twitter:description"
+          content="T-shirts, Sneakers & more.... "
+        />
+        <meta
+          name="twitter:image"
+          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <meta property="og:title" content="Coast Republic inc" />
+        <meta
+          property="og:description"
+          content="T-shirts, Sneakers & more.... "
+        />
+        <meta property="og:url" content="https://coast-republic.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+
+        <meta name="description" content="Coast Republic  Store" />
+        <meta
+          name="keywords"
+          content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="author" content="Coast Republic Inc" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+        />
+        <link rel="icon" href="/" />
+        <meta
+          name="google-site-verification"
+          content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
+        />
+      </Head>
       <main>
         <div className="sticky">
           <Toast />
           <Header />
         </div>
-        <div className="container">
-          <h2>our collection</h2>
-          <div className="productList">
-            {products.map(product => (
-              <div key={product.id} className="productCard">
+        <div className="card-container">
+          <h4>Our Collection </h4>
+
+          <div className="controls">
+            <label>
+              Filter:
+              <select
+                onChange={e => setFilter(e.target.value)}
+                value={filter}
+                className="background-bg"
+              >
+                {categories.map(category => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Sort:
+              <select
+                onChange={e => setSort(e.target.value)}
+                value={sort}
+                className="background-bg"
+              >
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+                <option value="price-asc">Price (Low to High)</option>
+                <option value="price-desc">Price (High to Low)</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            {filteredProducts.map(product => (
+              <div key={product.slug}>
                 <Image
                   src={product.image}
-                  alt={product.name}
-                  width={200}
-                  height={200}
+                  height={150}
+                  width={210}
+                  alt=" product"
                 />
 
-                <h2>{product.name}</h2>
-                <p>Price: GHS{product.price}</p>
-                <Link href={`/products/${product.id}`}>
-                  <button className= "viewButton">View Details</button>
-                </Link>
+                <h5>{product.name}</h5>
+                <p>{product.description}</p>
+                <p>{product.description}</p>
+                <h3>GH₵ {product.price.toFixed(2)}</h3>
+                <Link href={`/products/${product.slug}`}>View Details</Link>
               </div>
             ))}
           </div>
         </div>
+        <BackTo />
+        <Newsletter />
+        <Footer />
       </main>
+
+      <style jsx global>{`
+    
+        .controls {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+        .controls label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+        }
+        .controls select {
+          padding: 8px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+    }
+        .product-card img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 4px;
+        }
+    
+      `}</style>
     </>
   );
-}
+};
+
+export default ProductList;
