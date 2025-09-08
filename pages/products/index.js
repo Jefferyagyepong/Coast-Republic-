@@ -143,7 +143,7 @@ const ProductList = ({ products }) => {
 
                 <h2>{product.name}</h2>
                 <p>Price: GHS{product.price}</p>
-                 <Link href={`/products/${product.id}`}>
+                 <Link href={`/products/${product.slug}`}>
                   <button className= "viewButton">View Details</button>
                 </Link>
               </div>
