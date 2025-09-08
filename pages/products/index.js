@@ -133,17 +133,17 @@ const ProductList = ({ products }) => {
           </div>
           <div>
             {filteredProducts.map(product => (
-              <ul key={product.slug}>
-                <li><Image
+              <ul className="product-list" key={product.slug}>
+                <li className="product-item"><Image
                   src={product.image}
                   height={150}
                   width={210}
                   alt=" product"
                 /></li>
 
-                <li><h2>{product.name}</h2></li>
-                <li><p>Price: GHS{product.price}</p></li>
-                <li> <Link href={`/products/${product.slug}`}>
+                <li className="product-item"><h2>{product.name}</h2></li>
+                <li className="product-item"><p>Price: GHS{product.price}</p></li>
+                <li className="product-item"> <Link href={`/products/${product.slug}`}>
                   <button className= "viewButton">View Details</button>
                 </Link></li>
               </ul>
