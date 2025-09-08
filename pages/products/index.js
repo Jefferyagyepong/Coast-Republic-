@@ -131,24 +131,24 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div>
+          <div className="product-container">
             {filteredProducts.map(product => (
-              <ul className="product-list" key={product.slug}>
-                <li className="product-item">
+              <div className="product-item" key={product.slug}>
+              
                   <Image
                   src={product.image}
                   height={150}
                   width={210}
                   alt=" product"
                 />
-
+<div className="product-info">
               <h2>{product.name}</h2>
               <p>Price: GHS{product.price}</p>
               <Link href={`/products/${product.slug}`}>
                   <button className= "viewButton">View Details</button>
                 </Link>
-                </li>
-              </ul>
+                </div>
+              </div>
             ))}
           </div>
         </div>
