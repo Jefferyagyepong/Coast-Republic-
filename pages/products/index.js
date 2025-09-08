@@ -99,9 +99,9 @@ const ProductList = ({ products }) => {
           <Toast />
           <Header />
         </div>
-        <div className="card-container">
+        <div>
           <h4>Our Collection </h4>
-
+//filter
           <div className="controls">
             <label>
               Filter:
@@ -133,20 +133,20 @@ const ProductList = ({ products }) => {
           </div>
           <div>
             {filteredProducts.map(product => (
-              <div key={product.slug}>
-                <Image
+              <ul key={product.slug}>
+                <li><Image
                   src={product.image}
                   height={150}
                   width={210}
                   alt=" product"
-                />
+                /></li>
 
-                <h2>{product.name}</h2>
-                <p>Price: GHS{product.price}</p>
-                 <Link href={`/products/${product.slug}`}>
+                <li><h2>{product.name}</h2></li>
+                <li><p>Price: GHS{product.price}</p></li>
+                <li> <Link href={`/products/${product.slug}`}>
                   <button className= "viewButton">View Details</button>
-                </Link>
-              </div>
+                </Link></li>
+              </ul>
             ))}
           </div>
         </div>
