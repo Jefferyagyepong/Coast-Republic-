@@ -141,19 +141,11 @@ const ProductList = ({ products }) => {
                   alt=" product"
                 />
 
-<<<<<<< HEAD
-                <h5>{product.name}</h5>
-                <p>{product.description}</p>
-                <p>{product.description}</p>
-                <h3>GH₵ {product.price.toFixed(2)}</h3>
-                <Link href={`/products/${product.slug}`}>View Details</Link>
-=======
                 <h2>{product.name}</h2>
                 <p>Price: GHS{product.price}</p>
                  <Link href={`/products/${product.id}`}>
                   <button className= "viewButton">View Details</button>
                 </Link>
->>>>>>> c88900eb60fa36d563323e02a8619216d6886d6f
               </div>
             ))}
           </div>
