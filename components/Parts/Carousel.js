@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
 // components/Carousel.js
-
+import Image from "next/image";
 
 const Carousel = ({ items }) => {
     return (
