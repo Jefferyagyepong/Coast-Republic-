@@ -2,64 +2,38 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
 // components/Carousel.js
-import Image from "next/image";
-export default function Carousel({ images }) {
-  return (
-    <div className="carousel">
-      <div className="carousel-inner">
-        {images.map((src, index) => (
-          <div key={index} className="carousel-item">
-            <Image src={src} alt={`Slide ${index + 1}`} width={250} height={200} />
-          </div>
-        ))}
-      </div>
+import styles from './Carousel.module.css';
 
-      <style jsx>{`
-        .carousel {
-          width: 1200px;
-          max-width:100%;    
-          background:hsl(0%, 0%, 92%);
-          margin: 0 auto;
-          overflow: hidden;
-          position: relative;
-          padding-top:40px;
-          padding-bottom:40px;
-       
-        }
+const Carousel = ({ items }) => {
+    return (
+        <div className={styles.carouselContainer}>
+            <div className={styles.carousel}>
+                <div className={styles.carouselTrack}>
+                    {items.map((item, index) => (
+                        <div key={index} className={styles.carouselItem}>
+                            <img src={item.image} alt={item.brand} className={styles.carouselImage} />
+                            <div className={styles.carouselInfo}>
+                                <div className={styles.carouselBrand}>{item.brand}</div>
+                            </div>
+                        </div>
+                    ))}
+                    {/* Duplicate items for seamless looping (optional for infinite scroll) */}
+                    {items.map((item, index) => (
+                        <div key={index + items.length} className={styles.carouselItem}>
+                            <img src={item.image} alt={item.brand} className={styles.carouselImage} />
+                            <div className={styles.carouselInfo}>
+                                <div className={styles.carouselBrand}>{item.brand}</div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* Optional navigation buttons (CSS-styled) */}
+            <button className={styles.prevButton}>❮</button>
+            <button className={styles.nextButton}>❯</button>
+        </div>
+    );
+};
 
-        .carousel-inner {
-          display: flex;
-          width: ${images.length * 100}%;
-          animation: slide ${images.length * 5}s infinite;
-        }
+export default Carousel;
 
-        .carousel-item {
-          flex: 0 0 ${100 / images.length}%;
-          width: ${100 / images.length}%;
-        }
-
-        img {
-                 
-          object-fit: cover;
-          display: block;
-        }
-
-        @keyframes slide {
-          0% {
-            transform: translateX(0);
-          }
-          ${images.map(
-        (_, index) => `
-              ${(index + 1) * (100 / images.length)}% {
-                transform: translateX(-${(index + 1) * (100 / images.length)}%);
-              }
-            `
-      ).join('')}
-          100% {
-            transform: translateX(-${100 * images.length}%);
-          }
-        }
-      `}</style>
-    </div>
-  );
-}
