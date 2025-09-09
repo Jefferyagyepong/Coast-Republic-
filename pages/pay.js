@@ -2,21 +2,20 @@
 /* eslint-disable react/prop-types */
 
 // pages/checkout.js
+// pages/checkout.js
 import dynamic from 'next/dynamic';
 
-const PaystackCheckout = dynamic(() => import('@/components/Parts/PaystackCheckout'), {
-  ssr: false, // Paystack uses window object, so disable SSR
+const PaystackForm = dynamic(() => import('@/components/Parts/PaystackForm'), {
+  ssr: false,
 });
 
 export default function CheckoutPage() {
-  const customerEmail = 'customer@example.com';
-  const totalAmount = 150; // GHS
-
   return (
     <div>
-      <h1>Checkout</h1>
-      <PaystackCheckout email={customerEmail} amount={totalAmount} />
+      <h1>Checkout Page</h1>
+      <PaystackForm />
     </div>
   );
 }
+
 
