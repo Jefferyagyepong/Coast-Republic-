@@ -17,7 +17,7 @@ import ImageCarousel from '@/components/Parts/ImageCarousel';
 
 
 const Home = () => {
- ];
+ 
    return (
     <>
       <Head>
