@@ -1,3 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
+
 // pages/checkout.js
 import dynamic from 'next/dynamic';
 

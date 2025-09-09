@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-          <script>"https://js.paystack.co/v1/inline.js"</script>
+          <script>https://js.paystack.co/v1/inline.js</script>
       </Head>
        
         
