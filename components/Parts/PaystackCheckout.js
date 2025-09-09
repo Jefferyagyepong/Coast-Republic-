@@ -7,7 +7,7 @@ const PaystackCheckout = ({ email, amount }) => {
 
   const payWithPaystack = () => {
     const handler = window.PaystackPop.setup({
-      key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxx', // Replace with your public key
+      key: 'pk_live_1822c586aa820dc6fd4c93e5c31261eeb4c74cf7', // Replace with your public key
       email: email,
       amount: amount * 100, // Paystack expects amount in kobo
       currency: 'GHS',
