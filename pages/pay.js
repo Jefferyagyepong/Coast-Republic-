@@ -1,7 +1,7 @@
 // pages/checkout.js
 import dynamic from 'next/dynamic';
 
-const PaystackCheckout = dynamic(() => import('../components/PaystackCheckout'), {
+const PaystackCheckout = dynamic(() => import('@/components/PaystackCheckout'), {
   ssr: false, // Paystack uses window object, so disable SSR
 });
 
