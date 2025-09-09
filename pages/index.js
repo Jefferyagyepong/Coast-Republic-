@@ -15,7 +15,11 @@ import Jeans from "@/components/Parts/Jeans";
 
 import Carousel from "@/components/Parts/Carousel";
 
-const carouselItems = [
+
+
+const Home = () => {
+ 
+  const carouselItems = [
   "/GYAMFUA.svg",
 
   "/products/force1b.JPG",
@@ -23,9 +27,7 @@ const carouselItems = [
   "/gyamfua black OLIVE.svg",
   "/wrangler.svg",
 ];
-
-const Home = () => {
-  return (
+   return (
     <>
       <Head>
         <title>Coast Republic | Clothing & Shoes</title>
