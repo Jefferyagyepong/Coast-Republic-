@@ -1,5 +1,6 @@
 // components/PaystackCheckout.js
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 
 const PaystackCheckout = ({ email, amount }) => {
@@ -7,13 +8,13 @@ const PaystackCheckout = ({ email, amount }) => {
 
   const payWithPaystack = () => {
     const handler = window.PaystackPop.setup({
-      key: 'pk_live_1822c586aa820dc6fd4c93e5c31261eeb4c74cf7', // Replace with your public key
+      key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxx', // Replace with your public key
       email: email,
-      amount: amount * 100, // Paystack expects amount in kobo
+      amount: amount * 100,
       currency: 'GHS',
       callback: function (response) {
         console.log('Payment successful. Reference:', response.reference);
-        router.push('/success'); // Redirect after payment
+        router.push('/success');
       },
       onClose: function () {
         alert('Transaction was not completed, window closed.');
@@ -28,6 +29,12 @@ const PaystackCheckout = ({ email, amount }) => {
       Pay Now
     </button>
   );
+};
+
+// ✅ PropTypes validation
+PaystackCheckout.propTypes = {
+  email: PropTypes.string.isRequired,
+  amount: PropTypes.number.isRequired,
 };
 
 export default PaystackCheckout;
