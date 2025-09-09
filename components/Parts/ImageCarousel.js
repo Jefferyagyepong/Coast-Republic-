@@ -5,6 +5,7 @@
 
 "use client";
 import { useState, useEffect } from "react";
+import Image from “next/image”;
 
 const images = [
   { src: "/images/img1.jpg", name: "Image 1" },
@@ -32,7 +33,7 @@ export default function Carousel() {
       >
         {images.map((img, idx) => (
           <div className="carousel-slide" key={idx}>
-            <img src={img.src} alt={img.name} />
+            <Image src={img.src} alt={img.name} />
             <p className="caption">{img.name}</p>
           </div>
         ))}
