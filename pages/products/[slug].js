@@ -91,7 +91,7 @@ const ProductPage = ({ product }) => {
           property="og:image"
           content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/coast.ico" />
 
         <meta name="description" content="Coast Republic  Store" />
         <meta
