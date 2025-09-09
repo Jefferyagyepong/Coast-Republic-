@@ -1,3 +1,8 @@
+
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
+// app/components/OrderSummary.jsx
+
 // components/ImageCarousel.jsx
 'use client';
 import Image from 'next/image';
