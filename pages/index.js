@@ -17,15 +17,7 @@ import ImageCarousel from '@/components/Parts/ImageCarousel';
 
 
 const Home = () => {
- 
-  const images = [
-  "/GYAMFUA.svg",
-
-  "/products/force1b.JPG",
-  "/airjordan.svg",
-  "/gyamfua black OLIVE.svg",
-  "/wrangler.svg",
-];
+ ];
    return (
     <>
       <Head>
@@ -76,7 +68,7 @@ const Home = () => {
         <Sale />
         <Thrifts />
         <Jeans />
-        <ImageCarousel images={images} />
+        <ImageCarousel />
         <New />
 
         <Collection />
