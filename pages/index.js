@@ -13,13 +13,12 @@ import Jeans from "@/components/Parts/Jeans";
 
 
 
-import Carousel from "@/components/Parts/Carousel";
-
+import ImageCarousel from '@/components/Parts/ImageCarousel';
 
 
 const Home = () => {
  
-  const carouselItems = [
+  const images = [
   "/GYAMFUA.svg",
 
   "/products/force1b.JPG",
@@ -77,7 +76,7 @@ const Home = () => {
         <Sale />
         <Thrifts />
         <Jeans />
-       <Carousel items={carouselItems} />
+        <ImageCarousel images={images} />
         <New />
 
         <Collection />
