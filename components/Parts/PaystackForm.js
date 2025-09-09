@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
 // components/PaystackForm.js
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
