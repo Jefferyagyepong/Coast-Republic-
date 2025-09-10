@@ -50,7 +50,7 @@ export default function ImageCarousel() {
           <img
             key={index}
             src={src}
-            className={`$ "image" ${index === currentIndex ? styles.active : ''}`}
+            className={`$ "image" ${index === currentIndex ? active : ''}`}
             alt={`Slide ${index + 1}`}
           />
         ))}
