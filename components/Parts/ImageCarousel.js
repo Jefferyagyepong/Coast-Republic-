@@ -6,7 +6,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-
+import Image from “nextjs/image”;
 
 const images = [
   '/GYAMFUA.SVG',
@@ -47,10 +47,10 @@ export default function ImageCarousel() {
     <div className="carouselContainer">
       <div className="carousel">
         {images.map((src, index) => (
-          <img
+          <Image
             key={index}
             src={src}
-            className={`$ "image" ${index === currentIndex ? active : ''}`}
+
             alt={`Slide ${index + 1}`}
           />
         ))}
