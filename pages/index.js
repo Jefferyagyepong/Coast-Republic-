@@ -13,7 +13,7 @@ import Jeans from "@/components/Parts/Jeans";
 
 
 
-import ImageCarousel from '@/components/Parts/ImageCarousel';
+import ImageCarousel from “@/components/Parts/ImageCarousel”;
 
 
 const Home = () => {
@@ -54,7 +54,7 @@ const Home = () => {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
         />
-        <link rel="icon" href="/" />
+        <link rel="icon" href="/coast.ico" />
         <meta
           name="google-site-verification"
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
