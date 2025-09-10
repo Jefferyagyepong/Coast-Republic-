@@ -6,7 +6,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import styles from './ImageCarousel.module.css'; // Or use styled-jsx below
+
 
 const images = [
   '/GYAMFUA.SVG',
@@ -44,19 +44,19 @@ export default function ImageCarousel() {
   }, []);
 
   return (
-    <div className={styles.carouselContainer}>
-      <div className={styles.carousel}>
+    <div className="carouselContainer">
+      <div className="carousel">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
-            className={`${styles.image} ${index === currentIndex ? styles.active : ''}`}
+            className={`$ "image" ${index === currentIndex ? styles.active : ''}`}
             alt={`Slide ${index + 1}`}
           />
         ))}
       </div>
-      <div className={styles.progressBar}>
-        <div ref={progressRef} className={styles.progress}></div>
+      <div className="progressBar">
+        <div ref={progressRef} className="progress"></div>
       </div>
     </div>
   );
