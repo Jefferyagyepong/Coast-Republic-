@@ -3,64 +3,54 @@
 /* eslint-disable react/react-in-jsx-scope */
 // app/components/OrderSummary.jsx
 
-'use client';
+// app/components/ImageCarousel.jsx
+'use client'; // Since this is a client-side component
 
-import { useEffect, useRef, useState } from 'react';
-import Image from “nextjs/image”;
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Carousel styles
+import Image from 'next/image';
 
+// Sample image data (replace with your image URLs or paths)
 const images = [
-  '/GYAMFUA.SVG',
-  '/gyamfua black OLIVE.svg',
-  '/thugga.jpg',
-  '/socks.svg',
-  '/wrangler.svg',
+  { src: 'https://via.placeholder.com/800x400?text=Image+1', alt: 'Image 1' },
+  { src: 'https://via.placeholder.com/800x400?text=Image+2', alt: 'Image 2' },
+  { src: 'https://via.placeholder.com/800x400?text=Image+3', alt: 'Image 3' },
 ];
 
-const INTERVAL = 5000;
-
-export default function ImageCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const progressRef = useRef(null);
-
-  useEffect(() => {
-    const startProgress = () => {
-      if (progressRef.current) {
-        progressRef.current.style.transition = 'none';
-        progressRef.current.style.width = '0%';
-        // Force reflow to restart transition
-        void progressRef.current.offsetWidth;
-        progressRef.current.style.transition = `width ${INTERVAL}ms linear`;
-        progressRef.current.style.width = '100%';
-      }
-    };
-
-    startProgress();
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-      startProgress();
-    }, INTERVAL);
-
-    return () => clearInterval(interval);
-  }, []);
-
+const ImageCarousel = () => {
   return (
-    <div className="carouselContainer">
-      <div className="carousel">
-        {images.map((src, index) => (
-          <Image
-            key={index}
-            src={src}
-
-            alt={`Slide ${index + 1}`}
-          />
+    <div className="w-full max-w-4xl mx-auto px-4 py-8">
+      <Carousel
+        showArrows={true} // Show navigation arrows
+        showThumbs={false} // Hide thumbnails
+        showStatus={false} // Hide status (e.g., "1 of 3")
+        infiniteLoop={true} // Loop through images
+        autoPlay={true} // Auto-play carousel
+        interval={3000} // Time between slides (in ms)
+        stopOnHover={true} // Pause on hover
+        swipeable={true} // Enable swipe on touch devices
+        dynamicHeight={false} // Fixed height for consistency
+        className="relative"
+      >
+        {images.map((image, index) => (
+          <div key={index} className="relative w-full h-64 sm:h-80 md:h-96">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-cover rounded-lg"
+              priority={index === 0} // Prioritize first image for faster loading
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+            />
+          </div>
         ))}
-      </div>
-      <div className="progressBar">
-        <div ref={progressRef} className="progress"></div>
-      </div>
+      </Carousel>
     </div>
   );
-}
+};
+
+export default ImageCarousel;
 
 
 
