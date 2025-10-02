@@ -10,7 +10,7 @@ import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
 import Toast from "@/components/Head/Toast";
 import Jeans from "@/components/Parts/Jeans";
-import ImageCarousel from "@/components/Parts/ImageCarousel";
+
 
 
 
@@ -68,7 +68,7 @@ const Home = () => {
         <Sale />
         <Thrifts />
         <Jeans />
-        <ImageCarousel />
+       
         <New />
 
         <Collection />
