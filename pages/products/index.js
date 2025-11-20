@@ -179,7 +179,7 @@ const ProductList = ({ products }) => {
           border: 1px solid #ccc;
           border-radius: 4px;
         }
-    }
+    
     
           .main-content{
           width:100%;
