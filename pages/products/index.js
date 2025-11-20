@@ -184,7 +184,7 @@ const ProductList = ({ products }) => {
           width:100%;
 
           display: grid;
-         grid-template-columns: 2fr 1fr 1fr; /* First column is twice as wide */
+         grid-template-columns: 2fr 1fr; /* First column is twice as wide */
          gap: 20px;
 
           }
