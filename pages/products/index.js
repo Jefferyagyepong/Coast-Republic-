@@ -99,7 +99,7 @@ const ProductList = ({ products }) => {
           <Toast />
           <Header />
         </div>
-        <div>
+        <div className="main-content">
           <h4>Our Collection </h4>
 
           <div className="controls">
@@ -185,6 +185,10 @@ const ProductList = ({ products }) => {
           height: auto;
           border-radius: 4px;
         }
+          .main-content{
+          width:100%;
+          margin-top: 30px;
+          }
     
       `}</style>
     </>
