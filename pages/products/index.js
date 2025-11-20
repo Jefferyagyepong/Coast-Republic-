@@ -179,22 +179,24 @@ const ProductList = ({ products }) => {
           border: 1px solid #ccc;
           border-radius: 4px;
         }
-          .product-container{
-          
+          .product-container{ 
           width:100%;
+          backgorund: red;
+          margin: 0 auto;
+          }
 
+         .product-item{
           display: grid;
          grid-template-columns: 2fr 1fr; /* First column is twice as wide */
          gap: 20px;
-
-          }
+         }
     
     
           .main-content{
           width:100%;
           margin-top: 40px;
           padding: 20px 30px;
-          background: red;
+      
           }
     
       `}</style>
