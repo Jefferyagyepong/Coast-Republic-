@@ -131,30 +131,30 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-         <div>
-          <div className="product-container">
-            {filteredProducts.map(product => (
-              <div className="product-item" key={product.slug}>
-              
+          <div>
+            <div className="product-container">
+              {filteredProducts.map(product => (
+                <div className="product-item" key={product.slug}>
+
                   <Image
-                  src={product.image}
-                  height={150}
-                  width={210}
-                  alt=" product"
-                />
-              <div className="product-info">
-              <h2>{product.name}</h2>
-              <p>Price: GHS{product.price}</p>
-              <Link href={`/products/${product.slug}`}>
-                  <button className= "viewButton">View Details</button>
-                </Link>
+                    src={product.image}
+                    height={150}
+                    width={210}
+                    alt=" product"
+                  />
+                  <div className="product-info">
+                    <h2>{product.name}</h2>
+                    <p>Price: GHS{product.price}</p>
+                    <Link href={`/products/${product.slug}`}>
+                      <button className="viewButton">View Details</button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-           
-            ))}
+
+              ))}
+            </div>
           </div>
         </div>
-           </div>
         <BackTo />
         <Newsletter />
         <Footer />
@@ -179,6 +179,15 @@ const ProductList = ({ products }) => {
           border: 1px solid #ccc;
           border-radius: 4px;
         }
+          .product-container{
+          
+          width:100%;
+
+          display: grid;
+      grid-template-columns: 2fr 1fr 1fr; /* First column is twice as wide */
+  gap: 20px;
+
+          }
     
     
           .main-content{
