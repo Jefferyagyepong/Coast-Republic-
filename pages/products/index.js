@@ -160,6 +160,33 @@ const ProductList = ({ products }) => {
         <Footer />
       </main>
 
+      <style jsx global>{`
+    
+        .controls {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+        .controls label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+        }
+        .controls select {
+          padding: 8px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+    }
+        .product-card img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 4px;
+        }
+    
+      `}</style>
     </>
   );
 };
