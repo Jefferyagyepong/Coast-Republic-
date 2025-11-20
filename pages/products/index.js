@@ -150,16 +150,16 @@ const ProductList = ({ products }) => {
                 </Link>
                 </div>
               </div>
-              </div>
+           
             ))}
           </div>
         </div>
+           </div>
         <BackTo />
         <Newsletter />
         <Footer />
       </main>
 
- 
     </>
   );
 };
