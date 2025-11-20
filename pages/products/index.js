@@ -185,6 +185,7 @@ const ProductList = ({ products }) => {
           width:100%;
           margin-top: 40px;
           padding: 20px 30px;
+          background: red;
           }
     
       `}</style>
