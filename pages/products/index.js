@@ -180,14 +180,11 @@ const ProductList = ({ products }) => {
           border-radius: 4px;
         }
     }
-        .product-card img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 4px;
-        }
+    
           .main-content{
           width:100%;
-          margin-top: 30px;
+          margin-top: 40px;
+          padding: 20px 30px;
           }
     
       `}</style>
