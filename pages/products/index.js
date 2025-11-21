@@ -165,7 +165,7 @@ const ProductList = ({ products }) => {
         .controls {
           display: flex;
           gap: 20px;
-          margin-top: 30px;
+          margin-top: 50px;
           margin-bottom: 20px;
         }
         .controls label {
@@ -183,21 +183,21 @@ const ProductList = ({ products }) => {
           .product-container{ 
           width:100%;
           backgorund: red;
-          margin-top: 30px;
+          margin-top: 50px;
           margin: 0 auto;
           }
 
          .product-item{
           display: grid;
          grid-template-columns: 2fr 1fr; /* First column is twice as wide */
-         gap: 20px;
+         gap: 10px;
         margin-bottom:20px;
          }
     
     
           .main-content{
           width:100%;
-          margin-top: 30px;
+          margin-top: 50px;
           padding: 10px 20px;
       
           }
