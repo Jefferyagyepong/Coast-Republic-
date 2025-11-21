@@ -201,6 +201,11 @@ const ProductList = ({ products }) => {
           padding: 10px 20px;
       
           }
+          .viewButton{
+          margin-top:30px;
+          margin-bottom:20px;
+          padding: 8px 15px:
+          }
     
       `}</style>
     </>
