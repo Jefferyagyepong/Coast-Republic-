@@ -183,6 +183,7 @@ const ProductList = ({ products }) => {
           .product-container{ 
           width:100%;
           backgorund: red;
+          margin-top: 30px;
           margin: 0 auto;
           }
 
