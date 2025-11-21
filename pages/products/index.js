@@ -136,13 +136,13 @@ const ProductList = ({ products }) => {
               {filteredProducts.map(product => (
                 <div className="product-item" key={product.slug}>
 
-                  <Image
+                  <div className="product-info">
+                        <Image
                     src={product.image}
                     height={150}
                     width={210}
                     alt=" product"
                   />
-                  <div className="product-info">
                     <span>{product.name}</span>
                     <b><p>Price: GHS{product.price}</p></b>
                     <Link href={`/products/${product.slug}`}>
