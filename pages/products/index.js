@@ -143,9 +143,9 @@ const ProductList = ({ products }) => {
                     alt=" product"
                   />
                   <div className="product-info">
-                    <h2>{product.name}</h2>
-                    <p>Price: GHS{product.price}</p>
-                    <Link href={`/products/${product.slug}`}>
+                    <span>{product.name}</span>
+                    <b><p>Price: GHS{product.price}</p>
+                    <Link href={`/products/${product.slug}`}><b>
                       <button className="viewButton">View Details</button>
                     </Link>
                   </div>
