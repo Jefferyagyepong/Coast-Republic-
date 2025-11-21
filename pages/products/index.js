@@ -191,13 +191,14 @@ const ProductList = ({ products }) => {
           display: grid;
          grid-template-columns: 2fr 1fr; /* First column is twice as wide */
          gap: 20px;
+        margin-bottom:20px;
          }
     
     
           .main-content{
           width:100%;
-          margin-top: 40px;
-          padding: 20px 30px;
+          margin-top: 30px;
+          padding: 10px 20px;
       
           }
     
