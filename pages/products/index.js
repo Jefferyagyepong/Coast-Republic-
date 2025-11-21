@@ -145,7 +145,7 @@ const ProductList = ({ products }) => {
                   <div className="product-info">
                     <span>{product.name}</span>
                     <b><p>Price: GHS{product.price}</p>
-                    <Link href={`/products/${product.slug}`}><b>
+                    <Link href={`/products/${product.slug}`}></b>
                       <button className="viewButton">View Details</button>
                     </Link>
                   </div>
