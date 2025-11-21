@@ -165,6 +165,7 @@ const ProductList = ({ products }) => {
         .controls {
           display: flex;
           gap: 20px;
+          margin-top: 30px;
           margin-bottom: 20px;
         }
         .controls label {
