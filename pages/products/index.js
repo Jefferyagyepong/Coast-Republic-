@@ -147,12 +147,12 @@ const ProductList = ({ products }) => {
                       <button className="viewButton">View Details</button>
                     </Link>
                   </div>
-              
+               </div>
 
               ))}
             </div>
           </div>
-        </div>
+       
         <BackTo />
         <Newsletter />
         <Footer />
