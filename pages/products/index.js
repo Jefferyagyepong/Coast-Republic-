@@ -131,7 +131,7 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-        
+        <div>
             
               {filteredProducts.map(product => (
                 <ul className="product-item" key={product.slug}>
@@ -153,6 +153,7 @@ const ProductList = ({ products }) => {
 
               ))}
             </ul>
+            </div>
         
        
         <BackTo />
