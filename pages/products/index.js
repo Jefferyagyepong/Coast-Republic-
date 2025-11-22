@@ -150,9 +150,9 @@ const ProductList = ({ products }) => {
                     </Link>
                   </li>
               
-
+   </ul>
               ))}
-            </ul>
+         
             </div>
         
        
