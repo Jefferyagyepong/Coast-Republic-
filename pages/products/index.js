@@ -135,8 +135,6 @@ const ProductList = ({ products }) => {
             <div className="product-container">
               {filteredProducts.map(product => (
                 <div className="product-item" key={product.slug}>
-
-                  <div className="product-info">
                         <Image
                     src={product.image}
                     height={150}
@@ -149,7 +147,7 @@ const ProductList = ({ products }) => {
                       <button className="viewButton">View Details</button>
                     </Link>
                   </div>
-                </div>
+              
 
               ))}
             </div>
