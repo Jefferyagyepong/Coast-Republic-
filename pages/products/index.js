@@ -131,11 +131,13 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div>
+        
             
               {filteredProducts.map(product => (
-                <div className="product-item" key={product.slug}>
-                        <Image
+                <ul className="product-item" key={product.slug}>
+                      
+                        <li>  
+                          <Image
                     src={product.image}
                     height={150}
                     width={210}
@@ -146,12 +148,12 @@ const ProductList = ({ products }) => {
                     <Link href={`/products/${product.slug}`}>
                       <button className="viewButton">View Details</button>
                     </Link>
-                  </div>
+                  </li>
               
 
               ))}
-            </div>
-          </div>
+            </ul>
+        
        
         <BackTo />
         <Newsletter />
