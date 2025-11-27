@@ -155,7 +155,7 @@ const ProductList = ({ products }) => {
          
             </div>
         
-       
+                 </div>
         <BackTo />
         <Newsletter />
         <Footer />
