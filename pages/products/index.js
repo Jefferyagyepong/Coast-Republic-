@@ -189,10 +189,8 @@ const ProductList = ({ products }) => {
           }
 
          .product-item{
-          display: grid;
-         grid-template-columns: 2fr 1fr; /* First column is twice as wide */
-         gap: 10px;
-        margin-bottom:20px;
+        list-decoration:none;
+        
          }
     
     
