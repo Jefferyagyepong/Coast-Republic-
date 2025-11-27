@@ -190,15 +190,16 @@ const ProductList = ({ products }) => {
 
          .product-item{
          liststyle:none;
-            display: grid;
+       
+        margin-bottom:20px;
+           display: grid;
          grid-template-columns: 2fr 1fr; /* First column is twice as wide */
          gap: 10px;
         margin-bottom:20px;
          li{
-         display:flex;
-         flex-direction:column;
-         align-items:center;
-         justify-content: space-between;
+           display: grid;
+         grid-template-columns: 2fr 1fr; /* First column is twice as wide */
+         gap: 10px;
          
          }
 
