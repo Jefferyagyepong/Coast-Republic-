@@ -155,7 +155,7 @@ const ProductList = ({ products }) => {
          
             </div>
         
-                 </div>
+       </div>
         <BackTo />
         <Newsletter />
         <Footer />
@@ -189,12 +189,20 @@ const ProductList = ({ products }) => {
           }
 
          .product-item{
-        list-decoration:none;
-        display: flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content: space-between;
-        
+         liststyle:none;
+            display: grid;
+         grid-template-columns: 2fr 1fr; /* First column is twice as wide */
+         gap: 10px;
+        margin-bottom:20px;
+         li{
+         display:flex;
+         flex-direction:column;
+         align-items:center;
+         justify-content: space-between;
+         
+         }
+
+       
          }
     
     
