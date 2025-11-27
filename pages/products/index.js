@@ -134,9 +134,9 @@ const ProductList = ({ products }) => {
         <div>
             
               {filteredProducts.map(product => (
-                <ul className="product-item" key={product.slug}>
+                <div  key={product.slug}>
                       
-                        <li>  
+                          
                           <Image
                     src={product.image}
                     height={150}
@@ -148,9 +148,9 @@ const ProductList = ({ products }) => {
                     <Link href={`/products/${product.slug}`}>
                       <button className="viewButton">View Details</button>
                     </Link>
-                  </li>
+                
               
-   </ul>
+   </div>
               ))}
          
             </div>
@@ -188,23 +188,7 @@ const ProductList = ({ products }) => {
           margin: 0 auto;
           }
 
-         .product-item{
-         liststyle:none;
-       
-        margin-bottom:20px;
-           display: grid;
-         grid-template-columns: 2fr 1fr; /* First column is twice as wide */
-         gap: 10px;
-        margin-bottom:20px;
-         li{
-           display: grid;
-         grid-template-columns: 2fr 1fr; /* First column is twice as wide */
-         gap: 10px;
-         
-         }
-
-       
-         }
+      
     
     
           .main-content{
