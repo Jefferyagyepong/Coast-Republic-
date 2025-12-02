@@ -12,7 +12,7 @@ const faqData = [
   },
   {
     question: "How long does shipping take?",
-    answer: "Shipping usually takes 5-7 business days, depending on your location.",
+    answer: "Shipping usually takes 3-4 business days, depending on your location.",
   },
   {
     question: "Can I return a product?",
