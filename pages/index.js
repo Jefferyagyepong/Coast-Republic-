@@ -8,24 +8,17 @@ import Footer from "@/components/Footer/Footer";
 import Sale from "@/components/Parts/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
-import Toast from "@/components/Head/Toast";
+
 import Jeans from "@/components/Parts/Jeans";
 
 
 
-import Carousel from "@/components/Parts/Carousel";
 
-const images = [
-  "/GYAMFUA.svg",
 
-  "/products/force1b.JPG",
-  "/airjordan.svg",
-  "/gyamfua black OLIVE.svg",
-  "/wrangler.svg",
-];
 
 const Home = () => {
-  return (
+ 
+   return (
     <>
       <Head>
         <title>Coast Republic | Clothing & Shoes</title>
@@ -37,7 +30,7 @@ const Home = () => {
           name="twitter:description"
           content=" Discover unique designs crafted for you..... "
         />
-        <meta name="twitter:image" content="/backg.png" />
+        <meta name="twitter:image" content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
         <meta property="og:title" content="Coast Republic inc" />
         <meta
           property="og:description"
@@ -48,7 +41,7 @@ const Home = () => {
           property="og:image"
           content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/coast.ico" />
 
         <meta name="description" content="Coast Republic  Store" />
         <meta
@@ -61,21 +54,21 @@ const Home = () => {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
         />
-        <link rel="icon" href="/" />
+        <link rel="icon" href="/coast.ico" />
         <meta
           name="google-site-verification"
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
       <main>
-        <div className="sticky">
-          <Toast />
+   
+          
           <Header />
-        </div>
+        
         <Sale />
         <Thrifts />
         <Jeans />
-        <Carousel images={images} />
+       
         <New />
 
         <Collection />

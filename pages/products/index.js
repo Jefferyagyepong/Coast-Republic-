@@ -75,7 +75,7 @@ const ProductList = ({ products }) => {
           property="og:image"
           content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/coast.ico" />
 
         <meta name="description" content="Coast Republic  Store" />
         <meta
@@ -99,7 +99,7 @@ const ProductList = ({ products }) => {
           <Toast />
           <Header />
         </div>
-        <div className="card-container">
+        <div className="main-content">
           <h4>Our Collection </h4>
 
           <div className="controls">
@@ -131,25 +131,31 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div>
-            {filteredProducts.map(product => (
-              <div key={product.slug}>
-                <Image
-                  src={product.image}
-                  height={150}
-                  width={210}
-                  alt=" product"
-                />
-
-                <h2>{product.name}</h2>
-                <p>Price: GHS{product.price}</p>
-                 <Link href={`/products/${product.id}`}>
-                  <button className= "viewButton">View Details</button>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
+        <div>
+            
+              {filteredProducts.map(product => (
+                <div  key={product.slug}>
+                      
+                          
+                          <Image
+                    src={product.image}
+                    height={150}
+                    width={210}
+                    alt=" product"
+                  />
+                    <span>{product.name}</span>
+                    <b><p>Price: GHS{product.price}</p></b>
+                    <Link href={`/products/${product.slug}`}>
+                      <button className="viewButton">View Details</button>
+                    </Link>
+                
+              
+   </div>
+              ))}
+         
+            </div>
+        
+       </div>
         <BackTo />
         <Newsletter />
         <Footer />
@@ -160,6 +166,7 @@ const ProductList = ({ products }) => {
         .controls {
           display: flex;
           gap: 20px;
+          margin-top: 50px;
           margin-bottom: 20px;
         }
         .controls label {
@@ -174,12 +181,27 @@ const ProductList = ({ products }) => {
           border: 1px solid #ccc;
           border-radius: 4px;
         }
-    }
-        .product-card img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 4px;
-        }
+          .product-container{ 
+          width:100%;
+          backgorund: red;
+          margin-top: 50px;
+          margin: 0 auto;
+          }
+
+      
+    
+    
+          .main-content{
+          width:100%;
+          margin-top: 50px;
+          padding: 10px 20px;
+      
+          }
+          .viewButton{
+          margin-top:30px;
+          margin-bottom:20px;
+          padding: 8px 15px:
+          }
     
       `}</style>
     </>
