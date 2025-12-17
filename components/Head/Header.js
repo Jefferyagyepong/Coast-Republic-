@@ -12,14 +12,18 @@ function Header() {
       <header>
       <Toast />
 
-        <Menu />
-        <div>
+   
+        <div className=”flex-row”>
+               <Menu />
+          
           <Link href={"./"}>
             <h4 className="logo">Coast Republic</h4>
           </Link>
+          
+              <Navbar />
         </div>
 
-     <Navbar />
+ 
 
       </header>
     </>
