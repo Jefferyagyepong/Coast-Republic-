@@ -14,9 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^15.5.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "eslint-config-next": "^16.0.10",
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "sass": "^1.92.1"
   },
   "devDependencies": {
