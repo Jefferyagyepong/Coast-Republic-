@@ -133,10 +133,12 @@ animation-delay:10s ease;
 
 
 
-.flex-row{
-  display:inline;
-float: right;
-padding:0;
+.header-flex-row{
+  dsplay:flex;
+flex-direction:row;
+align-items center;
+margin-top: 30px;
+justify-content:space-between;
   
   
 }
