@@ -13,7 +13,7 @@ function Header() {
       <Toast />
 
    
-        <div>
+        <div className=”header-flex-row”>
                <Menu />
           
           <Link href={"./"}>
