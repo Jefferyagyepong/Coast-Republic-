@@ -2,7 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 
 
-import  "./sass/main.scss";
+import  "../sass/main.scss";
 
 import { CartProvider } from "../context/CartContext";
 import ProductList from "@/components/Product";
