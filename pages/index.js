@@ -8,7 +8,7 @@ import Footer from "@/components/Footer/Footer";
 import Sale from "@/components/Parts/Sale";
 import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
-import Toast from "@/components/Head/Toast";
+
 import Jeans from "@/components/Parts/Jeans";
 
 
@@ -61,10 +61,10 @@ const Home = () => {
         />
       </Head>
       <main>
-        <div className="sticky">
-          <Toast />
+   
+          
           <Header />
-        </div>
+        
         <Sale />
         <Thrifts />
         <Jeans />
