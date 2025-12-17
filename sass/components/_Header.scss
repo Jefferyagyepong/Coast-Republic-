@@ -94,10 +94,8 @@
 
 
 .text-change {
-  font-size: 14px;
+
 text-align:center;
-  position: relative;
-  min-height: 60px;
   width:100%;
   background-color: #dcd3cc;
   padding: 10px 13px;
@@ -147,31 +145,11 @@ header {
 position:sticky;
   width:100%;
   background-color: #173856;
-  opacity: 1;
-display: flex;
-flex-direction: column;
-  justify-content: space-between; /* Spreads items across the row */
-  align-items: center; /* Vertically centers items */
-  padding: 10px 20px; /* Optional padding */
-  z-index:1000;
+
 }
 header > * {
   margin: 0 10px; /* Optional spacing between elements */
 }
-
-.sticky {
- 
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-flex-direction:column;
-  align-items: center;
-  width: 100%;
-
-}
-
 
 
 .header-link {
