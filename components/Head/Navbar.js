@@ -9,15 +9,13 @@ export default function Navbar() {
   const { getCartCount } = useCart();
 
   return (
-    <nav>
-      <div>
-     
-        <Link  className="whiteCart" href={"#"}>
+    
+         
+        <Link  className="cart" href={"#"}>
              Cart ({getCartCount()})
         </Link>
        
       
-      </div>
-    </nav>
+      
   );
 }
