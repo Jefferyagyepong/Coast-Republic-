@@ -3,10 +3,12 @@
 import Link from "next/link.js";
 import Menu from "./Menu";
 import Navbar from "./Navbar";
+import Toast from “./Toast”;
 function Header() {
   return (
     <>
       <header>
+        <Toast />
 
         <Menu />
         <div>
