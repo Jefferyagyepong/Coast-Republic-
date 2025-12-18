@@ -5,7 +5,7 @@ import Thrifts from "@/components/Parts/Thrifts";
 import New from "@/components/Parts/New";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
-import Sale from "@/components/Parts/Sale";
+
 import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
 
@@ -65,7 +65,7 @@ const Home = () => {
           
           <Header />
     
-        <Sale />
+       
         <Thrifts />
         <Jeans />
        
