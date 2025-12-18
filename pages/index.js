@@ -62,7 +62,7 @@ const Home = () => {
       </Head>
        <Header />
       <main>
-   
+      <Thrifts />
         <Thrifts />
         <Jeans />
        
