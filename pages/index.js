@@ -10,7 +10,7 @@ import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
 
 import Jeans from "@/components/Parts/Jeans";
-
+import Sale from “@/components/Parts/Sale”
 
 
 
@@ -62,7 +62,7 @@ const Home = () => {
       </Head>
        <Header />
       <main>
-      <Thrifts />
+      <Sale />
         <Thrifts />
         <Jeans />
        
