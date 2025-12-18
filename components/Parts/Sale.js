@@ -5,7 +5,7 @@ import Link from "next/link";
 function Show() {
   return (
     <>
-    <div>
+    <div className=”sale”>
 
       <b>
         <h1>NEW ARRIVALS</h1>
