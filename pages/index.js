@@ -60,12 +60,9 @@ const Home = () => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
+       <Header />
       <main>
    
-          
-          <Header />
-    
-       
         <Thrifts />
         <Jeans />
        
