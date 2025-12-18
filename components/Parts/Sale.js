@@ -4,7 +4,8 @@ import Link from "next/link";
 
 function Show() {
   return (
-    <div className="sale-box">
+    <>
+    <div>
 
       <b>
         <h1>NEW ARRIVALS</h1>
@@ -18,10 +19,11 @@ function Show() {
 
       <Link href={"/terms"}>
         T&Cs apply
-        <br />
+      
       </Link>
-      <br />
+  
     </div>
+    </>
   );
 }
 export default Show;
