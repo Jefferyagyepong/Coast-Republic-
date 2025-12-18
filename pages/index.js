@@ -64,7 +64,7 @@ const Home = () => {
    
           
           <Header />
-        
+        <br> <br>
         <Sale />
         <Thrifts />
         <Jeans />
