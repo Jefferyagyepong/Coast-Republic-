@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Shop() {
   return (
-    <div className="black-bg">
+    <div>
       <Link href={"/products"}>
         shop
       </Link>
