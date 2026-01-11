@@ -5,11 +5,9 @@ import Link from "next/link";
 function Show() {
   return (
     <>
-    <div className=”sale”>
-
-      <b>
+    <div>
         <h1>NEW ARRIVALS</h1>
-      </b>{" "}
+    
 
       <p>
    GET ALL DISCOUNTS AND DELIVERY INFORMATION AT CHECKOUT
