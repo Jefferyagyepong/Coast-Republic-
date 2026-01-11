@@ -4,7 +4,7 @@
 "use client";
 
 import Header from "@/components/Head/Header";
-import Toast from "@/components/Head/Toast";
+
 import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Parts/ItemsLike";
 import Head from "next/head";
@@ -111,10 +111,10 @@ const ProductPage = ({ product }) => {
         />
       </Head>
       <main>
-        <div className="sticky">
-          <Toast />
+    
+  
           <Header />
-        </div>
+
 
         <div className="slug-container">
           <div class="slider">
