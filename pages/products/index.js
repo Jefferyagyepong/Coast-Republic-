@@ -95,10 +95,9 @@ const ProductList = ({ products }) => {
         />
       </Head>
       <main>
-        <div className="sticky">
-          <Toast />
+    
           <Header />
-        </div>
+        
         <div className="main-content">
           <h4>Our Collection </h4>
 
