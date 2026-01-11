@@ -2,7 +2,7 @@
 import Link from "next/link";
 function New() {
   return (
-    <div className="ibrid-box">
+    <div>
 
       <h3>WHATS NEW TODAY </h3>
       <b>
