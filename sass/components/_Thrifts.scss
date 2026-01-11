@@ -30,16 +30,7 @@ padding:10px 14px;
 
 
 
-.contact-container{
-width:100%;
-flex-direction:column;
-gap: 1rem;
-display: flex;
-text-align: start;
-padding-left:10px;
-padding-right:10px;
-padding-top: 40px;
-}
+
 
 
 .ibrid-flex {
@@ -47,7 +38,6 @@ padding-top: 40px;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  column-gap: 20px;
   justify-content: space-between;
   }
 
@@ -67,8 +57,7 @@ padding-top: 40px;
 width:100%;
 padding-left:10px;
 padding-right:10px;
-padding-top:40px;
-padding-bottom:40px;
+
 }
 .faqList {
 margin:0 auto;
