@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function All() {
   return (
-    <div className="footer-align-left">
+    <div>
       <Image src={"/wrangler.svg"} alt="img" width={1200} height={400} />
       <h3>Jeans</h3>
 
