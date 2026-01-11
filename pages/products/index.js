@@ -131,11 +131,11 @@ const ProductList = ({ products }) => {
           </div>
         <div>
             
-              {filteredProducts.map(product => (
+                {filteredProducts.map(product => (
                 <div  key={product.slug}>
                       
                           
-                          <Image
+                   <Image
                     src={product.image}
                     height={150}
                     width={210}
@@ -148,12 +148,12 @@ const ProductList = ({ products }) => {
                     </Link>
                 
               
-   </div>
+              </div>
               ))}
          
             </div>
         
-       </div>
+            </div>
         <BackTo />
         <Newsletter />
         <Footer />
@@ -164,8 +164,8 @@ const ProductList = ({ products }) => {
         .controls {
           display: flex;
           gap: 20px;
-          margin-top: 50px;
-          margin-bottom: 20px;
+    
+  
         }
         .controls label {
           display: flex;
@@ -182,7 +182,7 @@ const ProductList = ({ products }) => {
           .product-container{ 
           width:100%;
           backgorund: red;
-          margin-top: 50px;
+    
           margin: 0 auto;
           }
 
@@ -191,13 +191,12 @@ const ProductList = ({ products }) => {
     
           .main-content{
           width:100%;
-          margin-top: 50px;
+     
           padding: 10px 20px;
       
           }
           .viewButton{
-          margin-top:30px;
-          margin-bottom:20px;
+    
           padding: 8px 15px:
           }
     
