@@ -4,9 +4,9 @@
 
 import { useCart } from "@/context/CartContext";
 
-export default function Productpage({product}) {
+export default function Productpage({ product }) {
   const { addToCart } = useCart();
- 
+
   return (
     <div className="border p-4 rounded">
       <h2 className="text-lg font-bold">x</h2>

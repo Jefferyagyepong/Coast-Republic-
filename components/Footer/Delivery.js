@@ -21,7 +21,7 @@ const Delivery = () => {
         <div>
           <h2>Select Delivery Option</h2>
           <select
-          
+
             value={deliveryOption}
             onChange={(e) => setDeliveryOption(e.target.value)}
           >
