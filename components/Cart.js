@@ -31,19 +31,19 @@ export default function Cart() {
               </div>
               <div>
                 <button
-          
+
                   onClick={() => updateQuantity(item.id, item.quantity - 1)}
                 >
                   -
                 </button>
                 <button
-             
+
                   onClick={() => updateQuantity(item.id, item.quantity + 1)}
                 >
                   +
                 </button>
                 <button
-                
+
                   onClick={() => removeFromCart(item.id)}
                 >
                   Remove
