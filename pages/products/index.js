@@ -93,9 +93,11 @@ const ProductList = ({ products }) => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-      <main>
+
 
         <Header />
+        <div  className="main-content">
+
           <div className="controls">
             <label>
               Filter:
@@ -157,7 +159,8 @@ const ProductList = ({ products }) => {
         <BackTo />
         <Newsletter />
         <Footer />
-      </main>
+          
+        </div>
 
       <style jsx global>{`
     
