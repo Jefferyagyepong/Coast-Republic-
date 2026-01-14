@@ -149,12 +149,18 @@ const ProductList = ({ products }) => {
                   alt={product.name}
                 />
               </div>
+              <div className="p-5">
+                <h3>{product.name}</h3>
+              </div>
+              <div className="price-container">
+                <span className="price">Price: GHS{product.price.toFixed(2)}</span>
+                <Link href={`/products/${product.slug}`}>
+                  <button className="button">View Details</button>
+                </Link>
+              </div>
 
-              <span>{product.name}</span>
-              <b><p>Price: GHS{product.price}</p></b>
-              <Link href={`/products/${product.slug}`}>
-                <button className="viewButton">View Details</button>
-              </Link>
+
+
 
 
             </div>
