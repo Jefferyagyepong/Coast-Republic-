@@ -7,6 +7,7 @@
   width: auto;
   height: auto;
   border-radius: 2px;
+padding:12px;
 }
 
 footer .container .footer-section ul {
@@ -45,19 +46,20 @@ padding-top:90px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color:#000;
 }
 
 .brand-info p {
   font-size: 14px;
   line-height: 1.6;
-  color: #c8beb2;
+  color:#000;
 }
 
 .footer-section h3 {
   font-size: 18px;
 
   text-transform: uppercase;
-  color: #c8beb2;
+  color:#000;
 }
 
 .footer-section ul {
@@ -84,6 +86,7 @@ padding-top:90px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+padding:12px;
 
 }
 
