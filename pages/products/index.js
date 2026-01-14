@@ -151,11 +151,12 @@ const ProductList = ({ products }) => {
               </div>
 
               <div className="p-5">
-                <h3>{product.name}</h3>
+                  <span className="price"> GHS{product.price.toFixed(2)}</span>
+              
               </div>
               
               <div className="price-container">
-                <span className="price">Price: GHS{product.price.toFixed(2)}</span>
+                <h3>{product.name}</h3>
                 <Link href={`/products/${product.slug}`}>
                   <button className="button">View Details</button>
                 </Link>
@@ -165,16 +166,11 @@ const ProductList = ({ products }) => {
 
 
             </div>
-<<<<<<< HEAD
-        
-          
-=======
           ))}
 
         </div>
 
 
->>>>>>> a63bc71dfbb09d38ca4825990d0d534557d5124d
         <BackTo />
         <Newsletter />
         <Footer />
