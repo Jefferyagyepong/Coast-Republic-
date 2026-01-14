@@ -37,7 +37,7 @@ width: 100%;
 main {
   width: 100%;
   max-width: 1280px;        /* or 1440px, 90rem, etc. – very common */
-  margin-inline: auto;      /* modern & readable centering */
+    /* modern & readable centering */
    /* or var(--spacing-6), 24px, etc. */
 }
 
