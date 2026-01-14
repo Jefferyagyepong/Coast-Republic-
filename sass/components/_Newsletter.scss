@@ -72,10 +72,8 @@ padding:12px;
   color: #4f46e5;
 }
 .price-container {
-  display: flex;
-flex-direction:column;
-  align-items: center;
-  justify-content: space-between;
+display: block;
+margin: 10px;
  
 }
 .button {
