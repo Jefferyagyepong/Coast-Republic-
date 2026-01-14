@@ -25,10 +25,10 @@ export default function NewsletterForm() {
 
   return (
     <div className="newsletter-container">
-      <div>
+      
         <h3>Subscribe to our newsletter for exclusive offers and updates</h3>
-      </div>
-      <br />
+    
+      
       <p>
         Stay in the loop with the latest style news and get an exclusive 10% off
         when you subscribe to our emails. Exclusions apply. Learn more about our
@@ -43,7 +43,7 @@ export default function NewsletterForm() {
         </Link>{" "}
         apply.
       </p>
-      <br />
+    
       <div className="formContainer">
         <form onSubmit={handleSubmit} className="form">
           <div className="form-group">
