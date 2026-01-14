@@ -95,80 +95,78 @@ const ProductList = ({ products }) => {
       </Head>
 
 
-        <Header />
-        <div  className="main-content">
-          <div>
-        <h2>
-        Featured Products
-        </h2>
+      <Header />
+      <div className="main-content">
+        <div>
+          <h2>
+            Featured Products
+          </h2>
         </div>
 
-          <div className="controls">
-            <label>
-              Filter:
-              <select
-                onChange={e => setFilter(e.target.value)}
-                value={filter}
-                className="background-bg"
-              >
-                {categories.map(category => (
-                  <option key={category} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              Sort:
-              <select
-                onChange={e => setSort(e.target.value)}
-                value={sort}
-                className="background-bg"
-              >
-                <option value="name-asc">Name (A-Z)</option>
-                <option value="name-desc">Name (Z-A)</option>
-                <option value="price-asc">Price (Low to High)</option>
-                <option value="price-desc">Price (High to Low)</option>
-              </select>
-            </label>
-          </div>
-        
-<div className="product-container">
-    {filteredProducts.map(product => (
+        <div className="controls">
+          <label>
+            Filter:
+            <select
+              onChange={e => setFilter(e.target.value)}
+              value={filter}
+              className="background-bg"
+            >
+              {categories.map(category => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Sort:
+            <select
+              onChange={e => setSort(e.target.value)}
+              value={sort}
+              className="background-bg"
+            >
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+            </select>
+          </label>
+        </div>
+
+        <div className="product-container">
+          {filteredProducts.map(product => (
 
 
 
-              <div key={product.slug}>
+            <div className="card" key={product.slug}>
 
-
+              <div className="image-container">
                 <Image
                   src={product.image}
                   height={150}
                   width={210}
                   alt=" product"
                 />
-                <span>{product.name}</span>
-                <b><p>Price: GHS{product.price}</p></b>
-                <Link href={`/products/${product.slug}`}>
-                  <button className="viewButton">View Details</button>
-                </Link>
-
-
               </div>
-            ))}
 
-</div>
+              <span>{product.name}</span>
+              <b><p>Price: GHS{product.price}</p></b>
+              <Link href={`/products/${product.slug}`}>
+                <button className="viewButton">View Details</button>
+              </Link>
 
-          
 
-      
+            </div>
+          ))}
 
-  
+        </div>
+
+
         <BackTo />
         <Newsletter />
         <Footer />
-          
-        </div>
+
+      </div>
 
       <style jsx global>{`
     
