@@ -174,6 +174,7 @@ const ProductList = ({ products }) => {
     
         .controls {
           display: flex;
+          padding-top: 30px;
           gap: 20px;
     
   
