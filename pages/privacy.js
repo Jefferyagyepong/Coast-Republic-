@@ -57,10 +57,9 @@ const Privacy = () => {
         />
       </Head>
 
-        <div className="sticky">
-          <Toast />
+   
           <Header />
-        </div>
+
 
     </>
   );

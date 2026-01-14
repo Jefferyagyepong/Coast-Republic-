@@ -110,10 +110,13 @@ const ProductPage = ({ product }) => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-      <main>
+
     
   
           <Header />
+          <div className="main-content">
+
+     
 
 
         <div className="slug-container">
@@ -188,7 +191,7 @@ const ProductPage = ({ product }) => {
             Add to Cart
           </button>
         </div>
-      </main>
+     </div>
     </>
   );
 };

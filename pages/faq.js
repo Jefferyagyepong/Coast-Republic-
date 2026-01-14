@@ -41,7 +41,7 @@ const FAQ = () => {
         />
       </Head>
       <Header />
-      <div className="ibrid-box">
+      <div  className="main-content">
         <h1>Frequently Asked Questions</h1>
         <div className="faqList">
           {faqData.map((item, index) => (
@@ -54,8 +54,9 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-      </div>
+      
       <Footer />
+      </div>
     </>
   );
 };

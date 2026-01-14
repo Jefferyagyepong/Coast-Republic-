@@ -67,6 +67,8 @@ const Contact = () => {
 
 
       <Header />
+<div className="main-content">
+
 
 
       <div className="contact-container">
@@ -131,6 +133,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
+      </div>
 
     </>
 

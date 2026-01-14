@@ -17,17 +17,20 @@ const Delivery = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-gray-100 p-6">
-        <div className="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
-          <h1 className="text-2xl font-bold mb-4">Delivery Information</h1>
+      <div  className="main-content">
+
+    
+      <div>
+        <div>
+          <h1>Delivery Information</h1>
 
           {/* Delivery Options */}
-          <div className="mb-6">
-            <h2 className="text-lg font-semibold mb-2">
+          <div>
+            <h2>
               Select Delivery Option
             </h2>
             <select
-              className="w-full p-2 border rounded-md"
+          
               value={deliveryOption}
               onChange={e => setDeliveryOption(e.target.value)}
             >
@@ -40,31 +43,31 @@ const Delivery = () => {
           {/* Address Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block font-semibold">Address</label>
+              <label>Address</label>
               <input
                 type="text"
                 required
-                className="w-full p-2 border rounded-md"
+               
                 value={address}
                 onChange={e => setAddress(e.target.value)}
               />
             </div>
             <div>
-              <label className="block font-semibold">City</label>
+              <label>City</label>
               <input
                 type="text"
                 required
-                className="w-full p-2 border rounded-md"
+             
                 value={city}
                 onChange={e => setCity(e.target.value)}
               />
             </div>
             <div>
-              <label className="block font-semibold">ZIP Code</label>
+              <label>ZIP Code</label>
               <input
                 type="text"
                 required
-                className="w-full p-2 border rounded-md"
+              
                 value={zip}
                 onChange={e => setZip(e.target.value)}
               />
@@ -72,7 +75,7 @@ const Delivery = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 transition"
+      
             >
               Confirm Delivery
             </button>
@@ -80,6 +83,7 @@ const Delivery = () => {
         </div>
       </div>
       <Footer />
+        </div>
     </>
   );
 };

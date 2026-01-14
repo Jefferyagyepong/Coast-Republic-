@@ -63,6 +63,7 @@ const Home = () => {
       
 
       <Header />
+      <div  className="main-content">
         <Thrifts />
         <Jeans />
        
@@ -70,6 +71,7 @@ const Home = () => {
 
         <Collection />
         <Newsletter />
+        </div>
   
     </>
   );

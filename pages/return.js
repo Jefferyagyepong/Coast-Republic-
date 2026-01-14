@@ -15,6 +15,7 @@ const ReturnPolicy = () => {
         />
       </Head>
       <Header />
+           <div className="main-content">
       <div className="container">
         <h1>Return & Refund Policy</h1>
         <p>Last updated: January 30, 2025</p>
@@ -66,6 +67,7 @@ const ReturnPolicy = () => {
         </p>
       </div>
       <Footer />
+      </div>
     </>
   );
 };

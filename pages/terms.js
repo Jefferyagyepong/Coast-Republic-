@@ -6,7 +6,7 @@ const Terms = () => {
   return (
     <>
       <Header />
-      <div className="footer-align-left">
+      <div className="main-content">
         <div>
           <h1>Terms & Conditions</h1>
 
@@ -52,8 +52,9 @@ const Terms = () => {
 
           <p>Last updated: February 2025</p>
         </div>
-      </div>
+   
       <Footer />
+         </div>
     </>
   );
 };
