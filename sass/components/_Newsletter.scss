@@ -34,7 +34,6 @@ padding:12px;
   border-radius: 7px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   overflow: hidden;
-  border: 1px solid #222;
   transition: box-shadow 0.3s;
 }
 
@@ -75,6 +74,7 @@ padding:12px;
 }
 .price-container {
   display: flex;
+flex-direction:column;
   align-items: center;
   justify-content: space-between;
   padding:10px;
