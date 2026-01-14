@@ -61,7 +61,7 @@ const Home = () => {
         />
       </Head>
       
-      <main>
+
       <Header />
         <Thrifts />
         <Jeans />
@@ -70,8 +70,7 @@ const Home = () => {
 
         <Collection />
         <Newsletter />
-        <Footer />
-      </main>
+  
     </>
   );
 };

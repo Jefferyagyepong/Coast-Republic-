@@ -96,10 +96,6 @@ const ProductList = ({ products }) => {
       <main>
 
         <Header />
-
-        <div>
-          <h4>Featured Products </h4>
-
           <div className="controls">
             <label>
               Filter:
@@ -129,9 +125,13 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-          <div>
+        
+
 
             {filteredProducts.map(product => (
+
+
+
               <div key={product.slug}>
 
 
@@ -151,9 +151,9 @@ const ProductList = ({ products }) => {
               </div>
             ))}
 
-          </div>
+      
 
-        </div>
+  
         <BackTo />
         <Newsletter />
         <Footer />
@@ -188,13 +188,6 @@ const ProductList = ({ products }) => {
 
       
     
-    
-          .main-content{
-          width:100%;
-     
-          padding: 10px 20px;
-      
-          }
           .viewButton{
     
           padding: 8px 15px:

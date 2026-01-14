@@ -63,75 +63,75 @@ const Contact = () => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-      <main>
-        
-          
-          <Header />
-        
 
-        <div className="contact-container">
-          <div>
-            <h2>Contact Us</h2>
-            <p>
-              Have any questions? We are here to help! Fill out the form below, and we will get back to you.
-            </p>
 
-            {submitted ? (
-              <div>
-                ✅ Your message has been sent. We will get back to you soon!
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="form">
-                <div>
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    required
 
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </div>
-                <div className="inputGroup">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    required
+      <Header />
 
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-                <div className="inputGroup">
-                  <label>Message</label>
-                  <textarea
-                    required
 
-                    rows="4"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  />
-                </div>
+      <div className="contact-container">
+        <div>
+          <h2>Contact Us</h2>
+          <p>
+            Have any questions? We are here to help! Fill out the form below, and we will get back to you.
+          </p>
 
-                <button
-                  type="submit"
-
-                >
-                  Send Message
-                </button>
-              </form>
-            )}
-
+          {submitted ? (
             <div>
-              <h2>IN STORE WAREHOUSE </h2>
-              <p>📍 7 Asafo Dadiesoaba</p>
-              <p>📞 +233 200-0000</p>
-              <p>✉️ support@coastrepublic.com</p>
+              ✅ Your message has been sent. We will get back to you soon!
             </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="form">
+              <div>
+                <label>Name</label>
+                <input
+                  type="text"
+                  required
+
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="inputGroup">
+                <label>Email</label>
+                <input
+                  type="email"
+                  required
+
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="inputGroup">
+                <label>Message</label>
+                <textarea
+                  required
+
+                  rows="4"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </div>
+
+              <button
+                type="submit"
+
+              >
+                Send Message
+              </button>
+            </form>
+          )}
+
+          <div>
+            <h2>IN STORE WAREHOUSE </h2>
+            <p>📍 7 Asafo Dadiesoaba</p>
+            <p>📞 +233 200-0000</p>
+            <p>✉️ support@coastrepublic.com</p>
           </div>
         </div>
-        <Footer />
-      </main>
+      </div>
+      <Footer />
+
     </>
 
   );
