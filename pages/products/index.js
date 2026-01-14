@@ -94,11 +94,11 @@ const ProductList = ({ products }) => {
         />
       </Head>
       <main>
-    
-          <Header />
-        
-        <div className="main-content">
-          <h4>Our Collection </h4>
+
+        <Header />
+
+        <div>
+          <h4>Featured Products </h4>
 
           <div className="controls">
             <label>
@@ -129,31 +129,31 @@ const ProductList = ({ products }) => {
               </select>
             </label>
           </div>
-        <div>
-            
-                {filteredProducts.map(product => (
-                <div  key={product.slug}>
-                      
-                          
-                   <Image
-                    src={product.image}
-                    height={150}
-                    width={210}
-                    alt=" product"
-                  />
-                    <span>{product.name}</span>
-                    <b><p>Price: GHS{product.price}</p></b>
-                    <Link href={`/products/${product.slug}`}>
-                      <button className="viewButton">View Details</button>
-                    </Link>
-                
-              
+          <div>
+
+            {filteredProducts.map(product => (
+              <div key={product.slug}>
+
+
+                <Image
+                  src={product.image}
+                  height={150}
+                  width={210}
+                  alt=" product"
+                />
+                <span>{product.name}</span>
+                <b><p>Price: GHS{product.price}</p></b>
+                <Link href={`/products/${product.slug}`}>
+                  <button className="viewButton">View Details</button>
+                </Link>
+
+
               </div>
-              ))}
-         
-            </div>
-        
-            </div>
+            ))}
+
+          </div>
+
+        </div>
         <BackTo />
         <Newsletter />
         <Footer />
