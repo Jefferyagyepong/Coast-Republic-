@@ -98,10 +98,10 @@ const ProductList = ({ products }) => {
         <Header />
         <div  className="main-content">
           <div>
-      <h2>
+        <h2>
         Featured Products
-      </h2>
-      </div>
+        </h2>
+        </div>
 
           <div className="controls">
             <label>
@@ -133,9 +133,8 @@ const ProductList = ({ products }) => {
             </label>
           </div>
         
-
-
-            {filteredProducts.map(product => (
+<div className="product-container">
+    {filteredProducts.map(product => (
 
 
 
@@ -157,6 +156,10 @@ const ProductList = ({ products }) => {
 
               </div>
             ))}
+
+</div>
+
+          
 
       
 
