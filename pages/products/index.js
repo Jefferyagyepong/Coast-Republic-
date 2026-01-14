@@ -165,11 +165,16 @@ const ProductList = ({ products }) => {
 
 
             </div>
+<<<<<<< HEAD
+        
+          
+=======
           ))}
 
         </div>
 
 
+>>>>>>> a63bc71dfbb09d38ca4825990d0d534557d5124d
         <BackTo />
         <Newsletter />
         <Footer />
