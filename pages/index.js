@@ -71,6 +71,7 @@ const Home = () => {
 
         <Collection />
         <Newsletter />
+        <Footer/>
         </div>
   
     </>

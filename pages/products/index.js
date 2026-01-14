@@ -97,6 +97,11 @@ const ProductList = ({ products }) => {
 
         <Header />
         <div  className="main-content">
+          <div>
+      <h2>
+        Featured Products
+      </h2>
+      </div>
 
           <div className="controls">
             <label>

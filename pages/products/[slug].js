@@ -116,9 +116,6 @@ const ProductPage = ({ product }) => {
           <Header />
           <div className="main-content">
 
-     
-
-
         <div className="slug-container">
           <div class="slider">
             <Link href="#slide-1">1</Link>
@@ -183,9 +180,9 @@ const ProductPage = ({ product }) => {
 
         <ItemsLike />
         <Newsletter />
-        <div className="forms-container sticky-div">
+        <div>
           <button
-            className="bg-blue-500 text-white px-4 py-2 rounded"
+          
             onClick={() => addToCart(product)}
           >
             Add to Cart
