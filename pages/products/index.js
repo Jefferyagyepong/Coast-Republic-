@@ -143,9 +143,9 @@ const ProductList = ({ products }) => {
               <div className="image-container">
                 <Image
                   src={product.image}
-                  height={150}
-                  width={210}
-                  alt=" product"
+                  height={50}
+                  width={60}
+                  alt={product.name}
                 />
               </div>
 
