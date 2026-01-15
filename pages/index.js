@@ -10,6 +10,7 @@ import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
 
 import Jeans from "@/components/Parts/Jeans";
+import Sale from "@/components/Parts/Sale";
 
 
 
@@ -80,7 +81,7 @@ const Home = () => {
           Calvin Klein Collection
         </h1>
 
-        <AutoImageSlider images={calvinKleinImages} autoPlayInterval={3500} />
+        <Sale images={calvinKleinImages} autoPlayInterval={3500} />
       </div>
     </div>
        
