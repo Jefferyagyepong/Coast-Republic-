@@ -49,7 +49,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
       {/* Arrows - appear on hover */}
       <button
         onClick={prev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-80 transition-opacity bg-black/50 hover:bg-black/70 text-white text-2xl w-11 h-11 rounded-full flex items-center justify-center"
+        className="carousel-button"
         aria-label="previous"
       >
         ←
