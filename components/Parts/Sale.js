@@ -32,7 +32,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <div key={i} className="min-w-full">
+          <div key={i} className="min-width-full">
             <Image
               src={src}
               alt={`slide ${i + 1}`}
