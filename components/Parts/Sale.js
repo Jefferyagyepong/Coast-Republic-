@@ -38,7 +38,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
               alt={`slide ${i + 1}`}
               width={1200}
               height={800}
-              className="w-full h-auto object-cover aspect-[4/3] sm:aspect-video"
+              className="responsive-media"
               priority={i === 0}
               quality={82}
             />
