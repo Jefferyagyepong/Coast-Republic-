@@ -84,7 +84,7 @@ export default function NewsletterForm() {
           className="footer-tag"
         />
         <Image
-          src={"/logo-twitter.svg"}
+          src={"/IMG_4342.png"}
           height={10}
           width={15}
           alt="twitter icon"
