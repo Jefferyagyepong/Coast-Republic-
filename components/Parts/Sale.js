@@ -64,7 +64,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2.5">
+      <div className="pagination-container">
         {images.map((_, i) => (
           <button
             key={i}
