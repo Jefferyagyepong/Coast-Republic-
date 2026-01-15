@@ -103,3 +103,25 @@
   /* min-w-full */
   min-width: 100%;
 }
+.responsive-media {
+  /* w-full */
+  width: 100%;
+
+  /* h-auto */
+  height: auto;
+
+  /* object-cover */
+  object-fit: cover;
+
+  /* aspect-[4/3] (Default) */
+  aspect-ratio: 4 / 3;
+}
+
+/* sm:aspect-video (Small devices and up, 640px+) */
+@media (min-width: 640px) {
+  .responsive-media {
+    /* aspect-video is a standard 16/9 ratio */
+    aspect-ratio: 16 / 9;
+  }
+}
+
