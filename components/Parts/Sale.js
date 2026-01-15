@@ -28,7 +28,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
     >
       {/* Slides */}
       <div
-        className="flex transition-transform duration-600 ease-out"
+        className="flex-transition-container"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
