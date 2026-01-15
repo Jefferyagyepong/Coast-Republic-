@@ -1,116 +1,83 @@
+// components/ImageSlider.jsx
+"use client"
 
-// components/AutoImageSlider.tsx
-"use client";
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
-import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+export default function ImageSlider({ images = [], interval = 4000 }) {
+  const [index, setIndex] = useState(0)
+  const [paused, setPaused] = useState(false)
 
-type Props = {
-  images: string[];
-  autoPlayInterval?: number; // in milliseconds
-};
+  const next = () => setIndex(i => (i + 1) % images.length)
+  const prev = () => setIndex(i => (i - 1 + images.length) % images.length)
 
-export default function AutoImageSlider({
-  images,
-  autoPlayInterval = 4000,
-}: Props) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  // Autoplay
   useEffect(() => {
-    if (isPaused) {
-      if (timerRef.current) clearInterval(timerRef.current);
-      return;
-    }
+    if (paused) return
 
-    timerRef.current = setInterval(nextSlide, autoPlayInterval);
+    const id = setInterval(next, interval)
+    return () => clearInterval(id)
+  }, [paused, interval, images.length])
 
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [isPaused, autoPlayInterval, images.length]);
-
-  // Go to specific slide (for dots)
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
+  if (!images.length) return null
 
   return (
     <div
-      className="relative w-full max-w-5xl mx-auto overflow-hidden rounded-xl shadow-2xl group"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-xl group"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
     >
       {/* Slides */}
       <div
-        className="flex transition-transform duration-700 ease-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        className="flex transition-transform duration-600 ease-out"
+        style={{ transform: `translateX(-${index * 100}%)` }}
       >
-        {images.map((src, idx) => (
-          <div key={idx} className="min-w-full flex-shrink-0">
+        {images.map((src, i) => (
+          <div key={i} className="min-w-full">
             <Image
               src={src}
-              alt={`Product image ${idx + 1}`}
-              width={1400}
-              height={900}
-              className="w-full h-auto object-cover aspect-[4/3] sm:aspect-[5/3]"
-              priority={idx === 0}
-              quality={85}
+              alt={`slide ${i + 1}`}
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover aspect-[4/3] sm:aspect-video"
+              priority={i === 0}
+              quality={82}
             />
           </div>
         ))}
       </div>
 
-      {/* Left Arrow */}
+      {/* Arrows - appear on hover */}
       <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 
-                 bg-black/40 hover:bg-black/70 text-white 
-                 p-3 rounded-full opacity-0 group-hover:opacity-100 
-                 transition-opacity duration-300 focus:outline-none z-10"
-        aria-label="Previous image"
+        onClick={prev}
+        className="absolute left-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-80 transition-opacity bg-black/50 hover:bg-black/70 text-white text-2xl w-11 h-11 rounded-full flex items-center justify-center"
+        aria-label="previous"
       >
         ←
       </button>
 
-      {/* Right Arrow */}
       <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 
-                 bg-black/40 hover:bg-black/70 text-white 
-                 p-3 rounded-full opacity-0 group-hover:opacity-100 
-                 transition-opacity duration-300 focus:outline-none z-10"
-        aria-label="Next image"
+        onClick={next}
+        className="absolute right-3 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-80 transition-opacity bg-black/50 hover:bg-black/70 text-white text-2xl w-11 h-11 rounded-full flex items-center justify-center"
+        aria-label="next"
       >
         →
       </button>
 
-      {/* Dots indicator */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2.5 z-10">
-        {images.map((_, idx) => (
+      {/* Dots */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2.5">
+        {images.map((_, i) => (
           <button
-            key={idx}
-            onClick={() => goToSlide(idx)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              idx === currentIndex
-                ? "bg-white scale-125 shadow-md"
-                : "bg-white/50 hover:bg-white/80"
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`w-2.5 h-2.5 rounded-full transition-all ${
+              i === index
+                ? 'bg-white scale-125 shadow'
+                : 'bg-white/60 hover:bg-white/90'
             }`}
-            aria-label={`Go to slide ${idx + 1}`}
+            aria-label={`slide ${i + 1}`}
           />
         ))}
       </div>
     </div>
-  );
+  )
 }
