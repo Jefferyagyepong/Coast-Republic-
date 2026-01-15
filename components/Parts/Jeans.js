@@ -6,7 +6,7 @@ function Show() {
   return (
     <div>
       <Image
-        src={"/gyamfua black OLIVE.svg"}
+        src={"/IMG_4343.png"}
         alt="img"
         width={1200}
         height={400}
