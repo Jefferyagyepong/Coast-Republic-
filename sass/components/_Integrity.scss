@@ -1,2 +1,32 @@
+.custom-container {
+  /* min-h-screen */
+  min-height: 100vh;
 
+  /* bg-gray-50 */
+  background-color: #f9fafb;
+
+  /* py-12 */
+  padding-top: 3rem;    /* 48px */
+  padding-bottom: 3rem; /* 48px */
+
+  /* px-4 */
+  padding-left: 1rem;   /* 16px */
+  padding-right: 1rem;  /* 16px */
+}
+
+/* sm:px-6 (Small devices, usually 640px+) */
+@media (min-width: 640px) {
+  .custom-container {
+    padding-left: 1.5rem;  /* 24px */
+    padding-right: 1.5rem; /* 24px */
+  }
+}
+
+/* lg:px-8 (Large devices, usually 1024px+) */
+@media (min-width: 1024px) {
+  .custom-container {
+    padding-left: 2rem;  /* 32px */
+    padding-right: 2rem; /* 32px */
+  }
+}
 
