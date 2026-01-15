@@ -69,7 +69,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
           <button
             key={i}
             onClick={() => setIndex(i)}
-            className={`w-2.5 h-2.5 rounded-full transition-all ${
+            className={`pagination-dot ${
               i === index
                 ? 'bg-white scale-125 shadow'
                 : 'bg-white/60 hover:bg-white/90'
