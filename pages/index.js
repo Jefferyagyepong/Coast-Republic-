@@ -17,6 +17,14 @@ import Jeans from "@/components/Parts/Jeans";
 
 
 const Home = () => {
+   const calvinKleinImages = [
+    "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=1200&auto=format&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=1200&auto=format&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=1200&auto=format&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&auto=format&fit=crop&q=80",
+    // Replace with real Calvin Klein / Walmart product image URLs
+  ];
+
  
    return (
     <>
@@ -66,6 +74,15 @@ const Home = () => {
       <div  className="main-content">
         <Thrifts />
         <Jeans />
+         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-10 text-gray-900">
+          Calvin Klein Collection
+        </h1>
+
+        <AutoImageSlider images={calvinKleinImages} autoPlayInterval={3500} />
+      </div>
+    </div>
        
         <New />
 
