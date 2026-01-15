@@ -75,7 +75,7 @@ const Home = () => {
       <div  className="main-content">
         <Thrifts />
         <Jeans />
-         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+         <div className="custom-container">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-10 text-gray-900">
           Calvin Klein Collection
