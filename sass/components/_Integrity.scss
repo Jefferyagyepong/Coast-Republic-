@@ -172,4 +172,50 @@
   opacity: 1; /* Often implied to ensure full visibility on hover */
 }
 
+.carousel-button-next {
+  /* absolute */
+  position: absolute;
 
+  /* right-3 */
+  right: 0.75rem; /* 12px */
+
+  /* top-1/2 -translate-y-1/2 */
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* opacity-0 */
+  opacity: 0;
+
+  /* transition-opacity */
+  transition-property: opacity, background-color;
+  transition-duration: 150ms;
+
+  /* bg-black/50 */
+  background-color: rgba(0, 0, 0, 0.5);
+
+  /* text-white text-2xl */
+  color: #ffffff;
+  font-size: 1.5rem; /* 24px */
+
+  /* w-11 h-11 rounded-full */
+  width: 2.75rem;  /* 44px */
+  height: 2.75rem; /* 44px */
+  border-radius: 9999px;
+
+  /* flex items-center justify-center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Added for better UX */
+}
+
+/* group-hover:opacity-80 */
+.group:hover .carousel-button-next {
+  opacity: 0.8;
+}
+
+/* hover:bg-black/70 */
+.carousel-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
