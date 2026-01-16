@@ -11,7 +11,6 @@ import fs from "fs";
 import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
-
 import BackTo from "@/components/Parts/BackTo";
 
 export async function getStaticProps() {
@@ -93,42 +92,51 @@ const ProductList = ({ products }) => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-    
-    
-          <Header />
-        
-        <div className="main-content">
-          <h4>Our Collection </h4>
+<<<<<<< HEAD
+  <main>
 
-          <div className="controls">
-            <label>
-              Filter:
-              <select
-                onChange={e => setFilter(e.target.value)}
-                value={filter}
-                className="background-bg"
-              >
-                {categories.map(category => (
-                  <option key={category} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              Sort:
-              <select
-                onChange={e => setSort(e.target.value)}
-                value={sort}
-                className="background-bg"
-              >
-                <option value="name-asc">Name (A-Z)</option>
-                <option value="name-desc">Name (Z-A)</option>
-                <option value="price-asc">Price (Low to High)</option>
-                <option value="price-desc">Price (High to Low)</option>
-              </select>
-            </label>
-          </div>
+    <Header />
+
+    <div className="main-content">
+      <h4>Our Collection </h4>
+=======
+
+
+          <Header />
+
+      <div className="main-content">
+        <h4>Our Collection </h4>
+>>>>>>> 2c86ffded3d96712f7fc3321c9992c979338d2bf
+
+        <div className="controls">
+          <label>
+            Filter:
+            <select
+              onChange={e => setFilter(e.target.value)}
+              value={filter}
+              className="background-bg"
+            >
+              {categories.map(category => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Sort:
+            <select
+              onChange={e => setSort(e.target.value)}
+              value={sort}
+              className="background-bg"
+            >
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+            </select>
+          </label>
+        </div>
         <div>
           <h2>
             Featured Products
@@ -181,38 +189,44 @@ const ProductList = ({ products }) => {
               </div>
 
               <div className="p-5">
-                  <span className="price"> <sup><h6>GHS</h6></sup>{product.price.toFixed(2)}</span>
-              
+                <span className="price"> <sup><h6>GHS</h6></sup>{product.price.toFixed(2)}</span>
+
               </div>
-              
+
               <div className="price-container">
                 <h3>{product.name}</h3>
                 <Link href={`/products/${product.slug}`}>
                   <button className="button">View Details</button>
                 </Link>
               </div>
+<<<<<<< HEAD
+              ))}
+         
+=======
                      </div>
 
               ))}
          
-            </div>
+>>>>>>> 2c86ffded3d96712f7fc3321c9992c979338d2bf
+            </div >
         
           
         <BackTo />
         <Newsletter />
         <Footer />
+<<<<<<< HEAD
+      </main >
+=======
         </div>
-    
 
-      <style jsx global>{`
-    
-        .controls {
+>>>>>>> 2c86ffded3d96712f7fc3321c9992c979338d2bf
+
+  <style jsx global>{`
           display: flex;
           gap: 20px;
     
   
         }
-        .controls label {
           display: flex;
           align-items: center;
           gap: 10px;
