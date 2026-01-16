@@ -2,7 +2,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head";
 import Thrifts from "@/components/Parts/Thrifts";
-import New from "@/components/Parts/New";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 
@@ -84,10 +83,7 @@ const Home = () => {
         <Sale images={calvinKleinImages} autoPlayInterval={3500} />
       </div>
     </div>
-       
-        <New />
-
-        <Collection />
+      <Collection />
         <Newsletter />
         <Footer/>
         </div>
