@@ -11,6 +11,7 @@ import fs from "fs";
 import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
+
 import BackTo from "@/components/Parts/BackTo";
 
 export async function getStaticProps() {
@@ -92,13 +93,16 @@ const ProductList = ({ products }) => {
           content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
         />
       </Head>
-    <Header />
-
-    <div className="main-content">
-      <h4>Our Collection </h4>
-      <div className="main-content">
-        <h4>Featured </h4>
-       
+    
+    
+          <Header />
+        
+        <div className="main-content">
+     
+          <h2>
+            Featured Products
+          </h2>
+        </div>
 
         <div className="controls">
           <label>
@@ -146,38 +150,38 @@ const ProductList = ({ products }) => {
               </div>
 
               <div className="p-5">
-                <span className="price"> <sup><h6>GHS</h6></sup>{product.price.toFixed(2)}</span>
-
+                  <span className="price"> <sup><h6>GHS</h6></sup>{product.price.toFixed(2)}</span>
+              
               </div>
-
+              
               <div className="price-container">
                 <h3>{product.name}</h3>
                 <Link href={`/products/${product.slug}`}>
                   <button className="button">View Details</button>
                 </Link>
               </div>
+                     </div>
 
               ))}
          
-
-                     </div>
-
-
+            </div>
+        
           
         <BackTo />
         <Newsletter />
         <Footer />
-    
         </div>
+    
 
-
-
-  <style jsx global>{`
+      <style jsx global>{`
+    
+        .controls {
           display: flex;
           gap: 20px;
     
   
         }
+        .controls label {
           display: flex;
           align-items: center;
           gap: 10px;
@@ -196,14 +200,7 @@ const ProductList = ({ products }) => {
           margin: 0 auto;
           }
 
-      
-    
-    
-          .main-content{
-          width:100%;
-     
-          padding: 10px 20px;
-      
+ 
           }
           .viewButton{
     
