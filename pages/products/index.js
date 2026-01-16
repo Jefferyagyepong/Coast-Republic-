@@ -102,7 +102,7 @@ const ProductList = ({ products }) => {
           <h2>
             Featured Products
           </h2>
-        </div>
+      
 
         <div className="controls">
           <label>
