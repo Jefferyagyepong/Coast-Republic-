@@ -1,12 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Link from "next/link";
-import Image from "next/image";
 export default function Collection() {
   return (
-    <div>
-      <Image src= {"/GYAMFUA.svg"} alt="img" width={1200}  height={400}/>
-      <h3>NECCESITIES | BLOG </h3>
-      <Link href={"/products"}>Read</Link>
+    <div className="blog-container">
+      <h3>Fashion Essentials | BLOG </h3>
+      <Link href={"#"}>Read</Link>
     </div>
   );
 }

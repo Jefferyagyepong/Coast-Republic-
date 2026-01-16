@@ -1,17 +1,39 @@
 .background-container{
 background:url("/IMG_4343.png");
 background-repeat:no-repeat;
-background-sizer: cover;
+background-size: cover;
 background-position:center;
 height: 100vh;
+display: flex;
+align-items: baseline;
+justify-content: baseline;
+flex-direction: column;
+gap: 20px;
 }
 
 .background-container-women{
 background:url("/IMG_4339.png");
 background-repeat:no-repeat;
-background-sizer: cover;
+background-size: cover;
 background-position:center;
 height: 100vh;
+display: flex;
+align-items: baseline;
+justify-content: baseline;
+flex-direction: column;
+gap: 20px;
+}
+.blog-container{
+background:url("/GYAMFUA.svg");
+background-repeat:no-repeat;
+background-size: cover;
+background-position:center;
+height: 100vh;
+display: flex;
+align-items: baseline;
+justify-content: baseline;
+flex-direction: column;
+gap: 20px;
 }
 
 
