@@ -103,7 +103,7 @@ const ProductList = ({ products }) => {
             Featured Products
           </h2>
       
-<hr>
+<hr />
         <div className="controls">
           <label>
             Filter:
@@ -133,7 +133,7 @@ const ProductList = ({ products }) => {
             </select>
           </label>
         </div>
-<hr>
+<hr />
         <div className="product-container">
           {filteredProducts.map(product => (
 
