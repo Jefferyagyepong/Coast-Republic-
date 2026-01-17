@@ -10,7 +10,7 @@ import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import Head from "next/head";
-import Newsletter from "@/components/Footer/Newsletter";
+
 
 
 import ProductNav from "@/components/Parts/ProductNav";
@@ -215,8 +215,8 @@ const ProductList = ({ products }) => {
       <h4>We would like to hear what you think!</h4>
       <Link href={"#"}>Give feedback</Link>
       </div>
-      <br/>
-        <Newsletter />
+      <hr/>
+    
         <Footer />
         </div>
     
