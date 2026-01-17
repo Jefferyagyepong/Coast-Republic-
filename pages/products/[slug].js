@@ -5,7 +5,6 @@
 
 import Header from "@/components/Head/Header";
 
-import Newsletter from "@/components/Footer/Newsletter";
 import ItemsLike from "@/components/Parts/ItemsLike";
 import Head from "next/head";
 import Faq from "@/components/Footer/Faq";
@@ -187,7 +186,7 @@ const ProductPage = ({ product }) => {
         
         
            <div className="grid gap-10 lg:grid-cols-2">
-        <ProductImageSlider images={productImages} priority />
+        <ProductImageSlider product={product.image} priority />
 
         <div className="space-y-6">
           <h1 className="text-3xl font-bold">Awesome Running Shoes</h1>
