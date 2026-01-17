@@ -178,6 +178,7 @@ const ProductList = ({ products }) => {
         .controls {
           display: flex;
           gap: 20px;
+          padding-top:20px;
     
   
         }
@@ -192,6 +193,7 @@ const ProductList = ({ products }) => {
           font-size: 14px;
           border: 1px solid #ccc;
           border-radius: 4px;
+          color:#000;
         }
           .product-container{ 
           width:100%;
