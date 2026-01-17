@@ -73,8 +73,7 @@ const ProductList = ({ products }) => {
       return 0;
     });
     
-      const [page, setPage] = useState(1);   // ← this line was missing
-  const totalPages = 42;  
+     
     
 
   return (
