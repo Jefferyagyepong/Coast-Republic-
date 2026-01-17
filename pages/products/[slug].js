@@ -186,7 +186,7 @@ const ProductPage = ({ product }) => {
         
         
            <div className="grid gap-10 lg:grid-cols-2">
-        <ProductImageSlider product={product.image} priority />
+        <ProductImageSlider images={product.image} priority />
 
         <div className="space-y-6">
           <h1 className="text-3xl font-bold">Awesome Running Shoes</h1>
