@@ -14,6 +14,7 @@ import Newsletter from "@/components/Footer/Newsletter";
 
 import BackTo from "@/components/Parts/BackTo";
 import ProductNav from "@/components/Parts/ProductNav";
+import Pagination from "@/components/Parts/Pagination";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -168,7 +169,11 @@ const ProductList = ({ products }) => {
                      </div>
 
               ))}
-         
+         <Pagination
+  currentPage={page}
+  totalPages={totalPages}
+  onPageChange={setPage}
+/>
             </div>
         
           
