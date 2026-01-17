@@ -255,3 +255,26 @@ position: relative
   /* transform: translateX(0); */
   /* will-change: width, transform; */
 }
+.horizontal-scroll-container {
+  overflow-x: auto;
+  border-bottom: 1px solid #e5e7eb;          /* border-b border-gray-200 (light mode) */
+  transition: border-color 0.2s ease;        /* optional – smooth dark mode switch */
+}
+
+.dark .horizontal-scroll-container {
+  border-bottom: 1px solid #1f2937;          /* dark:border-gray-800 */
+}
+
+/* Hide scrollbar cross-browser (most common modern approach) */
+.horizontal-scroll-container {
+  /* Firefox */
+  scrollbar-width: none;
+  /* Edge/IE (legacy) */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari, Edge (newer), Opera */
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
