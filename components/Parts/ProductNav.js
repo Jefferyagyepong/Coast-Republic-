@@ -47,7 +47,7 @@ export default function ProductPageNav() {
       {/* Scrollable tabs container */}
       <div
         ref={containerRef}
-        className="overflow-x-auto scrollbar-hide border-b border-gray-200 dark:border-gray-800"
+        className="horizontal-scroll-container"
       >
         <div className="flex items-center px-4 py-3 min-w-max gap-1.5">
           {navItems.map((item, index) => {
