@@ -215,6 +215,8 @@ const ProductList = ({ products }) => {
       <h4>We would like to hear what you think!</h4>
       <Link href={"#"}>Give feedback</Link>
       </div>
+      <br/>
+        <br/>
       <hr/>
     
         <Footer />
