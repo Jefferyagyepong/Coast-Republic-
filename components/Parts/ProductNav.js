@@ -39,7 +39,7 @@ export default function ProductPageNav() {
       {/* Sliding indicator */}
       <div className="relative">
         <div
-          className="absolute bottom-0 h-[2px] bg-blue-600 rounded-full transition-all duration-300 ease-out"
+          className="tab-underline"
           style={{ left: indicator.left, width: indicator.width }}
         />
       </div>
