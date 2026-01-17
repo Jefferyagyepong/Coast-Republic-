@@ -209,13 +209,13 @@ const ProductList = ({ products }) => {
           Next
         </button>
       </div>
-      
+      <hr/>
       
         <div className="feedback-container">
       <h4>We would like to hear what you think!</h4>
       <Link href={"#"}>Give feedback</Link>
       </div>
-      
+      <br/>
         <Newsletter />
         <Footer />
         </div>
