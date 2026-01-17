@@ -66,7 +66,27 @@ gap: 20px;
   transform-origin: left;
 }
 
+.btn-scale {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #10b981;       /* Emerald */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
 
+.btn-scale:hover,
+.btn-scale:focus {
+  background-color: #059669;
+  transform: scale(1.06);
+  box-shadow: 0 4px 12px rgba(16,185,129,0.3);
+}
+
+.btn-scale:active {
+  transform: scale(0.98);
+}
 
 
 
