@@ -196,7 +196,7 @@ const ProductPage = ({ product }) => {
         <Faq />
 
         <ItemsLike />
-        <Newsletter />
+    
         <div>
           <button
           
