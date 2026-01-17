@@ -49,7 +49,7 @@ export default function ProductPageNav() {
         ref={containerRef}
         className="horizontal-scroll-container"
       >
-        <div className="flex items-center px-4 py-3 min-w-max gap-1.5">
+        <div className=”flex-row-centered”>
           {navItems.map((item, index) => {
             const isActive = activeTab === item.id;
 
