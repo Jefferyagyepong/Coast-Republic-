@@ -158,7 +158,9 @@ const ProductList = ({ products }) => {
                 <Link href={`/products/${product.slug}`}>
                   <button className="button">View Details</button>
                 </Link>
+                
               </div>
+              <hr/>
                      </div>
 
               ))}
