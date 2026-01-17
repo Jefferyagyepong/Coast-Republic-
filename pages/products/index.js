@@ -12,7 +12,7 @@ import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
-import Pagination from "@/components/Parts/Pagination";
+
 import ProductNav from "@/components/Parts/ProductNav";
 
 
@@ -29,7 +29,10 @@ export async function getStaticProps() {
   };
 }
 
+
 const ProductList = ({ products }) => {
+  
+  
   const [filter, setFilter] = useState("All");
   const [sort, setSort] = useState("name-asc");
 
@@ -175,7 +178,7 @@ const ProductList = ({ products }) => {
               ))}
 
             </div>          
-       <Pagination products={products} />
+  
         <Newsletter />
         <Footer />
         </div>
