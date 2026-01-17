@@ -102,20 +102,6 @@ const ProductList = ({ products }) => {
           <h2>
             Featured Products
           </h2>
-          <hr />
-        <div>
-          div>
-    
-          <h5>Pick Up</h5>
-    
-          </div> 
-               div>
-      
-          <h5>Delivery</h5>
-   
-          </div> 
-          </div> 
-      <hr />
 <hr />
         <div className="controls">
           <label>
