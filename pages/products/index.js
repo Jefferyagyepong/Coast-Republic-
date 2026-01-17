@@ -179,6 +179,7 @@ const ProductList = ({ products }) => {
           display: flex;
           gap: 20px;
           padding-top:20px;
+          padding-bottom:20px;
     
   
         }
