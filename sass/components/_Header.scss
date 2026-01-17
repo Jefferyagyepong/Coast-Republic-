@@ -68,7 +68,7 @@ padding-left: 10px;
     top: 100%;
     left: 0;
     width: 100%;
-    background: #fff;
+ background-color:#3C3B6E;
     flex-direction: column;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -164,7 +164,9 @@ z-index:1000;
 }
 .main-content {
   padding-top: 130px; /* Must match the header's height */
-
+h2{
+padding-left: 12px;
+}
 }
 
 
