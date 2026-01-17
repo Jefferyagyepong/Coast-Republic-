@@ -103,7 +103,9 @@ const ProductList = ({ products }) => {
           <h2>
             Featured Products
           </h2>
+          <hr />
           <ProductNav />
+          
 <hr />
         <div className="controls">
           <label>
