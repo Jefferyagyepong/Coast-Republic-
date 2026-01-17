@@ -59,7 +59,7 @@ export default function ProductPageNav() {
                 ref={el => { buttonRefs.current[index] = el; }}
                 onClick={() => setActiveTab(item.id)}
                 className={`
-                  relative flex items-center gap-2 px-5 py-2.5 text-sm font-medium rounded-lg transition-colors whitespace-nowrap
+                 interactive-pill
                   ${isActive
                     ? 'text-blue-600 dark:text-blue-400'
                     : 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200'
