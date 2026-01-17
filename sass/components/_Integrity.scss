@@ -242,3 +242,16 @@ width:100;
 .relative{
 position: relative
 }
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;                   /* ← usually starts at 0 width → animates to full */
+  background-color: #2563eb;
+  border-radius: 9999px;
+  transition: all 300ms ease-out;
+  /* Optional but very common in tab menus: */
+  /* transform: translateX(0); */
+  /* will-change: width, transform; */
+}
