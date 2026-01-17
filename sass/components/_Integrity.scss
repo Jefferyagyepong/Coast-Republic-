@@ -277,4 +277,13 @@ position: relative
 .horizontal-scroll-container::-webkit-scrollbar {
   display: none;
 }
-
+.flex-row-centered {
+  display: flex;                    /* flex */
+  align-items: center;              /* items-center */
+  padding-left: 1rem;               /* px-4 → padding-inline: 1rem (left/right) */
+  padding-right: 1rem;
+  padding-top: 0.75rem;             /* py-3 → padding-block: 0.75rem (top/bottom) */
+  padding-bottom: 0.75rem;
+  min-width: max-content;           /* min-w-max */
+  gap: 0.375rem;                    /* gap-1.5 → 1.5 × 0.25rem = 0.375rem / 6px */
+}
