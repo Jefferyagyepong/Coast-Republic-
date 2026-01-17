@@ -173,13 +173,13 @@ const ProductList = ({ products }) => {
                      </div>
 
               ))}
-         <Pagination
+
+            </div>
+                 <Pagination
   currentPage={page}
   totalPages={totalPages}
   onPageChange={setPage}
 />
-            </div>
-        
           
         <BackTo />
         <Newsletter />
