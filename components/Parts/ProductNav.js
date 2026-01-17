@@ -35,7 +35,7 @@ export default function ProductPageNav() {
   }, [activeTab]);
 
   return (
-    <div className="w-full">
+    <div className="width-full">
       {/* Sliding indicator */}
       <div className="relative">
         <div
