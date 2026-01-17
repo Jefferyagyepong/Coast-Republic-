@@ -7,7 +7,7 @@ function All() {
   return (
     <div className="background-container-women">
       <h3>Tees</h3>
-      <Link href={"/products"}>Shop now</Link>
+      <Link className="link-slide" href={"/products"}>Shop now</Link>
     </div>
   );
 }
