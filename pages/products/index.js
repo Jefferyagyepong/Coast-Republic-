@@ -13,6 +13,7 @@ import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
 import BackTo from "@/components/Parts/BackTo";
+import ProductNav from "@/components/Parts/ProductNav";
 
 export async function getStaticProps() {
   // Read the products JSON file from the public directory
@@ -102,6 +103,7 @@ const ProductList = ({ products }) => {
           <h2>
             Featured Products
           </h2>
+          <ProductNav />
 <hr />
         <div className="controls">
           <label>
