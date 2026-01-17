@@ -15,7 +15,7 @@ import fs from "fs";
 import path from "path";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
-
+import ProductImageSlider from "@/components/Parts/ProductImageSlider";
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -176,6 +176,24 @@ const ProductPage = ({ product }) => {
           <p>{product.description}</p>
           <p>Price: GH₵ {product.price}</p>
         </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           <div className="grid gap-10 lg:grid-cols-2">
+        <ProductImageSlider images={productImages} priority />
+
+        <div className="space-y-6">
+          <h1 className="text-3xl font-bold">Awesome Running Shoes</h1>
+          {/* price, description, buttons… */}
+        </div>
+      </div>
         <Faq />
 
         <ItemsLike />
