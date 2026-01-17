@@ -12,7 +12,7 @@ import path from "path";
 import Head from "next/head";
 import Newsletter from "@/components/Footer/Newsletter";
 
-import BackTo from "@/components/Parts/BackTo";
+import Pagination from "@/components/Parts/Pagination";
 import ProductNav from "@/components/Parts/ProductNav";
 
 
@@ -175,7 +175,7 @@ const ProductList = ({ products }) => {
               ))}
 
             </div>          
-        <BackTo />
+       <Pagination products={products} />
         <Newsletter />
         <Footer />
         </div>
