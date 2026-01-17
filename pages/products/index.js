@@ -154,7 +154,7 @@ const ProductList = ({ products }) => {
               </div>
               
               <div className="price-container">
-                <h3>{product.name}</h3>
+                <h3>{product.description}</h3>
                 <Link href={`/products/${product.slug}`}>
                   <button className="button">View Details</button>
                 </Link>
