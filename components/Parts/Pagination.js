@@ -1,133 +1,53 @@
-// Pagination.jsx
-import React from 'react';
+import React, { useState } from "react";
 
-export default function Pagination({
-  currentPage,
-  totalPages,
-  onPageChange,
-  maxVisiblePages = 7,
-  showFirstLast = true,
-  showPrevNext = true,
-}) {
-  if (totalPages <= 1) return null;
+const ProductsPagination = ({ products }) => {
+  // Set the items per page and current page state
+  const itemsPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const getPageNumbers = () => {
-    const half = Math.floor(maxVisiblePages / 2);
-    let start = Math.max(1, currentPage - half);
-    let end = Math.min(totalPages, currentPage + half);
+  // Calculate the total pages
+  const totalPages = Math.ceil(products.length / itemsPerPage);
 
-    // Adjust range when near edges
-    if (end - start + 1 < maxVisiblePages) {
-      if (start === 1) {
-        end = Math.min(totalPages, start + maxVisiblePages - 1);
-      } else {
-        start = Math.max(1, end - maxVisiblePages + 1);
-      }
-    }
+  // Get the current items to display
+  const currentItems = products.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
-    const pages = [];
-
-    // First page + ellipsis
-    if (start > 1) {
-      pages.push(1);
-      if (start > 2) pages.push('…');
-    }
-
-    // Main visible pages
-    for (let i = start; i <= end; i++) {
-      pages.push(i);
-    }
-
-    // Last page + ellipsis
-    if (end < totalPages) {
-      if (end < totalPages - 1) pages.push('…');
-      pages.push(totalPages);
-    }
-
-    return pages;
+  const handlePrevPage = () => {
+    if (currentPage > 1) setCurrentPage((prev) => prev - 1);
   };
 
-  const pages = getPageNumbers();
+  const handleNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1);
+  };
 
   return (
-    <nav aria-label="Pagination" className="pagination-container">
-      <ul className="pagination">
-        {/* First */}
-        {showFirstLast && (
-          <li>
-            <button
-              onClick={() => onPageChange(1)}
-              disabled={currentPage === 1}
-              className={currentPage === 1 ? 'pagination-disabled' : ''}
-              aria-label="First page"
-            >
-              «
-            </button>
-          </li>
-        )}
+    <div>
+      {/* Display Paginated Items */}
+      <div className="product-list">
+        {currentItems.map((product, index) => (
+          <div key={index} className="product-item">
+            <h3>{product.name}</h3>
+            <p>{product.description}</p>
+          </div>
+        ))}
+      </div>
 
-        {/* Previous */}
-        {showPrevNext && (
-          <li>
-            <button
-              onClick={() => onPageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className={currentPage === 1 ? 'pagination-disabled' : ''}
-              aria-label="Previous page"
-            >
-              ‹
-            </button>
-          </li>
-        )}
-
-        {/* Page numbers */}
-        {pages.map((page, idx) =>
-          typeof page === 'string' ? (
-            <li key={`ellipsis-${idx}`}>
-              <span className="pagination-ellipsis">{page}</span>
-            </li>
-          ) : (
-            <li key={page}>
-              <button
-                onClick={() => onPageChange(page)}
-                className={page === currentPage ? 'pagination-active' : ''}
-                aria-current={page === currentPage ? 'page' : undefined}
-                aria-label={`Go to page ${page}`}
-              >
-                {page}
-              </button>
-            </li>
-          )
-        )}
-
-        {/* Next */}
-        {showPrevNext && (
-          <li>
-            <button
-              onClick={() => onPageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className={currentPage === totalPages ? 'pagination-disabled' : ''}
-              aria-label="Next page"
-            >
-              ›
-            </button>
-          </li>
-        )}
-
-        {/* Last */}
-        {showFirstLast && (
-          <li>
-            <button
-              onClick={() => onPageChange(totalPages)}
-              disabled={currentPage === totalPages}
-              className={currentPage === totalPages ? 'pagination-disabled' : ''}
-              aria-label="Last page"
-            >
-              »
-            </button>
-          </li>
-        )}
-      </ul>
-    </nav>
+      {/* Pagination Buttons */}
+      <div className="pagination-controls">
+        <button onClick={handlePrevPage} disabled={currentPage === 1}>
+          Previous
+        </button>
+        <span>
+          Page {currentPage} of {totalPages}
+        </span>
+        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
+    </div>
   );
-}
+};
+
+export default ProductsPagination;
