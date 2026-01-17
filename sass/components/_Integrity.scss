@@ -287,3 +287,18 @@ position: relative
   min-width: max-content;           /* min-w-max */
   gap: 0.375rem;                    /* gap-1.5 → 1.5 × 0.25rem = 0.375rem / 6px */
 }
+
+
+.interactive-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;                   /* gap-2 */
+  padding: 10px 20px;         /* py-2.5 ≈ 10px, px-5 = 20px */
+  font-size: 14px;            /* text-sm */
+  font-weight: 500;
+  border-radius: 8px;         /* rounded-lg */
+  transition: background-color 0.15s ease,
+              color 0.15s ease;
+  white-space: nowrap;
+}
