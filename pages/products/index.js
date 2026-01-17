@@ -31,7 +31,27 @@ export async function getStaticProps() {
 
 
 const ProductList = ({ products }) => {
-  
+   // Set the items per page and current page state
+  const itemsPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Calculate the total pages
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+
+  // Get the current items to display
+  const currentItems = products.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) setCurrentPage((prev) => prev - 1);
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1);
+  };
+
   
   const [filter, setFilter] = useState("All");
   const [sort, setSort] = useState("name-asc");
