@@ -4,11 +4,11 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
-export default function ProductImageSlider({ images, priority = true, className = '' }) {
+export default function ProductImageSlider({ products, priority = true, className = '' }) {
   const [current, setCurrent] = useState(0)
   const [touchStartX, setTouchStartX] = useState(null)
 
-  if (!images?.length) {
+  if (!products?.length) {
     return (
       <div className="aspect-square w-full bg-gray-100 rounded-xl flex items-center justify-center text-gray-500">
         No images available
@@ -57,7 +57,7 @@ export default function ProductImageSlider({ images, priority = true, className 
         onTouchEnd={handleTouchEnd}
       >
         <Image
-          src={images[current].src}
+          src={product[current].image}
           alt={images[current].alt}
           fill
           priority={priority && current === 0}
@@ -90,7 +90,7 @@ export default function ProductImageSlider({ images, priority = true, className 
       {images.length > 1 && (
         <div className="mt-4">
           <div className="flex gap-2.5 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-            {images.map((img, idx) => (
+            {products.map((img, idx) => (
               <button
                 key={idx}
                 onClick={() => goTo(idx)}
@@ -104,7 +104,7 @@ export default function ProductImageSlider({ images, priority = true, className 
                 aria-current={idx === current ? 'true' : 'false'}
               >
                 <Image
-                  src={img.src}
+                  src={product.image}
                   alt={img.alt}
                   fill
                   sizes="96px"
