@@ -210,7 +210,10 @@ const ProductList = ({ products }) => {
           padding: 8px 15px:
           }
           hr{
-          border:1px thin #808080;
+       border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 1.5rem 
           }
     
       `}</style>
