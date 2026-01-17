@@ -210,7 +210,7 @@ const ProductList = ({ products }) => {
           padding: 8px 15px:
           }
           hr{
-          1px solid #808080;
+          border:1px solid #808080;
           }
     
       `}</style>
