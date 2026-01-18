@@ -62,7 +62,7 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const ProductPage = ({ product }) => {
+const ProductPage = ({ product, priority = true, className = ''}) => {
    const { addToCart } = useCart();
   
   
@@ -80,7 +80,7 @@ const ProductPage = ({ product }) => {
   }
 
   const goTo = (index) => {
-    setCurrent(Math.max(0, Math.min(index, images.length - 1)))
+    setCurrent(Math.max(0, Math.min(index, products.length - 1)))
   }
 
   const next = () => goTo(current + 1)
@@ -234,8 +234,8 @@ const ProductPage = ({ product }) => {
         onTouchEnd={handleTouchEnd}
       >
         <Image
-          src={product[current].image}
-          alt={images[current].alt}
+          src={products[current].image}
+          alt={products[current].alt}
           fill
           priority={priority && current === 0}
           quality={82}
@@ -243,7 +243,7 @@ const ProductPage = ({ product }) => {
           className="object-cover transition-transform duration-500 ease-out hover:scale-[1.02]"
         />
 
-        {images.length > 1 && (
+        {products.length > 1 && (
           <>
             <button
               onClick={prev}
@@ -264,10 +264,10 @@ const ProductPage = ({ product }) => {
       </div>
 
       {/* Thumbnails */}
-      {images.length > 1 && (
+      {products.length > 1 && (
         <div className="mt-4">
           <div className="flex gap-2.5 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-            {products.map((img, idx) => (
+            {products.map((image, idx) => (
               <button
                 key={idx}
                 onClick={() => goTo(idx)}
