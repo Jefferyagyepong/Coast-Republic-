@@ -8,7 +8,7 @@ export default function Productpage({ product }) {
   const { addToCart } = useCart();
 
   return (
-    <div className="border p-4 rounded">
+    <div className="border-width">
       <h2 className="text-lg font-bold">x</h2>
       <p className="text-gray-600">$689</p>
       <button
