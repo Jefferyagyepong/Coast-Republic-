@@ -56,13 +56,14 @@ export default function ProductPage({ product }) {
 
   return (
     <>
-        < div   className="main-content">
+      
       <Head>
         <title>{product.name} | Coast Republic</title>
         <meta name="description" content={product.description} />
       </Head>
   
       <Header />
+        < div   className="main-content">
       <div className="product-detail">
         <div className="product-image">
           <Image
