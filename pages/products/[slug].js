@@ -60,6 +60,7 @@ export default function ProductPage({ product }) {
         <title>{product.name} | Coast Republic</title>
         <meta name="description" content={product.description} />
       </Head>
+      <div   className="main-content">
       <Header />
       <div className="product-detail">
         <div className="product-image">
@@ -91,6 +92,7 @@ export default function ProductPage({ product }) {
       </div>
       <ItemsLike />
       <Faq />
+      </div>
     </>
   );
 }
