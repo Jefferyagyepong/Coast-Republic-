@@ -14,7 +14,6 @@ import fs from "fs";
 import path from "path";
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
-import ProductImageSlider from "@/components/Parts/ProductImageSlider";
 // This function generates the paths for each product based on the slugs.
 export async function getStaticPaths() {
   // Read the products JSON file from the public directory
@@ -63,6 +62,52 @@ export async function getStaticProps({ params }) {
 
 const ProductPage = ({ product }) => {
    const { addToCart } = useCart();
+  
+  
+  
+  
+    const [current, setCurrent] = useState(0)
+  const [touchStartX, setTouchStartX] = useState(null)
+
+  if (!products?.length) {
+    return (
+      <div className="aspect-square w-full bg-gray-100 rounded-xl flex items-center justify-center text-gray-500">
+        No images available
+      </div>
+    )
+  }
+
+  const goTo = (index) => {
+    setCurrent(Math.max(0, Math.min(index, images.length - 1)))
+  }
+
+  const next = () => goTo(current + 1)
+  const prev = () => goTo(current - 1)
+
+  // Swipe
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX)
+  }
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX === null) return
+    const diff = touchStartX - e.changedTouches[0].clientX
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next()
+      else prev()
+    }
+    setTouchStartX(null)
+  }
+
+  // Keyboard arrows
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === 'ArrowLeft') prev()
+      if (e.key === 'ArrowRight') next()
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [current])
 
   return (
     <>
@@ -183,16 +228,6 @@ const ProductPage = ({ product }) => {
         
         
         
-        
-        
-           <div className="grid gap-10 lg:grid-cols-2">
-        <ProductImageSlider images={product.image} priority />
-
-        <div className="space-y-6">
-          <h1 className="text-3xl font-bold">Awesome Running Shoes</h1>
-          {/* price, description, buttons… */}
-        </div>
-      </div>
         <Faq />
 
         <ItemsLike />
