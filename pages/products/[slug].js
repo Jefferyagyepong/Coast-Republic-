@@ -71,7 +71,7 @@ const ProductPage = ({ product, priority = true, className = ''}) => {
     const [current, setCurrent] = useState(0)
   const [touchStartX, setTouchStartX] = useState(null)
 
-  if (!products?.length) {
+  if (!product?.length) {
     return (
       <div className="aspect-square w-full bg-gray-100 rounded-xl flex items-center justify-center text-gray-500">
         No images available
@@ -80,7 +80,7 @@ const ProductPage = ({ product, priority = true, className = ''}) => {
   }
 
   const goTo = (index) => {
-    setCurrent(Math.max(0, Math.min(index, products.length - 1)))
+    setCurrent(Math.max(0, Math.min(index, product.length - 1)))
   }
 
   const next = () => goTo(current + 1)
@@ -234,8 +234,8 @@ const ProductPage = ({ product, priority = true, className = ''}) => {
         onTouchEnd={handleTouchEnd}
       >
         <Image
-          src={products[current].image}
-          alt={products[current].alt}
+          src={product[current].image}
+          alt={product[current].name}
           fill
           priority={priority && current === 0}
           quality={82}
@@ -243,7 +243,7 @@ const ProductPage = ({ product, priority = true, className = ''}) => {
           className="object-cover transition-transform duration-500 ease-out hover:scale-[1.02]"
         />
 
-        {products.length > 1 && (
+        {product.length > 1 && (
           <>
             <button
               onClick={prev}
@@ -264,7 +264,7 @@ const ProductPage = ({ product, priority = true, className = ''}) => {
       </div>
 
       {/* Thumbnails */}
-      {products.length > 1 && (
+      {product.length > 1 && (
         <div className="mt-4">
           <div className="flex gap-2.5 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
             {products.map((image, idx) => (
