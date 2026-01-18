@@ -9,8 +9,8 @@ export default function Productpage({ product }) {
 
   return (
     <div className="border-width">
-      <h2 className="text-lg font-bold">x</h2>
-      <p className="text-gray-600">$689</p>
+      <h2 className="font-bold">x</h2>
+      <p className="text-gray-600">GHS0.00</p>
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded"
         onClick={() => addToCart(product)}
