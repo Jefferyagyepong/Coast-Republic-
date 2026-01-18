@@ -3,6 +3,8 @@
 /* eslint-disable no-undef */
 "use client";
 
+
+import { useState, useEffect } from 'react';
 import Header from "@/components/Head/Header";
 
 import ItemsLike from "@/components/Parts/ItemsLike";
