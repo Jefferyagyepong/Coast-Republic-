@@ -1,13 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const response = await fetch("/api/subscribe", {
@@ -25,72 +24,39 @@ export default function NewsletterForm() {
 
   return (
     <div className="newsletter-container">
-      
-        <h3>Subscribe to our newsletter for exclusive offers and updates</h3>
-    
-      
-      <p>
-        Stay in the loop with the latest style news and get an exclusive 10% off
-        when you subscribe to our emails. Exclusions apply. Learn more about our
-        Privacy Policy{" "}
-        <Link href={"/privacy"} className="color-black">
-          {" "}
-          here
-        </Link>
-        .{" "}
-        <Link href={"/terms"} className="color-black">
-          Terms and conditions{" "}
+      <h3 className="newsletter-title">Subscribe to our Newsletter</h3>
+      <p className="newsletter-description">
+        Stay updated with the latest style trends and get an exclusive 10% off
+        when you subscribe to our emails. Exclusions apply. For details, see our{" "}
+        <Link href={"/privacy"}>
+          <a className="newsletter-link">Privacy Policy</a>
         </Link>{" "}
-        apply.
+        and{" "}
+        <Link href={"/terms"}>
+          <a className="newsletter-link">Terms and Conditions</a>
+        </Link>
+        .
       </p>
-    
-      <div className="formContainer">
-        <form onSubmit={handleSubmit} className="form">
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <button type="submit">SignUp</button>
-        </form>
-        {message && <p>{message}</p>}
-      </div>
-      <div className="payment-container">
-        <Image
-          src={"/logo-whatsapp.svg"}
-          height={10}
-          width={15}
-          alt="momo logo"
-          className="footer-tag"
-        />
-        <Image
-          src={"/mail.svg"}
-          height={10}
-          width={15}
-          alt="mail-icon"
-          className="footer-tag"
-        />
-
-        <Image
-          src={"/logo-facebook.svg"}
-          height={10}
-          width={15}
-          alt="facebook icon"
-          className="footer-tag"
-        />
-        <Image
-          src={"/IMG_4342.png"}
-          height={10}
-          width={15}
-          alt="twitter icon"
-          className="footer-tag"
-        />
-      </div>
+      <form onSubmit={handleSubmit} className="newsletter-form">
+        <div className="form-group">
+          <label className="form-label" htmlFor="email">
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            className="form-input"
+          />
+        </div>
+        <button type="submit" className="form-button">
+          Sign Up
+        </button>
+      </form>
+      {message && <p className="form-message">{message}</p>}
     </div>
   );
 }
