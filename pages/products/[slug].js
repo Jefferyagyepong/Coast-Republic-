@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "@/components/Head/Header";
-
+import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 import path from "path";
 import fs from "fs";
@@ -93,7 +93,7 @@ export default function ProductPage({ product }) {
           </button>
         </div>
       </div>
-
+<Footer />
       </div>
     </>
   );
