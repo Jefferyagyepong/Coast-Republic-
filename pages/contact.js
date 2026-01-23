@@ -89,7 +89,7 @@ const Contact = () => {
                 <input
                   type="text"
                   required
-
+className="form-input"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -99,7 +99,7 @@ const Contact = () => {
                 <input
                   type="email"
                   required
-
+className="form-input"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
