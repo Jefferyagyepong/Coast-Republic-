@@ -130,7 +130,7 @@ className="form-input"
             <p>📞 +233 200-0000</p>
             <p>✉️ support@coastrepublic.com</p>
           </div>
-        </div>
+      
       </div>
       <Footer />
       </div>
