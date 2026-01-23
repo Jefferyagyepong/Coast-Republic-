@@ -72,16 +72,16 @@ const Contact = () => {
 
 
       <div className="newsletter-container">
-        <div>
-          <h2>Contact Us</h2>
-          <p>
+        
+          <h2 className="newsletter-title">Contact Us</h2>
+          <p className="newsletter-description">
             Have any questions? We are here to help! Fill out the form below, and we will get back to you.
           </p>
 
           {submitted ? (
-            <div>
+            
               ✅ Your message has been sent. We will get back to you soon!
-            </div>
+          
           ) : (
             <form onSubmit={handleSubmit} className="newsletter-form">
               <div>
@@ -141,3 +141,9 @@ className="form-input"
 };
 
 export default Contact;
+
+
+
+
+
+
