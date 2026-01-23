@@ -8,6 +8,7 @@ import Faq from "@/components/Footer/Faq";
 import { useCart } from "@/context/CartContext";
 import path from "path";
 import fs from "fs";
+import ProductNav from "@/components/Parts/ProductNav";
 
 export async function getStaticPaths() {
   const filePath = path.join(process.cwd(), "public", "data", "products.json");
@@ -63,6 +64,7 @@ export default function ProductPage({ product }) {
   
       <Header />
         < div   className="main-content">
+          <ProductNav />
       <div className="product-detail">
         <div className="product-image">
           <Image
