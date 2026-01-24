@@ -89,25 +89,25 @@ const Contact = () => {
               <div>
                 <label  className="form-label">Name</label>
                 <input
-                placeholder=="Name"
+                placeholder="Name"
                   type="text"
                   required
 className="form-input"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
-              </div>
+              </div><br />
               <div>
                 <label    className="form-label">Email</label>
                 <input
                   type="email"
                   required
-                   placeholder=="Email"
+                   placeholder="Email"
 className="form-input"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-              </div>
+              </div><br />
               <div className="inputGroup">
                 <label>Message</label>
                 <textarea
