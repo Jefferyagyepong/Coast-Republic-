@@ -74,37 +74,3 @@ display: block;
 gap:20px;
  
 }
-.button {
-  /* px-4 py-2 */
-  padding: 0.5rem 1rem; 
-  
-  /* bg-indigo-600 */
-  background-color: #4f46e5; 
-  
-  /* text-white */
-  color: #ffffff; 
-  
-  /* text-sm */
-  font-size: 0.875rem; 
-  line-height: 1.25rem;
-  
-  /* font-medium */
-  font-weight: 500; 
-  
-  /* rounded-lg */
-  border-radius: 0.5rem; 
-  
-  /* transition-colors */
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Reset default button styles if needed */
-  border: none;
-  cursor: pointer;
-}
-
-/* hover:bg-indigo-700 */
-.button:hover {
-  background-color: #4338ca;
-}
