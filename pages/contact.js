@@ -117,7 +117,7 @@ className="form-input"
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-
+<br />
               <button
                 type="submit"
 
@@ -131,9 +131,9 @@ className="form-input"
       
       </div>
            <div>
-            <h2>IN STORE WAREHOUSE </h2>
+            <h2>IN STORE LOC. </h2>
             <p>📍 7 Asafo Dadiesoaba</p>
-            <p>📞 +233 200-0000</p>
+            <p>📞 +233 244736420</p>
             <p>✉️ support@coastrepublic.com</p>
           </div>
       <Footer />
