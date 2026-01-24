@@ -131,10 +131,10 @@ className="form-input"
       
       </div>
            <div   classname= "location-container">
-            <h6>IN STORE LOC. </h2>
-            <p>📍 7 Asafo Dadiesoaba</p>
-            <p>📞 +233 244736420</p>
-            <p>✉️ support@coastrepublic.com</p>
+            <h6>IN STORE LOC. </h6>
+            <span>📍 AK-7175846 Asafo Dadiesoaba</span>
+            <span>📞 +233 244736420</span>
+            <span>✉️ support@coastrepublic.com</span>
           </div>
       <Footer />
       </div>
