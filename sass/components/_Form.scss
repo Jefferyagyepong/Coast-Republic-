@@ -39,10 +39,11 @@ opacity:0.4;
 .contact-container{
 width:100%;
 padding: 15px 20px;
-background: src("/coast.svg");
+background:url("/coast.svg");
 background-repeat:no-repeat;
-background-size:cover;
+background-size: cover;
 background-position:center;
+height: 100vh;
 
 }
 .newsletter-container {
