@@ -71,7 +71,7 @@ const Contact = () => {
 
 
 
-      <div className="newsletter-container">
+      <div className="contact-container">
         
           <h2 className="newsletter-title">Contact Us</h2>
           <p className="newsletter-description">
