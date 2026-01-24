@@ -130,7 +130,7 @@ className="form-input"
      
       
       </div>
-           <div   classname= "location-container">
+           <div   className="location-container">
             <h6>IN STORE LOC. </h6>
             <span>📍 AK-7175846 Asafo Dadiesoaba</span>
             <span>📞 +233 244736420</span>
