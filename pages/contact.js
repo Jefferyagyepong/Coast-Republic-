@@ -2,7 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Head from "next/head";
-
+import Link from "next/link"
 import Footer from "@/components/Footer/Footer";
 const Contact = () => {
   const [name, setName] = useState("");
