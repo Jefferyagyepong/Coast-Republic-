@@ -138,7 +138,10 @@ className="form-input"
             <span>✉️ support@coastrepublic.com</span>
           </div>
       <Footer />
-      <Link href={"/."}>Back to Shop</Link>
+      <div className="bottom-bar">
+          <Link href={"/."}>Back to Shop</Link>
+        </div>
+    
       </div>
 
     </>
