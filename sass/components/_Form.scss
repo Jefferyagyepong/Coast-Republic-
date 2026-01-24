@@ -1,4 +1,4 @@
-textarea.professional-textarea {
+textarea {
     width: 100%;
     padding: 1rem 1.25rem;
     font-family: 'Inter', system-ui, sans-serif;
@@ -15,14 +15,25 @@ textarea.professional-textarea {
     resize: vertical;
 }
 
-textarea.professional-textarea:focus {
+textarea:focus {
     outline: none;
     border-color: #6366f1;           /* indigo-500 */
     box-shadow: 
         0 0 0 3px rgba(99, 102, 241, 0.1),
         0 1px 3px rgba(0,0,0,0.08);
 }
+.location-container{
+width:100%;
+display:flex;
+alig-items:center;
+justify-content:center;
+padding: 10px 14px;
 
+span{
+
+opacity:0.4;
+}
+}
 
 
 .newsletter-container {
