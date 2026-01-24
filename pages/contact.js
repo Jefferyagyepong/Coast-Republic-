@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
-import Header from "@/components/Head/Header";
 import Head from "next/head";
 
 import Footer from "@/components/Footer/Footer";
@@ -66,7 +65,7 @@ const Contact = () => {
 
 
 
-      <Header />
+ 
 <div className="main-content">
 
 
@@ -139,6 +138,7 @@ className="form-input"
             <span>✉️ support@coastrepublic.com</span>
           </div>
       <Footer />
+      <Link href={"/."}>Back to Shop</Link>
       </div>
 
     </>
