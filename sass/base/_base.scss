@@ -67,7 +67,32 @@ img {
   flex-direction: column;
  
 }
+.button {
+  display: inline-block;       /* or block/flex depending on context */
+  padding: 0.75rem 1.5rem;     /* responsive-friendly units: rem */
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  
+  /* Core responsive magic */
+  width: 100%;                 /* full width on small screens */
+  max-width: 240px;            /* or 280px – prevents it from getting too wide on desktop */
+  margin: 0 auto;              /* centers when not full-width */
+}
 
+/* Optional: even better control with media query */
+@media (min-width: 640px) {    /* sm breakpoint – adjust to your design system */
+  .button {
+    width: auto;               /* shrink-to-fit content */
+    min-width: 140px;          /* optional minimum touch target */
+  }
+}
 
 
 
