@@ -80,7 +80,9 @@ const Contact = () => {
 
           {submitted ? (
             
+              <div>
               ✅ Your message has been sent. We will get back to you soon!
+            </div>
           
           ) : (
             <form onSubmit={handleSubmit} className="newsletter-form">
