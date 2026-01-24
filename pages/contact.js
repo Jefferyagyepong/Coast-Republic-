@@ -87,7 +87,7 @@ const Contact = () => {
           ) : (
             <form onSubmit={handleSubmit} className="newsletter-form">
               <div>
-                <label>Name</label>
+                <label  className="form-label">Name</label>
                 <input
                   type="text"
                   required
@@ -97,7 +97,7 @@ className="form-input"
                 />
               </div>
               <div className="inputGroup">
-                <label>Email</label>
+                <label    className="form-label">Email</label>
                 <input
                   type="email"
                   required
@@ -110,6 +110,7 @@ className="form-input"
                 <label>Message</label>
                 <textarea
                   required
+                  placeholder="Write your questions here"
 
                   rows="4"
                   value={message}
@@ -121,7 +122,7 @@ className="form-input"
                 type="submit"
 
               >
-                Send Message
+                Send
               </button>
             </form>
           )}
