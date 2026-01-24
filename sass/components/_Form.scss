@@ -27,6 +27,7 @@ width:100%;
 display:flex;
 alig-items:center;
 justify-content:center;
+flex-direction: column;
 padding: 10px 14px;
 
 span{
@@ -35,7 +36,12 @@ opacity:0.4;
 }
 }
 
+contact-container{
+width:100%;
+padding: 15px 20px;
+background: src("/coast.svg");
 
+}
 .newsletter-container {
   background-color: #fff;
   border-radius: 8px;
@@ -74,11 +80,6 @@ opacity:0.4;
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
-}
-
-.form-group {
-  flex: 1;
-  min-width: 200px;
 }
 
 .form-label {
