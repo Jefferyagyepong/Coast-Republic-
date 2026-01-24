@@ -89,6 +89,7 @@ const Contact = () => {
               <div>
                 <label  className="form-label">Name</label>
                 <input
+                placeholder=="Name"
                   type="text"
                   required
 className="form-input"
@@ -96,11 +97,12 @@ className="form-input"
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="inputGroup">
+              <div>
                 <label    className="form-label">Email</label>
                 <input
                   type="email"
                   required
+                   placeholder=="Email"
 className="form-input"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
