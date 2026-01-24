@@ -127,14 +127,15 @@ className="form-input"
             </form>
           )}
 
-          <div>
+     
+      
+      </div>
+           <div>
             <h2>IN STORE WAREHOUSE </h2>
             <p>📍 7 Asafo Dadiesoaba</p>
             <p>📞 +233 200-0000</p>
             <p>✉️ support@coastrepublic.com</p>
           </div>
-      
-      </div>
       <Footer />
       </div>
 
