@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
           
           ) : (
-            <form onSubmit={handleSubmit} className="newsletter-form">
+            <form onSubmit={handleSubmit} className="contact-form">
               <div>
                 <label  className="form-label">Name</label>
                 <input
@@ -130,8 +130,8 @@ className="form-input"
      
       
       </div>
-           <div>
-            <h2>IN STORE LOC. </h2>
+           <div   classname= "location-container">
+            <h6>IN STORE LOC. </h2>
             <p>📍 7 Asafo Dadiesoaba</p>
             <p>📞 +233 244736420</p>
             <p>✉️ support@coastrepublic.com</p>
