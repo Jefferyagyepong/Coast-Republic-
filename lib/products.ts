@@ -1,5 +1,5 @@
 import { prisma } from '@lib/db'
-import { ProductWithVariantsAndImages } from ../../types/Product'
+import { ProductWithVariantsAndImages } from '@types/Product'
 export async function getFeaturedProducts() {
  return prisma.products.findMany({
    where: { is_active: true, is_featured: true },
