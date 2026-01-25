@@ -10,7 +10,9 @@
     "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "prisma":{"seed": "ts-nodeprisma/seed.ts"},
+  "prisma": {
+    "seed": "ts-nodeprisma/seed.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -31,8 +33,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@types/node": "^25.0.10",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.3.0"
+    "globals": "^16.3.0",
+    "typescript": "^5.9.3"
   }
 }
