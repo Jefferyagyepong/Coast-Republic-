@@ -1,4 +1,4 @@
-import { prisma } from '../../lib/db'
+import { prisma } from '@lib/db'
 import { ProductWithVariantsAndImages } from '@/types/product'
 export async function getFeaturedProducts() {
  return prisma.products.findMany({
