@@ -1,11 +1,17 @@
-// In ../../types/Product.ts (or wherever ProductVariantWithImages lives)
-export interface ProductVariantWithImages {
-  id: string | number;
-  name: string;
-  price: number;
-  stock_quantity: number;
-  attributes?: Record<string, string | number | boolean>;
-  // ... other fields you already have (images, sku, etc.)
 
-  is_default?: boolean;     // ← add this line (optional = safest)
-}
+
+
+
+
+// types/Product.ts
+import { Prisma } from '@prisma/client'
+
+export type ProductWithVariantsAndImages = Prisma.ProductsGetPayload<{
+  include: {
+    category: true,
+    variants: {
+      include: { images: true }
+    },
+    images: true
+  }
+}>
