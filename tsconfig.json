@@ -9,7 +9,7 @@
         "baseUrl": ".",
     "paths": {
       "@lib/*": ["lib/*"],
-      "@types/*": ["types/*"]
+    
     },
     "allowJs": true,
     "skipLibCheck": true,
