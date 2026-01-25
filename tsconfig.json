@@ -8,7 +8,8 @@
     ],
         "baseUrl": ".",
     "paths": {
-      "@lib/*": ["lib/*"]
+      "@lib/*": ["lib/*"],
+      "@types/*": ["types/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
