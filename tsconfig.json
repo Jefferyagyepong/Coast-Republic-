@@ -8,7 +8,7 @@
     ],
         "baseUrl": ".",
     "paths": {
-      "@lib/*": ["lib/*"], or "./*" depending on your structure
+      "@lib/*": ["lib/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
