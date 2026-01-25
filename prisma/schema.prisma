@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+ provider = "prisma-client-js"
+}
+datasource db {
+ provider  = "postgresql"
+ url       = env("DATABASE_URL")
+ directUrl = env("DATABASE_URL")
+ schema    = "shop"
+}
+model categories {
+ id           BigInt   @id @default(autoincrement())
+ name         String
+ slug         String   @unique
+ parent_id    BigInt?
+ description  String?
+ is_active    Boolean  @default(true)
+ display_order Int     @default(0)
+ created_at   DateTime @default(now())
+ updated_at   DateTime @updatedAt
+ // Relations
+ parent       categories? @relation("categories_parent", fields: [parent_id], references: [id], onDelete: SetNull)
+ children     categories[] @relation("categories_parent")
+ products     products[]
+ @@map("categories")
+ @@index([parent_id])
+ @@index([slug])
+}
+model products {
+ id                 BigInt            @id @default(autoincrement())
+ sku                String?           @unique
+ name               String
+ slug               String            @unique
+ category_id        BigInt?
+ description        String?
+ short_description  String?
+ base_price         Decimal           @db.Decimal(12, 2)
+ is_active          Boolean           @default(true)
+ is_featured        Boolean           @default(false)
+ stock_quantity     Int               @default(0) @db.Integer
+ weight_kg          Decimal?          @db.Decimal(8, 3)
+ created_at         DateTime          @default(now())
+ updated_at         DateTime          @updatedAt
+ // Relations
+ category           categories?       @relation(fields: [category_id], references: [id], onDelete: SetNull)
+ variants           product_variants[]
+ images             product_images[]
+ @@map("products")
+ @@index([category_id])
+ @@index([slug])
+ @@index([is_active])
+ @@index([is_featured])
+}
+model product_variants {
+ id               BigInt        @id @default(autoincrement())
+ product_id       BigInt
+ sku              String?       @unique
+ name             String?
+ price            Decimal       @db.Decimal(12, 2)
+ compare_at_price Decimal?      @db.Decimal(12, 2)
+ stock_quantity   Int           @default(0) @db.Integer
+ is_default       Boolean       @default(false)
+ attributes       Json?
+ weight_kg        Decimal?      @db.Decimal(8, 3)
+ created_at       DateTime      @default(now())
+ updated_at       DateTime      @updatedAt
+ // Relations
+ product          products      @relation(fields: [product_id], references: [id], onDelete: Cascade)
+ images           product_images[]
+ @@map("product_variants")
+ @@index([product_id])
+ @@index([sku])
+}
+model product_images {
+ id              BigInt      @id @default(autoincrement())
+ product_id      BigInt?
+ variant_id      BigInt?
+ url             String
+ alt_text        String?
+ is_primary      Boolean     @default(false)
+ display_order   Int         @default(0)
+ width           Int?
+ height          Int?
+ mime_type       String?
+ file_size_bytes BigInt?
+ created_at      DateTime    @default(now())
+ // Relations
+ product         products?   @relation(fields: [product_id], references: [id], onDelete: Cascade)
+ variant         product_variants? @relation(fields: [variant_id], references: [id], onDelete: Cascade)
+ @@map("product_images")
+ @@index([product_id])
+ @@index([variant_id])
+ @@index([is_primary])
+}

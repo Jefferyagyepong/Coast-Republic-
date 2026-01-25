@@ -14,8 +14,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@prisma/client": "^7.3.0",
+    "bcryptjs": "^3.0.3",
+    "drizzle-orm": "^0.45.1",
     "eslint-config-next": "^16.0.10",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.563.0",
     "next": "^16.0.10",
+    "pg": "^8.17.2",
+    "prisma": "^7.3.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "sass": "^1.92.1"
