@@ -1,5 +1,5 @@
 'use client'
-import { useCart } from '@/context/CartContext'
+import { useCart } from '../../context/CartContext'
 import { ShoppingCart } from 'lucide-react'
 import { useState } from 'react'
 type Props = {
