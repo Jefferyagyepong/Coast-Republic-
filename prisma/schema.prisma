@@ -12,7 +12,7 @@ datasource db {
  provider  = "postgresql"
  //url       = env("DATABASE_URL")
  //directUrl = env("DATABASE_URL")
- schema    = "shop"
+ //schema    = "shop"
 }
 model categories {
  id           BigInt   @id @default(autoincrement())
