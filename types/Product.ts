@@ -15,3 +15,7 @@ export type ProductWithVariantsAndImages = Prisma.ProductsGetPayload<{
     images: true
   }
 }>
+// This defines the Variant type specifically
+export type ProductVariantWithImages = Prisma.ProductVariantsGetPayload<{
+  include: { images: true }
+}
