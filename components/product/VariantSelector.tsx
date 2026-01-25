@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { ProductVariantWithImages } from '@types/Product'
+import { ProductVariantWithImages } from '@/types/Product'
 
 import React from 'react'
 interface Props {
