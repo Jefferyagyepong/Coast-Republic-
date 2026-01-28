@@ -1,5 +1,5 @@
 import { prisma } from '@/lib/db'
-import type { Product, ProductVariant, ProductImage, Category } from '@prisma/client'
+import type { Products, ProductVariant, ProductImage, Category } from '@prisma/client'
 
 export type ProductWithRelations = Product & {
   category: Category | null
