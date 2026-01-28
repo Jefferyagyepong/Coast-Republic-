@@ -1,12 +1,13 @@
+// src/lib/products.ts
 import { prisma } from '@/lib/db'
-import type { products, ProductVariant, ProductImage, Category } from '@prisma/client'
+import type { products, product_variants, product_images, categories } from '@prisma/client'
 
-export type ProductWithRelations = Product & {
-  category: Category | null
-  variants: (ProductVariant & {
-    images: ProductImage[]
+export type ProductWithRelations = products & {
+  category: categories | null
+  variants: (product_variants & {
+    images: product_images[]
   })[]
-  images: ProductImage[]
+  images: product_images[]
 }
 
 export async function getFeaturedProducts(): Promise<ProductWithRelations[]> {
