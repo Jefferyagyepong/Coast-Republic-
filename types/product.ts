@@ -1,16 +1,11 @@
+import type { Product, ProductVariant, ProductImage, Category } from '@prisma/client'
 
-import { Prisma } from '@prisma/client'
-
-export type ProductWithVariantsAndImages = Prisma.ProductsGetPayload<{
-  include: {
-    category: true,
-    variants: {
-      include: { images: true }
-    },
-    images: true
-  }
-}>
-// This defines the Variant type specifically
-export type ProductVariantWithImages = Prisma.ProductVariantsGetPayload<{
-  include: { images: true }
+export interface ProductWithRelations extends Product {
+  category: Category | null
+  variants: Array<
+    ProductVariant & {
+      images: ProductImage[]
+    }
+  >
+  images: ProductImage[]
 }
