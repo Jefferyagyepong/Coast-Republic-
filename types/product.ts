@@ -1,11 +1,16 @@
-import type { Product, ProductVariant, ProductImage, Category } from '@prisma/client'
+import type {
+  products,
+  product_variants,
+  product_images,
+  categories,
+} from '@prisma/client'
 
-export interface ProductWithRelations extends Product {
-  category: Category | null
+export interface ProductWithRelations extends products {
+  category: categories | null
   variants: Array<
-    ProductVariant & {
-      images: ProductImage[]
+    product_variants & {
+      images: product_images[]
     }
   >
-  images: ProductImage[]
+  images: product_images[]
 }
