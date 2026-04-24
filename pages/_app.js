@@ -1,10 +1,10 @@
 // pages/_app.js
 
-import '../styles/globals.css'; // or '../sass/main.scss' — pick one
+import '../styles/globals.css';
 
 import React from 'react';
 import { CartProvider } from '@/context/CartContext';
-import Header from '@/components/layout/Header';
+import Header from '@/components/Head/Navbar';
 // import Footer from '@/components/layout/Footer';
 
 function MyApp({ Component, pageProps }) {
