@@ -2,12 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react'
 import Image from 'next/image'
-
-interface ProductImage {
-  id: string | number
-  url: string
-  alt?: string
-}
+import type { ProductImage } from '@prisma/client'
 
 interface ImageSliderProps {
   images: ProductImage[]
@@ -91,8 +86,8 @@ export default function ImageSlider({ images }: ImageSliderProps) {
           {images.map((img, i) => (
             <div key={img.id} className="relative h-full flex-shrink-0" style={{ width: `${100 / images.length}%` }}>
               <Image
-                src={img.url}
-                alt={img.alt ?? `Product image ${i + 1}`}
+                src={img.src}
+                alt={`Product image ${i + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -108,7 +103,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              backgroundImage: `url(${active.url})`,
+              backgroundImage: `url(${active.src})`,
               backgroundSize: '250%',
               backgroundPosition: `${zoomPos.x}% ${zoomPos.y}%`,
               backgroundRepeat: 'no-repeat',
@@ -181,8 +176,8 @@ export default function ImageSlider({ images }: ImageSliderProps) {
               }}
             >
               <Image
-                src={img.url}
-                alt={img.alt ?? `Thumbnail ${i + 1}`}
+                src={img.src}
+                alt={`Thumbnail ${i + 1}`}
                 fill
                 sizes="72px"
                 className="object-cover"
