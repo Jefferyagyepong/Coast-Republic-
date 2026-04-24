@@ -1,5 +1,5 @@
 // pages/_app.js
-
+import '/sass/main.scss';
 
 import React from 'react';
 import { CartProvider } from '@/context/CartContext';
