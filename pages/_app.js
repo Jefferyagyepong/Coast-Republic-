@@ -1,10 +1,10 @@
-// pages/_app.js
+
 import '/sass/main.scss';
 
 import React from 'react';
 import { CartProvider } from '@/context/CartContext';
 import Header from '@/components/Head/Navbar';
-// import Footer from '@/components/layout/Footer';
+
 
 function MyApp({ Component, pageProps }) {
   return (
