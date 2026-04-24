@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react'
 import Image from 'next/image'
-import type { ProductImage } from '@prisma/client'
+import type { product_images as ProductImage } from '@prisma/client'
 
 interface ImageSliderProps {
   images: ProductImage[]
