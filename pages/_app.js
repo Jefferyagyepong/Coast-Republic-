@@ -1,5 +1,4 @@
-
-import '/sass/main.scss';
+import "/sass/main.scss";
 
 import React from 'react';
 import { CartProvider } from '@/context/CartContext';
