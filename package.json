@@ -18,7 +18,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@libsql/client": "^0.17.0",
     "bcryptjs": "^3.0.3",
     "drizzle-orm": "^0.45.1",
     "eslint-config-next": "^16.0.10",
