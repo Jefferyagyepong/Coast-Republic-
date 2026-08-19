@@ -19,7 +19,6 @@
   "license": "ISC",
   "dependencies": {
     "@libsql/client": "^0.17.0",
-    "@prisma/client": "^7.3.0",
     "bcryptjs": "^3.0.3",
     "drizzle-orm": "^0.45.1",
     "eslint-config-next": "^16.0.10",
@@ -38,8 +37,6 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.3.0",
-    "prisma": "^7.3.0",
-    "typescript": "^5.9.3"
+    "globals": "^16.3.0"
   }
 }
