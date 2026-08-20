@@ -1,0 +1,97 @@
+// Add to your sass structure (e.g. sass/pages/_shop.scss) and import it
+// from your main stylesheet. Class names match what cart.js, checkout.js,
+// and products/[id].js use — adjust colors/spacing to your existing theme.
+
+// ---- Cart page ----
+.cart-empty {
+  text-align: center;
+  padding: 3rem 0;
+  .btn-primary { display: inline-block; margin-top: 1rem; }
+}
+
+.cart-summary-line {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+
+  &__image img { border-radius: 4px; object-fit: cover; }
+  &__name { font-weight: 600; margin: 0; }
+  &__meta { font-size: 0.85rem; color: #777; margin: 0.2rem 0; }
+  &__price { font-size: 0.85rem; color: #555; margin: 0; }
+  &__qty {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    button {
+      width: 28px; height: 28px;
+      border: 1px solid #ccc; background: #fff; border-radius: 4px; cursor: pointer;
+    }
+  }
+  &__line-total { font-weight: 600; }
+  &__remove {
+    background: none; border: none; color: #d9534f; cursor: pointer; font-size: 0.85rem;
+  }
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__total {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    strong { font-size: 1.5rem; }
+  }
+}
+
+// ---- Checkout page ----
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.checkout-form {
+  label { display: block; margin-bottom: 1rem; font-weight: 500; }
+  input, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+  }
+}
+
+.checkout-error {
+  color: #d9534f;
+  margin-bottom: 1rem;
+}
+
+.checkout-summary {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 6px;
+  height: fit-content;
+
+  ul { list-style: none; padding: 0; margin: 1rem 0; }
+  li {
