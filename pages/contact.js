@@ -150,9 +150,3 @@ className="form-input"
 };
 
 export default Contact;
-
-
-
-
-
-

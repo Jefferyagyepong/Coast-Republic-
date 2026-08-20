@@ -1,22 +1,21 @@
-import "@/sass/main.scss";
-
-import React from 'react';
-import { CartProvider } from '@/context/CartContext';
-import Header from '@/components/Head/Navbar';
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
 
 
-function MyApp({ Component, pageProps }) {
+import  "../sass/main.scss";
+
+import { CartProvider } from "../context/CartContext";
+import ProductList from "@/components/Product";
+import Cart from "@/components/Cart";
+import CartOverlay from "@/components/CartOverlay";
+
+export default function MyApp({ Component, pageProps }) {
   return (
     <CartProvider>
-      <div className="min-h-screen flex flex-col antialiased">
-        <Header />
-        <main className="flex-grow">
-          <Component {...pageProps} />
-        </main>
-        {/* <Footer /> */}
-      </div>
+      <Component {...pageProps} />
+      <Cart />
+      <CartOverlay />
+      <ProductList />
     </CartProvider>
   );
 }
-
-export default MyApp;
