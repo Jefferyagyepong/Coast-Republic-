@@ -4,7 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import { getAllProducts } from "@/lib/products";
-
+import ProductNav from "@/components/Parts/ProductNav";
 export async function getStaticProps() {
   return { props: { products: getAllProducts() } };
 }
@@ -66,6 +66,9 @@ const ProductsPage = ({ products }) => {
         <div className="custom-container">
           <div className="container-center">
             <h1 className="heading-large">Shop All</h1>
+            
+                      <ProductNav />
+            
 
             <div className="product-grid">
               {products.map((product) => (
