@@ -28,12 +28,12 @@ export default function NewsletterForm() {
       <p className="newsletter-description">
         Stay updated with the latest style trends and get an exclusive 10% off
         when you subscribe to our emails. Exclusions apply. For details, see our{" "}
-        <Link href={"/privacy"}>
-          <a className="newsletter-link">Privacy Policy</a>
+        <Link href={"/privacy"} className="newsletter-link">
+          Privacy Policy
         </Link>{" "}
         and{" "}
-        <Link href={"/terms"}>
-          <a className="newsletter-link">Terms and Conditions</a>
+        <Link href={"/terms"} className="newsletter-link">
+          Terms and Conditions
         </Link>
         .
       </p>
