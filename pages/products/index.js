@@ -84,8 +84,8 @@ const ProductsPage = ({ products }) => {
                     <Image
                       src={product.images[0]}
                       alt={product.name}
-                      width={300}
-                      height={300}
+                      width={1300}
+                      height={1300}
                     />
                   )}
                   <p className="product-card__name">{product.name}</p>
