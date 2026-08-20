@@ -86,6 +86,7 @@ const ProductsPage = ({ products }) => {
                       alt={product.name}
                       width={300}
                       height={300}
+                      style={{ objectFit: 'cover' }} // Prevents image stretching
                     />
                   )}
                   <p className="product-card__name">{product.name}</p>
