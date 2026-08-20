@@ -8,16 +8,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "eslint-config-next": "^16.0.10",
     "next": "^16.0.10",
-    "pg": "^8.17.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "sass": "^1.92.1"
