@@ -120,7 +120,7 @@ export default function ProductPageNav() {
       </div>
 
       {/* Optional hint line */}
-      <div className="mt-2.5 px-4 text-sm text-gray-500 dark:text-gray-400">
+      <div className="dark">
         {activeTab === 'delivery' && 'Same-day & next-day in Accra • Free over GH₵400'}
         {activeTab === 'pickup'   && 'Collect from Osu or Airport City in 1–2 hrs'}
         {activeTab === 'details'  && 'Full specs, dimensions & features'}
