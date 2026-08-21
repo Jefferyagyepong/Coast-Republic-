@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     
          
-        <Link  className="cart" href={"#"}>
+        <Link  className="cart" href={"/cart"}>
              Cart ({getCartCount()})
         </Link>
        
