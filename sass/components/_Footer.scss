@@ -1,6 +1,5 @@
-
-.footer-tag{
-padding-top:20px;
+.footer-tag {
+  padding-top: 20px;
 }
 
 .footer-link {
@@ -11,8 +10,8 @@ padding-top:20px;
 .payment-logo {
   width: auto;
   height: auto;
-   border-radius: 2px;
-   padding:12px;
+  border-radius: 2px;
+  padding: 12px;
 }
 
 footer .container .footer-section ul {
@@ -20,8 +19,8 @@ footer .container .footer-section ul {
 }
 
 .footer {
-  width:100%;
-  color:#000;
+  width: 100%;
+  color: #000;
 
 }
 
@@ -33,20 +32,20 @@ footer .container .footer-section ul {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color:#000;
-  
+  color: #000;
+
 }
 
 .brand-info p {
 
   line-height: 1.6;
-  color:#000;
+  color: #000;
 }
 
 .footer-section h5 {
 
   text-transform: uppercase;
-  color:#000;
+  color: #000;
   padding: 10px;
   opacity: 0.7;
 }
@@ -62,6 +61,8 @@ footer .container .footer-section ul {
   color: #222;
   text-decoration: none;
   transition: color 0.3s ease;
+  padding: 10px;
+  text-decoration: underline;
 }
 
 .footer-section ul li a:hover {
@@ -73,8 +74,8 @@ footer .container .footer-section ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap:15px;
-  padding-top:20px;
+  gap: 15px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
