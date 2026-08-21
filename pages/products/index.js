@@ -223,8 +223,9 @@ const ProductsPage = ({ products }) => {
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
+   margin-top: 1rem;
 }
-        }
+        
     
         .controls select {
           padding: 12px;
