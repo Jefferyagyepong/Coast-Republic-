@@ -222,8 +222,7 @@ const ProductsPage = ({ products }) => {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          padding-top: 40px;
-          padding-bottom: 40px;
+           gap:20px;
         }
         .controls label {
           display: flex;
