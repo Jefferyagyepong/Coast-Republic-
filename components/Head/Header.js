@@ -16,7 +16,7 @@ function Header() {
                <Menu />
           
           <Link href={"./"}>
-            <h4 className="logo">Coast Republic</h4>
+            <h3 className="logo">Coast Republic</h3>
           </Link>
           
               <Navbar />
