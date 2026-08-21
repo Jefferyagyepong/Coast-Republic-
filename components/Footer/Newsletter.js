@@ -24,7 +24,7 @@ export default function NewsletterForm() {
 
   return (
     <div className="newsletter-container">
-      <h3 className="newsletter-title">Subscribe to our Newsletter</h3>
+      <h5 className="newsletter-title">Subscribe To Our Newsletter</h5>
       <p className="newsletter-description">
         Stay updated with the latest style trends and get an exclusive 10% off
         when you subscribe to our emails. Exclusions apply. For details, see our{" "}

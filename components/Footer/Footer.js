@@ -35,7 +35,7 @@ const Footer = () => {
 
       </div>
 
-      <h5 className="text-align-center">Accepted Payment Methods</h5>
+      <h6 className="text-align-center">Accepted Payment Methods</h6>
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
