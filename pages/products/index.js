@@ -218,13 +218,12 @@ const ProductsPage = ({ products }) => {
       <Footer />
       <style jsx global>{`
         .controls {
+        
           display: flex;
-          background: blue;
           flex-wrap: wrap;
           align-items: center;
-          gap: 20px;
-          padding-top: 20px;
-          padding-bottom: 20px;
+          padding-top: 40px;
+          padding-bottom: 40px;
         }
         .controls label {
           display: flex;
