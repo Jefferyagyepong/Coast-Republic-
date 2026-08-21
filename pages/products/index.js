@@ -268,6 +268,9 @@ const ProductsPage = ({ products }) => {
           background: #e0e0e0;
           margin: 1.5rem 0;
         }
+          .clear-filters-btn{
+          color:#000;
+          }
       `}</style>
     </>
   );
