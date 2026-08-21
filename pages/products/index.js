@@ -225,7 +225,7 @@ const ProductsPage = ({ products }) => {
   gap: 22px;
   juatify-content: center;
   padding: 10px;
-   margin-top: 1rem;
+   margin-top:11rem;
 }
         
     
