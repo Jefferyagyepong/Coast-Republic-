@@ -102,7 +102,7 @@ const ProductsPage = ({ products }) => {
         </div>
             
 
-            <div className="product-grid">
+            <div className="product-container">
               {products.map((product) => (
                 <Link
                   key={product.id}
@@ -148,6 +148,50 @@ const ProductsPage = ({ products }) => {
       </div>
 
       <Footer />
+       <style jsx global>{`
+    
+        .controls {
+          display: flex;
+          gap: 20px;
+          padding-top:20px;
+          padding-bottom:20px;
+    
+  
+        }
+        .controls label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+        }
+        .controls select {
+          padding: 8px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          color:#000;
+        }
+              .product-container{ 
+          width:100%;
+          backgorund: red;
+    
+          margin: 0 auto;
+          }
+
+ 
+          }
+          .viewButton{
+    
+          padding: 8px 15px:
+          }
+          hr{
+       border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 1.5rem 
+          }
+    
+      `}</style>
     </>
   );
 };
