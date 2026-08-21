@@ -219,6 +219,7 @@ const ProductsPage = ({ products }) => {
       <style jsx global>{`
         .controls {
           display: flex;
+          background: blue;
           flex-wrap: wrap;
           align-items: center;
           gap: 20px;
