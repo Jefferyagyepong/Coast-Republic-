@@ -222,18 +222,18 @@ const ProductsPage = ({ products }) => {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-           gap:20px;
+          margin-top:20px;
+           gap:30px;
         }
         .controls label {
           display: flex;
           align-items: center;
-          gap: 10px;
-          font-size: 16px;
+          gap: 15px;
+         
         }
         .controls select,
         .controls input {
-          padding: 8px;
-          font-size: 14px;
+          padding: 12px;
           border: 1px solid #ccc;
           border-radius: 4px;
           color: #000;
