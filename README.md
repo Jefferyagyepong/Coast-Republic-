@@ -138,7 +138,7 @@ Distributed under the MIT License. See the `LICENSE` file for more information.
 
 ## ✉️ Contact
 
-Jeffery Agyepong – [(https://jefferyagyepong-io.vercel.app/logo-twitter.svg)]
+Jeffery Agyepong – [https://x.com/jeffagyepong]
 
 Project Link: [https://github.com](https://github.com)
 
