@@ -118,7 +118,7 @@ const ProductsPage = ({ products }) => {
                   value={search}
                   onChange={handleSearchChange}
                   placeholder="Search products..."
-                  className="search-products"
+                  className="search-products form-input"
                 />
               </label>      
               <label>
