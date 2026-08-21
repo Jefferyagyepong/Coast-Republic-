@@ -140,7 +140,7 @@ Distributed under the MIT License. See the `LICENSE` file for more information.
 
 Jeffery Agyepong – [https://x.com/jeffagyepong]
 
-Project Link: [https://github.com](https://github.com)
+Project Link: [https://github.com](https://github.com](https://github.com/Jefferyagyepong/Coast-Republic-)
 
 
 
