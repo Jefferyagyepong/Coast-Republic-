@@ -110,7 +110,7 @@ const ProductsPage = ({ products }) => {
              
 
             <div className="controls">
-                <div>
+           
                 <label >
                 Search:
                 <input
@@ -119,13 +119,8 @@ const ProductsPage = ({ products }) => {
                   onChange={handleSearchChange}
                   placeholder="Search products..."
                   
-                 
- 
                 />
-              </label>
-              </div>
-           
-           
+              </label>      
               <label>
                 Filter:
                 <select
