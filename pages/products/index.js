@@ -109,7 +109,9 @@ const ProductsPage = ({ products }) => {
             <ProductNav />
 
             <div className="controls">
-              <label>
+           
+              <div>
+                   <label>
                 Search:
                 <input
                   type="text"
@@ -119,6 +121,7 @@ const ProductsPage = ({ products }) => {
                  
                 />
               </label>
+              </div>
 
               <label>
                 Filter:
