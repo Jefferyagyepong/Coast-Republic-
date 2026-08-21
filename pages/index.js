@@ -23,6 +23,10 @@ const Home = () => {
     "/products/true1c.jpg",
     "/products/true1c.jpg",
     "/products/true1c.jpg",
+      "/products/true1c.jpg",
+        "/products/true1c.jpg",
+          "/products/true1c.jpg",
+            "/products/true1c.jpg",
     
  
     // Replace with real Calvin Klein / Walmart product image URLs
@@ -68,7 +72,7 @@ const Home = () => {
           <div className="container-center">
             <h5>
               Discover what just dropped
-            </h5>
+            </h5><br />
 
             <Sale images={calvinKleinImages} autoPlayInterval={3500} />
           </div>
