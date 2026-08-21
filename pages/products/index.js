@@ -270,6 +270,8 @@ const ProductsPage = ({ products }) => {
           border: none;
           border-radius: 20px;
           width: 100%;
+          background:#e8e8e8;
+          color:#222;
           }
       `}</style>
     </>
