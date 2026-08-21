@@ -228,13 +228,14 @@ const ProductsPage = ({ products }) => {
         .controls label {
           display: flex;
           align-items: center;
-          gap: 15px;
+          gap: 6px;
          
         }
         .controls select,
         .controls input {
           padding: 12px;
           border: 1px solid #ccc;
+          width:100%;
           border-radius: 4px;
           color: #000;
         }
