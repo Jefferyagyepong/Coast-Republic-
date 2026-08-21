@@ -144,11 +144,9 @@ animation-delay:10s ease;
 
 
 .cart{
-color: #fff;
+color: #000;
 
 }
-
-
 
 .header-flex-row{
 width:100%;
@@ -164,12 +162,9 @@ justify-content:space-between;
 header {
 position:fixed;
   width:100%;
-  background-color:#3C3B6E;
+  background-color:#eafafe;
 z-index:1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
-
- 
-
+color:#000;
 }
 .main-content {
   padding-top: 130px; /* Must match the header's height */
