@@ -107,24 +107,26 @@ const ProductsPage = ({ products }) => {
             <h1 className="heading-large">Shop All</h1>
 
             <ProductNav />
-               <div className="controls">
-                <label>
+             
+
+            <div className="controls">
+                <div className="form-group">
+                <label className="form-label" >
                 Search:
                 <input
                   type="text"
                   value={search}
                   onChange={handleSearchChange}
                   placeholder="Search products..."
-                    className="form-input"
+                  
                  
+ 
                 />
               </label>
               </div>
-
-            <div className="controls">
            
            
-              <label>
+              <label className="form-label">
                 Filter:
                 <select
                   onChange={handleFilterChange}
@@ -139,7 +141,7 @@ const ProductsPage = ({ products }) => {
                 </select>
               </label>
 
-              <label>
+              <label className="form-label">
                 Sort:
                 <select
                   onChange={handleSortChange}
