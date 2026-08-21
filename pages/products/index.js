@@ -71,6 +71,35 @@ const ProductsPage = ({ products }) => {
             <h1 className="heading-large">Shop All</h1>
             
                       <ProductNav />
+                      <div className="controls">
+          <label>
+            Filter:
+            <select
+              onChange={e => setFilter(e.target.value)}
+              value={filter}
+              className="background-bg"
+            >
+              {categories.map(category => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+              </label>
+          <label>
+            Sort:
+            <select
+              onChange={e => setSort(e.target.value)}
+              value={sort}
+              className="background-bg"
+            >
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+            </select>
+          </label>
+        </div>
             
 
             <div className="product-grid">
@@ -98,6 +127,24 @@ const ProductsPage = ({ products }) => {
             </div>
           </div>
         </div>
+      </div>
+           {/* Pagination Buttons */}
+      <div className="pagination-controls">
+        <button onClick={handlePrevPage} disabled={currentPage === 1}>
+          Previous
+        </button>
+        <span>
+          Page {currentPage} of {totalPages}
+        </span>
+        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
+      <hr/>
+      
+        <div className="feedback-container">
+      <h4>We would like to hear what you think!</h4>
+      <Link href={"#"}>Give feedback</Link>
       </div>
 
       <Footer />
