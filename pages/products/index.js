@@ -104,7 +104,7 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h1 className="heading-large">Shop All</h1>
+            <h3 className="heading-large">Shop All</h3>
 
             <ProductNav />
              
