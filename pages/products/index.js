@@ -116,7 +116,7 @@ const ProductsPage = ({ products }) => {
                   value={search}
                   onChange={handleSearchChange}
                   placeholder="Search products..."
-                  className="background-bg"
+                 
                 />
               </label>
 
@@ -125,7 +125,7 @@ const ProductsPage = ({ products }) => {
                 <select
                   onChange={handleFilterChange}
                   value={filter}
-                  className="background-bg"
+                
                 >
                   {categories.map((category) => (
                     <option key={category} value={category}>
@@ -140,7 +140,7 @@ const ProductsPage = ({ products }) => {
                 <select
                   onChange={handleSortChange}
                   value={sort}
-                  className="background-bg"
+             
                 >
                   <option value="name-asc">Name (A-Z)</option>
                   <option value="name-desc">Name (Z-A)</option>
