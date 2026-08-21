@@ -26,7 +26,7 @@ const Home = () => {
       "/products/true1c.jpg",
         "/products/true1c.jpg",
           "/products/true1c.jpg",
-            "/products/true1c.jpg",
+            "GYAMFUA.svg",
     
  
     // Replace with real Calvin Klein / Walmart product image URLs
