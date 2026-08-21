@@ -268,7 +268,8 @@ const ProductsPage = ({ products }) => {
           .search-products{
           padding: 12px 17px;
           border: none;
-          border-radius: 50%;
+          border-radius: 20px;
+          width: 100%;
           }
       `}</style>
     </>
