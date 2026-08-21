@@ -111,7 +111,7 @@ const ProductsPage = ({ products }) => {
             <div className="controls">
            
               <div>
-                   <label>
+                <label>
                 Search:
                 <input
                   type="text"
