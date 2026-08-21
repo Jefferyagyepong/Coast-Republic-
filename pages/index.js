@@ -18,10 +18,13 @@ import Sale from "@/components/Parts/Sale";
 
 const Home = () => {
   const calvinKleinImages = [
-    "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=1200&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=1200&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=1200&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&auto=format&fit=crop&q=80",
+    "/products/true1c.jpg",
+    "/products/true1c.jpg",
+    "/products/true1c.jpg",
+    "/products/true1c.jpg",
+    "/products/true1c.jpg",
+    
+ 
     // Replace with real Calvin Klein / Walmart product image URLs
   ];
 
