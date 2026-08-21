@@ -63,9 +63,9 @@ const Home = () => {
         <Jeans />
         <div className="custom-container">
           <div className="container-center">
-            <h4 className="heading-large">
-              Calvin Klein Collection
-            </h4>
+            <h5>
+              Discover what just dropped
+            </h5>
 
             <Sale images={calvinKleinImages} autoPlayInterval={3500} />
           </div>
