@@ -118,7 +118,7 @@ const ProductsPage = ({ products }) => {
                   value={search}
                   onChange={handleSearchChange}
                   placeholder="Search products..."
-                  
+                  className="search_products"
                 />
               </label>      
               <label>
@@ -264,6 +264,11 @@ const ProductsPage = ({ products }) => {
         }
           .clear-filters-btn{
           color:#000;
+          }
+          search_products{
+          padding: 12px 17px;
+          border: none;
+          border-radius: 50%;
           }
       `}</style>
     </>
