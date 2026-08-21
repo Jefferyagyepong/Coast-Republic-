@@ -107,10 +107,7 @@ const ProductsPage = ({ products }) => {
             <h1 className="heading-large">Shop All</h1>
 
             <ProductNav />
-
-            <div className="controls">
-           
-              <div>
+               <div className="controls">
                 <label>
                 Search:
                 <input
@@ -124,6 +121,9 @@ const ProductsPage = ({ products }) => {
               </label>
               </div>
 
+            <div className="controls">
+           
+           
               <label>
                 Filter:
                 <select
