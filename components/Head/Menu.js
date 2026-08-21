@@ -27,6 +27,16 @@ const HamburgerMenu = () => {
       </ul>
 
 
+
+
+           <div className="footer-bottom">
+        <p className="text-align-center">
+          © {new Date().getFullYear()} Coast Republic Store. All rights
+          reserved.
+        </p>
+      </div>
+
+
     </nav>
   );
 };
