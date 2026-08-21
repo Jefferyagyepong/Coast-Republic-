@@ -266,12 +266,13 @@ const ProductsPage = ({ products }) => {
           color:#000;
           }
           .search-products{
-          padding: 12px 17px;
-          border: none;
-          border-radius: 20px;
-          width: 100%;
-          background:#e8e8e8;
-          color:#222;
+        width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
           }
       `}</style>
     </>
