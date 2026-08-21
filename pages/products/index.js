@@ -219,11 +219,11 @@ const ProductsPage = ({ products }) => {
       <Footer />
       <style jsx global>{`
         .controls {
-        display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1.25rem;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
         }
     
         .controls select {
