@@ -110,8 +110,8 @@ const ProductsPage = ({ products }) => {
              
 
             <div className="controls">
-                <div className="form-group">
-                <label className="form-label" >
+                <div>
+                <label >
                 Search:
                 <input
                   type="text"
@@ -126,7 +126,7 @@ const ProductsPage = ({ products }) => {
               </div>
            
            
-              <label className="form-label">
+              <label>
                 Filter:
                 <select
                   onChange={handleFilterChange}
@@ -141,7 +141,7 @@ const ProductsPage = ({ products }) => {
                 </select>
               </label>
 
-              <label className="form-label">
+              <label>
                 Sort:
                 <select
                   onChange={handleSortChange}
