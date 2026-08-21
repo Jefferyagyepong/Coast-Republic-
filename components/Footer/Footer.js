@@ -14,7 +14,7 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="footer-section">
-          <h3>Shop</h3>
+          <h5>Shop</h5>
           <ul>
 
             <li><Link href="/products/">Men</Link></li>
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>Help</h3><br/>
+          <h5>Help</h5><br/>
           <ul>
             <li><Link href="/faq">FAQ</Link></li><br/>
             <li><Link href="/delivery">Delivery</Link></li><br/>
@@ -35,7 +35,7 @@ const Footer = () => {
 
       </div>
 
-      <h5 className="text-align-center">WE ACCEPT THE FOLLOWING PAYMENT METHODS </h5>
+      <h5 className="text-align-center">Accepted Payment Methods</h5>
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
