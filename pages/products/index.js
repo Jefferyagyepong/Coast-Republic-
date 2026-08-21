@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
@@ -8,6 +7,7 @@ import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import { getAllProducts } from "@/lib/products";
 import ProductNav from "@/components/Parts/ProductNav";
+
 export async function getStaticProps() {
   return { props: { products: getAllProducts() } };
 }
@@ -15,49 +15,85 @@ export async function getStaticProps() {
 const formatMoney = (amount, currency) =>
   `${currency} ${Number(amount).toFixed(2)}`;
 
+const DEFAULT_FILTER = "All";
+const DEFAULT_SORT = "name-asc";
+
 const ProductsPage = ({ products }) => {
-  
-     // Set the items per page and current page state
   const itemsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
+  const [filter, setFilter] = useState(DEFAULT_FILTER);
+  const [sort, setSort] = useState(DEFAULT_SORT);
+  const [search, setSearch] = useState("");
 
-  // Calculate the total pages
-  const totalPages = Math.ceil(products.length / itemsPerPage);
+  // Unique categories for filter dropdown
+  const categories = [
+    DEFAULT_FILTER,
+    ...new Set(products.map((product) => product.category)),
+  ];
 
-  // Get the current items to display
-  const currentItems = products.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+  // Filter + search + sort — recomputed only when inputs change
+  const filteredProducts = useMemo(() => {
+    return products
+      .filter(
+        (product) => filter === DEFAULT_FILTER || product.category === filter
+      )
+      .filter((product) =>
+        product.name.toLowerCase().includes(search.trim().toLowerCase())
+      )
+      .sort((a, b) => {
+        if (sort === "price-asc") return a.price - b.price;
+        if (sort === "price-desc") return b.price - a.price;
+        if (sort === "name-asc") return a.name.localeCompare(b.name);
+        if (sort === "name-desc") return b.name.localeCompare(a.name);
+        return 0;
+      });
+  }, [products, filter, search, sort]);
+
+  // Pagination derives from the FILTERED list, not the raw products list
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / itemsPerPage));
+
+  // Clamp currentPage in case a filter change makes it exceed the new totalPages
+  const safePage = Math.min(currentPage, totalPages);
+
+  const currentItems = filteredProducts.slice(
+    (safePage - 1) * itemsPerPage,
+    safePage * itemsPerPage
   );
 
   const handlePrevPage = () => {
-    if (currentPage > 1) setCurrentPage((prev) => prev - 1);
+    if (safePage > 1) setCurrentPage(safePage - 1);
   };
 
   const handleNextPage = () => {
-    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1);
+    if (safePage < totalPages) setCurrentPage(safePage + 1);
   };
 
-  
-  const [filter, setFilter] = useState("All");
-  const [sort, setSort] = useState("name-asc");
+  // Any change to filter/search/sort resets pagination to page 1
+  const handleFilterChange = (e) => {
+    setFilter(e.target.value);
+    setCurrentPage(1);
+  };
 
-  // Get unique categories for filter dropdown
-  const categories = [
-    "All",
-    ...new Set(products.map(product => product.category)),
-  ];
+  const handleSortChange = (e) => {
+    setSort(e.target.value);
+    setCurrentPage(1);
+  };
 
-  // Filter and sort products
-  const filteredProducts = products
-    .filter(product => filter === "All" || product.category === filter)
-    .sort((a, b) => {
-      if (sort === "price-asc") return a.price - b.price;
-      if (sort === "price-desc") return b.price - a.price;
-      if (sort === "name-asc") return a.name.localeCompare(b.name);
-      if (sort === "name-desc") return b.name.localeCompare(a.name);
-      return 0;
-    });
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+    setCurrentPage(1);
+  };
+
+  const handleClearFilters = () => {
+    setFilter(DEFAULT_FILTER);
+    setSort(DEFAULT_SORT);
+    setSearch("");
+    setCurrentPage(1);
+  };
+
+  const filtersActive =
+    filter !== DEFAULT_FILTER || sort !== DEFAULT_SORT || search !== "";
+
   return (
     <>
       <Head>
@@ -69,94 +105,125 @@ const ProductsPage = ({ products }) => {
         <div className="custom-container">
           <div className="container-center">
             <h1 className="heading-large">Shop All</h1>
-            
-                      <ProductNav />
-                      <div className="controls">
-          <label>
-            Filter:
-            <select
-              onChange={e => setFilter(e.target.value)}
-              value={filter}
-              className="background-bg"
-            >
-              {categories.map(category => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-              </label>
-          <label>
-            Sort:
-            <select
-              onChange={e => setSort(e.target.value)}
-              value={sort}
-              className="background-bg"
-            >
-              <option value="name-asc">Name (A-Z)</option>
-              <option value="name-desc">Name (Z-A)</option>
-              <option value="price-asc">Price (Low to High)</option>
-              <option value="price-desc">Price (High to Low)</option>
-            </select>
-          </label>
-        </div>
-            
 
-            <div className="product-container">
-              {products.map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/products/${product.id}`}
-                  className="product-card"
+            <ProductNav />
+
+            <div className="controls">
+              <label>
+                Search:
+                <input
+                  type="text"
+                  value={search}
+                  onChange={handleSearchChange}
+                  placeholder="Search products..."
+                  className="background-bg"
+                />
+              </label>
+
+              <label>
+                Filter:
+                <select
+                  onChange={handleFilterChange}
+                  value={filter}
+                  className="background-bg"
                 >
-                  {product.images?.[0] && (
-                    <Image
-                      src={product.images[0]}
-                      alt={product.name}
-                      width={300}
-                      height={300}
-                      style={{ objectFit: 'cover' }} // Prevents image stretching
-                    />
-                  )}
-                  <p className="product-card__name">{product.name}</p>
-                  <p className="product-card__price">
-                    {formatMoney(product.price, product.currency)}
-                  </p>
-                </Link>
-              ))}
+                  {categories.map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label>
+                Sort:
+                <select
+                  onChange={handleSortChange}
+                  value={sort}
+                  className="background-bg"
+                >
+                  <option value="name-asc">Name (A-Z)</option>
+                  <option value="name-desc">Name (Z-A)</option>
+                  <option value="price-asc">Price (Low to High)</option>
+                  <option value="price-desc">Price (High to Low)</option>
+                </select>
+              </label>
+
+              {filtersActive && (
+                <button
+                  type="button"
+                  onClick={handleClearFilters}
+                  className="clear-filters-btn"
+                >
+                  Clear filters
+                </button>
+              )}
             </div>
+
+            {filteredProducts.length === 0 ? (
+              <p className="no-results">
+                No products match your search/filters.
+              </p>
+            ) : (
+              <div className="product-container">
+                {currentItems.map((product) => (
+                  <Link
+                    key={product.id}
+                    href={`/products/${product.id}`}
+                    className="product-card"
+                  >
+                    {product.images?.[0] && (
+                      <Image
+                        src={product.images[0]}
+                        alt={product.name}
+                        width={300}
+                        height={300}
+                        style={{ objectFit: "cover" }}
+                      />
+                    )}
+                    <p className="product-card__name">{product.name}</p>
+                    <p className="product-card__price">
+                      {formatMoney(product.price, product.currency)}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
-           {/* Pagination Buttons */}
-      <div className="pagination-controls">
-        <button onClick={handlePrevPage} disabled={currentPage === 1}>
-          Previous
-        </button>
-        <span>
-          Page {currentPage} of {totalPages}
-        </span>
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-          Next
-        </button>
-      </div>
-      <hr/>
-      
-        <div className="feedback-container">
-      <h4>We would like to hear what you think!</h4>
-      <Link href={"#"}>Give feedback</Link>
+
+      {/* Pagination Buttons */}
+      {filteredProducts.length > 0 && (
+        <div className="pagination-controls">
+          <button onClick={handlePrevPage} disabled={safePage === 1}>
+            Previous
+          </button>
+          <span>
+            Page {safePage} of {totalPages}
+          </span>
+          <button onClick={handleNextPage} disabled={safePage === totalPages}>
+            Next
+          </button>
+        </div>
+      )}
+
+      <hr />
+
+      <div className="feedback-container">
+        <h4>We would like to hear what you think!</h4>
+        <Link href={"#"}>Give feedback</Link>
       </div>
 
       <Footer />
-       <style jsx global>{`
-    
+      <style jsx global>{`
         .controls {
           display: flex;
+          flex-wrap: wrap;
+          align-items: center;
           gap: 20px;
-          padding-top:20px;
-          padding-bottom:20px;
-    
-  
+          padding-top: 20px;
+          padding-bottom: 20px;
         }
         .controls label {
           display: flex;
@@ -164,42 +231,46 @@ const ProductsPage = ({ products }) => {
           gap: 10px;
           font-size: 16px;
         }
-        .controls select {
+        .controls select,
+        .controls input {
           padding: 8px;
           font-size: 14px;
           border: 1px solid #ccc;
           border-radius: 4px;
-          color:#000;
+          color: #000;
         }
-              .product-container{ 
-          width:100%;
-          backgorund: red;
-    
+        .clear-filters-btn {
+          padding: 8px 14px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background: #f5f5f5;
+          cursor: pointer;
+        }
+        .clear-filters-btn:hover {
+          background: #e8e8e8;
+        }
+        .no-results {
+          padding: 40px 0;
+          text-align: center;
+          color: #666;
+        }
+        .product-container {
+          width: 100%;
           margin: 0 auto;
-          }
-
- 
-          }
-          .viewButton{
-    
-          padding: 8px 15px:
-          }
-          hr{
-       border: none;
-  height: 1px;
-  background: #e0e0e0;
-  margin: 1.5rem 
-          }
-    
+        }
+        .viewButton {
+          padding: 8px 15px;
+        }
+        hr {
+          border: none;
+          height: 1px;
+          background: #e0e0e0;
+          margin: 1.5rem 0;
+        }
       `}</style>
     </>
   );
 };
 
 export default ProductsPage;
-
-      
-
-
-
-
