@@ -2,8 +2,6 @@
   /* min-h-screen */
   min-height: 70vh;
 
-  /* bg-gray-50 */
-  background-color: #f9fafb;
 
   /* py-12 */
   padding-top: 3rem;    /* 48px */
@@ -194,8 +192,7 @@
 }
 
 /* hover:bg-black/70 */
-.carousel-button-next:hover {
-  background-color:#808080;
+
   opacity: 1;
 }
 
@@ -231,8 +228,7 @@ position: relative
   left: 0;
   height: 2px;
   width: 0;                   /* ← usually starts at 0 width → animates to full */
-  background-color: #2563eb;
-  border-radius: 9999px;
+   border-radius: 9999px;
   transition: all 300ms ease-out;
   /* Optional but very common in tab menus: */
   /* transform: translateX(0); */
