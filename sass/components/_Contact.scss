@@ -24,7 +24,7 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 gap: 20px;
-color:whitesmoke;
+
 
 }
 .blog-container{
@@ -38,7 +38,7 @@ align-items: center;
 justify-content:center;
 flex-direction: column;
 gap: 20px;
-color:whitesmoke;
+;
 }
 
 
@@ -46,8 +46,6 @@ color:whitesmoke;
 .btn-scale {
   display: inline-block;
   padding: 10px 24px;
-  background-color: #808080;       /* Emerald */
-  color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 500;
@@ -56,9 +54,9 @@ color:whitesmoke;
 
 .btn-scale:hover,
 .btn-scale:focus {
-  background-color: #059669;
+
   transform: scale(1.06);
-  box-shadow: 0 4px 12px rgba(16,185,129,0.3);
+  
 }
 
 .btn-scale:active {
