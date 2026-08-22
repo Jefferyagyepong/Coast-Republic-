@@ -36,8 +36,8 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
             <Image
               src={src}
               alt={`slide ${i + 1}`}
-              width={1200}
-              height={1000}
+              width={1300}
+              height={1200}
               className="responsive-media"
               priority={i === 0}
               quality={82}
