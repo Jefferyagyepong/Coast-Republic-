@@ -59,32 +59,12 @@
   /* rounded-xl */
   border-radius: 0.75rem; /* 12px */
 
-  /* shadow-xl */
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
-              0 8px 10px -6px rgba(0, 0, 0, 0.1);
-}
+  }
 
 /* group (The "group" class acts as a hook for child hover states) */
 /* No direct CSS properties, but used for descendant selectors like: */
 
-.heading-large {
-  /* text-4xl */
-  font-size: 2.25rem;    /* 36px */
-  line-height: 2.5rem;   /* 40px */
 
-  /* font-bold */
-  font-weight: 700;
-margin-bottom:30px;
-
-  /* text-center */
-  text-align: center;
-
-  /* mb-10 */
-
-
-  /* text-gray-900 */
-  color: #111827;
-}
 .flex-transition-container {
   /* flex */
   display: flex;
@@ -142,10 +122,10 @@ margin-bottom:30px;
   transition-duration: 150ms; /* Default Tailwind transition duration */
 
   /* bg-black/50 */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #eafafe;
 
   /* text-white text-2xl */
-  color: #ffffff;
+  color: #000;
   font-size: 1.5rem; /* 24px */
   line-height: 2rem;
 
@@ -167,7 +147,7 @@ margin-bottom:30px;
 
 /* hover:bg-black/70 */
 .carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #eafafe;
   opacity: 1; /* Often implied to ensure full visibility on hover */
 }
 
@@ -190,10 +170,10 @@ margin-bottom:30px;
   transition-duration: 150ms;
 
   /* bg-black/50 */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #eafafe;
 
   /* text-white text-2xl */
-  color: #ffffff;
+  color: #000;
   font-size: 1.5rem; /* 24px */
 
   /* w-11 h-11 rounded-full */
