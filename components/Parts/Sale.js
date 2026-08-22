@@ -37,7 +37,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
               src={src}
               alt={`slide ${i + 1}`}
               width={1200}
-              height={800}
+              height={1000}
               className="responsive-media"
               priority={i === 0}
               quality={82}
@@ -47,7 +47,7 @@ export default function ImageSlider({ images = [], interval = 4000 }) {
       </div>
 
       {/* Arrows - appear on hover */}
-      <button
+    <br />  <button
         onClick={prev}
         className="carousel-button"
         aria-label="previous"
