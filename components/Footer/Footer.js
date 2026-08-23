@@ -69,7 +69,7 @@ const Footer = () => {
           className="footer-tag"
         />
       </div>
-
+   <hr />
       {/* Copyright */}
       <div className="footer-bottom">
         <p className="text-align-center">
