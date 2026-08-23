@@ -68,8 +68,8 @@ height: 100vh;
 
 }
 .newsletter-container {
-
-  background-color: #fff;
+width:100%;
+  background-color: #eafafe;
   border-radius: 8px;
   padding: 24px;
   max-width: 500px;
@@ -80,12 +80,11 @@ height: 100vh;
 .newsletter-title {
   
   font-weight: 300;
-  color: #333;
-  margin-bottom: 16px;
+  color: #000;
+  
 }
 
 .newsletter-description {
-  font-size: 14px;
   color: #555;
   margin-bottom: 24px;
   line-height: 1.6;
