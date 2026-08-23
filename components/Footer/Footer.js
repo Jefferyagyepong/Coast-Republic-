@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h5>Help</h5><br/>
+          <h5>Help</h5>
           <ul>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/contact">About Us</Link></li>
