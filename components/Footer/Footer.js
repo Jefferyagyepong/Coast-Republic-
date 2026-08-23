@@ -24,12 +24,12 @@ const Footer = () => {
         <div className="footer-section">
           <h5>Help</h5>
           <ul>
-            <li><Link href="/faq">FAQ</Link></li>
-            <li><Link href="/contact">About Us</Link></li>
-            <li><Link href="/delivery">Delivery</Link></li>
-            <li><Link href="/returns">Refunds &Returns</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
-            <li><Link href="/terms">Terms & Conditions </Link></li>
+            <li><Link href="/faq">FAQ</Link></li><br/>
+            <li><Link href="/contact">About Us</Link></li><br/>
+            <li><Link href="/delivery">Delivery</Link></li><br/>
+            <li><Link href="/returns">Refunds &Returns</Link></li><br/>
+            <li><Link href="/contact">Contact Us</Link></li><br/>
+            <li><Link href="/terms">Terms & Conditions </Link></li><br/>
           </ul>
         </div>
 
