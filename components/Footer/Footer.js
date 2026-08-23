@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
    <hr />
       {/* Copyright */}
-      <div className="footer-bottom">
+      <div>
         <p className="text-align-center">
           © {new Date().getFullYear()} Coast Republic Store. All rights
           reserved.
