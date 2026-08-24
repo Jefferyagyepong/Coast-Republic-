@@ -1,4 +1,4 @@
-/* eslint-disable react/react-in-jsx-import Head from "next/head";
+import Head from "next/head";
 
 export default function Delivery() {
   return (
