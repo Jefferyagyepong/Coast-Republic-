@@ -72,10 +72,10 @@ const Footer = () => {
       </div>
         <Image
           src={"View recent photos.png"}
-          height={10}
-          width={50}
+          height={20}
+          width={90}
           alt="momo logo"
-          className="footer-tag"
+          className="signature"
         />
       
    
