@@ -1,4 +1,5 @@
 import Head from "next/head";
+import FootBottom from "@/components/Footer/FootBottom";
 
 export default function About() {
   return (
@@ -82,6 +83,7 @@ export default function About() {
             <a href="/contact">get in touch</a> — we&apos;re happy to help.
           </p>
         </section>
+        <FootBottom />
       </main>
 
       <style jsx>{`
