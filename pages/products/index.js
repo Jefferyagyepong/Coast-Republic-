@@ -104,7 +104,7 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop All</h5><br/>
+            <h5>Shop All</h5><br/><br/>
 
             <ProductNav />
              
@@ -160,7 +160,7 @@ const ProductsPage = ({ products }) => {
                 </button>
               )}
             </div>
-<br/>
+<br/><br/>
             {filteredProducts.length === 0 ? (
               <p className="no-results">
                 No products match your search/filters.
