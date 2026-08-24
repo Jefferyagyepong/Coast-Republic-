@@ -69,6 +69,7 @@ const Footer = () => {
           className="footer-tag"
         />
       </div>
+      <h6 className"signature">coast republic</h6>
    <hr />
       {/* Copyright */}
       <div>
