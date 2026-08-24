@@ -69,8 +69,8 @@ const Footer = () => {
           className="footer-tag"
         />
       </div>
-      <h6 className"signature">coast republic</h6>
-   <hr />
+      <h6 className="signature">coast republic</h6>
+   
       {/* Copyright */}
       <div>
         <p className="text-align-center">
