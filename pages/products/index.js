@@ -160,7 +160,7 @@ const ProductsPage = ({ products }) => {
                 </button>
               )}
             </div>
-
+<br/>
             {filteredProducts.length === 0 ? (
               <p className="no-results">
                 No products match your search/filters.
