@@ -1,152 +1,206 @@
 /* eslint-disable react/no-unknown-property */
-/* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Head from "next/head";
-import Link from "next/link"
-import Footer from "@/components/Footer/Footer";
-const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+
+export default function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState(null);
+
+  const handleChange = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate form submission
-    console.log({ name, email, message });
-    setSubmitted(true);
+    setStatus("sending");
+    try {
+      // Wire this up to your existing form/API route (e.g. pages/api/contact.js)
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      setStatus("error");
+    }
   };
 
   return (
     <>
       <Head>
-        <title>Coast Republic | T-shirts and more</title>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@coastrepublicgh" />
-        <meta name="twitter:creator" content="@coastrepublicgh" />
-        <meta name="twitter:title" content="Coast Republic inc" />
+        <title>Contact Us - Coast Republic</title>
         <meta
-          name="twitter:description"
-          content="T-shirts, Sneakers & more.... "
-        />
-        <meta
-          name="twitter:image"
-          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <meta property="og:title" content="Coast Republic inc" />
-        <meta
-          property="og:description"
-          content="T-shirts, Sneakers & more.... "
-        />
-        <meta property="og:url" content="https://coast-republic.vercel.app/" />
-        <meta
-          property="og:image"
-          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-
-        <meta name="description" content="Coast Republic  Store" />
-        <meta
-          name="keywords"
-          content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store"
-        />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="author" content="Coast Republic Inc" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
-        />
-        <link rel="icon" href="/" />
-        <meta
-          name="google-site-verification"
-          content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw"
+          name="description"
+          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
       </Head>
 
+      <main className="page">
+        <h1>Contact Us</h1>
+        <p className="intro">
+          Have a question about an order, sizing, or delivery? Send us a
+          message and our team will get back to you within 24 hours.
+        </p>
 
+        <div className="grid">
+          <form onSubmit={handleSubmit} className="form">
+            <label>
+              Name
+              <input
+                name="name"
+                type="text"
+                required
+                value={form.name}
+                onChange={handleChange}
+              />
+            </label>
+            <label>
+              Email
+              <input
+                name="email"
+                type="email"
+                required
+                value={form.email}
+                onChange={handleChange}
+              />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows={5}
+                required
+                value={form.message}
+                onChange={handleChange}
+              />
+            </label>
+            <button type="submit" disabled={status === "sending"}>
+              {status === "sending" ? "Sending..." : "Send"}
+            </button>
+            {status === "success" && (
+              <p className="success">Thanks! We'll be in touch shortly.</p>
+            )}
+            {status === "error" && (
+              <p className="error">
+                Something went wrong. Please try again or email us directly.
+              </p>
+            )}
+          </form>
 
- 
-<div className="main-content">
-
-
-
-      <div className="contact-container">
-        
-          <h2 className="newsletter-title">Contact Us</h2>
-          <p className="newsletter-description">
-            Have any questions? We are here to help! Fill out the form below, and we will get back to you.
-          </p>
-
-          {submitted ? (
-            
-              <div>
-              ✅ Your message has been sent. We will get back to you soon!
-            </div>
-          
-          ) : (
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div>
-           <label className="form-label">Name</label>
-                <input
-                placeholder="Name"
-                  type="text"
-                  required
-className="form-input"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </div><br />
-              <div>
-                   <label className="form-label">Email</label>
-                <input
-                  type="email"
-                  required
-                   placeholder="Email"
-className="form-input"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div><br />
-              <div className="inputGroup">
-                    <label className="form-label">Message</label>
-                <textarea
-                  required
-                  placeholder="Write your questions here"
-
-                  rows="4"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </div>
-<br />
-              <button
-                type="submit"
-
-              >
-                Send
-              </button>
-            </form>
-          )}
-
-     
-      
-      </div>
-           <div   className="location-container">
-            <h6>IN STORE LOC. </h6>
-            <span>📍 AK-7175846 Asafo Dadiesoaba</span>
-            <span>📞 +233 244736420</span>
-            <span>✉️ support@coastrepublic.com</span>
+          <div className="info">
+            <h2>Store Location</h2>
+            <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
+            <h2>Phone</h2>
+            <p>
+              <a href="tel:+233244736420">+233 244 736 420</a>
+            </p>
+            <h2>Email</h2>
+            <p>
+              <a href="mailto:support@coastrepublic.com">
+                support@coastrepublic.com
+              </a>
+            </p>
+            <h2>Hours</h2>
+            <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
           </div>
-      <Footer />
-      <div className="bottom-bar">
-          <Link href={"/."}>Back to Shop</Link>
         </div>
-    
-      </div>
+      </main>
 
+      <style jsx>{`
+        .page {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 48px 20px 80px;
+          font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+          color: #1b2430;
+        }
+        h1 {
+          font-size: 2rem;
+          color: #0a2540;
+          margin-bottom: 10px;
+        }
+        .intro {
+          color: #5b6b7a;
+          margin-bottom: 32px;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: 1.3fr 1fr;
+          gap: 40px;
+        }
+        @media (max-width: 640px) {
+          .grid {
+            grid-template-columns: 1fr;
+          }
+        }
+        .form {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+        label {
+          display: flex;
+          flex-direction: column;
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #0a2540;
+          gap: 6px;
+        }
+        input,
+        textarea {
+          font-family: inherit;
+          font-size: 0.95rem;
+          padding: 10px 12px;
+          border: 1px solid #d7dce1;
+          border-radius: 8px;
+        }
+        button {
+          background: #0a2540;
+          color: #fff;
+          border: none;
+          padding: 12px 20px;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          width: fit-content;
+        }
+        button:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+        .success {
+          color: #1b7a43;
+        }
+        .error {
+          color: #b3261e;
+        }
+        .info h2 {
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.04em;
+          color: #5b6b7a;
+          margin: 18px 0 4px;
+        }
+        .info h2:first-child {
+          margin-top: 0;
+        }
+        .info p {
+          margin: 0;
+          color: #1b2430;
+        }
+        .info a {
+          color: #0a2540;
+          font-weight: 600;
+        }
+      `}</style>
     </>
-
   );
-};
+}
 
-export default Contact;
+       
+           
+
+          
+         
