@@ -38,6 +38,7 @@ const Footer = () => {
       </div>
 
       <h6 className="text-align-center">Accepted Payment Methods</h6>
+      <h6 className="signature">coast republic</h6>
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
@@ -69,7 +70,7 @@ const Footer = () => {
           className="footer-tag"
         />
       </div>
-      <h6 className="signature">coast republic</h6>
+      
    
       {/* Copyright */}
       <div>
