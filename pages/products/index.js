@@ -213,7 +213,7 @@ const ProductsPage = ({ products }) => {
 
       <div className="feedback-container">
         <h4>We would like to hear what you think!</h4>
-        <Link href={"#"}>Give feedback</Link>
+        <Link href={"/contact"}>Give feedback</Link>
       </div>
       <br />
 
