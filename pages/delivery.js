@@ -1,4 +1,5 @@
 import Head from "next/head";
+import FootBottom from "@/components/Footer/FootBottom";
 
 export default function Delivery() {
   return (
@@ -95,6 +96,7 @@ export default function Delivery() {
             or check our <a href="/faq">FAQ</a>.
           </p>
         </section>
+          <FootBottom />
       </main>
 
       <style jsx>{`

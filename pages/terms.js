@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head";
+import FootBottom from "@/components/Footer/FootBottom";
 
 export default function Terms() {
   return (
@@ -184,6 +185,7 @@ export default function Terms() {
           Ghanaian attorney before publishing, to ensure full compliance with
           applicable consumer protection and e-commerce regulations.
         </p>
+          <FootBottom />
       </main>
 
       <style jsx>{`

@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Head from "next/head";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const FAQS = [
   {
@@ -72,6 +73,7 @@ export default function FAQ() {
             </div>
           ))}
         </div>
+          <FootBottom />
       </main>
 
       <style jsx>{`

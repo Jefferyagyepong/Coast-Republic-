@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Header from "@/components/Head/Header";
-import Footer from "@/components/Footer/Footer";
+import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 
 const formatMoney = (amount, currency) =>
@@ -72,7 +72,7 @@ const CheckoutPage = () => {
             </div>
           </div>
         </div>
-        <Footer />
+        <FootBottom />
       </>
     );
   }
@@ -187,7 +187,7 @@ const CheckoutPage = () => {
         </div>
       </div>
 
-      <Footer />
+      <FootBottom />
     </>
   );
 };

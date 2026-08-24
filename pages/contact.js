@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import Head from "next/head";
+import FootBottom from "@/components/Footer/FootBottom";
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -106,6 +108,7 @@ export default function Contact() {
             <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
           </div>
         </div>
+        <FootBottom/>
       </main>
 
       <style jsx>{`
