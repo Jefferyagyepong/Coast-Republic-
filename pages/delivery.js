@@ -1,91 +1,162 @@
-/* eslint-disable react/react-in-jsx-scope */
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Head/Header";
-import { useState } from "react";
+/* eslint-disable react/react-in-jsx-import Head from "next/head";
 
-const Delivery = () => {
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [zip, setZip] = useState("");
-  const [deliveryOption, setDeliveryOption] = useState("standard");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Delivery to: ${address}, ${city}, ${zip} via ${deliveryOption}`);
-  };
-
+export default function Delivery() {
   return (
     <>
-      <Header />
-      <div  className="main-content">
+      <Head>
+        <title>Delivery Information - Coast Republic</title>
+        <meta
+          name="description"
+          content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
+        />
+      </Head>
 
-    
-      <div>
-        <div>
-          <h1>Delivery Information</h1>
+      <main className="page">
+        <h1>Delivery Information</h1>
+        <p className="intro">
+          We know you want your order fast. Here's exactly what to expect
+          once you check out.
+        </p>
 
-          {/* Delivery Options */}
-          <div>
-            <h2>
-              Select Delivery Option
-            </h2>
-            <select
-          
-              value={deliveryOption}
-              onChange={e => setDeliveryOption(e.target.value)}
-            >
-              <option value="standard">Standard (5-7 Days) - Free</option>
-              <option value="express">Express (2-3 Days) - $5.99</option>
-              <option value="overnight">Overnight (1 Day) - $9.99</option>
-            </select>
-          </div>
+        <section>
+          <h2>Processing Time</h2>
+          <p>
+            Orders are processed within 1 business day of payment
+            confirmation. Orders placed after 4:00 PM or on weekends/public
+            holidays are processed the next business day.
+          </p>
+        </section>
 
-          {/* Address Form */}
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label>Address</label>
-              <input
-                type="text"
-                required
-               
-                value={address}
-                onChange={e => setAddress(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>City</label>
-              <input
-                type="text"
-                required
-             
-                value={city}
-                onChange={e => setCity(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>ZIP Code</label>
-              <input
-                type="text"
-                required
-              
-                value={zip}
-                onChange={e => setZip(e.target.value)}
-              />
-            </div>
+        <section>
+          <h2>Delivery Times &amp; Coverage</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>Estimated Delivery</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kumasi &amp; surrounding areas</td>
+                <td>1–2 business days</td>
+              </tr>
+              <tr>
+                <td>Accra &amp; other major cities</td>
+                <td>2–3 business days</td>
+              </tr>
+              <tr>
+                <td>Other regions in Ghana</td>
+                <td>3–5 business days</td>
+              </tr>
+            </tbody>
+          </table>
+          <p className="note">
+            We currently deliver within Ghana only. International shipping is
+            not yet available.
+          </p>
+        </section>
 
-            <button
-              type="submit"
-      
-            >
-              Confirm Delivery
-            </button>
-          </form>
-        </div>
-      </div>
-      <Footer />
-        </div>
+        <section>
+          <h2>Delivery Fees</h2>
+          <p>
+            Delivery fees are calculated at checkout based on your location
+            and order size. Any applicable fee is shown clearly before you
+            confirm payment — no hidden charges.
+          </p>
+        </section>
+
+        <section>
+          <h2>Order Tracking</h2>
+          <p>
+            You'll receive a confirmation once your order is dispatched. If
+            your delivery is taking longer than the estimate above, contact
+            us with your order number and we'll follow up with our courier
+            immediately.
+          </p>
+        </section>
+
+        <section>
+          <h2>Delivery Issues</h2>
+          <p>
+            Please inspect your package on arrival. If an item is damaged,
+            missing, or incorrect, notify us within 48 hours of delivery at{" "}
+            <a href="mailto:support@coastrepublic.com">
+              support@coastrepublic.com
+            </a>{" "}
+            or <a href="tel:+233244736420">+233 244 736 420</a>, and we'll
+            make it right.
+          </p>
+        </section>
+
+        <section className="cta">
+          <p>
+            Questions about a specific order? <a href="/contact">Contact us</a>{" "}
+            or check our <a href="/faq">FAQ</a>.
+          </p>
+        </section>
+      </main>
+
+      <style jsx>{`
+        .page {
+          max-width: 760px;
+          margin: 0 auto;
+          padding: 48px 20px 80px;
+          font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+          color: #1b2430;
+          line-height: 1.65;
+        }
+        h1 {
+          font-size: 2rem;
+          color: #0a2540;
+          margin-bottom: 10px;
+        }
+        .intro {
+          color: #5b6b7a;
+          margin-bottom: 32px;
+        }
+        section {
+          margin-bottom: 32px;
+        }
+        h2 {
+          font-size: 1.2rem;
+          color: #0a2540;
+          margin-bottom: 10px;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 10px;
+        }
+        th,
+        td {
+          text-align: left;
+          padding: 10px 12px;
+          border-bottom: 1px solid #e6e9ed;
+        }
+        th {
+          background: #f7f9fb;
+          color: #0a2540;
+        }
+        .note {
+          font-size: 0.9rem;
+          color: #5b6b7a;
+        }
+        a {
+          color: #0a2540;
+          font-weight: 600;
+        }
+        .cta {
+          border-top: 2px solid #eef1f4;
+          padding-top: 24px;
+          text-align: center;
+          color: #5b6b7a;
+        }
+      `}</style>
     </>
   );
-};
+}
 
-export default Delivery;
+
+
+     
