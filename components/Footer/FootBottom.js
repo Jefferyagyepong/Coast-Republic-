@@ -3,6 +3,7 @@
 import Link from "next/link";
 function FootBottom() {
   return (
+  <>
    <h6 className="text-align-center">Accepted Payment Methods</h6>
       
       <div className="payment-container">
@@ -52,6 +53,7 @@ function FootBottom() {
           reserved.
         </p>
       </div>
+      </>
   );
 }
 export default FootBottom;
