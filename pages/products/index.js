@@ -228,6 +228,14 @@ const ProductsPage = ({ products }) => {
   padding: 10px;
    margin-top:3rem;
 }
+
+.flex-position{
+width:100%;
+flex-direction: row;
+align-items: center;
+justify-content:center;
+gap: 25px;
+}
         
     
         .controls select {
