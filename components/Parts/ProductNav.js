@@ -4,7 +4,6 @@
 import { useState, useRef, useEffect } from 'react';
 
 const navItems = [
-  { id: 'delivery', label: 'Delivery' },
   { id: 'pickup',   label: 'Pickup'   },
   { id: 'warranty', label: 'Warranty' },
   { id: 'shipping', label: 'Shipping' },
@@ -65,11 +64,7 @@ export default function ProductPageNav() {
                 `}
               >
                 {/* Inline SVG icons */}
-                {item.id === 'delivery' && (
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                )}
+            
 
                 {item.id === 'pickup' && (
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
@@ -108,7 +103,6 @@ export default function ProductPageNav() {
 
       {/* Optional hint line */}
       <div className="dark">
-        {activeTab === 'delivery' && 'Same-day & next-day in Accra • Free over GH₵400'}
         {activeTab === 'pickup'   && 'Collect from Osu or Airport City in 1–2 hrs'}
         {activeTab === 'warranty' && '12-month official warranty included'}
         {activeTab === 'shipping' && 'Nationwide • Tracked • Cash on delivery'}
