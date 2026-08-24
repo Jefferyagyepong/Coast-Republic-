@@ -42,30 +42,30 @@ const Footer = () => {
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
-          height={30}
-          width={35}
+          height={20}
+          width={25}
           alt="momo logo"
           className="footer-tag"
         />
         <Image
           src={"/momo.jpg"}
-          height={30}
-          width={35}
+          height={20}
+          width={25}
           alt="momo logo"
           className="footer-tag"
         />
 
         <Image
           src={"/Visa.png"}
-          height={30}
-          width={36}
+          height={20}
+          width={25}
           alt="momo logo"
           className="footer-tag"
         />
         <Image
           src={"/Airtel-Money-logo.jpg"}
-          height={30}
-          width={36}
+           height={20}
+          width={25}
           alt="momo logo"
           className="footer-tag"
         />
