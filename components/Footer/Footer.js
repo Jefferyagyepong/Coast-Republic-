@@ -72,8 +72,8 @@ const Footer = () => {
       </div>
         <Image
           src={"View recent photos.png"}
-          height={30}
-          width={450}
+          height={10}
+          width={50}
           alt="momo logo"
           className="footer-tag"
         />
