@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Head/Header";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer/FootBottom";
 import { getAllProducts } from "@/lib/products";
 import ProductNav from "@/components/Parts/ProductNav";
 
@@ -216,7 +216,7 @@ const ProductsPage = ({ products }) => {
         <Link href={"#"}>Give feedback</Link>
       </div>
 
-      <Footer />
+      <FootBottom />
       <style jsx global>{`
         .controls {
   wdth:100%;
