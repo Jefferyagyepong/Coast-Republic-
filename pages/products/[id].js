@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Header from "@/components/Head/Header";
-import Footer from "@/components/Footer/Footer";
+import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 import { getAllProductIds, getProductById } from "@/lib/products";
 
@@ -168,7 +168,7 @@ const ProductPage = ({ product }) => {
         </div>
       </div>
 
-      <Footer />
+      <FootBottom />
     </>
   );
 };
