@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand Info */}
         <div className="footer-section brand-info">
-          <h4 className="footer-logo">Coast Republic</h4>
+        
           <p>Elevate your style with the latest fashion trends. Discover unique designs crafted for you.</p>
         </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
       <h6 className="text-align-center">Accepted Payment Methods</h6>
-      <h6 className="signature">coast republic</h6>
+      
       <div className="payment-container">
         <Image
           src={"/telecel.JPG"}
