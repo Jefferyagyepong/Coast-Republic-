@@ -110,10 +110,9 @@ const ProductsPage = ({ products }) => {
              
 
             <div className="controls">
-           
-                <label >
-              
-                <input
+           <div className="flex-position">
+                  <label >
+                  <input
                   type="text"
                   value={search}
                   onChange={handleSearchChange}
@@ -122,8 +121,7 @@ const ProductsPage = ({ products }) => {
                 />
               </label>      
               <label>
-              
-                <select
+               <select
                   onChange={handleFilterChange}
                   value={filter}
                 
@@ -159,6 +157,8 @@ const ProductsPage = ({ products }) => {
                   Clear filters
                 </button>
               )}
+            </div>
+  
             </div>
 <br/><br/>
             {filteredProducts.length === 0 ? (
