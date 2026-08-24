@@ -70,6 +70,13 @@ const Footer = () => {
           className="footer-tag"
         />
       </div>
+        <Image
+          src={"View recent photos.png"}
+          height={30}
+          width={450}
+          alt="momo logo"
+          className="footer-tag"
+        />
       
    
       {/* Copyright */}
