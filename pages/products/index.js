@@ -104,7 +104,7 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop All</h5>
+            <h5>Shop All</h5><br/>
 
             <ProductNav />
              
@@ -225,7 +225,7 @@ const ProductsPage = ({ products }) => {
   gap: 22px;
   juatify-content: center;
   padding: 10px;
-   margin-top:11rem;
+   margin-top:3rem;
 }
         
     
