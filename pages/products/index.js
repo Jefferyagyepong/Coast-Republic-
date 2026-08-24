@@ -235,6 +235,7 @@ flex-direction: row;
 align-items: center;
 justify-content:center;
 gap: 25px;
+margin-top:2rem;
 }
         
     
