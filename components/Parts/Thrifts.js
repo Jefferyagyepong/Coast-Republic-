@@ -7,7 +7,7 @@ function All() {
   return (
     <div className="background-container-women">
       <h3>Pro club T Shirt </h3>
-      <Link className="btn-scale" href={"/products"}>Shop now</Link>
+      <Link className="btn-scale-women" href={"/products"}>Shop now</Link>
     </div>
   );
 }
