@@ -24,7 +24,8 @@ const HamburgerMenu = () => {
         <li><Link className="nav-menu-link" href="/products/">SHOP NOW </Link></li>
         <li><Link className="nav-menu-link"  href="/delivery">DELIVERY INFOMATION</Link></li>
         <li><Link className="nav-menu-link" href="/contact">CONTACT US</Link></li>
-
+ <li><Link className="nav-menu-link" href="/about">ABOUT US</Link></li>
+ <li><Link className="nav-menu-link" href="/return">REFUNDS</Link></li>
 
 
           <li> <div className="footer-bottom">
