@@ -69,10 +69,11 @@ const Home = () => {
         <Thrifts />
         <Jeans />
         <div className="custom-container">
-          <div className="container-center">
+        
             <h5>
               Discover what just dropped
             </h5><br />
+              <div className="container-center">
 
             <Sale images={calvinKleinImages} autoPlayInterval={3500} />
           </div>
