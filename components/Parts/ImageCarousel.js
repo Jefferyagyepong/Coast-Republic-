@@ -41,7 +41,7 @@ const ImageCarousel = () => {
               fill
               className="object-cover rounded-lg"
               priority={index === 0} // Prioritize first image for faster loading
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+              sizes="(max-width: 640px) 140vw, (max-width: 768px) 80vw, 1200px"
             />
           </div>
         ))}
