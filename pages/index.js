@@ -79,8 +79,10 @@ const Home = () => {
             <Sale images={calvinKleinImages} autoPlayInterval={3500} />
        
         </div>
-        <h4>Crew Neck T shirts</h4><br />
-        <Collection />
+             <div className="custom-container">
+        <h5>Crew Neck T shirts</h5>
+          </div>
+                        <Collection />
         <Newsletter />
         <Footer />
       </div>
