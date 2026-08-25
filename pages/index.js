@@ -73,10 +73,11 @@ const Home = () => {
             <h5>
               Discover what just dropped
             </h5><br />
+               </div>
               <div className="container-center">
 
             <Sale images={calvinKleinImages} autoPlayInterval={3500} />
-          </div>
+       
         </div>
         <Collection />
         <Newsletter />
