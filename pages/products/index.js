@@ -110,7 +110,7 @@ const ProductsPage = ({ products }) => {
              
 
             <div className="controls">
-           <div className="flex-position">
+         
                   <label >
                   <input
                   type="text"
@@ -120,6 +120,7 @@ const ProductsPage = ({ products }) => {
                   className="search-products form-input"
                 />
               </label>      
+                <div className="flex-position">
               <label>
                <select
                   onChange={handleFilterChange}
