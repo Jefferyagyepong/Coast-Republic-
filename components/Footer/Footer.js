@@ -82,7 +82,7 @@ const Footer = () => {
       {/* Copyright */}
       <div>
         <p className="text-align-center">
-          © {new Date().getFullYear()} Coast Republic Store. All rights
+          © {new Date().getFullYear()} All rights reserved
           reserved.
         </p>
       </div>
