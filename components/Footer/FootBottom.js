@@ -50,7 +50,7 @@ function FootBottom() {
       {/* Copyright */}
       <div>
         <p className="text-align-center">
-          © {new Date().getFullYear()} Coast Republic Store. All rights
+          © {new Date().getFullYear()} All rights
           reserved.
         </p>
       </div>
