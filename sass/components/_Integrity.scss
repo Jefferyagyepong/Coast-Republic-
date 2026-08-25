@@ -58,7 +58,6 @@ padding: 40px 20px;
 .flex-transition-container {
   /* flex */
   display: flex;
-height: 7rem;
 
   /* transition-transform */
   transition-property: transform;
@@ -81,7 +80,7 @@ height: 7rem;
   height: auto;
 
   /* object-cover */
-  object-fit: cover;
+  object-fit: center;
 
   /* aspect-[4/3] (Default) */
   aspect-ratio: 4 / 3;
