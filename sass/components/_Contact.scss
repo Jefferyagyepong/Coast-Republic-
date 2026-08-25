@@ -1,7 +1,14 @@
 .product-card__name, .product-card__price{
 line-height: 1.7;
 color: #333;
-font-weight: 300;
+
+}
+.product-card__name{
+font-weight: 700;
+}
+.product-card__price{
+font-weight: 400;
+font-size: 10px;
 }
 
 
