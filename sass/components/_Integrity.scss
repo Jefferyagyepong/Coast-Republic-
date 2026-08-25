@@ -1,11 +1,9 @@
 .custom-container {
   /* min-h-screen */
   min-height: 100vh;
+width:100%;
 
-
-  /* py-12 */
-  padding-top: 3rem;    /* 48px */
-  padding-bottom: 3rem; /* 48px */
+ /* 48px */
 
   /* px-4 */
   padding-left: 1rem;   /* 16px */
@@ -30,7 +28,7 @@
 
 .container-center {
   /* max-w-7xl */
-  max-width: 80rem; /* 1280px */
+  max-width: 90rem; /* 1280px */
 
   /* mx-auto */
   margin-left: auto;
@@ -120,10 +118,10 @@
   transition-duration: 150ms; /* Default Tailwind transition duration */
 
   /* bg-black/50 */
-  background-color: #eafafe;
+  background-color: black;
 
   /* text-white text-2xl */
-  color: #000;
+  color: #fff;
   font-size: 1.5rem; /* 24px */
   line-height: 2rem;
 
