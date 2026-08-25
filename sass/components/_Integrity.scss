@@ -83,7 +83,7 @@ padding: 40px 20px;
   object-fit: cover;
 
   /* aspect-[4/3] (Default) */
-  aspect-ratio: 4 / 3;
+  aspect-ratio: auto;
 }
 
 /* sm:aspect-video (Small devices and up, 640px+) */
