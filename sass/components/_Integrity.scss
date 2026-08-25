@@ -71,6 +71,8 @@ padding: 40px 20px;
 .min-width-full {
   /* min-w-full */
   min-width: 100%;
+padding:40px 20px;
+height: 4vh;
 }
 .responsive-media {
   /* w-full */
@@ -83,7 +85,7 @@ padding: 40px 20px;
   object-fit: cover;
 
   /* aspect-[4/3] (Default) */
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
 }
 
 /* sm:aspect-video (Small devices and up, 640px+) */
