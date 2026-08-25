@@ -21,7 +21,7 @@ const Home = () => {
     "/IMG_5438.webp",
     "/IMG_5482.webp",
     "/IMG_5452.webp",
-    "/IMG_5470.webp",
+    "/IMG_5459.webp",
     "/IMG_5422.webp",
       "/IMG_5433.webp",
         "/IMG_5443.webp",
@@ -79,6 +79,7 @@ const Home = () => {
             <Sale images={calvinKleinImages} autoPlayInterval={3500} />
        
         </div>
+        <h4>Crew Neck T shirts</h4>
         <Collection />
         <Newsletter />
         <Footer />
