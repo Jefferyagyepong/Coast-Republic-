@@ -1,6 +1,6 @@
 .custom-container {
   /* min-h-screen */
-  min-height: 70vh;
+  min-height: 100vh;
 
 
   /* py-12 */
@@ -13,7 +13,7 @@
 }
 
 /* sm:px-6 (Small devices, usually 640px+) */
-@media (min-width: 640px) {
+@media (min-width: 740px) {
   .custom-container {
     padding-left: 1.5rem;  /* 24px */
     padding-right: 1.5rem; /* 24px */
