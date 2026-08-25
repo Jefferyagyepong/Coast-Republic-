@@ -18,14 +18,14 @@ import Sale from "@/components/Parts/Sale";
 
 const Home = () => {
   const calvinKleinImages = [
-    "/products/true1c.jpg",
-    "/products/george1b.jpg",
-    "/products/force1b.jpg",
-    "/products/force2c.jpg",
-    "/products/george1a.jpg",
-      "/products/force2b.jpg",
-        "/products/force1a.jpg",
-          "/products/true1c.jpg",
+    "/IMG_5438.webp",
+    "/IMG_5482.webp",
+    "/IMG_5452.webp",
+    "/IMG_5470.webp",
+    "/IMG_5422.webp",
+      "/IMG_5433.webp",
+        "/IMG_5443",
+          "/IMG_5436.webp",
             "GYAMFUA.svg",
     
  
