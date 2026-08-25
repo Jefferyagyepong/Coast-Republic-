@@ -43,8 +43,23 @@ flex-direction: column;
 
 
 }
+.btn-scale-women {
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+background:#eafafe;
+color:#000;
+border-radius: 999;
+  transition: all 0.2s ease;
+color:#333;
+h1-h6{
+color:#333;
+}
+}
 
-.btn-scale, .btn-scale-women {
+.btn-scale {
   display: inline-block;
   padding: 10px 24px;
   text-decoration: none;
