@@ -1,4 +1,43 @@
+.newsletter-container {
+width:100%;
+  background-color: #eafafe;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
 
+.newsletter-title {
+text-align: start;
+padding-bottom: 11px;
+padding-top: 45px;
+font-weight: 300;
+  color: #000;
+  
+}
+
+.newsletter-description {
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.newsletter-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.newsletter-link:hover {
+  text-decoration: underline;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
 
 .product-container {
   display: grid;
