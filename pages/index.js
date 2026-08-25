@@ -24,7 +24,7 @@ const Home = () => {
     "/IMG_5470.webp",
     "/IMG_5422.webp",
       "/IMG_5433.webp",
-        "/IMG_5443",
+        "/IMG_5443.webp",
           "/IMG_5436.webp",
             "GYAMFUA.svg",
     
