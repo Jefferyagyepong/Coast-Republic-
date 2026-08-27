@@ -77,7 +77,7 @@ const ProductPage = ({ product }) => {
                   priority
                 />
               )}
-            </div>
+            </div><br />
 
             <div className="product-page__details">
               <p className="product-page__category">{product.category}</p>
