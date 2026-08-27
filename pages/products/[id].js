@@ -81,7 +81,7 @@ const ProductPage = ({ product }) => {
 
             <div className="product-page__details">
               <p className="product-page__category">{product.category}</p>
-              <h1 className="heading-large">{product.name}</h1>
+              <h4 className="heading-large">{product.name}</h4>
               <p className="product-page__price">
                 {formatMoney(product.price, product.currency)}
               </p>
