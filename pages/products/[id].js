@@ -108,7 +108,7 @@ const ProductPage = ({ product }) => {
                   </div>
                 </div>
               )}
-
+<br />
               {product.sizes?.length > 0 && (
                 <div className="product-page__option">
                   <span>Size</span>
@@ -130,7 +130,7 @@ const ProductPage = ({ product }) => {
                   </div>
                 </div>
               )}
-
+<br />
               <div className="product-page__qty">
                 <span>Quantity</span>
                 <div className="qty-control">
@@ -146,7 +146,7 @@ const ProductPage = ({ product }) => {
                   </button>
                 </div>
               </div>
-
+<br />
               <div className="product-page__actions">
                 <button
                   type="button"
