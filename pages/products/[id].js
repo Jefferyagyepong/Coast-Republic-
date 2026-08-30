@@ -89,7 +89,7 @@ const ProductPage = ({ product }) => {
 
               {product.colors?.length > 0 && (
                 <div className="product-page__option">
-                  <span>Color</span>
+                  <span>Color</span><br />
                   <div className="product-page__option-list">
                     {product.colors.map((color) => (
                       <button
@@ -132,7 +132,7 @@ const ProductPage = ({ product }) => {
               )}
 <br />
               <div className="product-page__qty">
-                <span>Quantity</span>
+                <span>Quantity</span><br />
                 <div className="qty-control">
                   <button
                     type="button"
