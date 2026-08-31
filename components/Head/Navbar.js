@@ -13,7 +13,7 @@ export default function Navbar() {
     
          
         <Link  className="cart" href={"/cart"}>
-             <Image src={"/shopping-cart.svg"} alt="cart" width={40} height={50} /> ({getCartCount()})
+             <Image src={"/shopping-cart.svg"} alt="cart" width={20} height={30} /> ({getCartCount()})
         </Link>
        
       
