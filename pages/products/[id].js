@@ -245,7 +245,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
               </span>
             ))}
           </nav>
-
+<br />
           <div className="container-center product-page">
             <div className="product-page__gallery">
               <div className="product-page__gallery-main">
@@ -478,7 +478,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
 
           {relatedProducts.length > 0 && (
             <section className="product-page__related">
-              <h3 className="heading-medium">You may also like</h3>
+              <h3 className="heading-medium">You may also like</h3><br />
               <div className="product-grid">
                 {relatedProducts.map((p) => (
                   <ProductCard key={p.id} product={p} />
