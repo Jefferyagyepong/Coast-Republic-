@@ -3,6 +3,7 @@
 
 import { useCart } from "@/context/CartContext";
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function Navbar() {
@@ -12,7 +13,7 @@ export default function Navbar() {
     
          
         <Link  className="cart" href={"/cart"}>
-             Cart ({getCartCount()})
+             <Image src={"/shopping-cart.svg"} width={40} height={50} ({getCartCount()})
         </Link>
        
       
