@@ -13,8 +13,9 @@ export default function Terms() {
         />
       </Head>
 
-      <main className="page">
-        <h1>Terms &amp; Conditions</h1>
+      <main>
+         <div className="main-content">
+        <h3>Terms &amp; Conditions</h3> 
         <p className="updated">Last updated: August 2026</p>
 
         <p className="intro">
@@ -26,7 +27,7 @@ export default function Terms() {
         </p>
 
         <section>
-          <h2>1. About Us</h2>
+          <h4>1. About Us</h4>
           <p>
             Coast Republic ("we," "us," "our") is a Ghana-based retailer of
             apparel and footwear, operating from Asafo Dadiesoaba, Ghana. You
@@ -39,7 +40,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>2. Eligibility</h2>
+          <h4>2. Eligibility</h4>
           <p>
             You must be at least 18 years old, or place orders under the
             supervision of a parent or guardian, to purchase from this Site.
@@ -50,7 +51,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>3. Products, Pricing &amp; Availability</h2>
+          <h4>3. Products, Pricing &amp; Availability</h4>
           <p>
             We make reasonable efforts to display product colors, sizing, and
             details accurately; however, slight variations may occur due to
@@ -63,7 +64,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>4. Orders &amp; Payment</h2>
+          <h4>4. Orders &amp; Payment</h4>
           <p>
             An order is only confirmed once payment has been successfully
             processed. We accept MTN Mobile Money, Telecel Cash, AirtelTigo
@@ -79,7 +80,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>5. Delivery</h2>
+          <h4>5. Delivery</h4>
           <p>
             Delivery timelines are estimates, not guarantees, and are subject
             to courier and logistical factors beyond our control. Full
@@ -90,7 +91,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>6. Returns &amp; Refunds</h2>
+          <h4>6. Returns &amp; Refunds</h4>
           <p>
             Returns and refunds are governed by our{" "}
             <a href="/returns">Refunds &amp; Returns Policy</a>, which forms
@@ -99,7 +100,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>7. Intellectual Property</h2>
+          <h4>7. Intellectual Property</h4>
           <p>
             All content on this Site — including logos, product designs,
             photography, and text — is the property of Coast Republic or its
@@ -110,7 +111,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>8. Acceptable Use</h2>
+          <h4>8. Acceptable Use</h4>
           <p>You agree not to use the Site to:</p>
           <ul>
             <li>Violate any applicable law or regulation</li>
@@ -127,7 +128,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>9. Limitation of Liability</h2>
+          <h4>9. Limitation of Liability</h4>
           <p>
             To the fullest extent permitted by law, Coast Republic shall not
             be liable for any indirect, incidental, or consequential damages
@@ -138,7 +139,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>10. Third-Party Services</h2>
+          <h4>10. Third-Party Services</h4>
           <p>
             The Site may use third-party services for payment processing and
             delivery. We are not responsible for the acts, omissions, or
@@ -148,7 +149,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>11. Changes to These Terms</h2>
+          <h4>11. Changes to These Terms</h4>
           <p>
             We may update these Terms from time to time to reflect changes in
             our practices or for legal reasons. The updated version will be
@@ -159,7 +160,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>12. Governing Law</h2>
+          <h4>12. Governing Law</h4>
           <p>
             These Terms are governed by the laws of the Republic of Ghana.
             Any disputes arising from these Terms or your use of the Site
@@ -169,7 +170,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2>13. Contact</h2>
+          <h4>13. Contact</h4>
           <p>
             For questions about these Terms, contact us at{" "}
             <a href="mailto:support@coastrepublic.com">
@@ -186,6 +187,7 @@ export default function Terms() {
           applicable consumer protection and e-commerce regulations.
         </p>
           <FootBottom />
+           </div>
       </main>
 
       <style jsx>{`
