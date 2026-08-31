@@ -7,7 +7,7 @@ import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
 import { getAllProducts } from "@/lib/products";
 import ProductNav from "@/components/Parts/ProductNav";
-
+import Newsletter from "@/components/Footer/Newsletter";
 export async function getStaticProps() {
   return { props: { products: getAllProducts() } };
 }
@@ -213,11 +213,12 @@ const ProductsPage = ({ products }) => {
       <hr />
 
       <div className="feedback-container">
-        <h4>We would like to hear what you think!</h4>
-        <Link href={"/contact"}>Give feedback</Link>
+        <h4>Have any question? </h4>
+        <Link href={"/contact"}>Send Us a Message </Link>
       </div>
       <br />
-
+      
+<Newsletter />
       <FootBottom />
       <style jsx global>{`
         .controls {
