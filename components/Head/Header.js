@@ -1,18 +1,26 @@
 /* eslint-disable react/react-in-jsx-scope */
+'use client';
 import Link from "next/link.js";
 import Menu from "./Menu";
 import Navbar from "./Navbar";
-import Toast from "./Toast";
 
+import Toast from './Toast';
 
-function Header() {
+export default function Header() {
   return (
-    <>
-      <header>
+    <header
+      style={{
+        position: 'fixed',
+        width: '100%',
+        backgroundColor: '#eafafe',
+        zIndex: 1000,
+        color: '#000',
+      }}
+    >
       <Toast />
 
-   
-        <div className="header-flex-row">
+      {/* rest of your header — logo, nav, cart icon, etc. */}
+       <div className="header-flex-row">
                <Menu />
           
           <Link href={"./"}>
@@ -21,11 +29,7 @@ function Header() {
           
               <Navbar />
         </div>
-
- 
-
-      </header>
-    </>
+    </header>
   );
 }
-export default Header;
+
