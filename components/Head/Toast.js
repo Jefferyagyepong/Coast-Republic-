@@ -19,7 +19,7 @@ export default function Toast({
   const sets = [messages, messages];
 
   return (
-    <div className="announce">
+    <div className="announce" style={{ '--toast-speed': `${speed}s` }}>
       <div className="announce-track">
         {sets.map((set, setIndex) => (
           <div
@@ -49,16 +49,24 @@ export default function Toast({
           background: #111111;
           color: #fafaf8;
           height: 2.25rem;
+          width: 100%;
+          flex: none; /* stay full-width even if the parent header is a flex row */
+          align-self: stretch;
           display: flex;
           align-items: center;
           overflow: hidden;
           position: relative;
+          isolation: isolate; /* own stacking context, safe inside fixed/z-indexed headers */
         }
 
         .announce-track {
           display: flex;
           width: max-content;
-          animation: scroll-right ${speed}s linear infinite;
+          min-width: 200%;
+          animation-name: scroll-right;
+          animation-duration: var(--toast-speed, 22s);
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
         }
 
         .announce:hover .announce-track {
@@ -125,15 +133,6 @@ export default function Toast({
           pointer-events: none;
         }
 
-        @keyframes scroll-right {
-          from {
-            transform: translateX(-50%);
-          }
-          to {
-            transform: translateX(0%);
-          }
-        }
-
         @media (prefers-reduced-motion: reduce) {
           .announce-track {
             animation: none;
@@ -143,7 +142,17 @@ export default function Toast({
           }
         }
       `}</style>
+
+      <style jsx global>{`
+        @keyframes scroll-right {
+          from {
+            transform: translateX(-50%);
+          }
+          to {
+            transform: translateX(0%);
+          }
+        }
+      `}</style>
     </div>
   );
 }
-
