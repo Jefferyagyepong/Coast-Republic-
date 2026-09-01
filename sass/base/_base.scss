@@ -64,6 +64,68 @@ img {
  
 }
 
+.announce{
+    background:var(--ink);
+    color:var(--paper);
+    height:2.5rem;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+  }
 
+  /* the track holds two identical copies of the message list, back to back.
+     scrolling it exactly -50% and looping gives a seamless, gapless ticker */
+  .announce-track{
+    display:flex;
+    width:max-content;
+    animation:scroll-right var(--speed) linear infinite;
+  }
+
+  .announce-set{
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
+  }
+
+  .announce-item{
+    display:inline-flex;
+    align-items:center;
+    white-space:nowrap;
+    font-size:.8rem;
+    letter-spacing:.03em;
+    padding:0 1.5rem;
+  }
+
+  /* thin divider between messages */
+  .announce-item + .announce-item{
+    border-left:1px solid rgba(247,246,243,.25);
+  }
+
+  .announce-item span.accent{
+    color:var(--accent);
+    font-weight:700;
+    margin-right:.4rem;
+  }
+
+  /* moves left to right: start shifted one full set to the left,
+     end at 0 — content enters from the left edge and exits on the right */
+  @keyframes scroll-right{
+    from{ transform:translateX(-50%); }
+    to{ transform:translateX(0%); }
+  }
+
+  /* rest of page, just for context */
+  .page{
+    padding:4rem 2rem;
+    text-align:center;
+    color:#777;
+    font-size:.9rem;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .announce-track{ animation:none; }
+    .announce-set:last-child{ display:none; }
+  }
 
 
