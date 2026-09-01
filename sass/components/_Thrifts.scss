@@ -1,5 +1,5 @@
 .product-page__sticky-bar {
-  display: none; /* hidden by default, shown on mobile below */
+  display: none; /* desktop default: hidden */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -36,14 +36,66 @@
   font-size: 14px;
 }
 
-.product-page__sticky-bar .btn-prim
-
-
-.product-page__details{
-p,h1-h6{
-padding:8px 10px;
+.product-page__sticky-bar .btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
+
+/* ---- Tablets and below (portrait tablets, large phones) ---- */
+@media (max-width: 1024px) {
+  .product-page__sticky-bar {
+    display: flex;
+  }
+
+  .main-content {
+    padding-bottom: 76px;
+  }
 }
+
+/* ---- Standard mobile ---- */
+@media (max-width: 480px) {
+  .product-page__sticky-bar {
+    padding: 10px 12px;
+  }
+
+  .product-page__sticky-name {
+    max-width: 120px;
+    font-size: 13px;
+  }
+
+  .product-page__sticky-price {
+    font-size: 13px;
+  }
+
+  .product-page__sticky-bar .btn-primary {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .main-content {
+    padding-bottom: 64px;
+  }
+}
+
+/* ---- Very small phones ---- */
+@media (max-width: 360px) {
+  .product-page__sticky-name {
+    max-width: 90px;
+  }
+
+  .product-page__sticky-bar .btn-primary {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* ---- Safe-area support for notched phones (iPhone home bar etc.) ---- */
+@supports (padding: max(0px)) {
+  .product-page__sticky-bar {
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}
+
 .option-btn{
 background:#eafafe;
 text-align:center;
