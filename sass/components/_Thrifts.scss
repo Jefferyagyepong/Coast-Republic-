@@ -1,3 +1,44 @@
+.product-page__sticky-bar {
+  display: none; /* hidden by default, shown on mobile below */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.product-page__sticky-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-page__sticky-price {
+  font-size: 14px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+.product-page__sticky-bar .btn-primary {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.product-page__sticky-bar .btn-prim
+
+
 .product-page__details{
 p,h1-h6{
 padding:8px 10px;
