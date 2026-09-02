@@ -15,6 +15,7 @@ export default function Returns() {
       <main>
             <Header />
         <div className="main_content">
+          <div>
       
           
         <h3>Refunds &amp; Returns Policy</h3>
@@ -113,6 +114,7 @@ export default function Returns() {
           </p>
         </section>
         </div>
+            </div>
       </main>
 
       <style jsx>{`
