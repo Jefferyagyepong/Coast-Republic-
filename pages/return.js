@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "@/components/Head/Header";
 
 export default function Returns() {
   return (
@@ -11,8 +12,12 @@ export default function Returns() {
         />
       </Head>
 
-      <main className="page">
-        <h1>Refunds &amp; Returns Policy</h1>
+      <main>
+            <header />
+        <div className="main_content">
+      
+          
+        <h3>Refunds &amp; Returns Policy</h3>
         <p className="intro">
           We want you to love what you ordered. If something isn't right,
           here's how we make it right.
@@ -107,6 +112,7 @@ export default function Returns() {
             <a href="/contact">Contact our support team</a>.
           </p>
         </section>
+        </div>
       </main>
 
       <style jsx>{`
