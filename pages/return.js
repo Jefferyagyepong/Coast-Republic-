@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
+import Footer from "@/components/Footer/Footer";
 
 export default function Returns() {
   return (
@@ -115,6 +116,7 @@ export default function Returns() {
         </section>
         </div>
             </div>
+            <Footer />
       </main>
 
       <style jsx>{`
