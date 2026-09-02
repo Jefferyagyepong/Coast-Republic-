@@ -13,7 +13,7 @@ export default function Returns() {
       </Head>
 
       <main>
-            <header />
+            <Header />
         <div className="main_content">
       
           
