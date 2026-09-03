@@ -1,5 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head";
+import Header from "@/components/Head/Header";
+
 import FootBottom from "@/components/Footer/FootBottom";
 
 export default function Terms() {
@@ -14,6 +16,7 @@ export default function Terms() {
       </Head>
 
       <main>
+        <Header />
          <div className="main-content">
         <h3>Terms &amp; Conditions</h3> 
         <p className="updated">Last updated: August 2026</p>
