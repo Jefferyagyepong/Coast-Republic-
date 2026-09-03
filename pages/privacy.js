@@ -3,8 +3,6 @@
 import Head from "next/head";
 
 
-
-import Toast from "@/components/Head/Toast";
 import PrivacyPage from "@/components/Footer/Privacy";
 
 
@@ -40,9 +38,9 @@ const Privacy = () => {
 
         <meta name="robots" content="index, follow" />
       </Head>
-      <Header />
+   
       <PrivacyPage />
-      <FootBottom />
+  
     </>
   );
 };
