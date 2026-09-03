@@ -166,6 +166,7 @@ const ProductsPage = ({ products }) => {
     <>
       <Head>
         <title>Shop | Coast Republic</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </Head>
       <Header />
       <div className="main-content">
