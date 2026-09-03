@@ -41,15 +41,6 @@ const Privacy = () => {
    
       <PrivacyPage />
   
-    </>
-  );
-};
-
-export default Privacy;
-
-
-   
-          
 
 
     </>
