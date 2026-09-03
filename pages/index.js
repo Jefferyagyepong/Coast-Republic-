@@ -35,34 +35,36 @@ const Home = () => {
 
   return (
     <>
-      <Head>
-        <title>Coast Republic | Clothing & Shoes</title>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@coastrepublicgh" />
-        <meta name="twitter:creator" content="@coastrepublicgh" />
-        <meta name="twitter:title" content="Coast Republic inc" />
-        <meta name="twitter:description" content=" Discover unique designs crafted for you..... " />
-        <meta name="twitter:image" content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-        <meta property="og:title" content="Coast Republic inc" />
-        <meta
-          property="og:description"
-          content="T-shirts, Sneakers & more.... "
-        />
-        <meta property="og:url" content="https://coast-republic.vercel.app/" />
-        <meta
-          property="og:image"
-          content="https://images.unsplash.com/photo-1622445272461-c6580cab8755?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta name="description" content="Coast Republic  Store" />
-        <meta name="keywords" content=" e-commerce, T-sirts , Ghana, Quality T-shirts, Clothing, Affordable clothing, crew neck, T-shirt print, store" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="author" content="Coast Republic Inc" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-        <link rel="icon" href="/coast.ico" />
-        <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
-      </Head>
+  <Head>
+  <title>Coast Republic | Clothing & Shoes</title>
+  <meta
+    name="description"
+    content="Coast Republic — Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials. Shop the latest collection with fast nationwide delivery."
+  />
+  <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+  <meta name="author" content="Coast Republic Inc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+  <link rel="canonical" href="https://coast-republic.vercel.app/" />
+  <link rel="icon" href="/coast.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
 
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Coast Republic | Clothing & Shoes" />
+  <meta
+    property="og:description"
+    content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+  />
+  <meta property="og:url" content="https://coast-republic.vercel.app/" />
+  <meta property="og:site_name" content="Coast Republic" />
+  <meta property="og:image" content="https://coast-republic.vercel.app/og-home.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  {/* Twitter */}
+  
 
       <Header />
       <div className="main-content">
