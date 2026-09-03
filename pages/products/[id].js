@@ -225,10 +225,41 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
 
   return (
     <>
-      <Head>
-        <title>{product.name} | Coast Republic</title>
-        <meta name="description" content={product.description} />
-      </Head>
+  <Head>
+  <title>{product.name} | Coast Republic</title>
+  <meta name="description" content={product.description} />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="canonical"
+    href={`https://www.coastrepublic.com/products/${product.id}`}
+  />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="product" />
+  <meta property="og:title" content={`${product.name} | Coast Republic`} />
+  <meta property="og:description" content={product.description} />
+  <meta
+    property="og:url"
+    content={`https://www.coastrepublic.com/products/${product.id}`}
+  />
+  <meta property="og:site_name" content="Coast Republic" />
+  {product.images?.[0] && (
+    <meta property="og:image" content={product.images[0]} />
+  )}
+  <meta property="product:price:amount" content={product.price} />
+  <meta property="product:price:currency" content={product.currency} />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${product.name} | Coast Republic`} />
+  <meta name="twitter:description" content={product.description} />
+  {product.images?.[0] && (
+    <meta name="twitter:image" content={product.images[0]} />
+  )}
+
+  <meta name="robots" content="index, follow" />
+</Head>
+
       <Header />
 
       <div className="main-content">
