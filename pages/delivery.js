@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
 
 export default function Delivery() {
@@ -13,6 +14,7 @@ export default function Delivery() {
       </Head>
 
       <main>
+        <Header />
         <div className="main-content">
         <h3>Delivery Information</h3>
         <p className="intro">
