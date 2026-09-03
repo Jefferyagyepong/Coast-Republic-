@@ -2,7 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head";
 
-import Header from "@/components/Head/Header";
+
 
 import Toast from "@/components/Head/Toast";
 import PrivacyPage from "@/components/Footer/Privacy";
@@ -58,7 +58,7 @@ const Privacy = () => {
       </Head>
 
    
-          <Header />
+          
 
 
     </>
