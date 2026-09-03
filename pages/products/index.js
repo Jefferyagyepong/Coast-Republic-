@@ -164,10 +164,41 @@ const ProductsPage = ({ products }) => {
 
   return (
     <>
-      <Head>
-        <title>Shop | Coast Republic</title>
-         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      </Head>
+  <Head>
+  <title>Shop All Products | Coast Republic</title>
+  <meta
+    name="description"
+    content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more. Filter, search, and sort to find your next favorite piece."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.coastrepublic.com/products" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shop All Products | Coast Republic" />
+  <meta
+    property="og:description"
+    content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more."
+  />
+  <meta property="og:url" content="https://www.coastrepublic.com/products" />
+  <meta property="og:site_name" content="Coast Republic" />
+  <meta property="og:image" content="https://www.coastrepublic.com/og-products.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shop All Products | Coast Republic" />
+  <meta
+    name="twitter:description"
+    content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more."
+  />
+  <meta name="twitter:image" content="https://www.coastrepublic.com/og-products.jpg" />
+
+  {/* Robots */}
+  <meta name="robots" content="index, follow" />
+</Head>
+
       <Header />
       <div className="main-content">
         <div className="custom-container">
