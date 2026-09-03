@@ -15,7 +15,7 @@ export default function Returns() {
 
       <main>
             <Header />
-        <div className="main_content">
+        <div className="main-content">
           <div>
       
           
