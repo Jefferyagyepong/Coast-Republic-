@@ -7,13 +7,30 @@ import FootBottom from "@/components/Footer/FootBottom";
 export default function Terms() {
   return (
     <>
-      <Head>
-        <title>Terms &amp; Conditions - Coast Republic</title>
-        <meta
-          name="description"
-          content="Terms and conditions for using the Coast Republic website and purchasing products."
-        />
-      </Head>
+ <Head>
+  <title>Terms & Conditions | Coast Republic</title>
+  <meta
+    name="description"
+    content="Terms and conditions for using the Coast Republic website and purchasing products."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://coast-republic.vercel.app/terms" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Terms & Conditions | Coast Republic" />
+  <meta
+    property="og:description"
+    content="Terms and conditions for using the Coast Republic website and purchasing products."
+  />
+  <meta property="og:url" content="https://coast-republic.vercel.app/terms" />
+  <meta property="og:site_name" content="Coast Republic" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Terms & Conditions | Coast Republic" />
+  
+
 
       <main>
         <Header />
