@@ -27,7 +27,7 @@ export default function Returns() {
   {/* Twitter */}
   <meta name="twitter:card" content="summary" />
   
-
+</Head>
 
       <main>
             <Header />
