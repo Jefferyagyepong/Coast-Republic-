@@ -25,7 +25,7 @@ const Footer = () => {
           <h5>Help</h5>
           <ul>
             <li><Link href="/faq">FAQ</Link></li><br/>
-            <li><Link href="/contact">About Us</Link></li><br/>
+            <li><Link href="/about">About Us</Link></li><br/>
             <li><Link href="/delivery">Delivery</Link></li><br/>
             <li><Link href="/return">Refunds &Returns</Link></li><br/>
             <li><Link href="/contact">Contact Us</Link></li><br/>
