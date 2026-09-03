@@ -1,7 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
+import Header from "@/components/Head/Header";
 function Privacy() {
   return (
-    <div className="footer-align-left">
+    <main>
+      <Header />
+    <div className="main-content">
       <article>
         <h3>Effective Date: 20-01-2025</h3>
 
@@ -189,6 +192,7 @@ function Privacy() {
         <p>Address: 7 Minneti ST, Asokwa</p>
       </article>
     </div>
+    </main>
 
 
   );
