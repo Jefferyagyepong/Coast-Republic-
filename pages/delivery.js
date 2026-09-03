@@ -12,8 +12,9 @@ export default function Delivery() {
         />
       </Head>
 
-      <main className="page">
-        <h1>Delivery Information</h1>
+      <main>
+        <div className="main-content">
+        <h3>Delivery Information</h3>
         <p className="intro">
           We know you want your order fast. Here's exactly what to expect
           once you check out.
@@ -97,6 +98,7 @@ export default function Delivery() {
           </p>
         </section>
           <FootBottom />
+          </div>
       </main>
 
       <style jsx>{`
