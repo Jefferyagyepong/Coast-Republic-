@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
 
 export default function About() {
@@ -12,7 +13,9 @@ export default function About() {
         />
       </Head>
 
-      <main className="about">
+      <main>
+        <Header />
+        <div className="main-content">
         <section className="hero">
           <h1>About Coast Republic</h1>
           <p className="tagline">
@@ -84,6 +87,7 @@ export default function About() {
           </p>
         </section>
         <FootBottom />
+        </div>
       </main>
 
       <style jsx>{`
