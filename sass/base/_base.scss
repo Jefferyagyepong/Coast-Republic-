@@ -66,8 +66,7 @@ main {
 }
 
 .announce{
-    background:var(--ink);
-    color:var(--paper);
+   
     height:2.5rem;
     display:flex;
     align-items:center;
@@ -80,7 +79,7 @@ main {
   .announce-track{
     display:flex;
     width:max-content;
-    animation:scroll-right var(--speed) linear infinite;
+    animation:scroll-right 2s linear infinite;
   }
 
   .announce-set{
@@ -104,7 +103,7 @@ main {
   }
 
   .announce-item span.accent{
-    color:var(--accent);
+   
     font-weight:700;
     margin-right:.4rem;
   }
