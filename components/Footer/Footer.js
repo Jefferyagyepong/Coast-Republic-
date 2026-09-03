@@ -29,7 +29,8 @@ const Footer = () => {
             <li><Link href="/delivery">Delivery</Link></li><br/>
             <li><Link href="/return">Refunds &Returns</Link></li><br/>
             <li><Link href="/contact">Contact Us</Link></li><br/>
-            <li><Link href="/terms">Terms & Conditions </Link></li><br/>
+            <li><Link href="/terms">Terms and Conditions </Link></li><br/>
+             <li><Link href="/privacy">Privacy Policy  </Link></li><br/>
           </ul>
         </div>
 
