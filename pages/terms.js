@@ -29,7 +29,7 @@ export default function Terms() {
   {/* Twitter */}
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Terms & Conditions | Coast Republic" />
-  
+  </Head>
 
 
       <main>
