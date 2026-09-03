@@ -1,99 +1,262 @@
-    hr {
-          border: none;
-          height: 1px;
-          background: #e0e0e0;
-          margin: 1.5rem 0;
-        }
-//hamburger menu
-.nav-container{
-  width: 5%;
-margin-top:-5px;
+// ==========================================================================
+// Header component
+// Paired with Header.js / Menu.js / Navbar.js / Toast.js
+//
+// Root fixes vs. the original file:
+//  - color:000            -> #000 (was invalid, browser ignored it)
+//  - .nav-container 5%    -> flex item, no longer crushed
+//  - desktop .nav-menu-link had NO styles at all — added
+//  - stray copyright <li> inside .nav-menu broke desktop flex row —
+//    now gated behind .nav-menu-footer (hidden on desktop)
+//  - header height was a magic number (130px) — now driven by
+//    --header-height, which Header.js keeps in sync via ResizeObserver
+//    (so it stays correct whether the Toast bar is shown or dismissed)
+// ==========================================================================
+
+:root {
+  --header-bg: #eafafe;
+  --header-text: #0a0a0a;
+  --header-accent: #007bff;
+  // SSR/no-JS fallback only — Header.js overwrites this on mount with the
+  // header's real measured height (toast bar + nav row can vary).
+  --header-height: 96px;
+  --transition-fast: 0.25s ease;
 }
-/* HamburgerMenu.css */
-.nav-toggle {
-  display: none;
+
+hr {
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 1.5rem 0;
 }
-.logo{
+
+// --------------------------------------------------------------------------
+// Header shell
+// --------------------------------------------------------------------------
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  z-index: 1000;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow var(--transition-fast);
+
+  // toggled from Header.js on scroll
+  &.is-scrolled {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.header-flex-row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  padding-top: var(--header-height);
+
+  h2 {
+    padding-left: 12px;
+  }
+}
+
+// --------------------------------------------------------------------------
+// Logo
+// --------------------------------------------------------------------------
+.logo {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #000;
-padding-left:15px;
-
+  letter-spacing: 3px;
+  color: var(--header-text);
+  font-size: 16px;
+  white-space: nowrap;
+  margin: 0;
 }
+
+// --------------------------------------------------------------------------
+// Hamburger / nav toggle
+// --------------------------------------------------------------------------
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; // was width: 5%, which crushed this on small screens
+}
+
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
-  padding: 15px;
+  padding: 12px;
+
+  &:focus-visible {
+    outline: 2px solid var(--header-accent);
+    outline-offset: 2px;
+  }
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--header-text);
+    margin: 5px 0;
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+  }
 }
 
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: black;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-
-}
-
+// --------------------------------------------------------------------------
+// Nav menu — shared base
+// --------------------------------------------------------------------------
 .nav-menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-
-}
-.nav-menu-link{
-display: block;
-
 }
 
-.nav-menu li a {
-    color:000;
-font-size:12px;
-text-align:left;
-padding-left: 15px;
+.nav-menu-link {
+  color: var(--header-text); // fixed from invalid `color:000`
+  text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
 
+  &:hover,
+  &:focus-visible {
+    color: var(--header-accent);
+  }
+
+  // Menu.js adds this to the link matching the current route
+  &.active {
+    color: var(--header-accent);
+    font-weight: 600;
+  }
 }
 
-.nav-menu li a:hover {
-  color: #007bff;
+// copyright line that lives inside the mobile drawer only —
+// this is what used to leak into the desktop flex row unstyled
+.nav-menu-footer {
+  display: none;
 }
 
-/* Mobile styles */
+.header-link,
+#header-link {
+  color: var(--header-text);
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.cart {
+  color: var(--header-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  text-decoration: none;
+}
+
+// only rendered by Navbar.js when count > 0
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: var(--header-accent);
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+  padding: 3px 5px;
+  border-radius: 50%;
+  min-width: 16px;
+  text-align: center;
+}
+
+// backdrop rendered by Menu.js behind the open mobile drawer
+.nav-menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: var(--header-height);
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 900;
+}
+
+// --------------------------------------------------------------------------
+// Mobile (<= 768px)
+// --------------------------------------------------------------------------
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-.nav-menu-link{
-padding:25px;
-text-decoration:underline;
-font-weight: 100;
-font-size: 12px;
-color:black;
-
-
-}
 
   .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: var(--header-height);
     left: 0;
     width: 100%;
- background-color:#eafafe;
-color:black;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--header-bg);
     flex-direction: column;
-    
+    align-items: stretch;
+    overflow-y: auto;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-fast), transform var(--transition-fast),
+      visibility var(--transition-fast);
+  }
+
+  .nav-menu-link {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-menu-footer {
+    display: block;
+    margin-top: auto; // pins the copyright line to the bottom of the drawer
+    padding: 16px 20px;
+    font-size: 11px;
+    opacity: 0.6;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+
+    p {
+      margin: 0;
+    }
   }
 
   .nav-toggle:checked ~ .nav-menu {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-toggle:checked ~ .nav-menu-overlay {
+    display: block;
   }
 
   .nav-toggle:checked + .hamburger span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: translateY(7px) rotate(45deg);
   }
 
   .nav-toggle:checked + .hamburger span:nth-child(2) {
@@ -101,70 +264,89 @@ color:black;
   }
 
   .nav-toggle:checked + .hamburger span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: translateY(-7px) rotate(-45deg);
   }
 }
 
-/* Desktop styles */
+// --------------------------------------------------------------------------
+// Desktop (>= 769px) — previously only forced display:flex on .nav-menu
+// and never styled .nav-menu-link at all, so links used browser defaults
+// and the stray footer <li> sat inline among them
+// --------------------------------------------------------------------------
 @media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
   .nav-menu {
     display: flex !important;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    height: auto;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav-menu-link {
+    position: relative;
+    display: inline-block;
+    padding: 6px 2px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-bottom: none;
+
+    // animated underline on hover / active page
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background: var(--header-accent);
+      transition: width var(--transition-fast);
+    }
+
+    &:hover::after,
+    &:focus-visible::after,
+    &.active::after {
+      width: 100%;
+    }
+  }
+
+  .nav-menu-footer,
+  .nav-menu-overlay {
+    display: none !important;
   }
 }
 
+// --------------------------------------------------------------------------
+// Tablet fine-tuning (769px – 1024px) — keeps 7 nav items from crowding
+// --------------------------------------------------------------------------
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-menu {
+    gap: 14px;
+  }
 
+  .nav-menu-link {
+    font-size: 12px;
+  }
 
-
-
-
-
-
-
-
-.cart{
-color: #000;
-
+  .logo {
+    font-size: 14px;
+  }
 }
 
-.header-flex-row{
-width:100%;
-display:flex;
-flex-direction:row;
-align-items:center;
-justify-content:space-between;
- padding:5px 8px;
-
-  
+@media (prefers-reduced-motion: reduce) {
+  header,
+  .hamburger span,
+  .nav-menu,
+  .nav-menu-link::after {
+    transition: none !important;
+  }
 }
-
-header {
-position:fixed;
-  width:100%;
-  background-color:#eafafe;
-z-index:1000;
-color:#000;
-}
-.main-content {
-  padding-top: 130px; /* Must match the header's height */
-h2{
-padding-left: 12px;
-}
-}
-
-
-
-.header-link {
-  color: black;
-}
-
-.header-link:hover {
-  opacity: 0.7;
-}
-
-#header-link {
-  color: black;
-}
-
-
-
-
