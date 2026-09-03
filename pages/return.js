@@ -5,13 +5,29 @@ import Footer from "@/components/Footer/Footer";
 export default function Returns() {
   return (
     <>
-      <Head>
-        <title>Refunds &amp; Returns - Coast Republic</title>
-        <meta
-          name="description"
-          content="Coast Republic's refund and return policy — eligibility, process, and timelines."
-        />
-      </Head>
+ <Head>
+  <title>Refunds & Returns | Coast Republic</title>
+  <meta
+    name="description"
+    content="Coast Republic's refund and return policy — eligibility, process, and timelines."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://coast-republic.vercel.app/return" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Refunds & Returns | Coast Republic" />
+  <meta
+    property="og:description"
+    content="Coast Republic's refund and return policy — eligibility, process, and timelines."
+  />
+  <meta property="og:url" content="https://coast-republic.vercel.app/return" />
+  <meta property="og:site_name" content="Coast Republic" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary" />
+  
+
 
       <main>
             <Header />
