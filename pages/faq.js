@@ -44,13 +44,40 @@ export default function FAQ() {
 
   return (
     <>
-      <Head>
-        <title>FAQ - Coast Republic</title>
-        <meta
-          name="description"
-          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
-        />
-      </Head>
+  <Head>
+  <title>FAQ | Coast Republic</title>
+  <meta
+    name="description"
+    content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.coastrepublic.com/faq" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FAQ | Coast Republic" />
+  <meta
+    property="og:description"
+    content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+  />
+  <meta property="og:url" content="https://www.coastrepublic.com/faq" />
+  <meta property="og:site_name" content="Coast Republic" />
+  <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FAQ | Coast Republic" />
+  <meta
+    name="twitter:description"
+    content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+  />
+  <meta name="twitter:image" content="https://www.coastrepublic.com/og-default.jpg" />
+
+  <meta name="robots" content="index, follow" />
+</Head>
+
 
       <main>
         <Header />
