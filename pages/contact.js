@@ -32,13 +32,40 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>Contact Us - Coast Republic</title>
-        <meta
-          name="description"
-          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
-        />
-      </Head>
+  <Head>
+  <title>Contact Us | Coast Republic</title>
+  <meta
+    name="description"
+    content="Get in touch with Coast Republic — questions about orders, sizing, or delivery. We reply within 24 hours."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.coastrepublic.com/contact" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Us | Coast Republic" />
+  <meta
+    property="og:description"
+    content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
+  />
+  <meta property="og:url" content="https://www.coastrepublic.com/contact" />
+  <meta property="og:site_name" content="Coast Republic" />
+  <meta property="og:image" content="https://www.coastrepublic.com/og-contact.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Coast Republic" />
+  <meta
+    name="twitter:description"
+    content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
+  />
+  <meta name="twitter:image" content="https://www.coastrepublic.com/og-contact.jpg" />
+
+  <meta name="robots" content="index, follow" />
+</Head>
+
 
       <main>
         <Header />
