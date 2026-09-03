@@ -288,6 +288,18 @@ const CheckoutPage = () => {
   if (items.length === 0) {
     return (
       <>
+      <Head>
+  <title>Checkout | Coast Republic</title>
+  <meta
+    name="description"
+    content="Complete your Coast Republic order securely with MTN MoMo."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {/* User-specific + collects PII (name, phone, address) — never index or preview */}
+  <meta name="robots" content="noindex, nofollow" />
+</Head>
+
         <Header />
         <div className="main-content">
           <div className="custom-container">
