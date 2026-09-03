@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
+import Header from "@/components/Head/Header";
 import Head from "next/head";
 import FootBottom from "@/components/Footer/FootBottom";
 
@@ -51,7 +52,9 @@ export default function FAQ() {
         />
       </Head>
 
-      <main className="faq">
+      <main>
+        <Header />
+        <div className="main-content">
         <h1>Frequently Asked Questions</h1>
         <p className="intro">
           Everything you need to know before you shop. Can&apos;t find your
@@ -74,6 +77,7 @@ export default function FAQ() {
           ))}
         </div>
           <FootBottom />
+          </div>
       </main>
 
       <style jsx>{`
