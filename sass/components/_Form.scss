@@ -1,3 +1,28 @@
+.search-products {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px; /* was missing a size — <16px causes mobile auto-zoom on focus */
+  color: #333;
+  box-sizing: border-box;
+}
+
+.search-products:focus {
+  outline: 2px solid #333; /* visible focus without changing size */
+  outline-offset: -1px;    /* keeps outline inside the box, no layout shift */
+}
+
+.controls select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 4px;
+  color: #000;
+  font-size: 16px; /* same fix for the dropdowns */
+}
+
+
 textarea {
     width: 100%;
     padding: 1rem 1.25rem;
