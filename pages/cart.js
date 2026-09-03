@@ -199,9 +199,19 @@ const CartPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Your Cart | Coast Republic</title>
-      </Head>
+  <Head>
+  <title>Your Cart | Coast Republic</title>
+  <meta
+    name="description"
+    content="Review the items in your Coast Republic cart before checkout."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {/* Don't index or surface this page — it's user-specific and has no
+      canonical shareable content */}
+  <meta name="robots" content="noindex, nofollow" />
+</Head>
+
       <Header />
       <div className="main-content">
         <div className="custom-container">
