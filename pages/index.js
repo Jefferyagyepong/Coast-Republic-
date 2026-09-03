@@ -62,7 +62,7 @@ const Home = () => {
   <meta property="og:image" content="https://coast-republic.vercel.app/og-home.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-
+</head>
   {/* Twitter */}
   
 
