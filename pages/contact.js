@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useState } from "react";
+import Header from "@/components/Head/Header";
 import Head from "next/head";
 import FootBottom from "@/components/Footer/FootBottom";
 
@@ -39,8 +40,10 @@ export default function Contact() {
         />
       </Head>
 
-      <main className="page">
-        <h1>Contact Us</h1>
+      <main>
+        <Header />
+        <div className="main-content">
+        <h3>Contact Us</h3>
         <p className="intro">
           Have a question about an order, sizing, or delivery? Send us a
           message and our team will get back to you within 24 hours.
@@ -109,6 +112,7 @@ export default function Contact() {
           </div>
         </div>
         <FootBottom/>
+        </div>
       </main>
 
       <style jsx>{`
