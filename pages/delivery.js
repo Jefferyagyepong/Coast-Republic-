@@ -5,13 +5,40 @@ import FootBottom from "@/components/Footer/FootBottom";
 export default function Delivery() {
   return (
     <>
-      <Head>
-        <title>Delivery Information - Coast Republic</title>
-        <meta
-          name="description"
-          content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
-        />
-      </Head>
+  <Head>
+  <title>Delivery Information | Coast Republic</title>
+  <meta
+    name="description"
+    content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://www.coastrepublic.com/delivery" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Delivery Information | Coast Republic" />
+  <meta
+    property="og:description"
+    content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
+  />
+  <meta property="og:url" content="https://www.coastrepublic.com/delivery" />
+  <meta property="og:site_name" content="Coast Republic" />
+  <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Delivery Information | Coast Republic" />
+  <meta
+    name="twitter:description"
+    content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
+  />
+  <meta name="twitter:image" content="https://www.coastrepublic.com/og-default.jpg" />
+
+  <meta name="robots" content="index, follow" />
+</Head>
+
 
       <main>
         <Header />
