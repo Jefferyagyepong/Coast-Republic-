@@ -37,10 +37,13 @@ const Footer = () => {
         {/* Social Media Section */}
 
       </div>
-
-      <h6 className="text-align-center">Accepted Payment Methods</h6>
+<div className="flex-inline">
+   <h6>Accepted Payment Methods</h6>
+  </div>
+     
       
       <div className="payment-container">
+        
         <Image
           src={"/telecel.JPG"}
           height={20}
@@ -81,7 +84,7 @@ const Footer = () => {
       
    
       {/* Copyright */}
-      <div>
+      <div className="flex-inline">
         <p>
           © {new Date().getFullYear()} All rights 
           reserved.
