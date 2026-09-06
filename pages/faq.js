@@ -82,7 +82,7 @@ export default function FAQ() {
       <main>
         <Header />
         <div className="main-content">
-        <h1>Frequently Asked Questions</h1>
+        <h4>Frequently Asked Questions</h4>
         <p className="intro">
           Everything you need to know before you shop. Can&apos;t find your
           answer? <a href="/contact">Contact us</a> — we reply fast.
