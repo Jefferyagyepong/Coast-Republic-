@@ -38,7 +38,7 @@ const Footer = () => {
 
       </div>
 <div className="flex-inline">
-   <h6>Accepted Payment Methods</h6>
+   <p>Accepted Payment Methods</p>
   </div>
      
       
