@@ -132,7 +132,7 @@ export default function Returns() {
         </section>
         </div>
             </div>
-            <Footer />
+            <FootBottom />
       </main>
 
       <style jsx>{`
