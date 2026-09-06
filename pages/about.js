@@ -44,7 +44,7 @@ export default function About() {
         <Header />
         <div className="main-content">
         <section className="hero">
-          <h6>About Coast Republic</h61>
+          <h6>About Coast Republic</h6>
           <p className="tagline">
             Elevate your style. Discover unique designs crafted for you.
           </p>
@@ -67,10 +67,10 @@ export default function About() {
         </section>
 
         <section className="block">
-          <h2>What We Stand For</h2>
+          <h6>What We Stand For</h6>
           <div className="grid">
             <div className="card">
-              <h3>Quality First</h3>
+              <h6>Quality First</h6>
               <p>
                 We work with fabrics and finishes that hold up — no shrinking,
                 no fading after two washes. If it doesn&apos;t meet our
@@ -78,7 +78,7 @@ export default function About() {
               </p>
             </div>
             <div className="card">
-              <h3>Designed for You</h3>
+              <h6>Designed for You</h6>
               <p>
                 From crew necks to sneakers, our collections are curated for
                 real life in Ghana — comfortable, versatile, and easy to style
@@ -86,7 +86,7 @@ export default function About() {
               </p>
             </div>
             <div className="card">
-              <h3>Honest Service</h3>
+              <h6>Honest Service</h6>
               <p>
                 Clear pricing, straightforward delivery, and real people
                 behind every order. No surprises, no fine print designed to
@@ -97,7 +97,7 @@ export default function About() {
         </section>
 
         <section className="block">
-          <h2>Where We're Based</h2>
+          <h6>Where We're Based</h6>
           <p>
             Coast Republic is proudly Ghanaian, operating out of Asafo
             Dadiesoaba. We ship nationwide and accept MTN Mobile Money,
@@ -107,7 +107,7 @@ export default function About() {
         </section>
 
         <section className="cta">
-          <h2>Got Questions?</h2>
+          <h6>Got Questions?</h6>
           <p>
             Check our <a href="/faq">FAQ</a> or{" "}
             <a href="/contact">get in touch</a> — we&apos;re happy to help.
