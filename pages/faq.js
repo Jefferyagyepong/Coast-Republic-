@@ -102,7 +102,7 @@ export default function FAQ() {
               {open === i && <p className="answer">{item.a}</p>}
             </div>
           ))}
-        </div>
+        </div><br />
           <FootBottom />
           </div>
       </main>
