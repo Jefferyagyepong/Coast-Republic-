@@ -50,8 +50,8 @@ function FootBottom() {
       
    
       {/* Copyright */}
-      <div>
-        <p className="text-align-center">
+      <div className="flex-inline">
+        <p>
           © {new Date().getFullYear()} All rights
           reserved.
         </p>
