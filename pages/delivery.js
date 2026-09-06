@@ -43,14 +43,14 @@ export default function Delivery() {
       <main>
         <Header />
         <div className="main-content">
-        <h3>Delivery Information</h3>
+        <h6>Delivery Information</h6>
         <p className="intro">
           We know you want your order fast. Here's exactly what to expect
           once you check out.
         </p>
 
         <section>
-          <h2>Processing Time</h2>
+          <h6>Processing Time</h6>
           <p>
             Orders are processed within 1 business day of payment
             confirmation. Orders placed after 4:00 PM or on weekends/public
@@ -59,7 +59,7 @@ export default function Delivery() {
         </section>
 
         <section>
-          <h2>Delivery Times &amp; Coverage</h2>
+          <h6>Delivery Times &amp; Coverage</h6>
           <table>
             <thead>
               <tr>
@@ -89,7 +89,7 @@ export default function Delivery() {
         </section>
 
         <section>
-          <h2>Delivery Fees</h2>
+          <h6>Delivery Fees</h6>
           <p>
             Delivery fees are calculated at checkout based on your location
             and order size. Any applicable fee is shown clearly before you
@@ -98,7 +98,7 @@ export default function Delivery() {
         </section>
 
         <section>
-          <h2>Order Tracking</h2>
+          <h6>Order Tracking</h6>
           <p>
             You'll receive a confirmation once your order is dispatched. If
             your delivery is taking longer than the estimate above, contact
@@ -108,7 +108,7 @@ export default function Delivery() {
         </section>
 
         <section>
-          <h2>Delivery Issues</h2>
+          <h6>Delivery Issues</h6>
           <p>
             Please inspect your package on arrival. If an item is damaged,
             missing, or incorrect, notify us within 48 hours of delivery at{" "}
