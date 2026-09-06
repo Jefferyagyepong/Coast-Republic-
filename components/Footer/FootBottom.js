@@ -5,7 +5,9 @@ import Image from "next/image";
 function FootBottom() {
   return (
   <>
-   <h6 className="text-align-center">Accepted Payment Methods</h6>
+  <div className="flex-inline">
+   <h6p>Accepted Payment Methods</p>
+ </div >
       
       <div className="payment-container">
         <Image
