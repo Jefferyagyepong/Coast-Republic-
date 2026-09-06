@@ -6,7 +6,7 @@ function FootBottom() {
   return (
   <>
   <div className="flex-inline">
-   <h6p>Accepted Payment Methods</p>
+   <p>Accepted Payment Methods</p>
  </div >
       
       <div className="payment-container">
