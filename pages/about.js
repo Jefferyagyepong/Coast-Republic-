@@ -44,14 +44,14 @@ export default function About() {
         <Header />
         <div className="main-content">
         <section className="hero">
-          <h1>About Coast Republic</h1>
+          <h6>About Coast Republic</h61>
           <p className="tagline">
             Elevate your style. Discover unique designs crafted for you.
           </p>
         </section>
 
         <section className="block">
-          <h2>Our Story</h2>
+          <h6>Our Story</h6>
           <p>
             Coast Republic started with a simple idea: Ghana deserves streetwear
             that feels as good as it looks. What began as a small, design-led
