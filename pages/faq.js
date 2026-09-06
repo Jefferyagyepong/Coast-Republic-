@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Header from "@/components/Head/Header";
+import CoastApp from "@/components/Parts/CoastApp";
 import Head from "next/head";
 import FootBottom from "@/components/Footer/FootBottom";
 
@@ -103,6 +104,7 @@ export default function FAQ() {
             </div>
           ))}
         </div><br />
+        <CoastApp /><br />
           <FootBottom />
           </div>
       </main>
