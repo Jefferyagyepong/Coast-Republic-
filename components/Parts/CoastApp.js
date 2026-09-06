@@ -1,9 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Image from "next/image";
-function IbridApp() {
+function CoastApp() {
   return (
     <div>
-      <h3>Download Our App</h3>
+      <h6>Download Our App</h6>
       <p>
         Unlock a world of limetless possiblities. Download the Coast Republic
         app and embark on a journey of discovery and connection.
@@ -16,4 +16,4 @@ function IbridApp() {
     </div>
   );
 }
-export default IbridApp;
+export default CoastApp;
