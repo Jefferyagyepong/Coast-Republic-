@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import Link from "next/link";
-import styles from "./Newsletter.module.css";
+
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
@@ -39,29 +39,29 @@ export default function NewsletterForm() {
   };
 
   return (
-    <section className={styles.container} aria-labelledby="newsletter-heading">
-      <div className={styles.intro}>
-        <h5 id="newsletter-heading" className={styles.title}>
+    <section className="newsletter-container" aria-labelledby="newsletter-heading">
+      <div className="newsletter-intro">
+        <h5 id="newsletter-heading" className="newsletter-title">
           Join the Coast Republic list
         </h5>
-        <p className={styles.description}>
+        <p className="newsletter-description">
           New arrivals, seasonal edits, and 10% off your first order when you
           sign up. Exclusions apply — see our{" "}
-          <Link href={"/privacy"} className={styles.link}>
+          <Link href={"/privacy"} className="newsletter-link">
             Privacy Policy
           </Link>{" "}
           and{" "}
-          <Link href={"/terms"} className={styles.link}>
+          <Link href={"/terms"} className="newsletter-link">
             Terms and Conditions
           </Link>
           .
         </p>
       </div>
 
-      <div className={styles.formPanel}>
-        <form onSubmit={handleSubmit} className={styles.form} noValidate>
-          <div className={styles.formGroup}>
-            <label className={styles.formLabel} htmlFor="newsletter-email">
+      <div className="newsletter-form-panel">
+        <form onSubmit={handleSubmit} className="newsletter-form" noValidate>
+          <div className="newsletter-form-group">
+            <label className="newsletter-form-label" htmlFor="newsletter-email">
               Email address
             </label>
             <input
@@ -72,14 +72,14 @@ export default function NewsletterForm() {
               onChange={(e) => setEmail(e.target.value)}
               required
               disabled={status === "loading"}
-              className={styles.formInput}
+              className="newsletter-form-input"
               aria-describedby={message ? "newsletter-message" : undefined}
             />
           </div>
 
           <button
             type="submit"
-            className={styles.formButton}
+            className="newsletter-form-button"
             disabled={status === "loading"}
           >
             {status === "loading" ? "Signing up…" : "Sign up"}
@@ -92,8 +92,8 @@ export default function NewsletterForm() {
             role="status"
             className={
               status === "error"
-                ? `${styles.formMessage} ${styles.formMessageError}`
-                : `${styles.formMessage} ${styles.formMessageSuccess}`
+                ? "newsletter-form-message newsletter-form-message-error"
+                : "newsletter-form-message newsletter-form-message-success"
             }
           >
             {message}
