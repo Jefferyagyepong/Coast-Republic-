@@ -11,7 +11,7 @@ function ContactForm() {
     );
   }
   return (
-    <div className="form-container">
+    <div>
       <form onSubmit={handleSubmit}>
         <input type="email" id="email" placeholder=" email" />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -33,15 +33,15 @@ function ContactForm() {
           value="Send"
           onClick="return true"
           disabled={state.submitting}
-          className="button-link"
+      
         >
           Submit{" "}
         </button>
       </form>
-      <h6 className="footer-tag">
+      <h6>
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
       </h6>{" "}
-      <br />
+    
     </div>
   );
 }
