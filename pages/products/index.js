@@ -7,7 +7,7 @@ import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
 import { getAllProducts } from "@/lib/products";
 import Newsletter from "@/components/Footer/Newsletter";
-
+import CoastApp from "@/components/Parts/CoastApp";
 export async function getStaticProps() {
   return { props: { products: getAllProducts() } };
 }
@@ -424,6 +424,7 @@ const ProductsPage = ({ products }) => {
       </div>
       <br />
       <Newsletter />
+      <CoastApp />
       <FootBottom />
 
       <style jsx global>{`
