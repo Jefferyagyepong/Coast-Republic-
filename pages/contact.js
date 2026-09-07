@@ -3,7 +3,7 @@ import { useState } from "react";
 import Header from "@/components/Head/Header";
 import Head from "next/head";
 import FootBottom from "@/components/Footer/FootBottom";
-
+import CoastApp from "@/components/Parts/CoastApp";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -138,6 +138,7 @@ export default function Contact() {
             <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
           </div>
         </div>
+        <CoastApp />
         <FootBottom/>
         </div>
       </main>
