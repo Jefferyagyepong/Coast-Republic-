@@ -10,8 +10,8 @@ function CoastApp() {
       </p>
 
       <div>
-        <Image src={"/apple.svg"} alt="apple" width={170} height={100} />
-        <Image src={"/android.svg"} alt="android" width={170} height={100} />
+        <Image src={"/apple.svg"} alt="apple" width={120} height={100} />
+        <Image src={"/android.svg"} alt="android" width={120} height={100} />
       </div>
     </div>
   );
