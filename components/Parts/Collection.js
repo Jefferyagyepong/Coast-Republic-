@@ -4,7 +4,7 @@ export default function Collection() {
   return (
     <div className="blog-container">
       <h6>Pro Club T shirt </h6>
-      <Link href={"/shop"}>Read</Link>
+      <Link href={"/shop"}>Shop</Link>
     </div>
   );
 }
