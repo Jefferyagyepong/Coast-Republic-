@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
-
+import CoastApp from "@/components/Parts/CoastApp";
 export default function Returns() {
   return (
     <>
@@ -132,6 +132,7 @@ export default function Returns() {
         </section>
         </div>
             </div>
+            <CoastApp />
             <FootBottom />
       </main>
 
