@@ -1,11 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 function Contact() {
   return (
-    <div className="ibrid-box-line">
+    <div className="flex-inline">
       <article>
           <em>
             {" "}
-            <h3>Contact Us </h3>
+            <h6>Contact Us </h6>
           </em>
         <section>
         
@@ -18,10 +18,10 @@ function Contact() {
           </p>
         </section>
       </article>
-      <h6 className="footer-tag">
+      <h6>
         &copy; {new Date().getFullYear()} Coast Republic All rights Reserved
       </h6>{" "}
-      <br />
+    
     </div>
   );
 }
