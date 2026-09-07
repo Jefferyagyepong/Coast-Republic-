@@ -70,7 +70,7 @@ export default function Contact() {
       <main>
         <Header />
         <div className="main-content">
-        <h3>Contact Us</h3>
+        <h6>Contact Us</h6>
         <p className="intro">
           Have a question about an order, sizing, or delivery? Send us a
           message and our team will get back to you within 24 hours.
@@ -122,19 +122,19 @@ export default function Contact() {
           </form>
 
           <div className="info">
-            <h2>Store Location</h2>
+            <h6>Store Location</h6>
             <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
-            <h2>Phone</h2>
+            <h6>Phone</h6>
             <p>
               <a href="tel:+233244736420">+233 244 736 420</a>
             </p>
-            <h2>Email</h2>
+            <h6>Email</h6>
             <p>
               <a href="mailto:support@coastrepublic.com">
                 support@coastrepublic.com
               </a>
             </p>
-            <h2>Hours</h2>
+            <h6>Hours</h6>
             <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
           </div>
         </div>
