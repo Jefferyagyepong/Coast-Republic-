@@ -3,46 +3,7 @@ padding: 3px 5px;
 width:100%;
 margin-top: 130px;
 }
-.newsletter-container {
-width:100%;
-  background-color: #eafafe;
-  border-radius: 8px;
-  padding: 24px;
-  max-width: 500px;
-  margin: 20px auto;
-  text-align: center;
-}
 
-.newsletter-title {
-text-align: start;
-padding-bottom: 11px;
-padding-top: 45px;
-font-weight: 300;
-  color: #000;
-  
-}
-
-.newsletter-description {
-  color: #555;
-  margin-bottom: 24px;
-  line-height: 1.6;
-}
-
-.newsletter-link {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.newsletter-link:hover {
-  text-decoration: underline;
-}
-
-.newsletter-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
 
 .product-container {
   display: grid;
@@ -77,8 +38,6 @@ padding:12px;
    border: none;
 border-bottom: 1px thin #e0e0e0;
   
-
- 
 }
 
 
@@ -118,3 +77,192 @@ display: block;
 gap:20px;
  
 }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap");
+
+.newsletter-container {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #f4efe6;
+  color: #16232b;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+}
+
+.newsletter-intro {
+  background: #16232b;
+  color: #f4efe6;
+  padding: 3.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.9rem;
+}
+
+.newsletter-description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #c7cfd3;
+  max-width: 34ch;
+  margin: 0;
+}
+
+.newsletter-link {
+  color: #dcc296;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s ease;
+}
+
+.newsletter-link:hover {
+  color: #f4efe6;
+}
+
+.newsletter-form-panel {
+  padding: 3.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.newsletter-form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px;
+}
+
+.newsletter-form-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #5c6b73;
+  margin-bottom: 0.4rem;
+}
+
+.newsletter-form-input {
+  border: 1px solid #cfc6b4;
+  background: #ffffff;
+  border-radius: 2px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: #16232b;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.newsletter-form-input::placeholder {
+  color: #9aa3a8;
+}
+
+.newsletter-form-input:focus-visible {
+  outline: none;
+  border-color: #b08d57;
+  box-shadow: 0 0 0 3px rgba(176, 141, 87, 0.22);
+}
+
+.newsletter-form-input:disabled {
+  opacity: 0.6;
+}
+
+.newsletter-form-button {
+  background: #16232b;
+  color: #f4efe6;
+  border: none;
+  border-radius: 2px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.newsletter-form-button:hover:not(:disabled) {
+  background: #b08d57;
+}
+
+.newsletter-form-button:focus-visible {
+  outline: 2px solid #b08d57;
+  outline-offset: 2px;
+}
+
+.newsletter-form-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.newsletter-form-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.newsletter-form-message {
+  font-size: 0.875rem;
+  margin: 0;
+  padding-top: 0.25rem;
+  animation: newsletter-settle 0.25s ease-out;
+}
+
+.newsletter-form-message-success {
+  color: #3e6b52;
+}
+
+.newsletter-form-message-error {
+  color: #a13d2c;
+}
+
+@keyframes newsletter-settle {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newsletter-form-message {
+    animation: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .newsletter-container {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-intro,
+  .newsletter-form-panel {
+    padding: 2.25rem 1.5rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form-button {
+    width: 100%;
+  }
+}
+
