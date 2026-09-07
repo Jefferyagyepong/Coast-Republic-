@@ -76,8 +76,8 @@ export default function Contact() {
           message and our team will get back to you within 24 hours.
         </p>
 
-        <div className="grid">
-          <form onSubmit={handleSubmit} className="form">
+        <div>
+          <form onSubmit={handleSubmit} >
             <label>
               Name
               <input
