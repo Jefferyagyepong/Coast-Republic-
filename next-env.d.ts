@@ -5,3 +5,4 @@ import "./.next/types/root-params.d.ts";
 
 // NOTE: This file should not be edited
 // see https://nextjs.org/docs/pages/api-reference/config/typescript for more information.
+DATABASE_URL="YOUR_USERNAME@localhost:5432/coast_republic"
