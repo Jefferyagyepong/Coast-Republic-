@@ -2,7 +2,7 @@
 import Image from "next/image";
 function CoastApp() {
   return (
-    <div>
+    <div className="flex-inline">
       <h6>Download Our App</h6>
       <p>
         Unlock a world of limetless possiblities. Download the Coast Republic
@@ -10,8 +10,8 @@ function CoastApp() {
       </p>
 
       <div>
-        <Image src={"/apple.svg"} alt="apple" width={70} height={100} />
-        <Image src={"/android.svg"} alt="android" width={70} height={100} />
+        <Image src={"/apple.svg"} alt="apple" width={170} height={100} />
+        <Image src={"/android.svg"} alt="android" width={170} height={100} />
       </div>
     </div>
   );
