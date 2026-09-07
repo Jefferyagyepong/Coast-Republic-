@@ -193,7 +193,7 @@ function Privacy() {
         <p>Address: 7 Minneti ST, Asokwa</p>
       </article>
     </div>
-    <FootBottom>
+    <FootBottom />
     </main>
 
 
