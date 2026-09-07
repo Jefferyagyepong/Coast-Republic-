@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
-
+import CoastApp from "@/components/Parts/CoastApp";
 export default function About() {
   return (
     <>
@@ -113,6 +113,7 @@ export default function About() {
             <a href="/contact">get in touch</a> — we&apos;re happy to help.
           </p>
         </section>
+        <CoastApp />
         <FootBottom />
         </div>
       </main>
