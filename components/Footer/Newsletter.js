@@ -41,7 +41,7 @@ export default function NewsletterForm() {
   return (
     <section className="newsletter-container" aria-labelledby="newsletter-heading">
       <div className="newsletter-intro">
-        <h id="newsletter-heading" className="newsletter-title">
+        <h6 id="newsletter-heading" className="newsletter-title">
           Join the Coast Republic list
         </h6>
         <p className="newsletter-description">
