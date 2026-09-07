@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
-
+import CoastApp from "@/components/Parts/CoastApp";
 export default function Delivery() {
   return (
     <>
@@ -126,6 +126,7 @@ export default function Delivery() {
             or check our <a href="/faq">FAQ</a>.
           </p>
         </section>
+        <CoastApp />
           <FootBottom />
           </div>
       </main>
