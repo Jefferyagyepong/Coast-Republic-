@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Collection() {
   return (
     <div className="blog-container">
-      <h3>Fashion Essentials | BLOG </h3>
-      <Link className="btn-scale" href={"#"}>Read</Link>
+      <h6>Pro Club T shirt </h6>
+      <Link href={"/shop"}>Read</Link>
     </div>
   );
 }
