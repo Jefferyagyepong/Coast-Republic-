@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Head from "next/head";
 import Header from "@/components/Head/Header";
-
+import CoastApp from "@/components/Parts/CoastApp";
 import FootBottom from "@/components/Footer/FootBottom";
 
 export default function Terms() {
@@ -199,7 +199,7 @@ export default function Terms() {
             or <a href="tel:+233244736420">+233 244 736 420</a>.
           </p>
         </section>
-
+<CoastApp />
    
           <FootBottom />
            </div>
