@@ -162,7 +162,7 @@ async function main() {
         stock: 20,
       },
        {
-        name: "Nike Air Max",
+        name: "New balance",
         slug: "new-balance-02",
         price: 249.99,
         currency: "GHS",
