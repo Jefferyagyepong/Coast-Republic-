@@ -2,27 +2,22 @@ import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Header from "@/components/Head/Header";
+import Header from "@/components/Head/Navbar"; // ✅ matches _app.js
 import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 
 const formatMoney = (amount, currency) =>
   `${currency} ${Number(amount || 0).toFixed(2)}`;
 
-// --- Store policy constants -------------------------------------------
-// Move these to a config/env file if they differ per region or need to
-// come from the backend (e.g. shipping rules tied to warehouse location).
 const FREE_SHIPPING_THRESHOLD = 75;
 const FLAT_SHIPPING_RATE = 6.99;
-const TAX_RATE = 0.075; // 7.5% - replace with real tax lookup at checkout
+const TAX_RATE = 0.075;
 const UNDO_WINDOW_MS = 5000;
 const MAX_QUANTITY = 20;
 
-// Mock promo codes. In production this should be validated server-side
-// against a coupons table/API so codes can't be guessed from the bundle.
 const PROMO_CODES = {
   WELCOME10: { type: "percent", value: 10, label: "10% off" },
-  SHIP5: { type: "flat", value: 5, label: "$5 off" },
+  SHIP5: { type: "flat", value: 5, label: "GHS 5 off" }, // ✅ currency-aware label
 };
 
 const CartPage = () => {
@@ -30,41 +25,30 @@ const CartPage = () => {
     items,
     removeFromCart,
     updateQuantity,
-    getCartCount,
-    getCartTotal,
+    cartCount,   // ✅ direct value, not a function
+    cartTotal,   // ✅ direct value, not a function
     currency,
-    addToCart, // optional — guarded below in case CartContext doesn't expose it yet
+    addToCart,
   } = useCart();
 
-  // ---- Local UI state ---------------------------------------------------
   const [savedForLater, setSavedForLater] = useState([]);
-  const [pendingRemovals, setPendingRemovals] = useState({}); // cartKey -> item snapshot
+  const [pendingRemovals, setPendingRemovals] = useState({});
   const [promoInput, setPromoInput] = useState("");
   const [promoError, setPromoError] = useState("");
   const [appliedPromo, setAppliedPromo] = useState(null);
-  const [qtyDrafts, setQtyDrafts] = useState({}); // cartKey -> string being typed
+  const [qtyDrafts, setQtyDrafts] = useState({});
   const liveRegionRef = useRef(null);
   const timersRef = useRef({});
 
   useEffect(() => {
-    // Clear any pending undo timers on unmount so we don't call setState
-    // on an unmounted component or leave a removal half-finished.
-    return () => {
-      Object.values(timersRef.current).forEach(clearTimeout);
-    };
+    return () => Object.values(timersRef.current).forEach(clearTimeout);
   }, []);
 
-  const cartCount = getCartCount();
-
-  // Items still visibly in the list (i.e. not mid-removal).
   const visibleItems = useMemo(
     () => items.filter((item) => !pendingRemovals[item.cartKey]),
     [items, pendingRemovals]
   );
 
-  // Compute totals from visibleItems directly rather than trusting
-  // getCartTotal(), so a pending removal is reflected immediately in the
-  // summary even before the underlying context state updates.
   const subtotal = useMemo(
     () => visibleItems.reduce((sum, item) => sum + item.price * item.quantity, 0),
     [visibleItems]
@@ -79,28 +63,16 @@ const CartPage = () => {
   }, [appliedPromo, subtotal]);
 
   const discountedSubtotal = Math.max(subtotal - discount, 0);
-  const amountToFreeShipping = Math.max(
-    FREE_SHIPPING_THRESHOLD - discountedSubtotal,
-    0
-  );
-  const shipping =
-    visibleItems.length === 0
-      ? 0
-      : amountToFreeShipping > 0
-      ? FLAT_SHIPPING_RATE
-      : 0;
+  const amountToFreeShipping = Math.max(FREE_SHIPPING_THRESHOLD - discountedSubtotal, 0);
+  const shipping = visibleItems.length === 0 ? 0 : amountToFreeShipping > 0 ? FLAT_SHIPPING_RATE : 0;
   const tax = +(discountedSubtotal * TAX_RATE).toFixed(2);
   const total = +(discountedSubtotal + shipping + tax).toFixed(2);
-  const freeShippingProgress = Math.min(
-    (discountedSubtotal / FREE_SHIPPING_THRESHOLD) * 100,
-    100
-  );
+  const freeShippingProgress = Math.min((discountedSubtotal / FREE_SHIPPING_THRESHOLD) * 100, 100);
 
   const announce = useCallback((message) => {
     if (liveRegionRef.current) liveRegionRef.current.textContent = message;
   }, []);
 
-  // ---- Quantity handling --------------------------------------------
   const clampQty = (item, next) =>
     Math.max(1, Math.min(MAX_QUANTITY, item.stock ?? MAX_QUANTITY, next));
 
@@ -111,7 +83,6 @@ const CartPage = () => {
   };
 
   const handleQtyInputChange = (cartKey, value) => {
-    // Allow the field to be edited freely; only digits are kept.
     if (value === "" || /^[0-9]+$/.test(value)) {
       setQtyDrafts((prev) => ({ ...prev, [cartKey]: value }));
     }
@@ -130,7 +101,6 @@ const CartPage = () => {
     announce(`${item.name} quantity set to ${next}`);
   };
 
-  // ---- Remove with undo ----------------------------------------------
   const handleRemove = (item) => {
     setPendingRemovals((prev) => ({ ...prev, [item.cartKey]: item }));
     announce(`${item.name} removed. Undo available for a few seconds.`);
@@ -154,7 +124,6 @@ const CartPage = () => {
     announce("Item restored to your cart.");
   };
 
-  // ---- Save for later ---------------------------------------------------
   const handleSaveForLater = (item) => {
     setSavedForLater((prev) => [...prev, item]);
     removeFromCart(item.cartKey);
@@ -162,10 +131,12 @@ const CartPage = () => {
   };
 
   const handleMoveToCart = (item) => {
-    if (typeof addToCart === "function") {
-      addToCart(item, item.quantity, { size: item.size, color: item.color });
-    }
-    setSavedForLater((prev) => prev.filter((saved) => saved.cartKey !== item.cartKey));
+    // ✅ correct signature: addToCart(product, quantity)
+    // size & color are already part of the item object
+    addToCart(item, item.quantity);
+    setSavedForLater((prev) =>
+      prev.filter((saved) => saved.cartKey !== item.cartKey)
+    );
     announce(`${item.name} moved back to your cart.`);
   };
 
@@ -173,7 +144,6 @@ const CartPage = () => {
     setSavedForLater((prev) => prev.filter((item) => item.cartKey !== cartKey));
   };
 
-  // ---- Promo code ---------------------------------------------------
   const handleApplyPromo = (e) => {
     e.preventDefault();
     const code = promoInput.trim().toUpperCase();
@@ -199,24 +169,20 @@ const CartPage = () => {
 
   return (
     <>
-  <Head>
-  <title>Your Cart | Coast Republic</title>
-  <meta
-    name="description"
-    content="Review the items in your Coast Republic cart before checkout."
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  {/* Don't index or surface this page — it's user-specific and has no
-      canonical shareable content */}
-  <meta name="robots" content="noindex, nofollow" />
-</Head>
+      <Head>
+        <title>Your Cart | Coast Republic</title>
+        <meta
+          name="description"
+          content="Review the items in your Coast Republic cart before checkout."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
 
       <Header />
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center cart-page">
-            {/* Screen-reader-only live region for quantity/remove/undo feedback */}
             <p
               ref={liveRegionRef}
               className="sr-only"
@@ -245,13 +211,13 @@ const CartPage = () => {
               </div>
             ) : (
               <>
+                {/* ✅ using cartCount directly, not getCartCount() */}
                 <p className="cart-summary-line">
                   Total Items: {cartCount} &nbsp;|&nbsp; Total Price:{" "}
                   {formatMoney(subtotal, currency)}
                 </p>
 
-                {/* Free shipping progress */}
-                <div className="cart-shipping-progress" aria-hidden={false}>
+                <div className="cart-shipping-progress">
                   {amountToFreeShipping > 0 ? (
                     <p className="cart-shipping-progress__label">
                       Add {formatMoney(amountToFreeShipping, currency)} more for{" "}
@@ -259,7 +225,7 @@ const CartPage = () => {
                     </p>
                   ) : (
                     <p className="cart-shipping-progress__label cart-shipping-progress__label--met">
-                      You've unlocked free shipping 🎉
+                      You&apos;ve unlocked free shipping 🎉
                     </p>
                   )}
                   <div
@@ -268,6 +234,7 @@ const CartPage = () => {
                     aria-valuenow={Math.round(freeShippingProgress)}
                     aria-valuemin={0}
                     aria-valuemax={100}
+                    aria-label="Free shipping progress"
                   >
                     <div
                       className="cart-shipping-progress__fill"
@@ -280,17 +247,12 @@ const CartPage = () => {
                   <ul className="cart-list">
                     {items.map((item) => {
                       const isPending = Boolean(pendingRemovals[item.cartKey]);
-                      const draftValue =
-                        qtyDrafts[item.cartKey] ?? String(item.quantity);
-                      const lowStock =
-                        typeof item.stock === "number" && item.stock <= 5;
+                      const draftValue = qtyDrafts[item.cartKey] ?? String(item.quantity);
+                      const lowStock = typeof item.stock === "number" && item.stock <= 5;
 
                       if (isPending) {
                         return (
-                          <li
-                            key={item.cartKey}
-                            className="cart-item cart-item--removing"
-                          >
+                          <li key={item.cartKey} className="cart-item cart-item--removing">
                             <p className="cart-item__removing-text">
                               {item.name} removed from cart.
                             </p>
@@ -314,6 +276,7 @@ const CartPage = () => {
                                 alt={item.name}
                                 width={80}
                                 height={80}
+                                style={{ objectFit: "cover" }} // ✅ avoids layout shift
                               />
                             </div>
                           )}
@@ -327,10 +290,10 @@ const CartPage = () => {
                               </p>
                             )}
                             <p className="cart-item__price">
-                              {formatMoney(item.price, currency)} x {item.quantity}
+                              {formatMoney(item.price, currency)} × {item.quantity}
                             </p>
                             {lowStock && (
-                              <p className="cart-item__low-stock">
+                              <p className="cart-item__low-stock" role="alert">
                                 Only {item.stock} left in stock
                               </p>
                             )}
@@ -373,9 +336,7 @@ const CartPage = () => {
                               }
                               onBlur={() => commitQtyInput(item)}
                               onKeyDown={(e) => {
-                                if (e.key === "Enter") {
-                                  e.currentTarget.blur();
-                                }
+                                if (e.key === "Enter") e.currentTarget.blur();
                               }}
                             />
                             <button
@@ -399,7 +360,6 @@ const CartPage = () => {
                     })}
                   </ul>
 
-                  {/* Sticky order summary */}
                   <aside className="cart-summary-card" aria-label="Order summary">
                     <h2 className="cart-summary-card__title">Order Summary</h2>
 
@@ -453,7 +413,9 @@ const CartPage = () => {
                       )}
                       <div className="cart-summary-card__row">
                         <dt>Shipping</dt>
-                        <dd>{shipping === 0 ? "Free" : formatMoney(shipping, currency)}</dd>
+                        <dd>
+                          {shipping === 0 ? "Free" : formatMoney(shipping, currency)}
+                        </dd>
                       </div>
                       <div className="cart-summary-card__row">
                         <dt>Estimated tax</dt>
@@ -491,6 +453,7 @@ const CartPage = () => {
                                 alt={item.name}
                                 width={64}
                                 height={64}
+                                style={{ objectFit: "cover" }}
                               />
                             </div>
                           )}
