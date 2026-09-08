@@ -26,6 +26,6 @@
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.3.0",
-    "prisma": "^8.0.0-rc.13"
+    "prisma": "^7.10.0"
   }
 }
