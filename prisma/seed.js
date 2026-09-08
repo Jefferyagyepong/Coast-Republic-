@@ -160,13 +160,8 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-<<<<<<< HEAD
-       {
-        name: "New balance",
-=======
       {
         name: "Nike Air Max",
->>>>>>> 360e3e6280a39f21304000d7d915541fe9ec1a68
         slug: "new-balance-02",
         price: 249.99,
         currency: "GHS",
