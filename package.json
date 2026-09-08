@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "First, run the development server: npm run dev # or yarn dev # or pnpm dev Open http://localhost:3000 with your browser to see the result.",
   "main": "next.config.js",
+  
+ {
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "postinstall": "prisma generate",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
-   
   },
+
+
   "keywords": [],
   "author": "",
   "license": "ISC",
