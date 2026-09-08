@@ -55,12 +55,14 @@ function cartReducer(state, action) {
 
     case "UPDATE_QUANTITY": {
       const { cartKey, quantity } = action.payload;
+
       if (quantity < 1) {
         return {
           ...state,
           items: state.items.filter((i) => i.cartKey !== cartKey),
         };
       }
+
       return {
         ...state,
         items: state.items.map((i) =>
@@ -123,3 +125,64 @@ export function CartProvider({ children }) {
 
   const removeFromCart = useCallback(
     (cartKey) =>
+      dispatch({ type: "REMOVE_ITEM", payload: { cartKey } }),
+    []
+  );
+
+  const updateQuantity = useCallback(
+    (cartKey, quantity) =>
+      dispatch({ type: "UPDATE_QUANTITY", payload: { cartKey, quantity } }),
+    []
+  );
+
+  const clearCart = useCallback(
+    () => dispatch({ type: "CLEAR_CART" }),
+    []
+  );
+
+  const totalItems = useMemo(
+    () => state.items.reduce((sum, i) => sum + i.quantity, 0),
+    [state.items]
+  );
+
+  const totalPrice = useMemo(
+    () => state.items.reduce((sum, i) => sum + i.price * i.quantity, 0),
+    [state.items]
+  );
+
+  const value = useMemo(
+    () => ({
+      items: state.items,
+      addToCart,
+      removeFromCart,
+      updateQuantity,
+      clearCart,
+      totalItems,
+      totalPrice,
+      currency: CURRENCY,
+    }),
+    [
+      state.items,
+      addToCart,
+      removeFromCart,
+      updateQuantity,
+      clearCart,
+      totalItems,
+      totalPrice,
+    ]
+  );
+
+  return (
+    <CartContext.Provider value={value}>
+      {children}
+    </CartContext.Provider>
+  );
+}
+
+export function useCart() {
+  const context = useContext(CartContext);
+  if (context === undefined) {
+    throw new Error("useCart must be used within a CartProvider");
+  }
+  return context;
+}
