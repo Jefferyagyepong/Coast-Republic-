@@ -18,7 +18,7 @@ async function main() {
       },
         {
         name: "SMark and Spenser shoe",
-        slug: "dmark-spenser-01",
+        slug: "mark-spenser-01",
         price: 249.99,
         currency: "GHS",
         images: ["/products/force1c.JPG"],
@@ -64,18 +64,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
-        name: "Straight Fit Denim Jeans",
-        slug: "denim-jean-01",
-        price: 249.99,
-        currency: "GHS",
-        images: ["/products/force1c.JPG"],
-        description: "Classic crewneck tee in soft cotton jersey.",
-        sizes: ["S", "M", "L", "XL"],
-        colors: ["Black", "White", "Grey"],
-        category: "T-Shirts",
-        stock: 20,
-      },
+    
        {
         name: "Air jordan 1 low",
         slug: "air-jordan-01",
