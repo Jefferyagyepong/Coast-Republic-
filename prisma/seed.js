@@ -17,7 +17,7 @@ async function main() {
         stock: 20,
       },
         {
-        name: "SMark and Spenser shoe",
+        name: "Mark and Spenser shoe",
         slug: "mark-spenser-01",
         price: 249.99,
         currency: "GHS",
@@ -151,7 +151,7 @@ async function main() {
       },
         {
         name: "Nike Air Max",
-        slug: "air Max-01",
+        slug: "air max-01", 
         price: 249.99,
         currency: "GHS",
         images: ["/products/force1c.JPG"],
