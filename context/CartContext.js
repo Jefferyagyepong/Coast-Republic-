@@ -1,12 +1,23 @@
-import { createContext, useContext, useEffect, useReducer, useMemo, useCallback } from "react";
+// context/CartContext.js
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useReducer,
+  useMemo,
+  useCallback,
+} from "react";
 
 const CartContext = createContext(undefined);
 const STORAGE_KEY = "coast-republic-cart";
 const CURRENCY = "GHS";
 
-// Stable key for identifying a unique cart line (id + size + color)
+// ── Cart key ───────────────────────────────────────────────────────────────
+
 const getCartKey = (item) =>
-  `${item.id}__${item.size || ""}__${item.color || ""}`;
+  `${item.id}__${item.size ?? ""}__${item.color ?? ""}`;
+
+// ── Reducer ────────────────────────────────────────────────────────────────
 
 function cartReducer(state, action) {
   switch (action.type) {
@@ -41,7 +52,7 @@ function cartReducer(state, action) {
             size: product.size ?? null,
             color: product.color ?? null,
             quantity,
-            cartKey: newKey, // ✅ store cartKey on the item from the start
+            cartKey: newKey,
           },
         ],
       };
@@ -55,14 +66,12 @@ function cartReducer(state, action) {
 
     case "UPDATE_QUANTITY": {
       const { cartKey, quantity } = action.payload;
-
       if (quantity < 1) {
         return {
           ...state,
           items: state.items.filter((i) => i.cartKey !== cartKey),
         };
       }
-
       return {
         ...state,
         items: state.items.map((i) =>
@@ -79,9 +88,12 @@ function cartReducer(state, action) {
   }
 }
 
+// ── Initial state ──────────────────────────────────────────────────────────
+
 const initialState = { items: [] };
 
-// SSR-safe localStorage helpers
+// ── SSR-safe localStorage ──────────────────────────────────────────────────
+
 const storage = {
   get: (key) => {
     if (typeof window === "undefined") return null;
@@ -102,21 +114,24 @@ const storage = {
   },
 };
 
+// ── Provider ───────────────────────────────────────────────────────────────
+
 export function CartProvider({ children }) {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  // Hydrate from localStorage on mount (client only)
+  // Hydrate from localStorage on mount
   useEffect(() => {
     const saved = storage.get(STORAGE_KEY);
     if (saved) dispatch({ type: "HYDRATE", payload: saved });
   }, []);
 
-  // Persist to localStorage on every state change
+  // Persist on every state change
   useEffect(() => {
     storage.set(STORAGE_KEY, state);
   }, [state]);
 
-  // Memoised actions — stable references, no unnecessary re-renders
+  // ── Actions ──────────────────────────────────────────────────────────────
+
   const addToCart = useCallback(
     (product, quantity = 1) =>
       dispatch({ type: "ADD_ITEM", payload: { product, quantity } }),
@@ -124,8 +139,7 @@ export function CartProvider({ children }) {
   );
 
   const removeFromCart = useCallback(
-    (cartKey) =>
-      dispatch({ type: "REMOVE_ITEM", payload: { cartKey } }),
+    (cartKey) => dispatch({ type: "REMOVE_ITEM", payload: { cartKey } }),
     []
   );
 
@@ -140,15 +154,24 @@ export function CartProvider({ children }) {
     []
   );
 
-  const totalItems = useMemo(
+  // ── Derived values ───────────────────────────────────────────────────────
+
+  const cartCount = useMemo(
     () => state.items.reduce((sum, i) => sum + i.quantity, 0),
     [state.items]
   );
 
-  const totalPrice = useMemo(
-    () => state.items.reduce((sum, i) => sum + i.price * i.quantity, 0),
+  const cartTotal = useMemo(
+    () =>
+      Number(
+        state.items
+          .reduce((sum, i) => sum + i.price * i.quantity, 0)
+          .toFixed(2)
+      ),
     [state.items]
   );
+
+  // ── Context value ─────────────────────────────────────────────────────────
 
   const value = useMemo(
     () => ({
@@ -157,8 +180,10 @@ export function CartProvider({ children }) {
       removeFromCart,
       updateQuantity,
       clearCart,
-      totalItems,
-      totalPrice,
+      cartCount,            // ✅ primary name — used in CartPage + Navbar
+      cartTotal,            // ✅ primary name — used in CartPage summary
+      totalItems: cartCount, // aliases for any older code
+      totalPrice: cartTotal,
       currency: CURRENCY,
     }),
     [
@@ -167,8 +192,8 @@ export function CartProvider({ children }) {
       removeFromCart,
       updateQuantity,
       clearCart,
-      totalItems,
-      totalPrice,
+      cartCount,
+      cartTotal,
     ]
   );
 
@@ -178,6 +203,8 @@ export function CartProvider({ children }) {
     </CartContext.Provider>
   );
 }
+
+// ── Hook ──────────────────────────────────────────────────────────────────
 
 export function useCart() {
   const context = useContext(CartContext);
