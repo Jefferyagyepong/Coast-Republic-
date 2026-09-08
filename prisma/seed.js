@@ -16,7 +16,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-        {
+      {
         name: "Mark and Spenser shoe",
         slug: "mark-spenser-01",
         price: 249.99,
@@ -28,7 +28,7 @@ async function main() {
         category: "T-Shirts",
         stock: 2,
       },
-   {
+      {
         name: "Straight Fit Denim Jeans",
         slug: "denim-jean-01",
         price: 249.99,
@@ -40,7 +40,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
+      {
         name: "Nike Sb",
         slug: "nike-sb-01",
         price: 249.99,
@@ -52,7 +52,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
+      {
         name: "Von Dutch cap",
         slug: "von-dutch-01",
         price: 249.99,
@@ -64,8 +64,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-    
-       {
+      {
         name: "Air jordan 1 low",
         slug: "air-jordan-01",
         price: 249.99,
@@ -77,7 +76,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
+      {
         name: "Charles Thyritt long sleeve Shirt",
         slug: "charles-thyritt-01",
         price: 249.99,
@@ -89,7 +88,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
+      {
         name: "New Balance",
         slug: "new-balance-03",
         price: 249.99,
@@ -101,7 +100,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
+      {
         name: "wrangler Jeans",
         slug: "wrangler-jeans-01",
         price: 249.99,
@@ -113,7 +112,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
+      {
         name: "Air Jordan 1",
         slug: "air-jordan-02",
         price: 249.99,
@@ -125,7 +124,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-        {
+      {
         name: "Adidas",
         slug: "adidas-01",
         price: 249.99,
@@ -137,7 +136,7 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-        {
+      {
         name: "Nike SB",
         slug: "nike-sb-04",
         price: 249.99,
@@ -149,9 +148,9 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-        {
+      {
         name: "Nike Air Max",
-        slug: "air max-01", 
+        slug: "air-max-01",
         price: 249.99,
         currency: "GHS",
         images: ["/products/force1c.JPG"],
@@ -161,8 +160,13 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
+<<<<<<< HEAD
        {
         name: "New balance",
+=======
+      {
+        name: "Nike Air Max",
+>>>>>>> 360e3e6280a39f21304000d7d915541fe9ec1a68
         slug: "new-balance-02",
         price: 249.99,
         currency: "GHS",
@@ -173,8 +177,8 @@ async function main() {
         category: "T-Shirts",
         stock: 20,
       },
-       {
-        name: "Pro Club T shirt ",
+      {
+        name: "Pro Club T shirt",
         slug: "pro-club-01",
         price: 249.99,
         currency: "GHS",
@@ -186,9 +190,13 @@ async function main() {
         stock: 20,
       },
     ],
+    skipDuplicates: true, // avoids a hard failure (and empty insert) if a slug already exists
   });
 }
 
 main()
-  .catch((e) => { console.error(e); process.exit(1); })
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
   .finally(() => prisma.$disconnect());
