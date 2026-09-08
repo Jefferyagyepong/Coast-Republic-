@@ -15,4 +15,4 @@ prisma/migrations/
 
 # misc
 .DS_Store
-*.pem
+*.pem.env
