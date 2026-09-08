@@ -4,21 +4,27 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  url      = env("DATABASE_URL")  // ← required, was missing
 }
 
 model Product {
-  id          String   @id
+  id          String   @id @default(cuid())  // ← auto-generate IDs
   name        String
+  slug        String   @unique               // ← SEO-friendly URLs
   price       Float
   currency    String   @default("GHS")
   images      String[]
-  description String
+  description String   @db.Text             // ← allows longer text
   sizes       String[]
   colors      String[]
   category    String
+  stock       Int      @default(0)           // ← track inventory
+  isActive    Boolean  @default(true)        // ← soft disable products
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
   @@index([category])
+  @@index([slug])      // ← index for slug lookups
+  @@index([isActive])  // ← filter active products fast
   @@map("products")
 }
