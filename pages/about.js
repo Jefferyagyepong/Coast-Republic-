@@ -5,7 +5,7 @@ import CoastApp from "@/components/Parts/CoastApp";
 export default function About() {
   return (
     <>
-  <Head>
+  <Head> 
   <title>About Us | Coast Republic</title>
   <meta
     name="description"
