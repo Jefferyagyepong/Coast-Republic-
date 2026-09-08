@@ -14,8 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "6.19",
+=======
+    "@prisma/client": "6.19.0",
+>>>>>>> f34d1e21d8a6dfb362c7fa05d75ae002102adab5
     "eslint-config-next": "^16.0.10",
     "next": "^16.0.10",
     "pg": "^8.23.0",
@@ -28,6 +32,11 @@
     "@eslint/js": "^9.35.0",
     "eslint": "^9.35.0",
     "eslint-plugin-react": "^7.37.5",
+<<<<<<< HEAD
     "globals": "^16.3.0"
+=======
+    "globals": "^16.3.0",
+    "prisma": "6.19.0"
+>>>>>>> f34d1e21d8a6dfb362c7fa05d75ae002102adab5
   }
 }
