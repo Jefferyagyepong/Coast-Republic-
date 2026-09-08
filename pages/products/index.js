@@ -6,7 +6,6 @@ import Image from "next/image";
 import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
 import { getAllProducts } from "@/lib/products";
-import ProductNav from "@/components/Parts/ProductNav";
 import Newsletter from "@/components/Footer/Newsletter";
 
 export async function getStaticProps() {
@@ -110,8 +109,8 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop All</h5><br/><br/>
-            <ProductNav />
+            <h5>Shop All</h5><br/>
+          
 
             <div className="controls">
               <label >
