@@ -1,25 +1,28 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer, useMemo, useCallback } from "react";
 
 const CartContext = createContext(undefined);
 const STORAGE_KEY = "coast-republic-cart";
 const CURRENCY = "GHS";
 
+// Stable key for identifying a unique cart line (id + size + color)
+const getCartKey = (item) =>
+  `${item.id}__${item.size || ""}__${item.color || ""}`;
+
 function cartReducer(state, action) {
   switch (action.type) {
     case "HYDRATE":
-      return action.payload || state;
+      return action.payload ?? state;
 
     case "ADD_ITEM": {
       const { product, quantity = 1 } = action.payload;
-      // Two lines are the "same" cart item only if id AND size AND color match
-      const key = (p) => `${p.id}__${p.size || ""}__${p.color || ""}`;
-      const existing = state.items.find((i) => key(i) === key(product));
+      const newKey = getCartKey(product);
+      const exists = state.items.some((i) => i.cartKey === newKey);
 
-      if (existing) {
+      if (exists) {
         return {
           ...state,
           items: state.items.map((i) =>
-            key(i) === key(product)
+            i.cartKey === newKey
               ? { ...i, quantity: i.quantity + quantity }
               : i
           ),
@@ -33,11 +36,12 @@ function cartReducer(state, action) {
           {
             id: product.id,
             name: product.name,
-            price: Number(product.price) || 0, // always a plain number
-            image: product.image,
-            size: product.size || null,
-            color: product.color || null,
+            price: Number(product.price) || 0,
+            image: product.image ?? null,
+            size: product.size ?? null,
+            color: product.color ?? null,
             quantity,
+            cartKey: newKey, // ✅ store cartKey on the item from the start
           },
         ],
       };
@@ -75,74 +79,47 @@ function cartReducer(state, action) {
 
 const initialState = { items: [] };
 
-// Tag every stored item with a stable cartKey (id+size+color) for lookups
-function withCartKeys(state) {
-  return {
-    ...state,
-    items: state.items.map((i) => ({
-      ...i,
-      cartKey: `${i.id}__${i.size || ""}__${i.color || ""}`,
-    })),
-  };
-}
+// SSR-safe localStorage helpers
+const storage = {
+  get: (key) => {
+    if (typeof window === "undefined") return null;
+    try {
+      const raw = window.localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : null;
+    } catch {
+      return null;
+    }
+  },
+  set: (key, value) => {
+    if (typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (err) {
+      console.error("Failed to save cart:", err);
+    }
+  },
+};
 
 export function CartProvider({ children }) {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
+  // Hydrate from localStorage on mount (client only)
   useEffect(() => {
-    try {
-      const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (raw) dispatch({ type: "HYDRATE", payload: JSON.parse(raw) });
-    } catch (err) {
-      console.error("Failed to load cart:", err);
-    }
+    const saved = storage.get(STORAGE_KEY);
+    if (saved) dispatch({ type: "HYDRATE", payload: saved });
   }, []);
 
+  // Persist to localStorage on every state change
   useEffect(() => {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    } catch (err) {
-      console.error("Failed to save cart:", err);
-    }
+    storage.set(STORAGE_KEY, state);
   }, [state]);
 
-  const taggedState = withCartKeys(state);
+  // Memoised actions — stable references, no unnecessary re-renders
+  const addToCart = useCallback(
+    (product, quantity = 1) =>
+      dispatch({ type: "ADD_ITEM", payload: { product, quantity } }),
+    []
+  );
 
-  const addToCart = (product, quantity = 1) =>
-    dispatch({ type: "ADD_ITEM", payload: { product, quantity } });
-
-  const removeFromCart = (cartKey) =>
-    dispatch({ type: "REMOVE_ITEM", payload: { cartKey } });
-
-  const updateQuantity = (cartKey, quantity) =>
-    dispatch({ type: "UPDATE_QUANTITY", payload: { cartKey, quantity } });
-
-  const clearCart = () => dispatch({ type: "CLEAR_CART" });
-
-  const getCartCount = () =>
-    taggedState.items.reduce((sum, i) => sum + i.quantity, 0);
-
-  const getCartTotal = () =>
-    taggedState.items.reduce((sum, i) => sum + i.price * i.quantity, 0);
-
-  const value = {
-    items: taggedState.items,
-    addToCart,
-    removeFromCart,
-    updateQuantity,
-    clearCart,
-    getCartCount,
-    getCartTotal,
-    currency: CURRENCY,
-  };
-
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
-}
-
-export function useCart() {
-  const ctx = useContext(CartContext);
-  if (ctx === undefined) {
-    throw new Error("useCart must be used within a CartProvider");
-  }
-  return ctx;
-}
+  const removeFromCart = useCallback(
+    (cartKey) =>
