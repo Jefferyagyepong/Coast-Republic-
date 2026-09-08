@@ -1,31 +1,29 @@
 {
-  "name": "coast-republic-",
+  "name": "coast-republic",
   "version": "1.0.0",
-  "description": "First, run the development server: npm run dev # or yarn dev # or pnpm dev Open http://localhost:3000 with your browser to see the result.",
-  "main": "next.config.js",
+  "private": true,
   "scripts": {
     "dev": "next dev",
-    "postinstall": "prisma generate",
-    "build": "prisma generate && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^7.10.0",
-    "eslint-config-next": "^16.0.10",
+    "@prisma/adapter-pg": "^6.0.0",
+    "@prisma/client": "^6.0.0",
     "next": "^16.0.10",
+    "pg": "^8.13.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "sass": "^1.92.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@types/pg": "^8.11.0",
     "eslint": "^9.35.0",
+    "eslint-config-next": "^16.0.10",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.3.0",
-    "prisma": "^7.10.0"
+    "prisma": "^6.0.0"
   }
 }
