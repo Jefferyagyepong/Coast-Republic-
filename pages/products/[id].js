@@ -2,45 +2,78 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Header from "@/components/Head/Header";
+import Header from "@/components/Head/Navbar";      // ✅ consistent with rest of project
 import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 import { getAllProductSlugs, getProductBySlug } from "@/lib/products";
 
+// ── Data fetching ──────────────────────────────────────────────────────────
+
 export async function getStaticPaths() {
   const slugs = await getAllProductSlugs();
+
   return {
-    paths: slugs.map((slug) => ({ params: { slug } })),
-    // "blocking" means a product added to Neon after the last deploy
-    // still renders on first request instead of 404ing until redeploy.
+    paths: slugs
+      .filter((slug) => typeof slug === "string" && slug.length > 0) // ✅ guard undefined
+      .map((slug) => ({ params: { slug } })),
     fallback: "blocking",
   };
 }
 
 export async function getStaticProps({ params }) {
   const product = await getProductBySlug(params.slug);
+
   if (!product) return { notFound: true };
+
   return {
-    props: { product },
+    props: {
+      product: {
+        ...product,
+        // ✅ serialize Dates — Next.js can't pass Date objects as props
+        createdAt: product.createdAt?.toISOString() ?? null,
+        updatedAt: product.updatedAt?.toISOString() ?? null,
+      },
+    },
     revalidate: 60,
   };
 }
 
+// ── Helpers ────────────────────────────────────────────────────────────────
+
 const formatMoney = (amount, currency) =>
-  `${currency} ${Number(amount).toFixed(2)}`;
+  `${currency} ${Number(amount || 0).toFixed(2)}`;
+
+// ── Component ──────────────────────────────────────────────────────────────
 
 const ProductPage = ({ product }) => {
   const router = useRouter();
-  const { addToCart } = useCart();
+  const { addToCart, cartCount } = useCart();
 
-  const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] || null);
-  const [selectedColor, setSelectedColor] = useState(
-    product.colors?.[0] || null
-  );
+  const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] ?? null);
+  const [selectedColor, setSelectedColor] = useState(product.colors?.[0] ?? null);
   const [quantity, setQuantity] = useState(1);
   const [justAdded, setJustAdded] = useState(false);
 
-  const outOfStock = product.stock <= 0;
+  // ── Fallback while statically generating (fallback: "blocking" hides this,
+  //    but keeping it is defensive in case fallback is changed to true later)
+  if (router.isFallback) {
+    return (
+      <>
+        <Header />
+        <div className="main-content">
+          <div className="custom-container">
+            <p style={{ padding: "4rem", textAlign: "center" }}>Loading…</p>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  const outOfStock = typeof product.stock === "number" && product.stock <= 0;
+  const lowStock =
+    typeof product.stock === "number" &&
+    product.stock > 0 &&
+    product.stock <= 3;
 
   const handleAddToCart = () => {
     if (outOfStock) return;
@@ -49,7 +82,7 @@ const ProductPage = ({ product }) => {
         id: product.id,
         name: product.name,
         price: product.price,
-        image: product.images?.[0],
+        image: product.images?.[0] ?? null,
         size: selectedSize,
         color: selectedColor,
       },
@@ -62,64 +95,107 @@ const ProductPage = ({ product }) => {
   const handleBuyNow = () => {
     if (outOfStock) return;
     handleAddToCart();
-    router.push("/checkout");
+    router.push("/cart"); // ✅ go to cart first, not checkout — lets user review
   };
+
+  const incrementQty = () =>
+    setQuantity((q) => Math.min(product.stock ?? 99, q + 1));
+
+  const decrementQty = () =>
+    setQuantity((q) => Math.max(1, q - 1));
 
   return (
     <>
       <Head>
         <title>{product.name} | Coast Republic</title>
-        <meta name="description" content={product.description} />
+        <meta
+          name="description"
+          content={
+            product.description?.slice(0, 155) ?? `Shop ${product.name} at Coast Republic.`
+          }
+        />
+        <meta property="og:title" content={`${product.name} | Coast Republic`} />
+        <meta property="og:description" content={product.description} />
+        {product.images?.[0] && (
+          <meta property="og:image" content={product.images[0]} />
+        )}
       </Head>
+
       <Header />
-      <div className="main-content">
+
+      <main className="main-content">
         <div className="custom-container">
           <div className="container-center product-page">
+
+            {/* Gallery */}
             <div className="product-page__gallery">
-              {product.images?.[0] && (
+              {product.images?.length > 0 ? (
                 <Image
                   src={product.images[0]}
                   alt={product.name}
                   width={600}
                   height={600}
                   priority
+                  style={{ objectFit: "cover", borderRadius: "8px" }}
                 />
+              ) : (
+                <div className="product-page__no-image">No image available</div>
               )}
-            </div><br />
 
+              {/* Thumbnail strip — visible when there are multiple images */}
+              {product.images?.length > 1 && (
+                <div className="product-page__thumbnails">
+                  {product.images.map((src, i) => (
+                    <Image
+                      key={src}
+                      src={src}
+                      alt={`${product.name} view ${i + 1}`}
+                      width={72}
+                      height={72}
+                      style={{ objectFit: "cover", borderRadius: "4px", cursor: "pointer" }}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Details */}
             <div className="product-page__details">
               <p className="product-page__category">{product.category}</p>
-              <h4 className="heading-large">{product.name}</h4>
+              <h1 className="heading-large">{product.name}</h1>   {/* ✅ h1 not h4 */}
+
               <p className="product-page__price">
                 {formatMoney(product.price, product.currency)}
               </p>
 
-              {outOfStock ? (
-                <p className="product-page__stock product-page__stock--out">
+              {/* Stock badge */}
+              {outOfStock && (
+                <p className="product-page__stock product-page__stock--out" role="status">
                   Out of stock
                 </p>
-              ) : product.stock <= 3 ? (
-                <p className="product-page__stock product-page__stock--low">
+              )}
+              {lowStock && (
+                <p className="product-page__stock product-page__stock--low" role="status">
                   Only {product.stock} left in stock
                 </p>
-              ) : null}
+              )}
 
               <p className="product-page__description">{product.description}</p>
 
+              {/* Color selector */}
               {product.colors?.length > 0 && (
                 <div className="product-page__option">
-                  <span>Color</span><br />
+                  <span className="product-page__option-label">
+                    Color: <strong>{selectedColor}</strong>
+                  </span>
                   <div className="product-page__option-list">
                     {product.colors.map((color) => (
                       <button
                         key={color}
                         type="button"
-                        className={
-                          color === selectedColor
-                            ? "option-btn option-btn--active"
-                            : "option-btn"
-                        }
+                        className={`option-btn${color === selectedColor ? " option-btn--active" : ""}`}
                         onClick={() => setSelectedColor(color)}
+                        aria-pressed={color === selectedColor}
                       >
                         {color}
                       </button>
@@ -127,22 +203,21 @@ const ProductPage = ({ product }) => {
                   </div>
                 </div>
               )}
-              <br />
 
+              {/* Size selector */}
               {product.sizes?.length > 0 && (
                 <div className="product-page__option">
-                  <span>Size</span>
+                  <span className="product-page__option-label">
+                    Size: <strong>{selectedSize}</strong>
+                  </span>
                   <div className="product-page__option-list">
                     {product.sizes.map((size) => (
                       <button
                         key={size}
                         type="button"
-                        className={
-                          size === selectedSize
-                            ? "option-btn option-btn--active"
-                            : "option-btn"
-                        }
+                        className={`option-btn${size === selectedSize ? " option-btn--active" : ""}`}
                         onClick={() => setSelectedSize(size)}
+                        aria-pressed={size === selectedSize}
                       >
                         {size}
                       </button>
@@ -150,36 +225,39 @@ const ProductPage = ({ product }) => {
                   </div>
                 </div>
               )}
-              <br />
 
-              <div className="product-page__qty">
-                <span>Quantity</span><br />
+              {/* Quantity */}
+              <div className="product-page__option">
+                <span className="product-page__option-label">Quantity</span>
                 <div className="qty-control">
                   <button
                     type="button"
-                    onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                    disabled={outOfStock}
+                    onClick={decrementQty}
+                    disabled={outOfStock || quantity <= 1}
+                    aria-label="Decrease quantity"
                   >
                     −
                   </button>
-                  <span>{quantity}</span>
+                  <span aria-live="polite">{quantity}</span>
                   <button
                     type="button"
-                    onClick={() => setQuantity((q) => Math.min(product.stock, q + 1))}
-                    disabled={outOfStock}
+                    onClick={incrementQty}
+                    disabled={outOfStock || quantity >= (product.stock ?? 99)}
+                    aria-label="Increase quantity"
                   >
                     +
                   </button>
                 </div>
               </div>
-              <br />
 
+              {/* CTA buttons */}
               <div className="product-page__actions">
                 <button
                   type="button"
                   className="btn-primary"
                   onClick={handleAddToCart}
                   disabled={outOfStock}
+                  aria-label={`Add ${product.name} to cart`}
                 >
                   {outOfStock ? "Out of Stock" : justAdded ? "Added ✓" : "Add to Cart"}
                 </button>
@@ -192,24 +270,17 @@ const ProductPage = ({ product }) => {
                   Buy Now
                 </button>
               </div>
+
+              {/* Trust signals */}
+              <p className="product-page__trust">
+                🔒 Secure checkout · Free returns within 30 days
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <FootBottom />
+      </main>
 
-      <style jsx global>{`
-        .product-page__stock {
-          font-size: 13px;
-          margin: 4px 0 12px;
-        }
-        .product-page__stock--out {
-          color: #999;
-        }
-        .product-page__stock--low {
-          color: #c0392b;
-        }
-      `}</style>
+      <FootBottom />
     </>
   );
 };
