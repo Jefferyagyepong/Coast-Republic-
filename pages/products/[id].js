@@ -6,38 +6,43 @@ import { useRouter } from "next/router";
 import Header from "@/components/Head/Header";
 import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
-import { getAllProductIds, getProductById } from "@/lib/products";
+import { getAllProductIds, getProductById, getAllProducts } from "@/lib/products";
 
 const RECENTLY_VIEWED_KEY = "cr_recently_viewed";
 const WISHLIST_KEY = "cr_wishlist";
 const MAX_RECENTLY_VIEWED = 8;
 
 export async function getStaticPaths() {
-  const ids = getAllProductIds();
+  const ids = await getAllProductIds();
+
   return {
-    paths: ids.map((id) => ({ params: { id } })),
-    fallback: false,
+    paths: ids.map((id) => ({
+      params: { id },
+    })),
+    fallback: "blocking",
   };
 }
 
 export async function getStaticProps({ params }) {
-  const product = getProductById(params.id);
+  const product = await getProductById(params.id);
 
-  if (!product) return { notFound: true };
+  if (!product) {
+    return { notFound: true };
+  }
 
-  // Build a small "related products" set from the same category,
-  // excluding the current product. Falls back gracefully if the
-  // products lib doesn't expose a bulk lookup — we just walk the
-  // known ids since getAllProductIds() already exists.
-  const allIds = getAllProductIds();
-  const relatedProducts = allIds
-    .filter((id) => id !== params.id)
-    .map((id) => getProductById(id))
-    .filter(Boolean)
-    .filter((p) => p.category === product.category)
+  // Get related products from the same category
+  const allProducts = await getAllProducts();
+  const relatedProducts = allProducts
+    .filter((p) => p.id !== params.id && p.category === product.category)
     .slice(0, 8);
 
-  return { props: { product, relatedProducts } };
+  return {
+    props: {
+      product,
+      relatedProducts,
+    },
+    revalidate: 60,
+  };
 }
 
 const formatMoney = (amount, currency) =>
@@ -132,7 +137,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
     }
   };
 
-  // Recently viewed: record this product, read the list for display
+  // Recently viewed
   useEffect(() => {
     try {
       const stored = JSON.parse(
@@ -145,9 +150,6 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
       );
       localStorage.setItem(RECENTLY_VIEWED_KEY, JSON.stringify(next));
 
-      // Resolve ids -> lightweight product data using what we already
-      // have (current product + related products list). Anything not
-      // found locally is simply skipped rather than fetched again.
       const known = [product, ...relatedProducts];
       const resolved = next
         .filter((id) => id !== product.id)
@@ -198,7 +200,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
         setTimeout(() => setShareCopied(false), 2000);
       }
     } catch {
-      // user cancelled share sheet or clipboard denied; no-op
+      // user cancelled share sheet or clipboard denied
     }
   };
 
@@ -225,40 +227,40 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
 
   return (
     <>
-  <Head>
-  <title>{product.name} | Coast Republic</title>
-  <meta name="description" content={product.description} />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    rel="canonical"
-    href={`https://www.coastrepublic.com/products/${product.id}`}
-  />
+      <Head>
+        <title>{product.name} | Coast Republic</title>
+        <meta name="description" content={product.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.coastrepublic.com/products/${product.id}`}
+        />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="product" />
-  <meta property="og:title" content={`${product.name} | Coast Republic`} />
-  <meta property="og:description" content={product.description} />
-  <meta
-    property="og:url"
-    content={`https://www.coastrepublic.com/products/${product.id}`}
-  />
-  <meta property="og:site_name" content="Coast Republic" />
-  {product.images?.[0] && (
-    <meta property="og:image" content={product.images[0]} />
-  )}
-  <meta property="product:price:amount" content={product.price} />
-  <meta property="product:price:currency" content={product.currency} />
+        {/* Open Graph */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.name} | Coast Republic`} />
+        <meta property="og:description" content={product.description} />
+        <meta
+          property="og:url"
+          content={`https://www.coastrepublic.com/products/${product.id}`}
+        />
+        <meta property="og:site_name" content="Coast Republic" />
+        {product.images?.[0] && (
+          <meta property="og:image" content={product.images[0]} />
+        )}
+        <meta property="product:price:amount" content={product.price} />
+        <meta property="product:price:currency" content={product.currency} />
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={`${product.name} | Coast Republic`} />
-  <meta name="twitter:description" content={product.description} />
-  {product.images?.[0] && (
-    <meta name="twitter:image" content={product.images[0]} />
-  )}
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${product.name} | Coast Republic`} />
+        <meta name="twitter:description" content={product.description} />
+        {product.images?.[0] && (
+          <meta name="twitter:image" content={product.images[0]} />
+        )}
 
-  <meta name="robots" content="index, follow" />
-</Head>
+        <meta name="robots" content="index, follow" />
+      </Head>
 
       <Header />
 
@@ -272,11 +274,14 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
                 ) : (
                   <span aria-current="page">{crumb.label}</span>
                 )}
-                {i < breadcrumb.length - 1 && <span className="product-page__breadcrumb-sep"> / </span>}
+                {i < breadcrumb.length - 1 && (
+                  <span className="product-page__breadcrumb-sep"> / </span>
+                )}
               </span>
             ))}
           </nav>
-<br />
+          <br />
+
           <div className="container-center product-page">
             <div className="product-page__gallery">
               <div className="product-page__gallery-main">
@@ -357,9 +362,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
                   : "In stock"}
               </p>
 
-              <p className="product-page__description">
-                {product.description}
-              </p>
+              <p className="product-page__description">{product.description}</p>
 
               {product.colors?.length > 0 && (
                 <div className="product-page__option">
@@ -388,6 +391,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
               {product.sizes?.length > 0 && (
                 <div className="product-page__option">
                   <span>Size</span>
+                  <br />
                   <div className="product-page__option-list">
                     {product.sizes.map((size) => (
                       <button
@@ -408,13 +412,13 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
               )}
               <br />
 
-              <div className="product-page__qty">
+              <div className="product-page__quantity">
                 <span>Quantity</span>
-                <br />
-                <div className="qty-control">
+                <div className="quantity-controls">
                   <button
                     type="button"
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                    disabled={quantity <= 1}
                   >
                     −
                   </button>
@@ -424,6 +428,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
                     onClick={() =>
                       setQuantity((q) => Math.min(maxQuantity, q + 1))
                     }
+                    disabled={quantity >= maxQuantity}
                   >
                     +
                   </button>
@@ -438,7 +443,7 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
                   onClick={handleAddToCart}
                   disabled={!inStock}
                 >
-                  {justAdded ? "Added ✓" : "Add to Cart"}
+                  {justAdded ? "Added!" : "Add to Cart"}
                 </button>
                 <button
                   type="button"
@@ -450,103 +455,39 @@ const ProductPage = ({ product, relatedProducts = [] }) => {
                 </button>
                 <button
                   type="button"
-                  className="btn-outline"
+                  className="btn-share"
                   onClick={handleShare}
                 >
-                  {shareCopied ? "Link copied ✓" : "Share"}
+                  {shareCopied ? "Link copied!" : "Share"}
                 </button>
-              </div>
-
-              <ul className="product-page__trust">
-                <li>Free shipping on orders over GHS 300</li>
-                <li>Easy 14-day returns</li>
-                <li>Secure checkout</li>
-              </ul>
-
-              <div className="product-page__tabs">
-                <div className="product-page__tab-list" role="tablist">
-                  {["description", "details", "shipping"].map((tab) => (
-                    <button
-                      key={tab}
-                      type="button"
-                      role="tab"
-                      aria-selected={activeTab === tab}
-                      className={
-                        activeTab === tab ? "tab tab--active" : "tab"
-                      }
-                      onClick={() => setActiveTab(tab)}
-                    >
-                      {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                    </button>
-                  ))}
-                </div>
-
-                <div className="product-page__tab-panel">
-                  {activeTab === "description" && <p>{product.description}</p>}
-                  {activeTab === "details" && (
-                    <ul>
-                      <li>Category: {product.category}</li>
-                      {product.material && <li>Material: {product.material}</li>}
-                      {product.sizes?.length > 0 && (
-                        <li>Available sizes: {product.sizes.join(", ")}</li>
-                      )}
-                      {product.colors?.length > 0 && (
-                        <li>Available colors: {product.colors.join(", ")}</li>
-                      )}
-                    </ul>
-                  )}
-                  {activeTab === "shipping" && (
-                    <p>
-                      Orders ship within 2–4 business days. Free shipping on
-                      orders over GHS 300. Returns accepted within 14 days of
-                      delivery, unworn and in original packaging.
-                    </p>
-                  )}
-                </div>
               </div>
             </div>
           </div>
 
+          {/* Related Products */}
           {relatedProducts.length > 0 && (
-            <section className="product-page__related">
-              <h3 className="heading-medium">You may also like</h3><br />
-              <div className="product-grid">
+            <div className="related-products">
+              <h5>You may also like</h5>
+              <div className="product-container">
                 {relatedProducts.map((p) => (
                   <ProductCard key={p.id} product={p} />
                 ))}
               </div>
-            </section>
+            </div>
           )}
 
+          {/* Recently Viewed */}
           {recentlyViewed.length > 0 && (
-            <section className="product-page__recently-viewed">
-              <h3 className="heading-medium">Recently viewed</h3>
-              <div className="product-grid">
+            <div className="recently-viewed">
+              <h5>Recently Viewed</h5>
+              <div className="product-container">
                 {recentlyViewed.map((p) => (
                   <ProductCard key={p.id} product={p} />
                 ))}
               </div>
-            </section>
+            </div>
           )}
         </div>
-      </div>
-
-      {/* Sticky bar for quick add-to-cart on mobile */}
-      <div className="product-page__sticky-bar">
-        <div>
-          <p className="product-page__sticky-name">{product.name}</p>
-          <p className="product-page__sticky-price">
-            {formatMoney(product.price, product.currency)}
-          </p>
-        </div>
-        <button
-          type="button"
-          className="btn-primary"
-          onClick={handleAddToCart}
-          disabled={!inStock}
-        >
-          {justAdded ? "Added ✓" : "Add to Cart"}
-        </button>
       </div>
 
       <FootBottom />
