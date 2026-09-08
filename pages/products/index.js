@@ -8,8 +8,16 @@ import FootBottom from "@/components/Footer/FootBottom";
 import { getAllProducts } from "@/lib/products";
 import Newsletter from "@/components/Footer/Newsletter";
 import CoastApp from "@/components/Parts/CoastApp";
+
 export async function getStaticProps() {
-  return { props: { products: getAllProducts() } };
+  const products = await getAllProducts();
+
+  return {
+    props: {
+      products,
+    },
+    revalidate: 60, // refresh every 60 seconds
+  };
 }
 
 const formatMoney = (amount, currency) =>
@@ -56,8 +64,7 @@ const ProductsPage = ({ products }) => {
   const [searchInput, setSearchInput] = useState("");
   const hydratedFromUrl = useRef(false);
 
-  // ---- Read filters from the URL once the router is ready, so shared
-  // links, bookmarks, and the back button restore the exact same view.
+  // ---- Read filters from the URL once the router is ready
   useEffect(() => {
     if (!router.isReady || hydratedFromUrl.current) return;
     hydratedFromUrl.current = true;
@@ -73,7 +80,7 @@ const ProductsPage = ({ products }) => {
     }
   }, [router.isReady, router.query]);
 
-  // ---- Debounce the text input so filtering doesn't run on every keystroke
+  // ---- Debounce the text input
   useEffect(() => {
     const id = setTimeout(() => {
       setSearch(searchInput);
@@ -82,7 +89,7 @@ const ProductsPage = ({ products }) => {
     return () => clearTimeout(id);
   }, [searchInput]);
 
-  // ---- Keep the URL in sync with the current view (shallow — no re-fetch)
+  // ---- Keep the URL in sync with the current view
   useEffect(() => {
     if (!router.isReady || !hydratedFromUrl.current) return;
     const query = {};
@@ -118,12 +125,21 @@ const ProductsPage = ({ products }) => {
       });
   }, [products, filter, search, sort]);
 
-  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / ITEMS_PER_PAGE));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredProducts.length / ITEMS_PER_PAGE)
+  );
   const safePage = Math.min(currentPage, totalPages);
   const startIndex = (safePage - 1) * ITEMS_PER_PAGE;
-  const currentItems = filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const currentItems = filteredProducts.slice(
+    startIndex,
+    startIndex + ITEMS_PER_PAGE
+  );
   const rangeStart = filteredProducts.length === 0 ? 0 : startIndex + 1;
-  const rangeEnd = Math.min(startIndex + ITEMS_PER_PAGE, filteredProducts.length);
+  const rangeEnd = Math.min(
+    startIndex + ITEMS_PER_PAGE,
+    filteredProducts.length
+  );
 
   const goToPage = (page) => {
     if (page < 1 || page > totalPages) return;
@@ -164,40 +180,46 @@ const ProductsPage = ({ products }) => {
 
   return (
     <>
-  <Head>
-  <title>Shop All Products | Coast Republic</title>
-  <meta
-    name="description"
-    content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more. Filter, search, and sort to find your next favorite piece."
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://www.coastrepublic.com/products" />
+      <Head>
+        <title>Shop All Products | Coast Republic</title>
+        <meta
+          name="description"
+          content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more. Filter, search, and sort to find your next favorite piece."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.coastrepublic.com/products" />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Shop All Products | Coast Republic" />
-  <meta
-    property="og:description"
-    content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more."
-  />
-  <meta property="og:url" content="https://www.coastrepublic.com/products" />
-  <meta property="og:site_name" content="Coast Republic" />
-  <meta property="og:image" content="https://www.coastrepublic.com/og-products.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Shop All Products | Coast Republic" />
+        <meta
+          property="og:description"
+          content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more."
+        />
+        <meta property="og:url" content="https://www.coastrepublic.com/products" />
+        <meta property="og:site_name" content="Coast Republic" />
+        <meta
+          property="og:image"
+          content="https://www.coastrepublic.com/og-products.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Shop All Products | Coast Republic" />
-  <meta
-    name="twitter:description"
-    content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more."
-  />
-  <meta name="twitter:image" content="https://www.coastrepublic.com/og-products.jpg" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shop All Products | Coast Republic" />
+        <meta
+          name="twitter:description"
+          content="Shop the full Coast Republic collection — t-shirts, jeans, caps, shoes and more."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.coastrepublic.com/og-products.jpg"
+        />
 
-  {/* Robots */}
-  <meta name="robots" content="index, follow" />
-</Head>
+        {/* Robots */}
+        <meta name="robots" content="index, follow" />
+      </Head>
 
       <Header />
       <div className="main-content">
@@ -205,7 +227,7 @@ const ProductsPage = ({ products }) => {
           <div className="container-center">
             <h5>Shop All</h5>
 
-            {/* Filter bar: search, category, sort — one flex row, wraps on mobile */}
+            {/* Filter bar */}
             <div className="controls">
               <div className="search-field">
                 <svg
@@ -258,7 +280,11 @@ const ProductsPage = ({ products }) => {
               </div>
 
               <div className="select-field">
-                <select onChange={handleSortChange} value={sort} aria-label="Sort products">
+                <select
+                  onChange={handleSortChange}
+                  value={sort}
+                  aria-label="Sort products"
+                >
                   {SORT_OPTIONS.map((option) => (
                     <option key={option.value} value={option.value}>
                       {option.label}
@@ -284,7 +310,11 @@ const ProductsPage = ({ products }) => {
                 {search && (
                   <span className="filter-chip">
                     “{search}”
-                    <button type="button" onClick={handleClearSearch} aria-label="Remove search filter">
+                    <button
+                      type="button"
+                      onClick={handleClearSearch}
+                      aria-label="Remove search filter"
+                    >
                       ×
                     </button>
                   </span>
@@ -328,7 +358,11 @@ const ProductsPage = ({ products }) => {
             {filteredProducts.length === 0 ? (
               <div className="no-results">
                 <p>No products match your search or filters.</p>
-                <button type="button" className="btn-secondary" onClick={handleClearFilters}>
+                <button
+                  type="button"
+                  className="btn-secondary"
+                  onClick={handleClearFilters}
+                >
                   Clear filters
                 </button>
               </div>
@@ -349,7 +383,9 @@ const ProductsPage = ({ products }) => {
                     <Link
                       key={product.id}
                       href={`/products/${product.id}`}
-                      className={`product-card${outOfStock ? " product-card--oos" : ""}`}
+                      className={`product-card${
+                        outOfStock ? " product-card--oos" : ""
+                      }`}
                     >
                       <div className="product-card__media">
                         {product.images?.[0] && (
@@ -358,299 +394,70 @@ const ProductsPage = ({ products }) => {
                             alt={product.name}
                             width={300}
                             height={300}
-                            style={{ objectFit: "cover" }}
                           />
                         )}
-                        {onSale && <span className="badge badge--sale">Sale</span>}
-                        {outOfStock && (
-                          <span className="badge badge--oos">Out of stock</span>
-                        )}
                       </div>
-                      <p className="product-card__name">{product.name}</p>
-                      <p className="product-card__price">
-                        {formatMoney(product.price, product.currency)}
-                        {onSale && (
-                          <span className="product-card__was">
-                            {formatMoney(product.compareAtPrice, product.currency)}
-                          </span>
-                        )}
-                      </p>
-                      {lowStock && (
-                        <p className="product-card__low-stock">
-                          Only {product.stock} left
+
+                      <div className="product-card__info">
+                        <p className="product-card__name">{product.name}</p>
+                        <p className="product-card__price">
+                          {formatMoney(product.price, product.currency)}
                         </p>
-                      )}
+                      </div>
                     </Link>
                   );
                 })}
+              </div>
+            )}
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="pagination">
+                <button
+                  type="button"
+                  onClick={() => goToPage(safePage - 1)}
+                  disabled={safePage === 1}
+                >
+                  Previous
+                </button>
+
+                {getPageWindow(safePage, totalPages).map((p, i) =>
+                  p === "…" ? (
+                    <span key={`ellipsis-${i}`} className="pagination__ellipsis">
+                      …
+                    </span>
+                  ) : (
+                    <button
+                      key={p}
+                      type="button"
+                      className={
+                        p === safePage
+                          ? "pagination__btn pagination__btn--active"
+                          : "pagination__btn"
+                      }
+                      onClick={() => goToPage(p)}
+                    >
+                      {p}
+                    </button>
+                  )
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => goToPage(safePage + 1)}
+                  disabled={safePage === totalPages}
+                >
+                  Next
+                </button>
               </div>
             )}
           </div>
         </div>
       </div>
 
-      {/* Pagination */}
-      {filteredProducts.length > 0 && totalPages > 1 && (
-        <nav className="pagination-controls" aria-label="Product pages">
-          <button onClick={() => goToPage(safePage - 1)} disabled={safePage === 1}>
-            Previous
-          </button>
-          {getPageWindow(safePage, totalPages).map((page, i) =>
-            page === "…" ? (
-              <span key={`ellipsis-${i}`} className="pagination-ellipsis">
-                …
-              </span>
-            ) : (
-              <button
-                key={page}
-                className={page === safePage ? "pagination-page pagination-page--active" : "pagination-page"}
-                onClick={() => goToPage(page)}
-                aria-current={page === safePage ? "page" : undefined}
-              >
-                {page}
-              </button>
-            )
-          )}
-          <button onClick={() => goToPage(safePage + 1)} disabled={safePage === totalPages}>
-            Next
-          </button>
-        </nav>
-      )}
-
-      <hr />
-      <div className="feedback-container">
-        <h4>Have any question? </h4>
-        <Link href={"/contact"}>Send Us a Message </Link>
-      </div>
-      <br />
-      <Newsletter />
       <CoastApp />
+      <Newsletter />
       <FootBottom />
-
-      <style jsx global>{`
-        .controls {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-items: center;
-          gap: 14px;
-          padding: 10px 0;
-          margin-top: 1.5rem;
-        }
-
-        .search-field {
-          position: relative;
-          flex: 1 1 260px;
-          min-width: 200px;
-          display: flex;
-          align-items: center;
-        }
-        .search-field__icon {
-          position: absolute;
-          left: 12px;
-          color: #888;
-          pointer-events: none;
-        }
-        .search-products {
-          width: 100%;
-          padding: 10px 36px 10px 38px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
-          font-size: 14px;
-          color: #222;
-          box-sizing: border-box;
-          transition: border-color 0.15s ease, box-shadow 0.15s ease;
-        }
-        .search-products:focus {
-          outline: none;
-          border-color: #1a1a1a;
-          box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
-        }
-        .search-field__clear {
-          position: absolute;
-          right: 8px;
-          width: 22px;
-          height: 22px;
-          border: none;
-          background: #eee;
-          border-radius: 50%;
-          font-size: 14px;
-          line-height: 1;
-          cursor: pointer;
-          color: #444;
-        }
-        .search-field__clear:hover {
-          background: #e0e0e0;
-        }
-
-        .select-field select {
-          padding: 10px 32px 10px 12px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
-          color: #222;
-          background: #fff
-            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0l5 6 5-6z' fill='%23666'/></svg>")
-            no-repeat right 12px center;
-          appearance: none;
-          -webkit-appearance: none;
-          font-size: 14px;
-          min-width: 150px;
-          cursor: pointer;
-        }
-        .select-field select:focus {
-          outline: none;
-          border-color: #1a1a1a;
-        }
-
-        .clear-filters-btn {
-          padding: 9px 14px;
-          font-size: 14px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
-          background: #f5f5f5;
-          color: #000;
-          cursor: pointer;
-          white-space: nowrap;
-        }
-        .clear-filters-btn:hover {
-          background: #e8e8e8;
-        }
-
-        @media (max-width: 640px) {
-          .controls {
-            flex-direction: column;
-            align-items: stretch;
-          }
-          .search-field,
-          .select-field,
-          .select-field select {
-            width: 100%;
-          }
-        }
-
-        .filter-chips {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin-top: 10px;
-        }
-        .filter-chip {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          padding: 5px 10px;
-          border-radius: 999px;
-          background: #f2f2f2;
-          font-size: 13px;
-          color: #333;
-        }
-        .filter-chip button {
-          border: none;
-          background: none;
-          font-size: 14px;
-          line-height: 1;
-          cursor: pointer;
-          color: #666;
-        }
-
-        .results-count {
-          margin: 14px 0 6px;
-          font-size: 13px;
-          color: #666;
-        }
-
-        .no-results {
-          padding: 48px 0;
-          text-align: center;
-          color: #666;
-        }
-        .no-results .btn-secondary {
-          margin-top: 12px;
-        }
-
-        .product-container {
-          width: 100%;
-          margin: 0 auto;
-        }
-
-        .product-card__media {
-          position: relative;
-        }
-        .badge {
-          position: absolute;
-          top: 8px;
-          left: 8px;
-          padding: 3px 8px;
-          border-radius: 4px;
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 0.02em;
-        }
-        .badge--sale {
-          background: #1a1a1a;
-          color: #fff;
-        }
-        .badge--oos {
-          left: auto;
-          right: 8px;
-          background: #fff;
-          color: #b3261e;
-          border: 1px solid #b3261e;
-        }
-        .product-card--oos {
-          opacity: 0.6;
-        }
-        .product-card__was {
-          margin-left: 8px;
-          color: #999;
-          text-decoration: line-through;
-          font-weight: 400;
-          font-size: 0.85em;
-        }
-        .product-card__low-stock {
-          color: #b3261e;
-          font-size: 12px;
-          margin-top: 2px;
-        }
-
-        .pagination-controls {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 6px;
-          flex-wrap: wrap;
-          margin: 2rem 0;
-        }
-        .pagination-controls button {
-          padding: 8px 12px;
-          border: 1px solid #ddd;
-          border-radius: 6px;
-          background: #fff;
-          cursor: pointer;
-          font-size: 14px;
-        }
-        .pagination-controls button:disabled {
-          opacity: 0.4;
-          cursor: not-allowed;
-        }
-        .pagination-page--active {
-          background: #1a1a1a;
-          color: #fff;
-          border-color: #1a1a1a;
-        }
-        .pagination-ellipsis {
-          padding: 0 4px;
-          color: #999;
-        }
-
-        hr {
-          border: none;
-          height: 1px;
-          background: #e0e0e0;
-          margin: 1.5rem 0;
-        }
-      `}</style>
     </>
   );
 };
