@@ -7,8 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma skills sync || exit 0"
+    "lint": "next lint"
+   
   },
   "keywords": [],
   "author": "",
