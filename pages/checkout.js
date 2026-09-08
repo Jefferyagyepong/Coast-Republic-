@@ -1,17 +1,16 @@
+// pages/checkout.js
 import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Header from "@/components/Head/Header";
+import Header from "@/components/Head/Navbar";        // ✅ consistent with project
 import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 
 const formatMoney = (amount, currency) =>
   `${currency} ${Number(amount || 0).toFixed(2)}`;
 
-// --- Store policy constants ---------------------------------------------
-// Move to a shared config if delivery pricing/tax varies by region or
-// comes from the backend.
+// ── Store policy constants ─────────────────────────────────────────────────
 const TAX_RATE = 0.075;
 const DELIVERY_FEE = 15;
 const FREE_DELIVERY_THRESHOLD = 200;
@@ -20,27 +19,11 @@ const SUBMIT_TIMEOUT_MS = 20000;
 const DRAFT_STORAGE_KEY = "coast-republic-checkout-draft";
 
 const GHANA_REGIONS = [
-  "Greater Accra",
-  "Ashanti",
-  "Western",
-  "Western North",
-  "Central",
-  "Eastern",
-  "Volta",
-  "Oti",
-  "Northern",
-  "North East",
-  "Savannah",
-  "Upper East",
-  "Upper West",
-  "Bono",
-  "Bono East",
-  "Ahafo",
+  "Greater Accra", "Ashanti", "Western", "Western North", "Central",
+  "Eastern", "Volta", "Oti", "Northern", "North East", "Savannah",
+  "Upper East", "Upper West", "Bono", "Bono East", "Ahafo",
 ];
 
-// Heuristic only — MTN/Vodafone/AirtelTigo prefixes shift over time and
-// with ported numbers, so this is a convenience default, not a source of
-// truth. Always let the customer confirm/override the network.
 const MOMO_NETWORK_PREFIXES = {
   MTN: ["024", "025", "053", "054", "055", "059"],
   "Vodafone Cash": ["020", "050"],
@@ -56,6 +39,7 @@ const detectMomoNetwork = (phone) => {
   return match ? match[0] : "";
 };
 
+// ── Form defaults ──────────────────────────────────────────────────────────
 const emptyForm = {
   fullName: "",
   phone: "",
@@ -63,13 +47,14 @@ const emptyForm = {
   city: "",
   address: "",
   notes: "",
-  deliveryMethod: "delivery", // "delivery" | "pickup"
-  paymentMethod: "momo", // "momo" | "cod"
+  deliveryMethod: "delivery",
+  paymentMethod: "momo",
   momoNetwork: "",
   saveInfo: false,
   agreeTerms: false,
 };
 
+// ── Validation ─────────────────────────────────────────────────────────────
 const validateField = (name, value, form) => {
   switch (name) {
     case "fullName":
@@ -100,17 +85,13 @@ const validateField = (name, value, form) => {
 };
 
 const FIELDS_TO_VALIDATE = [
-  "fullName",
-  "phone",
-  "region",
-  "city",
-  "address",
-  "agreeTerms",
+  "fullName", "phone", "region", "city", "address", "agreeTerms",
 ];
 
+// ── Component ──────────────────────────────────────────────────────────────
 const CheckoutPage = () => {
   const router = useRouter();
-  const { items, getCartTotal, currency, clearCart } = useCart();
+  const { items, cartTotal, currency, clearCart } = useCart(); // ✅ cartTotal, not getCartTotal
 
   const [form, setForm] = useState(emptyForm);
   const [touched, setTouched] = useState({});
@@ -119,9 +100,7 @@ const CheckoutPage = () => {
   const liveRegionRef = useRef(null);
   const fieldRefs = useRef({});
 
-  // ---- Restore / persist a draft so people don't retype everything
-  // if they navigate away or their session drops. Guarded for SSR and
-  // wrapped in try/catch since localStorage can throw in private mode.
+  // ── Restore draft ────────────────────────────────────────────────────────
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
@@ -131,10 +110,11 @@ const CheckoutPage = () => {
         setForm((prev) => ({ ...prev, ...parsed, saveInfo: true }));
       }
     } catch {
-      // Corrupt or inaccessible storage — just start with a blank form.
+      // Corrupt storage — start blank
     }
   }, []);
 
+  // ── Persist draft ────────────────────────────────────────────────────────
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
@@ -145,7 +125,7 @@ const CheckoutPage = () => {
         window.localStorage.removeItem(DRAFT_STORAGE_KEY);
       }
     } catch {
-      // Ignore storage failures — not critical to checkout succeeding.
+      // Ignore — not critical
     }
   }, [form]);
 
@@ -153,7 +133,7 @@ const CheckoutPage = () => {
     if (liveRegionRef.current) liveRegionRef.current.textContent = message;
   }, []);
 
-  // ---- Totals -------------------------------------------------------
+  // ── Totals ───────────────────────────────────────────────────────────────
   const subtotal = useMemo(
     () => items.reduce((sum, item) => sum + item.price * item.quantity, 0),
     [items]
@@ -166,11 +146,8 @@ const CheckoutPage = () => {
     : DELIVERY_FEE;
   const tax = +(subtotal * TAX_RATE).toFixed(2);
   const total = +(subtotal + deliveryFee + tax).toFixed(2);
-  // Fall back to context's getCartTotal in case other pages rely on a
-  // different calculation (e.g. an applied promo lives in CartContext).
-  const contextTotal = getCartTotal();
 
-  // ---- Field handling -------------------------------------------------
+  // ── Field handlers ───────────────────────────────────────────────────────
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     const nextValue = type === "checkbox" ? checked : value;
@@ -202,6 +179,7 @@ const CheckoutPage = () => {
     fieldRefs.current[name] = el;
   };
 
+  // ── Submit ───────────────────────────────────────────────────────────────
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (items.length === 0) return;
@@ -247,7 +225,8 @@ const CheckoutPage = () => {
           },
           payment: {
             method: form.paymentMethod,
-            momoNetwork: form.paymentMethod === "momo" ? form.momoNetwork : undefined,
+            momoNetwork:
+              form.paymentMethod === "momo" ? form.momoNetwork : undefined,
           },
           items,
           subtotal,
@@ -266,9 +245,7 @@ const CheckoutPage = () => {
       if (!form.saveInfo && typeof window !== "undefined") {
         try {
           window.localStorage.removeItem(DRAFT_STORAGE_KEY);
-        } catch {
-          /* ignore */
-        }
+        } catch { /* ignore */ }
       }
 
       clearCart();
@@ -285,23 +262,21 @@ const CheckoutPage = () => {
     }
   };
 
+  // ── Empty cart state ─────────────────────────────────────────────────────
   if (items.length === 0) {
     return (
       <>
-      <Head>
-  <title>Checkout | Coast Republic</title>
-  <meta
-    name="description"
-    content="Complete your Coast Republic order securely with MTN MoMo."
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  {/* User-specific + collects PII (name, phone, address) — never index or preview */}
-  <meta name="robots" content="noindex, nofollow" />
-</Head>
-
+        <Head>
+          <title>Checkout | Coast Republic</title>
+          <meta
+            name="description"
+            content="Complete your Coast Republic order securely with MTN MoMo."
+          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="robots" content="noindex, nofollow" />
+        </Head>
         <Header />
-        <div className="main-content">
+        <main className="main-content">
           <div className="custom-container">
             <div className="container-center">
               <h1 className="heading-large">Checkout</h1>
@@ -311,21 +286,31 @@ const CheckoutPage = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </main>
         <FootBottom />
       </>
     );
   }
 
+  // ── Main render ──────────────────────────────────────────────────────────
   return (
     <>
       <Head>
         <title>Checkout | Coast Republic</title>
+        <meta
+          name="description"
+          content="Complete your Coast Republic order securely with MTN MoMo."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
+
       <Header />
-      <div className="main-content">
+
+      <main className="main-content">
         <div className="custom-container">
           <div className="container-center checkout-page">
+
             <div className="checkout-page__heading-row">
               <h1 className="heading-large">Checkout</h1>
               <Link href="/cart" className="cart-continue-shopping">
@@ -333,6 +318,7 @@ const CheckoutPage = () => {
               </Link>
             </div>
 
+            {/* Screen-reader live region */}
             <p
               ref={liveRegionRef}
               className="sr-only"
@@ -341,27 +327,27 @@ const CheckoutPage = () => {
             />
 
             <div className="checkout-layout">
-              <form
-                className="checkout-form"
-                onSubmit={handleSubmit}
-                noValidate
-              >
+
+              {/* ── Form ── */}
+              <form className="checkout-form" onSubmit={handleSubmit} noValidate>
+
+                {/* Contact */}
                 <fieldset className="checkout-fieldset">
                   <legend>Contact</legend>
+
                   <label>
                     Full Name
                     <input
                       type="text"
                       name="fullName"
                       required
+                      autoComplete="name"
                       ref={registerRef("fullName")}
                       value={form.fullName}
                       onChange={handleChange}
                       onBlur={handleBlur}
                       aria-invalid={Boolean(fieldError("fullName"))}
-                      aria-describedby={
-                        fieldError("fullName") ? "err-fullName" : undefined
-                      }
+                      aria-describedby={fieldError("fullName") ? "err-fullName" : undefined}
                     />
                     {fieldError("fullName") && (
                       <span id="err-fullName" className="checkout-field-error">
@@ -377,14 +363,13 @@ const CheckoutPage = () => {
                       name="phone"
                       required
                       placeholder="e.g. 0244123456"
+                      autoComplete="tel"
                       ref={registerRef("phone")}
                       value={form.phone}
                       onChange={handleChange}
                       onBlur={handleBlur}
                       aria-invalid={Boolean(fieldError("phone"))}
-                      aria-describedby={
-                        fieldError("phone") ? "err-phone" : undefined
-                      }
+                      aria-describedby={fieldError("phone") ? "err-phone" : undefined}
                     />
                     {fieldError("phone") && (
                       <span id="err-phone" className="checkout-field-error">
@@ -394,8 +379,10 @@ const CheckoutPage = () => {
                   </label>
                 </fieldset>
 
+                {/* Delivery */}
                 <fieldset className="checkout-fieldset">
                   <legend>Delivery</legend>
+
                   <div
                     className="checkout-toggle-group"
                     role="radiogroup"
@@ -425,8 +412,8 @@ const CheckoutPage = () => {
 
                   {isPickup ? (
                     <p className="checkout-pickup-note">
-                      Pick up your order from <strong>{PICKUP_LOCATION}</strong>.
-                      We'll text you when it's ready.
+                      Pick up from <strong>{PICKUP_LOCATION}</strong>.
+                      We&apos;ll text you when it&apos;s ready.
                     </p>
                   ) : (
                     <>
@@ -440,15 +427,11 @@ const CheckoutPage = () => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           aria-invalid={Boolean(fieldError("region"))}
-                          aria-describedby={
-                            fieldError("region") ? "err-region" : undefined
-                          }
+                          aria-describedby={fieldError("region") ? "err-region" : undefined}
                         >
                           <option value="">Select region</option>
-                          {GHANA_REGIONS.map((region) => (
-                            <option key={region} value={region}>
-                              {region}
-                            </option>
+                          {GHANA_REGIONS.map((r) => (
+                            <option key={r} value={r}>{r}</option>
                           ))}
                         </select>
                         {fieldError("region") && (
@@ -464,14 +447,13 @@ const CheckoutPage = () => {
                           type="text"
                           name="city"
                           required
+                          autoComplete="address-level2"
                           ref={registerRef("city")}
                           value={form.city}
                           onChange={handleChange}
                           onBlur={handleBlur}
                           aria-invalid={Boolean(fieldError("city"))}
-                          aria-describedby={
-                            fieldError("city") ? "err-city" : undefined
-                          }
+                          aria-describedby={fieldError("city") ? "err-city" : undefined}
                         />
                         {fieldError("city") && (
                           <span id="err-city" className="checkout-field-error">
@@ -486,14 +468,13 @@ const CheckoutPage = () => {
                           type="text"
                           name="address"
                           required
+                          autoComplete="street-address"
                           ref={registerRef("address")}
                           value={form.address}
                           onChange={handleChange}
                           onBlur={handleBlur}
                           aria-invalid={Boolean(fieldError("address"))}
-                          aria-describedby={
-                            fieldError("address") ? "err-address" : undefined
-                          }
+                          aria-describedby={fieldError("address") ? "err-address" : undefined}
                         />
                         {fieldError("address") && (
                           <span id="err-address" className="checkout-field-error">
@@ -520,8 +501,10 @@ const CheckoutPage = () => {
                   </label>
                 </fieldset>
 
+                {/* Payment */}
                 <fieldset className="checkout-fieldset">
                   <legend>Payment</legend>
+
                   <div
                     className="checkout-toggle-group"
                     role="radiogroup"
@@ -559,14 +542,12 @@ const CheckoutPage = () => {
                       >
                         <option value="">Select network</option>
                         {Object.keys(MOMO_NETWORK_PREFIXES).map((network) => (
-                          <option key={network} value={network}>
-                            {network}
-                          </option>
+                          <option key={network} value={network}>{network}</option>
                         ))}
                       </select>
                       {form.momoNetwork && (
                         <span className="checkout-hint">
-                          Detected from your number — change it if that's wrong.
+                          Detected from your number — change it if that&apos;s wrong.
                         </span>
                       )}
                     </label>
@@ -574,12 +555,14 @@ const CheckoutPage = () => {
 
                   {form.paymentMethod === "cod" && (
                     <p className="checkout-hint">
-                      Pay in cash when your order {isPickup ? "is collected" : "arrives"}.
-                      Please have the exact amount ready where possible.
+                      Pay in cash when your order{" "}
+                      {isPickup ? "is collected" : "arrives"}. Please have the
+                      exact amount ready where possible.
                     </p>
                   )}
                 </fieldset>
 
+                {/* Preferences */}
                 <label className="checkout-checkbox">
                   <input
                     type="checkbox"
@@ -604,13 +587,9 @@ const CheckoutPage = () => {
                     }
                   />
                   I agree to the{" "}
-                  <Link href="/terms" target="_blank">
-                    Terms of Service
-                  </Link>{" "}
-                  and{" "}
-                  <Link href="/returns" target="_blank">
-                    Return Policy
-                  </Link>
+                  <Link href="/terms" target="_blank">Terms of Service</Link>
+                  {" "}and{" "}
+                  <Link href="/returns" target="_blank">Return Policy</Link>
                 </label>
                 {fieldError("agreeTerms") && (
                   <span id="err-agreeTerms" className="checkout-field-error">
@@ -618,6 +597,7 @@ const CheckoutPage = () => {
                   </span>
                 )}
 
+                {/* Submit error */}
                 {status === "error" && (
                   <p className="checkout-error" role="alert">
                     {errorMsg}
@@ -644,6 +624,7 @@ const CheckoutPage = () => {
                 </p>
               </form>
 
+              {/* ── Order summary sidebar ── */}
               <aside className="checkout-summary" aria-label="Order summary">
                 <h2>Order Summary</h2>
                 <ul>
@@ -672,7 +653,9 @@ const CheckoutPage = () => {
                   <div className="checkout-summary__row">
                     <span>{isPickup ? "Pickup" : "Delivery"}</span>
                     <span>
-                      {deliveryFee === 0 ? "Free" : formatMoney(deliveryFee, currency)}
+                      {deliveryFee === 0
+                        ? "Free"
+                        : formatMoney(deliveryFee, currency)}
                     </span>
                   </div>
                   <div className="checkout-summary__row">
@@ -688,7 +671,8 @@ const CheckoutPage = () => {
 
                 {!isPickup && deliveryFee > 0 && (
                   <p className="checkout-hint">
-                    Add {formatMoney(FREE_DELIVERY_THRESHOLD - subtotal, currency)}{" "}
+                    Add{" "}
+                    {formatMoney(FREE_DELIVERY_THRESHOLD - subtotal, currency)}{" "}
                     more for free delivery.
                   </p>
                 )}
@@ -696,16 +680,17 @@ const CheckoutPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
-      {/* Sticky mobile summary bar so the total/pay action stays visible
-          while scrolling a long form on small screens. */}
+      {/* Sticky mobile total bar */}
       <div className="checkout-sticky-bar" aria-hidden="true">
         <span>{formatMoney(total, currency)}</span>
         <span className="checkout-sticky-bar__hint">
           {items.length} item{items.length !== 1 ? "s" : ""}
         </span>
       </div>
+
+      <FootBottom />
     </>
   );
 };
