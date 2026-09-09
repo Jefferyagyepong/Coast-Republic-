@@ -1,8 +1,9 @@
+```jsx
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "@/components/Head/Navbar"; ✅ matches _app.js
+import Navbar from "@/components/Head/Navbar"; // matches _app.js
 import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 
@@ -17,7 +18,7 @@ const MAX_QUANTITY = 20;
 
 const PROMO_CODES = {
   WELCOME10: { type: "percent", value: 10, label: "10% off" },
-  SHIP5: { type: "flat", value: 5, label: "GHS 5 off" }, // ✅ currency-aware label
+  SHIP5: { type: "flat", value: 5, label: "GHS 5 off" }, // currency-aware label
 };
 
 const CartPage = () => {
@@ -25,8 +26,7 @@ const CartPage = () => {
     items,
     removeFromCart,
     updateQuantity,
-    cartCount,   // ✅ direct value, not a function
-    cartTotal,   // ✅ direct value, not a function
+    cartCount, // direct value, not a function
     currency,
     addToCart,
   } = useCart();
@@ -131,7 +131,7 @@ const CartPage = () => {
   };
 
   const handleMoveToCart = (item) => {
-    // ✅ correct signature: addToCart(product, quantity)
+    // correct signature: addToCart(product, quantity)
     // size & color are already part of the item object
     addToCart(item, item.quantity);
     setSavedForLater((prev) =>
@@ -179,7 +179,7 @@ const CartPage = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 
-      <Header />
+      <Navbar />
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center cart-page">
@@ -211,7 +211,7 @@ const CartPage = () => {
               </div>
             ) : (
               <>
-                {/* ✅ using cartCount directly, not getCartCount() */}
+                {/* using cartCount directly, not getCartCount() */}
                 <p className="cart-summary-line">
                   Total Items: {cartCount} &nbsp;|&nbsp; Total Price:{" "}
                   {formatMoney(subtotal, currency)}
@@ -276,7 +276,7 @@ const CartPage = () => {
                                 alt={item.name}
                                 width={80}
                                 height={80}
-                                style={{ objectFit: "cover" }} // ✅ avoids layout shift
+                                style={{ objectFit: "cover" }} // avoids layout shift
                               />
                             </div>
                           )}
@@ -495,3 +495,4 @@ const CartPage = () => {
 };
 
 export default CartPage;
+```
