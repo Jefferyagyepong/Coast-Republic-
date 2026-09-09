@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Header from "@/components/Head/Navbar";        // ✅ consistent with project
+import Header from "@/components/Head/Navbar"; // consistent with project
 import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 
@@ -39,9 +39,12 @@ const detectMomoNetwork = (phone) => {
   return match ? match[0] : "";
 };
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 // ── Form defaults ──────────────────────────────────────────────────────────
 const emptyForm = {
   fullName: "",
+  email: "",
   phone: "",
   region: "",
   city: "",
@@ -59,6 +62,10 @@ const validateField = (name, value, form) => {
   switch (name) {
     case "fullName":
       return value.trim().length >= 2 ? "" : "Enter your full name.";
+    case "email":
+      return EMAIL_REGEX.test(value.trim())
+        ? ""
+        : "Enter a valid email, e.g. name@example.com.";
     case "phone": {
       const digits = value.replace(/\D/g, "");
       return /^0[0-9]{9}$/.test(digits)
@@ -85,13 +92,13 @@ const validateField = (name, value, form) => {
 };
 
 const FIELDS_TO_VALIDATE = [
-  "fullName", "phone", "region", "city", "address", "agreeTerms",
+  "fullName", "email", "phone", "region", "city", "address", "agreeTerms",
 ];
 
 // ── Component ──────────────────────────────────────────────────────────────
 const CheckoutPage = () => {
   const router = useRouter();
-  const { items, cartTotal, currency, clearCart } = useCart(); // ✅ cartTotal, not getCartTotal
+  const { items, cartTotal, currency, clearCart } = useCart(); // cartTotal, not getCartTotal
 
   const [form, setForm] = useState(emptyForm);
   const [touched, setTouched] = useState({});
@@ -212,6 +219,7 @@ const CheckoutPage = () => {
         body: JSON.stringify({
           customer: {
             fullName: form.fullName,
+            email: form.email.trim().toLowerCase(),
             phone: form.phone,
             region: form.region,
             city: form.city,
@@ -352,6 +360,32 @@ const CheckoutPage = () => {
                     {fieldError("fullName") && (
                       <span id="err-fullName" className="checkout-field-error">
                         {fieldError("fullName")}
+                      </span>
+                    )}
+                  </label>
+
+                  <label>
+                    Email
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="you@example.com"
+                      autoComplete="email"
+                      inputMode="email"
+                      ref={registerRef("email")}
+                      value={form.email}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      aria-invalid={Boolean(fieldError("email"))}
+                      aria-describedby={fieldError("email") ? "err-email" : "hint-email"}
+                    />
+                    <span id="hint-email" className="checkout-hint">
+                      We&apos;ll send your order confirmation and receipt here.
+                    </span>
+                    {fieldError("email") && (
+                      <span id="err-email" className="checkout-field-error">
+                        {fieldError("email")}
                       </span>
                     )}
                   </label>
