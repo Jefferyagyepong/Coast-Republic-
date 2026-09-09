@@ -23,8 +23,90 @@ model Product {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
+  orderItems  OrderItem[] // ← back-relation so past orders survive product edits
+
   @@index([category])
   @@index([slug]) // ← index for slug lookups
   @@index([isActive]) // ← filter active products fast
   @@map("products")
+}
+
+enum OrderStatus {
+  PENDING     // order placed, awaiting payment/confirmation
+  CONFIRMED   // payment confirmed or COD accepted
+  PROCESSING  // being packed
+  SHIPPED     // out for delivery
+  DELIVERED   // completed
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+model Order {
+  id            String        @id @default(cuid())
+  referenceId   String        @unique @default(cuid()) // shown to customer, used in /order-status?ref=
+  status        OrderStatus   @default(PENDING)
+
+  // Customer
+  fullName      String
+  phone         String
+  email         String        // required — checkout.js collects this
+
+  // Delivery
+  deliveryMethod String       // "delivery" | "pickup"
+  region        String?
+  city          String?
+  address       String?
+  pickupLocation String?
+  notes         String?       @db.Text
+
+  // Payment
+  paymentMethod String        // "momo" | "cod"
+  momoNetwork   String?
+  paymentStatus PaymentStatus @default(PENDING)
+
+  // Totals — stored, not recalculated later, so historical orders stay accurate
+  // even if product prices or tax rates change afterward.
+  subtotal      Float
+  deliveryFee   Float
+  tax           Float
+  total         Float
+  currency      String        @default("GHS")
+
+  items         OrderItem[]
+
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@index([referenceId])
+  @@index([status])
+  @@index([phone])
+  @@index([email])
+  @@map("orders")
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  orderId   String
+
+  product   Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  productId String?
+
+  // Snapshot fields — captured at purchase time so the order stays accurate
+  // even if the product is later edited, repriced, or deleted.
+  name      String
+  price     Float
+  quantity  Int
+  size      String?
+  color     String?
+  image     String?
+
+  @@index([orderId])
+  @@map("order_items")
 }
