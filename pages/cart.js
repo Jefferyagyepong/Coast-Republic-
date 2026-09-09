@@ -3,7 +3,7 @@ import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "@/components/Head/Navbar"; // matches _app.js
+import Header from "@/components/Head/Header"; // matches _app.js
 import FootBottom from "@/components/Footer/FootBottom";
 import { useCart } from "@/context/CartContext";
 
@@ -179,7 +179,7 @@ const CartPage = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 
-      <Navbar />
+      <Header />
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center cart-page">
