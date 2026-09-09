@@ -53,11 +53,14 @@ export default function About() {
         <section className="block">
           <h6>Our Story</h6>
           <p>
-            Coast Republic started with a simple idea: Ghana deserves streetwear
-            that feels as good as it looks. What began as a small, design-led
-            passion project has grown into a destination for quality T-shirts,
-            sneakers, and everyday essentials — built for people who care about
-            fit, fabric, and detail.
+          Coast Republic is a Ghanaian lifestyle and streetwear brand built for a generation that leads with confidence. Inspired by culture, creativity, and everyday ambition, we offer quality fashion essentials that help people express their identity and elevate their style. More than a brand, Coast Republic is a community of dreamers, creators, and trendsetters shaping the future on their own terms. ￼
+Brand Essence
+"Born from Culture. Built for Confidence."
+Brand DNA
+Purpose: Empower self-expression through fashion.
+Vision: Become Africa's leading lifestyle and streetwear community.
+Mission: Deliver accessible premium fashion that inspires confidence and individuality.
+Values: Authenticity, Quality, Confidence, Community, Culture.
           </p>
           <p>
             Every piece we stock is chosen with one question in mind: would we
