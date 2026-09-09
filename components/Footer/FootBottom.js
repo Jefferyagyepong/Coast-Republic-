@@ -6,56 +6,55 @@ function FootBottom() {
   return (
   <>
   <div className="flex-inline">
-   <p>Accepted Payment Methods</p>
- </div >
-      
-      <div className="payment-container">
-        <Image
-          src={"/telecel.JPG"}
-          height={20}
-          width={25}
-          alt="momo logo"
-          className="footer-tag"
-        />
-        <Image
-          src={"/momo.jpg"}
-          height={20}
-          width={25}
-          alt="momo logo"
-          className="footer-tag"
-        />
-
-        <Image
-          src={"/Visa.png"}
-          height={20}
-          width={25}
-          alt="momo logo"
-          className="footer-tag"
-        />
-        <Image
-          src={"/Airtel-Money-logo.jpg"}
+         <p>Accepted Payment Methods</p>
+       </div>
+ 
+       <div className="payment-container">
+         <Image
+           src={"/telecel.JPG"}
            height={20}
-          width={25}
-          alt="momo logo"
-          className="footer-tag"
-        />
-      </div>
-        <Image
-          src={"View recent photos.png"}
-          height={30}
-          width={130}
-          alt="momo logo"
-          className="signature"
-        />
-      
-   
-      {/* Copyright */}
-      <div className="flex-inline">
-        <p>
-          © {new Date().getFullYear()} All rights
-          reserved.
-        </p>
-      </div>
+           width={25}
+           alt="Telecel Cash logo"
+           className="footer-tag"
+         />
+         <Image
+           src={"/momo.jpg"}
+           height={20}
+           width={25}
+           alt="MTN Mobile Money logo"
+           className="footer-tag"
+         />
+         <Image
+           src={"/Visa.png"}
+           height={20}
+           width={25}
+           alt="Visa logo"
+           className="footer-tag"
+         />
+         <Image
+           src={"/Airtel-Money-logo.jpg"}
+           height={20}
+           width={25}
+           alt="AirtelTigo Money logo"
+           className="footer-tag"
+         />
+       </div>
+ 
+       <Image
+         src={"/signature.png"} // ← confirm this file exists in /public, or swap in the real filename
+         height={30}
+         width={130}
+         alt="Coast Republic signature"
+         className="signature"
+       />
+ 
+       {/* Copyright */}
+       <div className="flex-inline">
+         <p>
+           © {new Date().getFullYear()} All rights
+           reserved.
+         </p>
+       </div>
       </>
   );
 }
