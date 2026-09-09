@@ -74,7 +74,7 @@ const Footer = () => {
         src={"/signature.png"} // ← confirm this file exists in /public, or swap in the real filename
         height={30}
         width={130}
-        alt="Coast Republic signature"
+        alt="logo"
         className="signature"
       />
 
