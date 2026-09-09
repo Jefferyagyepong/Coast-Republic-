@@ -1,3 +1,6 @@
+Both changes are confirmed in place. Here's the full file:
+
+```jsx
 // pages/checkout.js
 import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Head from "next/head";
@@ -212,7 +215,7 @@ const CheckoutPage = () => {
     const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
 
     try {
-      const res = await fetch("/api/checkout", {
+      const res = await fetch("/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
@@ -257,7 +260,7 @@ const CheckoutPage = () => {
       }
 
       clearCart();
-      router.push(`/order-status?ref=${data.referenceId}`);
+      router.push(`/order-confirmation/${data.referenceId}`);
     } catch (err) {
       clearTimeout(timeoutId);
       setStatus("error");
@@ -730,3 +733,4 @@ const CheckoutPage = () => {
 };
 
 export default CheckoutPage;
+```
