@@ -1,6 +1,4 @@
-Both changes are confirmed in place. Here's the full file:
 
-```jsx
 // pages/checkout.js
 import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Head from "next/head";
@@ -733,4 +731,3 @@ const CheckoutPage = () => {
 };
 
 export default CheckoutPage;
-```
