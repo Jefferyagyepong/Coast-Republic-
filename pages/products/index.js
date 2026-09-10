@@ -109,11 +109,11 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop All</h5><br/>
-          
+            <h5>Shop All</h5>
+            <br />
 
             <div className="controls">
-              <label >
+              <label>
                 <input
                   type="text"
                   value={search}
@@ -125,10 +125,7 @@ const ProductsPage = ({ products }) => {
 
               <div className="flex-position">
                 <label>
-                  <select
-                    onChange={handleFilterChange}
-                    value={filter}
-                  >
+                  <select onChange={handleFilterChange} value={filter}>
                     {categories.map((category) => (
                       <option key={category} value={category}>
                         {category}
@@ -138,10 +135,7 @@ const ProductsPage = ({ products }) => {
                 </label>
 
                 <label>
-                  <select
-                    onChange={handleSortChange}
-                    value={sort}
-                  >
+                  <select onChange={handleSortChange} value={sort}>
                     <option value="name-asc">sort</option>
                     <option value="name-desc">Name (Z-A)</option>
                     <option value="price-asc">Price (Low to High)</option>
@@ -160,7 +154,8 @@ const ProductsPage = ({ products }) => {
                 )}
               </div>
             </div>
-            <br/><br/>
+            <br />
+            <br />
 
             {filteredProducts.length === 0 ? (
               <p className="no-results">
@@ -208,14 +203,22 @@ const ProductsPage = ({ products }) => {
       {/* Pagination Buttons */}
       {filteredProducts.length > 0 && (
         <div className="pagination-controls">
-          <button onClick={handlePrevPage} disabled={safePage === 1}>
-            Previous
+          <button
+            onClick={handlePrevPage}
+            disabled={safePage === 1}
+            className="pagination-btn pagination-btn--prev"
+          >
+            ← Previous
           </button>
-          <span>
-            Page {safePage} of {totalPages}
+          <span className="pagination-status">
+            Page <strong>{safePage}</strong> of <strong>{totalPages}</strong>
           </span>
-          <button onClick={handleNextPage} disabled={safePage === totalPages}>
-            Next
+          <button
+            onClick={handleNextPage}
+            disabled={safePage === totalPages}
+            className="pagination-btn pagination-btn--next"
+          >
+            Next →
           </button>
         </div>
       )}
@@ -231,26 +234,26 @@ const ProductsPage = ({ products }) => {
 
       <style jsx global>{`
         .controls {
-          wdth:100%;
+          wdth: 100%;
           display: flex;
-          flex-direction:column;
+          flex-direction: column;
           gap: 22px;
           juatify-content: center;
           padding: 10px;
-          margin-top:3rem;
+          margin-top: 3rem;
         }
-        .flex-position{
-          width:100%;
+        .flex-position {
+          width: 100%;
           flex-direction: row;
           align-items: center;
-          justify-content:center;
+          justify-content: center;
           gap: 25px;
-          margin-top:2rem;
+          margin-top: 2rem;
         }
         .controls select {
           padding: 12px;
           border: 1px solid #ccc;
-          width:100%;
+          width: 100%;
           border-radius: 4px;
           color: #000;
         }
@@ -283,10 +286,10 @@ const ProductsPage = ({ products }) => {
           background: #e0e0e0;
           margin: 1.5rem 0;
         }
-        .clear-filters-btn{
-          color:#000;
+        .clear-filters-btn {
+          color: #000;
         }
-        .search-products{
+        .search-products {
           width: 100%;
           padding: 10px 12px;
           border: 1px solid #ddd;
@@ -304,7 +307,9 @@ const ProductsPage = ({ products }) => {
         }
         .product-card__stock--low {
           color: #c0392b;
-        }/* Pagination */
+        }
+
+        /* Pagination */
         .pagination-controls {
           display: flex;
           align-items: center;
@@ -372,6 +377,7 @@ const ProductsPage = ({ products }) => {
             min-width: auto;
             font-size: 13px;
           }
+        }
       `}</style>
     </>
   );
