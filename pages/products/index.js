@@ -9,7 +9,13 @@ import { getAllProducts } from "@/lib/products";
 import Newsletter from "@/components/Footer/Newsletter";
 
 export async function getStaticProps() {
-  return { props: { products: getAllProducts() } };
+  const products = await getAllProducts();
+  return {
+    props: { products },
+    // Re-fetch from Neon at most once a minute so new/edited products
+    // show up without a full redeploy. Bump or drop this as needed.
+    revalidate: 60,
+  };
 }
 
 const formatMoney = (amount, currency) =>
@@ -103,13 +109,11 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop All</h5>
-            <br />
-            <br />
-    
+            <h5>Shop All</h5><br/>
+          
 
             <div className="controls">
-              <label>
+              <label >
                 <input
                   type="text"
                   value={search}
@@ -121,7 +125,10 @@ const ProductsPage = ({ products }) => {
 
               <div className="flex-position">
                 <label>
-                  <select onChange={handleFilterChange} value={filter}>
+                  <select
+                    onChange={handleFilterChange}
+                    value={filter}
+                  >
                     {categories.map((category) => (
                       <option key={category} value={category}>
                         {category}
@@ -131,7 +138,10 @@ const ProductsPage = ({ products }) => {
                 </label>
 
                 <label>
-                  <select onChange={handleSortChange} value={sort}>
+                  <select
+                    onChange={handleSortChange}
+                    value={sort}
+                  >
                     <option value="name-asc">sort</option>
                     <option value="name-desc">Name (Z-A)</option>
                     <option value="price-asc">Price (Low to High)</option>
@@ -150,18 +160,18 @@ const ProductsPage = ({ products }) => {
                 )}
               </div>
             </div>
-
-            <br />
-            <br />
+            <br/><br/>
 
             {filteredProducts.length === 0 ? (
-              <p className="no-results">No products match your search/filters.</p>
+              <p className="no-results">
+                No products match your search/filters.
+              </p>
             ) : (
               <div className="product-container">
                 {currentItems.map((product) => (
                   <Link
                     key={product.id}
-                    href={`/products/${product.id}`}
+                    href={`/products/${product.slug}`}
                     className="product-card"
                   >
                     {product.images?.[0] && (
@@ -177,6 +187,16 @@ const ProductsPage = ({ products }) => {
                     <p className="product-card__price">
                       {formatMoney(product.price, product.currency)}
                     </p>
+                    {product.stock === 0 && (
+                      <p className="product-card__stock product-card__stock--out">
+                        Out of stock
+                      </p>
+                    )}
+                    {product.stock > 0 && product.stock <= 3 && (
+                      <p className="product-card__stock product-card__stock--low">
+                        Only {product.stock} left
+                      </p>
+                    )}
                   </Link>
                 ))}
               </div>
@@ -188,67 +208,52 @@ const ProductsPage = ({ products }) => {
       {/* Pagination Buttons */}
       {filteredProducts.length > 0 && (
         <div className="pagination-controls">
-          <button
-            onClick={handlePrevPage}
-            disabled={safePage === 1}
-            className="pagination-btn pagination-btn--prev"
-          >
-            ← Previous
+          <button onClick={handlePrevPage} disabled={safePage === 1}>
+            Previous
           </button>
-
-          <span className="pagination-status">
-            Page <strong>{safePage}</strong> of <strong>{totalPages}</strong>
+          <span>
+            Page {safePage} of {totalPages}
           </span>
-
-          <button
-            onClick={handleNextPage}
-            disabled={safePage === totalPages}
-            className="pagination-btn pagination-btn--next"
-          >
-            Next →
+          <button onClick={handleNextPage} disabled={safePage === totalPages}>
+            Next
           </button>
         </div>
       )}
 
       <hr />
-
       <div className="feedback-container">
         <h4>Have any question? </h4>
         <Link href={"/contact"}>Send Us a Message </Link>
       </div>
-
       <br />
       <Newsletter />
       <FootBottom />
 
       <style jsx global>{`
         .controls {
-          wdth: 100%;
+          wdth:100%;
           display: flex;
-          flex-direction: column;
+          flex-direction:column;
           gap: 22px;
           juatify-content: center;
           padding: 10px;
-          margin-top: 3rem;
+          margin-top:3rem;
         }
-
-        .flex-position {
-          width: 100%;
+        .flex-position{
+          width:100%;
           flex-direction: row;
           align-items: center;
-          justify-content: center;
+          justify-content:center;
           gap: 25px;
-          margin-top: 2rem;
+          margin-top:2rem;
         }
-
         .controls select {
           padding: 12px;
           border: 1px solid #ccc;
-          width: 100%;
+          width:100%;
           border-radius: 4px;
           color: #000;
         }
-
         .clear-filters-btn {
           padding: 8px 14px;
           font-size: 14px;
@@ -257,38 +262,31 @@ const ProductsPage = ({ products }) => {
           background: #f5f5f5;
           cursor: pointer;
         }
-
         .clear-filters-btn:hover {
           background: #e8e8e8;
         }
-
         .no-results {
           padding: 40px 0;
           text-align: center;
           color: #666;
         }
-
         .product-container {
           width: 100%;
           margin: 0 auto;
         }
-
         .viewButton {
           padding: 8px 15px;
         }
-
         hr {
           border: none;
           height: 1px;
           background: #e0e0e0;
           margin: 1.5rem 0;
         }
-
-        .clear-filters-btn {
-          color: #000;
+        .clear-filters-btn{
+          color:#000;
         }
-
-        .search-products {
+        .search-products{
           width: 100%;
           padding: 10px 12px;
           border: 1px solid #ddd;
@@ -297,75 +295,15 @@ const ProductsPage = ({ products }) => {
           color: #333;
           box-sizing: border-box;
         }
-
-        /* Pagination */
-        .pagination-controls {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 20px;
-          margin: 2.5rem auto;
-          padding: 10px 0;
+        .product-card__stock {
+          font-size: 12px;
+          margin-top: 2px;
         }
-
-        .pagination-status {
-          font-size: 14px;
-          color: #444;
-          letter-spacing: 0.2px;
-          min-width: 110px;
-          text-align: center;
-        }
-
-        .pagination-status strong {
-          color: #000;
-          font-weight: 600;
-        }
-
-        .pagination-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-          padding: 10px 20px;
-          font-size: 14px;
-          font-weight: 500;
-          color: #000;
-          background: #fff;
-          border: 1px solid #000;
-          border-radius: 999px;
-          cursor: pointer;
-          transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
-        }
-
-        .pagination-btn:hover:not(:disabled) {
-          background: #000;
-          color: #fff;
-        }
-
-        .pagination-btn:active:not(:disabled) {
-          transform: scale(0.97);
-        }
-
-        .pagination-btn:disabled {
-          opacity: 0.35;
-          cursor: not-allowed;
-          border-color: #ccc;
+        .product-card__stock--out {
           color: #999;
         }
-
-        @media (max-width: 480px) {
-          .pagination-controls {
-            gap: 12px;
-          }
-
-          .pagination-btn {
-            padding: 8px 14px;
-            font-size: 13px;
-          }
-
-          .pagination-status {
-            min-width: auto;
-            font-size: 13px;
-          }
+        .product-card__stock--low {
+          color: #c0392b;
         }
       `}</style>
     </>
