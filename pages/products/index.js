@@ -304,7 +304,74 @@ const ProductsPage = ({ products }) => {
         }
         .product-card__stock--low {
           color: #c0392b;
+        }/* Pagination */
+        .pagination-controls {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          margin: 2.5rem auto;
+          padding: 10px 0;
         }
+
+        .pagination-status {
+          font-size: 14px;
+          color: #444;
+          letter-spacing: 0.2px;
+          min-width: 110px;
+          text-align: center;
+        }
+
+        .pagination-status strong {
+          color: #000;
+          font-weight: 600;
+        }
+
+        .pagination-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 10px 20px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #000;
+          background: #fff;
+          border: 1px solid #000;
+          border-radius: 999px;
+          cursor: pointer;
+          transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+          background: #000;
+          color: #fff;
+        }
+
+        .pagination-btn:active:not(:disabled) {
+          transform: scale(0.97);
+        }
+
+        .pagination-btn:disabled {
+          opacity: 0.35;
+          cursor: not-allowed;
+          border-color: #ccc;
+          color: #999;
+        }
+
+        @media (max-width: 480px) {
+          .pagination-controls {
+            gap: 12px;
+          }
+
+          .pagination-btn {
+            padding: 8px 14px;
+            font-size: 13px;
+          }
+
+          .pagination-status {
+            min-width: auto;
+            font-size: 13px;
+          }
       `}</style>
     </>
   );
