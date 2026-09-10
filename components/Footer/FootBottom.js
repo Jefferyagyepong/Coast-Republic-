@@ -41,9 +41,9 @@ function FootBottom() {
        </div>
  
        <Image
-         src={"/signature.png"} // ← confirm this file exists in /public, or swap in the real filename
+         src={"/crlogo.svg"} // ← confirm this file exists in /public, or swap in the real filename
          height={30}
-         width={130}
+         width={50}
          alt="Coast Republic signature"
          className="signature"
        />
