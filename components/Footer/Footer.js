@@ -72,8 +72,8 @@ const Footer = () => {
 
       <Image
         src={"/crlogo2.png"} // ← confirm this file exists in /public, or swap in the real filename
-        height={20}
-        width={30}
+        height={10}
+        width={20}
         alt="logo"
         className="signature"
       />
