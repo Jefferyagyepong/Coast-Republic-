@@ -49,7 +49,7 @@ const AdminLoginPage = () => {
     
 
       <div className="admin-login">
-          <h6 className="brand-tag">Built for the Culture </h6>
+      
         <form onSubmit={handleSubmit} className="admin-login__form" noValidate>
           <h6>Coast Republic Admin</h6>
 
@@ -108,7 +108,7 @@ const AdminLoginPage = () => {
           flex-direction: column;
           gap: 14px;
         }
-        .admin-login__form h1 {
+        .admin-login__form h6 {
           font-size: 18px;
           margin-bottom: 4px;
         }
