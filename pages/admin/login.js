@@ -86,7 +86,7 @@ const AdminLoginPage = () => {
         </form>
       </div>
       <FootBottom />
-      </>
+      
 
       <style jsx global>{`
         .admin-login {
