@@ -1,6 +1,7 @@
 // pages/admin/login.js
 import { useState } from "react";
 import { useRouter } from "next/router";
+import FootBottom from "@/components/Footer/FootBottom";
 import Head from "next/head";
 
 const AdminLoginPage = () => {
@@ -81,6 +82,7 @@ const AdminLoginPage = () => {
           </button>
         </form>
       </div>
+      <FootBottom />
 
       <style jsx global>{`
         .admin-login {
