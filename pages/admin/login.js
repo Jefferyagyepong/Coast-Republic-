@@ -143,6 +143,9 @@ const AdminLoginPage = () => {
           font-size: 13px;
           margin: 0;
         }
+        .brand-tag{
+        color:#000;
+        }
       `}</style>
     </>
   );
