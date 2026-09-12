@@ -46,7 +46,7 @@ const AdminLoginPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
-      <h6>Built for the Culture </h6>
+      <h6 className="brand-tag">Built for the Culture </h6>
 
       <div className="admin-login">
         <form onSubmit={handleSubmit} className="admin-login__form" noValidate>
