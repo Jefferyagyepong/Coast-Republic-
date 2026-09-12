@@ -45,7 +45,7 @@ const AdminLoginPage = () => {
         <meta name="robots" content="noindex, nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div>
+      
       <Header />
 
       <div className="admin-login">
@@ -86,7 +86,7 @@ const AdminLoginPage = () => {
         </form>
       </div>
       <FootBottom />
-      </div>
+      </>
 
       <style jsx global>{`
         .admin-login {
