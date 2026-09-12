@@ -1,8 +1,6 @@
 // pages/admin/login.js
 import { useState } from "react";
 import { useRouter } from "next/router";
-import Header from "@/components/Head/Header";
-import Footer from "@/components/Footer/FootBottom";
 import Head from "next/head";
 
 const AdminLoginPage = () => {
@@ -45,8 +43,6 @@ const AdminLoginPage = () => {
         <meta name="robots" content="noindex, nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      
-      <Header />
 
       <div className="admin-login">
         <form onSubmit={handleSubmit} className="admin-login__form" noValidate>
@@ -85,8 +81,6 @@ const AdminLoginPage = () => {
           </button>
         </form>
       </div>
-      <FootBottom />
-      
 
       <style jsx global>{`
         .admin-login {
