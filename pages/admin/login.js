@@ -89,7 +89,7 @@ const AdminLoginPage = () => {
 
       <style jsx global>{`
         .admin-login {
-          min-height: 100vh;
+          min-height: 50vh;
           display: flex;
           align-items: center;
           justify-content: center;
