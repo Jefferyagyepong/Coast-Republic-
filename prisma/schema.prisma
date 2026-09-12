@@ -110,3 +110,13 @@ model OrderItem {
   @@index([orderId])
   @@map("order_items")
 }
+
+model Admin {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("admins")
+}
