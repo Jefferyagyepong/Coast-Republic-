@@ -47,7 +47,14 @@ export default function Header() {
       <div className="header-flex-row">
         <Menu />
         <Link href="/">
-          <h3 className="logo">Coast Republic</h3>
+        link">
+              <Image
+                src="/IMG_5658.jpeg"
+                width={78}
+                height={35}
+                alt="Your store logo"
+                className="footer-logo"
+              />
         </Link>
         <Navbar />
       </div>
