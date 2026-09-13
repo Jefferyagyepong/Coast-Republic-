@@ -89,14 +89,14 @@ const AdminLoginPage = () => {
       <FootBottom />
 
       <style jsx global>{`
-       .admin-login {
-padding:27px;
-display:flex;
-flex-direction column;
-width:100%;
-margin-top:1rem;
-height:100vh;
-}
+.admin-login {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f5f5f5;
+          padding: 16px;
+        }
         .admin-login__form {
           background: #fff;
           padding: 27px;
