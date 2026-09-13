@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Header from "@/components/Head/Header";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
 
 const AdminLoginPage = () => {
@@ -87,7 +87,7 @@ const AdminLoginPage = () => {
           </button>
         </form>
       </div>
-      <FootBottom />
+      <Footer />
 
       <style jsx global>{`
 .admin-login {
