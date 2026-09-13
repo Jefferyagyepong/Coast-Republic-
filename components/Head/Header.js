@@ -48,7 +48,7 @@ export default function Header() {
       <div className="header-flex-row">
         <Menu />
         <Link href="/">
-        link">
+      
               <Image
                 src="/IMG_5658.jpeg"
                 width={78}
