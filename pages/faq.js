@@ -3,7 +3,7 @@ import { useState } from "react";
 import Header from "@/components/Head/Header";
 import CoastApp from "@/components/Parts/CoastApp";
 import Head from "next/head";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 
 const FAQS = [
   {
@@ -105,7 +105,7 @@ export default function FAQ() {
           ))}
         </div><br />
         <CoastApp /><br />
-          <FootBottom />
+          <Footer />
           </div>
       </main>
 
