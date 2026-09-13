@@ -103,7 +103,7 @@ const AdminLoginPage = () => {
           border-radius: 10px;
           box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
           width: 100%;
-          max-width: 340px;
+          max-width: 440px;
           display: flex;
           flex-direction: column;
           gap: 14px;
