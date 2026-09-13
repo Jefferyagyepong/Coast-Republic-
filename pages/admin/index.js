@@ -1,6 +1,7 @@
 // pages/admin/index.js
 import { useState } from "react";
 import Head from "next/head";
+import Header from "@/components/Head/Header";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -23,7 +24,7 @@ const AdminDashboard = () => {
         <title>Admin Dashboard | Coast Republic</title>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-
+<Header />
       <div style={{ padding: 24, fontFamily: "sans-serif", maxWidth: 600, margin: "0 auto" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <h1>Admin Dashboard</h1>
