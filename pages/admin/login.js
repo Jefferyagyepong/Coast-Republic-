@@ -51,7 +51,7 @@ const AdminLoginPage = () => {
       <div className="admin-login">
       
         <form onSubmit={handleSubmit} className="admin-login__form" noValidate>
-          <h6>Coast Republic Admin</h6>
+          <h6> Administrator Login</h6>
           <p>Built for the culture</p>
 
           <label>
