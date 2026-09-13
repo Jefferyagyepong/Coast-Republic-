@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Menu from './Menu';
 import Navbar from './Navbar';
 import Toast from './Toast';
+import Image from 'next/image';
 
 export default function Header() {
   const headerRef = useRef(null);
