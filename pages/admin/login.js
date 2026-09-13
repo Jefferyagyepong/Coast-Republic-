@@ -90,13 +90,16 @@ const AdminLoginPage = () => {
 
       <style jsx global>{`
         .admin-login {
-          min-height: auto;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: #f5f5f5;
-          padding: 16px;
-        }
+  min-height: auto;          /* keeps height content-driven so nothing is clipped */
+  display: flex;
+  flex-direction: column;    /* stack children vertically instead of forcing a single row */
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 16px;
+  box-sizing: border-box;    /* padding is included in any width/height calculations */
+  overflow: visible;         /* ensure nothing is hidden by overflow rules */
+}
         .admin-login__form {
           background: #fff;
           padding: 27px;
