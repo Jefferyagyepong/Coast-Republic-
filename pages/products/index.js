@@ -4,9 +4,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Head/Header";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import { getAllProducts } from "@/lib/products";
-import Newsletter from "@/components/Footer/Newsletter";
+
 
 export async function getStaticProps() {
   const products = await getAllProducts();
@@ -228,9 +228,8 @@ const ProductsPage = ({ products }) => {
         <h4>Have any question? </h4>
         <Link href={"/contact"}>Send Us a Message </Link>
       </div>
-      <br />
-      <Newsletter />
-      <FootBottom />
+    
+      <Footer />
 
       <style jsx global>{`
         .controls {
