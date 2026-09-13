@@ -3,7 +3,7 @@ import { useState } from "react";
 import Header from "@/components/Head/Header";
 import CoastApp from "@/components/Parts/CoastApp";
 import Head from "next/head";
-import Footer from "@/components/Footer/Footer";
+import FootBottom from "@/components/Footer/FootBottom";
 
 const FAQS = [
   {
@@ -105,7 +105,7 @@ export default function FAQ() {
           ))}
         </div><br />
         <CoastApp /><br />
-          <Footer />
+          <FootBottom />
           </div>
       </main>
 
@@ -165,6 +165,35 @@ export default function FAQ() {
           line-height: 1.6;
           font-size: 0.95rem;
         }
+        .question {
+  background: #ffffff;
+  border: none;
+  padding: 18px 20px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0a2540;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+.question:hover {
+  background: #f0f4f8;
+}
+.item {
+  border: 1px solid #e6e9ed;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.answer {
+  background: #f9fafb;
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  color: #45525f;
+  border-top: 1px solid #e6e9ed;
+}
+
       `}</style>
     </>
   );
