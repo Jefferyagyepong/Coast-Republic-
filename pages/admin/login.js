@@ -90,23 +90,11 @@ const AdminLoginPage = () => {
 
       <style jsx global>{`
        .admin-login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f5f5f5;
-  padding: 16px;
-
-  /* Critical changes to stop it from affecting the rest of the page */
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none;
-
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;   /* prevents accidental covering if any position was set elsewhere */
-  z-index: 1;
-  overflow: visible;
+padding:27px;
+display:flex;
+flex-direction column;
+width:100%;
+margin-top:1rem;
 }
         .admin-login__form {
           background: #fff;
