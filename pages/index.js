@@ -4,15 +4,10 @@ import Head from "next/head";
 import Thrifts from "@/components/Parts/Thrifts";
 import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
-
-import Newsletter from "@/components/Footer/Newsletter";
 import Collection from "@/components/Parts/Collection";
 
 import Jeans from "@/components/Parts/Jeans";
 import Sale from "@/components/Parts/Sale";
-
-
-
 
 
 
@@ -85,7 +80,7 @@ const Home = () => {
         <h5>Crew Neck T shirts</h5>
           </div>
                         <Collection />
-        <Newsletter />
+        
         <Footer />
       </div>
 
