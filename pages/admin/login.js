@@ -90,7 +90,7 @@ const AdminLoginPage = () => {
 
       <style jsx global>{`
         .admin-login {
-          min-height: 100vh;
+          min-height: auto;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -99,7 +99,7 @@ const AdminLoginPage = () => {
         }
         .admin-login__form {
           background: #fff;
-          padding: 32px;
+          padding: 27px;
           border-radius: 10px;
           box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
           width: 100%;
