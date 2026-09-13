@@ -51,8 +51,8 @@ export default function Header() {
       
               <Image
                 src="/IMG_5658.jpeg"
-                width={78}
-                height={35}
+                width={58}
+                height={25}
                 alt="Your store logo"
                 className="footer-logo"
               />
