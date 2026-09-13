@@ -52,6 +52,7 @@ const AdminLoginPage = () => {
       
         <form onSubmit={handleSubmit} className="admin-login__form" noValidate>
           <h6>Coast Republic Admin</h6>
+          <p>Built for the culture</p>
 
           <label>
             Email
