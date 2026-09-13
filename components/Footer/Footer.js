@@ -182,7 +182,7 @@ const Footer = () => {
 
         <div className="footer-copyright">
           <p>
-            © {new Date().getFullYear()} Your Store. All rights reserved.
+            © {new Date().getFullYear()} Coast Republic. All rights reserved.
           </p>
         </div>
       </div>
