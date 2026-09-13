@@ -89,16 +89,24 @@ const AdminLoginPage = () => {
       <FootBottom />
 
       <style jsx global>{`
-        .admin-login {
-  min-height: auto;          /* keeps height content-driven so nothing is clipped */
+       .admin-login {
   display: flex;
-  flex-direction: column;    /* stack children vertically instead of forcing a single row */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #f5f5f5;
   padding: 16px;
-  box-sizing: border-box;    /* padding is included in any width/height calculations */
-  overflow: visible;         /* ensure nothing is hidden by overflow rules */
+
+  /* Critical changes to stop it from affecting the rest of the page */
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none;
+
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;   /* prevents accidental covering if any position was set elsewhere */
+  z-index: 1;
+  overflow: visible;
 }
         .admin-login__form {
           background: #fff;
