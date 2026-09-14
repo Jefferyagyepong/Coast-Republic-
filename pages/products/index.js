@@ -109,7 +109,7 @@ const ProductsPage = ({ products }) => {
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop All</h5>
+            <h5>Shop Al</h5>
             <br />
 
             <div className="controls">
