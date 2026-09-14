@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Header from "@/components/Head/Header";
 import Head from "next/head";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import CoastApp from "@/components/Parts/CoastApp";
 
 export default function Contact() {
@@ -32,114 +32,114 @@ export default function Contact() {
 
   return (
     <>
-  <Head>
-  <title>Contact Us | Coast Republic</title>
-  <meta
-    name="description"
-    content="Get in touch with Coast Republic — questions about orders, sizing, or delivery. We reply within 24 hours."
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://www.coastrepublic.com/contact" />
+      <Head>
+        <title>Contact Us | Coast Republic</title>
+        <meta
+          name="description"
+          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery. We reply within 24 hours."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.coastrepublic.com/contact" />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact Us | Coast Republic" />
-  <meta
-    property="og:description"
-    content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
-  />
-  <meta property="og:url" content="https://www.coastrepublic.com/contact" />
-  <meta property="og:site_name" content="Coast Republic" />
-  <meta property="og:image" content="https://www.coastrepublic.com/og-contact.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Us | Coast Republic" />
+        <meta
+          property="og:description"
+          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
+        />
+        <meta property="og:url" content="https://www.coastrepublic.com/contact" />
+        <meta property="og:site_name" content="Coast Republic" />
+        <meta property="og:image" content="https://www.coastrepublic.com/og-contact.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact Us | Coast Republic" />
-  <meta
-    name="twitter:description"
-    content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
-  />
-  <meta name="twitter:image" content="https://www.coastrepublic.com/og-contact.jpg" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | Coast Republic" />
+        <meta
+          name="twitter:description"
+          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
+        />
+        <meta name="twitter:image" content="https://www.coastrepublic.com/og-contact.jpg" />
 
-  <meta name="robots" content="index, follow" />
-</Head>
+        <meta name="robots" content="index, follow" />
+      </Head>
 
 
       <main>
         <Header />
         <div className="main-content">
-        <h6>Contact Us</h6>
-        <p className="intro">
-          Have a question about an order, sizing, or delivery? Send us a
-          message and our team will get back to you within 24 hours.
-        </p>
+          <h6>Contact Us</h6>
+          <p className="intro">
+            Have a question about an order, sizing, or delivery? Send us a
+            message and our team will get back to you within 24 hours.
+          </p>
 
-        <div>
-          <form onSubmit={handleSubmit} >
-            <label>
-              Name
-              <input
-                name="name"
-                type="text"
-                required
-                value={form.name}
-                onChange={handleChange}
-              />
-            </label>
-            <label>
-              Email
-              <input
-                name="email"
-                type="email"
-                required
-                value={form.email}
-                onChange={handleChange}
-              />
-            </label>
-            <label>
-              Message
-              <textarea
-                name="message"
-                rows={5}
-                required
-                value={form.message}
-                onChange={handleChange}
-              />
-            </label>
-            <button type="submit" disabled={status === "sending"}>
-              {status === "sending" ? "Sending..." : "Send"}
-            </button>
-            {status === "success" && (
-              <p className="success">Thanks! We'll be in touch shortly.</p>
-            )}
-            {status === "error" && (
-              <p className="error">
-                Something went wrong. Please try again or email us directly.
+          <div>
+            <form onSubmit={handleSubmit} >
+              <label>
+                Name
+                <input
+                  name="name"
+                  type="text"
+                  required
+                  value={form.name}
+                  onChange={handleChange}
+                />
+              </label>
+              <label>
+                Email
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  value={form.email}
+                  onChange={handleChange}
+                />
+              </label>
+              <label>
+                Message
+                <textarea
+                  name="message"
+                  rows={5}
+                  required
+                  value={form.message}
+                  onChange={handleChange}
+                />
+              </label>
+              <button type="submit" disabled={status === "sending"}>
+                {status === "sending" ? "Sending..." : "Send"}
+              </button>
+              {status === "success" && (
+                <p className="success">Thanks! We'll be in touch shortly.</p>
+              )}
+              {status === "error" && (
+                <p className="error">
+                  Something went wrong. Please try again or email us directly.
+                </p>
+              )}
+            </form>
+
+            <div className="info">
+              <h6>Store Location</h6>
+              <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
+              <h6>Phone</h6>
+              <p>
+                <a href="tel:+233244736420">+233 244 736 420</a>
               </p>
-            )}
-          </form>
-
-          <div className="info">
-            <h6>Store Location</h6>
-            <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
-            <h6>Phone</h6>
-            <p>
-              <a href="tel:+233244736420">+233 244 736 420</a>
-            </p>
-            <h6>Email</h6>
-            <p>
-              <a href="mailto:support@coastrepublic.com">
-                support@coastrepublic.com
-              </a>
-            </p>
-            <h6>Hours</h6>
-            <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
+              <h6>Email</h6>
+              <p>
+                <a href="mailto:support@coastrepublic.com">
+                  support@coastrepublic.com
+                </a>
+              </p>
+              <h6>Hours</h6>
+              <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
+            </div>
           </div>
-        </div>
-        <CoastApp />
-        <FootBottom/>
+          <CoastApp />
+          <Footer />
         </div>
       </main>
 
@@ -234,8 +234,7 @@ export default function Contact() {
   );
 }
 
-       
-           
 
-          
-         
+
+
+

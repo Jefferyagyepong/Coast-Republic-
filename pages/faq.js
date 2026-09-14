@@ -3,7 +3,7 @@ import { useState } from "react";
 import Header from "@/components/Head/Header";
 import CoastApp from "@/components/Parts/CoastApp";
 import Head from "next/head";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 
 const FAQS = [
   {
@@ -45,68 +45,68 @@ export default function FAQ() {
 
   return (
     <>
-  <Head>
-  <title>FAQ | Coast Republic</title>
-  <meta
-    name="description"
-    content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://www.coastrepublic.com/faq" />
+      <Head>
+        <title>FAQ | Coast Republic</title>
+        <meta
+          name="description"
+          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://www.coastrepublic.com/faq" />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="FAQ | Coast Republic" />
-  <meta
-    property="og:description"
-    content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
-  />
-  <meta property="og:url" content="https://www.coastrepublic.com/faq" />
-  <meta property="og:site_name" content="Coast Republic" />
-  <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FAQ | Coast Republic" />
+        <meta
+          property="og:description"
+          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+        />
+        <meta property="og:url" content="https://www.coastrepublic.com/faq" />
+        <meta property="og:site_name" content="Coast Republic" />
+        <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FAQ | Coast Republic" />
-  <meta
-    name="twitter:description"
-    content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
-  />
-  <meta name="twitter:image" content="https://www.coastrepublic.com/og-default.jpg" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FAQ | Coast Republic" />
+        <meta
+          name="twitter:description"
+          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+        />
+        <meta name="twitter:image" content="https://www.coastrepublic.com/og-default.jpg" />
 
-  <meta name="robots" content="index, follow" />
-</Head>
+        <meta name="robots" content="index, follow" />
+      </Head>
 
 
       <main>
         <Header />
         <div className="main-content">
-        <h4>Frequently Asked Questions</h4>
-        <p className="intro">
-          Everything you need to know before you shop. Can&apos;t find your
-          answer? <a href="/contact">Contact us</a> — we reply fast.
-        </p>
+          <h4>Frequently Asked Questions</h4>
+          <p className="intro">
+            Everything you need to know before you shop. Can&apos;t find your
+            answer? <a href="/contact">Contact us</a> — we reply fast.
+          </p>
 
-        <div className="list">
-          {FAQS.map((item, i) => (
-            <div className="item" key={i}>
-              <button
-                className="question"
-                onClick={() => setOpen(open === i ? null : i)}
-                aria-expanded={open === i}
-              >
-                <span>{item.q}</span>
-                <span className="chevron">{open === i ? "−" : "+"}</span>
-              </button>
-              {open === i && <p className="answer">{item.a}</p>}
-            </div>
-          ))}
-        </div><br />
-        <CoastApp /><br />
-          <FootBottom />
-          </div>
+          <div className="list">
+            {FAQS.map((item, i) => (
+              <div className="item" key={i}>
+                <button
+                  className="question"
+                  onClick={() => setOpen(open === i ? null : i)}
+                  aria-expanded={open === i}
+                >
+                  <span>{item.q}</span>
+                  <span className="chevron">{open === i ? "−" : "+"}</span>
+                </button>
+                {open === i && <p className="answer">{item.a}</p>}
+              </div>
+            ))}
+          </div><br />
+          <CoastApp /><br />
+          <Footer />
+        </div>
       </main>
 
       <style jsx>{`

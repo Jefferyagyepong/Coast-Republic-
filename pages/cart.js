@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Head/Header"; // matches _app.js
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 
 const formatMoney = (amount, currency) =>
@@ -489,7 +489,7 @@ const CartPage = () => {
           </div>
         </div>
       </div>
-      <FootBottom />
+      <Footer />
     </>
   );
 };

@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
 import CoastApp from "@/components/Parts/CoastApp";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 
 export default function Terms() {
   return (
@@ -201,7 +201,7 @@ export default function Terms() {
         </section>
 <CoastApp />
    
-          <FootBottom />
+          <Footer />
            </div>
       </main>
 

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import CoastApp from "@/components/Parts/CoastApp";
 export default function About() {
   return (
@@ -117,7 +117,7 @@ Values: Authenticity, Quality, Confidence, Community, Culture.
           </p>
         </section>
         <CoastApp />
-        <FootBottom />
+        <Footer />
         </div>
       </main>
 

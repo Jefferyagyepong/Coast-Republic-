@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Header from "@/components/Head/Navbar"; // consistent with project
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 
 const formatMoney = (amount, currency) =>
@@ -725,7 +725,7 @@ const CheckoutPage = () => {
         </span>
       </div>
 
-      <FootBottom />
+      <Footer />
     </>
   );
 };

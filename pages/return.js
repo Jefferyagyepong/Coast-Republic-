@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "@/components/Head/Header";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import CoastApp from "@/components/Parts/CoastApp";
 export default function Returns() {
   return (
@@ -133,7 +133,7 @@ export default function Returns() {
         </div>
             </div>
             <CoastApp />
-            <FootBottom />
+            <Footer />
       </main>
 
       <style jsx>{`
