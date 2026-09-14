@@ -296,7 +296,7 @@ const CheckoutPage = () => {
             </div>
           </div>
         </main>
-        <FootBottom />
+        <Footer />
       </>
     );
   }
