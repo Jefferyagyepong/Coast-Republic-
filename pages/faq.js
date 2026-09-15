@@ -46,7 +46,7 @@ export default function FAQ() {
   return (
     <>
       <Head>
-        <title>FAQ | Coast Republic</title>
+        <title>FAQ | Coast Collective</title>
         <meta
           name="description"
           content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
@@ -83,8 +83,9 @@ export default function FAQ() {
       <main>
         <Header />
         <div className="main-content">
+            <article>
           <h4>Frequently Asked Questions</h4>
-          <p className="intro">
+          <p>
             Everything you need to know before you shop. Can&apos;t find your
             answer? <a href="/contact">Contact us</a> — we reply fast.
           </p>
@@ -103,8 +104,9 @@ export default function FAQ() {
                 {open === i && <p className="answer">{item.a}</p>}
               </div>
             ))}
-          </div><br />
-          <CoastApp /><br />
+          </div>
+            </article>
+          <CoastApp />
           <Footer />
         </div>
       </main>
