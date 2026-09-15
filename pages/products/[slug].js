@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Header from "@/components/Head/Header";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 import { getAllProductSlugs, getProductBySlug } from "@/lib/products";
 
@@ -294,7 +294,7 @@ const ProductPage = ({ product }) => {
           </div>
         </div>
       </div>
-      <FootBottom />
+      <Footer />
 
       {/* Sticky add-to-cart bar */}
       <div
