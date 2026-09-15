@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import Header from "@/components/Head/Header";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import CoastApp from "@/components/Parts/CoastApp";
 function Privacy() {
   return (
@@ -195,7 +195,7 @@ function Privacy() {
       </article>
     </div>
     <CoastApp />
-    <FootBottom />
+    <Footer />
     </main>
 
 
