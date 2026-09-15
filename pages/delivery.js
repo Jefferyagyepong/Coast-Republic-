@@ -113,8 +113,8 @@ export default function Delivery() {
             <p>
               Please inspect your package on arrival. If an item is damaged,
               missing, or incorrect, notify us within 48 hours of delivery at{" "}
-              <a href="mailto:support@coastrepublic.com">
-                support@coastrepublic.com
+              <a href="mailto:support@coascollective.com">
+                support@coastcollective.com
               </a>{" "}
               or <a href="tel:+233244736420">+233 244 736 420</a>, and we'll
               make it right.
