@@ -6,7 +6,7 @@ export default function Returns() {
   return (
     <>
  <Head>
-  <title>Refunds & Returns | Coast Republic</title>
+  <title>Refunds & Returns | Coast Collective</title>
   <meta
     name="description"
     content="Coast Republic's refund and return policy — eligibility, process, and timelines."
@@ -32,11 +32,11 @@ export default function Returns() {
       <main>
             <Header />
         <div className="main-content">
-          <div>
+       
       
-          
+          <article>
         <h6>Refunds &amp; Returns Policy</h6>
-        <p className="intro">
+        <p>
           We want you to love what you ordered. If something isn't right,
           here's how we make it right.
         </p>
@@ -131,7 +131,7 @@ export default function Returns() {
           </p>
         </section>
         </div>
-            </div>
+              </article>
             <CoastApp />
             <Footer />
       </main>
