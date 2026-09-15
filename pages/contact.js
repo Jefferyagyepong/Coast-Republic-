@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact Us | Coast Republic</title>
+        <title>Contact Us | Coast Collective</title>
         <meta
           name="description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery. We reply within 24 hours."
@@ -59,7 +59,7 @@ export default function Contact() {
         <meta name="twitter:title" content="Contact Us | Coast Republic" />
         <meta
           name="twitter:description"
-          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
+          content="Get in touch with Coast Collective — questions about orders, sizing, or delivery."
         />
         <meta name="twitter:image" content="https://www.coastrepublic.com/og-contact.jpg" />
 
@@ -70,13 +70,14 @@ export default function Contact() {
       <main>
         <Header />
         <div className="main-content">
+            <article>
           <h6>Contact Us</h6>
-          <p className="intro">
+          <p>
             Have a question about an order, sizing, or delivery? Send us a
             message and our team will get back to you within 24 hours.
           </p>
 
-          <div>
+        
             <form onSubmit={handleSubmit} >
               <label>
                 Name
@@ -121,7 +122,7 @@ export default function Contact() {
               )}
             </form>
 
-            <div className="info">
+            <div>
               <h6>Store Location</h6>
               <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
               <h6>Phone</h6>
@@ -130,14 +131,14 @@ export default function Contact() {
               </p>
               <h6>Email</h6>
               <p>
-                <a href="mailto:support@coastrepublic.com">
-                  support@coastrepublic.com
+                <a href="mailto:support@coastcollective.com">
+                  support@coastcollective.com
                 </a>
               </p>
               <h6>Hours</h6>
               <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-            </div>
-          </div>
+              </article>
+      
           <CoastApp />
           <Footer />
         </div>
