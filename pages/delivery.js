@@ -6,7 +6,7 @@ export default function Delivery() {
   return (
     <>
       <Head>
-        <title>Delivery Information | Coast Republic</title>
+        <title>Delivery Information | Coast Collective</title>
         <meta
           name="description"
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
@@ -43,8 +43,9 @@ export default function Delivery() {
       <main>
         <Header />
         <div className="main-content">
+            <article>
           <h6>Delivery Information</h6>
-          <p className="intro">
+          <p>
             We know you want your order fast. Here's exactly what to expect
             once you check out.
           </p>
@@ -126,6 +127,7 @@ export default function Delivery() {
               or check our <a href="/faq">FAQ</a>.
             </p>
           </section>
+                </article>
           <CoastApp />
           <Footer />
         </div>
