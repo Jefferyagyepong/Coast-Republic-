@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
   <Head>
-  <title>Coast Republic | Clothing & Shoes</title>
+  <title>Coast Collective | Clothing & Shoes</title>
   <meta
     name="description"
     content="Coast Republic — Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials. Shop the latest collection with fast nationwide delivery."
