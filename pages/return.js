@@ -130,8 +130,9 @@ export default function Returns() {
             <a href="/contact">Contact our support team</a>.
           </p>
         </section>
-        </div>
-              </article>
+    
+     </article>
+    </div>
             <CoastApp />
             <Footer />
       </main>
