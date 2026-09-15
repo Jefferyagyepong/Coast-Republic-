@@ -8,7 +8,7 @@ export default function Terms() {
   return (
     <>
  <Head>
-  <title>Terms & Conditions | Coast Republic</title>
+  <title>Terms & Conditions | Coast Collective</title>
   <meta
     name="description"
     content="Terms and conditions for using the Coast Republic website and purchasing products."
@@ -41,7 +41,7 @@ export default function Terms() {
 
         <p>
           These Terms &amp; Conditions ("Terms") govern your access to and use
-          of the Coast Republic website (the "Site") and any purchase you
+          of the Coast Collective website (the "Site") and any purchase you
           make from us. By browsing the Site or placing an order, you agree
           to be bound by these Terms. If you do not agree, please do not use
           the Site.
