@@ -53,7 +53,7 @@ export default function Terms() {
             Coast Republic ("we," "us," "our") is a Ghana-based retailer of
             apparel and footwear, operating from Asafo Dadiesoaba, Ghana. You
             can reach us at{" "}
-            <a href="mailto:support@coastrepublic.com">
+            <a href="mailto:support@coastcollective.com">
               support@coastrepublic.com
             </a>{" "}
             or <a href="tel:+233244736420">+233 244 736 420</a>.
