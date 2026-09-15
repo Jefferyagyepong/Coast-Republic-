@@ -70,7 +70,7 @@ export default function Contact() {
       <main>
         <Header />
         <div className="main-content">
-            <article>
+            
           <h6>Contact Us</h6>
           <p>
             Have a question about an order, sizing, or delivery? Send us a
@@ -137,7 +137,7 @@ export default function Contact() {
               </p>
               <h6>Hours</h6>
               <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-              </article>
+         
       
           <CoastApp />
           <Footer />
