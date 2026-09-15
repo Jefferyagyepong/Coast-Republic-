@@ -31,9 +31,9 @@ const Footer = () => {
           <div className="footer-brand">
             <Link href="/" className="footer-logo-link">
               <Image
-                src="/IMG_5658.jpeg"
-                width={120}
-                height={45}
+                src="/IMG_5665.jpeg"
+                width={12}
+                height={20}
                 alt="Your store logo"
                 className="footer-logo"
               />
