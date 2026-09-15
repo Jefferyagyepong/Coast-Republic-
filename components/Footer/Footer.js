@@ -170,12 +170,12 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://tiktok.com"
+              href="https://X.com"
               target="_blank"
               rel="noreferrer"
-              aria-label="Visit us on TikTok"
+              aria-label="Visit us on X"
             >
-              TikTok
+              X
             </a>
           </div>
         </div>
