@@ -4,7 +4,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Header from "@/components/Head/Navbar";
-import FootBottom from "@/components/Footer/FootBottom";
+import Footer from "@/components/Footer/Footer";
 import { prisma } from "@/lib/prisma";
 
 const formatMoney = (amount, currency) =>
@@ -116,7 +116,7 @@ const OrderConfirmationPage = ({ order }) => {
         </div>
       </main>
 
-      <FootBottom />
+      <Footer />
 
       <style jsx global>{`
         .order-confirmation__hero {
