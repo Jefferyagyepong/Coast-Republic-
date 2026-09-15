@@ -35,10 +35,11 @@ export default function Terms() {
       <main>
         <Header />
          <div className="main-content">
+      <article>
        <h6>Terms &amp; Conditions</h6> 
-        <p className="updated">Last updated: August 2026</p>
+        <p>Last updated: August 2026</p>
 
-        <p className="intro">
+        <p>
           These Terms &amp; Conditions ("Terms") govern your access to and use
           of the Coast Republic website (the "Site") and any purchase you
           make from us. By browsing the Site or placing an order, you agree
@@ -199,6 +200,7 @@ export default function Terms() {
             or <a href="tel:+233244736420">+233 244 736 420</a>.
           </p>
         </section>
+              </article>
 <CoastApp />
    
           <Footer />
