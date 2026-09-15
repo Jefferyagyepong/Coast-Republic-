@@ -70,13 +70,14 @@ export default function Contact() {
       <main>
         <Header />
         <div className="main-content">
+          <article>
             
           <h6>Contact Us</h6>
           <p>
             Have a question about an order, sizing, or delivery? Send us a
             message and our team will get back to you within 24 hours.
           </p>
-
+</article>
         
             <form onSubmit={handleSubmit} >
               <label>
@@ -122,7 +123,7 @@ export default function Contact() {
               )}
             </form>
 
-            <div>
+      <article>
               <h6>Store Location</h6>
               <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
               <h6>Phone</h6>
@@ -137,7 +138,7 @@ export default function Contact() {
               </p>
               <h6>Hours</h6>
               <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-         
+         </article>
       
           <CoastApp />
           <Footer />
