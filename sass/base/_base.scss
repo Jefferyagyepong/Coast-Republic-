@@ -221,3 +221,118 @@ p:last-child {
   margin-bottom: 0;
 }
 
+/* Base Article Styling */
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    line-height: 1.8;
+    color: #333;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* Main Heading */
+article h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+/* Section Headings */
+article h2 {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+article h3 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 600;
+    color: #374151;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraphs */
+article p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+/* Improve readability for long articles */
+article p + p {
+    margin-top: 1rem;
+}
+
+/* Links */
+article a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+article a:hover {
+    border-color: #2563eb;
+}
+
+/* Lists */
+article ul,
+article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+}
+
+/* Blockquotes */
+article blockquote {
+    border-left: 4px solid #2563eb;
+    padding-left: 1rem;
+    margin: 2rem 0;
+    color: #374151;
+    font-style: italic;
+    background: #f8fafc;
+}
+
+/* Images */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    article {
+        padding: 1rem;
+    }
+
+    article p {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    article h1 {
+        margin-bottom: 0.75rem;
+    }
+
+    article h2,
+    article h3 {
+        margin-top: 1.5rem;
+    }
+}
+
