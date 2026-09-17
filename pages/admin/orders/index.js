@@ -1,4 +1,3 @@
-// pages/admin/orders/index.js
 import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
@@ -18,8 +17,11 @@ export async function getServerSideProps() {
 }
 
 const formatMoney = (amount, currency) => `${currency} ${Number(amount).toFixed(2)}`;
-const formatDate = (iso) =>
-  new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const formatDate = (iso) => {
+  const d = new Date(iso);
+  return `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
+};
 
 const STATUS_OPTIONS = ["PENDING", "CONFIRMED", "PROCESSING", "SHIPPED", "DELIVERED", "CANCELLED"];
 
@@ -120,7 +122,9 @@ const AdminOrdersPage = ({ initialOrders }) => {
                         ))}
                       </select>
                     </td>
-                    <td className="admin-orders__muted">{formatDate(order.createdAt)}</td>
+                    <td className="admin-orders__muted">
+                      <time dateTime={order.createdAt}>{formatDate(order.createdAt)}</time>
+                    </td>
                     <td>
                       <Link href={`/admin/orders/${order.id}`}>View</Link>
                     </td>
