@@ -32,9 +32,10 @@ export default function Terms() {
   </Head>
 
 
-      <main>
+  
         <Header />
-         <div className="main-content">
+         <div className="layout">
+              <main>
       <article>
        <h6>Terms &amp; Conditions</h6> 
         <p>Last updated: August 2026</p>
@@ -201,11 +202,13 @@ export default function Terms() {
           </p>
         </section>
               </article>
+                 </main>
+                     </div>
 <CoastApp />
    
           <Footer />
-           </div>
-      </main>
+      
+   
 
       <style jsx>{`
         .page {
