@@ -22,17 +22,28 @@ export default function About() {
   <link rel="canonical" href="https://www.coast-collective.com/about" />
 
   {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="About Us | Coast Collective" />
+
+
+  
+
+
+
+
+   {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <meta property="og:url" content="https://www.coast-collective.com/" />
+       
+         <meta property="og:type" content="Online store" />
+        <meta property="og:title" content="About Us | Coast Collective" />
   <meta
     property="og:description"
     content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
   />
-  <meta property="og:url" content="https://www.coast-collective.com/about" />
-  <meta property="og:site_name" content="Coast Collective" />
-  <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+      
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+        
+
+
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
