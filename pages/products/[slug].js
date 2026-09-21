@@ -110,7 +110,7 @@ const ProductPage = ({ product }) => {
   return (
     <>
       <Head>
-        <title>{product.name} | Coast Republic</title>
+        <title>{product.name} | Coast Collective</title>
         <meta name="description" content={product.description} />
         <script
           type="application/ld+json"

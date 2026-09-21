@@ -132,6 +132,15 @@ const ProductsPage = ({ products }) => {
         <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shop | Coast Collective" />
+        <meta
+          name="twitter:description"
+          content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+        />
+        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
       </Head>
 
       <Header />
