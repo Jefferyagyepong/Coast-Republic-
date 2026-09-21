@@ -7,7 +7,7 @@ function Privacy() {
 
       <Header />
     
-    <div className="layout">
+    <div>
  
       <article>
         <h6>Effective Date: 20-01-2025</h6>
