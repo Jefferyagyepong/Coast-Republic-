@@ -316,8 +316,9 @@ const CheckoutPage = () => {
 
       <Header />
 
-      <main>
+   
         <div classname="layout">
+      <main>
         <div className="custom-container">
           <div className="container-center checkout-page">
 
