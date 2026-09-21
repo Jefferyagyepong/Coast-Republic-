@@ -35,6 +35,10 @@ export default function Terms() {
   
         <Header />
          <div className="layout">
+                        <div className="main-content">
+        <div className="custom-container">
+          <div className="container-center"
+          
               <main>
       <article>
        <h6>Terms &amp; Conditions</h6> 
@@ -204,6 +208,7 @@ export default function Terms() {
               </article>
                  </main>
                      </div>
+                    </div>
 <CoastApp />
    
           <Footer />
