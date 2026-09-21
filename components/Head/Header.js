@@ -50,7 +50,7 @@ export default function Header() {
         <Link href="/">
       
               <Image
-                src="/IMG_5665.jpeg"
+                src="/IMG_5712.jpeg"
                 width={28}
                 height={15}
                 alt="Your store logo"
