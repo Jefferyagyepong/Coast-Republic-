@@ -21,7 +21,13 @@ const Privacy = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://coast-collective.com/privacy" />
-
+    <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="author" content="Coast collective Ghana" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Privacy Policy | Coast Collective" />
         <meta
