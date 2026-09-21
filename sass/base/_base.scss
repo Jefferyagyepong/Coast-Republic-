@@ -10,6 +10,27 @@ a {
     text-decoration-color 180ms ease;
 }
 
+.layout {
+  display: flex;
+  flex-direction: column;          /* stacked on small screens */
+  gap: 1.5rem;
+}
+
+/* Large screens – side-by-side */
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .layout > main {
+    flex: 1;                       /* takes remaining space */
+  }
+
+  .layout > aside {
+    flex: 0 0 280px;               /* fixed-width sidebar */
+    /* or flex: 0 0 25%; for percentage width */
+  }
+}
 a:hover {
   color: #1d4ed8;
   text-decoration-color: currentColor;
