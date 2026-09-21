@@ -150,8 +150,8 @@ const CheckoutPage = () => {
   const deliveryFee = isPickup
     ? 0
     : subtotal >= FREE_DELIVERY_THRESHOLD
-    ? 0
-    : DELIVERY_FEE;
+      ? 0
+      : DELIVERY_FEE;
   const tax = +(subtotal * TAX_RATE).toFixed(2);
   const total = +(subtotal + deliveryFee + tax).toFixed(2);
 
@@ -316,8 +316,8 @@ const CheckoutPage = () => {
 
       <Header />
 
-   
-        
+
+
       <main classname="main-content">
         <div className="custom-container">
           <div className="container-center checkout-page">
@@ -651,8 +651,8 @@ const CheckoutPage = () => {
                       ? "Sending MoMo prompt..."
                       : "Placing your order..."
                     : form.paymentMethod === "momo"
-                    ? `Pay ${formatMoney(total, currency)} with Mobile Money`
-                    : `Place order · ${formatMoney(total, currency)} on delivery`}
+                      ? `Pay ${formatMoney(total, currency)} with Mobile Money`
+                      : `Place order · ${formatMoney(total, currency)} on delivery`}
                 </button>
 
                 <p className="checkout-trust">
@@ -717,7 +717,7 @@ const CheckoutPage = () => {
             </div>
           </div>
         </div>
-  
+
       </main>
 
       {/* Sticky mobile total bar */}
