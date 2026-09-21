@@ -170,7 +170,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://X.com"
+              href="https://x.com/ccollectivegh?s=11"
               target="_blank"
               rel="noreferrer"
               aria-label="Visit us on X"

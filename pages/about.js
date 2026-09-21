@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
   <Head> 
-  <title>About Us | Coast Republic</title>
+  <title>About Us | Coast Collective</title>
   <meta
     name="description"
     content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
@@ -43,11 +43,14 @@ export default function About() {
  
         <Header />
         <div className="layout">
+        <div className="main-content">
+        <div className="custom-container">
+          <div className="container-center">
            
         <section className="hero">
-          <h6>About Coast Republic</h6>
+          <h6>Coast Collective</h6>
           <p className="tagline">
-            Elevate your style. Discover unique designs crafted for you.
+           Built for the culture
           </p>
         </section>
 
@@ -118,6 +121,9 @@ Values: Authenticity, Quality, Confidence, Community, Culture.
           </p>
         </section>
             </div>
+               </div>
+                 </div>
+                   </div>
         
         <CoastApp />
         <Footer />

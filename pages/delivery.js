@@ -43,6 +43,9 @@ export default function Delivery() {
   
         <Header />
         <div className="layout">
+           <div className="main-content">
+        <div className="custom-container">
+          <div className="container-center">
               <main>
             <article>
           <h6>Delivery Information</h6>
@@ -131,6 +134,9 @@ export default function Delivery() {
                 </article>
                    </main>
                      </div>
+                    </div>
+                    </div>
+                    </div>
           <CoastApp />
           <Footer />
      

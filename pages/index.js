@@ -62,7 +62,10 @@ const Home = () => {
 
 
       <Header />
-      <div className="layout">
+    
+                 <div className="main-content">
+    
+       
         <main>
           <Thrifts />
           <Jeans />
@@ -85,7 +88,14 @@ const Home = () => {
 
 
       </div>
+<<<<<<< HEAD
       <Footer />
+=======
+
+     
+         
+          <Footer />
+>>>>>>> 58c2a132522d05e0a5bef207880dc142351521a5
 
     </>
   );

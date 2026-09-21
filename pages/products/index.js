@@ -302,10 +302,19 @@ const ProductsPage = ({ products }) => {
           color: #666;
         }
         .product-container {
+<<<<<<< HEAD
           width: 100%;
           margin: 0 auto;
 
           }
+=======
+          display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+        }
+>>>>>>> 58c2a132522d05e0a5bef207880dc142351521a5
         .viewButton {
           padding: 8px 15px;
         }
@@ -391,6 +400,9 @@ const ProductsPage = ({ products }) => {
           border-color: #ccc;
           color: #999;
         }
+      
+
+ 
 
         @media (max-width: 480px) {
           .pagination-controls {
@@ -406,6 +418,10 @@ const ProductsPage = ({ products }) => {
             min-width: auto;
             font-size: 13px;
           }
+            .product-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
         }
       `}</style>
     </>
