@@ -117,10 +117,12 @@ Values: Authenticity, Quality, Confidence, Community, Culture.
             <a href="/contact">get in touch</a> — we&apos;re happy to help.
           </p>
         </section>
+            </div>
+            </main>
         <CoastApp />
         <Footer />
-        </div>
-      </main>
+    
+  
 
       <style jsx>{`
         .about {
