@@ -43,6 +43,9 @@ export default function About() {
  
         <Header />
         <div className="layout">
+        <div className="main-content">
+        <div className="custom-container">
+          <div className="container-center">
            
         <section className="hero">
           <h6>About Coast Republic</h6>
@@ -118,6 +121,9 @@ Values: Authenticity, Quality, Confidence, Community, Culture.
           </p>
         </section>
             </div>
+               </div>
+                 </div>
+                   </div>
         
         <CoastApp />
         <Footer />
