@@ -4,9 +4,11 @@ import Footer from "@/components/Footer/Footer";
 import CoastApp from "@/components/Parts/CoastApp";
 function Privacy() {
   return (
-    <main>
+
       <Header />
-    <div className="main-content">
+    
+    <div className="layout">
+          <main>
       <article>
         <h6>Effective Date: 20-01-2025</h6>
 
@@ -193,10 +195,11 @@ function Privacy() {
         <p>Email: info@coastrepublicgh.com</p>
         <p>Address: 7 Minneti ST, Asokwa</p>
       </article>
+          </main>
     </div>
     <CoastApp />
     <Footer />
-    </main>
+
 
 
   );
