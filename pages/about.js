@@ -9,9 +9,16 @@ export default function About() {
   <title>About Us | Coast Collective</title>
   <meta
     name="description"
-    content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
+    content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="author" content="Coast collective Ghana" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
   <link rel="canonical" href="https://www.coast-collective.com/about" />
 
   {/* Open Graph */}
