@@ -29,10 +29,10 @@ export default function Returns() {
   
 </Head>
 
-      <main>
+  
             <Header />
-        <div className="main-content">
-       
+        <div className="layout">
+           <main>
       
           <article>
         <h6>Refunds &amp; Returns Policy</h6>
@@ -132,10 +132,12 @@ export default function Returns() {
         </section>
     
      </article>
+    
+        </main>
     </div>
             <CoastApp />
             <Footer />
-      </main>
+  
 
       <style jsx>{`
         .page {
