@@ -50,17 +50,29 @@ export default function Contact() {
 
 
         {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact Us | Coast Republic" />
+    
+      
+        
+
+
+
+
+   {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <meta property="og:url" content="https://www.coast-collective.com/" />
+       
+         <meta property="og:type" content="Online store" />
+     <meta property="og:title" content="Contact Us | Coast Republic" />
         <meta
           property="og:description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
-        <meta property="og:url" content="https://www.coastrepublic.com/contact" />
-        <meta property="og:site_name" content="Coast Republic" />
-        <meta property="og:image" content="https://www.coastrepublic.com/og-contact.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+      
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+
+
+
+
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
