@@ -44,7 +44,7 @@ const Privacy = () => {
       <div className="layout">
                       <div className="main-content">
         <div className="custom-container">
-          <div className="container-center"
+          <div className="container-center">
       <main>
          <article>
         <h6>Effective Date: 20-01-2025</h6>
