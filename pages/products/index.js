@@ -364,6 +364,9 @@ const ProductsPage = ({ products }) => {
           border-color: #ccc;
           color: #999;
         }
+      
+
+ 
 
         @media (max-width: 480px) {
           .pagination-controls {
@@ -379,6 +382,10 @@ const ProductsPage = ({ products }) => {
             min-width: auto;
             font-size: 13px;
           }
+            .product-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
         }
       `}</style>
     </>
