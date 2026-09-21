@@ -134,7 +134,7 @@ const ProductsPage = ({ products }) => {
         />
         
      
-        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
         
 
         {/* Twitter */}
