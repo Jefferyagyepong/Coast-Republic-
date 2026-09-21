@@ -48,14 +48,14 @@ export default function Header() {
       <div className="header-flex-row">
         <Menu />
         <Link href="/">
-      
-              <Image
-                src="/crlogo.svg"
-                width={28}
-                height={15}
-                alt="Your store logo"
-                className="footer-logo"
-              />
+
+          <Image
+            src="/crlogo.svg"
+            width={28}
+            height={15}
+            alt="Your store logo"
+            className="footer-logo"
+          />
         </Link>
         <Navbar />
       </div>
