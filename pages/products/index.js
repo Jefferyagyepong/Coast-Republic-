@@ -155,7 +155,7 @@ const ProductsPage = ({ products }) => {
               </div>
             </div>
             <br />
-            <br />
+            
 
             {filteredProducts.length === 0 ? (
               <p className="no-results">
@@ -275,7 +275,8 @@ const ProductsPage = ({ products }) => {
         .product-container {
           width: 100%;
           margin: 0 auto;
-        }
+
+          }
         .viewButton {
           padding: 8px 15px;
         }
