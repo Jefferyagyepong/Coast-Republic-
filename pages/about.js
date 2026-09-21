@@ -12,29 +12,29 @@ export default function About() {
     content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://www.coastrepublic.com/about" />
+  <link rel="canonical" href="https://www.coast-collective.com/about" />
 
   {/* Open Graph */}
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="About Us | Coast Republic" />
+  <meta property="og:title" content="About Us | Coast Collective" />
   <meta
     property="og:description"
     content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
   />
-  <meta property="og:url" content="https://www.coastrepublic.com/about" />
-  <meta property="og:site_name" content="Coast Republic" />
-  <meta property="og:image" content="https://www.coastrepublic.com/og-about.jpg" />
+  <meta property="og:url" content="https://www.coast-collective.com/about" />
+  <meta property="og:site_name" content="Coast Collective" />
+  <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Us | Coast Republic" />
+  <meta name="twitter:title" content="About Us | Coast Collective" />
   <meta
     name="twitter:description"
-    content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
+    content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
   />
-  <meta name="twitter:image" content="https://www.coastrepublic.com/og-about.jpg" />
+  <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
 
   <meta name="robots" content="index, follow" />
 </Head>

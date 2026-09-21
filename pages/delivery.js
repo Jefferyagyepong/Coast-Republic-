@@ -12,16 +12,16 @@ export default function Delivery() {
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.coastrepublic.com/delivery" />
+        <link rel="canonical" href="https://www.coast-collective.com/delivery" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Delivery Information | Coast Republic" />
+        <meta property="og:title" content="Delivery Information | Coast Collective" />
         <meta
           property="og:description"
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
-        <meta property="og:url" content="https://www.coastrepublic.com/delivery" />
+        <meta property="og:url" content="https://www.coast-collective.com/delivery" />
         <meta property="og:site_name" content="Coast Republic" />
         <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
