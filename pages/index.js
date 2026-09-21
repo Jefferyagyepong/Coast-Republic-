@@ -54,7 +54,7 @@ const Home = () => {
         <meta property="og:description" content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
         
-        <meta property="og:site_name" content="Coast Collective" />
+     
         <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
         
 
