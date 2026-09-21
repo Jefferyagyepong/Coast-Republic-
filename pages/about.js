@@ -40,9 +40,10 @@ export default function About() {
 </Head>
 
 
-      <main>
+ 
         <Header />
-        <div className="main-content">
+        <div className="layout">
+               <main>
         <section className="hero">
           <h6>About Coast Republic</h6>
           <p className="tagline">
