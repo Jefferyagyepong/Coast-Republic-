@@ -180,7 +180,8 @@ const CartPage = () => {
       </Head>
 
       <Header />
-      <div className="main-content">
+      <div className="layout">
+        <main>
         <div className="custom-container">
           <div className="container-center cart-page">
             <p
@@ -191,7 +192,7 @@ const CartPage = () => {
             />
 
             <div className="cart-page__heading-row">
-              <h1 className="heading-large">Shopping Cart</h1>
+              <h6 className="heading-large">Shopping Cart</h6>
               {!isEmpty && (
                 <Link href="/products" className="cart-continue-shopping">
                   ← Continue shopping
@@ -488,6 +489,7 @@ const CartPage = () => {
             )}
           </div>
         </div>
+        </main>
       </div>
       <Footer />
     </>
