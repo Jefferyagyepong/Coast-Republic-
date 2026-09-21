@@ -62,7 +62,7 @@ const Home = () => {
   
 
       <Header />
-      <div className="layout">
+    
                  <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
@@ -90,7 +90,7 @@ const Home = () => {
       </div>
         </div>
           </div>
-            </div>
+         
           <Footer />
 
     </>
