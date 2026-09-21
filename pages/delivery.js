@@ -40,9 +40,10 @@ export default function Delivery() {
       </Head>
 
 
-      <main>
+  
         <Header />
-        <div className="main-content">
+        <div className="layout">
+              <main>
             <article>
           <h6>Delivery Information</h6>
           <p>
@@ -128,10 +129,12 @@ export default function Delivery() {
             </p>
           </section>
                 </article>
+                   </main>
+                     </div>
           <CoastApp />
           <Footer />
-        </div>
-      </main>
+     
+   
 
       <style jsx>{`
         .page {
