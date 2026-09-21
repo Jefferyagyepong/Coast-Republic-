@@ -67,11 +67,12 @@ export default function Contact() {
       </Head>
 
 
-      <main>
+  
         <Header />
-        <div className="main-content">
+        <div className="layout">
+                <main>
           <article>
-            
+          
           <h6>Contact Us</h6>
           <p>
             Have a question about an order, sizing, or delivery? Send us a
@@ -139,11 +140,12 @@ export default function Contact() {
               <h6>Hours</h6>
               <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
          </article>
-      
+           </main>
+               </div>
           <CoastApp />
           <Footer />
-        </div>
-      </main>
+   
+ 
 
       <style jsx>{`
         .page {
