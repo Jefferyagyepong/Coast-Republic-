@@ -58,23 +58,23 @@ const Home = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-          {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Home | Coast Collective" />
-  <meta
-    name="twitter:description"
-    content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
-  />
-  <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home | Coast Collective" />
+        <meta
+          name="twitter:description"
+          content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+        />
+        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
       </Head>
       {/* Twitter */}
 
 
       <Header />
-    
-                 <div className="main-content">
-    
-       
+
+      <div className="main-content">
+
+
         <main>
           <Thrifts />
           <Jeans />
@@ -98,9 +98,9 @@ const Home = () => {
 
       </div>
 
-     
-         
-          <Footer />
+
+
+      <Footer />
 
     </>
   );

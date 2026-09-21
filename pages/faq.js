@@ -52,73 +52,73 @@ export default function FAQ() {
           content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.coastrepublic.com/faq" />
+        <link rel="canonical" href="https://www.coast-collective.com/faq" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="FAQ | Coast Republic" />
+        <meta property="og:title" content="FAQ | Coast Collective" />
         <meta
           property="og:description"
-          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Collective."
         />
-        <meta property="og:url" content="https://www.coastrepublic.com/faq" />
-        <meta property="og:site_name" content="Coast Republic" />
-        <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
+        <meta property="og:url" content="https://www.coast-collective.com/faq" />
+        <meta property="og:site_name" content="Coast Collective" />
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="FAQ | Coast Republic" />
+        <meta name="twitter:title" content="FAQ | Coast Collective" />
         <meta
           name="twitter:description"
-          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Republic."
+          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Collective."
         />
-        <meta name="twitter:image" content="https://www.coastrepublic.com/og-default.jpg" />
+        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
 
         <meta name="robots" content="index, follow" />
       </Head>
 
 
- 
-        <Header />
-        <div className="layout">
-             <div className="main-content">
-        <div className="custom-container">
-          <div className="container-center">
-               <main>
-            <article>
-          <h4>Frequently Asked Questions</h4>
-          <p>
-            Everything you need to know before you shop. Can&apos;t find your
-            answer? <a href="/contact">Contact us</a> — we reply fast.
-          </p>
 
-          <div className="list">
-            {FAQS.map((item, i) => (
-              <div className="item" key={i}>
-                <button
-                  className="question"
-                  onClick={() => setOpen(open === i ? null : i)}
-                  aria-expanded={open === i}
-                >
-                  <span>{item.q}</span>
-                  <span className="chevron">{open === i ? "−" : "+"}</span>
-                </button>
-                {open === i && <p className="answer">{item.a}</p>}
-              </div>
-            ))}
+      <Header />
+      <div className="layout">
+        <div className="main-content">
+          <div className="custom-container">
+            <div className="container-center">
+              <main>
+                <article>
+                  <h4>Frequently Asked Questions</h4>
+                  <p>
+                    Everything you need to know before you shop. Can&apos;t find your
+                    answer? <a href="/contact">Contact us</a> — we reply fast.
+                  </p>
+
+                  <div className="list">
+                    {FAQS.map((item, i) => (
+                      <div className="item" key={i}>
+                        <button
+                          className="question"
+                          onClick={() => setOpen(open === i ? null : i)}
+                          aria-expanded={open === i}
+                        >
+                          <span>{item.q}</span>
+                          <span className="chevron">{open === i ? "−" : "+"}</span>
+                        </button>
+                        {open === i && <p className="answer">{item.a}</p>}
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              </main>
+            </div>
           </div>
-            </article>
-                </main>
-                    </div>
-                        </div>
-                            </div>
-                                </div>
-          <CoastApp />
-          <Footer />
-    
-  
+        </div>
+      </div>
+      <CoastApp />
+      <Footer />
+
+
 
       <style jsx>{`
         .faq {

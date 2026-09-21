@@ -22,125 +22,125 @@ export default function Delivery() {
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
         <meta property="og:url" content="https://www.coast-collective.com/delivery" />
-        <meta property="og:site_name" content="Coast Republic" />
-        <meta property="og:image" content="https://www.coastrepublic.com/og-default.jpg" />
+        <meta property="og:site_name" content="Coast Collective" />
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Delivery Information | Coast Republic" />
+        <meta name="twitter:title" content="Delivery Information | Coast Collective" />
         <meta
           name="twitter:description"
-          content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
+          content="Delivery times, fees, and coverage areas for Coast Collective orders across Ghana."
         />
-        <meta name="twitter:image" content="https://www.coastrepublic.com/og-default.jpg" />
+        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
 
         <meta name="robots" content="index, follow" />
       </Head>
 
 
-  
-        <Header />
-        <div className="layout">
-           <div className="main-content">
-        <div className="custom-container">
-          <div className="container-center">
+
+      <Header />
+      <div className="layout">
+        <div className="main-content">
+          <div className="custom-container">
+            <div className="container-center">
               <main>
-            <article>
-          <h6>Delivery Information</h6>
-          <p>
-            We know you want your order fast. Here's exactly what to expect
-            once you check out.
-          </p>
+                <article>
+                  <h6>Delivery Information</h6>
+                  <p>
+                    We know you want your order fast. Here's exactly what to expect
+                    once you check out.
+                  </p>
 
-          <section>
-            <h6>Processing Time</h6>
-            <p>
-              Orders are processed within 1 business day of payment
-              confirmation. Orders placed after 4:00 PM or on weekends/public
-              holidays are processed the next business day.
-            </p>
-          </section>
+                  <section>
+                    <h6>Processing Time</h6>
+                    <p>
+                      Orders are processed within 1 business day of payment
+                      confirmation. Orders placed after 4:00 PM or on weekends/public
+                      holidays are processed the next business day.
+                    </p>
+                  </section>
 
-          <section>
-            <h6>Delivery Times &amp; Coverage</h6>
-            <table>
-              <thead>
-                <tr>
-                  <th>Area</th>
-                  <th>Estimated Delivery</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kumasi &amp; surrounding areas</td>
-                  <td>1–2 business days</td>
-                </tr>
-                <tr>
-                  <td>Accra &amp; other major cities</td>
-                  <td>2–3 business days</td>
-                </tr>
-                <tr>
-                  <td>Other regions in Ghana</td>
-                  <td>3–5 business days</td>
-                </tr>
-              </tbody>
-            </table>
-            <p className="note">
-              We currently deliver within Ghana only. International shipping is
-              not yet available.
-            </p>
-          </section>
+                  <section>
+                    <h6>Delivery Times &amp; Coverage</h6>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Area</th>
+                          <th>Estimated Delivery</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Kumasi &amp; surrounding areas</td>
+                          <td>1–2 business days</td>
+                        </tr>
+                        <tr>
+                          <td>Accra &amp; other major cities</td>
+                          <td>2–3 business days</td>
+                        </tr>
+                        <tr>
+                          <td>Other regions in Ghana</td>
+                          <td>3–5 business days</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p className="note">
+                      We currently deliver within Ghana only. International shipping is
+                      not yet available.
+                    </p>
+                  </section>
 
-          <section>
-            <h6>Delivery Fees</h6>
-            <p>
-              Delivery fees are calculated at checkout based on your location
-              and order size. Any applicable fee is shown clearly before you
-              confirm payment — no hidden charges.
-            </p>
-          </section>
+                  <section>
+                    <h6>Delivery Fees</h6>
+                    <p>
+                      Delivery fees are calculated at checkout based on your location
+                      and order size. Any applicable fee is shown clearly before you
+                      confirm payment — no hidden charges.
+                    </p>
+                  </section>
 
-          <section>
-            <h6>Order Tracking</h6>
-            <p>
-              You'll receive a confirmation once your order is dispatched. If
-              your delivery is taking longer than the estimate above, contact
-              us with your order number and we'll follow up with our courier
-              immediately.
-            </p>
-          </section>
+                  <section>
+                    <h6>Order Tracking</h6>
+                    <p>
+                      You'll receive a confirmation once your order is dispatched. If
+                      your delivery is taking longer than the estimate above, contact
+                      us with your order number and we'll follow up with our courier
+                      immediately.
+                    </p>
+                  </section>
 
-          <section>
-            <h6>Delivery Issues</h6>
-            <p>
-              Please inspect your package on arrival. If an item is damaged,
-              missing, or incorrect, notify us within 48 hours of delivery at{" "}
-              <a href="mailto:support@coascollective.com">
-                support@coastcollective.com
-              </a>{" "}
-              or <a href="tel:+233244736420">+233 244 736 420</a>, and we'll
-              make it right.
-            </p>
-          </section>
+                  <section>
+                    <h6>Delivery Issues</h6>
+                    <p>
+                      Please inspect your package on arrival. If an item is damaged,
+                      missing, or incorrect, notify us within 48 hours of delivery at{" "}
+                      <a href="mailto:support@coascollective.com">
+                        support@coastcollective.com
+                      </a>{" "}
+                      or <a href="tel:+233244736420">+233 244 736 420</a>, and we'll
+                      make it right.
+                    </p>
+                  </section>
 
-          <section className="cta">
-            <p>
-              Questions about a specific order? <a href="/contact">Contact us</a>{" "}
-              or check our <a href="/faq">FAQ</a>.
-            </p>
-          </section>
+                  <section className="cta">
+                    <p>
+                      Questions about a specific order? <a href="/contact">Contact us</a>{" "}
+                      or check our <a href="/faq">FAQ</a>.
+                    </p>
+                  </section>
                 </article>
-                   </main>
-                     </div>
-                    </div>
-                    </div>
-                    </div>
-          <CoastApp />
-          <Footer />
-     
-   
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <CoastApp />
+      <Footer />
+
+
 
       <style jsx>{`
         .page {
