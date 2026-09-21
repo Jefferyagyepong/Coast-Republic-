@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://coast-republic.vercel.app</loc>
-<loc>https://coast-republic.vercel.app/about</loc>
-<loc>https://coast-republic.vercel.app/cart</loc>
-<loc>https://coast-republic.vercel.app/contact</loc>
-<loc>https://coast-republic.vercel.app/delivery</loc>
-<loc>https://coast-republic.vercel.app/privacy</loc>
-<loc>https://coast-republic.vercel.app/terms</loc>
-<loc>https://coast-republic.vercel.app/products</loc>
+<loc>https://www.coast-collective.com</loc>
+<loc>https://www.coast-collective.com/about</loc>
+<loc>https://www.coast-collective.com/cart</loc>
+<loc>https://www.coast-collective.com/contact</loc>
+<loc>https://www.coast-collective.com/delivery</loc>
+<loc>https://www.coast-collective.com/privacy</loc>
+<loc>https://www.coast-collective.com/terms</loc>
+<loc>https://www.coast-collective.com/products</loc>
 <changefreq>daily</changefreq>
 <priority>0.7</priority>
 </url>
