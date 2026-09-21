@@ -27,7 +27,7 @@ export default function Returns() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Home | Coast Collective" />
+        <meta name="twitter:title" content="Refund & Returns | Coast Collective" />
         <meta
           name="twitter:description"
           content="Coast Collective's refund and return policy — eligibility, process, and timelines."
