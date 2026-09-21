@@ -209,6 +209,8 @@ export default function Terms() {
                  </main>
                      </div>
                     </div>
+                    </div>
+                    </div>
 <CoastApp />
    
           <Footer />
