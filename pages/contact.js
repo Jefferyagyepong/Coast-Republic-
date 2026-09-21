@@ -68,7 +68,7 @@ export default function Contact() {
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
       
-        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
 
 
