@@ -32,6 +32,13 @@ export default function Returns() {
           name="twitter:description"
           content="Coast Collective's refund and return policy — eligibility, process, and timelines."
         />
+            <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="author" content="Coast collective Ghana" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
 
       </Head>
