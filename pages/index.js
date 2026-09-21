@@ -65,7 +65,7 @@ const Home = () => {
     
                  <div className="main-content">
         <div className="custom-container">
-          <div className="container-center">
+       
         <main>
         <Thrifts />
         <Jeans />
@@ -89,7 +89,7 @@ const Home = () => {
     
       </div>
         </div>
-          </div>
+     
          
           <Footer />
 
