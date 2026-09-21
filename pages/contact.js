@@ -70,6 +70,9 @@ export default function Contact() {
   
         <Header />
         <div className="layout">
+               <div className="main-content">
+        <div className="custom-container">
+          <div className="container-center">
                 <main>
           <article>
           
@@ -142,6 +145,9 @@ export default function Contact() {
          </article>
            </main>
                </div>
+                   </div>
+                       </div>
+                           </div>
           <CoastApp />
           <Footer />
    
