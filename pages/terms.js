@@ -37,7 +37,7 @@ export default function Terms() {
          <div className="layout">
                         <div className="main-content">
         <div className="custom-container">
-          <div className="container-center"
+          <div className="container-center">
           
               <main>
       <article>
