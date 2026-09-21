@@ -76,7 +76,7 @@ export default function FAQ() {
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
       
-        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />/>
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
