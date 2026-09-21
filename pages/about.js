@@ -43,7 +43,7 @@ export default function About() {
  
         <Header />
         <div className="layout">
-               <main>
+           
         <section className="hero">
           <h6>About Coast Republic</h6>
           <p className="tagline">
@@ -118,7 +118,7 @@ Values: Authenticity, Quality, Confidence, Community, Culture.
           </p>
         </section>
             </div>
-            </main>
+        
         <CoastApp />
         <Footer />
     
