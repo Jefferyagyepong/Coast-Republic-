@@ -62,18 +62,21 @@ export default function FAQ() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="FAQ | Coast Collective" />
+   
+     
+        
+   {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <meta property="og:url" content="https://www.coast-collective.com/" />
+       
+         <meta property="og:type" content="Online store" />
+    <meta property="og:title" content="Delivery Information | Coast Collective" />
         <meta
           property="og:description"
-          content="Answers to common questions about payment, shipping, sizing, and returns at Coast Collective."
+          content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
-        <meta property="og:url" content="https://www.coast-collective.com/faq" />
-        <meta property="og:site_name" content="Coast Collective" />
-        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+      
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />/>
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
