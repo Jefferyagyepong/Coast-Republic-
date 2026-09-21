@@ -62,7 +62,8 @@ const Home = () => {
   
 
       <Header />
-      <div className="main-content">
+      <div className="layout">
+        <main>
         <Thrifts />
         <Jeans />
         <div className="custom-container">
@@ -80,9 +81,11 @@ const Home = () => {
         <h5>Crew Neck T shirts</h5>
           </div>
                         <Collection />
+                        </main>
         
-        <Footer />
+    
       </div>
+          <Footer />
 
     </>
   );
