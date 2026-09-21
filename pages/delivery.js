@@ -21,18 +21,21 @@ export default function Delivery() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.coast-collective.com/delivery" />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Delivery Information | Coast Collective" />
+        
+       
+        
+   {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <meta property="og:url" content="https://www.coast-collective.com/" />
+       
+         <meta property="og:type" content="Online store" />
+    <meta property="og:title" content="Delivery Information | Coast Collective" />
         <meta
           property="og:description"
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
-        <meta property="og:url" content="https://www.coast-collective.com/delivery" />
-        <meta property="og:site_name" content="Coast Collective" />
+      
         <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
