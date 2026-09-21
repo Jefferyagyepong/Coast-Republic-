@@ -103,14 +103,14 @@ const ProductsPage = ({ products }) => {
   return (
     <>
       <Head>
-        <title>Shop | Coast Republic</title>
+        <title>Shop | Coast Collective</title>
       </Head>
       <Header />
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            <h5>Shop Al</h5>
-            <br />
+            <h5>Shop</h5>
+          
 
             <div className="controls">
               <label>
