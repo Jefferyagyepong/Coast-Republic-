@@ -104,13 +104,42 @@ const ProductsPage = ({ products }) => {
     <>
       <Head>
         <title>Shop | Coast Collective</title>
+
+
+
+        <meta
+          name="description"
+          content="Coast Collective — Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials. Shop the latest collection with fast nationwide delivery."
+        />
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="author" content="Coast collective Ghana" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <link rel="icon" href="/coast.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Coast Collective | Clothing & Shoes" />
+        <meta
+          property="og:description"
+          content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+        />
+        <meta property="og:url" content="https://www.coast-collective.com/" />
+        <meta property="og:site_name" content="Coast Collective" />
+        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
+
       <Header />
       <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
             <h5>Shop</h5>
-          
+
 
             <div className="controls">
               <label>
@@ -155,7 +184,7 @@ const ProductsPage = ({ products }) => {
               </div>
             </div>
             <br />
-            
+
 
             {filteredProducts.length === 0 ? (
               <p className="no-results">
@@ -228,7 +257,7 @@ const ProductsPage = ({ products }) => {
         <h4>Have any question? </h4>
         <Link href={"/contact"}>Send Us a Message </Link>
       </div>
-    
+
       <Footer />
 
       <style jsx global>{`
