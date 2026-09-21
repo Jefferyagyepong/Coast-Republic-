@@ -48,7 +48,7 @@ export default function About() {
           <div className="container-center">
            
         <section className="hero">
-          <h6>About Coast Collective</h6>
+          <h6>Coast Collective</h6>
           <p className="tagline">
            Built for the culture
           </p>
