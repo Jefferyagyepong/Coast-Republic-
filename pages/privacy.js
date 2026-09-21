@@ -241,4 +241,4 @@ const Privacy = () => {
     </>
   );
 };
-export default PrivacyPage;
+export default Privacy;
