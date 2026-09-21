@@ -273,8 +273,11 @@ const ProductsPage = ({ products }) => {
           color: #666;
         }
         .product-container {
-          width: 100%;
-          margin: 0 auto;
+          display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
         }
         .viewButton {
           padding: 8px 15px;
