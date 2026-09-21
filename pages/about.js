@@ -40,7 +40,7 @@ export default function About() {
     content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
   />
       
-        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
         
 
 
