@@ -80,9 +80,10 @@ export default function FAQ() {
       </Head>
 
 
-      <main>
+ 
         <Header />
-        <div className="main-content">
+        <div className="layout">
+               <main>
             <article>
           <h4>Frequently Asked Questions</h4>
           <p>
@@ -106,10 +107,12 @@ export default function FAQ() {
             ))}
           </div>
             </article>
+                </main>
+                    </div>
           <CoastApp />
           <Footer />
-        </div>
-      </main>
+    
+  
 
       <style jsx>{`
         .faq {
