@@ -83,6 +83,9 @@ export default function FAQ() {
  
         <Header />
         <div className="layout">
+             <div className="main-content">
+        <div className="custom-container">
+          <div className="container-center"
                <main>
             <article>
           <h4>Frequently Asked Questions</h4>
@@ -109,6 +112,9 @@ export default function FAQ() {
             </article>
                 </main>
                     </div>
+                        </div>
+                            </div>
+                                </div>
           <CoastApp />
           <Footer />
     
