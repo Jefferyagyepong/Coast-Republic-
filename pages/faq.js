@@ -85,7 +85,7 @@ export default function FAQ() {
           name="twitter:description"
           content="Answers to common questions about payment, shipping, sizing, and returns at Coast Collective."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

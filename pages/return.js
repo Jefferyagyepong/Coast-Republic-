@@ -7,6 +7,13 @@ export default function Returns() {
     <>
       <Head>
         <title>Refunds & Returns | Coast Collective</title>
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="author" content="Coast collective Ghana" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta
           name="description"
           content="Coast Collective's refund and return policy — eligibility, process, and timelines."
@@ -15,14 +22,15 @@ export default function Returns() {
         <link rel="canonical" href="https://www.coast-collective.com/return" />
 
         {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Refunds & Returns | Coast Collective" />
         <meta
           property="og:description"
-          content="Coast Republic's refund and return policy — eligibility, process, and timelines."
+          content="Coast Collective refund and return policy — eligibility, process, and timelines."
         />
         <meta property="og:url" content="https://coast-collective.com/return" />
-        <meta property="og:site_name" content="Coast Republic" />
+
 
 
         {/* Twitter */}
@@ -32,14 +40,9 @@ export default function Returns() {
           name="twitter:description"
           content="Coast Collective's refund and return policy — eligibility, process, and timelines."
         />
-            <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
-        <meta name="author" content="Coast collective Ghana" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <link rel="canonical" href="https://www.coast-collective.com/" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
+
+
 
       </Head>
 

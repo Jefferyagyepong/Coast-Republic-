@@ -24,7 +24,6 @@ const Home = () => {
     "GYAMFUA.svg",
 
 
-    // Replace with real Calvin Klein / Walmart product image URLs
   ];
 
 
@@ -65,7 +64,7 @@ const Home = () => {
           name="twitter:description"
           content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
       </Head>
       {/* Twitter */}
 

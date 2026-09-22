@@ -50,13 +50,6 @@ export default function Contact() {
 
 
 
-
-
-
-
-
-
-
         {/* Open Graph */}
         <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
@@ -81,7 +74,7 @@ export default function Contact() {
           name="twitter:description"
           content="Get in touch with Coast Collective — questions about orders, sizing, or delivery."
         />
-        <meta name="twitter:image" content="https://www.coastrepublic.com/og-contact.jpg" />
+        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

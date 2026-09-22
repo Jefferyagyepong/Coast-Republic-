@@ -37,10 +37,10 @@ const Privacy = () => {
     <meta property="og:title" content="Delivery Information | Coast Collective" />
         <meta
           property="og:description"
-          content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
+          content="How Coast Collective collects, uses, and protects your personal information."
         />
       
-        <meta property="og:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Privacy Policy | Coast Collective" />
@@ -48,6 +48,7 @@ const Privacy = () => {
           name="twitter:description"
           content="How Coast Collective collects, uses, and protects your personal information."
         />
+       <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
         <meta name="robots" content="index, follow" />
       </Head>
