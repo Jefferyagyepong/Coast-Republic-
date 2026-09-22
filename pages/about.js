@@ -5,13 +5,13 @@ import CoastApp from "@/components/Parts/CoastApp";
 export default function About() {
   return (
     <>
-  <Head> 
-  <title>About Us | Coast Collective</title>
-  <meta
-    name="description"
-    content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
-  />
-     <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+      <Head>
+        <title>About Us | Coast Collective</title>
+        <meta
+          name="description"
+          content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
+        />
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -19,134 +19,127 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <link rel="canonical" href="https://www.coast-collective.com/about" />
-
-  {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/about" />
 
 
-  
-
-
-
-
-   {/* Open Graph */}
+        {/* Open Graph */}
         <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
-       
-         <meta property="og:type" content="Online store" />
+
+        <meta property="og:type" content="Online store" />
         <meta property="og:title" content="About Us | Coast Collective" />
-  <meta
-    property="og:description"
-    content="Learn the story behind Coast Republic — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
-  />
-      
+        <meta
+          property="og:description"
+          content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
+        />
+
         <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
-        
 
 
 
-  {/* Twitter */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Us | Coast Collective" />
-  <meta
-    name="twitter:description"
-    content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
-  />
-  <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
 
-  <meta name="robots" content="index, follow" />
-</Head>
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Coast Collective" />
+        <meta
+          name="twitter:description"
+          content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
+        />
+        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+
+        <meta name="robots" content="index, follow" />
+      </Head>
 
 
- 
-        <Header />
-        <div className="layout">
+
+      <Header />
+      <div className="layout">
         <div className="main-content">
-        <div className="custom-container">
-          <div className="container-center">
-           
-        <section className="hero">
-          <h6>Coast Collective</h6>
-          <p className="tagline">
-           Built for the culture
-          </p>
-        </section>
+          <div className="custom-container">
+            <div className="container-center">
 
-        <section className="block">
-          <h6>Our Story</h6>
-          <p>
-          Coast Republic is a Ghanaian lifestyle and streetwear brand built for a generation that leads with confidence. Inspired by culture, creativity, and everyday ambition, we offer quality fashion essentials that help people express their identity and elevate their style. More than a brand, Coast Republic is a community of dreamers, creators, and trendsetters shaping the future on their own terms. ￼
-Brand Essence
-"Born from Culture. Built for Confidence."
-Brand DNA
-Purpose: Empower self-expression through fashion.
-Vision: Become Africa's leading lifestyle and streetwear community.
-Mission: Deliver accessible premium fashion that inspires confidence and individuality.
-Values: Authenticity, Quality, Confidence, Community, Culture.
-          </p>
-          <p>
-            Every piece we stock is chosen with one question in mind: would we
-            wear this ourselves? That standard hasn&apos;t changed, and it never
-            will.
-          </p>
-        </section>
+              <section className="hero">
+                <h6>Coast Collective</h6>
+                <p className="tagline">
+                  Built for the culture
+                </p>
+              </section>
 
-        <section className="block">
-          <h6>What We Stand For</h6>
-          <div className="grid">
-            <div className="card">
-              <h6>Quality First</h6>
-              <p>
-                We work with fabrics and finishes that hold up — no shrinking,
-                no fading after two washes. If it doesn&apos;t meet our
-                standard, it doesn&apos;t make the shop.
-              </p>
-            </div>
-            <div className="card">
-              <h6>Designed for You</h6>
-              <p>
-                From crew necks to sneakers, our collections are curated for
-                real life in Ghana — comfortable, versatile, and easy to style
-                for any day.
-              </p>
-            </div>
-            <div className="card">
-              <h6>Honest Service</h6>
-              <p>
-                Clear pricing, straightforward delivery, and real people
-                behind every order. No surprises, no fine print designed to
-                confuse you.
-              </p>
+              <section className="block">
+                <h6>Our Story</h6>
+                <p>
+                  Coast Collective is a Ghanaian lifestyle and streetwear brand built for a generation that leads with confidence. Inspired by culture, creativity, and everyday ambition, we offer quality fashion essentials that help people express their identity and elevate their style. More than a brand, Coast Republic is a community of dreamers, creators, and trendsetters shaping the future on their own terms. ￼
+                  Brand Essence
+                  "Born from Culture. Built for Confidence."
+                  Brand DNA
+                  Purpose: Empower self-expression through fashion.
+                  Vision: Become Africa's leading lifestyle and streetwear community.
+                  Mission: Deliver accessible premium fashion that inspires confidence and individuality.
+                  Values: Authenticity, Quality, Confidence, Community, Culture.
+                </p>
+                <p>
+                  Every piece we stock is chosen with one question in mind: would we
+                  wear this ourselves? That standard hasn&apos;t changed, and it never
+                  will.
+                </p>
+              </section>
+
+              <section className="block">
+                <h6>What We Stand For</h6>
+                <div className="grid">
+                  <div className="card">
+                    <h6>Quality First</h6>
+                    <p>
+                      We work with fabrics and finishes that hold up — no shrinking,
+                      no fading after two washes. If it doesn&apos;t meet our
+                      standard, it doesn&apos;t make the shop.
+                    </p>
+                  </div>
+                  <div className="card">
+                    <h6>Designed for You</h6>
+                    <p>
+                      From crew necks to sneakers, our collections are curated for
+                      real life in Ghana — comfortable, versatile, and easy to style
+                      for any day.
+                    </p>
+                  </div>
+                  <div className="card">
+                    <h6>Honest Service</h6>
+                    <p>
+                      Clear pricing, straightforward delivery, and real people
+                      behind every order. No surprises, no fine print designed to
+                      confuse you.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section className="block">
+                <h6>Where We're Based</h6>
+                <p>
+                  Coast Collective is proudly Ghanaian, operating out of Asafo
+                  Dadiesoaba. We ship nationwide and accept MTN Mobile Money,
+                  Telecel Cash, AirtelTigo Money, and Visa — because getting great
+                  gear shouldn&apos;t be complicated.
+                </p>
+              </section>
+
+              <section className="cta">
+                <h6>Got Questions?</h6>
+                <p>
+                  Check our <a href="/faq">FAQ</a> or{" "}
+                  <a href="/contact">get in touch</a> — we&apos;re happy to help.
+                </p>
+              </section>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section className="block">
-          <h6>Where We're Based</h6>
-          <p>
-            Coast Republic is proudly Ghanaian, operating out of Asafo
-            Dadiesoaba. We ship nationwide and accept MTN Mobile Money,
-            Telecel Cash, AirtelTigo Money, and Visa — because getting great
-            gear shouldn&apos;t be complicated.
-          </p>
-        </section>
+      <CoastApp />
+      <Footer />
 
-        <section className="cta">
-          <h6>Got Questions?</h6>
-          <p>
-            Check our <a href="/faq">FAQ</a> or{" "}
-            <a href="/contact">get in touch</a> — we&apos;re happy to help.
-          </p>
-        </section>
-            </div>
-               </div>
-                 </div>
-                   </div>
-        
-        <CoastApp />
-        <Footer />
-    
-  
+
 
       <style jsx>{`
         .about {
