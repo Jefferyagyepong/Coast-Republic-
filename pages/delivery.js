@@ -44,7 +44,7 @@ export default function Delivery() {
           name="twitter:description"
           content="Delivery times, fees, and coverage areas for Coast Collective orders across Ghana."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/crlogo.svg" />
+        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
         <meta name="robots" content="index, follow" />
       </Head>
@@ -127,8 +127,8 @@ export default function Delivery() {
                     <p>
                       Please inspect your package on arrival. If an item is damaged,
                       missing, or incorrect, notify us within 48 hours of delivery at{" "}
-                      <a href="mailto:customercare@coascollective.com">
-                        customercare@coascollective.com
+                      <a href="mailto:customercare@coast-collective.com">
+                        customercare@coast-collective.com
                       </a>{" "}
                       or <a href="tel:+233244736420">+233 244 736 420</a>, and we'll
                       make it right.
