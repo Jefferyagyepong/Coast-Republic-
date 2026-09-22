@@ -46,8 +46,8 @@ const Footer = () => {
 
             <div className="footer-contact">
               <a href="tel:+233244736420">+233 244 736 420</a>
-              <a href="mailto:support@coastcollective.com">
-                support@coastcollective.com
+              <a href="mailto:customercare@coastcollective.com">
+            customercare@coastcollective.com
               </a>
             </div>
           </div>
