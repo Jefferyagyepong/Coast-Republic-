@@ -5,6 +5,8 @@ import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 import CoastApp from "@/components/Parts/CoastApp";
 
+const CONTACT_EMAIL = "customercare@coast-collective.com";
+
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState(null);
@@ -16,11 +18,12 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
     try {
-      // Wire this up to your existing form/API route (e.g. pages/api/contact.js)
+      // Wire this up to your existing form/API route (e.g. pages/api/contact.js).
+      // The "to" field tells the API route which mailbox to deliver the message to.
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, to: CONTACT_EMAIL }),
       });
       if (!res.ok) throw new Error("Request failed");
       setStatus("success");
@@ -38,34 +41,23 @@ export default function Contact() {
           name="description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery. We reply within 24 hours."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.coastrepublic.com/contact" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
         <meta name="author" content="Coast collective Ghana" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <link rel="canonical" href="https://www.coast-collective.com/" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-
-
         {/* Open Graph */}
-        <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
-
         <meta property="og:type" content="Online store" />
         <meta property="og:title" content="Contact Us | Coast Republic" />
         <meta
           property="og:description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
-
         <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
-
-
-
-
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -79,8 +71,6 @@ export default function Contact() {
         <meta name="robots" content="index, follow" />
       </Head>
 
-
-
       <Header />
       <div className="layout">
         <div className="main-content">
@@ -88,7 +78,6 @@ export default function Contact() {
             <div className="container-center">
               <main>
                 <article>
-
                   <h6>Contact Us</h6>
                   <p>
                     Have a question about an order, sizing, or delivery? Send us a
@@ -96,7 +85,7 @@ export default function Contact() {
                   </p>
                 </article>
 
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={handleSubmit}>
                   <label>
                     Name
                     <input
@@ -135,23 +124,22 @@ export default function Contact() {
                   )}
                   {status === "error" && (
                     <p className="error">
-                      Something went wrong. Please try again or email us directly.
+                      Something went wrong. Please try again or email us directly at{" "}
+                      <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
                     </p>
                   )}
                 </form>
 
                 <ls>
                   <h6>Online Store</h6>
-                
+
                   <h6>Phone</h6>
                   <p>
                     <a href="tel:+233244736420">+233 244 736 420</a>
                   </p>
                   <h6>Email</h6>
                   <p>
-                    <a href="mailto:customercare@coascollective.com">
-                     customercare@coascollective.com
-                    </a>
+                    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
                   </p>
                   <h6>Hours</h6>
                   <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
@@ -163,8 +151,6 @@ export default function Contact() {
       </div>
       <CoastApp />
       <Footer />
-
-
 
       <style jsx>{`
         .page {
@@ -256,8 +242,3 @@ export default function Contact() {
     </>
   );
 }
-
-
-
-
-
