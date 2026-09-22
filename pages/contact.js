@@ -147,7 +147,7 @@ export default function Contact() {
                   )}
                 </form>
 
-                <details>
+                <ls>
                   <h6>Store Location</h6>
                   <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
                   <h6>Phone</h6>
@@ -162,7 +162,7 @@ export default function Contact() {
                   </p>
                   <h6>Hours</h6>
                   <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-                </details>
+                </ls>
               </main>
             </div>
           </div>
