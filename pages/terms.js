@@ -15,7 +15,7 @@ export default function Terms() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.coast-collective.com/terms" />
-    <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -31,11 +31,16 @@ export default function Terms() {
           content="Terms and conditions for using the Coast Collective website and purchasing products."
         />
         <meta property="og:url" content="https://www.coast-collective.com/terms" />
-        <meta property="og:site_name" content="Coast Collective" />
+     
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Terms & Conditions | Coast Collective" />
+           <meta
+          name="twitter:description"
+          content="Terms and conditions for using the Coast Collective website and purchasing products."
+        />
+          <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
       </Head>
 
 
