@@ -40,7 +40,7 @@ export default function Contact() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.coastrepublic.com/contact" />
-    <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -49,25 +49,25 @@ export default function Contact() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
 
+
+
+
+
+
+
+
+
         {/* Open Graph */}
-    
-      
-        
-
-
-
-
-   {/* Open Graph */}
         <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
-       
-         <meta property="og:type" content="Online store" />
-     <meta property="og:title" content="Contact Us | Coast Republic" />
+
+        <meta property="og:type" content="Online store" />
+        <meta property="og:title" content="Contact Us | Coast Republic" />
         <meta
           property="og:description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
-      
+
         <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
 
 
@@ -87,91 +87,91 @@ export default function Contact() {
       </Head>
 
 
-  
-        <Header />
-        <div className="layout">
-               <div className="main-content">
-        <div className="custom-container">
-          <div className="container-center">
-                <main>
-          <article>
-          
-          <h6>Contact Us</h6>
-          <p>
-            Have a question about an order, sizing, or delivery? Send us a
-            message and our team will get back to you within 24 hours.
-          </p>
-</article>
-        
-            <form onSubmit={handleSubmit} >
-              <label>
-                Name
-                <input
-                  name="name"
-                  type="text"
-                  required
-                  value={form.name}
-                  onChange={handleChange}
-                />
-              </label>
-              <label>
-                Email
-                <input
-                  name="email"
-                  type="email"
-                  required
-                  value={form.email}
-                  onChange={handleChange}
-                />
-              </label>
-              <label>
-                Message
-                <textarea
-                  name="message"
-                  rows={5}
-                  required
-                  value={form.message}
-                  onChange={handleChange}
-                />
-              </label>
-              <button type="submit" disabled={status === "sending"}>
-                {status === "sending" ? "Sending..." : "Send"}
-              </button>
-              {status === "success" && (
-                <p className="success">Thanks! We'll be in touch shortly.</p>
-              )}
-              {status === "error" && (
-                <p className="error">
-                  Something went wrong. Please try again or email us directly.
-                </p>
-              )}
-            </form>
 
-      <article>
-              <h6>Store Location</h6>
-              <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
-              <h6>Phone</h6>
-              <p>
-                <a href="tel:+233244736420">+233 244 736 420</a>
-              </p>
-              <h6>Email</h6>
-              <p>
-                <a href="mailto:support@coastcollective.com">
-                  support@coastcollective.com
-                </a>
-              </p>
-              <h6>Hours</h6>
-              <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-         </article>
-           </main>
-               </div>
-                   </div>
-                       </div>
-                           </div>
-          <CoastApp />
-          <Footer />
-   
- 
+      <Header />
+      <div className="layout">
+        <div className="main-content">
+          <div className="custom-container">
+            <div className="container-center">
+              <main>
+                <article>
+
+                  <h6>Contact Us</h6>
+                  <p>
+                    Have a question about an order, sizing, or delivery? Send us a
+                    message and our team will get back to you within 24 hours.
+                  </p>
+                </article>
+
+                <form onSubmit={handleSubmit} >
+                  <label>
+                    Name
+                    <input
+                      name="name"
+                      type="text"
+                      required
+                      value={form.name}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Email
+                    <input
+                      name="email"
+                      type="email"
+                      required
+                      value={form.email}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <label>
+                    Message
+                    <textarea
+                      name="message"
+                      rows={5}
+                      required
+                      value={form.message}
+                      onChange={handleChange}
+                    />
+                  </label>
+                  <button type="submit" disabled={status === "sending"}>
+                    {status === "sending" ? "Sending..." : "Send"}
+                  </button>
+                  {status === "success" && (
+                    <p className="success">Thanks! We'll be in touch shortly.</p>
+                  )}
+                  {status === "error" && (
+                    <p className="error">
+                      Something went wrong. Please try again or email us directly.
+                    </p>
+                  )}
+                </form>
+
+                <details>
+                  <h6>Store Location</h6>
+                  <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
+                  <h6>Phone</h6>
+                  <p>
+                    <a href="tel:+233244736420">+233 244 736 420</a>
+                  </p>
+                  <h6>Email</h6>
+                  <p>
+                    <a href="mailto:customercare@coascollective.com">
+                     customercare@coascollective.com
+                    </a>
+                  </p>
+                  <h6>Hours</h6>
+                  <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
+                </details>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+      <CoastApp />
+      <Footer />
+
+
 
       <style jsx>{`
         .page {
