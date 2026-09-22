@@ -148,8 +148,8 @@ export default function Contact() {
                 </form>
 
                 <ls>
-                  <h6>Store Location</h6>
-                  <p>📍 AK-7175846, Asafo Dadiesoaba, Ghana</p>
+                  <h6>Online Store</h6>
+                
                   <h6>Phone</h6>
                   <p>
                     <a href="tel:+233244736420">+233 244 736 420</a>
