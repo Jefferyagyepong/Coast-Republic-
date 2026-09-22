@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     q: "Can I change or cancel my order after placing it?",
-    a: "If your order hasn't been processed for delivery yet, contact us as soon as possible at support@coastrepublic.com or +233 244 736 420 and we'll do our best to accommodate changes.",
+    a: "If your order hasn't been processed for delivery yet, contact us as soon as possible at customercare@coast-collective.com or +233 244 736 420 and we'll do our best to accommodate changes.",
   },
   {
     q: "Are your products authentic and true to description?",
