@@ -116,7 +116,7 @@ const ProductsPage = ({ products }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <link rel="canonical" href="https://www.coast-collective.com/" />
-        <link rel="icon" href="/coast.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
 
