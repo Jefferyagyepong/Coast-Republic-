@@ -61,7 +61,7 @@ export default function Contact() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Us | Coast Republic" />
+        <meta name="twitter:title" content="Contact Us | Coast Collective" />
         <meta
           name="twitter:description"
           content="Get in touch with Coast Collective — questions about orders, sizing, or delivery."
@@ -116,7 +116,7 @@ export default function Contact() {
                       onChange={handleChange}
                     />
                   </label>
-                  <button type="submit" disabled={status === "sending"}>
+                  <button type="submit" className="btn-primary btn-checkout" disabled={status === "sending"}>
                     {status === "sending" ? "Sending..." : "Send"}
                   </button>
                   {status === "success" && (
@@ -128,7 +128,7 @@ export default function Contact() {
                       <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
                     </p>
                   )}
-                </form>
+                </form><br/><br/>
 
                 <ls>
                   <h6>Online Store</h6>
