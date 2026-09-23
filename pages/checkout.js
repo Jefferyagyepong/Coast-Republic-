@@ -289,7 +289,7 @@ const CheckoutPage = () => {
           <div className="custom-container">
             <div className="container-center">
               <main>
-                <h1 className="heading-large">Checkout</h1>
+                <h6 className="heading-large">Checkout</h6>
                 <p>Your cart is empty — nothing to check out.</p>
                 <Link href="/products" className="btn-primary">
                   Browse products
@@ -318,7 +318,7 @@ const CheckoutPage = () => {
       </Head>
 
       <Header />
-      <br /><br /><br /><br />
+      <br /><br /><br /><br /><br />
 
 
  
