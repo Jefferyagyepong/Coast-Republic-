@@ -116,7 +116,7 @@ export default function Contact() {
                       onChange={handleChange}
                     />
                   </label>
-                  <button type="submit" className="btn-primary btn-checkout" disabled={status === "sending"}>
+                  <button type="submit"  disabled={status === "sending"}>
                     {status === "sending" ? "Sending..." : "Send"}
                   </button>
                   {status === "success" && (
@@ -180,9 +180,12 @@ export default function Contact() {
           }
         }
         .form {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
+          max-width: 500px;
+  padding: 30px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
         }
         label {
           display: flex;
@@ -201,14 +204,16 @@ export default function Contact() {
           border-radius: 8px;
         }
         button {
-          background: #0a2540;
-          color: #fff;
-          border: none;
-          padding: 12px 20px;
-          border-radius: 8px;
-          font-weight: 600;
-          cursor: pointer;
-          width: fit-content;
+           background-color: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
         }
         button:disabled {
           opacity: 0.6;
