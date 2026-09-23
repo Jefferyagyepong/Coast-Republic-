@@ -323,7 +323,7 @@ const CheckoutPage = () => {
 
       <div classname="main-content">
         <div className="custom-container">
-          <div className="container-center checkout-page">
+          <div className="container-center">
             
 
               <div className="checkout-page__heading-row">
