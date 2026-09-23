@@ -285,17 +285,20 @@ const CheckoutPage = () => {
           <meta name="robots" content="noindex, nofollow" />
         </Head>
         <Header />
-        <main className="main-content">
+        <div className="main-content">
           <div className="custom-container">
             <div className="container-center">
-              <h1 className="heading-large">Checkout</h1>
-              <p>Your cart is empty — nothing to check out.</p>
-              <Link href="/products" className="btn-primary">
-                Browse products
-              </Link>
+              <main>
+                <h1 className="heading-large">Checkout</h1>
+                <p>Your cart is empty — nothing to check out.</p>
+                <Link href="/products" className="btn-primary">
+                  Browse products
+                </Link>
+              </main>
+
             </div>
           </div>
-        </main>
+        </div>
         <Footer />
       </>
     );
@@ -323,7 +326,7 @@ const CheckoutPage = () => {
           <div className="container-center checkout-page">
 
             <div className="checkout-page__heading-row">
-              <h1 className="heading-large">Checkout</h1>
+              <h2 className="heading-large">Checkout</h2>
               <Link href="/cart" className="cart-continue-shopping">
                 ← Back to cart
               </Link>
