@@ -328,7 +328,7 @@ const CheckoutPage = () => {
             
 
               <div className="checkout-page__heading-row">
-                <h2 className="heading-large">Checkout</h2>
+                <h4 className="heading-large">Checkout</h4>
                 <Link href="/cart" className="cart-continue-shopping">
                   ← Back to cart
                 </Link>
