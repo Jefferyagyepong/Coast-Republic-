@@ -130,7 +130,7 @@ const ProductsPage = ({ products }) => {
      <meta property="og:title" content="Coast Collective | Clothing & Shoes" />
         <meta
           property="og:description"
-          content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+          content=" Home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
         
      
