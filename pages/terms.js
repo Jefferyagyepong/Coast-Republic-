@@ -67,11 +67,11 @@ export default function Terms() {
                   <section>
                     <h6>1. About Us</h6>
                     <p>
-                      Coast Republic ("we," "us," "our") is a Ghana-based retailer of
+                      Coast Collective ("we," "us," "our") is a Ghana-based retailer of
                       apparel and footwear, operating from Asafo Dadiesoaba, Ghana. You
                       can reach us at{" "}
-                      <a href="mailto:support@coastcollective.com">
-                        support@coastcollective.com
+                      <a href="mailto:customercare@coast-collective.com">
+                        customercare@coastcollective.com
                       </a>{" "}
                       or <a href="tel:+233244736420">+233 244 736 420</a>.
                     </p>
@@ -168,7 +168,7 @@ export default function Terms() {
                   <section>
                     <h6>9. Limitation of Liability</h6>
                     <p>
-                      To the fullest extent permitted by law, Coast Republic shall not
+                      To the fullest extent permitted by law, Coast Collective shall not
                       be liable for any indirect, incidental, or consequential damages
                       arising from your use of the Site or products purchased, beyond
                       the value of the order in question. Nothing in these Terms
@@ -211,7 +211,7 @@ export default function Terms() {
                     <h6>13. Contact</h6>
                     <p>
                       For questions about these Terms, contact us at{" "}
-                      <a href="mailto:support@coastcollective.com">
+                      <a href="mailto:customercare@coast-collective.com">
                         support@coastcollective.com
                       </a>{" "}
                       or <a href="tel:+233244736420">+233 244 736 420</a>.
