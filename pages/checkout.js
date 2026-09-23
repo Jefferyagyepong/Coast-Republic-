@@ -320,7 +320,7 @@ const CheckoutPage = () => {
       <Header />
 
 
-
+ <div className="layout">
       <div classname="main-content">
         <div className="custom-container">
           <div className="container-center">
@@ -724,6 +724,7 @@ const CheckoutPage = () => {
         </div>
 
       </div>
+        </div>
 
       {/* Sticky mobile total bar */}
       <div className="checkout-sticky-bar" aria-hidden="true">
