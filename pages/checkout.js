@@ -667,7 +667,7 @@ const CheckoutPage = () => {
 
                 {/* ── Order summary sidebar ── */}
                 <aside className="checkout-summary" aria-label="Order summary">
-                  <h2>Order Summary</h2>
+                  <h6>Order Summary</h6>
                   <ul>
                     {items.map((item) => (
                       <li key={item.cartKey}>
