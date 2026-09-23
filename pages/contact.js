@@ -204,7 +204,7 @@ export default function Contact() {
           border-radius: 8px;
         }
         button {
-           background-color: #2563eb;
+           background-color: #000;
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
