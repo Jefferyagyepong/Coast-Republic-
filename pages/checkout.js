@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Header from "@/components/Head/Navbar"; // consistent with project
+import Header from "@/components/Head/Header"; // consistent with project
 import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 
@@ -276,7 +276,7 @@ const CheckoutPage = () => {
     return (
       <>
         <Head>
-          <title>Checkout | Coast Republic</title>
+          <title>Checkout | Coast Collective</title>
           <meta
             name="description"
             content="Complete your Coast Republic order securely with MTN MoMo."
