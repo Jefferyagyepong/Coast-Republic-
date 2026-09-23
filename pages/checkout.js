@@ -1,10 +1,9 @@
-
 // pages/checkout.js
 import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Header from "@/components/Head/Header"; // consistent with project
+import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import { useCart } from "@/context/CartContext";
 
@@ -15,30 +14,15 @@ const formatMoney = (amount, currency) =>
 const TAX_RATE = 0.075;
 const DELIVERY_FEE = 15;
 const FREE_DELIVERY_THRESHOLD = 200;
-const PICKUP_LOCATION = "Coast Republic Store — Osu, Accra";
+const PICKUP_LOCATION = "Coast Collective Store — Osu, Accra";
 const SUBMIT_TIMEOUT_MS = 20000;
-const DRAFT_STORAGE_KEY = "coast-republic-checkout-draft";
+const DRAFT_STORAGE_KEY = "coast-collective-checkout-draft";
 
 const GHANA_REGIONS = [
   "Greater Accra", "Ashanti", "Western", "Western North", "Central",
   "Eastern", "Volta", "Oti", "Northern", "North East", "Savannah",
   "Upper East", "Upper West", "Bono", "Bono East", "Ahafo",
 ];
-
-const MOMO_NETWORK_PREFIXES = {
-  MTN: ["024", "025", "053", "054", "055", "059"],
-  "Vodafone Cash": ["020", "050"],
-  AirtelTigo: ["026", "027", "056", "057"],
-};
-
-const detectMomoNetwork = (phone) => {
-  const digits = phone.replace(/\D/g, "");
-  const prefix = digits.slice(0, 3);
-  const match = Object.entries(MOMO_NETWORK_PREFIXES).find(([, prefixes]) =>
-    prefixes.includes(prefix)
-  );
-  return match ? match[0] : "";
-};
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -52,8 +36,7 @@ const emptyForm = {
   address: "",
   notes: "",
   deliveryMethod: "delivery",
-  paymentMethod: "momo",
-  momoNetwork: "",
+  paymentMethod: "paystack", // "paystack" | "cod"
   saveInfo: false,
   agreeTerms: false,
 };
@@ -99,7 +82,7 @@ const FIELDS_TO_VALIDATE = [
 // ── Component ──────────────────────────────────────────────────────────────
 const CheckoutPage = () => {
   const router = useRouter();
-  const { items, cartTotal, currency, clearCart } = useCart(); // cartTotal, not getCartTotal
+  const { items, currency, clearCart } = useCart();
 
   const [form, setForm] = useState(emptyForm);
   const [touched, setTouched] = useState({});
@@ -159,13 +142,7 @@ const CheckoutPage = () => {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     const nextValue = type === "checkbox" ? checked : value;
-    setForm((prev) => {
-      const next = { ...prev, [name]: nextValue };
-      if (name === "phone") {
-        next.momoNetwork = detectMomoNetwork(value) || prev.momoNetwork;
-      }
-      return next;
-    });
+    setForm((prev) => ({ ...prev, [name]: nextValue }));
   };
 
   const handleBlur = (e) => {
@@ -207,48 +184,72 @@ const CheckoutPage = () => {
 
     setStatus("submitting");
     setErrorMsg("");
-    announce("Sending your order...");
+    announce(
+      form.paymentMethod === "paystack" ? "Redirecting to secure payment..." : "Placing your order..."
+    );
 
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
 
+    const payload = {
+      customer: {
+        fullName: form.fullName,
+        email: form.email.trim().toLowerCase(),
+        phone: form.phone,
+        region: form.region,
+        city: form.city,
+        address: form.address,
+        notes: form.notes,
+      },
+      delivery: {
+        method: form.deliveryMethod,
+        fee: deliveryFee,
+        pickupLocation: isPickup ? PICKUP_LOCATION : undefined,
+      },
+      items,
+      subtotal,
+      tax,
+      total,
+      currency,
+    };
+
     try {
+      if (form.paymentMethod === "paystack") {
+        const res = await fetch("/api/payments/paystack/initialize", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          signal: controller.signal,
+          body: JSON.stringify(payload),
+        });
+        clearTimeout(timeoutId);
+
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          throw new Error(data.message || "Payment could not be started.");
+        }
+
+        // Full-page redirect to Paystack's hosted checkout — the order is
+        // already saved as PENDING; nothing here marks it paid. Only the
+        // server-side webhook does that once Paystack confirms payment.
+        window.location.href = data.authorization_url;
+        return;
+      }
+
+      // Cash on delivery — unchanged flow, confirms immediately.
       const res = await fetch("/api/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
         body: JSON.stringify({
-          customer: {
-            fullName: form.fullName,
-            email: form.email.trim().toLowerCase(),
-            phone: form.phone,
-            region: form.region,
-            city: form.city,
-            address: form.address,
-            notes: form.notes,
-          },
-          delivery: {
-            method: form.deliveryMethod,
-            fee: deliveryFee,
-            pickupLocation: isPickup ? PICKUP_LOCATION : undefined,
-          },
-          payment: {
-            method: form.paymentMethod,
-            momoNetwork:
-              form.paymentMethod === "momo" ? form.momoNetwork : undefined,
-          },
-          items,
-          subtotal,
-          tax,
-          total,
-          currency,
+          ...payload,
+          payment: { method: "cod" },
         }),
       });
       clearTimeout(timeoutId);
 
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        throw new Error(data.message || "Payment could not be started.");
+        throw new Error(data.message || "Order could not be placed.");
       }
 
       if (!form.saveInfo && typeof window !== "undefined") {
@@ -279,7 +280,7 @@ const CheckoutPage = () => {
           <title>Checkout | Coast Collective</title>
           <meta
             name="description"
-            content="Complete your Coast Collective order securely with MTN MoMo."
+            content="Complete your Coast Collective order securely."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="robots" content="noindex, nofollow" />
@@ -295,7 +296,6 @@ const CheckoutPage = () => {
                   Browse products
                 </Link>
               </main>
-
             </div>
           </div>
         </div>
@@ -311,7 +311,7 @@ const CheckoutPage = () => {
         <title>Checkout | Coast Collective</title>
         <meta
           name="description"
-          content="Complete your Coast Collective order securely with MTN MoMo."
+          content="Complete your Coast Collective order securely."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="noindex, nofollow" />
@@ -320,412 +320,393 @@ const CheckoutPage = () => {
       <Header />
       <br /><br /><br /><br /><br />
 
-
- 
-      <div classname="main-content">
+      <div className="main-content">
         <div className="custom-container">
           <div className="container-center">
-            
 
-              <div className="checkout-page__heading-row">
-                <h4 className="heading-large">Checkout</h4>
-                <Link href="/cart" className="cart-continue-shopping">
-                  ← Back to cart
-                </Link>
-              </div>
+            <div className="checkout-page__heading-row">
+              <h4 className="heading-large">Checkout</h4>
+              <Link href="/cart" className="cart-continue-shopping">
+                ← Back to cart
+              </Link>
+            </div>
 
-              {/* Screen-reader live region */}
-              <p
-                ref={liveRegionRef}
-                className="sr-only"
-                role="status"
-                aria-live="polite"
-              />
+            {/* Screen-reader live region */}
+            <p
+              ref={liveRegionRef}
+              className="sr-only"
+              role="status"
+              aria-live="polite"
+            />
 
-              <div className="checkout-layout">
+            <div className="checkout-layout">
 
-                {/* ── Form ── */}
-                <form className="checkout-form" onSubmit={handleSubmit} noValidate>
+              {/* ── Form ── */}
+              <form className="checkout-form" onSubmit={handleSubmit} noValidate>
 
-                  {/* Contact */}
-                  <fieldset className="checkout-fieldset">
-                    <legend>Contact</legend>
+                {/* Contact */}
+                <fieldset className="checkout-fieldset">
+                  <legend>Contact</legend>
 
-                    <label>
-                      Full Name
-                      <input
-                        type="text"
-                        name="fullName"
-                        required
-                        autoComplete="name"
-                        ref={registerRef("fullName")}
-                        value={form.fullName}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        aria-invalid={Boolean(fieldError("fullName"))}
-                        aria-describedby={fieldError("fullName") ? "err-fullName" : undefined}
-                      />
-                      {fieldError("fullName") && (
-                        <span id="err-fullName" className="checkout-field-error">
-                          {fieldError("fullName")}
-                        </span>
-                      )}
-                    </label>
-
-                    <label>
-                      Email
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        placeholder="you@example.com"
-                        autoComplete="email"
-                        inputMode="email"
-                        ref={registerRef("email")}
-                        value={form.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        aria-invalid={Boolean(fieldError("email"))}
-                        aria-describedby={fieldError("email") ? "err-email" : "hint-email"}
-                      />
-                      <span id="hint-email" className="checkout-hint">
-                        We&apos;ll send your order confirmation and receipt here.
+                  <label>
+                    Full Name
+                    <input
+                      type="text"
+                      name="fullName"
+                      required
+                      autoComplete="name"
+                      ref={registerRef("fullName")}
+                      value={form.fullName}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      aria-invalid={Boolean(fieldError("fullName"))}
+                      aria-describedby={fieldError("fullName") ? "err-fullName" : undefined}
+                    />
+                    {fieldError("fullName") && (
+                      <span id="err-fullName" className="checkout-field-error">
+                        {fieldError("fullName")}
                       </span>
-                      {fieldError("email") && (
-                        <span id="err-email" className="checkout-field-error">
-                          {fieldError("email")}
-                        </span>
-                      )}
-                    </label>
-
-                    <label>
-                      Phone Number
-                      <input
-                        type="tel"
-                        name="phone"
-                        required
-                        placeholder="e.g. 0244123456"
-                        autoComplete="tel"
-                        ref={registerRef("phone")}
-                        value={form.phone}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        aria-invalid={Boolean(fieldError("phone"))}
-                        aria-describedby={fieldError("phone") ? "err-phone" : undefined}
-                      />
-                      {fieldError("phone") && (
-                        <span id="err-phone" className="checkout-field-error">
-                          {fieldError("phone")}
-                        </span>
-                      )}
-                    </label>
-                  </fieldset>
-
-                  {/* Delivery */}
-                  <fieldset className="checkout-fieldset">
-                    <legend>Delivery</legend>
-
-                    <div
-                      className="checkout-toggle-group"
-                      role="radiogroup"
-                      aria-label="Delivery method"
-                    >
-                      <label className="checkout-toggle">
-                        <input
-                          type="radio"
-                          name="deliveryMethod"
-                          value="delivery"
-                          checked={form.deliveryMethod === "delivery"}
-                          onChange={handleChange}
-                        />
-                        Deliver to me
-                      </label>
-                      <label className="checkout-toggle">
-                        <input
-                          type="radio"
-                          name="deliveryMethod"
-                          value="pickup"
-                          checked={form.deliveryMethod === "pickup"}
-                          onChange={handleChange}
-                        />
-                        Store pickup
-                      </label>
-                    </div>
-
-                    {isPickup ? (
-                      <p className="checkout-pickup-note">
-                        Pick up from <strong>{PICKUP_LOCATION}</strong>.
-                        We&apos;ll text you when it&apos;s ready.
-                      </p>
-                    ) : (
-                      <>
-                        <label>
-                          Region
-                          <select
-                            name="region"
-                            required
-                            ref={registerRef("region")}
-                            value={form.region}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            aria-invalid={Boolean(fieldError("region"))}
-                            aria-describedby={fieldError("region") ? "err-region" : undefined}
-                          >
-                            <option value="">Select region</option>
-                            {GHANA_REGIONS.map((r) => (
-                              <option key={r} value={r}>{r}</option>
-                            ))}
-                          </select>
-                          {fieldError("region") && (
-                            <span id="err-region" className="checkout-field-error">
-                              {fieldError("region")}
-                            </span>
-                          )}
-                        </label>
-
-                        <label>
-                          City / Town
-                          <input
-                            type="text"
-                            name="city"
-                            required
-                            autoComplete="address-level2"
-                            ref={registerRef("city")}
-                            value={form.city}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            aria-invalid={Boolean(fieldError("city"))}
-                            aria-describedby={fieldError("city") ? "err-city" : undefined}
-                          />
-                          {fieldError("city") && (
-                            <span id="err-city" className="checkout-field-error">
-                              {fieldError("city")}
-                            </span>
-                          )}
-                        </label>
-
-                        <label>
-                          Delivery Address
-                          <input
-                            type="text"
-                            name="address"
-                            required
-                            autoComplete="street-address"
-                            ref={registerRef("address")}
-                            value={form.address}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            aria-invalid={Boolean(fieldError("address"))}
-                            aria-describedby={fieldError("address") ? "err-address" : undefined}
-                          />
-                          {fieldError("address") && (
-                            <span id="err-address" className="checkout-field-error">
-                              {fieldError("address")}
-                            </span>
-                          )}
-                        </label>
-                      </>
                     )}
+                  </label>
 
-                    <label>
-                      Order Notes (optional)
-                      <textarea
-                        name="notes"
-                        rows={3}
-                        maxLength={300}
-                        placeholder="Delivery instructions, landmark, gate code..."
-                        value={form.notes}
+                  <label>
+                    Email
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="you@example.com"
+                      autoComplete="email"
+                      inputMode="email"
+                      ref={registerRef("email")}
+                      value={form.email}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      aria-invalid={Boolean(fieldError("email"))}
+                      aria-describedby={fieldError("email") ? "err-email" : "hint-email"}
+                    />
+                    <span id="hint-email" className="checkout-hint">
+                      We&apos;ll send your order confirmation and receipt here.
+                    </span>
+                    {fieldError("email") && (
+                      <span id="err-email" className="checkout-field-error">
+                        {fieldError("email")}
+                      </span>
+                    )}
+                  </label>
+
+                  <label>
+                    Phone Number
+                    <input
+                      type="tel"
+                      name="phone"
+                      required
+                      placeholder="e.g. 0244123456"
+                      autoComplete="tel"
+                      ref={registerRef("phone")}
+                      value={form.phone}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      aria-invalid={Boolean(fieldError("phone"))}
+                      aria-describedby={fieldError("phone") ? "err-phone" : undefined}
+                    />
+                    {fieldError("phone") && (
+                      <span id="err-phone" className="checkout-field-error">
+                        {fieldError("phone")}
+                      </span>
+                    )}
+                  </label>
+                </fieldset>
+
+                {/* Delivery */}
+                <fieldset className="checkout-fieldset">
+                  <legend>Delivery</legend>
+
+                  <div
+                    className="checkout-toggle-group"
+                    role="radiogroup"
+                    aria-label="Delivery method"
+                  >
+                    <label className="checkout-toggle">
+                      <input
+                        type="radio"
+                        name="deliveryMethod"
+                        value="delivery"
+                        checked={form.deliveryMethod === "delivery"}
                         onChange={handleChange}
                       />
-                      <span className="checkout-char-count">
-                        {form.notes.length}/300
-                      </span>
+                      Deliver to me
                     </label>
-                  </fieldset>
+                    <label className="checkout-toggle">
+                      <input
+                        type="radio"
+                        name="deliveryMethod"
+                        value="pickup"
+                        checked={form.deliveryMethod === "pickup"}
+                        onChange={handleChange}
+                      />
+                      Store pickup
+                    </label>
+                  </div>
 
-                  {/* Payment */}
-                  <fieldset className="checkout-fieldset">
-                    <legend>Payment</legend>
-
-                    <div
-                      className="checkout-toggle-group"
-                      role="radiogroup"
-                      aria-label="Payment method"
-                    >
-                      <label className="checkout-toggle">
-                        <input
-                          type="radio"
-                          name="paymentMethod"
-                          value="momo"
-                          checked={form.paymentMethod === "momo"}
-                          onChange={handleChange}
-                        />
-                        Mobile Money
-                      </label>
-                      <label className="checkout-toggle">
-                        <input
-                          type="radio"
-                          name="paymentMethod"
-                          value="cod"
-                          checked={form.paymentMethod === "cod"}
-                          onChange={handleChange}
-                        />
-                        Cash on delivery
-                      </label>
-                    </div>
-
-                    {form.paymentMethod === "momo" && (
+                  {isPickup ? (
+                    <p className="checkout-pickup-note">
+                      Pick up from <strong>{PICKUP_LOCATION}</strong>.
+                      We&apos;ll text you when it&apos;s ready.
+                    </p>
+                  ) : (
+                    <>
                       <label>
-                        Mobile Money Network
+                        Region
                         <select
-                          name="momoNetwork"
-                          value={form.momoNetwork}
+                          name="region"
+                          required
+                          ref={registerRef("region")}
+                          value={form.region}
                           onChange={handleChange}
+                          onBlur={handleBlur}
+                          aria-invalid={Boolean(fieldError("region"))}
+                          aria-describedby={fieldError("region") ? "err-region" : undefined}
                         >
-                          <option value="">Select network</option>
-                          {Object.keys(MOMO_NETWORK_PREFIXES).map((network) => (
-                            <option key={network} value={network}>{network}</option>
+                          <option value="">Select region</option>
+                          {GHANA_REGIONS.map((r) => (
+                            <option key={r} value={r}>{r}</option>
                           ))}
                         </select>
-                        {form.momoNetwork && (
-                          <span className="checkout-hint">
-                            Detected from your number — change it if that&apos;s wrong.
+                        {fieldError("region") && (
+                          <span id="err-region" className="checkout-field-error">
+                            {fieldError("region")}
                           </span>
                         )}
                       </label>
-                    )}
 
-                    {form.paymentMethod === "cod" && (
-                      <p className="checkout-hint">
-                        Pay in cash when your order{" "}
-                        {isPickup ? "is collected" : "arrives"}. Please have the
-                        exact amount ready where possible.
-                      </p>
-                    )}
-                  </fieldset>
+                      <label>
+                        City / Town
+                        <input
+                          type="text"
+                          name="city"
+                          required
+                          autoComplete="address-level2"
+                          ref={registerRef("city")}
+                          value={form.city}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          aria-invalid={Boolean(fieldError("city"))}
+                          aria-describedby={fieldError("city") ? "err-city" : undefined}
+                        />
+                        {fieldError("city") && (
+                          <span id="err-city" className="checkout-field-error">
+                            {fieldError("city")}
+                          </span>
+                        )}
+                      </label>
 
-                  {/* Preferences */}
-                  <label className="checkout-checkbox">
-                    <input
-                      type="checkbox"
-                      name="saveInfo"
-                      checked={form.saveInfo}
+                      <label>
+                        Delivery Address
+                        <input
+                          type="text"
+                          name="address"
+                          required
+                          autoComplete="street-address"
+                          ref={registerRef("address")}
+                          value={form.address}
+                          onChange={handleChange}
+                          onBlur={handleBlur}
+                          aria-invalid={Boolean(fieldError("address"))}
+                          aria-describedby={fieldError("address") ? "err-address" : undefined}
+                        />
+                        {fieldError("address") && (
+                          <span id="err-address" className="checkout-field-error">
+                            {fieldError("address")}
+                          </span>
+                        )}
+                      </label>
+                    </>
+                  )}
+
+                  <label>
+                    Order Notes (optional)
+                    <textarea
+                      name="notes"
+                      rows={3}
+                      maxLength={300}
+                      placeholder="Delivery instructions, landmark, gate code..."
+                      value={form.notes}
                       onChange={handleChange}
                     />
-                    Save my details on this device for next time
-                  </label>
-
-                  <label className="checkout-checkbox">
-                    <input
-                      type="checkbox"
-                      name="agreeTerms"
-                      ref={registerRef("agreeTerms")}
-                      checked={form.agreeTerms}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      aria-invalid={Boolean(fieldError("agreeTerms"))}
-                      aria-describedby={
-                        fieldError("agreeTerms") ? "err-agreeTerms" : undefined
-                      }
-                    />
-                    I agree to the{" "}
-                    <Link href="/terms" target="_blank">Terms of Service</Link>
-                    {" "}and{" "}
-                    <Link href="/returns" target="_blank">Return Policy</Link>
-                  </label>
-                  {fieldError("agreeTerms") && (
-                    <span id="err-agreeTerms" className="checkout-field-error">
-                      {fieldError("agreeTerms")}
+                    <span className="checkout-char-count">
+                      {form.notes.length}/300
                     </span>
-                  )}
+                  </label>
+                </fieldset>
 
-                  {/* Submit error */}
-                  {status === "error" && (
-                    <p className="checkout-error" role="alert">
-                      {errorMsg}
-                    </p>
-                  )}
+                {/* Payment */}
+                <fieldset className="checkout-fieldset">
+                  <legend>Payment</legend>
 
-                  <button
-                    type="submit"
-                    className="btn-primary btn-checkout"
-                    disabled={status === "submitting"}
+                  <div
+                    className="checkout-toggle-group"
+                    role="radiogroup"
+                    aria-label="Payment method"
                   >
-                    {status === "submitting"
-                      ? form.paymentMethod === "momo"
-                        ? "Sending MoMo prompt..."
-                        : "Placing your order..."
-                      : form.paymentMethod === "momo"
-                        ? `Pay ${formatMoney(total, currency)} with Mobile Money`
-                        : `Place order · ${formatMoney(total, currency)} on delivery`}
-                  </button>
-
-                  <p className="checkout-trust">
-                    🔒 Your payment details are handled securely and never stored
-                    on our servers.
-                  </p>
-                </form>
-
-                {/* ── Order summary sidebar ── */}
-                <aside className="checkout-summary" aria-label="Order summary">
-                  <h6>Order Summary</h6>
-                  <ul>
-                    {items.map((item) => (
-                      <li key={item.cartKey}>
-                        <span className="checkout-summary__item-name">
-                          {item.name} × {item.quantity}
-                          {(item.size || item.color) && (
-                            <span className="checkout-summary__item-meta">
-                              {item.color && item.color}
-                              {item.size && item.color && " · "}
-                              {item.size && item.size}
-                            </span>
-                          )}
-                        </span>
-                        <span>{formatMoney(item.price * item.quantity, currency)}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="checkout-summary__rows">
-                    <div className="checkout-summary__row">
-                      <span>Subtotal</span>
-                      <span>{formatMoney(subtotal, currency)}</span>
-                    </div>
-                    <div className="checkout-summary__row">
-                      <span>{isPickup ? "Pickup" : "Delivery"}</span>
-                      <span>
-                        {deliveryFee === 0
-                          ? "Free"
-                          : formatMoney(deliveryFee, currency)}
-                      </span>
-                    </div>
-                    <div className="checkout-summary__row">
-                      <span>Estimated tax</span>
-                      <span>{formatMoney(tax, currency)}</span>
-                    </div>
+                    <label className="checkout-toggle">
+                      <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="paystack"
+                        checked={form.paymentMethod === "paystack"}
+                        onChange={handleChange}
+                      />
+                      Card / Mobile Money
+                    </label>
+                    <label className="checkout-toggle">
+                      <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="cod"
+                        checked={form.paymentMethod === "cod"}
+                        onChange={handleChange}
+                      />
+                      Cash on delivery
+                    </label>
                   </div>
 
-                  <div className="checkout-summary__total">
-                    <span>Total</span>
-                    <strong>{formatMoney(total, currency)}</strong>
-                  </div>
-
-                  {!isPickup && deliveryFee > 0 && (
+                  {form.paymentMethod === "paystack" && (
                     <p className="checkout-hint">
-                      Add{" "}
-                      {formatMoney(FREE_DELIVERY_THRESHOLD - subtotal, currency)}{" "}
-                      more for free delivery.
+                      You&apos;ll be taken to Paystack&apos;s secure checkout to pay by
+                      card or Mobile Money (MTN, Vodafone Cash, AirtelTigo).
                     </p>
                   )}
-                </aside>
-              </div>
-        
+
+                  {form.paymentMethod === "cod" && (
+                    <p className="checkout-hint">
+                      Pay in cash when your order{" "}
+                      {isPickup ? "is collected" : "arrives"}. Please have the
+                      exact amount ready where possible.
+                    </p>
+                  )}
+                </fieldset>
+
+                {/* Preferences */}
+                <label className="checkout-checkbox">
+                  <input
+                    type="checkbox"
+                    name="saveInfo"
+                    checked={form.saveInfo}
+                    onChange={handleChange}
+                  />
+                  Save my details on this device for next time
+                </label>
+
+                <label className="checkout-checkbox">
+                  <input
+                    type="checkbox"
+                    name="agreeTerms"
+                    ref={registerRef("agreeTerms")}
+                    checked={form.agreeTerms}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    aria-invalid={Boolean(fieldError("agreeTerms"))}
+                    aria-describedby={
+                      fieldError("agreeTerms") ? "err-agreeTerms" : undefined
+                    }
+                  />
+                  I agree to the{" "}
+                  <Link href="/terms" target="_blank">Terms of Service</Link>
+                  {" "}and{" "}
+                  <Link href="/returns" target="_blank">Return Policy</Link>
+                </label>
+                {fieldError("agreeTerms") && (
+                  <span id="err-agreeTerms" className="checkout-field-error">
+                    {fieldError("agreeTerms")}
+                  </span>
+                )}
+
+                {/* Submit error */}
+                {status === "error" && (
+                  <p className="checkout-error" role="alert">
+                    {errorMsg}
+                  </p>
+                )}
+
+                <button
+                  type="submit"
+                  className="btn-primary btn-checkout"
+                  disabled={status === "submitting"}
+                >
+                  {status === "submitting"
+                    ? form.paymentMethod === "paystack"
+                      ? "Redirecting to payment..."
+                      : "Placing your order..."
+                    : form.paymentMethod === "paystack"
+                    ? `Pay ${formatMoney(total, currency)} securely`
+                    : `Place order · ${formatMoney(total, currency)} on delivery`}
+                </button>
+
+                <p className="checkout-trust">
+                  🔒 Card and Mobile Money payments are processed by Paystack.
+                  Your payment details are never stored on our servers.
+                </p>
+              </form>
+
+              {/* ── Order summary sidebar ── */}
+              <aside className="checkout-summary" aria-label="Order summary">
+                <h6>Order Summary</h6>
+                <ul>
+                  {items.map((item) => (
+                    <li key={item.cartKey}>
+                      <span className="checkout-summary__item-name">
+                        {item.name} × {item.quantity}
+                        {(item.size || item.color) && (
+                          <span className="checkout-summary__item-meta">
+                            {item.color && item.color}
+                            {item.size && item.color && " · "}
+                            {item.size && item.size}
+                          </span>
+                        )}
+                      </span>
+                      <span>{formatMoney(item.price * item.quantity, currency)}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="checkout-summary__rows">
+                  <div className="checkout-summary__row">
+                    <span>Subtotal</span>
+                    <span>{formatMoney(subtotal, currency)}</span>
+                  </div>
+                  <div className="checkout-summary__row">
+                    <span>{isPickup ? "Pickup" : "Delivery"}</span>
+                    <span>
+                      {deliveryFee === 0
+                        ? "Free"
+                        : formatMoney(deliveryFee, currency)}
+                    </span>
+                  </div>
+                  <div className="checkout-summary__row">
+                    <span>Estimated tax</span>
+                    <span>{formatMoney(tax, currency)}</span>
+                  </div>
+                </div>
+
+                <div className="checkout-summary__total">
+                  <span>Total</span>
+                  <strong>{formatMoney(total, currency)}</strong>
+                </div>
+
+                {!isPickup && deliveryFee > 0 && (
+                  <p className="checkout-hint">
+                    Add{" "}
+                    {formatMoney(FREE_DELIVERY_THRESHOLD - subtotal, currency)}{" "}
+                    more for free delivery.
+                  </p>
+                )}
+              </aside>
+            </div>
+
           </div>
         </div>
-
       </div>
-        
 
       {/* Sticky mobile total bar */}
       <div className="checkout-sticky-bar" aria-hidden="true">
