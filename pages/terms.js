@@ -71,7 +71,7 @@ export default function Terms() {
                       apparel and footwear, operating from Asafo Dadiesoaba, Ghana. You
                       can reach us at{" "}
                       <a href="mailto:customercare@coast-collective.com">
-                        customercare@coastcollective.com
+                        customercare@coast-collective.com
                       </a>{" "}
                       or <a href="tel:+233244736420">+233 244 736 420</a>.
                     </p>
@@ -212,7 +212,7 @@ export default function Terms() {
                     <p>
                       For questions about these Terms, contact us at{" "}
                       <a href="mailto:customercare@coast-collective.com">
-                        support@coastcollective.com
+                        customercare@coast-collective.com
                       </a>{" "}
                       or <a href="tel:+233244736420">+233 244 736 420</a>.
                     </p>

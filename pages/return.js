@@ -98,7 +98,7 @@ export default function Returns() {
                     <h6>4. How to Start a Return</h6>
                     <ol>
                       <li>
-                        Email <a href="mailto:customercare@coast-collecive.com">customercare@coastcollective.com</a>{" "}
+                        Email <a href="mailto:customercare@coast-collecive.com">customercare@coast-collective.com</a>{" "}
                         or call <a href="tel:+233244736420">+233 244 736 420</a> with
                         your order number and reason for return.
                       </li>
