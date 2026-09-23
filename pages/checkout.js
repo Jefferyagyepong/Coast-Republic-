@@ -318,6 +318,7 @@ const CheckoutPage = () => {
       </Head>
 
       <Header />
+      <br /><br />
 
 
  
