@@ -324,7 +324,7 @@ const CheckoutPage = () => {
       <div classname="main-content">
         <div className="custom-container">
           <div className="container-center checkout-page">
-            <main>
+            
 
               <div className="checkout-page__heading-row">
                 <h2 className="heading-large">Checkout</h2>
@@ -719,7 +719,7 @@ const CheckoutPage = () => {
                   )}
                 </aside>
               </div>
-            </main>
+        
           </div>
         </div>
 
