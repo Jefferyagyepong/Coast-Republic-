@@ -279,7 +279,7 @@ const CheckoutPage = () => {
           <title>Checkout | Coast Collective</title>
           <meta
             name="description"
-            content="Complete your Coast Republic order securely with MTN MoMo."
+            content="Complete your Coast Collective order securely with MTN MoMo."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="robots" content="noindex, nofollow" />
@@ -305,10 +305,10 @@ const CheckoutPage = () => {
   return (
     <>
       <Head>
-        <title>Checkout | Coast Republic</title>
+        <title>Checkout | Coast Collective</title>
         <meta
           name="description"
-          content="Complete your Coast Republic order securely with MTN MoMo."
+          content="Complete your Coast Collective order securely with MTN MoMo."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="noindex, nofollow" />
@@ -318,7 +318,7 @@ const CheckoutPage = () => {
 
 
 
-      <main classname="main-content">
+      <div classname="main-content">
         <div className="custom-container">
           <div className="container-center checkout-page">
 
@@ -718,7 +718,7 @@ const CheckoutPage = () => {
           </div>
         </div>
 
-      </main>
+      </div>
 
       {/* Sticky mobile total bar */}
       <div className="checkout-sticky-bar" aria-hidden="true">
