@@ -3,9 +3,9 @@
 import { useState } from 'react';
 
 const DEFAULT_MESSAGES = [
-  { text: 'Free delivery on orders over GHS 300', href: '/delivery' },
+  { text: 'Free delivery on orders over GHS 1000', href: '/delivery' },
   { text: 'New sneaker drops just landed', href: '/products' },
-  { text: 'Sign up for 10% off your first order', href: '/#newsletter' },
+  { text: 'Sign up for free delivery of your first order', href: '/#newsletter' },
 ];
 
 export default function Toast({
