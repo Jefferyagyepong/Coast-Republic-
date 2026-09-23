@@ -46,8 +46,8 @@ const Footer = () => {
 
             <div className="footer-contact">
               <a href="tel:+233244736420">+233 244 736 420</a>
-              <a href="mailto:customercare@coastcollective.com">
-            customercare@coastcollective.com
+              <a href="mailto:customercare@coast-collective.com">
+            customercare@coast-collective.com
               </a>
             </div>
           </div>
@@ -160,14 +160,7 @@ const Footer = () => {
               Instagram
             </a>
 
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Visit us on Facebook"
-            >
-              Facebook
-            </a>
+          
 
             <a
               href="https://x.com/ccollectivegh?s=11"
