@@ -13,15 +13,12 @@ import Sale from "@/components/Parts/Sale";
 
 const Home = () => {
   const calvinKleinImages = [
-    "/IMG_5438.webp",
-    "/IMG_5482.webp",
-    "/IMG_5452.webp",
-    "/IMG_5459.webp",
-    "/IMG_5422.webp",
-    "/IMG_5433.webp",
-    "/IMG_5443.webp",
-    "/IMG_5436.webp",
-    "GYAMFUA.svg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262790/COAST-001C.png",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262782/COAST-001D.png",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262778/COAST-001.png",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262774/COAST-001A.png",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262771/COAST-001B.png",
+   
 
 
   ];
