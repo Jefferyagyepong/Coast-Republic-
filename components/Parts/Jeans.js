@@ -6,7 +6,7 @@ function Show() {
   return (
     <div className="background-container">
    
-      <h3>DESIGNER PAIRS IN OUR COLLECTION</h3>
+      <h6>Designer Pairs In Our Collection</h6>
 
       <Link className="btn-scale" href={"/products"}>Shop now</Link>
     </div>
