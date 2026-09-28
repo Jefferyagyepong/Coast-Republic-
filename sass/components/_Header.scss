@@ -16,19 +16,14 @@
 :root {
   --header-bg: #eafafe;
   --header-text: #0a0a0a;
-  --header-accent: #007bff;
+  --header-accent: black;
   // SSR/no-JS fallback only — Header.js overwrites this on mount with the
   // header's real measured height (toast bar + nav row can vary).
   --header-height: 96px;
   --transition-fast: 0.25s ease;
 }
 
-hr {
-  border: none;
-  height: 1px;
-  background: #e0e0e0;
-  margin: 1.5rem 0;
-}
+
 
 // --------------------------------------------------------------------------
 // Header shell
@@ -52,7 +47,7 @@ header {
 
 .header-flex-row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
