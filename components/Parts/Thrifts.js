@@ -7,7 +7,7 @@ function All() {
   return (
     <div className="background-container-women">
 
-      <h6> Nike Dunk Low 'Panda'</h6>
+      <h4> Nike Dunk Low 'Panda'</h4>
       <Link className="btn-scale-women" href={"/products"}>Shop now</Link>
     </div>
   );
