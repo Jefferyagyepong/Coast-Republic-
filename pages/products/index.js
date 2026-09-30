@@ -134,7 +134,7 @@ const ProductsPage = ({ products }) => {
         />
         
      
-        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790262778/COAST-001.png" />
         
 
         {/* Twitter */}
@@ -144,7 +144,7 @@ const ProductsPage = ({ products }) => {
           name="twitter:description"
           content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5685.jpeg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790262778/COAST-001.png" />
         <meta name="twitter:site" content="https://x.com/ccollectivegh?s=11" />
       </Head>
 

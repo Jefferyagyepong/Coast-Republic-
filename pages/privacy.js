@@ -20,27 +20,27 @@ const Privacy = () => {
           content="How Coast Collective collects, uses, and protects your personal information."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-       
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Privacy Policy | Coast Collective" />
         <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
-       
-         <meta property="og:type" content="Online store" />
-    <meta property="og:title" content="Delivery Information | Coast Collective" />
+
+        <meta property="og:type" content="Online store" />
+        <meta property="og:title" content="Delivery Information | Coast Collective" />
         <meta
           property="og:description"
           content="How Coast Collective collects, uses, and protects your personal information."
         />
-      
-        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Privacy Policy | Coast Collective" />
@@ -48,7 +48,7 @@ const Privacy = () => {
           name="twitter:description"
           content="How Coast Collective collects, uses, and protects your personal information."
         />
-       <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

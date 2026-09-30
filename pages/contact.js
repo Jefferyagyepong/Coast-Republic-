@@ -39,7 +39,7 @@ export default function Contact() {
         <title>Contact Us | Coast Collective</title>
         <meta
           name="description"
-          content="Get in touch with Coast Republic — questions about orders, sizing, or delivery. We reply within 24 hours."
+          content="Get in touch with Coast Collective — questions about orders, sizing, or delivery. We reply within 24 hours."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="canonical" href="https://www.coast-collective.com/" />
@@ -52,12 +52,12 @@ export default function Contact() {
         {/* Open Graph */}
         <meta property="og:url" content="https://www.coast-collective.com/" />
         <meta property="og:type" content="Online store" />
-        <meta property="og:title" content="Contact Us | Coast Republic" />
+        <meta property="og:title" content="Contact Us | Coast Collective" />
         <meta
           property="og:description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
-        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -66,7 +66,7 @@ export default function Contact() {
           name="twitter:description"
           content="Get in touch with Coast Collective — questions about orders, sizing, or delivery."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>
@@ -116,7 +116,7 @@ export default function Contact() {
                       onChange={handleChange}
                     />
                   </label>
-                  <button type="submit"  disabled={status === "sending"}>
+                  <button type="submit" disabled={status === "sending"}>
                     {status === "sending" ? "Sending..." : "Send"}
                   </button>
                   {status === "success" && (
@@ -128,7 +128,7 @@ export default function Contact() {
                       <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
                     </p>
                   )}
-                </form><br/><br/>
+                </form><br /><br />
 
                 <ls>
                   <h6>Online Store</h6>

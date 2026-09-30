@@ -54,7 +54,7 @@ export default function FAQ() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://www.coast-collective.com/faq" />
 
-    <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
+        <meta name="keywords" content="ecommerce, t-shirts, Ghana, quality clothing, sneakers, jeans, crew neck, streetwear" />
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -62,21 +62,21 @@ export default function FAQ() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-   
-     
-        
-   {/* Open Graph */}
+
+
+
+        {/* Open Graph */}
         <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
-       
-         <meta property="og:type" content="Online store" />
-    <meta property="og:title" content="Delivery Information | Coast Collective" />
+
+        <meta property="og:type" content="Online store" />
+        <meta property="og:title" content="Delivery Information | Coast Collective" />
         <meta
           property="og:description"
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
-      
-        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -85,7 +85,7 @@ export default function FAQ() {
           name="twitter:description"
           content="Answers to common questions about payment, shipping, sizing, and returns at Coast Collective."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

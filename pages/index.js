@@ -18,7 +18,9 @@ const Home = () => {
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790262778/COAST-001.png",
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790262774/COAST-001A.png",
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790262771/COAST-001B.png",
-   
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg",
+  
+
 
 
   ];
@@ -36,7 +38,7 @@ const Home = () => {
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
@@ -44,24 +46,25 @@ const Home = () => {
         {/* Open Graph */}
         <link rel="canonical" href="https://www.coast-collective.com/" />
         <meta property="og:url" content="https://www.coast-collective.com/" />
-       
-         <meta property="og:type" content="Online store" />
+
+        <meta property="og:type" content="Online store" />
         <meta property="og:title" content="Coast Collective | Shop" />
         <meta property="og:description" content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
-        
-     
-        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
-        
+
+
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790262782/COAST-001D.png" />
+
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Home | Coast Collective" />
+        <meta name="twitter:site" content="https://x.com/ccollectivegh?s=11" />
         <meta
           name="twitter:description"
           content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790262782/COAST-001D.png" />
       </Head>
       {/* Twitter */}
 
@@ -77,7 +80,7 @@ const Home = () => {
           <div className="custom-container">
 
             <h5>
-              Nike Dunk Low 'Panda' 
+              Nike Dunk Low 'Panda'
             </h5>
           </div>
           <div className="container-center">

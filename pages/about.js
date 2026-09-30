@@ -7,7 +7,7 @@ export default function About() {
     <>
       <Head>
         <title>About Us | Coast Collective</title>
-        <meta name="description" content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."/>
+        <meta name="description" content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials." />
         <meta name="author" content="Coast collective Ghana" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -36,6 +36,7 @@ export default function About() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Us | Coast Collective" />
+        <meta name="twitter:site" content="https://x.com/ccollectivegh?s=11" />
         <meta
           name="twitter:description"
           content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."

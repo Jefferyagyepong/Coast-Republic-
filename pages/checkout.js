@@ -639,8 +639,8 @@ const CheckoutPage = () => {
                       ? "Redirecting to payment..."
                       : "Placing your order..."
                     : form.paymentMethod === "paystack"
-                    ? `Pay ${formatMoney(total, currency)} securely`
-                    : `Place order · ${formatMoney(total, currency)} on delivery`}
+                      ? `Pay ${formatMoney(total, currency)} securely`
+                      : `Place order · ${formatMoney(total, currency)} on delivery`}
                 </button>
 
                 <p className="checkout-trust">
