@@ -77,8 +77,8 @@ const Home = () => {
           <div className="custom-container">
 
             <h5>
-              Discover what just dropped
-            </h5><br />
+              Nike Dunk Low 'Panda' 
+            </h5>
           </div>
           <div className="container-center">
 
@@ -86,7 +86,8 @@ const Home = () => {
 
           </div>
           <div className="custom-container">
-            <h5>Crew Neck T shirts</h5>
+            <h5>Crew Neck T-Shirts</h5>
+            <p>Dropping Soon</p>
           </div>
           <Collection />
         </main>
