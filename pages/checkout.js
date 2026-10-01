@@ -554,6 +554,7 @@ const CheckoutPage = () => {
 
       <main className="co-page">
         <div className="co-heading-row">
+          <br />   <br />   <br />   <br />
           <h1>Checkout</h1>
           <Link href="/cart" className="co-back">
             ← Back to cart
