@@ -1,3 +1,339 @@
+/* checkout.css — mobile-first. Scoped under .checkout-page */
+
+.checkout-page {
+  --co-gap: 1rem;
+  --co-radius: 8px;
+  --co-border: #d9d9d9;
+  --co-muted: #6b6b6b;
+  --co-error: #c0392b;
+  --co-focus: #1a1a1a;
+  --co-surface: #fafafa;
+
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 5rem 1rem 5.5rem; /* top replaces the <br> tags; bottom clears sticky bar */
+  box-sizing: border-box;
+}
+
+.checkout-page *,
+.checkout-page *::before,
+.checkout-page *::after {
+  box-sizing: inherit;
+}
+
+/* ── Heading row ─────────────────────────────── */
+.checkout-page__heading-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.checkout-page__heading-row .heading-large {
+  margin: 0;
+}
+
+/* ── Layout: single column by default ────────── */
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr); /* minmax(0) stops inputs forcing overflow */
+  gap: 1.5rem;
+}
+
+/* ── Form ────────────────────────────────────── */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--co-gap);
+  min-width: 0;
+}
+
+.checkout-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--co-gap);
+  min-width: 0; /* fieldsets default to min-content width and overflow */
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--co-border);
+  border-radius: var(--co-radius);
+}
+
+.checkout-fieldset legend {
+  padding-inline: 0.25rem;
+  font-weight: 600;
+}
+
+/* Field labels (label wrapping input) */
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+  font-size: 0.95rem;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"],
+.checkout-form select,
+.checkout-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px; /* touch target */
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  font-size: 1rem; /* ≥16px prevents iOS zoom on focus */
+  color: inherit;
+  background: #fff;
+  border: 1px solid var(--co-border);
+  border-radius: var(--co-radius);
+}
+
+.checkout-form textarea {
+  resize: vertical;
+}
+
+.checkout-form input[aria-invalid="true"],
+.checkout-form select[aria-invalid="true"] {
+  border-color: var(--co-error);
+}
+
+.checkout-form :is(input, select, textarea):focus-visible,
+.checkout-form button:focus-visible {
+  outline: 2px solid var(--co-focus);
+  outline-offset: 2px;
+}
+
+/* Helper text */
+.checkout-hint,
+.checkout-trust,
+.checkout-char-count {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--co-muted);
+}
+
+.checkout-char-count {
+  align-self: flex-end;
+}
+
+.checkout-field-error {
+  font-size: 0.85rem;
+  color: var(--co-error);
+}
+
+.checkout-error {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: var(--co-error);
+  background: #fdecea;
+  border-radius: var(--co-radius);
+}
+
+.checkout-pickup-note {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: var(--co-surface);
+  border-radius: var(--co-radius);
+}
+
+/* Radio toggles: stacked on phones, side by side when there is room */
+.checkout-toggle-group {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.checkout-form label.checkout-toggle,
+.checkout-form label.checkout-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.checkout-form label.checkout-toggle {
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--co-border);
+  border-radius: var(--co-radius);
+  cursor: pointer;
+}
+
+.checkout-form label.checkout-toggle:has(input:checked) {
+  border-color: var(--co-focus);
+  background: var(--co-surface);
+}
+
+.checkout-form label.checkout-checkbox {
+  align-items: flex-start;
+}
+
+.checkout-toggle input,
+.checkout-checkbox input {
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.15rem 0 0;
+}
+
+.checkout-toggle input {
+  margin: 0;
+}
+
+.btn-checkout {
+  width: 100%;
+  min-height: 48px;
+  white-space: normal; /* long labels wrap instead of overflowing */
+}
+
+.btn-checkout:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Summary: normal block on small screens ──── */
+.checkout-summary {
+  min-width: 0;
+  padding: 1rem;
+  background: var(--co-surface);
+  border: 1px solid var(--co-border);
+  border-radius: var(--co-radius);
+}
+
+.checkout-summary h6 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.checkout-summary ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.checkout-summary li,
+.checkout-summary__row,
+.checkout-summary__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.checkout-summary__item-name {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.checkout-summary__item-meta {
+  font-size: 0.85rem;
+  color: var(--co-muted);
+}
+
+.checkout-summary li > span:last-child,
+.checkout-summary__row > span:last-child,
+.checkout-summary__total strong {
+  flex: none;
+  white-space: nowrap;
+}
+
+.checkout-summary__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--co-border);
+}
+
+.checkout-summary__total {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--co-border);
+  font-size: 1.1rem;
+}
+
+.checkout-summary .checkout-hint {
+  margin-top: 0.75rem;
+}
+
+/* ── Sticky total bar: phones only ───────────── */
+.checkout-sticky-bar {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  font-weight: 600;
+  background: #fff;
+  border-top: 1px solid var(--co-border);
+}
+
+.checkout-sticky-bar__hint {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--co-muted);
+}
+
+/* ── ≥ 600px: roomier form ───────────────────── */
+@media (min-width: 600px) {
+  .checkout-page {
+    padding-inline: 1.5rem;
+  }
+
+  .checkout-fieldset {
+    padding: 1.25rem;
+  }
+
+  .checkout-toggle-group {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ── ≥ 900px: summary becomes a true aside ───── */
+@media (min-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .checkout-summary {
+    position: sticky;
+    top: 6rem; /* adjust to your header height */
+  }
+
+  .checkout-sticky-bar {
+    display: none;
+  }
+
+  .checkout-page {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .checkout-page * {
+    transition: none !important;
+  }
+}
+
+
+
+
+
 .search-products {
   width: 100%;
   padding: 10px 12px;
