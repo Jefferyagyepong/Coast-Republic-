@@ -91,7 +91,7 @@ const checkoutCss = `
   padding: 2.5rem 1rem 6rem;
   box-sizing: border-box;
   color: #111;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .co-page *, .co-page *::before, .co-page *::after { box-sizing: inherit; }
 
