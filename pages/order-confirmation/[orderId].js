@@ -3,7 +3,7 @@
 // that's the customer-facing identifier, not the internal cuid `id`.
 import Head from "next/head";
 import Link from "next/link";
-import Header from "@/components/Head/Navbar";
+import Header from "@/components/Head/Header";
 import Footer from "@/components/Footer/Footer";
 import { prisma } from "@/lib/prisma";
 

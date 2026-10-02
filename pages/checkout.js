@@ -91,7 +91,7 @@ const checkoutCss = `
   padding: 2.5rem 1rem 6rem;
   box-sizing: border-box;
   color: #111;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 .co-page *, .co-page *::before, .co-page *::after { box-sizing: inherit; }
 
@@ -298,7 +298,7 @@ const checkoutCss = `
 
 /* ── Tablet ── */
 @media (min-width: 600px) {
-  .co-page { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .co-page { padding-left: 1.5rem; padding-right: 1.5rem; margin-top: 10rem; }
   .co-fieldset { padding: 1.25rem; }
   .co-toggle-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
   .co-toggle { margin: 0; }
@@ -306,7 +306,7 @@ const checkoutCss = `
 
 /* ── Wide: summary becomes a side column ── */
 @media (min-width: 900px) {
-  .co-page { padding-bottom: 3rem; }
+  .co-page { padding-bottom: 3rem; margin-top: 10rem; }
   .co-heading-row { display: flex; justify-content: space-between; align-items: baseline; }
   .co-heading-row h1 { margin: 0; }
   .co-layout {
