@@ -28,7 +28,7 @@ export default function About() {
           content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
         />
 
-        <meta property="og:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
 
 
@@ -41,7 +41,7 @@ export default function About() {
           name="twitter:description"
           content="Learn the story behind Coast Collective — Ghana's home for quality T-shirts, sneakers, and street-ready essentials."
         />
-        <meta name="twitter:image" content="https://www.coast-collective.com/IMG_5722.jpeg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

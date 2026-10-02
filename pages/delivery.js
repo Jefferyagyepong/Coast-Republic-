@@ -35,7 +35,7 @@ export default function Delivery() {
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
 
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790976611/CCNIKEDUNKLOWRETRO.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +44,7 @@ export default function Delivery() {
           name="twitter:description"
           content="Delivery times, fees, and coverage areas for Coast Collective orders across Ghana."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790976611/CCNIKEDUNKLOWRETRO.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

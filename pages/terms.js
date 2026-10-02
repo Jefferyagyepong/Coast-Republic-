@@ -31,7 +31,7 @@ export default function Terms() {
           content="Terms and conditions for using the Coast Collective website and purchasing products."
         />
         <meta property="og:url" content="https://www.coast-collective.com/terms" />
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
@@ -40,7 +40,7 @@ export default function Terms() {
           name="twitter:description"
           content="Terms and conditions for using the Coast Collective website and purchasing products."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
       </Head>
 
 

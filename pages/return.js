@@ -31,7 +31,7 @@ export default function Returns() {
         />
         <meta property="og:url" content="https://coast-collective.com/return" />
 
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -40,7 +40,7 @@ export default function Returns() {
           name="twitter:description"
           content="Coast Collective's refund and return policy — eligibility, process, and timelines."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
 
 

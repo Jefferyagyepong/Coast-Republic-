@@ -76,7 +76,7 @@ export default function FAQ() {
           content="Delivery times, fees, and coverage areas for Coast Republic orders across Ghana."
         />
 
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -85,7 +85,7 @@ export default function FAQ() {
           name="twitter:description"
           content="Answers to common questions about payment, shipping, sizing, and returns at Coast Collective."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

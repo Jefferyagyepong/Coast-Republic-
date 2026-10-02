@@ -15,10 +15,10 @@ const Home = () => {
   const calvinKleinImages = [
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO005.jpg",
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790976611/CCNIKEDUNKLOWRETRO.jpg",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO002.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790978260/CCNIKEDUNKLOW009.jpg",
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO004.jpg",
     "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO006.jpg",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO001.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg",
   
 
 
@@ -53,7 +53,7 @@ const Home = () => {
         />
 
 
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790262782/COAST-001D.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790976580/CCNIKEDUNKLOWRETRO1.jpg" />
 
 
         {/* Twitter */}
@@ -64,7 +64,7 @@ const Home = () => {
           name="twitter:description"
           content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790262782/COAST-001D.png" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790976580/CCNIKEDUNKLOWRETRO1.jpg" />
       </Head>
       {/* Twitter */}
 

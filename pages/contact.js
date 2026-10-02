@@ -57,7 +57,7 @@ export default function Contact() {
           property="og:description"
           content="Get in touch with Coast Republic — questions about orders, sizing, or delivery."
         />
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -66,7 +66,7 @@ export default function Contact() {
           name="twitter:description"
           content="Get in touch with Coast Collective — questions about orders, sizing, or delivery."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image3.jpg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>

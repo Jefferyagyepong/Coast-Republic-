@@ -111,7 +111,39 @@ const ProductPage = ({ product }) => {
     <>
       <Head>
         <title>{product.name} | Coast Collective</title>
+
         <meta name="description" content={product.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="google-site-verification" content="HIhs3rvT7a6WD274_Txl6lfu3opycY_McRAFvT2-oBw" />
+
+
+
+        {/* Open Graph */}
+        <link rel="canonical" href="https://www.coast-collective.com/" />
+        <meta property="og:url" content="https://www.coast-collective.com/" />
+
+        <meta property="og:type" content="Online store" />
+        <meta property="og:title" content="Coast Collective | Clothing & Shoes" />
+        <meta
+          property="og:description"
+          content=" Home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+        />
+
+
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790976580/CCNIKEDUNKLOWRETRO1.jpg" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shop | Coast Collective" />
+        <meta
+          name="twitter:description"
+          content="Ghana's home for quality T-shirts, sneakers, jeans, and street-ready essentials."
+        />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790976580/CCNIKEDUNKLOWRETRO1.jpg" />
+        <meta name="twitter:site" content="https://x.com/ccollectivegh?s=11" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

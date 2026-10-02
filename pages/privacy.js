@@ -40,7 +40,7 @@ const Privacy = () => {
           content="How Coast Collective collects, uses, and protects your personal information."
         />
 
-        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Privacy Policy | Coast Collective" />
@@ -48,7 +48,7 @@ const Privacy = () => {
           name="twitter:description"
           content="How Coast Collective collects, uses, and protects your personal information."
         />
-        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/zxiwczte/image/upload/v1790978257/CCNIKEDUNKLOWRETRO008.jpg" />
 
         <meta name="robots" content="index, follow" />
       </Head>
