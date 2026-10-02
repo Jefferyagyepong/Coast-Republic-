@@ -206,7 +206,7 @@ const CartPage = () => {
                 <p className="cart-empty__hint">
                   Items you add will show up here. Not sure where to start?
                 </p>
-                <Link href="/products" className="btn-primary">
+                <Link href="/products" className="btn-primary-white">
                   Continue Shopping
                 </Link>
               </div>

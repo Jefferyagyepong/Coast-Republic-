@@ -8,18 +8,19 @@
 
 
 a {
-color:white;
+  color: white;
   font-weight: 500;
   text-decoration: underline;
   text-decoration-color: transparent;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
-  
+
 }
 
 .layout {
   display: flex;
-  flex-direction: column;          /* stacked on small screens */
+  flex-direction: column;
+  /* stacked on small screens */
   gap: 1.5rem;
 }
 
@@ -29,15 +30,18 @@ color:white;
     flex-direction: row;
   }
 
-  .layout > main {
-    flex: 1;                       /* takes remaining space */
+  .layout>main {
+    flex: 1;
+    /* takes remaining space */
   }
 
-  .layout > aside {
-    flex: 0 0 280px;               /* fixed-width sidebar */
+  .layout>aside {
+    flex: 0 0 280px;
+    /* fixed-width sidebar */
     /* or flex: 0 0 25%; for percentage width */
   }
 }
+
 a:hover {
   color: #000;
   text-decoration-color: currentColor;
@@ -61,27 +65,30 @@ img {
 
 
 html {
-  overflow-y: scroll; 
-    font-size: 90.5%;
+  overflow-y: scroll;
+  font-size: 90.5%;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-scrollbar-width: thin;
+  scrollbar-width: thin;
 }
 
 /* Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
 }
+
 ::selection {
   color: #ffffff;
- 
+
 }
 
 
@@ -90,7 +97,7 @@ body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   background-color: #FAF9F6;
- font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -98,78 +105,90 @@ body {
 
 main {
   width: 100%;
-  max-width: 1280px;        /* or 1440px, 90rem, etc. – very common */
-    /* modern & readable centering */
-   /* or var(--spacing-6), 24px, etc. */
+  max-width: 1280px;
+  /* or 1440px, 90rem, etc. – very common */
+  /* modern & readable centering */
+  /* or var(--spacing-6), 24px, etc. */
 }
 
 .MyApp {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
-.announce{
-   
-    height:2.5rem;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-    position:relative;
-  }
+.announce {
 
-  /* the track holds two identical copies of the message list, back to back.
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* the track holds two identical copies of the message list, back to back.
      scrolling it exactly -50% and looping gives a seamless, gapless ticker */
-  .announce-track{
-    display:flex;
-    width:max-content;
-    animation:scroll-right 2s linear infinite;
-  }
+.announce-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-right 2s linear infinite;
+}
 
-  .announce-set{
-    display:flex;
-    align-items:center;
-    flex-shrink:0;
-  }
+.announce-set {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-  .announce-item{
-    display:inline-flex;
-    align-items:center;
-    white-space:nowrap;
-    font-size:.8rem;
-    letter-spacing:.03em;
-    padding:0 1.5rem;
-  }
+.announce-item {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: .8rem;
+  letter-spacing: .03em;
+  padding: 0 1.5rem;
+}
 
-  /* thin divider between messages */
-  .announce-item + .announce-item{
-    border-left:1px solid rgba(247,246,243,.25);
-  }
+/* thin divider between messages */
+.announce-item+.announce-item {
+  border-left: 1px solid rgba(247, 246, 243, .25);
+}
 
-  .announce-item span.accent{
-   
-    font-weight:700;
-    margin-right:.4rem;
-  }
+.announce-item span.accent {
 
-  /* moves left to right: start shifted one full set to the left,
+  font-weight: 700;
+  margin-right: .4rem;
+}
+
+/* moves left to right: start shifted one full set to the left,
      end at 0 — content enters from the left edge and exits on the right */
-  @keyframes scroll-right{
-    from{ transform:translateX(-50%); }
-    to{ transform:translateX(0%); }
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
   }
 
-  /* rest of page, just for context */
-  .page{
-    padding:4rem 2rem;
-    text-align:center;
-    color:#777;
-    font-size:.9rem;
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* rest of page, just for context */
+.page {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #777;
+  font-size: .9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announce-track {
+    animation: none;
   }
 
-  @media (prefers-reduced-motion: reduce){
-    .announce-track{ animation:none; }
-    .announce-set:last-child{ display:none; }
+  .announce-set:last-child {
+    display: none;
   }
+}
+
 /* =========================================================
    Paragraphs and Text Elements
    ========================================================= */
@@ -186,116 +205,115 @@ p:last-child {
 
 /* Base Article Styling */
 article {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    line-height: 1.8;
-    color: #333;
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 /* Main Heading */
 article h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
-    line-height: 1.2;
-    color: #111827;
-    margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+  margin-bottom: 1rem;
 }
 
 /* Section Headings */
 article h2 {
-    font-size: clamp(1.5rem, 4vw, 2.25rem);
-    font-weight: 600;
-    color: #1f2937;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 article h3 {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    font-weight: 600;
-    color: #374151;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: #374151;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Paragraphs */
 article p {
-    font-size: 1.1rem;
-    line-height: 1.9;
-    color: #4b5563;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-    text-wrap: pretty;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  text-wrap: pretty;
 }
 
 /* Improve readability for long articles */
-article p + p {
-    margin-top: 1rem;
+article p+p {
+  margin-top: 1rem;
 }
 
 /* Links */
 article a {
-    color: #2563eb;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: 0.3s ease;
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease;
 }
 
 article a:hover {
-    border-color: #2563eb;
+  border-color: #2563eb;
 }
 
 /* Lists */
 article ul,
 article ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 article li {
-    margin-bottom: 0.5rem;
-    line-height: 1.8;
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
 }
 
 /* Blockquotes */
 article blockquote {
-    border-left: 4px solid #2563eb;
-    padding-left: 1rem;
-    margin: 2rem 0;
-    color: #374151;
-    font-style: italic;
-    background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: #374151;
+  font-style: italic;
+  background: #f8fafc;
 }
 
 /* Images */
 article img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin: 1.5rem 0;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem 0;
 }
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-    article {
-        padding: 1rem;
-    }
+  article {
+    padding: 1rem;
+  }
 
-    article p {
-        font-size: 1rem;
-        line-height: 1.8;
-        text-align: left;
-    }
+  article p {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+  }
 
-    article h1 {
-        margin-bottom: 0.75rem;
-    }
+  article h1 {
+    margin-bottom: 0.75rem;
+  }
 
-    article h2,
-    article h3 {
-        margin-top: 1.5rem;
-    }
+  article h2,
+  article h3 {
+    margin-top: 1.5rem;
+  }
 }
-
