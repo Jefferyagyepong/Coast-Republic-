@@ -170,17 +170,17 @@ const CartPage = () => {
   return (
     <>
       <Head>
-        <title>Your Cart | Coast Republic</title>
+        <title>Your Cart | Coast Collective</title>
         <meta
           name="description"
-          content="Review the items in your Coast Republic cart before checkout."
+          content="Review the items in your Coast Collective cart before checkout."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 
       <Header />
-      <div className="layout">
+      <div className="main-content">
         <main>
         <div className="custom-container">
           <div className="container-center cart-page">
@@ -226,7 +226,7 @@ const CartPage = () => {
                     </p>
                   ) : (
                     <p className="cart-shipping-progress__label cart-shipping-progress__label--met">
-                      You&apos;ve unlocked free shipping 🎉
+                  delivery across all 16 regions   
                     </p>
                   )}
                   <div
