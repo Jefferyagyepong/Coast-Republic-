@@ -80,7 +80,7 @@ const Home = () => {
           <div className="custom-container">
 
             <h5>
-              Nike Dunk Low 'Panda'
+              Nike Dunk Low Retro
             </h5>
           </div>
           <div className="container-center">
