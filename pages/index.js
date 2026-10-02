@@ -13,12 +13,12 @@ import Sale from "@/components/Parts/Sale";
 
 const Home = () => {
   const calvinKleinImages = [
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262790/COAST-001C.png",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262782/COAST-001D.png",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262778/COAST-001.png",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262774/COAST-001A.png",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790262771/COAST-001B.png",
-    "https://res.cloudinary.com/zxiwczte/image/upload/v1790765371/image5.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO005.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976611/CCNIKEDUNKLOWRETRO.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO002.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO004.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO006.jpg",
+    "https://res.cloudinary.com/zxiwczte/image/upload/v1790976594/CCNIKEDUNKLOWRETRO001.jpg",
   
 
 
